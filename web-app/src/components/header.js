@@ -14,10 +14,11 @@ const Header = ({ siteTitle }) => (
       //   maxWidth: 960,
       //   padding: '1.45rem 1.0875rem',
       // }}
-      className="container py-2"
-      // style={{
-      //   padding: "0.5rem",
-      // }}
+      className="container"
+      style={{
+        paddingTop: "0.5em",
+        paddingBottom: "0.5em",
+      }}
     >
       <h1 style={{
          margin: 0,
@@ -37,8 +38,18 @@ const Header = ({ siteTitle }) => (
             color: "white",
             float: "right",
             textDecoration: "none",
+            margin: "0 0.5em",
           }}>
           about
+        </Link>
+        <Link to="/page-2"
+          style={{
+            color: "white",
+            float: "right",
+            textDecoration: "none",
+            marginRight: "0.5em",
+          }}>
+          second
         </Link>
       </h1>
 
