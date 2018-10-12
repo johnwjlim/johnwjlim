@@ -23,7 +23,36 @@
     src: url("../fonts/AvenirNextLTPro-Bold.otf")format("opentype");
 }
 
-h2 {
+@font-face {
+    font-family: "Caslon";
+    src: url("../fonts/ACaslonPro-Regular.otf")format("opentype");
+}
+
+@font-face {
+    font-family: "Caslon Semi Bold";
+    src: url("../fonts/ACaslonPro-Semibold.otf")format("opentype");
+}
+
+@font-face {
+    font-family: "Lora";
+    src: url("../fonts/Lora-Regular.ttf")format("truetype");
+}
+
+@font-face {
+    font-family: "Lora Bold";
+    src: url("../fonts/Lora-Bold.ttf")format("truetype");
+}
+
+h1, h2, h3, h4, h5 {
     font-family: "Avenir Next Medium";
     color: #484848;
+}
+
+.wrap {
+    margin: 2.2rem 0;
+    font-family: "Avenir Next Demi";
+    font-weight: 500;
+    font-size: 48pt;
+    color: #009688;
+
 }

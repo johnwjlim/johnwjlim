@@ -448,11 +448,84 @@
         "owner": "internal-data-bridge"
       }
     },
+    "Plugin gatsby-plugin-styled-components": {
+      "resolve": "/Users/wjlim/code/johnwjlim/node_modules/gatsby-plugin-styled-components",
+      "id": "Plugin gatsby-plugin-styled-components",
+      "name": "gatsby-plugin-styled-components",
+      "version": "3.0.0",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [
+        "onCreateBabelConfig"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [
+        "wrapRootElement",
+        "onRenderBody"
+      ],
+      "pluginFilepath": "/Users/wjlim/code/johnwjlim/node_modules/gatsby-plugin-styled-components",
+      "packageJson": {
+        "name": "gatsby-plugin-styled-components",
+        "description": "Gatsby plugin to add support for styled components",
+        "version": "3.0.0",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "styled-components"
+        ],
+        "author": {
+          "name": "Guten Ye",
+          "email": "ywzhaifei@gmail.com"
+        },
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "@babel/runtime",
+            "version": "^7.0.0"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "@babel/cli",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "@babel/core",
+            "version": "^7.0.0"
+          }
+        ],
+        "peerDependencies": [
+          {
+            "name": "babel-plugin-styled-components",
+            "version": ">1.5.0"
+          },
+          {
+            "name": "gatsby",
+            "version": ">2.0.0-alpha"
+          },
+          {
+            "name": "styled-components",
+            "version": ">= 2.0.0"
+          }
+        ],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "d13af290a2394b64b8e9974de438a74b",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
     "Plugin default-site-plugin": {
       "resolve": "/Users/wjlim/code/johnwjlim",
       "id": "Plugin default-site-plugin",
       "name": "default-site-plugin",
-      "version": "51a7aa09349da1929e8d029e8e388f70",
+      "version": "ae891e1f3e97ca54b40598b7c1c25254",
       "pluginOptions": {
         "plugins": []
       },
@@ -471,6 +544,10 @@
         "license": "MIT",
         "dependencies": [
           {
+            "name": "babel-plugin-styled-components",
+            "version": "^1.8.0"
+          },
+          {
             "name": "gatsby",
             "version": "^2.0.19"
           },
@@ -487,6 +564,10 @@
             "version": "^3.0.0"
           },
           {
+            "name": "gatsby-plugin-styled-components",
+            "version": "^3.0.0"
+          },
+          {
             "name": "react",
             "version": "^16.5.1"
           },
@@ -497,6 +578,14 @@
           {
             "name": "react-helmet",
             "version": "^5.2.0"
+          },
+          {
+            "name": "styled-components",
+            "version": "^3.4.10"
+          },
+          {
+            "name": "typed.js",
+            "version": "^2.0.9"
           }
         ],
         "devDependencies": [
@@ -512,7 +601,7 @@
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "3026616561801d4676d8c5679ba53856",
+        "contentDigest": "f6e1dc52cd1856bbcb6808d5225e778d",
         "type": "SitePlugin",
         "owner": "internal-data-bridge"
       }
@@ -620,12 +709,12 @@
       "host": "localhost",
       "pathPrefix": "",
       "polyfill": true,
-      "buildTime": "2018-10-11T20:58:37.688Z",
+      "buildTime": "2018-10-12T17:13:12.673Z",
       "id": "Site",
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "14b048d3f1f3d7855542b876bd50d063",
+        "contentDigest": "a934b7afce16e2cf3f4b5fc432c820fd",
         "type": "Site",
         "owner": "internal-data-bridge"
       }
@@ -713,7 +802,7 @@
   },
   "status": {
     "plugins": {},
-    "PLUGINS_HASH": "bf8349cc978ada480ad5b63504453131"
+    "PLUGINS_HASH": "fee074e4e0e3bd4043f8a982db9b617d"
   },
   "componentDataDependencies": {
     "nodes": {
