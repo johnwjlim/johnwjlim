@@ -13,6 +13,14 @@ const Subtitle = styled.p`
   line-height: 1.3;
   max-width: 800px;
   text-rendering: optimizeLegibility;
+
+  @media (max-width: 768px) {
+    font-size: 16pt;
+  }
+
+  @media (max-width: 425px) {
+    font-size: 12pt;
+  }
 `;
 
 class IndexPage extends React.Component{
@@ -25,11 +33,11 @@ class IndexPage extends React.Component{
       <Layout>
         <Typist
           strings={[
-            // 'I am a front end web dev',
-            // 'I am a UX designer'
-            'Test legibility',
-            'Test typist forward type',
-            'Test typist backward type',
+            'I am a front end web dev',
+            'I am a UX engineer'
+            // 'Test legibility',
+            // 'Test typist forward type',
+            // 'Test typist backward type',
           ]}
         />
         <Subtitle>I'm currently studying Human Computer Interaction at the University of Washington.</Subtitle>

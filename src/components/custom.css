@@ -52,6 +52,18 @@ h1, h2, h3, h4, h5 {
     margin: 2.2rem 0;
     font-family: "Lora";
     font-weight: 500;
-    font-size: 52pt;
+    font-size: 48pt;
     color: #484848;
+}
+
+@media (max-width: 768px) {
+    .wrap {
+        font-size: 28pt;
+    }
+}
+
+@media (max-width: 425px) {
+    .wrap {
+        font-size: 18pt;
+    }
 }
