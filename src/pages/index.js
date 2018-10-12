@@ -25,9 +25,11 @@ class IndexPage extends React.Component{
       <Layout>
         <Typist
           strings={[
-            'Test typist text',
-            'Test typist backspace',
-            'Test check legibility'
+            // 'I am a front end web dev',
+            // 'I am a UX designer'
+            'Test legibility',
+            'Test typist forward type',
+            'Test typist backward type',
           ]}
         />
         <Subtitle>I'm currently studying Human Computer Interaction at the University of Washington.</Subtitle>

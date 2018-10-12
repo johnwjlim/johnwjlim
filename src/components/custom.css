@@ -50,9 +50,8 @@ h1, h2, h3, h4, h5 {
 
 .wrap {
     margin: 2.2rem 0;
-    font-family: "Avenir Next Demi";
+    font-family: "Lora";
     font-weight: 500;
-    font-size: 48pt;
-    color: #009688;
-
+    font-size: 52pt;
+    color: #484848;
 }

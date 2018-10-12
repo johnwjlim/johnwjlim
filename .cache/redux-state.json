@@ -521,11 +521,127 @@
         "owner": "internal-data-bridge"
       }
     },
+    "Plugin gatsby-source-contentful": {
+      "resolve": "/Users/wjlim/code/johnwjlim/node_modules/gatsby-source-contentful",
+      "id": "Plugin gatsby-source-contentful",
+      "name": "gatsby-source-contentful",
+      "version": "2.0.3",
+      "pluginOptions": {
+        "plugins": [],
+        "spaceId": "1mwb8avtjcbe",
+        "accessToken": "d83b2c83ed68c141ed411a7aad1a336e70f06f668a0ed0896bf97c3b3fbcc1d2",
+        "host": "cdn.contentful.com",
+        "environment": "master"
+      },
+      "nodeAPIs": [
+        "setFieldsOnGraphQLNodeType",
+        "sourceNodes",
+        "onPreExtractQueries"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/Users/wjlim/code/johnwjlim/node_modules/gatsby-source-contentful",
+      "packageJson": {
+        "name": "gatsby-source-contentful",
+        "description": "Gatsby source plugin for building websites using the Contentful CMS as a data source",
+        "version": "2.0.3",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "gatsby-source-plugin"
+        ],
+        "author": {
+          "name": "Marcus Ericsson",
+          "email": "mericsson@gmail.com",
+          "url": "mericsson.com"
+        },
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "@babel/runtime",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "axios",
+            "version": "^0.18.0"
+          },
+          {
+            "name": "base64-img",
+            "version": "^1.0.3"
+          },
+          {
+            "name": "bluebird",
+            "version": "^3.5.0"
+          },
+          {
+            "name": "contentful",
+            "version": "^6.1.0"
+          },
+          {
+            "name": "deep-map",
+            "version": "^1.5.0"
+          },
+          {
+            "name": "fs-extra",
+            "version": "^4.0.2"
+          },
+          {
+            "name": "gatsby-plugin-sharp",
+            "version": "^2.0.6"
+          },
+          {
+            "name": "is-online",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "json-stringify-safe",
+            "version": "^5.0.1"
+          },
+          {
+            "name": "lodash",
+            "version": "^4.17.10"
+          },
+          {
+            "name": "qs",
+            "version": "^6.4.0"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "@babel/cli",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "@babel/core",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.1.4"
+          }
+        ],
+        "peerDependencies": [
+          {
+            "name": "gatsby",
+            "version": ">2.0.0-alpha"
+          }
+        ],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "8f6d00153eb51e3ae5d70316b621ddb2",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
     "Plugin default-site-plugin": {
       "resolve": "/Users/wjlim/code/johnwjlim",
       "id": "Plugin default-site-plugin",
       "name": "default-site-plugin",
-      "version": "ae891e1f3e97ca54b40598b7c1c25254",
+      "version": "4198b5158fba701e611a685deb6a2c98",
       "pluginOptions": {
         "plugins": []
       },
@@ -568,6 +684,10 @@
             "version": "^3.0.0"
           },
           {
+            "name": "gatsby-source-contentful",
+            "version": "^2.0.3"
+          },
+          {
             "name": "react",
             "version": "^16.5.1"
           },
@@ -601,7 +721,7 @@
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "f6e1dc52cd1856bbcb6808d5225e778d",
+        "contentDigest": "2ffa81ef5b1b36604092cda9c3f7a3e0",
         "type": "SitePlugin",
         "owner": "internal-data-bridge"
       }
@@ -709,14 +829,27 @@
       "host": "localhost",
       "pathPrefix": "",
       "polyfill": true,
-      "buildTime": "2018-10-12T17:13:12.673Z",
+      "buildTime": "2018-10-12T17:42:42.068Z",
       "id": "Site",
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "a934b7afce16e2cf3f4b5fc432c820fd",
+        "contentDigest": "3290f1f086c6848cf006438aaf699b28",
         "type": "Site",
         "owner": "internal-data-bridge"
+      }
+    },
+    "28cc3e3c-e1ce-5756-acad-80558aff0592": {
+      "id": "28cc3e3c-e1ce-5756-acad-80558aff0592",
+      "parent": null,
+      "children": [],
+      "name": "Post",
+      "displayField": "title",
+      "description": "Pretty much a blog post with markdown, a hero image and thumbnail",
+      "internal": {
+        "type": "ContentfulContentType",
+        "contentDigest": "981686b38d6bd4f8224504e616f5c550",
+        "owner": "gatsby-source-contentful"
       }
     },
     "SitePage /404/": {
@@ -801,8 +934,12 @@
     }
   },
   "status": {
-    "plugins": {},
-    "PLUGINS_HASH": "fee074e4e0e3bd4043f8a982db9b617d"
+    "plugins": {
+      "gatsby-source-contentful": {
+        "1mwb8avtjcbe-master-cdn.contentful.com": "wonDrcKnRgcSOF4-wrDCgcKefWzCgsOxRwzDjnHCjcOrw73CrsKOGsKPcMK2JQXCjg"
+      }
+    },
+    "PLUGINS_HASH": "72d63840d743184a4aa1889da29ffba6"
   },
   "componentDataDependencies": {
     "nodes": {
