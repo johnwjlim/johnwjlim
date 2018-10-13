@@ -9,6 +9,11 @@
 }
 
 @font-face {
+    font-family: "Avenir Next Ultra Light";
+    src: url("../fonts/AvenirNextLTPro-UltLt.otf")format("opentype");
+}
+
+@font-face {
     font-family: "Avenir Next Medium";
     src: url("../fonts/AvenirNextLTPro-Medium.otf")format("opentype");
 }
