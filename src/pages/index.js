@@ -1,9 +1,12 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import { Link, graphql } from 'gatsby'
 import styled from 'styled-components'
 
 import Layout from '../components/layout'
 import Typist from '../components/typist'
+
+import Card from '../components/card'
+import Line from '../components/line'
 
 const Subtitle = styled.p`
   font-family: "Avenir Next Light";
@@ -20,6 +23,17 @@ const Subtitle = styled.p`
 
   @media (max-width: 425px) {
     font-size: 12pt;
+  }
+`;
+
+const CardGrid = styled.div`
+  display: flex;
+  margin-top: 4em;
+  justify-content: center;
+  // flex-wrap: wrap;
+
+  @media (max-width: 768px) {
+    display: block;
   }
 `;
 
@@ -41,13 +55,26 @@ class IndexPage extends React.Component{
           ]}
         />
         <Subtitle>I'm currently studying Human Computer Interaction at the University of Washington.</Subtitle>
-        {/* <h1>Hi people</h1>
-        <p>Welcome to your new Gatsby site.</p>
-        <p>Now go build something great.</p>
-        <Link to="/page-2/">Go to page 2</Link> */}
+        <CardGrid>
+          <Card image={this.props.data.nimbus}/>
+          <Line/>
+          <Card image={this.props.data.nimbus}/>
+        </CardGrid>
       </Layout>
     )
   }
 }
 
-export default IndexPage
+export default IndexPage;
+
+export const query = graphql`
+  query {
+    nimbus:file(relativePath: {eq:"images/placeholder-thumb.png"}) {
+      childImageSharp {
+        fluid(maxWidth:512) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`;

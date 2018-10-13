@@ -56,6 +56,11 @@ h1, h2, h3, h4, h5 {
     color: #484848;
 }
 
+.gatsby-image-outer-wrapper, 
+.gatsby-image-wrapper {
+  height: 100%; 
+}
+
 @media (max-width: 768px) {
     .wrap {
         font-size: 28pt;
