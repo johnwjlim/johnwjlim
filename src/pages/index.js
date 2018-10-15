@@ -37,6 +37,10 @@ const CardGrid = styled.div`
   }
 `;
 
+const Col = styled.div`
+  flex: 1;
+`;
+
 class IndexPage extends React.Component{
   constructor() {
     super();
@@ -49,16 +53,17 @@ class IndexPage extends React.Component{
           strings={[
             'I am a front end web dev',
             'I am a UX engineer'
-            // 'Test legibility',
-            // 'Test typist forward type',
-            // 'Test typist backward type',
           ]}
         />
         <Subtitle>I'm currently studying Human Computer Interaction at the University of Washington.</Subtitle>
         <CardGrid>
-          <Card image={this.props.data.nimbus}/>
+          <Col>
+           <Card image={this.props.data.nimbus} title={"Nimbus "} subtitle={"A mobile app design that aims to redefine access to the outdoors"}/>
+           </Col>
           <Line/>
-          <Card image={this.props.data.nimbus}/>
+          <Col>
+            <Card image={this.props.data.nimbus} title={"Ohana "} subtitle={"An Amazon Alexa skill that aims to simplify the division of household chores"}/>
+          </Col>
         </CardGrid>
       </Layout>
     )

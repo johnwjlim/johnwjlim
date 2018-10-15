@@ -54,16 +54,21 @@ h1, h2, h3, h4, h5 {
 }
 
 .wrap {
-    margin: 2.2rem 0;
     font-family: "Lora";
     font-weight: 500;
     font-size: 48pt;
     color: #484848;
+    margin-bottom: 2.2rem;
+    margin-top: 4.3rem;
 }
 
 .gatsby-image-outer-wrapper, 
 .gatsby-image-wrapper {
   height: 100%; 
+}
+
+.col {
+    flex: 1;
 }
 
 @media (max-width: 768px) {

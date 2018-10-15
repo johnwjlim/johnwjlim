@@ -1,13 +1,16 @@
 import React from 'react'
 import styled from 'styled-components'
 import Img from 'gatsby-image'
+import { Link } from 'gatsby'
 
-const Container = styled.div`
-  display: block;
+const Container = styled.span`
+  // flex-basis: 100%;
+  // flex: 1;
+  // display: block;
 `
 
 const ImageWrapper = styled.div`;
-  flex-basis: 512px;
+  // flex-basis: max-content;
   margin: 1rem;
   display: block;
 `;
@@ -36,15 +39,17 @@ class Card extends React.Component {
 
   render() {
     return (
-      <Container>
-        <ImageWrapper>
-          <Img fluid={this.props.image.childImageSharp.fluid} />
-        </ImageWrapper>
-        <TextCard>
-          <Title>Nimbus </Title>
-          <Subtitle>A mobile app design that aims to redefine access to the outdoors.</Subtitle>
-        </TextCard>
-      </Container>
+      <Link to='/page-2' style={{textDecoration: "none"}}>
+        <Container>
+          <ImageWrapper>
+            <Img fluid={this.props.image.childImageSharp.fluid} />
+          </ImageWrapper>
+          <TextCard>
+            <Title>{this.props.title}</Title>
+            <Subtitle>{this.props.subtitle}</Subtitle>
+          </TextCard>
+        </Container>
+      </Link>
       
     )
   }

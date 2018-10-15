@@ -41,7 +41,7 @@ class Header extends React.Component {
       <div
         style={{
           marginTop: '0.6rem',
-          marginBottom: '5rem',
+          marginBottom: '1.5rem',
         }}
       >
         <Container>
