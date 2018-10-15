@@ -33,15 +33,13 @@ class Card extends React.Component {
   render() {
     return (
       <Link to='/page-2' style={{textDecoration: "none"}}>
-        <div>
-          <ImageWrapper>
-            <Img fluid={this.props.image.childImageSharp.fluid} />
-          </ImageWrapper>
-          <TextCard>
-            <Title>{this.props.title}</Title>
-            <Subtitle>{this.props.subtitle}</Subtitle>
-          </TextCard>
-        </div>
+        <ImageWrapper>
+          <Img fluid={this.props.image.childImageSharp.fluid} />
+        </ImageWrapper>
+        <TextCard>
+          <Title>{this.props.title}</Title>
+          <Subtitle>{this.props.subtitle}</Subtitle>
+        </TextCard>      
       </Link>
       
     )
