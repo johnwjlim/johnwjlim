@@ -3,14 +3,7 @@ import styled from 'styled-components'
 import Img from 'gatsby-image'
 import { Link } from 'gatsby'
 
-const Container = styled.span`
-  // flex-basis: 100%;
-  // flex: 1;
-  // display: block;
-`
-
 const ImageWrapper = styled.div`;
-  // flex-basis: max-content;
   margin: 1rem;
   display: block;
 `;
@@ -40,7 +33,7 @@ class Card extends React.Component {
   render() {
     return (
       <Link to='/page-2' style={{textDecoration: "none"}}>
-        <Container>
+        <div>
           <ImageWrapper>
             <Img fluid={this.props.image.childImageSharp.fluid} />
           </ImageWrapper>
@@ -48,7 +41,7 @@ class Card extends React.Component {
             <Title>{this.props.title}</Title>
             <Subtitle>{this.props.subtitle}</Subtitle>
           </TextCard>
-        </Container>
+        </div>
       </Link>
       
     )
