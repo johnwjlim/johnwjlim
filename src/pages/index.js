@@ -1,9 +1,12 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import { graphql } from 'gatsby'
 import styled from 'styled-components'
 
 import Layout from '../components/layout'
 import Typist from '../components/typist'
+
+import Card from '../components/card'
+import Line from '../components/line'
 
 const Subtitle = styled.p`
   font-family: "Avenir Next Light";
@@ -23,6 +26,21 @@ const Subtitle = styled.p`
   }
 `;
 
+const CardGrid = styled.div`
+  display: flex;
+  margin-top: 4em;
+  justify-content: center;
+  // flex-wrap: wrap;
+
+  @media (max-width: 768px) {
+    display: block;
+  }
+`;
+
+const Col = styled.div`
+  flex: 1;
+`;
+
 class IndexPage extends React.Component{
   constructor() {
     super();
@@ -35,19 +53,33 @@ class IndexPage extends React.Component{
           strings={[
             'I am a front end web dev',
             'I am a UX engineer'
-            // 'Test legibility',
-            // 'Test typist forward type',
-            // 'Test typist backward type',
           ]}
         />
         <Subtitle>I'm currently studying Human Computer Interaction at the University of Washington.</Subtitle>
-        {/* <h1>Hi people</h1>
-        <p>Welcome to your new Gatsby site.</p>
-        <p>Now go build something great.</p>
-        <Link to="/page-2/">Go to page 2</Link> */}
+        <CardGrid>
+          <Col>
+           <Card image={this.props.data.nimbus} title={"Nimbus "} subtitle={"A mobile app design that aims to redefine access to the outdoors"}/>
+           </Col>
+          <Line/>
+          <Col>
+            <Card image={this.props.data.nimbus} title={"Ohana "} subtitle={"An Amazon Alexa skill that aims to simplify the division of household chores"}/>
+          </Col>
+        </CardGrid>
       </Layout>
     )
   }
 }
 
-export default IndexPage
+export default IndexPage;
+
+export const query = graphql`
+  query {
+    nimbus:file(relativePath: {eq:"images/placeholder-thumb.png"}) {
+      childImageSharp {
+        fluid(maxWidth:512) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`;
