@@ -29,16 +29,6 @@
 }
 
 @font-face {
-    font-family: "Caslon";
-    src: url("../fonts/ACaslonPro-Regular.otf")format("opentype");
-}
-
-@font-face {
-    font-family: "Caslon Semi Bold";
-    src: url("../fonts/ACaslonPro-Semibold.otf")format("opentype");
-}
-
-@font-face {
     font-family: "Lora";
     src: url("../fonts/Lora-Regular.ttf")format("truetype");
 }
@@ -65,10 +55,6 @@ h1, h2, h3, h4, h5 {
 .gatsby-image-outer-wrapper, 
 .gatsby-image-wrapper {
   height: 100%; 
-}
-
-.col {
-    flex: 1;
 }
 
 @media (max-width: 768px) {

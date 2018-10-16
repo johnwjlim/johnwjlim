@@ -37,7 +37,7 @@ const CardGrid = styled.div`
   }
 `;
 
-const Col = styled.div`
+const Column = styled.div`
   flex: 1;
 `;
 
@@ -57,13 +57,13 @@ class IndexPage extends React.Component{
         />
         <Subtitle>I'm currently studying Human Computer Interaction at the University of Washington.</Subtitle>
         <CardGrid>
-          <Col>
+          <Column>
            <Card image={this.props.data.nimbus} title={"Nimbus "} subtitle={"A mobile app design that aims to redefine access to the outdoors"}/>
-           </Col>
+           </Column>
           <Line/>
-          <Col>
+          <Column>
             <Card image={this.props.data.nimbus} title={"Ohana "} subtitle={"An Amazon Alexa skill that aims to simplify the division of household chores"}/>
-          </Col>
+          </Column>
         </CardGrid>
       </Layout>
     )
