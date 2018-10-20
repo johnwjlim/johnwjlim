@@ -9,6 +9,11 @@
 }
 
 @font-face {
+    font-family: "Avenir Next Light Italic";
+    src: url("../fonts/AvenirNextLTPro-LightItalic.otf")format("opentype");
+}
+
+@font-face {
     font-family: "Avenir Next Ultra Light";
     src: url("../fonts/AvenirNextLTPro-UltLt.otf")format("opentype");
 }
@@ -34,6 +39,11 @@
 }
 
 @font-face {
+    font-family: "Lora Italic";
+    src: url("../fonts/Lora-Italic.ttf")format("truetype");
+}
+
+@font-face {
     font-family: "Lora Bold";
     src: url("../fonts/Lora-Bold.ttf")format("truetype");
 }
@@ -43,14 +53,21 @@ h1, h2, h3, h4, h5 {
     color: #484848;
 }
 
+p {
+    font-family: "Lora";
+    color: #484848;
+    font-size: 14pt;
+}
+
 .wrap {
     font-family: "Lora";
     font-weight: 500;
-    font-size: 48pt;
+    font-size: 42pt;
     color: #484848;
     margin-bottom: 2.2rem;
     margin-top: 4.3rem;
 }
+
 
 .gatsby-image-outer-wrapper, 
 .gatsby-image-wrapper {

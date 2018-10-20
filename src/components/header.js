@@ -3,7 +3,7 @@ import { Link } from 'gatsby'
 
 import styled from 'styled-components'
 
-const Title = styled.h2`
+const Title = styled.h3`
   margin: 0;
 `;
 
@@ -17,7 +17,8 @@ const Container = styled.div`
 
 const Nav = styled.div`
   display: flex;
-  margin-top: 0.4rem;
+  // margin-top: 0.35rem;
+  padding-top: 0.33em;
 `;
 
 const StyledLink = styled(Link)`
@@ -28,7 +29,8 @@ const StyledLink = styled(Link)`
 const Subtitle = styled.h4`
   font-family: "Avenir Next Light";
   color: #484848;
-  margin: 0 1rem;
+  margin: 0 0.8rem;
+  font-size: 16px;
 `;
 
 class Header extends React.Component {
@@ -40,8 +42,8 @@ class Header extends React.Component {
     return (
       <div
         style={{
-          marginTop: '0.6rem',
-          marginBottom: '1.5rem',
+          marginTop: '0.5em',
+          marginBottom: '0.6rem',
         }}
       >
         <Container>

@@ -8,13 +8,20 @@ import Typist from '../components/typist'
 import Card from '../components/card'
 import Line from '../components/line'
 
+const Container = styled.div`
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0px 1.0875rem 1.5rem;
+  padding-top: 0;
+`;
+
 const Subtitle = styled.p`
   font-family: "Avenir Next Light";
   font-weight: 100;
-  font-size: 22pt;
-  color: #484848;
+  font-size: 18pt;
+  color: #767676;
   line-height: 1.3;
-  max-width: 800px;
+  max-width: 700px;
   text-rendering: optimizeLegibility;
 
   @media (max-width: 768px) {
@@ -49,22 +56,24 @@ class IndexPage extends React.Component{
   render() {
     return (
       <Layout>
-        <Typist
-          strings={[
-            'I am a front end web dev',
-            'I am a UX engineer'
-          ]}
-        />
-        <Subtitle>I'm currently studying Human Computer Interaction at the University of Washington.</Subtitle>
-        <CardGrid>
-          <Column>
-           <Card image={this.props.data.nimbus} title={"Nimbus "} subtitle={"A mobile app design that aims to redefine access to the outdoors"}/>
-           </Column>
-          <Line/>
-          <Column>
-            <Card image={this.props.data.nimbus} title={"Ohana "} subtitle={"An Amazon Alexa skill that aims to simplify the division of household chores"}/>
-          </Column>
-        </CardGrid>
+        {/* <Container> */}
+          <Typist
+            strings={[
+              'I am a front end web dev',
+              'I am a UX engineer'
+            ]}
+          />
+          <Subtitle>I'm currently studying Human Computer Interaction at the University of Washington.</Subtitle>
+          <CardGrid>
+            <Column>
+            <Card image={this.props.data.nimbus} title={"Nimbus "} subtitle={"A mobile app design that aims to redefine access to the outdoors"}/>
+            </Column>
+            <Line/>
+            <Column>
+              <Card image={this.props.data.nimbus} title={"Ohana "} subtitle={"An Amazon Alexa skill that aims to simplify the division of household chores"}/>
+            </Column>
+          </CardGrid>
+        {/* </Container> */}
       </Layout>
     )
   }

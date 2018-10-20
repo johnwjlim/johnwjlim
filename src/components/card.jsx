@@ -16,12 +16,14 @@ const TextCard = styled.div`
 const Title = styled.h2`
   display: inline;
   font-family: "Avenir Next Medium";
+  font-size: 24px;
 `;
 
 const Subtitle = styled.h3`
   display: inline;
   font-family: "Avenir Next Ultra Light";
-  font-size: 1.5em;
+  font-size: 24px;
+  line-height: 1.2;
   color: #767676;
 `;
 
