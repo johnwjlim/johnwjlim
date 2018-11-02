@@ -1,18 +1,20 @@
 import React from 'react'
-import { graphql } from 'gatsby'
+import { graphql, Link } from 'gatsby'
 import styled from 'styled-components'
 
 import Layout from '../components/layout'
 import Typist from '../components/typist'
 
+import Header from '../components/header'
 import Card from '../components/card'
 import Line from '../components/line'
+
 
 const Container = styled.div`
   max-width: 1080px;
   margin: 0 auto;
   padding: 0px 1.0875rem 1.5rem;
-  padding-top: 0;
+  padding-top: 2em;
 `;
 
 const Subtitle = styled.p`
@@ -37,7 +39,6 @@ const CardGrid = styled.div`
   display: flex;
   margin-top: 4em;
   justify-content: center;
-  // flex-wrap: wrap;
 
   @media (max-width: 768px) {
     display: block;
@@ -48,6 +49,10 @@ const Column = styled.div`
   flex: 1;
 `;
 
+const StyledLink = styled(Link)`
+  text-decoration: none;
+`;
+
 class IndexPage extends React.Component{
   constructor() {
     super();
@@ -56,7 +61,7 @@ class IndexPage extends React.Component{
   render() {
     return (
       <Layout>
-        {/* <Container> */}
+        <Container>
           <Typist
             strings={[
               'I am a front end web dev',
@@ -66,14 +71,14 @@ class IndexPage extends React.Component{
           <Subtitle>I'm currently studying Human Computer Interaction at the University of Washington.</Subtitle>
           <CardGrid>
             <Column>
-            <Card image={this.props.data.nimbus} title={"Nimbus "} subtitle={"A mobile app design that aims to redefine access to the outdoors"}/>
+              <Card image={this.props.data.nimbus} title={"Nimbus "} subtitle={"A mobile app design that aims to redefine access to the outdoors"}/>
             </Column>
             <Line/>
             <Column>
               <Card image={this.props.data.nimbus} title={"Ohana "} subtitle={"An Amazon Alexa skill that aims to simplify the division of household chores"}/>
             </Column>
           </CardGrid>
-        {/* </Container> */}
+        </Container>
       </Layout>
     )
   }

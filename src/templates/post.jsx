@@ -4,6 +4,7 @@ import Img from 'gatsby-image'
 import styled from 'styled-components'
 
 import Layout from '../components/layout'
+import Header from '../components/header'
 
 const Container = styled.div`
   max-width: 1080px;
@@ -16,7 +17,6 @@ const ImageWrapper = styled.div`
   margin-bottom: 3em;
 `;
 
-
 const Content = styled.div`
   max-width: 780px;
   margin: 0 auto;
@@ -25,7 +25,7 @@ const Content = styled.div`
 const Tagline = styled.h2`
   font-size: 32px;
   padding-bottom: 0.5em;
-  // max-width: 32em;
+  max-width: 32em;
 `;
 
 const Timeline = styled.p`
@@ -41,9 +41,9 @@ const Detail = styled.div`
 `;
 
 const Markdown = styled.div`
-  // margin: 0 auto;
   margin-top: 2em;
-  max-width: 32rem;
+  // max-width: 33.3rem;
+  max-width: 33rem;
 `;
 
 class PostTemplate extends React.Component {
@@ -54,6 +54,8 @@ class PostTemplate extends React.Component {
   render() {
     const post = this.props.data.contentfulPost;
     return (
+      <>
+      {/* <Header siteTitle={"John Lim"} style={{zIndex: 2}} /> */}
       <Layout>
         <ImageWrapper>
           <Img style={{maxHeight: "450px"}} fluid={post.hero.fluid} />
@@ -67,6 +69,7 @@ class PostTemplate extends React.Component {
           <Markdown dangerouslySetInnerHTML={{__html: post.body.childMarkdownRemark.html}} />
         </Content>
       </Layout>
+      </>
     )
   }
 }

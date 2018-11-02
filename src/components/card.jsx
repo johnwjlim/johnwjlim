@@ -34,7 +34,7 @@ class Card extends React.Component {
 
   render() {
     return (
-      <Link to='/page-2' style={{textDecoration: "none"}}>
+      <Link to='/nimbus' style={{textDecoration: "none"}}>
         <ImageWrapper>
           <Img fluid={this.props.image.childImageSharp.fluid} />
         </ImageWrapper>

@@ -29,11 +29,10 @@ const Layout = ({ children }) => (
         >
           <html lang="en" />
         </Helmet>
-        <Header siteTitle={"John Lim"} />
+        <Header siteTitle={"John Lim"} css={{zIndex: 2}} />
         <div
           style={{
             margin: '0 auto',
-            maxWidth: 1080,
             padding: '0px 1.0875rem 1.5rem',
             paddingTop: 0,
           }}
