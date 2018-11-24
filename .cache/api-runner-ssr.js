@@ -1,11 +1,11 @@
 var plugins = [{
-      plugin: require('/Users/wenjunlim/Git/johnwjlim/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
+      plugin: require('/Users/wjlim/code/johnwjlim/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
       options: {"plugins":[]},
     },{
-      plugin: require('/Users/wenjunlim/Git/johnwjlim/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
+      plugin: require('/Users/wjlim/code/johnwjlim/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
       options: {"plugins":[],"name":"John Lim","short_name":"johnwjlim","start_url":"/","background_color":"#663399","theme_color":"#663399","display":"minimal-ui"},
     },{
-      plugin: require('/Users/wenjunlim/Git/johnwjlim/node_modules/gatsby-plugin-styled-components/gatsby-ssr'),
+      plugin: require('/Users/wjlim/code/johnwjlim/node_modules/gatsby-plugin-styled-components/gatsby-ssr'),
       options: {"plugins":[]},
     }]
 // During bootstrap, we write requires at top of this file which looks like:

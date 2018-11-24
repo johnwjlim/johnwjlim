@@ -48,6 +48,8 @@
     src: url("../fonts/Lora-Bold.ttf")format("truetype");   
 }
 
+
+
 h1, h2, h3, h4, h5 {
     font-family: "Avenir Next Medium";
     color: #484848;
