@@ -25,6 +25,11 @@
         "path": "/nimbus/"
     },
     {
+        "componentChunkName": "component---src-pages-ohana-jsx",
+        "jsonName": "ohana-05d",
+        "path": "/ohana/"
+    },
+    {
         "componentChunkName": "component---src-pages-page-2-js",
         "jsonName": "page-2-fbc",
         "path": "/page-2/"

@@ -5,7 +5,8 @@ import Headroom from 'react-headroom'
 import styled from 'styled-components'
 
 const Title = styled.h3`
-  margin: 0;
+  margin: auto 0;
+  line-height: 1.7;
 `;
 
 const Fixed = styled.div`
@@ -17,19 +18,19 @@ const Fixed = styled.div`
   background-color: white;
 `;
 
-
 const Container = styled.div`
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
   max-width: 1080px;
-  padding: 1.45rem 1.0875rem;  
+  // padding: 1.45rem 1.0875rem;  
+  padding: 1.2rem 1.0875rem;
 `;
 
 const Nav = styled.div`
   display: flex;
   // margin-top: 0.35rem;
-  padding-top: 0.33em;
+  padding-top: 0.32em;
 `;
 
 const StyledLink = styled(Link)`
@@ -37,11 +38,11 @@ const StyledLink = styled(Link)`
   text-decoration: none;
 `
 
-const Subtitle = styled.h4`
-  font-family: "Avenir Next Light";
+const Subtitle = styled.p`
+  font-family: "Proxima Nova Light";
   color: #484848;
   margin: 0 0.8rem;
-  font-size: 16px;
+  // font-size: 20px;
 `;
 
 class Header extends React.Component {
