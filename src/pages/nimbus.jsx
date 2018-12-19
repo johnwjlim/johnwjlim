@@ -6,16 +6,11 @@ import styled from 'styled-components'
 import Layout from '../components/layout'
 import Header from '../components/header'
 
-import hero from "../images/nimbus-hero.jpg"
-import SmallHero from "../images/nimbus-hero-small.png"
-import { runInThisContext } from 'vm';
-
 const Container = styled.div`
   margin-top: 5em;
 `;
 
 const ImageWrapper = styled.div`
-  // margin-top: 3em;
   margin-bottom: 3.5em;
 `;
 
@@ -28,7 +23,6 @@ const Tagline = styled.h2`
   font-family: "Proxima Nova Semi Bold";
   letter-spacing: -1.5px;
   font-size: 48px;
-  // line-height: 1.2;
 `;
 
 const Timeline = styled.p`
@@ -40,7 +34,6 @@ const Timeline = styled.p`
 `;
 
 const Detail = styled.div`
-  // max-width: 10.8em;
   margin-bottom: 2em;
 `;
 
@@ -74,10 +67,6 @@ class Nimbus extends React.Component {
         <Container>
           <ImageWrapper>
             <Img style={{maxHeight: "500px", minHeight:"350px"}} fluid={this.props.data.hero.childImageSharp.fluid} />
-            {/* <picture>
-              <source media="(max-width: 768px)" srcset={SmallHero} />
-              <img src={hero}/>
-            </picture> */}
           </ImageWrapper>
           <Content>
             <Tagline>How do you expand access to the outdoors for the interconnected society of today?</Tagline>
