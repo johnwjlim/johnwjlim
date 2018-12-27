@@ -18,9 +18,8 @@ const Container = styled.div`
 `;
 
 const Subtitle = styled.p`
-  font-family: "Avenir Next Light";
-  font-weight: 100;
-  font-size: 18pt;
+  font-family: "Proxima Nova Light";
+  font-size: 20pt;
   color: #767676;
   line-height: 1.3;
   max-width: 700px;
@@ -65,17 +64,17 @@ class IndexPage extends React.Component{
           <Typist
             strings={[
               'I am a front end web dev',
-              'I am a UX engineer'
+              'I am a UX designer'
             ]}
           />
           <Subtitle>I'm currently studying Human Computer Interaction at the University of Washington.</Subtitle>
           <CardGrid>
             <Column>
-              <Card image={this.props.data.nimbus} title={"Nimbus "} subtitle={"A mobile app design that aims to redefine access to the outdoors"}/>
+              <Card image={this.props.data.nimbus} link={'/nimbus'} title={"Nimbus "} subtitle={"A mobile app design that aims to redefine access to the outdoors"}/>
             </Column>
             <Line/>
             <Column>
-              <Card image={this.props.data.nimbus} title={"Ohana "} subtitle={"An Amazon Alexa skill that aims to simplify the division of household chores"}/>
+              <Card image={this.props.data.ohana} link={'/ohana'} title={"Ohana "} subtitle={"An Amazon Alexa skill that aims to simplify the division of household chores"}/>
             </Column>
           </CardGrid>
         </Container>
@@ -91,6 +90,13 @@ export const query = graphql`
     nimbus:file(relativePath: {eq:"images/placeholder-thumb.png"}) {
       childImageSharp {
         fluid(maxWidth:512) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    ohana:file(relativePath: {eq:"images/ohana-thumb.png"}) {
+      childImageSharp {
+        fluid(maxWidth: 512) {
           ...GatsbyImageSharpFluid
         }
       }

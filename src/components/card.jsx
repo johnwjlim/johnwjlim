@@ -13,18 +13,25 @@ const TextCard = styled.div`
   margin-bottom: 2rem;
 `;
 
-const Title = styled.h2`
+const Title = styled.h4`
   display: inline;
-  font-family: "Avenir Next Medium";
-  font-size: 24px;
+  font-size: 26px;
+
+  @media (max-width: 425px) {
+    font-size: 18px;
+  }
 `;
 
-const Subtitle = styled.h3`
+const Subtitle = styled.p`
   display: inline;
-  font-family: "Avenir Next Ultra Light";
-  font-size: 24px;
+  font-family: "Proxima Nova Light";
+  font-size: 26px;
   line-height: 1.2;
   color: #767676;
+
+  @media (max-width: 425px) {
+    font-size: 18px;
+  }
 `;
 
 class Card extends React.Component {
@@ -34,7 +41,7 @@ class Card extends React.Component {
 
   render() {
     return (
-      <Link to='/nimbus' style={{textDecoration: "none"}}>
+      <Link to={this.props.link} style={{textDecoration: "none"}}>
         <ImageWrapper>
           <Img fluid={this.props.image.childImageSharp.fluid} />
         </ImageWrapper>
