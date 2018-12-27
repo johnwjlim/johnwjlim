@@ -3,7 +3,6 @@ const preferDefault = m => m && m.default || m
 
 
 exports.components = {
-  "component---src-templates-post-jsx": preferDefault(require("/Users/wjlim/code/johnwjlim/src/templates/post.jsx")),
   "component---cache-dev-404-page-js": preferDefault(require("/Users/wjlim/code/johnwjlim/.cache/dev-404-page.js")),
   "component---src-pages-404-js": preferDefault(require("/Users/wjlim/code/johnwjlim/src/pages/404.js")),
   "component---src-pages-index-js": preferDefault(require("/Users/wjlim/code/johnwjlim/src/pages/index.js")),

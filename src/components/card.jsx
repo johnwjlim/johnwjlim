@@ -16,6 +16,10 @@ const TextCard = styled.div`
 const Title = styled.h4`
   display: inline;
   font-size: 26px;
+
+  @media (max-width: 425px) {
+    font-size: 18px;
+  }
 `;
 
 const Subtitle = styled.p`
@@ -24,6 +28,10 @@ const Subtitle = styled.p`
   font-size: 26px;
   line-height: 1.2;
   color: #767676;
+
+  @media (max-width: 425px) {
+    font-size: 18px;
+  }
 `;
 
 class Card extends React.Component {

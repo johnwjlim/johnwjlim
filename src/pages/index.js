@@ -64,7 +64,7 @@ class IndexPage extends React.Component{
           <Typist
             strings={[
               'I am a front end web dev',
-              'I am a UX engineer'
+              'I am a UX designer'
             ]}
           />
           <Subtitle>I'm currently studying Human Computer Interaction at the University of Washington.</Subtitle>
@@ -74,7 +74,7 @@ class IndexPage extends React.Component{
             </Column>
             <Line/>
             <Column>
-              <Card image={this.props.data.nimbus} link={'/ohana'} title={"Ohana "} subtitle={"An Amazon Alexa skill that aims to simplify the division of household chores"}/>
+              <Card image={this.props.data.ohana} link={'/ohana'} title={"Ohana "} subtitle={"An Amazon Alexa skill that aims to simplify the division of household chores"}/>
             </Column>
           </CardGrid>
         </Container>
@@ -90,6 +90,13 @@ export const query = graphql`
     nimbus:file(relativePath: {eq:"images/placeholder-thumb.png"}) {
       childImageSharp {
         fluid(maxWidth:512) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    ohana:file(relativePath: {eq:"images/ohana-thumb.png"}) {
+      childImageSharp {
+        fluid(maxWidth: 512) {
           ...GatsbyImageSharpFluid
         }
       }
