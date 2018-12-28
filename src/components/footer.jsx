@@ -31,7 +31,7 @@ class Footer extends React.Component {
   render() {
     return (
       <Container>
-        <Text>Hacked together with <a href={"https://www.gatsbyjs.org/"} target={"_blank"}>GatsbyJS</a> in a bunch of coffee houses around Seattle.</Text>
+        <Text>Built with <a href={"https://www.gatsbyjs.org/"} target={"_blank"}>GatsbyJS</a> in a bunch of coffee houses around Seattle.</Text>
       </Container>
     )
   }
