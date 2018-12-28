@@ -94,12 +94,15 @@ class Nimbus extends React.Component {
               <Timeline>Timeline: Spring 2018</Timeline>
             </Detail>
             <Section>
-              <Oblique>This was a group project done in a Rapid Prototyping class led by Brian Fling. The following is a write-up of my experience during this project.</Oblique>
+              <Oblique>This was a group project done in a Rapid Prototyping class led by Brian Fling. The following is a write-up of my experience during this project. TL;DR, we made an app to connect outdoor enthusiasts with one another to partake in outdoor experiences. We iterated and tested. A lot. (as the class title "Rapid Prototyping" would suggest) And I think we managed to prove our prof wrong on what our users wanted.</Oblique>
+            </Section>
+            <Section>
+              <Heading>A Little Background</Heading>
               <p>The year is 2018. National Park visits in the United States have topped 200 million and social media usage among young Americans is at an all time high. While our public lands are purportedly free and open to all, the sheer remoteness of many of our favorite outdoor locations means that access is often limited to the few who have cars or those who have friends or family who share a similar passion for the outdoors. </p>
               <p>As a group, we each have had experiences where we wanted to explore the outdoors only to find that there was either no means to get there or that there was nobody to go with. Anecdotal evidence from our friends as well as our professor, Brian Fling, suggested that this problem is not just limited to the seven members within our group but is in fact, potentially part of a larger trend that is prevalent in our society today.</p>
             </Section>
             <Section>
-              <Heading>Initial Survey</Heading>
+              <Heading>Surveying Our Problem</Heading>
               <p>We first sent out an initial survey to potential users in order to validate our hypothesis and further investigate the scope of our chosen problem. We sought to identify their level of experience in outdoor activities, how they usually planned out transportation for these trips, and how comfortable they were with sharing a ride to the outdoors with complete strangers.</p>
               <blockquote>The results of our survey were promising, with 87.5% of respondents stating that it was “moderately challenging” to “very challenging” to set up travel to these locations. </blockquote>
               <p>However, it appeared that safety was a concern for users, as 62.5% of users expressed that they would be “moderately uncomfortable” to “very uncomfortable” riding in vehicles with strangers for extended distances. We wanted to tackle this issue early on to prevent it from becoming a bigger problem in future sprints. Therefore, we decided to focus our first sprint on finding ways to help our users feel safe and comfortable when using our app.</p>
@@ -110,7 +113,7 @@ class Nimbus extends React.Component {
               <p>As our problem was deemed to be viable with a lack of alternatives on the market, we set out to design a mobile application to connect enthusiasts looking to explore the outdoors with one another. We sought to alleviate the pain points of planning for these activities, including transportation, seeking companionship, and preparing required equipment in advance for the trip.</p>
             </Section>
             <Section>
-              <Heading>Proof Of Concept</Heading>
+              <Heading>Stranger Danger</Heading>
               <p>For this sprint, we aimed to create features that would help our users feel at ease when sharing a ride with others. We made paper prototypes, then tested them with potential users.</p>
             </Section>
           </Content>
@@ -128,7 +131,9 @@ class Nimbus extends React.Component {
               <p>While our last sprint was a proof of concept to make sure that people were actually receptive to our idea, this sprint was about testing the usability of our app. We made low-fidelity wireframes and tested them by having our testers walk through anticipated usage scenarios such as the process of joining a group to a predetermined location as well as creating a trip to another location.</p>
             </Section>
           </Content>
-          <Img fluid={this.props.data.wireframes.childImageSharp.fluid} style={{maxWidth: "1440px", margin: "4em auto"}}/>
+          <a href="https://marvelapp.com/8cec1eh" target="_blank">
+            <Img fluid={this.props.data.wireframes.childImageSharp.fluid} style={{maxWidth: "1440px", margin: "4em auto"}}/>
+          </a>
           <Content>  
             <Section>
               <p>Feedback from our previous round of testing suggested that users appreciated some form of feedback or review system that allowed others to see what fellow users had to say about a particular user. To that end, we incorporated a review system that allowed users to share the experiences that they had with other users in our prototype.</p>
@@ -147,18 +152,24 @@ class Nimbus extends React.Component {
               <p>In addition, since we had created high-fidelity screens for this sprint, we were able to solicit design feedback and critique to help enhance our user experience. Some of the feedback that we got indicated that we had inconsistencies in language (groups, trips, listings) and missing fields in our group creation form. Certain UI elements were also determined to be confusing for users, such as our "message" button which ended up looking like a "compose" button</p>
             </Section>
           </Content>
-          <Img fluid={this.props.data.hifi.childImageSharp.fluid} style={{maxWidth: "1440px", margin: "4em auto"}}/>
+          <a href="https://marvelapp.com/3f9161c" target="_blank">
+            <Img fluid={this.props.data.hifi.childImageSharp.fluid} style={{maxWidth: "1440px", margin: "4em auto"}}/>
+          </a>
           <Content>
             <Section>
-              <Heading>Next Steps</Heading>
+              <Heading>Moving Forward</Heading>
               <p>To finalize the app’s design, we would first incorporate the feedback received in the third sprint. We would then determine whether we wanted to add additional features requested by our users. Chief among these are features that enhance the outdoor experience while our users are on the trip. This would potentially include trail maps, weather conditions, geolocation, and emergency notifications. We had concerns that the application would not be able to retain users once they had completed a trip. Users might, for example, keep the group that they had taken a trip on our app with and continue to take trips with them outside of the app. We hope that by adding features that enhance the outdoor experience, users would be encouraged and incentivized to continue using our app.</p>
             </Section>
             <Section>
-              <Heading>Reflection</Heading>
+              <Heading>Team Reflection</Heading>
               <p>Designing this app helped us realize how necessary it was to gather user feedback before making any major design decisions, not assuming that users would think a particular way. Making the assumption that safety would be a big concern would have significantly impacted our design and potentially limited the vision we strove to achieve. By ensuring that such concerns did not become an issue early on, we were able to learn more about other aspects of the outdoor experience that our users sought.</p>
-              <p>On a personal level, this was probably the most valuable design class that I have taken. The lessons from this short 3 months were numerous. Chief among which was something of a fundamental age old mantra — process matters. I used to not take the need for low-fidelity prototyping too seriously, seeing it as more of a means to an end rather than as a valuable tool in itself. Yet it turns out that I was totally missing the point of low-fi prototyping altogether; we prototype not for ourselves but for the user. We keep them simple so that we can keep our focus on our users and test them quickly as opposed to sweating the little details which we can sort out at a later stage. We keep our cost of iteration low so that we retain the flexibility to go back and change things up if something didn’t work for our users.</p>
+            </Section>
+            <Section>
+              <Heading>On A More Personal Note...</Heading>
+              <p>This was probably the most valuable design class that I have taken. The lessons from this short 3 months were numerous. Chief among which was something of a fundamental age old mantra — process matters. I used to not take the need for low-fidelity prototyping too seriously, seeing it as more of a means to an end rather than as a valuable tool in itself. Yet it turns out that I was totally missing the point of low-fi prototyping altogether; we prototype not for ourselves but for the user. We keep them simple so that we can keep our focus on our users and test them quickly as opposed to sweating the little details which we can sort out at a later stage. We keep our cost of iteration low so that we retain the flexibility to go back and change things up if something didn’t work for our users.</p>
               <blockquote>“You are not the user” — This was something of a recurring theme throughout our project and also builds off of my previous point on process.</blockquote>
               <p>It’s all nice and good to have solid opinions about a certain idea or subject, but it means absolutely nothing until it’s actually put in front of a user. Both our professor and my group had concerns about whether people would be comfortable getting into a car filled with strangers to travel to some far flung place in the middle of nowhere for an extended period of time. The concerns were strong enough that we devoted our first sprint to creating and testing features that would hopefully mitigate some of that potential discomfort. Hence, it came as a welcome surprise to us that our users were actually fairly receptive to our concept and didn’t seem as concerned as we were about something that our professor felt could be a dealbreaker for our project. Though more than happy to be proven wrong, our professor requested that we continue to pay attention to this for the following sprints just in case. We were happy to report to him after 4 sprints and dozens of user tests later, that while our users had varying levels of comfort with our idea, none were outright opposed to it due to safety concerns. Had we not placed such a premium on user testing and process, we would likely have created something that overcompensated on certain features due to a perceived concern rather than actual user need, which would have diminished the overall usability of our product. </p>
+              <iframe src="https://drive.google.com/file/d/1mMdROr88pdLK-fG679hkUyuFr5M1XBF_/preview" width="640" height="480"></iframe>
               <p>This project was the first time I got to participate in true user-centered design, with every step that we took almost solely dictated by the needs of our users. Iterate, test and repeat was the name of the game. Every user test provided a wealth of information and insights that we would otherwise never have thought of. We've all read and learnt about user-centered design but to actually see it in action and to apply it myself was a truly eye-opening experience. </p>
             </Section>
             {/* <Section>

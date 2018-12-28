@@ -97,7 +97,7 @@ class Ohana extends React.Component {
             <Img style={{maxHeight: "500px", minHeight:"350px"}} fluid={this.props.data.echohero.childImageSharp.fluid} />
           </ImageWrapper>
           <Content>
-            <Tagline>How do you reimagine household chore management for the 21st century.</Tagline>
+            <Tagline>How do you reimagine household chore management for the 21st century?</Tagline>
             <Dash/>
             <Detail>
               <Timeline>Project Title: Ohana</Timeline>
@@ -105,7 +105,7 @@ class Ohana extends React.Component {
             </Detail>
             <Section>
               <Oblique>This was a group project done in the context of a class led by Microsoft Senior Researcher, Andrew Begel. The following is a write-up based on both our collective experiences and my personal opinions.</Oblique>
-              <Oblique>Our course site can be found <a href={"http://andrewbegel.com/info461/"}>here</a>. <br/> Check out our GitHub repository <a href={"https://github.com/INFO461-Team-Go/ohana"}>here</a>.</Oblique>
+              <Oblique>Our course site can be found <a href={"http://andrewbegel.com/info461/"} target="_blank">here</a>. <br/> Check out our GitHub repository <a href={"https://github.com/INFO461-Team-Go/ohana"} target="_blank">here</a>.</Oblique>
               <p>Leaving the comfortable and tidy homes of your parents and moving into a house or apartment with others can be a stressful and disorganized ordeal. Splitting up responsibilities among your housemates oftentimes leads to conflict and overall awkwardness. Chores around the house can go unfinished, which leads to dirty and unhealthy living environments.</p>
               <p>The problem that my team chose to address was the lack of a modern means of responsibility sharing that is convenient and reliable. We felt that current whiteboard chore sheets depend too much on manual re-drawing while verbal organization is inherently unorganized.</p>
             </Section>
