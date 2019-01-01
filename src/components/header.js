@@ -2,6 +2,8 @@ import React from 'react'
 import { Link } from 'gatsby'
 import Headroom from 'react-headroom'
 
+import Resume from "../images/resume.pdf"
+
 import styled from 'styled-components'
 
 const Title = styled.h3`
@@ -70,9 +72,9 @@ class Header extends React.Component {
               <StyledLink to="/">
                 <Subtitle>About</Subtitle>
               </StyledLink>
-              <StyledLink to="/">
+              <a href={Resume} style={{color: "#484848", textDecoration: "none"}}>
                 <Subtitle>Resume</Subtitle>
-              </StyledLink>
+              </a>
             </Nav>
           </Container>
         </Fixed>

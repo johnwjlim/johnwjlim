@@ -59,7 +59,6 @@ const Section = styled.div`
 const Heading = styled.h3`
   font-family: "Proxima Nova Bold";
   font-size: 25px;
-  // letter-spacing: -0.2px;
   color: #484848;
   margin-bottom: 2rem;
 `;
@@ -72,6 +71,9 @@ const Dash = styled.div`
 
 const Oblique = styled.p`
   font-style: oblique;
+`;
+
+const LinkWrapper = styled.a`
 `;
 
 class Nimbus extends React.Component {
@@ -94,7 +96,7 @@ class Nimbus extends React.Component {
               <Timeline>Timeline: Spring 2018</Timeline>
             </Detail>
             <Section>
-              <Oblique>This was a group project done in a Rapid Prototyping class led by Brian Fling. The following is a write-up of my experience during this project. TL;DR, we made an app to connect outdoor enthusiasts with one another to partake in outdoor experiences. We iterated and tested. A lot. (as the class title "Rapid Prototyping" would suggest) And I think we managed to prove our prof wrong on what our users wanted.</Oblique>
+              <Oblique>This was a group project done in a Rapid Prototyping class led by Brian Fling. The following is a write-up of my experience during this project. TL;DR, we made an app to connect outdoor enthusiasts with one another to partake in outdoor experiences. We iterated and tested. A lot. (as the class title "Rapid Prototyping" would suggest) And I think we managed to prove our prof wrong on what our users wanted at the end of it which was pretty cool.</Oblique>
             </Section>
             <Section>
               <Heading>A Little Background</Heading>
@@ -102,12 +104,11 @@ class Nimbus extends React.Component {
               <p>As a group, we each have had experiences where we wanted to explore the outdoors only to find that there was either no means to get there or that there was nobody to go with. Anecdotal evidence from our friends as well as our professor, Brian Fling, suggested that this problem is not just limited to the seven members within our group but is in fact, potentially part of a larger trend that is prevalent in our society today.</p>
             </Section>
             <Section>
-              <Heading>Surveying Our Problem</Heading>
+              <Heading>Surveying The Problem</Heading>
               <p>We first sent out an initial survey to potential users in order to validate our hypothesis and further investigate the scope of our chosen problem. We sought to identify their level of experience in outdoor activities, how they usually planned out transportation for these trips, and how comfortable they were with sharing a ride to the outdoors with complete strangers.</p>
               <blockquote>The results of our survey were promising, with 87.5% of respondents stating that it was “moderately challenging” to “very challenging” to set up travel to these locations. </blockquote>
               <p>However, it appeared that safety was a concern for users, as 62.5% of users expressed that they would be “moderately uncomfortable” to “very uncomfortable” riding in vehicles with strangers for extended distances. We wanted to tackle this issue early on to prevent it from becoming a bigger problem in future sprints. Therefore, we decided to focus our first sprint on finding ways to help our users feel safe and comfortable when using our app.</p>
             </Section>
-            {/* <Img fluid={this.props.data.survey.childImageSharp.fluid} /> */}
             <Section>
               <Heading>Proposed Solution</Heading>
               <p>As our problem was deemed to be viable with a lack of alternatives on the market, we set out to design a mobile application to connect enthusiasts looking to explore the outdoors with one another. We sought to alleviate the pain points of planning for these activities, including transportation, seeking companionship, and preparing required equipment in advance for the trip.</p>
@@ -131,9 +132,9 @@ class Nimbus extends React.Component {
               <p>While our last sprint was a proof of concept to make sure that people were actually receptive to our idea, this sprint was about testing the usability of our app. We made low-fidelity wireframes and tested them by having our testers walk through anticipated usage scenarios such as the process of joining a group to a predetermined location as well as creating a trip to another location.</p>
             </Section>
           </Content>
-          <a href="https://marvelapp.com/8cec1eh" target="_blank">
+          <LinkWrapper href="https://marvelapp.com/8cec1eh" target="_blank">
             <Img fluid={this.props.data.wireframes.childImageSharp.fluid} style={{maxWidth: "1440px", margin: "4em auto"}}/>
-          </a>
+          </LinkWrapper>
           <Content>  
             <Section>
               <p>Feedback from our previous round of testing suggested that users appreciated some form of feedback or review system that allowed others to see what fellow users had to say about a particular user. To that end, we incorporated a review system that allowed users to share the experiences that they had with other users in our prototype.</p>
@@ -152,9 +153,9 @@ class Nimbus extends React.Component {
               <p>In addition, since we had created high-fidelity screens for this sprint, we were able to solicit design feedback and critique to help enhance our user experience. Some of the feedback that we got indicated that we had inconsistencies in language (groups, trips, listings) and missing fields in our group creation form. Certain UI elements were also determined to be confusing for users, such as our "message" button which ended up looking like a "compose" button</p>
             </Section>
           </Content>
-          <a href="https://marvelapp.com/3f9161c" target="_blank">
+          <LinkWrapper href="https://marvelapp.com/3f9161c" target="_blank">
             <Img fluid={this.props.data.hifi.childImageSharp.fluid} style={{maxWidth: "1440px", margin: "4em auto"}}/>
-          </a>
+          </LinkWrapper>
           <Content>
             <Section>
               <Heading>Moving Forward</Heading>
