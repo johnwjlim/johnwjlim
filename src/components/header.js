@@ -72,7 +72,7 @@ class Header extends React.Component {
               <StyledLink to="/">
                 <Subtitle>About</Subtitle>
               </StyledLink>
-              <a href={Resume} style={{color: "#484848", textDecoration: "none"}}>
+              <a href={Resume} target="_blank" style={{color: "#484848", textDecoration: "none"}}>
                 <Subtitle>Resume</Subtitle>
               </a>
             </Nav>
