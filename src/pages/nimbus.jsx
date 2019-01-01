@@ -96,7 +96,7 @@ class Nimbus extends React.Component {
               <Timeline>Timeline: Spring 2018</Timeline>
             </Detail>
             <Section>
-              <Oblique>This was a group project done in a Rapid Prototyping class led by Brian Fling. The following is a write-up of my experience during this project. TL;DR, we made an app to connect outdoor enthusiasts with one another to partake in outdoor experiences. We iterated and tested. A lot. (as the class title "Rapid Prototyping" would suggest) And I think we managed to prove our prof wrong on what our users wanted at the end of it which was pretty cool.</Oblique>
+              <Oblique>This was a group project done in a Rapid Prototyping class led by Brian Fling, Creative Director at Pinch/Zoom. The following is a write-up of my experience during this project. TL;DR, we made an app to connect outdoor enthusiasts with one another to partake in outdoor experiences. We iterated and tested. A lot. (as the class title "Rapid Prototyping" would suggest) And I think we managed to prove our prof wrong on what our users wanted at the end of it which was pretty cool.</Oblique>
             </Section>
             <Section>
               <Heading>A Little Background</Heading>
