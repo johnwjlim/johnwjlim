@@ -14,15 +14,33 @@ const ImageWrapper = styled.div`
 `;
 
 const Content = styled.div`
-  max-width: 880px;
+  max-width: 38em;
   margin: 0 auto;
 `;
 
+// const Tagline = styled.h2`
+//   font-family: "Proxima Nova Semi Bold";
+//   letter-spacing: -1.2px;
+//   font-size: 40px;
+//   color: #484848;
+
+//   @media (max-width: 768px) {
+//     font-size: 36px;
+//   }
+
+//   @media (max-width: 425px) {
+//     font-size: 28px;
+//   }
+// `;
+
 const Tagline = styled.h2`
-  font-family: "Proxima Nova Semi Bold";
-  letter-spacing: -1.2px;
+  font-family: Tiempos, serif;
+  font-weight: 400;
+  letter-spacing: -1.5px;
   font-size: 40px;
   color: #484848;
+  line-height: 1.3;
+  margin-top: 3.5rem;
 
   @media (max-width: 768px) {
     font-size: 36px;
@@ -33,9 +51,20 @@ const Tagline = styled.h2`
   }
 `;
 
+// const Timeline = styled.p`
+//   font-family: "Proxima Nova";
+//   font-size: 20px;
+//   line-height: 1.5;
+//   color: #767676;
+//   margin-bottom: 0;
+
+//   @media (max-width: 425px) {
+//     font-size: 18px;
+//   }
+// `;
+
 const Timeline = styled.p`
-  font-family: "Proxima Nova";
-  font-size: 20px;
+  font-style: italic;
   line-height: 1.5;
   color: #767676;
   margin-bottom: 0;
@@ -44,6 +73,7 @@ const Timeline = styled.p`
     font-size: 18px;
   }
 `;
+
 
 const Detail = styled.div`
   margin-top: 2em;
@@ -61,10 +91,9 @@ const Section = styled.div`
 `;
 
 const Heading = styled.h3`
-  font-family: "Proxima Nova Bold";
-  font-size: 25px;
-  // letter-spacing: -0.2px;
-  color: #484848;
+  font-family: neue-haas-unica, sans-serif;
+  font-weight: 500;
+  font-size: 20px;
   margin-bottom: 2rem;
 `;
 
@@ -81,7 +110,16 @@ const Wrapper = styled.div`
 `;
 
 const Oblique = styled.p`
-  font-style: oblique;
+  font-style: italic;
+  color: #767676;
+`;
+
+const Opener = styled.h4`
+  font-family: neue-haas-unica;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 1.5em;
+  letter-spacing: -0.5px;
 `;
 
 class Ohana extends React.Component {
@@ -98,7 +136,6 @@ class Ohana extends React.Component {
           </ImageWrapper>
           <Content>
             <Tagline>How do you reimagine household chore management for the 21st century?</Tagline>
-            <Dash/>
             <Detail>
               <Timeline>Project Title: Ohana</Timeline>
               <Timeline>Timeline: Spring 2018</Timeline>
@@ -106,7 +143,10 @@ class Ohana extends React.Component {
             <Section>
               <Oblique>This was a group project done in the context of a class led by Microsoft Senior Researcher, Andrew Begel. The following is a write-up based on both our collective experiences and my personal opinions.</Oblique>
               <Oblique>Our course site can be found <a href={"http://andrewbegel.com/info461/"} target="_blank">here</a>. <br/> Check out our GitHub repository <a href={"https://github.com/INFO461-Team-Go/ohana"} target="_blank">here</a>.</Oblique>
-              <p>Leaving the comfortable and tidy homes of your parents and moving into a house or apartment with others can be a stressful and disorganized ordeal. Splitting up responsibilities among your housemates oftentimes leads to conflict and overall awkwardness. Chores around the house can go unfinished, which leads to dirty and unhealthy living environments.</p>
+            </Section>
+            <Dash />
+            <Section>
+              <Opener>Leaving the comfortable and tidy homes of your parents and moving into a house or apartment with others can be a stressful and disorganized ordeal. Splitting up responsibilities among your housemates oftentimes leads to conflict and overall awkwardness. Chores around the house can go unfinished, which leads to dirty and unhealthy living environments.</Opener>
               <p>The problem that my team chose to address was the lack of a modern means of responsibility sharing that is convenient and reliable. We felt that current whiteboard chore sheets depend too much on manual re-drawing while verbal organization is inherently unorganized.</p>
             </Section>
             <Section>
