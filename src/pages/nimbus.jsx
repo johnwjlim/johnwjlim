@@ -15,7 +15,7 @@ const ImageWrapper = styled.div`
 
 const Content = styled.div`
   // max-width: 880px;
-  max-width: 38em;
+  max-width: 750px;
   margin: 0 auto;
 `;
 
@@ -62,7 +62,7 @@ const Section = styled.div`
 const Heading = styled.h3`
   font-family: neue-haas-unica, sans-serif;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 18px;
   margin-bottom: 2rem;
 `;
 

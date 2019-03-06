@@ -7,11 +7,11 @@ import Layout from '../components/layout'
 import styled from 'styled-components'
 
 const Container = styled.div`
-  margin-top: 7.5em;
+  margin-top: 5em;
 `;
 
 const Content = styled.div`
-  max-width: 38em;
+  max-width: 750px;
   margin: 0 auto;
 `;
 
