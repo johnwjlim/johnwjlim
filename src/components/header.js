@@ -69,7 +69,7 @@ class Header extends React.Component {
               </StyledLink>
             </Title>
             <Nav>
-              <StyledLink to="/">
+              <StyledLink to="/about">
                 <Subtitle>About</Subtitle>
               </StyledLink>
               <a href={"https://drive.google.com/file/d/1Ibt0CKeFX_oAH8hd85Pm5COmKF7WbiNT/view?usp=sharing"} target="_blank" style={{color: "#484848", textDecoration: "none"}}>

@@ -8,6 +8,7 @@ exports.components = {
   "component---src-pages-index-js": preferDefault(require("/Users/wjlim/code/johnwjlim/src/pages/index.js")),
   "component---src-pages-nimbus-jsx": preferDefault(require("/Users/wjlim/code/johnwjlim/src/pages/nimbus.jsx")),
   "component---src-pages-ohana-jsx": preferDefault(require("/Users/wjlim/code/johnwjlim/src/pages/ohana.jsx")),
-  "component---src-pages-page-2-js": preferDefault(require("/Users/wjlim/code/johnwjlim/src/pages/page-2.js"))
+  "component---src-pages-page-2-js": preferDefault(require("/Users/wjlim/code/johnwjlim/src/pages/page-2.js")),
+  "component---src-pages-about-jsx": preferDefault(require("/Users/wjlim/code/johnwjlim/src/pages/about.jsx"))
 }
 
