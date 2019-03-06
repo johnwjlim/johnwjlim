@@ -7,7 +7,7 @@ import Layout from '../components/layout'
 import styled from 'styled-components'
 
 const Container = styled.div`
-  margin-top: 5em;
+  margin-top: 7.5em;
 `;
 
 const Content = styled.div`
@@ -43,7 +43,7 @@ class AboutPage extends React.Component {
         <Container>
           <Content>
             <Img style={{maxHeight: "720px"}} fluid={this.props.data.posthole.childImageSharp.fluid}/>
-            <p>my legs were frozen afterwards</p>
+            <p>my legs were fairly frozen afterwards</p>
             <Opener>Hello, I'm John. I'm a Human Computer Interaction student based in Seattle (I'm sitting in Zoka Coffee Roasters as I write this) and I believe in designing for connection.</Opener>
             <p>As humans, we all have some innate desire to seek connection. We connect through emotion, which is probably the one thing that most defines us as human; the warm fuzzy feeling we get in the presence of someone we love, the little voice in our head telling us that our next steps could be our last, the raw rush of euphoria that courses through our veins when we accomplish a goal that has long eluded our grasp. Emotion surrounds us. It consumes us. It is a core tenet of the human experience.</p>
             <p>Designers often talk about empathy as being the value that all good designers should have, yet I’m not quite sure what I feel about the word “empathy” because its a buzzword that’s been thrown around so much that I feel that nobody really knows what it actually means anymore. It’s become just another checkbox for people to tick without actually having to experience the significance of what it means to be emphatic. To me, design is about connection;  the connections that I form with my users as I am designing for them, the connections that my users form with the product that I have designed for them. And connection, I believe, is driven by emotion at its very core.</p>
