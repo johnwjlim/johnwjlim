@@ -9,6 +9,7 @@ import styled from 'styled-components'
 const Title = styled.h3`
   margin: auto 0;
   line-height: 1.7;
+  font-weight: 500;
 `;
 
 const Fixed = styled.div`
@@ -44,7 +45,7 @@ const Subtitle = styled.p`
   font-family: "Proxima Nova Light";
   color: #484848;
   margin: 0 0.8rem;
-  // font-size: 20px;
+  font-size: 18px;
 `;
 
 class Header extends React.Component {

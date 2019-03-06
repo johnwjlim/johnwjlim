@@ -14,15 +14,19 @@ const ImageWrapper = styled.div`
 `;
 
 const Content = styled.div`
-  max-width: 880px;
+  // max-width: 880px;
+  max-width: 38em;
   margin: 0 auto;
 `;
 
 const Tagline = styled.h2`
-  font-family: "Proxima Nova Semi Bold";
-  letter-spacing: -1.2px;
+  font-family: Tiempos, serif;
+  font-weight: 400;
+  letter-spacing: -1.5px;
   font-size: 40px;
   color: #484848;
+  line-height: 1.3;
+  margin-top: 3.5rem;
 
   @media (max-width: 768px) {
     font-size: 36px;
@@ -34,8 +38,7 @@ const Tagline = styled.h2`
 `;
 
 const Timeline = styled.p`
-  font-family: "Proxima Nova";
-  font-size: 20px;
+  font-style: italic;
   line-height: 1.5;
   color: #767676;
   margin-bottom: 0;
@@ -46,8 +49,8 @@ const Timeline = styled.p`
 `;
 
 const Detail = styled.div`
-  margin-top: 2em;
-  margin-bottom: 2em;
+  margin: 2rem 0;
+  // margin-bottom; 1.5em;
 `;
 
 
@@ -57,20 +60,37 @@ const Section = styled.div`
 `;
 
 const Heading = styled.h3`
-  font-family: "Proxima Nova Bold";
-  font-size: 25px;
-  color: #484848;
+  font-family: neue-haas-unica, sans-serif;
+  font-weight: 500;
+  font-size: 20px;
   margin-bottom: 2rem;
 `;
 
 const Dash = styled.div`
   margin-top: 2em;
   width: 60px;
-  border-bottom: solid 3px #484848;
+  border-bottom: solid 2px #484848;
 `;
 
 const Oblique = styled.p`
-  font-style: oblique;
+  font-style: italic;
+  color: #767676;
+
+`;
+
+const Text = styled.p`
+  font-family: neue-haas-unica;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.8em;
+`;
+
+const Opener = styled.h4`
+  font-family: neue-haas-unica;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 1.5em;
+  letter-spacing: -0.5px;
 `;
 
 const LinkWrapper = styled.a`
@@ -89,8 +109,8 @@ class Nimbus extends React.Component {
             <Img style={{maxHeight: "500px", minHeight:"350px"}} fluid={this.props.data.revisedHero.childImageSharp.fluid} />
           </ImageWrapper>
           <Content>
-            <Tagline>How do you expand access to the outdoors for the interconnected society of today?</Tagline>
-            <Dash/>
+            <Tagline>How do you expand access to the outdoors for the increasingly interconnected society of today?</Tagline>
+            {/* <Dash/> */}
             <Detail>
               <Timeline>Project Title: Nimbus</Timeline>
               <Timeline>Timeline: Spring 2018</Timeline>
@@ -98,9 +118,10 @@ class Nimbus extends React.Component {
             <Section>
               <Oblique>This was a group project done in a Rapid Prototyping class led by Brian Fling, Creative Director at Pinch/Zoom. The following is a write-up of my experience during this project. TL;DR, we made an app to connect outdoor enthusiasts with one another to partake in outdoor experiences. We iterated and tested. A lot. (as the class title "Rapid Prototyping" would suggest) And we discovered an interesting revelation on the willingness of people to get into strangers' cars these days.</Oblique>
             </Section>
+            <Dash />
             <Section>
-              <Heading>A Little Background</Heading>
-              <p>The year is 2018. National Park visits in the United States have topped 200 million and social media usage among young Americans is at an all time high. While our public lands are purportedly free and open to all, the sheer remoteness of many of our favorite outdoor locations means that access is often limited to the few who have cars or those who have friends or family who share a similar passion for the outdoors. </p>
+              {/* <Heading>A Little Background</Heading> */}
+              <Opener>The year is 2018. National Park visits in the United States have topped 200 million and social media usage among young Americans is at an all time high. While our public lands are purportedly free and open to all, the sheer remoteness of many of our favorite outdoor locations means that access is often limited to the few who have cars or those who have friends or family who share a similar passion for the outdoors. </Opener>
               <p>As a group, we each have had experiences where we wanted to explore the outdoors only to find that there was either no means to get there or that there was nobody to go with. Anecdotal evidence from our friends as well as our professor, Brian Fling, suggested that this problem is not just limited to the seven members within our group but is in fact, potentially part of a larger trend that is prevalent in our society today.</p>
             </Section>
             <Section>
@@ -197,7 +218,7 @@ export const query = graphql`
     }
     revisedHero:file(relativePath: {eq: "images/nimbus-hero-revised.png"}) {
       childImageSharp {
-        fluid (quality: 100) {
+        fluid (maxWidth: 2400) {
           ...GatsbyImageSharpFluid
         }
       }
@@ -218,28 +239,28 @@ export const query = graphql`
     }
     sketches:file(relativePath: {eq: "images/sprint1.png"}) {
       childImageSharp {
-        fluid {
+        fluid (maxWidth: 1600) {
           ...GatsbyImageSharpFluid
         }
       }
     }
     wireframes:file(relativePath: {eq: "images/wireframes.png"}) {
       childImageSharp {
-        fluid (quality: 100) {
+        fluid (maxWidth: 1600) {
           ...GatsbyImageSharpFluid
         }
       }
     }
     userTesting:file(relativePath: {eq: "images/user-testing.png"}) {
       childImageSharp {
-        fluid {
+        fluid (maxWidth: 2400) {
           ...GatsbyImageSharpFluid
         }
       }
     }
     hifi:file(relativePath: {eq : "images/hifi.png"}) {
       childImageSharp {
-        fluid {
+        fluid (maxWidth: 2400) {
           ...GatsbyImageSharpFluid
         }
       }

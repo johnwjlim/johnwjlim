@@ -51,30 +51,41 @@
 }
 
 h1, h2, h3, h4, h5 {
-    font-family: "Proxima Nova";
+    font-family: proxima-nova, sans-serif;
     /* letter-spacing: -0.5px; */
-    color: #2b2b2b;
+    color: #484848;
 }
 
 
-p {
+/* p {
     font-family: "Tiempos";
     line-height: 35px;
     font-size: 17.5px;
     color: #484848;
     text-rendering: optimizeLegibility;
+} */
+
+p {
+    font-family: neue-haas-unica, sans-serif;
+    font-weight: 300;
+    line-height: 1.8;
+    font-size: 18px;
+    color: #484848;
+    text-rendering: optimizeLegibility;
 }
 
 blockquote {
-    font-family: "Proxima Nova";
+    font-family: neue-haas-unica, sans-serif;
     font-size: 30px;
+    font-weight: 400;
+    font-style: normal;
     letter-spacing: -1px;
-    line-height: 1.2;
+    line-height: 1.3;
     margin: 2em 0;
-    padding: 0.5em 0;
-    padding-left: 1.25em;
-    border-left: solid 3px #00A699;
-    max-width: 680px;
+    /* padding: 0.5em 0; */
+    padding-left: 1.5em;
+    border-left: solid 3px #484848;
+    max-width: 700px;
     color: #2b2b2b;
 
 }
