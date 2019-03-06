@@ -7,6 +7,7 @@ import Layout from '../components/layout'
 
 const Container = styled.div`
   margin-top: 5em;
+  // max-width: 1080px;
 `;
 
 const ImageWrapper = styled.div`
@@ -139,7 +140,7 @@ class Nimbus extends React.Component {
               <p>For this sprint, we aimed to create features that would help our users feel at ease when sharing a ride with others. We made paper prototypes, then tested them with potential users.</p>
             </Section>
           </Content>
-          <Img fluid={this.props.data.sketches.childImageSharp.fluid} style={{maxWidth: "1440px", margin: "4em auto"}} />
+          <Img fluid={this.props.data.sketches.childImageSharp.fluid} style={{maxWidth: "1200px", margin: "4em auto"}} />
           <Content>
             <Section>
               <p>We decided that the following elements would help ease users’ concerns: a profile picture, a profile description, a “trip history” detailing the past outings users have completed, and photos of past trips. Our prototyped were designed to illustrate four different user types with varying levels of detail in their profiles.</p>
@@ -154,7 +155,7 @@ class Nimbus extends React.Component {
             </Section>
           </Content>
           <LinkWrapper href="https://marvelapp.com/8cec1eh" target="_blank">
-            <Img fluid={this.props.data.wireframes.childImageSharp.fluid} style={{maxWidth: "1440px", margin: "4em auto"}}/>
+            <Img fluid={this.props.data.wireframes.childImageSharp.fluid} style={{maxWidth: "1200px", margin: "4em auto"}}/>
           </LinkWrapper>
           <Content>  
             <Section>
@@ -167,7 +168,7 @@ class Nimbus extends React.Component {
               <p>We largely followed the same usability test that we had used in our last sprint. This allowed us to better see the differences that our updates were making as we were subjecting each design to the same analysis.</p>
             </Section>
           </Content>
-          <Img fluid={this.props.data.userTesting.childImageSharp.fluid} style={{maxWidth: "1440px", maxHeight: "500px", margin: "4em auto"}} />
+          <Img fluid={this.props.data.userTesting.childImageSharp.fluid} style={{maxWidth: "1200px", maxHeight: "500px", margin: "4em auto"}} />
           <Content>
             <Section>
               <p>Overall, we gained valuable insight from user-testing with high-fidelity screens. We received confirmation from our users that the two flows that we had assigned - creating a group and joining a group - were easy to follow.</p>
@@ -175,7 +176,7 @@ class Nimbus extends React.Component {
             </Section>
           </Content>
           <LinkWrapper href="https://marvelapp.com/3f9161c" target="_blank">
-            <Img fluid={this.props.data.hifi.childImageSharp.fluid} style={{maxWidth: "1440px", margin: "4em auto"}}/>
+            <Img fluid={this.props.data.hifi.childImageSharp.fluid} style={{maxWidth: "1200px", margin: "4em auto"}}/>
           </LinkWrapper>
           <Content>
             <Section>
