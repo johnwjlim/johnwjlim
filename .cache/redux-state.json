@@ -1490,12 +1490,12 @@
       "host": "localhost",
       "pathPrefix": "",
       "polyfill": true,
-      "buildTime": "2019-03-06T08:24:46.691Z",
+      "buildTime": "2019-03-12T01:10:47.141Z",
       "id": "Site",
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "b3583222843374bebedbddae7c93e890",
+        "contentDigest": "d2bfb02ca21293438f8da12704c201ff",
         "type": "Site",
         "owner": "internal-data-bridge"
       }
@@ -1777,7 +1777,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "eb54a15b41b470153716deff9440bf5b",
+        "contentDigest": "a0b9e0ea9879ce1927d4cb8535419607",
         "type": "Directory",
         "description": "Directory \"src\"",
         "owner": "gatsby-source-filesystem"
@@ -1789,7 +1789,7 @@
       "size": 256,
       "prettySize": "256 B",
       "modifiedTime": "2018-12-04T00:32:14.535Z",
-      "accessTime": "2019-03-06T08:24:52.196Z",
+      "accessTime": "2019-03-12T01:10:52.958Z",
       "changeTime": "2018-12-04T00:32:14.535Z",
       "birthTime": "2018-10-11T20:52:07.562Z",
       "root": "/",
@@ -1807,11 +1807,11 @@
       "blksize": 4096,
       "ino": 2224668,
       "blocks": 0,
-      "atimeMs": 1551860692195.746,
+      "atimeMs": 1552353052958.3567,
       "mtimeMs": 1543883534535.2725,
       "ctimeMs": 1543883534535.2725,
       "birthtimeMs": 1539291127562.1577,
-      "atime": "2019-03-06T08:24:52.196Z",
+      "atime": "2019-03-12T01:10:52.958Z",
       "mtime": "2018-12-04T00:32:14.535Z",
       "ctime": "2018-12-04T00:32:14.535Z",
       "birthtime": "2018-10-11T20:52:07.562Z"
@@ -1821,7 +1821,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "2d309ebe5399267f060e9fee1ec92bae",
+        "contentDigest": "964d0076b0bc0334215540d8ae5116ee",
         "type": "Directory",
         "description": "Directory \"src/components\"",
         "owner": "gatsby-source-filesystem"
@@ -1833,7 +1833,7 @@
       "size": 352,
       "prettySize": "352 B",
       "modifiedTime": "2019-03-06T04:09:41.483Z",
-      "accessTime": "2019-03-06T08:24:52.199Z",
+      "accessTime": "2019-03-12T01:10:52.960Z",
       "changeTime": "2019-03-06T04:09:41.483Z",
       "birthTime": "2018-10-11T20:52:07.562Z",
       "root": "/",
@@ -1851,11 +1851,11 @@
       "blksize": 4096,
       "ino": 2254656,
       "blocks": 0,
-      "atimeMs": 1551860692198.5278,
+      "atimeMs": 1552353052960.4404,
       "mtimeMs": 1551845381482.7026,
       "ctimeMs": 1551845381482.7026,
       "birthtimeMs": 1539291127562.2065,
-      "atime": "2019-03-06T08:24:52.199Z",
+      "atime": "2019-03-12T01:10:52.960Z",
       "mtime": "2019-03-06T04:09:41.483Z",
       "ctime": "2019-03-06T04:09:41.483Z",
       "birthtime": "2018-10-11T20:52:07.562Z"
@@ -1865,7 +1865,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "dce596a5de1d41b5c41341f3191da7f2",
+        "contentDigest": "25013fc7dfc52180471ac1bf44934219",
         "type": "Directory",
         "description": "Directory \"src/images\"",
         "owner": "gatsby-source-filesystem"
@@ -1874,11 +1874,11 @@
       "absolutePath": "/Users/wjlim/code/johnwjlim/src/images",
       "relativePath": "images",
       "extension": "",
-      "size": 832,
-      "prettySize": "832 B",
-      "modifiedTime": "2019-03-06T04:09:41.486Z",
-      "accessTime": "2019-03-06T08:24:52.199Z",
-      "changeTime": "2019-03-06T04:09:41.486Z",
+      "size": 896,
+      "prettySize": "896 B",
+      "modifiedTime": "2019-03-12T01:08:19.943Z",
+      "accessTime": "2019-03-12T01:10:52.960Z",
+      "changeTime": "2019-03-12T01:08:19.943Z",
       "birthTime": "2018-10-11T20:52:07.563Z",
       "root": "/",
       "dir": "/Users/wjlim/code/johnwjlim/src",
@@ -1888,20 +1888,20 @@
       "relativeDirectory": "",
       "dev": 16777220,
       "mode": 16877,
-      "nlink": 26,
+      "nlink": 28,
       "uid": 501,
       "gid": 20,
       "rdev": 0,
       "blksize": 4096,
       "ino": 2254654,
       "blocks": 0,
-      "atimeMs": 1551860692198.5566,
-      "mtimeMs": 1551845381485.775,
-      "ctimeMs": 1551845381485.775,
+      "atimeMs": 1552353052960.4634,
+      "mtimeMs": 1552352899943.0388,
+      "ctimeMs": 1552352899943.0388,
       "birthtimeMs": 1539291127562.8281,
-      "atime": "2019-03-06T08:24:52.199Z",
-      "mtime": "2019-03-06T04:09:41.486Z",
-      "ctime": "2019-03-06T04:09:41.486Z",
+      "atime": "2019-03-12T01:10:52.960Z",
+      "mtime": "2019-03-12T01:08:19.943Z",
+      "ctime": "2019-03-12T01:08:19.943Z",
       "birthtime": "2018-10-11T20:52:07.563Z"
     },
     "fb341ddd-2582-54de-a2dc-c233249286da": {
@@ -1909,7 +1909,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "0c0fca4e9cd0eab8c9b2e11b7ecbbe42",
+        "contentDigest": "633e76f7de54fc8d67744452d253402a",
         "type": "Directory",
         "description": "Directory \"src/fonts\"",
         "owner": "gatsby-source-filesystem"
@@ -1921,7 +1921,7 @@
       "size": 672,
       "prettySize": "672 B",
       "modifiedTime": "2018-12-27T15:19:02.278Z",
-      "accessTime": "2019-03-06T08:24:52.199Z",
+      "accessTime": "2019-03-12T01:10:52.960Z",
       "changeTime": "2018-12-27T15:19:02.278Z",
       "birthTime": "2018-10-11T21:08:54.668Z",
       "root": "/",
@@ -1939,11 +1939,11 @@
       "blksize": 4096,
       "ino": 2257949,
       "blocks": 0,
-      "atimeMs": 1551860692198.6042,
+      "atimeMs": 1552353052960.495,
       "mtimeMs": 1545923942278.1165,
       "ctimeMs": 1545923942278.1165,
       "birthtimeMs": 1539292134668.1267,
-      "atime": "2019-03-06T08:24:52.199Z",
+      "atime": "2019-03-12T01:10:52.960Z",
       "mtime": "2018-12-27T15:19:02.278Z",
       "ctime": "2018-12-27T15:19:02.278Z",
       "birthtime": "2018-10-11T21:08:54.668Z"
@@ -1953,7 +1953,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "fb97f580eb07beb81d64cf67e733ee78",
+        "contentDigest": "67a4cb7d9c2bb9ea2f672418aafbd537",
         "type": "Directory",
         "description": "Directory \"src/pages\"",
         "owner": "gatsby-source-filesystem"
@@ -1965,7 +1965,7 @@
       "size": 256,
       "prettySize": "256 B",
       "modifiedTime": "2019-03-06T04:09:41.487Z",
-      "accessTime": "2019-03-06T08:24:52.199Z",
+      "accessTime": "2019-03-12T01:10:52.960Z",
       "changeTime": "2019-03-06T04:09:41.487Z",
       "birthTime": "2018-10-11T20:52:07.563Z",
       "root": "/",
@@ -1983,11 +1983,11 @@
       "blksize": 4096,
       "ino": 2254660,
       "blocks": 0,
-      "atimeMs": 1551860692198.5332,
+      "atimeMs": 1552353052960.4473,
       "mtimeMs": 1551845381487.2231,
       "ctimeMs": 1551845381487.2231,
       "birthtimeMs": 1539291127563.1426,
-      "atime": "2019-03-06T08:24:52.199Z",
+      "atime": "2019-03-12T01:10:52.960Z",
       "mtime": "2019-03-06T04:09:41.487Z",
       "ctime": "2019-03-06T04:09:41.487Z",
       "birthtime": "2018-10-11T20:52:07.563Z"
@@ -1997,7 +1997,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "067f98ccea2c1ac2a3b1254c654b80d4",
+        "contentDigest": "26351cb5b7408b388fe7c6a7151bf5b5",
         "type": "Directory",
         "description": "Directory \"src/templates\"",
         "owner": "gatsby-source-filesystem"
@@ -2009,7 +2009,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2018-11-10T02:45:55.692Z",
-      "accessTime": "2019-03-06T08:24:52.199Z",
+      "accessTime": "2019-03-12T01:10:52.960Z",
       "changeTime": "2018-11-10T02:45:55.692Z",
       "birthTime": "2018-11-10T02:45:55.691Z",
       "root": "/",
@@ -2027,11 +2027,11 @@
       "blksize": 4096,
       "ino": 2921798,
       "blocks": 0,
-      "atimeMs": 1551860692198.5618,
+      "atimeMs": 1552353052960.4502,
       "mtimeMs": 1541817955691.5508,
       "ctimeMs": 1541817955691.5508,
       "birthtimeMs": 1541817955691.1965,
-      "atime": "2019-03-06T08:24:52.199Z",
+      "atime": "2019-03-12T01:10:52.960Z",
       "mtime": "2018-11-10T02:45:55.692Z",
       "ctime": "2018-11-10T02:45:55.692Z",
       "birthtime": "2018-11-10T02:45:55.691Z"
@@ -2626,7 +2626,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "0b93e677fb778c102c05516dc18a2f82",
+        "contentDigest": "6da62afd896a9d995ec8be4fc914c115",
         "type": "File",
         "mediaType": "text/jsx",
         "description": "File \"src/pages/nimbus.jsx\"",
@@ -2636,11 +2636,11 @@
       "absolutePath": "/Users/wjlim/code/johnwjlim/src/pages/nimbus.jsx",
       "relativePath": "pages/nimbus.jsx",
       "extension": "jsx",
-      "size": 17486,
-      "prettySize": "17.5 kB",
-      "modifiedTime": "2019-03-06T08:27:21.512Z",
-      "accessTime": "2019-03-06T08:27:21.512Z",
-      "changeTime": "2019-03-06T08:27:21.512Z",
+      "size": 17703,
+      "prettySize": "17.7 kB",
+      "modifiedTime": "2019-03-12T01:30:20.680Z",
+      "accessTime": "2019-03-12T01:30:20.679Z",
+      "changeTime": "2019-03-12T01:30:20.680Z",
       "birthTime": "2019-03-06T04:09:41.487Z",
       "root": "/",
       "dir": "/Users/wjlim/code/johnwjlim/src/pages",
@@ -2657,13 +2657,13 @@
       "blksize": 4096,
       "ino": 7009154,
       "blocks": 40,
-      "atimeMs": 1551860841511.6106,
-      "mtimeMs": 1551860841512.162,
-      "ctimeMs": 1551860841512.162,
+      "atimeMs": 1552354220679.1423,
+      "mtimeMs": 1552354220679.6216,
+      "ctimeMs": 1552354220679.6216,
       "birthtimeMs": 1551845381486.8733,
-      "atime": "2019-03-06T08:27:21.512Z",
-      "mtime": "2019-03-06T08:27:21.512Z",
-      "ctime": "2019-03-06T08:27:21.512Z",
+      "atime": "2019-03-12T01:30:20.679Z",
+      "mtime": "2019-03-12T01:30:20.680Z",
+      "ctime": "2019-03-12T01:30:20.680Z",
       "birthtime": "2019-03-06T04:09:41.487Z"
     },
     "211adfa8-87e6-564e-96c7-c425bdc0d82c": {
@@ -4865,6 +4865,120 @@
         "owner": "gatsby-transformer-sharp"
       }
     },
+    "25519807-4b4b-5a80-9e25-b6a9ec2025c1": {
+      "id": "25519807-4b4b-5a80-9e25-b6a9ec2025c1",
+      "children": [
+        "874ecdcb-8e61-59db-9e1e-b0124bb25d2f"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "76f98638e0116740e380bd89458b38fc",
+        "type": "File",
+        "mediaType": "image/jpeg",
+        "description": "File \"src/images/hike-hero.jpg\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "src",
+      "absolutePath": "/Users/wjlim/code/johnwjlim/src/images/hike-hero.jpg",
+      "relativePath": "images/hike-hero.jpg",
+      "extension": "jpg",
+      "size": 6914341,
+      "prettySize": "6.91 MB",
+      "modifiedTime": "2019-03-12T00:39:28.791Z",
+      "accessTime": "2019-03-12T00:57:42.084Z",
+      "changeTime": "2019-03-12T00:57:40.950Z",
+      "birthTime": "2019-03-12T00:39:28.486Z",
+      "root": "/",
+      "dir": "/Users/wjlim/code/johnwjlim/src/images",
+      "base": "hike-hero.jpg",
+      "ext": ".jpg",
+      "name": "hike-hero",
+      "relativeDirectory": "images",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 7154097,
+      "blocks": 13512,
+      "atimeMs": 1552352262084.4387,
+      "mtimeMs": 1552351168791.375,
+      "ctimeMs": 1552352260949.621,
+      "birthtimeMs": 1552351168485.9937,
+      "atime": "2019-03-12T00:57:42.084Z",
+      "mtime": "2019-03-12T00:39:28.791Z",
+      "ctime": "2019-03-12T00:57:40.950Z",
+      "birthtime": "2019-03-12T00:39:28.486Z"
+    },
+    "874ecdcb-8e61-59db-9e1e-b0124bb25d2f": {
+      "id": "874ecdcb-8e61-59db-9e1e-b0124bb25d2f",
+      "children": [],
+      "parent": "25519807-4b4b-5a80-9e25-b6a9ec2025c1",
+      "internal": {
+        "contentDigest": "76f98638e0116740e380bd89458b38fc",
+        "type": "ImageSharp",
+        "owner": "gatsby-transformer-sharp"
+      }
+    },
+    "4112fc65-d5c8-5b57-8249-40a6a7fb38ad": {
+      "id": "4112fc65-d5c8-5b57-8249-40a6a7fb38ad",
+      "children": [
+        "3a7a1173-96e6-50d3-b1b2-f6737a53a549"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "a9288245ac30716b5d898d0700f42c7f",
+        "type": "File",
+        "mediaType": "image/png",
+        "description": "File \"src/images/hike-hero.png\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "src",
+      "absolutePath": "/Users/wjlim/code/johnwjlim/src/images/hike-hero.png",
+      "relativePath": "images/hike-hero.png",
+      "extension": "png",
+      "size": 28603847,
+      "prettySize": "28.6 MB",
+      "modifiedTime": "2019-03-12T01:08:05.779Z",
+      "accessTime": "2019-03-12T01:08:41.206Z",
+      "changeTime": "2019-03-12T01:08:19.947Z",
+      "birthTime": "2019-03-12T01:08:05.766Z",
+      "root": "/",
+      "dir": "/Users/wjlim/code/johnwjlim/src/images",
+      "base": "hike-hero.png",
+      "ext": ".png",
+      "name": "hike-hero",
+      "relativeDirectory": "images",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 7157322,
+      "blocks": 55872,
+      "atimeMs": 1552352921206.493,
+      "mtimeMs": 1552352885778.7686,
+      "ctimeMs": 1552352899947.1836,
+      "birthtimeMs": 1552352885765.7122,
+      "atime": "2019-03-12T01:08:41.206Z",
+      "mtime": "2019-03-12T01:08:05.779Z",
+      "ctime": "2019-03-12T01:08:19.947Z",
+      "birthtime": "2019-03-12T01:08:05.766Z"
+    },
+    "3a7a1173-96e6-50d3-b1b2-f6737a53a549": {
+      "id": "3a7a1173-96e6-50d3-b1b2-f6737a53a549",
+      "children": [],
+      "parent": "4112fc65-d5c8-5b57-8249-40a6a7fb38ad",
+      "internal": {
+        "contentDigest": "a9288245ac30716b5d898d0700f42c7f",
+        "type": "ImageSharp",
+        "owner": "gatsby-transformer-sharp"
+      }
+    },
     "SitePage /404/": {
       "jsonName": "404-22d",
       "internalComponentName": "Component404",
@@ -5004,6 +5118,120 @@
         "description": "f795702c-a3b8-5a88-88ee-5d06019d44fa",
         "owner": "internal-data-bridge"
       }
+    },
+    "53167969-b495-59c0-a91c-64378cda4046": {
+      "id": "53167969-b495-59c0-a91c-64378cda4046",
+      "children": [
+        "50a6c749-f15b-56c4-8a34-1158cd078008"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "76f98638e0116740e380bd89458b38fc",
+        "type": "File",
+        "mediaType": "image/jpeg",
+        "description": "File \"src/images/hike-hero copy.jpg\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "src",
+      "absolutePath": "/Users/wjlim/code/johnwjlim/src/images/hike-hero copy.jpg",
+      "relativePath": "images/hike-hero copy.jpg",
+      "extension": "jpg",
+      "size": 6914341,
+      "prettySize": "6.91 MB",
+      "modifiedTime": "2019-03-12T00:39:28.791Z",
+      "accessTime": "2019-03-12T01:10:53.920Z",
+      "changeTime": "2019-03-12T01:11:21.787Z",
+      "birthTime": "2019-03-12T00:39:28.486Z",
+      "root": "/",
+      "dir": "/Users/wjlim/code/johnwjlim/src/images",
+      "base": "hike-hero copy.jpg",
+      "ext": ".jpg",
+      "name": "hike-hero copy",
+      "relativeDirectory": "images",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 7158154,
+      "blocks": 13512,
+      "atimeMs": 1552353053920.0652,
+      "mtimeMs": 1552351168791.375,
+      "ctimeMs": 1552353081786.6013,
+      "birthtimeMs": 1552351168485.9937,
+      "atime": "2019-03-12T01:10:53.920Z",
+      "mtime": "2019-03-12T00:39:28.791Z",
+      "ctime": "2019-03-12T01:11:21.787Z",
+      "birthtime": "2019-03-12T00:39:28.486Z"
+    },
+    "50a6c749-f15b-56c4-8a34-1158cd078008": {
+      "id": "50a6c749-f15b-56c4-8a34-1158cd078008",
+      "children": [],
+      "parent": "53167969-b495-59c0-a91c-64378cda4046",
+      "internal": {
+        "contentDigest": "76f98638e0116740e380bd89458b38fc",
+        "type": "ImageSharp",
+        "owner": "gatsby-transformer-sharp"
+      }
+    },
+    "b5f6ec41-9e75-5e5c-91f6-f2c9154082ee": {
+      "id": "b5f6ec41-9e75-5e5c-91f6-f2c9154082ee",
+      "children": [
+        "61641756-3988-55cb-b104-48cfe5948bb8"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "83865d17a37e1e4f3de8ce48a68b3b62",
+        "type": "File",
+        "mediaType": "image/jpeg",
+        "description": "File \"src/images/hike-hero-2.jpg\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "src",
+      "absolutePath": "/Users/wjlim/code/johnwjlim/src/images/hike-hero-2.jpg",
+      "relativePath": "images/hike-hero-2.jpg",
+      "extension": "jpg",
+      "size": 12183959,
+      "prettySize": "12.2 MB",
+      "modifiedTime": "2019-03-12T01:25:16.288Z",
+      "accessTime": "2019-03-12T01:25:35.818Z",
+      "changeTime": "2019-03-12T01:25:48.798Z",
+      "birthTime": "2019-03-12T01:25:16.283Z",
+      "root": "/",
+      "dir": "/Users/wjlim/code/johnwjlim/src/images",
+      "base": "hike-hero-2.jpg",
+      "ext": ".jpg",
+      "name": "hike-hero-2",
+      "relativeDirectory": "images",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 7158370,
+      "blocks": 23800,
+      "atimeMs": 1552353935818.2173,
+      "mtimeMs": 1552353916288.3809,
+      "ctimeMs": 1552353948798.1216,
+      "birthtimeMs": 1552353916283.2017,
+      "atime": "2019-03-12T01:25:35.818Z",
+      "mtime": "2019-03-12T01:25:16.288Z",
+      "ctime": "2019-03-12T01:25:48.798Z",
+      "birthtime": "2019-03-12T01:25:16.283Z"
+    },
+    "61641756-3988-55cb-b104-48cfe5948bb8": {
+      "id": "61641756-3988-55cb-b104-48cfe5948bb8",
+      "children": [],
+      "parent": "b5f6ec41-9e75-5e5c-91f6-f2c9154082ee",
+      "internal": {
+        "contentDigest": "83865d17a37e1e4f3de8ce48a68b3b62",
+        "type": "ImageSharp",
+        "owner": "gatsby-transformer-sharp"
+      }
     }
   },
   "status": {
@@ -5020,15 +5248,15 @@
         "sq--src-components-layout-js"
       ],
       "63f3092c-bd73-504b-b1f0-b85fd103d59e": [
-        "/nimbus/",
-        "/"
+        "/",
+        "/nimbus/"
       ],
       "cc202e4f-6832-57a5-a3b5-47a3065b9158": [
         "/"
       ],
       "f0c6c938-5177-515f-96bb-ac98d628254d": [
-        "/nimbus/",
-        "/ohana/"
+        "/ohana/",
+        "/nimbus/"
       ],
       "21b60310-b7fe-535e-badc-f6153cb817fa": [
         "/nimbus/"
@@ -5058,15 +5286,15 @@
         "/ohana/"
       ],
       "b54155cf-2efa-5a22-b805-6cce4028109e": [
-        "/nimbus/",
-        "/"
+        "/",
+        "/nimbus/"
       ],
       "07b47ab1-68eb-5449-afcf-06c2bd561a6d": [
         "/"
       ],
       "e4d9a7c2-b331-531a-922f-d366c66a4426": [
-        "/nimbus/",
-        "/ohana/"
+        "/ohana/",
+        "/nimbus/"
       ],
       "c65ffd88-b8bf-5131-b5f4-452bda73f8d6": [
         "/nimbus/"
@@ -5106,6 +5334,16 @@
       ],
       "2244c5c1-c047-56fc-bfe8-fd79b7c2831c": [
         "/about/"
+      ],
+      "25519807-4b4b-5a80-9e25-b6a9ec2025c1": [],
+      "874ecdcb-8e61-59db-9e1e-b0124bb25d2f": [],
+      "4112fc65-d5c8-5b57-8249-40a6a7fb38ad": [],
+      "3a7a1173-96e6-50d3-b1b2-f6737a53a549": [],
+      "b5f6ec41-9e75-5e5c-91f6-f2c9154082ee": [
+        "/nimbus/"
+      ],
+      "61641756-3988-55cb-b104-48cfe5948bb8": [
+        "/nimbus/"
       ]
     },
     "connections": {}
@@ -5118,7 +5356,7 @@
     "about-f34": "263/path---about-f-34-4c2-TgEm4CRD1CfPplgGLIks8sGMVg",
     "page-2-fbc": "53/path---page-2-fbc-5a8-NZuapzHg3X9TaN1iIixfv1W23E",
     "404-html-516": "164/path---404-html-516-62a-NZuapzHg3X9TaN1iIixfv1W23E",
-    "nimbus-1b3": "497/path---nimbus-1-b-3-940-IhcSKXWRBzKmgmPNhnZWQt8Cos",
+    "nimbus-1b3": "611/path---nimbus-1-b-3-940-mf6jpzX6BGpwP6cOpkY2c7w8dM",
     "ohana-05d": "128/path---ohana-05-d-ec9-jLWexcIXHfuXtMicu3Mkmd83RY"
   },
   "components": {
@@ -5139,7 +5377,7 @@
       "componentPath": "/Users/wjlim/code/johnwjlim/src/pages/index.js"
     },
     "/Users/wjlim/code/johnwjlim/src/pages/nimbus.jsx": {
-      "query": "query usersWjlimCodeJohnwjlimSrcPagesNimbusJsx1225385174 {\n  hero: file(relativePath: {eq: \"images/nimbus-hero.png\"}) {\n    childImageSharp {\n      fluid(quality: 100) {\n        ...GatsbyImageSharpFluid\n      }\n    }\n  }\n  revisedHero: file(relativePath: {eq: \"images/nimbus-hero-revised.png\"}) {\n    childImageSharp {\n      fluid(maxWidth: 2400) {\n        ...GatsbyImageSharpFluid\n      }\n    }\n  }\n  thumbnail: file(relativePath: {eq: \"images/placeholder-thumb.png\"}) {\n    childImageSharp {\n      fluid {\n        ...GatsbyImageSharpFluid\n      }\n    }\n  }\n  survey: file(relativePath: {eq: \"images/survey.png\"}) {\n    childImageSharp {\n      fluid {\n        ...GatsbyImageSharpFluid\n      }\n    }\n  }\n  sketches: file(relativePath: {eq: \"images/sprint1.png\"}) {\n    childImageSharp {\n      fluid(maxWidth: 1600) {\n        ...GatsbyImageSharpFluid\n      }\n    }\n  }\n  wireframes: file(relativePath: {eq: \"images/wireframes.png\"}) {\n    childImageSharp {\n      fluid(maxWidth: 1600) {\n        ...GatsbyImageSharpFluid\n      }\n    }\n  }\n  userTesting: file(relativePath: {eq: \"images/user-testing.png\"}) {\n    childImageSharp {\n      fluid(maxWidth: 2400) {\n        ...GatsbyImageSharpFluid\n      }\n    }\n  }\n  hifi: file(relativePath: {eq: \"images/hifi.png\"}) {\n    childImageSharp {\n      fluid(maxWidth: 2400) {\n        ...GatsbyImageSharpFluid\n      }\n    }\n  }\n}\n\nfragment GatsbyImageSharpFluid on ImageSharpFluid {\n  base64\n  aspectRatio\n  src\n  srcSet\n  sizes\n}\n",
+      "query": "query usersWjlimCodeJohnwjlimSrcPagesNimbusJsx2202742792 {\n  hero: file(relativePath: {eq: \"images/nimbus-hero.png\"}) {\n    childImageSharp {\n      fluid(quality: 100) {\n        ...GatsbyImageSharpFluid\n      }\n    }\n  }\n  revisedHero: file(relativePath: {eq: \"images/nimbus-hero-revised.png\"}) {\n    childImageSharp {\n      fluid(maxWidth: 2400) {\n        ...GatsbyImageSharpFluid\n      }\n    }\n  }\n  thumbnail: file(relativePath: {eq: \"images/placeholder-thumb.png\"}) {\n    childImageSharp {\n      fluid {\n        ...GatsbyImageSharpFluid\n      }\n    }\n  }\n  survey: file(relativePath: {eq: \"images/survey.png\"}) {\n    childImageSharp {\n      fluid {\n        ...GatsbyImageSharpFluid\n      }\n    }\n  }\n  sketches: file(relativePath: {eq: \"images/sprint1.png\"}) {\n    childImageSharp {\n      fluid(maxWidth: 1600) {\n        ...GatsbyImageSharpFluid\n      }\n    }\n  }\n  wireframes: file(relativePath: {eq: \"images/wireframes.png\"}) {\n    childImageSharp {\n      fluid(maxWidth: 1600) {\n        ...GatsbyImageSharpFluid\n      }\n    }\n  }\n  userTesting: file(relativePath: {eq: \"images/user-testing.png\"}) {\n    childImageSharp {\n      fluid(maxWidth: 2400) {\n        ...GatsbyImageSharpFluid\n      }\n    }\n  }\n  hifi: file(relativePath: {eq: \"images/hifi.png\"}) {\n    childImageSharp {\n      fluid(maxWidth: 2400) {\n        ...GatsbyImageSharpFluid\n      }\n    }\n  }\n  hikeHero: file(relativePath: {eq: \"images/hike-hero-2.jpg\"}) {\n    childImageSharp {\n      fluid(maxWidth: 2400) {\n        ...GatsbyImageSharpFluid\n      }\n    }\n  }\n}\n\nfragment GatsbyImageSharpFluid on ImageSharpFluid {\n  base64\n  aspectRatio\n  src\n  srcSet\n  sizes\n}\n",
       "componentPath": "/Users/wjlim/code/johnwjlim/src/pages/nimbus.jsx"
     },
     "/Users/wjlim/code/johnwjlim/src/pages/ohana.jsx": {

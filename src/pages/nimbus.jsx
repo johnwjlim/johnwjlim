@@ -107,7 +107,7 @@ class Nimbus extends React.Component {
       <Layout>
         <Container>
           <ImageWrapper>
-            <Img style={{maxHeight: "500px", minHeight:"350px"}} fluid={this.props.data.revisedHero.childImageSharp.fluid} />
+            <Img style={{maxHeight: "500px", minHeight:"350px", maxWidth: "1200px", margin: "0 auto"}} fluid={this.props.data.hikeHero.childImageSharp.fluid} />
           </ImageWrapper>
           <Content>
             <Tagline>How do you expand access to the outdoors for the increasingly interconnected society of today?</Tagline>
@@ -260,6 +260,13 @@ export const query = graphql`
       }
     }
     hifi:file(relativePath: {eq : "images/hifi.png"}) {
+      childImageSharp {
+        fluid (maxWidth: 2400) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    hikeHero:file(relativePath: {eq: "images/hike-hero-2.jpg"}) {
       childImageSharp {
         fluid (maxWidth: 2400) {
           ...GatsbyImageSharpFluid
