@@ -114,7 +114,7 @@ class Google extends React.Component {
       <Layout>
         <Container>
           <ImageWrapper>
-            <Img style={{maxHeight: "500px", minHeight:"350px", maxWidth: "1200px", margin: "0 auto"}} fluid={this.props.data.hero.childImageSharp.fluid} />
+            <Img style={{maxHeight: "500px", minHeight:"350px", maxWidth: "1160px", margin: "0 auto"}} fluid={this.props.data.hero.childImageSharp.fluid} />
           </ImageWrapper>
           <Content>
             <Tagline>How do you create an experience that seamlessly connects students to campus organizations?</Tagline>

@@ -5,13 +5,12 @@ import styled from 'styled-components'
 import Layout from '../components/layout'
 import Typist from '../components/typist'
 
-import Header from '../components/header'
 import Card from '../components/card'
 import Line from '../components/line'
 
 
 const Container = styled.div`
-  max-width: 1080px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0px 1.0875rem 1.5rem;
   padding-top: 2em;
