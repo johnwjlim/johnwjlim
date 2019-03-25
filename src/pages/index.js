@@ -19,7 +19,7 @@ const Container = styled.div`
 
 const Subtitle = styled.p`
   font-family: "Proxima Nova Light";
-  font-size: 20pt;
+  font-size: 26px;
   color: #767676;
   line-height: 1.3;
   max-width: 700px;
@@ -76,6 +76,10 @@ class IndexPage extends React.Component{
             <Column>
               <Card image={this.props.data.ohana} link={'/ohana'} title={"Ohana "} subtitle={"An Amazon Alexa skill that aims to simplify the division of household chores"}/>
             </Column>
+            <Line />
+            <Column>
+              <Card image={this.props.data.google} link={"/google"} title={"Google "} subtitle={"A design challenge done for Google "}/>
+            </Column>
           </CardGrid>
         </Container>
       </Layout>
@@ -89,12 +93,19 @@ export const query = graphql`
   query {
     nimbus:file(relativePath: {eq:"images/placeholder-thumb.png"}) {
       childImageSharp {
-        fluid(maxWidth:512) {
+        fluid(maxWidth: 512) {
           ...GatsbyImageSharpFluid
         }
       }
     }
     ohana:file(relativePath: {eq:"images/ohana-thumb.png"}) {
+      childImageSharp {
+        fluid(maxWidth: 512) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    google:file(relativePath: {eq:"images/google-thumb.png"}) {
       childImageSharp {
         fluid(maxWidth: 512) {
           ...GatsbyImageSharpFluid

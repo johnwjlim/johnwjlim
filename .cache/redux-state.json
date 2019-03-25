@@ -1490,12 +1490,12 @@
       "host": "localhost",
       "pathPrefix": "",
       "polyfill": true,
-      "buildTime": "2019-03-25T17:32:28.867Z",
+      "buildTime": "2019-03-25T18:07:47.962Z",
       "id": "Site",
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "5c06d7311a7688892c3698b5b3dcc236",
+        "contentDigest": "6ed0a40da40b78a15cbecbc63c880b13",
         "type": "Site",
         "owner": "internal-data-bridge"
       }
@@ -1777,7 +1777,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "a88c0f4ef81a4e99cffce30894a81e09",
+        "contentDigest": "2ea6c48a7b6918f458ca6337abe0fa84",
         "type": "Directory",
         "description": "Directory \"src\"",
         "owner": "gatsby-source-filesystem"
@@ -1789,7 +1789,7 @@
       "size": 256,
       "prettySize": "256 B",
       "modifiedTime": "2018-12-04T00:32:14.535Z",
-      "accessTime": "2019-03-25T17:32:34.919Z",
+      "accessTime": "2019-03-25T18:07:53.049Z",
       "changeTime": "2018-12-04T00:32:14.535Z",
       "birthTime": "2018-10-11T20:52:07.562Z",
       "root": "/",
@@ -1807,11 +1807,11 @@
       "blksize": 4096,
       "ino": 2224668,
       "blocks": 0,
-      "atimeMs": 1553535154918.7893,
+      "atimeMs": 1553537273049.416,
       "mtimeMs": 1543883534535.2725,
       "ctimeMs": 1543883534535.2725,
       "birthtimeMs": 1539291127562.1577,
-      "atime": "2019-03-25T17:32:34.919Z",
+      "atime": "2019-03-25T18:07:53.049Z",
       "mtime": "2018-12-04T00:32:14.535Z",
       "ctime": "2018-12-04T00:32:14.535Z",
       "birthtime": "2018-10-11T20:52:07.562Z"
@@ -1821,7 +1821,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "57b508bc8595d4f85547add2cb4255a5",
+        "contentDigest": "2423bf841eb4713b0e2f816075b91114",
         "type": "Directory",
         "description": "Directory \"src/components\"",
         "owner": "gatsby-source-filesystem"
@@ -1832,9 +1832,9 @@
       "extension": "",
       "size": 352,
       "prettySize": "352 B",
-      "modifiedTime": "2019-03-06T04:09:41.483Z",
-      "accessTime": "2019-03-25T17:32:34.921Z",
-      "changeTime": "2019-03-06T04:09:41.483Z",
+      "modifiedTime": "2019-03-25T17:48:48.023Z",
+      "accessTime": "2019-03-25T18:07:53.052Z",
+      "changeTime": "2019-03-25T17:48:48.023Z",
       "birthTime": "2018-10-11T20:52:07.562Z",
       "root": "/",
       "dir": "/Users/wjlim/code/johnwjlim/src",
@@ -1851,13 +1851,13 @@
       "blksize": 4096,
       "ino": 2254656,
       "blocks": 0,
-      "atimeMs": 1553535154921.21,
-      "mtimeMs": 1551845381482.7026,
-      "ctimeMs": 1551845381482.7026,
+      "atimeMs": 1553537273052.1282,
+      "mtimeMs": 1553536128022.6765,
+      "ctimeMs": 1553536128022.6765,
       "birthtimeMs": 1539291127562.2065,
-      "atime": "2019-03-25T17:32:34.921Z",
-      "mtime": "2019-03-06T04:09:41.483Z",
-      "ctime": "2019-03-06T04:09:41.483Z",
+      "atime": "2019-03-25T18:07:53.052Z",
+      "mtime": "2019-03-25T17:48:48.023Z",
+      "ctime": "2019-03-25T17:48:48.023Z",
       "birthtime": "2018-10-11T20:52:07.562Z"
     },
     "515bb2c2-ad70-5ae4-8620-6c4f8559d6f2": {
@@ -1865,7 +1865,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "794a5f2eef8d44a20b5485948c39c367",
+        "contentDigest": "16df6fc42ea769d82d91f72dcfe6afcb",
         "type": "Directory",
         "description": "Directory \"src/images\"",
         "owner": "gatsby-source-filesystem"
@@ -1874,11 +1874,11 @@
       "absolutePath": "/Users/wjlim/code/johnwjlim/src/images",
       "relativePath": "images",
       "extension": "",
-      "size": 1440,
-      "prettySize": "1.44 kB",
-      "modifiedTime": "2019-03-20T23:50:06.691Z",
-      "accessTime": "2019-03-25T17:32:34.921Z",
-      "changeTime": "2019-03-20T23:50:06.691Z",
+      "size": 1472,
+      "prettySize": "1.47 kB",
+      "modifiedTime": "2019-03-25T18:02:46.231Z",
+      "accessTime": "2019-03-25T18:07:53.052Z",
+      "changeTime": "2019-03-25T18:02:46.231Z",
       "birthTime": "2018-10-11T20:52:07.563Z",
       "root": "/",
       "dir": "/Users/wjlim/code/johnwjlim/src",
@@ -1888,20 +1888,20 @@
       "relativeDirectory": "",
       "dev": 16777220,
       "mode": 16877,
-      "nlink": 45,
+      "nlink": 46,
       "uid": 501,
       "gid": 20,
       "rdev": 0,
       "blksize": 4096,
       "ino": 2254654,
       "blocks": 0,
-      "atimeMs": 1553535154921.4304,
-      "mtimeMs": 1553125806690.9983,
-      "ctimeMs": 1553125806690.9983,
+      "atimeMs": 1553537273052.3235,
+      "mtimeMs": 1553536966230.6526,
+      "ctimeMs": 1553536966230.6526,
       "birthtimeMs": 1539291127562.8281,
-      "atime": "2019-03-25T17:32:34.921Z",
-      "mtime": "2019-03-20T23:50:06.691Z",
-      "ctime": "2019-03-20T23:50:06.691Z",
+      "atime": "2019-03-25T18:07:53.052Z",
+      "mtime": "2019-03-25T18:02:46.231Z",
+      "ctime": "2019-03-25T18:02:46.231Z",
       "birthtime": "2018-10-11T20:52:07.563Z"
     },
     "fb341ddd-2582-54de-a2dc-c233249286da": {
@@ -1909,7 +1909,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "21249dde478a7822bdf2ce539527fe8c",
+        "contentDigest": "74772ab6b9db1d1cd97b83a46833cca6",
         "type": "Directory",
         "description": "Directory \"src/fonts\"",
         "owner": "gatsby-source-filesystem"
@@ -1921,7 +1921,7 @@
       "size": 672,
       "prettySize": "672 B",
       "modifiedTime": "2018-12-27T15:19:02.278Z",
-      "accessTime": "2019-03-25T17:32:34.921Z",
+      "accessTime": "2019-03-25T18:07:53.052Z",
       "changeTime": "2018-12-27T15:19:02.278Z",
       "birthTime": "2018-10-11T21:08:54.668Z",
       "root": "/",
@@ -1939,11 +1939,11 @@
       "blksize": 4096,
       "ino": 2257949,
       "blocks": 0,
-      "atimeMs": 1553535154921.2651,
+      "atimeMs": 1553537273052.1775,
       "mtimeMs": 1545923942278.1165,
       "ctimeMs": 1545923942278.1165,
       "birthtimeMs": 1539292134668.1267,
-      "atime": "2019-03-25T17:32:34.921Z",
+      "atime": "2019-03-25T18:07:53.052Z",
       "mtime": "2018-12-27T15:19:02.278Z",
       "ctime": "2018-12-27T15:19:02.278Z",
       "birthtime": "2018-10-11T21:08:54.668Z"
@@ -1953,7 +1953,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "65935982316e861695a0721054a183f6",
+        "contentDigest": "ef7386f1c319f82eb7ac576e7f0a702a",
         "type": "Directory",
         "description": "Directory \"src/pages\"",
         "owner": "gatsby-source-filesystem"
@@ -1964,9 +1964,9 @@
       "extension": "",
       "size": 288,
       "prettySize": "288 B",
-      "modifiedTime": "2019-03-12T01:37:20.909Z",
-      "accessTime": "2019-03-25T17:32:34.921Z",
-      "changeTime": "2019-03-12T01:37:20.909Z",
+      "modifiedTime": "2019-03-25T17:48:48.172Z",
+      "accessTime": "2019-03-25T18:07:53.052Z",
+      "changeTime": "2019-03-25T17:48:48.172Z",
       "birthTime": "2018-10-11T20:52:07.563Z",
       "root": "/",
       "dir": "/Users/wjlim/code/johnwjlim/src",
@@ -1983,13 +1983,13 @@
       "blksize": 4096,
       "ino": 2254660,
       "blocks": 0,
-      "atimeMs": 1553535154921.2712,
-      "mtimeMs": 1552354640908.6296,
-      "ctimeMs": 1552354640908.6296,
+      "atimeMs": 1553537273052.1729,
+      "mtimeMs": 1553536128171.7397,
+      "ctimeMs": 1553536128171.7397,
       "birthtimeMs": 1539291127563.1426,
-      "atime": "2019-03-25T17:32:34.921Z",
-      "mtime": "2019-03-12T01:37:20.909Z",
-      "ctime": "2019-03-12T01:37:20.909Z",
+      "atime": "2019-03-25T18:07:53.052Z",
+      "mtime": "2019-03-25T17:48:48.172Z",
+      "ctime": "2019-03-25T17:48:48.172Z",
       "birthtime": "2018-10-11T20:52:07.563Z"
     },
     "f9d38c1f-590e-5b26-9d79-edc4beb60fa7": {
@@ -1997,7 +1997,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "e414644c257cd431c4cafb1564ac1c10",
+        "contentDigest": "95f29c2e577c2e849993f030e07f2d3e",
         "type": "Directory",
         "description": "Directory \"src/templates\"",
         "owner": "gatsby-source-filesystem"
@@ -2009,7 +2009,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2018-11-10T02:45:55.692Z",
-      "accessTime": "2019-03-25T17:32:34.921Z",
+      "accessTime": "2019-03-25T18:07:53.052Z",
       "changeTime": "2018-11-10T02:45:55.692Z",
       "birthTime": "2018-11-10T02:45:55.691Z",
       "root": "/",
@@ -2027,11 +2027,11 @@
       "blksize": 4096,
       "ino": 2921798,
       "blocks": 0,
-      "atimeMs": 1553535154921.2603,
+      "atimeMs": 1553537273052.197,
       "mtimeMs": 1541817955691.5508,
       "ctimeMs": 1541817955691.5508,
       "birthtimeMs": 1541817955691.1965,
-      "atime": "2019-03-25T17:32:34.921Z",
+      "atime": "2019-03-25T18:07:53.052Z",
       "mtime": "2018-11-10T02:45:55.692Z",
       "ctime": "2018-11-10T02:45:55.692Z",
       "birthtime": "2018-11-10T02:45:55.691Z"
@@ -2041,7 +2041,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "fef672cdf4384f5bc1d1e082c36df12d",
+        "contentDigest": "8151e7510787e99bf11372883840a35a",
         "type": "File",
         "mediaType": "text/jsx",
         "description": "File \"src/components/card.jsx\"",
@@ -2053,10 +2053,10 @@
       "extension": "jsx",
       "size": 1112,
       "prettySize": "1.11 kB",
-      "modifiedTime": "2019-03-06T00:50:04.183Z",
-      "accessTime": "2019-03-06T01:50:13.065Z",
-      "changeTime": "2019-03-06T00:50:04.183Z",
-      "birthTime": "2019-03-06T00:31:20.323Z",
+      "modifiedTime": "2019-03-25T18:10:17.414Z",
+      "accessTime": "2019-03-25T18:10:17.414Z",
+      "changeTime": "2019-03-25T18:10:17.414Z",
+      "birthTime": "2019-03-06T04:09:41.482Z",
       "root": "/",
       "dir": "/Users/wjlim/code/johnwjlim/src/components",
       "base": "card.jsx",
@@ -2070,16 +2070,16 @@
       "gid": 20,
       "rdev": 0,
       "blksize": 4096,
-      "ino": 7000379,
+      "ino": 7009147,
       "blocks": 8,
-      "atimeMs": 1551837013065.3076,
-      "mtimeMs": 1551833404183.1133,
-      "ctimeMs": 1551833404183.1133,
-      "birthtimeMs": 1551832280322.9702,
-      "atime": "2019-03-06T01:50:13.065Z",
-      "mtime": "2019-03-06T00:50:04.183Z",
-      "ctime": "2019-03-06T00:50:04.183Z",
-      "birthtime": "2019-03-06T00:31:20.323Z"
+      "atimeMs": 1553537417413.8823,
+      "mtimeMs": 1553537417414.172,
+      "ctimeMs": 1553537417414.172,
+      "birthtimeMs": 1551845381481.507,
+      "atime": "2019-03-25T18:10:17.414Z",
+      "mtime": "2019-03-25T18:10:17.414Z",
+      "ctime": "2019-03-25T18:10:17.414Z",
+      "birthtime": "2019-03-06T04:09:41.482Z"
     },
     "a5af16a0-ce0c-5213-a553-a9aa6072d8da": {
       "id": "a5af16a0-ce0c-5213-a553-a9aa6072d8da",
@@ -2581,7 +2581,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "b9267dc5c83f475092e5027b754058a3",
+        "contentDigest": "8abfe290e166d2d7efd0e3a32e8378f2",
         "type": "File",
         "mediaType": "application/javascript",
         "description": "File \"src/pages/index.js\"",
@@ -2591,11 +2591,11 @@
       "absolutePath": "/Users/wjlim/code/johnwjlim/src/pages/index.js",
       "relativePath": "pages/index.js",
       "extension": "js",
-      "size": 2356,
-      "prettySize": "2.36 kB",
-      "modifiedTime": "2018-12-27T15:19:03.199Z",
-      "accessTime": "2019-03-06T01:50:13.102Z",
-      "changeTime": "2018-12-27T15:19:03.199Z",
+      "size": 2736,
+      "prettySize": "2.74 kB",
+      "modifiedTime": "2019-03-25T18:10:50.679Z",
+      "accessTime": "2019-03-25T18:10:50.679Z",
+      "changeTime": "2019-03-25T18:10:50.679Z",
       "birthTime": "2018-12-27T15:19:03.199Z",
       "root": "/",
       "dir": "/Users/wjlim/code/johnwjlim/src/pages",
@@ -2612,13 +2612,13 @@
       "blksize": 4096,
       "ino": 4810067,
       "blocks": 8,
-      "atimeMs": 1551837013101.5493,
-      "mtimeMs": 1545923943199.3809,
-      "ctimeMs": 1545923943199.3809,
+      "atimeMs": 1553537450678.5774,
+      "mtimeMs": 1553537450679.0046,
+      "ctimeMs": 1553537450679.0046,
       "birthtimeMs": 1545923943198.9268,
-      "atime": "2019-03-06T01:50:13.102Z",
-      "mtime": "2018-12-27T15:19:03.199Z",
-      "ctime": "2018-12-27T15:19:03.199Z",
+      "atime": "2019-03-25T18:10:50.679Z",
+      "mtime": "2019-03-25T18:10:50.679Z",
+      "ctime": "2019-03-25T18:10:50.679Z",
       "birthtime": "2018-12-27T15:19:03.199Z"
     },
     "585120fc-eef9-5c2a-b575-8870614c8652": {
@@ -5316,7 +5316,7 @@
       ],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "fcb5a7411a0d234fb5266e2afec78474",
+        "contentDigest": "dce36b90a9396e03ea9de58dabe6924f",
         "type": "File",
         "mediaType": "image/png",
         "description": "File \"src/images/onboarding-screens.png\"",
@@ -5326,12 +5326,12 @@
       "absolutePath": "/Users/wjlim/code/johnwjlim/src/images/onboarding-screens.png",
       "relativePath": "images/onboarding-screens.png",
       "extension": "png",
-      "size": 522802,
-      "prettySize": "523 kB",
-      "modifiedTime": "2019-03-14T00:01:24.914Z",
-      "accessTime": "2019-03-14T00:01:33.980Z",
-      "changeTime": "2019-03-14T00:01:32.263Z",
-      "birthTime": "2019-03-14T00:01:24.913Z",
+      "size": 514848,
+      "prettySize": "515 kB",
+      "modifiedTime": "2019-03-25T17:48:48.172Z",
+      "accessTime": "2019-03-25T17:48:54.128Z",
+      "changeTime": "2019-03-25T17:48:48.172Z",
+      "birthTime": "2019-03-25T17:48:48.169Z",
       "root": "/",
       "dir": "/Users/wjlim/code/johnwjlim/src/images",
       "base": "onboarding-screens.png",
@@ -5345,26 +5345,16 @@
       "gid": 20,
       "rdev": 0,
       "blksize": 4096,
-      "ino": 7290860,
-      "blocks": 1024,
-      "atimeMs": 1552521693980.0994,
-      "mtimeMs": 1552521684913.5679,
-      "ctimeMs": 1552521692263.3074,
-      "birthtimeMs": 1552521684913.1006,
-      "atime": "2019-03-14T00:01:33.980Z",
-      "mtime": "2019-03-14T00:01:24.914Z",
-      "ctime": "2019-03-14T00:01:32.263Z",
-      "birthtime": "2019-03-14T00:01:24.913Z"
-    },
-    "43ea97b2-93ad-5654-8f57-50ab0fa009bf": {
-      "id": "43ea97b2-93ad-5654-8f57-50ab0fa009bf",
-      "children": [],
-      "parent": "d158dba3-8a7c-523c-bc99-c289c399492a",
-      "internal": {
-        "contentDigest": "fcb5a7411a0d234fb5266e2afec78474",
-        "type": "ImageSharp",
-        "owner": "gatsby-transformer-sharp"
-      }
+      "ino": 7813423,
+      "blocks": 1008,
+      "atimeMs": 1553536134128.0562,
+      "mtimeMs": 1553536128171.6272,
+      "ctimeMs": 1553536128171.6272,
+      "birthtimeMs": 1553536128168.8313,
+      "atime": "2019-03-25T17:48:54.128Z",
+      "mtime": "2019-03-25T17:48:48.172Z",
+      "ctime": "2019-03-25T17:48:48.172Z",
+      "birthtime": "2019-03-25T17:48:48.169Z"
     },
     "63ad50df-4186-5e1f-b4b9-0c96e1d95c74": {
       "id": "63ad50df-4186-5e1f-b4b9-0c96e1d95c74",
@@ -5993,6 +5983,73 @@
         "owner": "gatsby-transformer-sharp"
       }
     },
+    "43ea97b2-93ad-5654-8f57-50ab0fa009bf": {
+      "id": "43ea97b2-93ad-5654-8f57-50ab0fa009bf",
+      "children": [],
+      "parent": "d158dba3-8a7c-523c-bc99-c289c399492a",
+      "internal": {
+        "contentDigest": "dce36b90a9396e03ea9de58dabe6924f",
+        "type": "ImageSharp",
+        "owner": "gatsby-transformer-sharp"
+      }
+    },
+    "042b08b9-c579-53bf-924b-94579573f744": {
+      "id": "042b08b9-c579-53bf-924b-94579573f744",
+      "children": [
+        "4e9b2335-5911-54d3-b1b1-d5122fe529c8"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "3275073d668ac6bbe49bd5ed9ce9259b",
+        "type": "File",
+        "mediaType": "image/png",
+        "description": "File \"src/images/google-thumb.png\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "src",
+      "absolutePath": "/Users/wjlim/code/johnwjlim/src/images/google-thumb.png",
+      "relativePath": "images/google-thumb.png",
+      "extension": "png",
+      "size": 40493,
+      "prettySize": "40.5 kB",
+      "modifiedTime": "2019-03-25T18:02:33.239Z",
+      "accessTime": "2019-03-25T18:02:35.283Z",
+      "changeTime": "2019-03-25T18:02:46.234Z",
+      "birthTime": "2019-03-25T18:02:33.239Z",
+      "root": "/",
+      "dir": "/Users/wjlim/code/johnwjlim/src/images",
+      "base": "google-thumb.png",
+      "ext": ".png",
+      "name": "google-thumb",
+      "relativeDirectory": "images",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 7814786,
+      "blocks": 80,
+      "atimeMs": 1553536955282.838,
+      "mtimeMs": 1553536953239.0664,
+      "ctimeMs": 1553536966233.59,
+      "birthtimeMs": 1553536953238.9578,
+      "atime": "2019-03-25T18:02:35.283Z",
+      "mtime": "2019-03-25T18:02:33.239Z",
+      "ctime": "2019-03-25T18:02:46.234Z",
+      "birthtime": "2019-03-25T18:02:33.239Z"
+    },
+    "4e9b2335-5911-54d3-b1b1-d5122fe529c8": {
+      "id": "4e9b2335-5911-54d3-b1b1-d5122fe529c8",
+      "children": [],
+      "parent": "042b08b9-c579-53bf-924b-94579573f744",
+      "internal": {
+        "contentDigest": "3275073d668ac6bbe49bd5ed9ce9259b",
+        "type": "ImageSharp",
+        "owner": "gatsby-transformer-sharp"
+      }
+    },
     "SitePage /404/": {
       "jsonName": "404-22d",
       "internalComponentName": "Component404",
@@ -6168,8 +6225,8 @@
         "sq--src-components-layout-js"
       ],
       "63f3092c-bd73-504b-b1f0-b85fd103d59e": [
-        "/",
-        "/nimbus/"
+        "/nimbus/",
+        "/"
       ],
       "cc202e4f-6832-57a5-a3b5-47a3065b9158": [
         "/"
@@ -6206,8 +6263,8 @@
         "/ohana/"
       ],
       "b54155cf-2efa-5a22-b805-6cce4028109e": [
-        "/",
-        "/nimbus/"
+        "/nimbus/",
+        "/"
       ],
       "07b47ab1-68eb-5449-afcf-06c2bd561a6d": [
         "/"
@@ -6336,6 +6393,12 @@
       ],
       "6c423725-63a2-589f-8ddd-3700b90bad56": [
         "/google/"
+      ],
+      "042b08b9-c579-53bf-924b-94579573f744": [
+        "/"
+      ],
+      "4e9b2335-5911-54d3-b1b1-d5122fe529c8": [
+        "/"
       ]
     },
     "connections": {}
@@ -6344,13 +6407,13 @@
     "sq--src-components-layout-js": 755544856,
     "dev-404-page-5f9": "920/path---dev-404-page-5-f-9-fab-NZuapzHg3X9TaN1iIixfv1W23E",
     "404-22d": "44/path---404-22-d-bce-NZuapzHg3X9TaN1iIixfv1W23E",
-    "index": "549/path---index-6a9-aSCDb98SPJqocpo5V2YDJKvTXw",
+    "index": "648/path---index-6a9-IXsdhPlOfT1oTDi2jzTvVt2rw",
     "about-f34": "263/path---about-f-34-4c2-TgEm4CRD1CfPplgGLIks8sGMVg",
     "page-2-fbc": "53/path---page-2-fbc-5a8-NZuapzHg3X9TaN1iIixfv1W23E",
     "404-html-516": "164/path---404-html-516-62a-NZuapzHg3X9TaN1iIixfv1W23E",
     "nimbus-1b3": "611/path---nimbus-1-b-3-940-mf6jpzX6BGpwP6cOpkY2c7w8dM",
     "ohana-05d": "128/path---ohana-05-d-ec9-jLWexcIXHfuXtMicu3Mkmd83RY",
-    "google-8eb": "708/path---google-8-eb-4f6-J4SizTImMfNeA52TTZUoAw11U"
+    "google-8eb": "508/path---google-8-eb-4f6-hlJXv0QJhKE1rOy1fXDhwVg0vo"
   },
   "components": {
     "/Users/wjlim/code/johnwjlim/.cache/dev-404-page.js": {
@@ -6366,7 +6429,7 @@
       "componentPath": "/Users/wjlim/code/johnwjlim/src/pages/about.jsx"
     },
     "/Users/wjlim/code/johnwjlim/src/pages/index.js": {
-      "query": "query usersWjlimCodeJohnwjlimSrcPagesIndexJs800198768 {\n  nimbus: file(relativePath: {eq: \"images/placeholder-thumb.png\"}) {\n    childImageSharp {\n      fluid(maxWidth: 512) {\n        ...GatsbyImageSharpFluid\n      }\n    }\n  }\n  ohana: file(relativePath: {eq: \"images/ohana-thumb.png\"}) {\n    childImageSharp {\n      fluid(maxWidth: 512) {\n        ...GatsbyImageSharpFluid\n      }\n    }\n  }\n}\n\nfragment GatsbyImageSharpFluid on ImageSharpFluid {\n  base64\n  aspectRatio\n  src\n  srcSet\n  sizes\n}\n",
+      "query": "query usersWjlimCodeJohnwjlimSrcPagesIndexJs2822281298 {\n  nimbus: file(relativePath: {eq: \"images/placeholder-thumb.png\"}) {\n    childImageSharp {\n      fluid(maxWidth: 512) {\n        ...GatsbyImageSharpFluid\n      }\n    }\n  }\n  ohana: file(relativePath: {eq: \"images/ohana-thumb.png\"}) {\n    childImageSharp {\n      fluid(maxWidth: 512) {\n        ...GatsbyImageSharpFluid\n      }\n    }\n  }\n  google: file(relativePath: {eq: \"images/google-thumb.png\"}) {\n    childImageSharp {\n      fluid(maxWidth: 512) {\n        ...GatsbyImageSharpFluid\n      }\n    }\n  }\n}\n\nfragment GatsbyImageSharpFluid on ImageSharpFluid {\n  base64\n  aspectRatio\n  src\n  srcSet\n  sizes\n}\n",
       "componentPath": "/Users/wjlim/code/johnwjlim/src/pages/index.js"
     },
     "/Users/wjlim/code/johnwjlim/src/pages/nimbus.jsx": {
