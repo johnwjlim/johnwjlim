@@ -12,8 +12,6 @@ const Container = styled.div`
 `;
 
 const ImageWrapper = styled.div`
-  // max-width: 1160px;
-  // margin: 0 auto;
   margin-bottom: 2.5rem;
 `;
 
