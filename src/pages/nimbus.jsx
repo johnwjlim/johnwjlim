@@ -4,6 +4,7 @@ import Img from 'gatsby-image'
 import styled from 'styled-components'
 
 import Layout from '../components/layout'
+import SEO from "../components/seo"
 
 const Container = styled.div`
   margin-top: 5em;
@@ -107,6 +108,7 @@ class Nimbus extends React.Component {
   render() {
     return (
       <Layout>
+        <SEO title="Nimbus" keywords={[`John Lim`, `UX`, `Design`, 'react', 'johnwjlim', 'Nimbus' ,'Prototyping', 'Rapid Prototyping', 'Sketch', 'Invision', 'Marvel']} />
         <Container>
           <ImageWrapper>
             <Img style={{maxHeight: "500px", minHeight:"350px", maxWidth: "1160px", margin: "0 auto", padding: "0 1.0875rem"}} fluid={this.props.data.hikeHero.childImageSharp.fluid} />
