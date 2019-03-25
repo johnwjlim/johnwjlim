@@ -11,6 +11,8 @@ const Container = styled.div`
 `;
 
 const ImageWrapper = styled.div`
+  // max-width: 1160px;
+  // margin: 0 auto;
   margin-bottom: 2.5rem;
 `;
 
@@ -107,7 +109,7 @@ class Nimbus extends React.Component {
       <Layout>
         <Container>
           <ImageWrapper>
-            <Img style={{maxHeight: "500px", minHeight:"350px", maxWidth: "1200px", margin: "0 auto"}} fluid={this.props.data.hikeHero.childImageSharp.fluid} />
+            <Img style={{maxHeight: "500px", minHeight:"350px", maxWidth: "1160px", margin: "0 auto", padding: "0 1.0875rem"}} fluid={this.props.data.hikeHero.childImageSharp.fluid} />
           </ImageWrapper>
           <Content>
             <Tagline>How do you expand access to the outdoors for the increasingly interconnected society of today?</Tagline>
@@ -192,7 +194,7 @@ class Nimbus extends React.Component {
               <p>This was probably the most valuable design class that I have taken. The lessons from this short 3 months were numerous. Chief among which was something of a fundamental age old mantra — process matters. I used to not take the need for low-fidelity prototyping too seriously, seeing it as more of a means to an end rather than as a valuable tool in itself. Yet it turns out that I was totally missing the point of low-fi prototyping altogether; we prototype not for ourselves but for the user. We keep them simple so that we can keep our focus on our users and test them quickly as opposed to sweating the little details which we can sort out at a later stage. We keep our cost of iteration low so that we retain the flexibility to go back and change things up if something didn’t work for our users.</p>
               <blockquote>“You are not the user” — This was something of a recurring theme throughout our project and also builds off of my previous point on process.</blockquote>
               <p>It’s all nice and good to have solid opinions about a certain idea or subject, but it means absolutely nothing until it’s actually put in front of a user. Both our professor and my group had concerns about whether people would be comfortable getting into a car filled with strangers to travel to some far flung place in the middle of nowhere for an extended period of time. The concerns were strong enough that we devoted our first sprint to creating and testing features that would hopefully mitigate some of that potential discomfort. Hence, it came as a welcome surprise to us that our users were actually fairly receptive to our concept and didn’t seem as concerned as we were about something that our professor felt could be a dealbreaker for our project. Though more than happy to be proven wrong, our professor requested that we continue to pay attention to this for the following sprints just in case. We were happy to report to him after 4 sprints and dozens of user tests later, that while our users had varying levels of comfort with our idea, none were outright opposed to it due to safety concerns. Had we not placed such a premium on user testing and process, we would likely have created something that overcompensated on certain features due to a perceived concern rather than actual user need, which would have diminished the overall usability of our product. </p>
-              <iframe src="https://drive.google.com/file/d/1mMdROr88pdLK-fG679hkUyuFr5M1XBF_/preview" width="640" height="480"></iframe>
+              {/* <iframe src="https://drive.google.com/file/d/1mMdROr88pdLK-fG679hkUyuFr5M1XBF_/preview" width="640" height="480"></iframe> */}
               <p>This project was the first time I got to participate in true user-centered design, with every step that we took almost solely dictated by the needs of our users. Iterate, test and repeat was the name of the game. Every user test provided a wealth of information and insights that we would otherwise never have thought of. We've all read and learnt about user-centered design but to actually see it in action and to apply it myself was a truly eye-opening experience. </p>
             </Section>
             {/* <Section>

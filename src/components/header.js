@@ -25,9 +25,10 @@ const Container = styled.div`
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-  max-width: 1080px;
+  max-width: 1200px;
   // padding: 1.45rem 1.0875rem;  
   padding: 1.2rem 1.0875rem;
+  // padding: 1.2rem 0;
 `;
 
 const Nav = styled.div`
