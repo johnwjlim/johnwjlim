@@ -25,6 +25,11 @@
         "path": "/dev-404-page/"
     },
     {
+        "componentChunkName": "component---src-pages-google-jsx",
+        "jsonName": "google-8eb",
+        "path": "/google/"
+    },
+    {
         "componentChunkName": "component---src-pages-nimbus-jsx",
         "jsonName": "nimbus-1b3",
         "path": "/nimbus/"
