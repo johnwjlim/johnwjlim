@@ -15,7 +15,7 @@ const TextCard = styled.div`
 
 const Title = styled.h4`
   display: inline;
-  font-size: 26px;
+  font-size: 22px;
   font-weight: 600;
 
   @media (max-width: 425px) {
@@ -26,7 +26,7 @@ const Title = styled.h4`
 const Subtitle = styled.p`
   display: inline;
   font-family: proxima-nova, sans-serif;
-  font-size: 26px;
+  font-size: 22px;
   line-height: 1.2;
   color: #767676;
   font-weight: 300;
