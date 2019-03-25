@@ -4,6 +4,7 @@ import Img from 'gatsby-image'
 import styled from 'styled-components'
 
 import Layout from '../components/layout'
+import SEO from "../components/seo"
 
 const Container = styled.div`
   margin-top: 5em`
@@ -130,6 +131,7 @@ class Ohana extends React.Component {
   render() {
     return (
       <Layout>
+        <SEO title="Ohana" keywords={[`John Lim`, `UX`, `Design`, 'react', 'johnwjlim', 'Alexa', 'Node.js', 'Development', 'Front-End', 'AWS', 'Firebase']} />
         <Container>
           <ImageWrapper>
             <Img style={{maxHeight: "500px", minHeight:"350px"}} fluid={this.props.data.echohero.childImageSharp.fluid} />

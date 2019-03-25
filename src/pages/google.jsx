@@ -4,6 +4,7 @@ import Img from 'gatsby-image'
 import styled from 'styled-components'
 
 import Layout from '../components/layout'
+import SEO from "../components/seo"
 
 const Container = styled.div`
   margin-top: 5em;
@@ -112,6 +113,7 @@ class Google extends React.Component {
   render() {
     return (
       <Layout>
+        <SEO title="Google" keywords={[`John Lim`, `UX`, `Design`, 'react', 'johnwjlim', 'Google', 'Challenge', 'Case Study']} />
         <Container>
           <ImageWrapper>
             <Img style={{maxHeight: "500px", minHeight:"350px", maxWidth: "1160px", margin: "0 auto"}} fluid={this.props.data.hero.childImageSharp.fluid} />

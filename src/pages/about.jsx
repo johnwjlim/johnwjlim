@@ -5,6 +5,7 @@ import Img from 'gatsby-image'
 import Layout from '../components/layout'
 
 import styled from 'styled-components'
+import SEO from "../components/seo"
 
 const Container = styled.div`
   margin-top: 5em;
@@ -40,6 +41,7 @@ class AboutPage extends React.Component {
   render() {
     return (
       <Layout>
+        <SEO title="About" keywords={[`John Lim`, `UX`, `Design`, 'react', 'johnwjlim', 'About']} />
         <Container>
           <Content>
             <Img style={{maxHeight: "720px"}} fluid={this.props.data.posthole.childImageSharp.fluid}/>

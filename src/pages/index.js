@@ -1,6 +1,7 @@
 import React from 'react'
 import { graphql, Link } from 'gatsby'
 import styled from 'styled-components'
+import SEO from "../components/seo"
 
 import Layout from '../components/layout'
 import Typist from '../components/typist'
@@ -59,6 +60,7 @@ class IndexPage extends React.Component{
   render() {
     return (
       <Layout>
+        <SEO title="Home" keywords={[`John Lim`, `UX`, `Design`, 'react', 'johnwjlim', 'Home']} />
         <Container>
           <Typist
             strings={[

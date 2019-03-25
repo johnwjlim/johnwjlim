@@ -21,7 +21,7 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <>
-        <Helmet
+        {/* <Helmet
           title={data.site.siteMetadata.title}
           meta={[
             { name: 'description', content: 'John has a website! Nobody thought this day would come!!!' },
@@ -29,7 +29,7 @@ const Layout = ({ children }) => (
           ]}
         >
           <html lang="en" />
-        </Helmet>
+        </Helmet> */}
         <Header siteTitle={"John Lim"} css={{zIndex: 2}} />
         <div
           style={{
