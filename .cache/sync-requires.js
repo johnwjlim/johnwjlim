@@ -3,7 +3,7 @@ const preferDefault = m => m && m.default || m
 
 
 exports.components = {
-  "component---cache-dev-404-page-js": preferDefault(require("/Users/wjlim/code/johnwjlim/.cache/dev-404-page.js")),
+  "component---node-modules-gatsby-plugin-offline-app-shell-js": preferDefault(require("/Users/wjlim/code/johnwjlim/node_modules/gatsby-plugin-offline/app-shell.js")),
   "component---src-pages-404-js": preferDefault(require("/Users/wjlim/code/johnwjlim/src/pages/404.js")),
   "component---src-pages-about-jsx": preferDefault(require("/Users/wjlim/code/johnwjlim/src/pages/about.jsx")),
   "component---src-pages-google-jsx": preferDefault(require("/Users/wjlim/code/johnwjlim/src/pages/google.jsx")),
