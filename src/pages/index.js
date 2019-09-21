@@ -1,117 +1,138 @@
-import React from 'react'
-import { graphql, Link } from 'gatsby'
-import styled from 'styled-components'
+import React, {useEffect} from "react"
+import { Link, useStaticQuery } from "gatsby"
+import styled from "styled-components"
+import { useSelector, useDispatch } from 'react-redux'
+import Img from "gatsby-image"
+import {useTransition, animated} from 'react-spring'
+
+import { Container, OffsetBody,  ImageWrapper, TextQuote, sections, SmallWidth, LargeWidth } from "../components/constants"
+
+import Layout from "../components/layout"
+import Image from "../components/image"
 import SEO from "../components/seo"
+import Header from "../components/header"
+import MobileNav from "../components/mobile-nav"
+import Nav from "../components/nav"
 
-import Layout from '../components/layout'
-import Typist from '../components/typist'
+import Nimbus from "../components/home/nimbus-thumbnail"
+import New from "../components/home/nimbus-thumbnail-new"
+import GChallenge from "../components/home/g-thumbnail"
 
-import Card from '../components/card'
-import Line from '../components/line'
-
-
-const Container = styled.div`
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0px 1.0875rem 1.5rem;
-  padding-top: 2em;
-`;
-
-const Subtitle = styled.p`
-  font-family: "Proxima Nova Light";
-  font-size: 26px;
-  color: #767676;
-  line-height: 1.3;
-  max-width: 700px;
-  text-rendering: optimizeLegibility;
-
-  @media (max-width: 768px) {
-    font-size: 16pt;
-  }
-
-  @media (max-width: 425px) {
-    font-size: 12pt;
-  }
-`;
-
-const CardGrid = styled.div`
+const Wrapper = styled.div`
   display: flex;
-  margin-top: 4em;
-  justify-content: center;
+  justify-content: space-between;
+  // height: 100%;
+`;
+
+const Body = styled(Container)`
+  // width: 100%;
+  margin: 0 5vw;
+
+  @media (max-width: 1240px) {
+    margin: 0;
+  }
+`;
+
+const TitleBox = styled.div`
+  // margin: 3.5rem 0;
+  margin: 3rem 0 5rem;
+`
+
+const Title = styled.h3`
+  color: #333333;
 
   @media (max-width: 768px) {
-    display: block;
+    font-size: 0.9rem;
   }
-`;
+`
 
-const Column = styled.div`
-  flex: 1;
-`;
+const Subtitle = styled(Title)`
+  // font-size: 1.2rem;
+  font-weight: 400;
+  color: #767676;
+  // color: #333333;
+  margin-bottom: 0.5rem;
 
-const StyledLink = styled(Link)`
+`
+
+const CaseLink = styled(Link)`
   text-decoration: none;
+  transition: 0.2s;
+
+  :hover {
+    cursor: pointer;
+    transform: scale(0.8);
+  }
 `;
 
-class IndexPage extends React.Component{
-  constructor() {
-    super();
-  }
+const CaseCaption = styled.h3`
+  // font-weight: 400;
+  color: #333333;
+  margin-top: 1rem;
+  // letter-spacing: -0.3px;
+`
 
-  render() {
-    return (
-      <Layout>
-        <SEO title="Home" keywords={[`John Lim`, `UX`, `Design`, 'react', 'johnwjlim', 'Home']} />
-        <Container>
-          <Typist
-            strings={[
-              'I am a front end web dev',
-              'I am a UX designer'
-            ]}
-          />
-          <Subtitle>I'm currently studying Human Computer Interaction at the University of Washington.</Subtitle>
-          <CardGrid>
-            <Column>
-              <Card image={this.props.data.nimbus} link={'/nimbus'} title={"Nimbus "} subtitle={"A mobile app design that aims to redefine access to the outdoors"}/>
-            </Column>
-            <Line/>
-            <Column>
-              <Card image={this.props.data.ohana} link={'/ohana'} title={"Ohana "} subtitle={"An Amazon Alexa skill that aims to simplify the division of household chores"}/>
-            </Column>
-            <Line />
-            <Column>
-              <Card image={this.props.data.google} link={"/google"} title={"Google "} subtitle={"A design challenge done for Google "}/>
-            </Column>
-          </CardGrid>
-        </Container>
-      </Layout>
-    )
-  }
+const ScaledImage = styled(ImageWrapper)`
+transition: transform 0.2s;
+
+:hover {
+  transform: scale(1.03)
 }
+`
 
-export default IndexPage;
 
-export const query = graphql`
-  query {
-    nimbus:file(relativePath: {eq:"images/placeholder-thumb.png"}) {
-      childImageSharp {
-        fluid(maxWidth: 512) {
-          ...GatsbyImageSharpFluid
+export default function IndexPage() {
+  const data = useStaticQuery(graphql`
+    query {
+      HeroImage: file(relativePath: { eq: "Hero.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 3200, maxHeight: 1600) {
+            ...GatsbyImageSharpFluid
+          }
         }
       }
     }
-    ohana:file(relativePath: {eq:"images/ohana-thumb.png"}) {
-      childImageSharp {
-        fluid(maxWidth: 512) {
-          ...GatsbyImageSharpFluid
-        }
+  `)
+  // const dispatch = useDispatch()
+  const menuState = useSelector(state => state.menuState)
+
+  // useEffect(() => {
+  //   dispatch({type: "CLOSE"})
+  // },[])
+
+  // function handleTabSwitch(value) {
+  //   setActive(value);
+  // }
+
+  return (
+    <Layout>
+      <SEO title="John Lim" />
+      <Header/>
+      {
+        menuState ?
+        <MobileNav /> :
+        <>
+          <Wrapper>
+            <Body>
+              <TitleBox>
+                <Subtitle>I'm a student studying Human Computer Interaction and Political Science at the University of Washington.</Subtitle>
+                <Title>I design and build mobile and web-based applications.</Title>
+                {/* <h1>Hi people</h1> */}
+                {/* <p>Welcome to your new Gatsby site.</p>
+                <p>Now go build something great.</p> */}
+              </TitleBox>
+              {/* <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
+                <Image />
+              </div> */}
+              {/* <Nimbus /> */}
+              <New />
+              <GChallenge />
+            </Body>
+            <Nav />
+          </Wrapper>
+          {/* <Link to="/nimbus/">Go to page 2 or page page or whatever</Link> */}
+        </>
       }
-    }
-    google:file(relativePath: {eq:"images/google-thumb.png"}) {
-      childImageSharp {
-        fluid(maxWidth: 512) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-  }
-`;
+  </Layout>
+  )
+}
