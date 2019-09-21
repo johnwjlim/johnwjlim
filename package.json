@@ -1,29 +1,35 @@
 {
   "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
-  "version": "1.0.0",
+  "private": true,
+  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
-    "babel-plugin-styled-components": "^1.8.0",
-    "gatsby": "^2.0.57",
-    "gatsby-image": "^2.0.21",
-    "gatsby-plugin-manifest": "^2.0.5",
-    "gatsby-plugin-netlify": "^2.1.10",
-    "gatsby-plugin-offline": "^2.0.7",
-    "gatsby-plugin-react-helmet": "^3.0.0",
-    "gatsby-plugin-sharp": "^2.0.13",
-    "gatsby-plugin-styled-components": "^3.0.0",
-    "gatsby-plugin-web-font-loader": "^1.0.4",
-    "gatsby-source-contentful": "^2.0.4",
-    "gatsby-source-filesystem": "^2.0.3",
-    "gatsby-transformer-remark": "^2.1.7",
-    "gatsby-transformer-sharp": "^2.1.8",
-    "react": "^16.5.1",
-    "react-dom": "^16.5.1",
-    "react-headroom": "^2.2.4",
-    "react-helmet": "^5.2.0",
-    "styled-components": "^3.4.10",
-    "typed.js": "^2.0.9"
+    "babel-plugin-styled-components": "^1.10.6",
+    "gatsby": "^2.13.73",
+    "gatsby-image": "^2.2.10",
+    "gatsby-plugin-manifest": "^2.2.6",
+    "gatsby-plugin-offline": "^2.2.7",
+    "gatsby-plugin-react-helmet": "^3.1.4",
+    "gatsby-plugin-react-redux": "^1.0.10",
+    "gatsby-plugin-sharp": "^2.2.13",
+    "gatsby-plugin-styled-components": "^3.1.3",
+    "gatsby-plugin-transition-link": "^1.12.4",
+    "gatsby-source-filesystem": "^2.1.11",
+    "gatsby-transformer-sharp": "^2.2.7",
+    "prop-types": "^15.7.2",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-helmet": "^5.2.1",
+    "react-redux": "^7.1.1",
+    "react-responsive": "^7.0.0",
+    "react-spring": "^8.0.27",
+    "redux": "^4.0.4",
+    "styled-components": "^4.3.2"
+  },
+  "devDependencies": {
+    "gh-pages": "^2.1.1",
+    "prettier": "^1.18.2"
   },
   "keywords": [
     "gatsby"
@@ -32,14 +38,17 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "format": "prettier --write '**/*.js'",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "devDependencies": {
-    "prettier": "^1.14.2"
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \"",
+    "deploy": "gatsby build && gh-pages -d public -b master"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+  },
+  "bugs": {
+    "url": "https://github.com/gatsbyjs/gatsby/issues"
   }
 }
