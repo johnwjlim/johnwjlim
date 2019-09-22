@@ -175,7 +175,7 @@ export default function Nav(props) {
               <InlineLink href="https://www.react-spring.io" target="_blank"> react-spring</InlineLink>.
             </FooterText> 
             <FooterText>
-              View <InlineLink href="https://github.com/johnwjlim/johnwjlim.github.io" target="_blank"> the source</InlineLink>.
+              View <InlineLink href="https://github.com/johnwjlim/johnwjlim" target="_blank"> the source</InlineLink>.
             </FooterText>
           </Footer>
         </Row>

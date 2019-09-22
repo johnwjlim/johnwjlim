@@ -18,9 +18,10 @@ const Wrapper = styled.div`
 `
 
 const Image = styled.div`
-  max-width: 36rem;
+  max-width: 34rem;
   margin-bottom: 0.5rem;
 `
+
 
 const ImageOffset = styled(Styled.OffsetBody)`
   margin: 5rem 0;
@@ -67,7 +68,7 @@ export default function About() {
               <Image>
                 <Img fluid={data.Hero.childImageSharp.fluid} />
               </Image>
-              <p style={{fontSize: "0.9rem"}}><strong>University District Farmer's Market, Seattle WA</strong></p>
+              <p style={{fontSize: "0.9rem"}}><strong>Me, Jamie and Alice at the University District Farmer's Market in Seattle</strong></p>
             </ImageOffset>
             <Styled.OffsetBody style={{marginTop: "3.5rem"}}>
               <Styled.BodyText>
