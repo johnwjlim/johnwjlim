@@ -21,7 +21,6 @@ import GChallenge from "../components/home/g-thumbnail"
 const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
-  // height: 100%;
 `;
 
 const Body = styled(Container)`

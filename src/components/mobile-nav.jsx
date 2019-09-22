@@ -92,7 +92,7 @@ export default function Nav(props) {
           <StyledLink onClick={() => dispatch({type: "CLOSE"})} to="/">Home</StyledLink>
         </ListItem>
         <ListItem>
-          <StyledLink onClick={() => dispatch({type: "CLOSE"})}  to="/">About</StyledLink>
+          <StyledLink onClick={() => dispatch({type: "CLOSE"})}  to="/about">About</StyledLink>
         </ListItem>
         <ListItem>
           <StyledLink onClick={() => dispatch({type: "CLOSE"})}  to="/">Resume</StyledLink>

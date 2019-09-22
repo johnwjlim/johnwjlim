@@ -11,8 +11,23 @@ const ListItem = styled(Styled.ListItem)`
 
 
 export default function Prologue(props) {
+  const data = useStaticQuery(graphql`
+    query {
+      Hero: file(relativePath: { eq: "prologue-hero.png"}) {
+        childImageSharp {
+          fluid (maxWidth: 3200) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `)
+
   return (
     <Styled.Container>
+      <Styled.ImageWrapper>
+        <Img fluid={data.Hero.childImageSharp.fluid} />
+      </Styled.ImageWrapper>
       <Styled.OffsetBody>
         <p><strong>A Little Backstory</strong></p>
         <Styled.BodyText>

@@ -10,6 +10,7 @@ exports.components = {
   "component---src-pages-g-challenge-jsx": hot(preferDefault(require("/Users/wjlim/code/johnwjlim/src/pages/g-challenge.jsx"))),
   "component---src-pages-index-js": hot(preferDefault(require("/Users/wjlim/code/johnwjlim/src/pages/index.js"))),
   "component---src-pages-nimbus-jsx": hot(preferDefault(require("/Users/wjlim/code/johnwjlim/src/pages/nimbus.jsx"))),
-  "component---src-pages-page-2-js": hot(preferDefault(require("/Users/wjlim/code/johnwjlim/src/pages/page-2.js")))
+  "component---src-pages-page-2-js": hot(preferDefault(require("/Users/wjlim/code/johnwjlim/src/pages/page-2.js"))),
+  "component---src-pages-about-jsx": hot(preferDefault(require("/Users/wjlim/code/johnwjlim/src/pages/about.jsx")))
 }
 
