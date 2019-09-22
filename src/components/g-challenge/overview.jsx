@@ -184,11 +184,11 @@ export default function Overview(props) {
         <p><strong>Home and the Idea of Channels</strong></p>
         <TextBlock>
           <p>
-          Conceptually the reason why I went with the whole social set up was to facilitate a process of organic discovery, where users can learn about student organizations from people that they know. And in addition to the whole social proof aspect of hearing about an organization through the words of a real person, I also wanted to create opportunities for users to discover organizations they never knew existed be it through tailored recommendations or posts by people they know.
+          Conceptually the reason why I went with the whole social set up was to facilitate a process of organic discovery, where users can learn about student organizations from other members of their community. And in addition to the whole social proof aspect of hearing about an organization through the words of a real person, I also wanted to create opportunities for users to discover organizations they never knew existed be it through tailored recommendations or posts by people they know.
           </p>
         </TextBlock>
         <TextQuote>
-          Yet while interest gets people in the door, it's often community that keeps people in the organization. It’s an inherently social experience, where it’s almost as much about having common interests as it is about finding a right fit with the people in the organization.
+          I wanted to facilitate a process of organic discovery, where users can learn about other organizations from other members of their community.
         </TextQuote>
         <TextBlock>
           <p>
