@@ -7,6 +7,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Nav from "../components/nav"
 import Header from "../components/header"
+import MobileNav from "../components/mobile-nav"
 
 import Overview from "../components/g-challenge/overview"
 import Prologue from "../components/g-challenge/prologue"
@@ -21,6 +22,8 @@ const Wrapper = styled.div`
 export default function Google() {
   const [active, setActive] = useState(0)
   const pageTitle = "ClubFinder"
+
+  const menuState = useSelector(state => state.menuState)
 
   function handleTabSwitch(value) {
     setActive(value);
@@ -41,12 +44,16 @@ export default function Google() {
     <Layout>
       <SEO title={pageTitle} />
       <Header pageTitle={pageTitle} />
-      <Wrapper>
-        {
-          renderActiveSection()
-        }
-        <Nav components={gSections} active={active} onChange={handleTabSwitch}/>
-      </Wrapper>
+      {
+        menuState ? 
+          <MobileNav components={gSections} active={active} onChange={handleTabSwitch} /> :
+        <Wrapper>
+          {
+            renderActiveSection()
+          }
+          <Nav components={gSections} active={active} onChange={handleTabSwitch}/>
+        </Wrapper>
+      }
     </Layout>
   )
 }
