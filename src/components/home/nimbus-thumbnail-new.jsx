@@ -14,7 +14,7 @@ const CaseCaption = styled.h3`
 
   @media (max-width: 1024px) {
     color: #333333;
-    font-weight: 600;
+    // font-weight: 500;
     font-size: 0.9rem;
   }
 `

@@ -41,7 +41,7 @@ const Title = styled.h3`
   color: #333333;
 
   @media (max-width: 768px) {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 `
 
@@ -52,6 +52,15 @@ const Subtitle = styled(Title)`
   // color: #333333;
   margin-bottom: 0.5rem;
 
+  @media (max-width: 768px) {
+    display: none;
+  }
+`
+
+const MobileSubtitle = styled(Subtitle)`
+  @media (max-width: 768px) {
+    display: block;
+  }
 `
 
 const CaseLink = styled(Link)`
@@ -115,6 +124,7 @@ export default function IndexPage() {
             <Body>
               <TitleBox>
                 <Subtitle>I'm a student studying Human Computer Interaction and Political Science at the University of Washington.</Subtitle>
+                {/* <MobileSubtitle>Student of Human Computer Interaction at the University of Washington.</MobileSubtitle> */}
                 <Title>I design and build mobile and web-based applications.</Title>
                 {/* <h1>Hi people</h1> */}
                 {/* <p>Welcome to your new Gatsby site.</p>

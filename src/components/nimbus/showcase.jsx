@@ -18,6 +18,12 @@ const PrototypeSection = styled.div`
   @media (max-width: 1240px) {
     display: block;
   }
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+
+
 `
 
 const PrototypeWrapper = styled.div`
