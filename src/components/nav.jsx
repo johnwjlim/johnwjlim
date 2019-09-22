@@ -131,7 +131,7 @@ export default function Nav(props) {
               <StyledLink to="/">Home</StyledLink>
             </ListItem>
             <ListItem>
-              <StyledLink to="/">About</StyledLink>
+              <StyledLink to="/about">About</StyledLink>
             </ListItem>
             <ListItem>
               <StyledLink to="/">Resume</StyledLink>
