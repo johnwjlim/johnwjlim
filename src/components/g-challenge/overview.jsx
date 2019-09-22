@@ -8,6 +8,18 @@ import { Container, ImageWrapper, ImageWithMargin, FlexWrapper, IntroBody, Offse
 const Title = styled.h1`
   margin-bottom: 0.5rem;
 `
+
+const InlineLink = styled.a`
+  color: blue;
+  font-weight: 600;
+  transition: 0.2s;
+
+  :hover {
+    cursor: pointer;
+    color: #ffb7b7;
+  }
+`;
+
 export default function Overview(props) {
   const data = useStaticQuery(graphql`
     query {
@@ -103,7 +115,7 @@ export default function Overview(props) {
         <IntroBody>
           <TextBlock>
             <p>
-            This was sort of an individual design challenge set by a certain technology company, where the prompt was to design an experience for new students to browse, search, and propose new student organizations. My deliverables were to be wireframe flows with one or two screens at a “higher-fidelity”, whatever that was supposed to mean. The sort of part comes via the fact that what I submitted actually bears little to no resemblance to what I have here (more on that in the backstory)
+            This was sort of an individual design challenge set by a certain technology company, where the prompt was to design an experience for new students to browse, search, and propose new student organizations. My deliverables were to be wireframe flows with one or two screens at a “higher-fidelity”, whatever that was supposed to mean. The sort of part comes via the fact that what I submitted actually bears little to no resemblance to what I have here (more on that in the <InlineLink onClick={() => props.onChange(1)}>backstory</InlineLink>)
             </p>
           </TextBlock>
           <p><strong>Thinking about community and connection</strong></p>

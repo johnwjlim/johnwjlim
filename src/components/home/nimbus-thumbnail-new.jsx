@@ -51,7 +51,7 @@ const Filler = styled.div`
   // background-color: #e8e8e8;
   // background-color: #f5f5f5;
   // background-color: #F6FFFA;
-  opacity: 0.8;
+  opacity: 0.9;
 `
 
 const ImageCaption = styled.h1`
