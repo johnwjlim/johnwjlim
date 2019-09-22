@@ -42,7 +42,7 @@ export default function Prologue(props) {
         <Styled.TextBlock>
           <Styled.StyledList>
             <ListItem>
-            The existing student organization directory was almost unanimously despised
+            The existing student organization directory was almost unanimously regarded as unsatisfactory
             </ListItem>
             <ListItem>
              While some respondends sought out organizations based on interest, social aspects, such as who they knew within the organization and whether they got along with the people within the organization, determined whether people joined and stayed in an organization.  
