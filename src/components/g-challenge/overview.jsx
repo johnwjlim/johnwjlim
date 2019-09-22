@@ -263,7 +263,7 @@ export default function Overview(props) {
         </TextBlock>
         <TextBlock>
           <p>
-          But in my opinion that’s a direction that while addressing the problem on the surface, doesn’t quite go into the essence of what it means to be a new student looking for a student organization. And most of all, a student organization directory has probably already been done, and people will probably still be doing it even after it’s been done to death. To me, building another directory doesn’t really add much value and utility to what’s already out there beyond simply putting lipstick on a pig. While the prompt appeared to suggest a problem with information asymmetry, I saw the potential to affect a fundamental social dynamic.
+          But in my opinion that’s a direction that while addressing the problem on the surface, doesn’t quite go into the essence of what it means to be a new student looking for a student organization. And most of all, a student organization directory has probably already been done, and people will probably still be doing it even after it’s been done to death. To me, building another directory doesn’t really add much value and utility to what’s already out there. While the prompt appeared to suggest a problem with information asymmetry, I saw the potential to affect a fundamental social dynamic.
           </p>
         </TextBlock>
       </OffsetBody>
