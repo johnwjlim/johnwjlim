@@ -8,7 +8,7 @@
   Gatsby's default starter
 </h1>
 
-Or at least it was...I've kept the bits I liked and shaped it to what I needed it to do. 
+Or at least it was...I've kept the bits I liked and shaped the rest to what I needed it to do. 
 
 <h3>www.johnwjlim.com</h3>
 <h3>wjlim@uw.edu</h3>
