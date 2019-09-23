@@ -161,7 +161,7 @@ export default function Nav(props) {
                 href="mailto:wjlim@uw.edu"
                 target="_blank"
               > 
-                Email Me!
+                wjlim@uw.edu
               </StyledLink>
             </ListItem>
           </List>

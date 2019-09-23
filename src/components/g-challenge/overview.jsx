@@ -3,7 +3,7 @@ import styled from "styled-components"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
-import { Container, ImageWrapper, ImageWithMargin, FlexWrapper, IntroBody, OffsetBody, TextBlock, RightButton, ButtonHeader, ButtonText, sections, Image, InfoPanel, TextQuote } from "../constants"
+import { Container, ImageWrapper, ImageWithMargin, FlexWrapper, IntroBody, OffsetBody, TextBlock, InfoPanel, TextQuote } from "../constants"
 
 const Title = styled.h1`
   margin-bottom: 0.5rem;

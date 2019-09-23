@@ -78,7 +78,7 @@ export default function About() {
                 In a way, “make it better” also kind of underpins much of what we do as designers. We’re problem solvers. The things we do have the potential to better the lives of others. It doesn’t matter the field of design that we work in, or the scale of the problem that we’re trying to solve; at the end of the day, we’re really just trying to take an existing state of being and make it a little better. And if we’re not trying to make it better, why do we bother upending the status quo to begin with? :D
               </Styled.BodyText>
               <Styled.BodyText>
-                <strong>I’m John, and I’m a student studying Human Computer Interaction at the University of Washington. </strong> If I’m not skiing, I can be found hunched over my laptop nursing my second latte of the day in a coffee shop up in North Seattle. Running is my release, cooking is my therapy, and a weird wildest dream of mine would be to cruise down the Champs-Élysées in Paris as a finisher in the Tour de France. 
+                <strong>I’m John, and I’m a student of Human Computer Interaction at the University of Washington. </strong> If I’m not skiing, I can be found hunched over my laptop nursing my second latte of the day in a coffee shop up in North Seattle. Running is my release, cooking is my therapy, and a weird wildest dream of mine would be to cruise down the Champs-Élysées in Paris as a finisher in the Tour de France. 
               </Styled.BodyText>
             </Styled.OffsetBody>
           </Styled.Container>
