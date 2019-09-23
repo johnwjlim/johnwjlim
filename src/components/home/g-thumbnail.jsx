@@ -39,6 +39,7 @@ const CaseLink = styled(Link)`
 
   @media (max-width: 1024px) {
     margin: 3.5rem 0;
+    margin-bottom: 0;
   }
 `;
 

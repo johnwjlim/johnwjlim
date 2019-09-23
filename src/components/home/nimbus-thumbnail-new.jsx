@@ -40,6 +40,13 @@ const CaseLink = styled(Link)`
   @media (max-width: 1024px) {
     margin: 3.5rem 0;
   }
+
+  @media (max-width: 768px) {
+    &:hover ${CaseCaption} {
+      font-weight: 500;
+      letter-spacing: -0.5px;
+    }
+  }
 `;
 
 const Filler = styled.div`
