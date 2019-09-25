@@ -48,7 +48,7 @@ const Title = styled.h3`
 const Subtitle = styled(Title)`
   // font-size: 1.2rem;
   font-weight: 400;
-  color: #565656;
+  color: #666666;
   // color: #333333;
   margin-bottom: 0.5rem;
 
