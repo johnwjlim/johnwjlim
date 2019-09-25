@@ -134,7 +134,14 @@ export default function Nav(props) {
               <StyledLink to="/about">About</StyledLink>
             </ListItem>
             <ListItem>
-              <StyledLink to="/resume">Resume</StyledLink>
+              {/* <StyledLink to="/resume">Resume</StyledLink> */}
+              <StyledLink 
+                as="a"
+                target="_blank"
+                href="https://drive.google.com/file/d/1zsoy_14GpmGUIfPKZIb3YplfD8b1qeKf/view?usp=sharing"
+              >
+                Resume
+              </StyledLink>
             </ListItem>
           </List>
           <List>

@@ -95,7 +95,16 @@ export default function Nav(props) {
           <StyledLink onClick={() => dispatch({type: "CLOSE"})}  to="/about">About</StyledLink>
         </ListItem>
         <ListItem>
-          <StyledLink onClick={() => dispatch({type: "CLOSE"})}  to="/resume">Resume</StyledLink>
+          {/* <StyledLink onClick={() => dispatch({type: "CLOSE"})}  to="/resume">Resume</StyledLink>
+         */}
+         <StyledLink 
+                as="a"
+                target="_blank"
+                href="https://drive.google.com/file/d/1zsoy_14GpmGUIfPKZIb3YplfD8b1qeKf/view?usp=sharing"
+                onClick={() => dispatch({type: "CLOSE"})} 
+              >
+                Resume
+              </StyledLink>
         </ListItem>
       </List>
  
