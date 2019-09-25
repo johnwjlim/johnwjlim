@@ -13,6 +13,8 @@ Or at least it was...I've kept the bits I liked and shaped the rest to what I ne
 <h3>www.johnwjlim.com</h3>
 <h3>wjlim@uw.edu</h3>
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/3f532e85-fb1c-41c9-8e79-31220f2a3cf9/deploy-status)](https://app.netlify.com/sites/romantic-mcclintock-90fe47/deploys)
+
 <!-- Kick off your project with this default boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
 
 _Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.org/docs/gatsby-starters/)._

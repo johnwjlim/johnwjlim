@@ -1,5 +1,5 @@
 import React, {useEffect} from "react"
-import { Link, useStaticQuery } from "gatsby"
+import { Link, useStaticQuery, graphql } from "gatsby"
 import styled from "styled-components"
 import { useSelector, useDispatch } from 'react-redux'
 import Img from "gatsby-image"
