@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react"
+import React, {useState} from "react"
 import styled from "styled-components"
 import { useSelector, useDispatch } from 'react-redux'
 import {useTransition, animated} from 'react-spring'
@@ -27,7 +27,7 @@ const Wrapper = styled.div`
 export default function Nimbus() { 
   const [active, setActive] = useState(0)
   const menuState = useSelector(state => state.menuState)
-  const dispatch = useDispatch()
+  // const dispatch = useDispatch()
 
   // const transitions = useTransition(index, p => p, {
   //   from: { opacity: 0, transform: 'translate3d(100%,0,0)' },

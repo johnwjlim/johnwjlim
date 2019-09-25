@@ -126,9 +126,7 @@ export default function IndexPage() {
                 <Subtitle>I'm a student studying Human Computer Interaction and Political Science at the University of Washington.</Subtitle>
                 {/* <MobileSubtitle>Student of Human Computer Interaction at the University of Washington.</MobileSubtitle> */}
                 <Title>I design and build mobile and web-based applications.</Title>
-                {/* <h1>Hi people</h1> */}
-                {/* <p>Welcome to your new Gatsby site.</p>
-                <p>Now go build something great.</p> */}
+
               </TitleBox>
               {/* <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
                 <Image />
@@ -139,7 +137,6 @@ export default function IndexPage() {
             </Body>
             <Nav />
           </Wrapper>
-          {/* <Link to="/nimbus/">Go to page 2 or page page or whatever</Link> */}
         </>
       }
   </Layout>

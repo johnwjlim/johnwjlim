@@ -10,6 +10,12 @@ const Title = styled.h1`
   margin-bottom: 0.5rem;
 `
 
+const SpecialWrapper = styled(ImageWrapper)`
+  @media (max-width: 768px) {
+    margin-top: 3.5rem;
+  }
+`
+
 
 const PrototypeSection = styled.div`
   display: flex;
@@ -22,8 +28,6 @@ const PrototypeSection = styled.div`
   @media (max-width: 768px) {
     display: none;
   }
-
-
 `
 
 const PrototypeWrapper = styled.div`
@@ -179,9 +183,9 @@ export default function Showcase(props) {
               </PrototypeText>
           </IntroBody>
         </PrototypeSection>
-        <ImageWrapper>
+        <SpecialWrapper>
           <Img fluid={data.ProfileMontage.childImageSharp.fluid} />
-        </ImageWrapper>
+        </SpecialWrapper>
         <ImageWithMargin>
           <Img fluid={data.RevisedScreens.childImageSharp.fluid} />
           <ImageCaption onClick={() => props.onChange(4)} >
