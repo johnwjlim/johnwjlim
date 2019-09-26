@@ -114,7 +114,7 @@ export default function GThumbnail() {
           transitions.map(({item, key, props}) => 
             item && <animated.div key={key} style={props}>
               <Filler />
-              <ImageCaption>How do you help new students find and sustain connections in a new school and social environment</ImageCaption>
+              <ImageCaption>How do you help new students find and sustain connections in a new school and social environment?</ImageCaption>
             </animated.div>
           )
         }

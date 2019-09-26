@@ -116,7 +116,7 @@ export default function Nimbus() {
           transitions.map(({item, key, props}) => 
             item && <animated.div key={key} style={props}>
               <Filler />
-              <ImageCaption>How do you expand access to the outdoors for the increasingly interconnected society of today</ImageCaption>
+              <ImageCaption>How do you expand access to the outdoors for the increasingly interconnected society of today?</ImageCaption>
               {/* <ImageCaption>
                 HOW DO YOU EXPAND ACCESS TO THE OUTDOORS FOR THE INCREASINGLY INTERCONNECTED SOCIETY OF TODAY
               </ImageCaption> */}
