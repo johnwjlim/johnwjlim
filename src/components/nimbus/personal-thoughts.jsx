@@ -91,9 +91,9 @@ export default function PersonalThoughts(props) {
       <ImageWrapper>
           <Img fluid={data.TripBriefing.childImageSharp.fluid} />
       </ImageWrapper>
-      <OffsetBody>
+      {/* <OffsetBody>
         <p><strong>Next Steps: Research Opportunties</strong></p>
-      </OffsetBody>
+      </OffsetBody> */}
       <LeftButton onClick={() => props.onChange(props.active -1)}>
         <ButtonHeader>PREVIOUS SECTION</ButtonHeader>
         <ButtonText>{sections[props.active - 1]}</ButtonText>
