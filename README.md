@@ -5,7 +5,7 @@
   </a>
 </p>
 <h1 align="center">
-  <strike>Gatsby's default starter</strike>yea...nahhh
+  <strike>Gatsby's default starter</strike> yea... nahhh
 </h1>
 
 Or at least it was...I've kept the bits I liked and shaped the rest to what I needed it to do. 

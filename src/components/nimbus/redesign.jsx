@@ -69,8 +69,8 @@ const data = useStaticQuery(graphql`
         <Img fluid={data.ScreenDeck.childImageSharp.fluid} />
       </ImageWrapper>
       <OffsetBody>
-        <p><strong>Revisiting the work.</strong></p>
         <TextBlock>
+          <p><strong>Revisiting the work.</strong></p>
           <p>
           The last round of testing had revealed a number of issues that we never quite had the opportunity to address. Seeing that some time had passed since I worked on this project, I figured it’d be a good idea to come back with fresh eyes and do a little refresh. 
           </p>
@@ -120,8 +120,8 @@ const data = useStaticQuery(graphql`
         <Img fluid={data.TrailSign.childImageSharp.fluid} />
       </ImageWithMargin>
       <OffsetBody>
-        <p><strong>A little sidetrack into symbology</strong></p>
         <TextBlock>
+        <p><strong>A little sidetrack into symbology</strong></p>
           <p>
             Our professor wasn't too keen on the method we were using to denote activity difficulty, specifically our use of green, yellow and red to represent easy, moderate and hard respectively. My goal with the redesign was therefore to move away from the color coding and especially the use of the color red, which was an attention grabber and had too much of a negative connotation attached to it. After a little research, I decided to adopt the trail difficulty symbology system used by the National Ski Area's Association (NSAA).
           </p>

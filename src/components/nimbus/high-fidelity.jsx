@@ -63,8 +63,8 @@ export default function Iteration(props) {
   return (
     <Container>
       <OffsetBody>
-        <p><strong>Defining The Feature Set.</strong></p>
         <TextBlock>
+        <p><strong>Defining The Feature Set.</strong></p>
           <p>
           At this stage in the project, we’ve established the viability of the concept and validated our two primary use cases. It was now time to expand on the features that we wanted included in our app. Beyond our primary goal of expanding access to the outdoors by connecting outdoor explorers with one another and having them adventure together, we were also keen on addressing some of the other pain points associated with exploring the outdoors. 
           </p>

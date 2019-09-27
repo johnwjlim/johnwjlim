@@ -15,18 +15,30 @@ import * as Styled from "../components/constants"
 const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
+  
 `
 
 const Image = styled.div`
   max-width: 34rem;
+  margin: 0 auto;
   margin-bottom: 0.5rem;
 `
 
 
-const ImageOffset = styled(Styled.OffsetBody)`
-  margin: 5rem 0;
+// const ImageOffset = styled(Styled.OffsetBody)`
+//   margin: 5rem auto;
   
-  // margin-bottom: 3rem;
+// `
+
+const ImageOffset = styled.div`
+  // margin: 5rem auto;
+  // width: 100%;
+  // margin: 0 auto;
+
+`
+
+const Container = styled.div`
+  margin: 0 auto;
 `
 
 
@@ -60,18 +72,22 @@ export default function About() {
         menuState ?
         <MobileNav /> :
         <Wrapper>
-          <Styled.Container>
+          <Styled.Container style={{margin: "0 auto"}}>
             {/* <Image>
               <Img fluid={data.HeroWide.childImageSharp.fluid} />
             </Image> */}
-            <ImageOffset>
+            {/* <ImageOffset> */}
               <Image>
                 <Img fluid={data.Hero.childImageSharp.fluid} />
+                <p style={{fontSize: "0.9rem"}}><strong>Me, Jamie and Alice at the University District Farmer's Market in Seattle</strong></p>
               </Image>
-              <p style={{fontSize: "0.9rem"}}><strong>Me, Jamie and Alice at the University District Farmer's Market in Seattle</strong></p>
-            </ImageOffset>
+              {/* <p style={{fontSize: "0.9rem"}}><strong>Me, Jamie and Alice at the University District Farmer's Market in Seattle</strong></p> */}
+            {/* </ImageOffset> */}
             <Styled.OffsetBody style={{marginTop: "3.5rem"}}>
+            {/* <p style={{fontSize: "0.9rem"}}><strong>Me, Jamie and Alice at the University District Farmer's Market in Seattle</strong></p> */}
+              
               <Styled.BodyText>
+              {/* <p style={{fontSize: "0.9rem"}}><strong>Me, Jamie and Alice at the University District Farmer's Market in Seattle</strong></p> */}
                 If you’ve tried hovering your mouse over the site title on the top left hand corner of the page, you may have noticed that it transitions from my name to “Make It Better”. This phrase was actually a working header that I used back when I was building this site; I was going through a bit of a rut at the time and “make it better” sort of became a motivational quote for me; a reminder to myself to take whatever I had on hand and make it a little better, a sort of a mantra to push myself to keep going every single day. <strong> Because while each small step and improvement may seem insignificant by itself, done repeatedly and consistently over time they eventually accumulate. </strong> And once aggregated, they come together to collectively form a significant improvement over what I started out with. 
               </Styled.BodyText>
               <Styled.BodyText>

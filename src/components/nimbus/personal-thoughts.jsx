@@ -45,8 +45,8 @@ export default function PersonalThoughts(props) {
         <Img fluid={data.Hero.childImageSharp.fluid} />
       </ImageWrapper>
       <OffsetBody>
-        <p><strong>Personal thoughts.</strong></p>
         <TextBlock>
+          <p><strong>Personal thoughts.</strong></p>
           <p>
           It was truly a pleasure to be a part of this project, as this has been one of the few opportunities where I got to participate in rapid prototyping and user-centered design –– iterating on the fly based on test feedback and gauging user responses was something I particularly enjoyed. This project instilled in me the value of process and low-fidelity prototyping; the insights that we got from our user tests fundamentally shaped the direction of our product as we gradually realized over time that our users were a lot more receptive to our concept than initially anticipated. This evolving vision is reflected in the way we changed our focus for each sprint, as we went from trying to mitigate safety concerns in the very beginning to ultimately thinking about all of the pain points associated with traveling outdoors.
           </p>

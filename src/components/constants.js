@@ -18,27 +18,45 @@ export const Container = styled.div`
 export const IntroBody = styled.div`
   display: block;
   margin: 7.5rem 0;
+  position: relative;
 
   @media (max-width: 1240px) {
     margin: 3.5rem 0;
   }
 `
 
-export const OffsetBody = styled(IntroBody)`
-  padding-left: 18vw;
+// export const OffsetBody = styled(IntroBody)`
+//   // padding-left: 18vw;
+//   // display: flex; 
+//   // justify-content: center;
+//   // margin: 0 auto;
+//   // text-align: center;
+//   // width: 100%;
+//   // margin:  auto;
+  
+
+//   @media (max-width: 1240px) {
+//     padding: 0;
+//   }
+// `
+
+export const OffsetBody = styled.div`
+  margin: 7.5rem auto;
 
   @media (max-width: 1240px) {
-    padding: 0;
+    margin: 3.5rem 0;
   }
-`
+`;
 
 export const TextBlock = styled.div`
   max-width: 36rem;
+  margin: 0 auto;
   margin-bottom: 2rem;
 `
 
 export const BodyText = styled.p`
   max-width: 36rem;
+  margin: 0 auto;
   margin-bottom: 2rem;
 `
 
@@ -84,6 +102,9 @@ export const ImageWrapper = styled.div`
 `
 export const FlexWrapper = styled.div`
   display: flex;
+  justify-content: center;
+  width: 100%;
+  position: relative;
 
   @media (max-width: 1240px) {
     display: block;
@@ -97,10 +118,10 @@ export const TextQuote = styled.blockquote`
   max-width: 36rem;
   border-left: solid 3px #333333;
   padding-left: 2rem;
-  margin: 5rem 0;
+  margin: 5rem auto;
 
   @media (max-width: 1240px) {
-    margin: 3.5rem 0;
+    margin: 3.5rem auto;
   }
 
   @media (max-width: 1024px) {
@@ -131,10 +152,15 @@ export const SmallWidth = styled(ImageWrapper)`
 `
 
 export const InfoPanel = styled.div`
-  width: 18vw;
+  // width: 18vw;
   margin: 7.5rem 0;
+  position: absolute;
+  left: 0;
+  top: 0;
 
   @media (max-width: 1240px) {
+    // display: block;
+    position: relative;
     width: 100%;
     margin: 3.5rem 0;
   }
@@ -156,3 +182,9 @@ export const StyledList = styled.ul`
     padding-left: 1rem;
   }
 `;
+
+export const Header = styled.p`
+  font-weight: 600;
+
+`;
+

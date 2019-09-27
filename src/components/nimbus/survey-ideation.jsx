@@ -72,8 +72,8 @@ export default function SurveyIdeation(props) {
         <Img fluid={data.SmallMockup.childImageSharp.fluid} />
       </SmallWidth>
       <OffsetBody>
-        <p><strong>Exploring The Problem.</strong></p>
         <TextBlock>
+        <p><strong>Exploring The Problem.</strong></p>
           <p>
             We started work on the project right around the middle of ski season. The Cascade Mountain Range just outside of Seattle was having a bumper snow year and as an avid skier myself, the only thing I was really interested in talking about at that time of year was how great the skiing was and how everybody should join me for a couple of laps out on the slopes. 
           </p>

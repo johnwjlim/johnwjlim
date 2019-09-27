@@ -28,8 +28,8 @@ export default function Solution(props) {
   return (
     <Container>
       <OffsetBody>
-        <p><strong>Validating Our Use Cases.</strong></p>
         <TextBlock>
+        <p><strong>Validating Our Use Cases.</strong></p>
           <p>
           We were pleasantly surprised by the relative lack of concern expressed by our testers on the safety and security aspects of our product in the previous round of testing. Preliminary research and conversations with our professor had suggested that this was a problem that could have potentially threatened the entire viability of our idea. 
           </p>
