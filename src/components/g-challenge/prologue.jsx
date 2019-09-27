@@ -29,8 +29,8 @@ export default function Prologue(props) {
         <Img fluid={data.Hero.childImageSharp.fluid} />
       </Styled.ImageWrapper>
       <Styled.OffsetBody>
-        <p><strong>A Little Backstory</strong></p>
         <Styled.BodyText>
+        <p><strong>A Little Backstory</strong></p>
           The first thing that came to mind when I saw the prompt was for a student organization directory, which in its present form for the University of Washington, was a little garbage. The straightforward solution was therefore to address the prompt directly and clean up the design of the directory with some additional provision for students to propose new student organizations, which was what I ultimately ended up submitting as my deliverable. 
         </Styled.BodyText>
         <Styled.BodyText>

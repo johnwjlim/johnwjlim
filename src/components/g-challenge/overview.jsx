@@ -3,7 +3,7 @@ import styled from "styled-components"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
-import { Container, ImageWrapper, ImageWithMargin, FlexWrapper, IntroBody, OffsetBody, TextBlock, InfoPanel, TextQuote } from "../constants"
+import { Container, ImageWrapper, ImageWithMargin, FlexWrapper, IntroBody, OffsetBody, TextBlock, InfoPanel, TextQuote, Header } from "../constants"
 
 const Title = styled.h1`
   margin-bottom: 0.5rem;
@@ -135,8 +135,8 @@ export default function Overview(props) {
         <Img fluid={data.ScreenDeck.childImageSharp.fluid} />
       </ImageWrapper>
       <OffsetBody>
-        <p><strong>Onboarding</strong></p>
         <TextBlock>
+        <p><strong>Onboarding</strong></p>
           <p>
           My overarching goal with the onboarding process was to provide users with a running start to their experience with the app. The premise of this design hinges on creating a social experience with user-generated content driving a majority of engagement. Yet for new students who largely are coming to a new school with little of the way of established social networks, this may prove to be an obstacle; the last thing I want happen is for new students to lose interest within minutes of opening the app for the first time simply because they lacked social connections necessary for an engaging experience. 
           </p>
@@ -181,8 +181,8 @@ export default function Overview(props) {
           With this section, my goal was to further refine user preferences to help create a more tailored experience with better organization and event suggestions. Some potential topics that could work well in this regard include questions relating to interests, preferred organization sizes, preferred frequency of events etc. 
           </p>
         </TextBlock>
-        <p><strong>Home and the Idea of Channels</strong></p>
         <TextBlock>
+        <p><strong>Home and the Idea of Channels</strong></p>
           <p>
           Conceptually the reason why I went with the whole social set up was to facilitate a process of organic discovery, where users can learn about student organizations from other members of their community. And in addition to the whole social proof aspect of hearing about an organization through the words of a real person, I also wanted to create opportunities for users to discover organizations they never knew existed be it through tailored recommendations or posts by people they know.
           </p>
@@ -205,14 +205,14 @@ export default function Overview(props) {
           Channels serve as a window into the personality of an organization. So even if a user chooses not to join an organization or engage with it any form, it's still very much possible for the user to get a feel for the organization by going through its page and channel.
           </p>
         </TextBlock>
-        <p><strong>A Sidenote on Events</strong></p>
         <TextBlock>
+        <p><strong>A Sidenote on Events</strong></p>
           <p>
           Events play a big role in the designs that I am proposing. They are a central tenet of a college student’s social experience and also often the lifeblood of a student organization looking to stay relevant. Recognizing the fact that a screen-based solution will probably never be able to fully replicate the experience of physically meeting and engaging with an organization, a goal that I had for this design was to complement that process of physical engagement. Events present an ideal opportunity to encourage that engagement.
           </p>
         </TextBlock>
-        <p><strong>Search and Discovery</strong></p>
         <TextBlock>
+        <p><strong>Search and Discovery</strong></p>
           <p>
           Besides organically discovering organizations through social connections, I wanted to provide users with the means for more proactive discovery, where they could actively seek out organizations based on specific interests and activities. The “Discover” tab aims to be a center for all user directed discovery, where users can not only search for specific organizations, events and persons, but also receive tailored recommendations for organizations and events based on a range of criterium. These tailored recommendations also serve as another avenue to help users discover organizations they never knew existed. 
           </p>
@@ -225,8 +225,8 @@ export default function Overview(props) {
         <Img fluid={data.Rome.childImageSharp.fluid} />
       </ImageWithMargin>
       <OffsetBody>
-        <p><strong>Organizations In Detail</strong></p>
         <TextBlock>
+        <p><strong>Organizations In Detail</strong></p>
           <p>
           Organization pages are expected to be focal points of activity in the app. Besides having a channel allowing users in the organizations to share updates with one another, organization pages also consist of informational section and a media gallery that would consist purely of images and videos.
           </p>
@@ -239,8 +239,8 @@ export default function Overview(props) {
         <Img fluid={data.Details.childImageSharp.fluid} />
       </ImageWithMargin>
       <OffsetBody>
-        <p><strong>Proposing an Organization</strong></p>
         <TextBlock>
+        <p><strong>Proposing an Organization</strong></p>
           <p>
           This is the latter part of the given prompt and in all honesty, the part that I have the least contextual understanding of; I don’t actually know anyone who has started up a new student organization from scratch. As such, many of the choices that I’m making for this component will largely be based on conjecture. 
           </p>
@@ -255,8 +255,8 @@ export default function Overview(props) {
         <Img fluid={data.Proposing.childImageSharp.fluid} />
       </ImageWrapper>
       <OffsetBody>
-        <p><strong>Closing Thoughts</strong></p>
         <TextBlock>
+        <p><strong>Closing Thoughts</strong></p>
           <p>
           I could be overcomplicating what could be a very simple problem that requires a simple solution. Maybe all that’s needed is a simple directory that users can search and browse organizations with. 
           </p>
