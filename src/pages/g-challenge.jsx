@@ -17,6 +17,7 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
   // max-width: 1680px;
+  margin-top: 76px;
 `
 
 export default function Google() {

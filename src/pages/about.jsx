@@ -15,6 +15,7 @@ import * as Styled from "../components/constants"
 const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
+  margin-top: 76px;
   
 `
 

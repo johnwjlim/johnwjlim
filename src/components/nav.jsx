@@ -4,6 +4,7 @@ import styled from "styled-components"
 
 const Container = styled.nav`
   width: 15em;
+  // z-index: 10;
   @media (max-width: 768px) {
     display: none; 
   }

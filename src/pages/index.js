@@ -21,6 +21,7 @@ import GChallenge from "../components/home/g-thumbnail"
 const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
+  margin-top: 76px;
 `;
 
 const Body = styled(Container)`
@@ -34,7 +35,7 @@ const Body = styled(Container)`
 
 const TitleBox = styled.div`
   // margin: 3.5rem 0;
-  margin: 3rem 0 5rem;
+  margin: 2.5rem 0 5rem;
 `
 
 const Title = styled.h3`
@@ -46,7 +47,7 @@ const Title = styled.h3`
 `
 
 const Subtitle = styled(Title)`
-  // font-size: 1.2rem;
+  // font-size: 1.1rem;
   font-weight: 400;
   color: #666666;
   // color: #333333;
@@ -125,7 +126,8 @@ export default function IndexPage() {
               <TitleBox>
                 <Subtitle>I'm a student studying Human Computer Interaction and Political Science at the University of Washington.</Subtitle>
                 {/* <MobileSubtitle>Student of Human Computer Interaction at the University of Washington.</MobileSubtitle> */}
-                <Title>I design and build mobile and web-based applications.</Title>
+                {/* <Subtitle>I'm an avid skier, amateur runner and I make little rectangles on a screen from time to time.</Subtitle> */}
+                <Title>I craft and imagine mobile and web-based experiences.</Title>
 
               </TitleBox>
               {/* <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
