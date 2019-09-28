@@ -7,6 +7,13 @@ import MediaQuery from 'react-responsive';
 import { Container, OffsetBody, TextBlock, RightButton, LeftButton, ButtonHeader, ButtonText, ImageWrapper, TextQuote, sections, SmallWidth, LargeWidth } from "../constants"
 // import * as common from "../constants"
 
+const SubHeader = styled.h2`
+  font-weight: 600;
+  letter-spacing: -0.3px;
+  margin-bottom: 3rem;
+
+`
+
 
 export default function SurveyIdeation(props) {
   const data = useStaticQuery(graphql`

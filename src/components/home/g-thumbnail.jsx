@@ -23,6 +23,7 @@ const CaseLink = styled(Link)`
   text-decoration: none;
   transition: 0.3s;
   margin: 5rem 0;
+  margin-bottom: 0;
   display: block;
 
   :hover {
@@ -31,10 +32,9 @@ const CaseLink = styled(Link)`
   }
 
   &:hover ${CaseCaption} {
-    font-weight: 600;
-    letter-spacing: -0.5px;
+    font-weight: 500;
+    letter-spacing: -0.41px;
     color: #333333;
-    // color: #ffb7b7;
   }
 
   @media (max-width: 1024px) {

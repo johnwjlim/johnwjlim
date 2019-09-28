@@ -5,9 +5,21 @@ import { useSelector, useDispatch } from 'react-redux'
 import {useTransition, animated} from 'react-spring'
 
 const Container = styled.div`
-  padding: 1.5rem 0;
   display: flex;
   justify-content: space-between;
+  // padding: 1.5rem 0;
+  position: fixed;
+  padding: 1.5rem 2.5rem;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  width: 100%;
+  background-color: white;
+
+  @media (max-width: 425px) {
+    padding: 1.5rem;
+  }
+
 `
 
 const Wrapper = styled.div`
@@ -81,9 +93,11 @@ const Menu = styled.a`
   font-size: 1.2rem;
   line-height: 1.5;
   cursor: pointer;
+  margin-right: 5rem;
 
   @media (max-width: 425px) {
     font-size: 1rem;
+    margin-right: 2.5rem;
   }
 
   @media (max-width: 768px) {

@@ -7,11 +7,14 @@ export const gSections = ["Case Study", "Prologue / Motivations"]
 export const Container = styled.div`
   max-width: 1300px;
   width: 90%;
-  overflow: scroll;
+  overflow: auto;
   height: 89vh;
+  // height: 90vh;
 
   @media (max-width: 768px) {
     width: 100%;
+    overflow: visible;
+
   }
 `
 

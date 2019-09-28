@@ -5,6 +5,7 @@ import { useDispatch } from 'react-redux'
 
 const Container = styled.nav`
   // width: 15em;
+  margin-top: 76px;
 `
 
 const List = styled.ul`

@@ -7,6 +7,7 @@ import {useTransition, animated} from 'react-spring'
 import { ImageWrapper } from "../constants"
 
 const CaseCaption = styled.h3`
+  // font-size: 1.4rem;
   font-weight: 400;
   color: #333333;
   margin-top: 1rem;
@@ -31,22 +32,20 @@ const CaseLink = styled(Link)`
   }
 
   &:hover ${CaseCaption} {
-    font-weight: 600;
-    letter-spacing: -0.5px;
-    color: #333333;
-    // color: #ffb7b7;
+    font-weight: 500;
+    letter-spacing: -0.41px;
   }
 
   @media (max-width: 1024px) {
     margin: 3.5rem 0;
   }
 
-  @media (max-width: 768px) {
-    &:hover ${CaseCaption} {
-      font-weight: 500;
-      letter-spacing: -0.5px;
-    }
-  }
+  // @media (max-width: 768px) {
+  //   &:hover ${CaseCaption} {
+  //     font-weight: 500;
+  //     letter-spacing: -0.5px;
+  //   }
+  // }
 `;
 
 const Filler = styled.div`
@@ -117,6 +116,7 @@ export default function Nimbus() {
             item && <animated.div key={key} style={props}>
               <Filler />
               <ImageCaption>How do you expand access to the outdoors for the increasingly interconnected society of today?</ImageCaption>
+              {/* <ImageCaption>Nimbus: A mobile app design that aims to expand access to the outdoors</ImageCaption> */}
               {/* <ImageCaption>
                 HOW DO YOU EXPAND ACCESS TO THE OUTDOORS FOR THE INCREASINGLY INTERCONNECTED SOCIETY OF TODAY
               </ImageCaption> */}
@@ -126,6 +126,7 @@ export default function Nimbus() {
       </ImageParent>
       <CaseCaption>
         Nimbus: A mobile app design that aims to redefine access to the outdoors.
+        {/* How do you expand access to the outdoors for the increasingly interconnected society of today? */}
       </CaseCaption>
     </CaseLink>
   )

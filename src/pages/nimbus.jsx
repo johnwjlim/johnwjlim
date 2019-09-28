@@ -21,6 +21,7 @@ import { sections } from "../components/constants"
 const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
+  margin-top: 76px;
   // max-width: 1680px;
 `
 
