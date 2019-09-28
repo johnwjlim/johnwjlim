@@ -127,7 +127,7 @@ export default function IndexPage() {
                 <Subtitle>I'm a student studying Human Computer Interaction and Political Science at the University of Washington.</Subtitle>
                 {/* <MobileSubtitle>Student of Human Computer Interaction at the University of Washington.</MobileSubtitle> */}
                 {/* <Subtitle>I'm an avid skier, amateur runner and I make little rectangles on a screen from time to time.</Subtitle> */}
-                <Title>I craft and imagine mobile and web-based experiences.</Title>
+                <Title>I imagine and craft mobile and web-based experiences.</Title>
 
               </TitleBox>
               {/* <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
