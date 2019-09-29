@@ -8,6 +8,9 @@ const Container = styled.div`
   display: flex;
   justify-content: space-between;
   // padding: 1.5rem 0;
+  max-width: 1680px;
+  // margin: 0 auto;
+  // position: absolute;
   position: fixed;
   padding: 1.5rem 2.5rem;
   top: 0;
