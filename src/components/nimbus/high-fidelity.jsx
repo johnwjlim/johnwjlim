@@ -16,7 +16,7 @@ const StyledList = styled.ul`
   @media (max-width: 1240px) {
     padding-left: 1rem;
   }
-`;
+`
 
 
 

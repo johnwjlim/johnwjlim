@@ -18,12 +18,13 @@ import PersonalThoughts from "../components/nimbus/personal-thoughts"
 
 import { sections } from "../components/constants"
 
-const Wrapper = styled.div`
+const FlexWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   margin-top: 76px;
   // max-width: 1680px;
 `
+
 
 export default function Nimbus() { 
   const [active, setActive] = useState(0)
@@ -120,7 +121,7 @@ export default function Nimbus() {
         menuState ?
           <MobileNav components={sections} active={active} onChange={handleTabSwitch}/>
         :
-        <Wrapper>
+        <FlexWrapper>
             {
               // transitions.map(({item, props, key}) => {
               //   switch (item) {
@@ -171,7 +172,7 @@ export default function Nimbus() {
               renderActiveSection()
             }
           <Nav components={sections} active={active} onChange={handleTabSwitch}/>
-        </Wrapper>
+        </FlexWrapper>
       }
     </Layout>
   )

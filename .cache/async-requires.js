@@ -7,6 +7,7 @@ exports.components = {
   "component---src-pages-about-jsx": () => import("/Users/wjlim/code/johnwjlim/src/pages/about.jsx" /* webpackChunkName: "component---src-pages-about-jsx" */),
   "component---src-pages-g-challenge-jsx": () => import("/Users/wjlim/code/johnwjlim/src/pages/g-challenge.jsx" /* webpackChunkName: "component---src-pages-g-challenge-jsx" */),
   "component---src-pages-index-js": () => import("/Users/wjlim/code/johnwjlim/src/pages/index.js" /* webpackChunkName: "component---src-pages-index-js" */),
+  "component---src-pages-nimbus-smooth-scroll-jsx": () => import("/Users/wjlim/code/johnwjlim/src/pages/nimbus-smooth-scroll.jsx" /* webpackChunkName: "component---src-pages-nimbus-smooth-scroll-jsx" */),
   "component---src-pages-nimbus-jsx": () => import("/Users/wjlim/code/johnwjlim/src/pages/nimbus.jsx" /* webpackChunkName: "component---src-pages-nimbus-jsx" */),
   "component---src-pages-page-2-js": () => import("/Users/wjlim/code/johnwjlim/src/pages/page-2.js" /* webpackChunkName: "component---src-pages-page-2-js" */),
   "component---src-pages-resume-jsx": () => import("/Users/wjlim/code/johnwjlim/src/pages/resume.jsx" /* webpackChunkName: "component---src-pages-resume-jsx" */)
