@@ -155,17 +155,18 @@ export const SmallWidth = styled(ImageWrapper)`
 `
 
 export const InfoPanel = styled.div`
-  // width: 18vw;
   margin: 7.5rem 0;
   position: absolute;
   left: 0;
   top: 0;
+  // width: auto;
 
   @media (max-width: 1240px) {
-    // display: block;
     position: relative;
-    width: 100%;
-    margin: 3.5rem 0;
+    margin: 3.5rem auto;
+    max-width: 36rem;
+    // margin: 0 auto;
+    // justify-content: center;
   }
 `
 
