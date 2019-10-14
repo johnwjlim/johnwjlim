@@ -19,10 +19,16 @@ const Wrapper = styled.div`
   
 `
 
-const Image = styled.div`
-  max-width: 34rem;
+const Hero = styled.div`
+  // max-width: 36rem;
+  max-width: 28rem;
   margin: 0 auto;
   margin-bottom: 0.5rem;
+  margin-top: 3rem;
+`
+
+const Constraint = styled.div`
+  max-width: 26rem;
 `
 
 
@@ -78,10 +84,12 @@ export default function About() {
               <Img fluid={data.HeroWide.childImageSharp.fluid} />
             </Image> */}
             {/* <ImageOffset> */}
-              <Image>
+              <Hero>
+                <Constraint>
                 <Img fluid={data.Hero.childImageSharp.fluid} />
                 <p style={{fontSize: "0.9rem"}}><strong>Me, Jamie and Alice at the University District Farmer's Market in Seattle</strong></p>
-              </Image>
+                </Constraint>
+              </Hero>
               {/* <p style={{fontSize: "0.9rem"}}><strong>Me, Jamie and Alice at the University District Farmer's Market in Seattle</strong></p> */}
             {/* </ImageOffset> */}
             <Styled.OffsetBody style={{marginTop: "3.5rem"}}>
