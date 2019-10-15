@@ -10,9 +10,7 @@
 
 Or at least it was...I've kept the bits I liked and shaped the rest to what I needed it to do. 
 
-So the code's not pretty, but it was never meant to be nice to look at. This was one of those moments where I just got 
-in the zone and lines of code just flowed out of me. And before I knew it, it was 3 in the morning and I had something resembling 
-a backbone to build upon and I guess I just took it from there. 
+So the code's not pretty, but it was never meant to be nice to look at. This was one of those moments where I just got in the zone and lines of code just flowed out of me. And before I knew it, it was 3 in the morning and I had something resembling a backbone to build upon and I guess I just took it from there. 
 
 <h3>www.johnwjlim.com</h3>
 <h3>wjlim@uw.edu</h3>
