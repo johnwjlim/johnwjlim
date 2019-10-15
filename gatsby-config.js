@@ -33,3 +33,9 @@ module.exports = {
     // `gatsby-plugin-offline`,
   ],
 }
+
+
+/**
+ * TODO: implement gatsby-plugin-react-redux??
+ * https://www.gatsbyjs.org/packages/gatsby-plugin-react-redux/
+ */

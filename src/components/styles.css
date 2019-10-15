@@ -21,6 +21,7 @@ h1, h2, h3, h4, h5, h6, p, a, blockquote, li {
   /* font-family: apple-system, BlinkMacSystemFont, Helvetica Neue, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
   font-family: apple-system, BlinkMacSystemFont, sans-serif;
+  /* font-family: sans-serif; */
   text-rendering: optimizeLegibility;
   line-height: 1.2;
   margin-top: 0;
