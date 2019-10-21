@@ -26,7 +26,7 @@ const PrototypeSection = styled.div`
   }
 
   @media (max-width: 768px) {
-    display: none;
+    // display: none;
   }
 `
 
@@ -35,8 +35,19 @@ const PrototypeWrapper = styled.div`
 
   @media (max-width: 768px) {
     margin: 0;
+    display: none;
   }
 `
+
+const PrototypeWrapperSmall = styled(PrototypeWrapper)`
+  display: none;  
+
+  @media (max-width: 768px) {
+    display: block;
+  }
+`
+
+
 
 const PrototypeText = styled(TextBlock)`
   max-width: 28rem;
@@ -63,6 +74,18 @@ const ImageCaption = styled.a`
     cursor: pointer;  
   }  
 `;
+
+const PrototypeLink = styled(ImageCaption)`
+  display: none;
+
+  @media (max-width: 768px) {
+    display: block;
+  }
+`
+
+const iFrameStyle = {
+  transform: "scale(0.6)",
+}
 
 export default function Showcase(props) {
   const data = useStaticQuery(graphql`
@@ -171,7 +194,7 @@ export default function Showcase(props) {
         </ImageWrapper>
         <PrototypeSection>
           <PrototypeWrapper>
-            <iframe src="https://marvelapp.com/3f9161c?emb=1&iosapp=false&frameless=false" style={{transform: "scale(0.6)"}} width="452" height="901" allowTransparency="true" frameborder="0"></iframe>
+            <iframe src="https://marvelapp.com/3f9161c?emb=1&iosapp=false&frameless=false" style={iFrameStyle} width="452" height="901" allowTransparency="true" frameborder="0"></iframe>
           </PrototypeWrapper>
           <IntroBody>
               {/* <h3>Interactive Prototype</h3>  */}
@@ -180,6 +203,9 @@ export default function Showcase(props) {
               </PrototypeText>
               <PrototypeText>
                 <p>The use goal that we set out for our testers with this prototype was to create a group travelling to hike a popular local trail known as Mailbox Peak.</p>
+              </PrototypeText>
+              <PrototypeText>
+                <PrototypeLink href="https://marvelapp.com/3f9161c" target="_blank">View the prototype here!</PrototypeLink>
               </PrototypeText>
           </IntroBody>
         </PrototypeSection>
