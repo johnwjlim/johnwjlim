@@ -9,6 +9,7 @@ exports.components = {
   "component---src-pages-index-js": () => import("/Users/wjlim/code/johnwjlim/src/pages/index.js" /* webpackChunkName: "component---src-pages-index-js" */),
   "component---src-pages-nimbus-jsx": () => import("/Users/wjlim/code/johnwjlim/src/pages/nimbus.jsx" /* webpackChunkName: "component---src-pages-nimbus-jsx" */),
   "component---src-pages-page-2-js": () => import("/Users/wjlim/code/johnwjlim/src/pages/page-2.js" /* webpackChunkName: "component---src-pages-page-2-js" */),
-  "component---src-pages-resume-jsx": () => import("/Users/wjlim/code/johnwjlim/src/pages/resume.jsx" /* webpackChunkName: "component---src-pages-resume-jsx" */)
+  "component---src-pages-resume-jsx": () => import("/Users/wjlim/code/johnwjlim/src/pages/resume.jsx" /* webpackChunkName: "component---src-pages-resume-jsx" */),
+  "component---src-pages-smart-shower-jsx": () => import("/Users/wjlim/code/johnwjlim/src/pages/smart-shower.jsx" /* webpackChunkName: "component---src-pages-smart-shower-jsx" */)
 }
 
