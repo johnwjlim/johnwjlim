@@ -71,19 +71,19 @@ export default function SmartShower() {
         <Wrapper>
           {
             <Styled.Container>
-              <Styled.ImageWrapper>
+              {/* <Styled.ImageWrapper>
                 <Img fluid={data.HeroImage.childImageSharp.fluid} />
-              </Styled.ImageWrapper>
+              </Styled.ImageWrapper> */}
               <Styled.FlexWrapper>
                 <Styled.InfoPanel>
-                  <h1 style={{marginBottom: "0.5rem"}}>Smart Shower</h1>
-                  <p style={{lineHeight: "1.4"}}>Experience Design</p>
+                  <h1 style={{marginBottom: "0.2rem"}}>Smart Shower</h1>
+                  <p style={{lineHeight: "1.5"}}>Experience Design</p>
                 </Styled.InfoPanel>
                 <Styled.IntroBody>
-                  <Styled.TextBlock>
+                  {/* <Styled.TextBlock>
                     <p><strong>The What</strong></p>
                     <p>A voice activated, digitally controlled shower.</p>
-                  </Styled.TextBlock>
+                  </Styled.TextBlock> */}
                   <Styled.TextBlock>
                     <p><strong>The Why</strong></p>
                     <p>
@@ -98,12 +98,12 @@ export default function SmartShower() {
                   </Styled.TextBlock>
                 </Styled.IntroBody>
               </Styled.FlexWrapper>
-              <Styled.ImageWrapper>
+              {/* <Styled.ImageWrapper>
                 <Img fluid={data.Image1.childImageSharp.fluid} />
               </Styled.ImageWrapper>
               <ImageWithMargin>
                 <Img fluid={data.Image2.childImageSharp.fluid} />
-              </ImageWithMargin>
+              </ImageWithMargin> */}
             </Styled.Container>
           }
           <Nav active={active} onChange={handleTabSwitch}/>
