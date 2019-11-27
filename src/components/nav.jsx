@@ -139,7 +139,7 @@ export default function Nav(props) {
               <StyledLink 
                 as="a"
                 target="_blank"
-                href="https://drive.google.com/file/d/1zsoy_14GpmGUIfPKZIb3YplfD8b1qeKf/view?usp=sharing"
+                href="https://drive.google.com/file/d/1XSaqPBx_j0yNAe-BO5ZNcC1xtrMCLq7n/view?usp=sharing"
               >
                 Resume
               </StyledLink>
