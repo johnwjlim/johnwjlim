@@ -14,7 +14,7 @@ const ImageBackground = styled.div`
   background-color: #f5f5f5;
   padding: 3.5rem 0;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1120px) {
     padding: 0;
   }
 `
@@ -94,7 +94,7 @@ export default function Intro() {
               <InlineLink target="_blank" href="http://stephensherwood.me/">Stephen Sherwood. </InlineLink>
           </Styled.BodyText>
           <Styled.BodyText>
-            The brief for this project was to design an energy and water use tracking information system for home use that helps users to optimize their use of water and energy. A key theme we discovered during the course of our research was a general disconnect between present means of measuring resource consumption and our awareness of what we’re actually using; water meters are notoriously obtuse and bills often come in measurement units that beyond dollars and cents, are unrelatable to most (its hard to relate kilowatt hours and cubic feet to more tangible everyday concepts). 
+            The brief for this project was to design an energy and water use tracking information system for home use that helps users to optimize their use of water and energy. A key theme we came upon during the course of our ideation was a general disconnect between present means of measuring resource consumption and our awareness of what we’re actually using; water meters are notoriously obtuse and bills often come in measurement units that beyond dollars and cents, are unrelatable to most (its hard to relate kilowatt hours and cubic feet to more tangible everyday concepts). 
           </Styled.BodyText>
         </Styled.OffsetBody>
         <Styled.ImageWrapper>
