@@ -4,6 +4,9 @@ export const sections = ["Overview", "Survey and Ideation", "Flows + Wireframes"
 
 export const gSections = ["Case Study", "Prologue / Motivations"]
 
+export const poolSections = ["Intro + Ideation", "Individual Deliverable", "Team Deliverable"]
+
+
 export const Container = styled.div`
   max-width: 1300px;
   width: 90%;
