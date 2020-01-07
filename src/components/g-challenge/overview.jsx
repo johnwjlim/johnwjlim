@@ -115,7 +115,7 @@ export default function Overview(props) {
         <IntroBody>
           <TextBlock>
             <p>
-            This was sort of an individual design challenge set by a certain technology company, where the prompt was to design an experience for new students to browse, search, and propose new student organizations. My deliverables were to be wireframe flows with one or two screens at a “higher-fidelity”, whatever that was supposed to mean. The sort of part comes via the fact that what I submitted actually bears little to no resemblance to what I have here (more on that in the <InlineLink onClick={() => props.onChange(1)}>backstory</InlineLink>)
+            The prompt was to design an experience for new students to browse, search, and propose new student organizations. The deliverables were to be wireframe flows with one or two screens at a “higher-fidelity”, whatever that was supposed to mean.
             </p>
           </TextBlock>
           <p><strong>Thinking about community and connection</strong></p>

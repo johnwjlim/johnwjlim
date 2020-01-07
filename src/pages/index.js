@@ -17,6 +17,7 @@ import Nav from "../components/nav"
 import Nimbus from "../components/home/nimbus-thumbnail"
 import New from "../components/home/nimbus-thumbnail-new"
 import GChallenge from "../components/home/g-thumbnail"
+import Pool from "../components/home/pool-thumbnail"
 
 const Wrapper = styled.div`
   display: flex;
@@ -135,6 +136,7 @@ export default function IndexPage() {
               </div> */}
               {/* <Nimbus /> */}
               <New />
+              <Pool />
               <GChallenge />
             </Body>
             <Nav />
