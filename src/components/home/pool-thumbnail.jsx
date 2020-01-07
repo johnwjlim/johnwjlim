@@ -116,7 +116,8 @@ export default function GThumbnail() {
           transitions.map(({item, key, props}) => 
             item && <animated.div key={key} style={props}>
               <Filler />
-              <ImageCaption>How do you empower control over our water and energy consumption in a unique and engaging manner?</ImageCaption>
+              {/* <ImageCaption>How do you empower control over our water and energy consumption in a unique and engaging manner?</ImageCaption> */}
+              <ImageCaption>How do you reimagine household utilities tracking with the technologies of tommorow?</ImageCaption>
             </animated.div>
           )
         }
