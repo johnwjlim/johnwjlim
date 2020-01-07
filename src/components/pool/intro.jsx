@@ -88,7 +88,7 @@ export default function Intro() {
             Stephen Sherwood <br/>
           </Styled.BodyText> */}
           <Styled.BodyText>
-            POOL was the cumulative deliverable for an experience design project that I worked on as part of an Interaction Design class. I’ve had the pleasure of collaborating with three immensely talented individuals for this project. Do take the chance to check out their portfolios: 
+            POOL was the cumulative deliverable for an experience design project that I worked on as part of an Interaction Design class. I’ve had the pleasure of collaborating with three other immensely talented individuals for this project. Do check out their portfolios if you can: 
               <InlineLink target="_blank" href="https://www.abooneportfolio.com/" > Ashley Boone, </InlineLink>
               <InlineLink target="_blank" href="https://www.isabellearmstrong.me/">Isabelle Armstrong, </InlineLink>
               <InlineLink target="_blank" href="http://stephensherwood.me/">Stephen Sherwood. </InlineLink>
