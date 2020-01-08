@@ -162,6 +162,11 @@ export default function Showcase(props) {
           </InfoPanel>
           <IntroBody>
             <TextBlock>
+              <p  style={{fontStyle: "oblique", fontWeight: "600"}}>
+              TLDR: Nimbus is a mobile experience that aims to solve the transportation challenges of remote outdoor exploration by connecting adventurers with one another and having them share transport to outdoor recreation areas. 
+              </p>
+            </TextBlock>
+            <TextBlock>
               <p>
                 The year is 2018. National Park visits in the United States have topped 200 million and social media usage among young Americans are at an all time high. While our public lands are purportedly free and open to all, the sheer remoteness of many of our favorite outdoor locations  means that access is often limited to the few who have cars or those whose friends or family share a similar passion for the outdoors.
               </p>

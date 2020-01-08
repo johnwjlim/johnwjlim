@@ -105,7 +105,7 @@ export default function Intro() {
             Our proposed solution is a mixed reality experience that aims to visualize household energy and water usage in order to encourage responsible consumption. We're calling it POOL –– kind of as a playful way to reflect the way our design aims to visualize resource footprints as "pools of impact" on the ground.
           </Styled.BodyText>
           <Styled.BodyText>
-            A primary goal of our design solution was about closing the feedback loop between resource usage and awareness of the actual impact of use. Current billing cycles give a macro-level overview of consumption but provides little to no micro-level fidelity that users can actually use to make meaningful changes in behavior. POOL aims to address this by leveraging mixed reality technologies to project real-time resource impact at the point of use to give users a better understanding of their consumption habits and behavior. 
+            A core tenet of our design solution was about closing the feedback loop between resource usage and awareness of the actual impact of use. Current billing cycles give a macro-level overview of consumption but provides little to no micro-level fidelity that users can actually use to make meaningful changes in behavior. POOL aims to address this by leveraging mixed reality technologies to project real-time resource impact at the point of use to give users a better understanding of their consumption habits and behavior. 
           </Styled.BodyText>
           <Styled.BodyText>
             As part of the final deliverables for our project, I created a one page poster that aims to showcase what our design was about and how it worked. 
