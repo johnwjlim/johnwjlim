@@ -83,6 +83,11 @@ const PrototypeLink = styled(ImageCaption)`
   }
 `
 
+const PitchDeckLink = styled(ImageCaption)`
+  text-align: left;
+  font-style: oblique;
+`
+
 const iFrameStyle = {
   transform: "scale(0.6)",
 }
@@ -165,6 +170,9 @@ export default function Showcase(props) {
               <p  style={{fontStyle: "oblique", fontWeight: "600"}}>
               TLDR: Nimbus is a mobile experience that aims to solve the transportation challenges of remote outdoor exploration by connecting adventurers with one another and having them share transport to outdoor recreation areas. 
               </p>
+            </TextBlock>
+            <TextBlock>
+              <PitchDeckLink href="https://www.figma.com/proto/rqb3pn14vDM8drmDBvJGWY/Nimbus-Pitch-Deck?node-id=92%3A3&scaling=scale-down" target="_blank">Check out the condensed pitch deck here!</PitchDeckLink>
             </TextBlock>
             <TextBlock>
               <p>
