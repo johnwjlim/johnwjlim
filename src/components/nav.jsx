@@ -176,7 +176,7 @@ export default function Nav(props) {
           <Footer>
             <FooterText>
               Built with ❤️on
-              <InlineLink href="https://www.gatsbyjs.org" target="_blank"> GatsbyJS</InlineLink>, 
+              <InlineLink href="https://www.gatsbyjs.org" target="_blank"> React</InlineLink>, 
               <InlineLink href="https://redux.js.org" target="_blank"> Redux</InlineLink>, 
               <InlineLink href="https://www.styled-components.com" target="_blank"> styled-components</InlineLink>, 
               and a little magic from 
