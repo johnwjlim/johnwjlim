@@ -116,7 +116,7 @@ export default function IndexPage() {
 
   return (
     <Layout>
-      <SEO title="John Lim" />
+      <SEO title="Home" />
       <Header/>
       {
         menuState ?
