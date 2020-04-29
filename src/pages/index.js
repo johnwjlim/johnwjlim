@@ -50,7 +50,7 @@ const Title = styled.h3`
   letter-spacing: -0.2px;
   // font-size: 1.75rem
 
-  font-size: 1.3rem;
+  font-size: 1.27rem;
 
   @media (max-width: 768px) {
     font-size: 1.25rem;
