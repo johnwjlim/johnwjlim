@@ -36,18 +36,18 @@ const Body = styled(Container)`
 `;
 
 const TitleBox = styled.div`
-  margin: 5rem 0 10rem;
-  // margin: 3.5rem 0 5rem;
+  // margin: 5rem 0 10rem;
+  margin: 3.5rem 0 5rem;
   @media (max-width: 768px) {
     // font-size: 1rem;
     margin: 3.5rem 0 5rem;
   }
 `
 
-const Title = styled.h2`
+const Title = styled.h3`
   color: #333333;
-  letter-spacing: -0.7px;
-  font-size: 1.75rem;
+  letter-spacing: -0.2px;
+  // font-size: 1.75rem
 
   @media (max-width: 768px) {
     font-size: 1.25rem;
@@ -58,6 +58,7 @@ const Subtitle = styled.h3`
   // font-size: 1.1rem;
   font-weight: 400;
   color: #666666;
+  letter-spacing: -0.2px;
   // color: #333333;
   margin-bottom: 0.3rem;
 
