@@ -23,6 +23,7 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
   margin-top: 76px;
+  background-color: #;
 `;
 
 const Body = styled(Container)`
@@ -49,6 +50,8 @@ const Title = styled.h3`
   letter-spacing: -0.2px;
   // font-size: 1.75rem
 
+  font-size: 1.3rem;
+
   @media (max-width: 768px) {
     font-size: 1.25rem;
   }
@@ -61,6 +64,7 @@ const Subtitle = styled.h3`
   letter-spacing: -0.2px;
   // color: #333333;
   margin-bottom: 0.3rem;
+  // font-size: 1.25rem;
 
   @media (max-width: 768px) {
     display: none;
