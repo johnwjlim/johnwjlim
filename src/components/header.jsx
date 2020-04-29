@@ -18,7 +18,7 @@ const Container = styled.div`
   z-index: 5;
   width: 100%;
   background-color: white;
-  border-bottom: 1px solid #f5f5f5;
+  border-bottom: 1px solid #f1f1f1;
   // box-shadow: 1px 1px #c5c5c5;
 
   @media (max-width: 425px) {
