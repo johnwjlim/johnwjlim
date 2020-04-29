@@ -3,9 +3,13 @@ import { Link } from "gatsby"
 import styled from "styled-components"
 
 const Container = styled.nav`
-  width: 15em;
+  width: 16em;
   // z-index: 10;
-  @media (max-width: 768px) {
+  position: fixed;   
+  height: 89%;
+  right: 0;
+  margin: 0 1rem;
+  @media (max-width: 1240px) {
     display: none; 
   }
 `
