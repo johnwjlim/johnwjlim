@@ -12,12 +12,14 @@ const Container = styled.div`
   // margin: 0 auto;
   // position: absolute;
   position: fixed;
-  padding: 1.5rem 2.5rem;
+  padding: 1rem 2.5rem;
   top: 0;
   left: 0;
   z-index: 5;
   width: 100%;
   background-color: white;
+  border-bottom: 1px solid #f5f5f5;
+  // box-shadow: 1px 1px #c5c5c5;
 
   @media (max-width: 425px) {
     padding: 1.5rem;
@@ -103,7 +105,7 @@ const Menu = styled.a`
     margin-right: 2.5rem;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 1240px) {
     display: block;
   }
 `

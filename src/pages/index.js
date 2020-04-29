@@ -27,7 +27,8 @@ const Wrapper = styled.div`
 
 const Body = styled(Container)`
   // width: 100%;
-  margin: 0 5vw;
+  margin: 0 3vw;
+  margin-right: 15em;
 
   @media (max-width: 1240px) {
     margin: 0;

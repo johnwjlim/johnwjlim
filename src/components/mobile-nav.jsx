@@ -50,7 +50,7 @@ const DetailText = styled.p`
   margin-bottom: 3.5rem;
   line-height: 1.5;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1240px) {
     display: none
   }
 
