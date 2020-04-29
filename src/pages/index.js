@@ -36,24 +36,30 @@ const Body = styled(Container)`
 `;
 
 const TitleBox = styled.div`
-  // margin: 3.5rem 0;
-  margin: 2.5rem 0 5rem;
-`
-
-const Title = styled.h3`
-  color: #333333;
-
+  margin: 5rem 0 10rem;
+  // margin: 3.5rem 0 5rem;
   @media (max-width: 768px) {
-    font-size: 1rem;
+    // font-size: 1rem;
+    margin: 3.5rem 0 5rem;
   }
 `
 
-const Subtitle = styled(Title)`
+const Title = styled.h2`
+  color: #333333;
+  letter-spacing: -0.7px;
+  font-size: 1.75rem;
+
+  @media (max-width: 768px) {
+    font-size: 1.25rem;
+  }
+`
+
+const Subtitle = styled.h3`
   // font-size: 1.1rem;
   font-weight: 400;
   color: #666666;
   // color: #333333;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.3rem;
 
   @media (max-width: 768px) {
     display: none;
@@ -126,10 +132,11 @@ export default function IndexPage() {
           <Wrapper>
             <Body>
               <TitleBox>
-                <Subtitle>I'm a student studying Human Computer Interaction and Political Science at the University of Washington.</Subtitle>
+                <Subtitle>I'm a designer that codes studying Human Computer Interaction and Political Science at the University of Washington.</Subtitle>
                 {/* <MobileSubtitle>Student of Human Computer Interaction at the University of Washington.</MobileSubtitle> */}
                 {/* <Subtitle>I'm an avid skier, amateur runner and I make little rectangles on a screen from time to time.</Subtitle> */}
-                <Title>I'm a designer that codes driven by impact and seeking the intersection between technology and humanity.</Title>
+                {/* <Title>I'm a designer that codes driven by impact and seeking the intersection between technology and humanity.</Title> */}
+                <Title>I strive to craft engaging experiences at the intersection of technology and humanity.</Title>
 
               </TitleBox>
               {/* <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
