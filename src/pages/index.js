@@ -23,7 +23,8 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
   margin-top: 76px;
-  background-color: #;
+  // margin-top: 58px;
+  // background-color: #;
 `;
 
 const Body = styled(Container)`
@@ -39,6 +40,7 @@ const Body = styled(Container)`
 const TitleBox = styled.div`
   // margin: 5rem 0 10rem;
   margin: 3.5rem 0 5rem;
+  // margin: 5rem 0;
   @media (max-width: 768px) {
     // font-size: 1rem;
     margin: 3.5rem 0 5rem;
