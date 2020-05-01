@@ -5,8 +5,9 @@ import Img from "gatsby-image"
 
 import { Container, ImageWrapper, FlexWrapper, IntroBody, OffsetBody, TextBlock, RightButton, ButtonHeader, ButtonText, sections, Image, InfoPanel } from "../constants"
 
-const Title = styled.h1`
+const Title = styled.h2`
   // font-weight: 600;
+  font-weight: 600;
   margin-bottom: 0.5rem;
 `
 
@@ -85,7 +86,37 @@ const PrototypeLink = styled(ImageCaption)`
 
 const PitchDeckLink = styled(ImageCaption)`
   text-align: left;
-  font-style: oblique;
+  // font-family: "EB Garamond", serif;
+  // font-style: italic;
+  // font-size: 1.2rem;
+  font-weight: 400;
+  
+`
+
+const HeroTitle = styled.h1`
+  margin: 0;
+  // margin-bottom: 2rem;
+  // margin-top: 5rem;
+  font-family: "EB Garamond", serif;
+  color: #111111;
+  font-weight: 500;
+  font-size: 2.2rem;
+  // line-height: 1.5;
+`
+
+const HeroSubtitle = styled.p`
+  font-family: "EB Garamond", serif;
+  font-style: italic;
+  color: #484848;
+  font-size: 1.5rem;
+  margin-bottom: 2.5rem;
+  padding-left: 0.5rem;
+`
+
+const SerifText = styled.p`
+  // font-family: "EB Garamond", serif;
+  // color: #333333;
+  // font-size: 1.28rem;
 `
 
 const iFrameStyle = {
@@ -160,20 +191,33 @@ export default function Showcase(props) {
         <ImageWrapper>
           <Img fluid={data.HeroImage.childImageSharp.fluid} />
         </ImageWrapper>
+        {/* <HeroTitle>"The mountains are calling and I must go" – John Muir</HeroTitle>
+        <HeroSubtitle>Now we just have to figure out how to get there.</HeroSubtitle> */}
         <FlexWrapper>
           <InfoPanel>
             <Title>Nimbus</Title>
-            <p style={{lineHeight: "1.4"}}>Mobile App Design <br/>User Experience</p>
+            <p style={{lineHeight: "1.35", color: "#666666"}}>Mobile App Design <br/>User Experience</p>
           </InfoPanel>
           <IntroBody>
             <TextBlock>
-              <p  style={{fontStyle: "oblique", fontWeight: "600"}}>
-              TLDR: Nimbus is a mobile experience that aims to solve the transportation challenges of remote outdoor exploration by connecting adventurers with one another and having them share transport to outdoor recreation areas. 
+              <HeroTitle>"The mountains are calling and I must go"</HeroTitle>
+              {/* <HeroSubtext>– John Muir</HeroSubtext> */}
+              <HeroSubtitle>&mdash; John Muir</HeroSubtitle>
+            </TextBlock>
+            <TextBlock>
+              <p style={{fontWeight: "700"}}>
+                But first, you've got to actually get there. 
               </p>
             </TextBlock>
             <TextBlock>
-              <PitchDeckLink href="https://www.figma.com/proto/rqb3pn14vDM8drmDBvJGWY/Nimbus-Pitch-Deck?node-id=92%3A3&scaling=scale-down" target="_blank">Check out the condensed pitch deck here!</PitchDeckLink>
+              <p>
+                TLDR: Nimbus is a mobile experience that aims to solve the transportation challenges of remote outdoor exploration by connecting adventurers with one another and having them share transport to outdoor recreation areas. 
+              </p>
             </TextBlock>
+            <TextBlock style={{marginBottom: "5rem"}}>
+              <PitchDeckLink href="https://www.figma.com/proto/rqb3pn14vDM8drmDBvJGWY/Nimbus-Pitch-Deck?node-id=92%3A3&scaling=scale-down" target="_blank">View the condensed pitch deck here!</PitchDeckLink>
+            </TextBlock>
+            <div style={{marginBottom: "5rem", borderBottom: "1px solid #c5c5c5"}}></div>
             <TextBlock>
               <p>
                 The year is 2018. National Park visits in the United States have topped 200 million and social media usage among young Americans are at an all time high. While our public lands are purportedly free and open to all, the sheer remoteness of many of our favorite outdoor locations  means that access is often limited to the few who have cars or those whose friends or family share a similar passion for the outdoors.
