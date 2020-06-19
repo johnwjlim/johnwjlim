@@ -199,6 +199,16 @@ const Divider = styled.div`
   }
 `
 
+const ImageOffset = styled(OffsetBody)`
+  background-color: #f5f5f5;
+  padding: 10rem 8rem;
+
+  @media (max-width: 1240px) {
+    background-color: #ffffff;
+    padding: 0;
+  }
+`
+
 const iFrameStyle = {
   transform: "scale(0.6)",
 }
@@ -226,7 +236,21 @@ export default function Showcase(props) {
           }
         }
       }
+      PaperPrototypes: file(relativePath: {eq: "paper-prototypes.png"}) {
+        childImageSharp {
+          fluid(maxWidth: 3200) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
       Grid: file(relativePath: {eq: "image-grid.png"}) {
+        childImageSharp {
+          fluid(maxWidth: 3200) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      GridFull: file(relativePath: {eq: "image-grid-full-width.png"}) {
         childImageSharp {
           fluid(maxWidth: 3200) {
             ...GatsbyImageSharpFluid
@@ -278,6 +302,13 @@ export default function Showcase(props) {
       TestFrame: file(relativePath: {eq:"test-frame.png"}) {
         childImageSharp {
           fluid (maxWidth: 3200) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      TestFrameFullWidth: file(relativePath: {eq:"test-frame-full-width.png"}) {
+        childImageSharp {
+          fluid(maxWidth: 3200) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -351,9 +382,23 @@ export default function Showcase(props) {
               </p>
             </ColumnBlock>
           </OffsetBody>
-        <ImageWrapper>
-          <Img fluid={data.Grid.childImageSharp.fluid}/>
-        </ImageWrapper>
+        {/* <ImageOffset>
+            <ImageWrapper>
+              <Img fluid={data.GridFull.childImageSharp.fluid} />
+            </ImageWrapper>
+        </ImageOffset> */}
+        <ImageOffset>
+            <ImageWrapper>
+              <Img fluid={data.PaperPrototypes.childImageSharp.fluid} />
+            </ImageWrapper>
+        </ImageOffset>
+        {/* <OffsetBody>
+          <TextBlock>
+            <ImageWrapper>
+              <Img fluid={data.PaperPrototypes.childImageSharp.fluid} />
+            </ImageWrapper>
+          </TextBlock>
+        </OffsetBody> */}
         <OffsetBody>
           <ColumnBlock>
             <p> With successful mitigative measures in place, multiple rounds of testing and iteration further revealed that much of our target users were essentially <strong>less concerned for their own safety</strong> than we as designers were. They had in fact expressed <strong>more concern over chemistry & compatibility</strong> with potential travel companions than with their own personal safety.</p>
@@ -391,9 +436,16 @@ export default function Showcase(props) {
             </Box>
           </TextBlock>
         </OffsetBody>
-        <ImageWrapper>
+        {/* <ImageWrapper>
           <Img fluid={data.TestFrame.childImageSharp.fluid} />
-        </ImageWrapper>
+        </ImageWrapper> */}
+        <OffsetBody>
+          <TextBlock>
+            <ImageWrapper>
+              <Img fluid={data.TestFrameFullWidth.childImageSharp.fluid}  />
+            </ImageWrapper>
+           </TextBlock>
+        </OffsetBody>
         <OffsetBody>
           {/* <TextBlock>
             <p>Our <strong>user tests</strong> were largely conducted in the form of <strong>semi-structured interviews.</strong> This not only allowed us to observe in person how our testers responded to the screens and prompts posed to them but more importantly, it afforded us the opportunity for <strong>face to face connections</strong> with potential users and helped us <strong>expand our understanding of the problem space.</strong></p>
@@ -463,9 +515,13 @@ export default function Showcase(props) {
               </PrototypeText>
           </IntroBody>
         </PrototypeSection>
-        <SpecialWrapper>
-          <Img fluid={data.ProfileMontage.childImageSharp.fluid} />
-        </SpecialWrapper>
+        <ImageOffset>
+          {/* <TextBlock> */}
+            <ImageWrapper>
+              <Img fluid={data.ProfileMontage.childImageSharp.fluid} />
+            </ImageWrapper>
+          {/* </TextBlock> */}
+        </ImageOffset>
         <OffsetBody>
           <TextBlock>
             <SectionTitle>Hindsight = 20/20</SectionTitle>
