@@ -240,20 +240,6 @@ export default function Showcase(props) {
           }
         }
       }
-      PaperPrototype: file(relativePath: {eq: "paper-prototype.png"}) {
-        childImageSharp {
-          fluid(maxWidth: 3200) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      Cutout: file(relativePath: {eq: "high-fi-cutout.png"}) {
-        childImageSharp {
-          fluid(maxWidth: 3200) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
       ProfileMontage: file(relativePath: {eq: "profile-montage.png"}) {
         childImageSharp {
           fluid(maxWidth: 3200) {
@@ -427,7 +413,7 @@ export default function Showcase(props) {
             </Quote>
           </TextBlock>
         </OffsetBody>
-        <OffsetBody>
+        <OffsetBody style={{marginBottom: "0"}}>
           {/* <div style={{padding: "1rem 0"}} /> */}
           <TextBlock>
             <Divider />
@@ -446,7 +432,7 @@ export default function Showcase(props) {
         <ImageWrapper>
           <Img fluid={data.Deck.childImageSharp.fluid}/>
         </ImageWrapper>
-        <OffsetBody style={{marginBottom: "0"}}>
+        <OffsetBody style={{margin: "0"}}>
           <TextBlock>
               <Box>
                 <p style={{maxWidth: "24rem", margin:"1.7rem auto"}}><strong>View deep dive and screen descriptions for high-fidelity screens</strong></p>
