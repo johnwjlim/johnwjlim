@@ -1,20 +1,46 @@
-import React from "react"
+import React, { useEffect } from "react"
 import styled from "styled-components"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
-import { Container, ImageWrapper, FlexWrapper, IntroBody, OffsetBody, TextBlock, RightButton, ButtonHeader, ButtonText, sections, Image, InfoPanel } from "../constants"
+import { Container, ImageWrapper, FlexWrapper, IntroBody, OffsetBody, RightButton, ButtonHeader, ButtonText, sections, TextQuote, Image, InfoPanel } from "../constants"
 
-const Title = styled.h2`
+const Title = styled.h1`
   // font-weight: 600;
-  font-weight: 600;
+  font-weight: 700;
   margin-bottom: 0.5rem;
 `
+
+
+const TextBlock = styled.div`
+  max-width: 52rem;
+  margin: 0 auto;
+  margin-bottom: 1.25rem;
+`
+
 
 const SpecialWrapper = styled(ImageWrapper)`
   @media (max-width: 768px) {
     margin-top: 3.5rem;
   }
+`
+
+const HeroText = styled.p`
+  font-size: 1.85rem;
+  font-weight: 200;
+  // color: #666666;
+  letter-spacing: -0.035em;
+  line-height: 1.45;
+
+  @media (max-width: 1240px) {
+    font-size: 1.5rem;
+  }
+
+`
+
+const HeroSub = styled.h4`
+  font-weight: 600;
+  // color: #333333;
 `
 
 
@@ -68,7 +94,7 @@ const ImageCaption = styled.a`
   display: block;
   text-align: center;
   transition: 0.2s;
-  color: blue;
+  color: #4353ff;
 
   :hover {
     color: #ffb7b7;
@@ -89,41 +115,101 @@ const PitchDeckLink = styled(ImageCaption)`
   // font-family: "EB Garamond", serif;
   // font-style: italic;
   // font-size: 1.2rem;
-  font-weight: 400;
+  font-weight: 600;
+  text-decoration: none;
   
 `
 
-const HeroTitle = styled.h1`
-  margin: 0;
-  // margin-bottom: 2rem;
-  // margin-top: 5rem;
+
+const SectionTitle = styled.h2`
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  font-size: 1.7rem;
+
+  @media (max-width: 1240px) {
+    font-size: 1.5rem;
+  }
+
+`
+
+const Button = styled.button`
+  background-color: #ffffff;
+  border: 1px solid #4353ff;
+  border-radius: 8px;
+  color: #4353ff;
+  padding: 1rem 1.5rem;
+  font-weight: 600;
+  transition: 0.2s;
+
+  :hover {
+    cursor: pointer; 
+    background-color: #4353ff;
+    color: #ffffff
+  }
+`
+
+const Box = styled.div`
+  border: 1px solid #dddddd;
+  border-radius: 16px;
+  // width: 100%;
+  text-align: center;
+  margin-top: 5rem;
+  padding: 4rem 2rem;
+`
+
+const ColumnBlock = styled(TextBlock)`
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
+
+  -webkit-column-gap: 2rem;
+  -moz-column-gap: 2rem;
+  column-gap: 2rem;
+
+  @media (max-width: 1024px) {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+  }
+`
+
+const Quote = styled(TextQuote)`
   font-family: "EB Garamond", serif;
+  font-size: 1.7rem;
+  border-left: solid 1px #333333;
+  letter-spacing: -0.02em;
+  font-weight: 400;
+  padding-left: 3.5rem;
+  max-width: 48rem;
+  line-height: 1.3;
   color: #111111;
-  font-weight: 500;
-  font-size: 2.2rem;
-  // line-height: 1.5;
+
+  @media (max-width: 1240px) {
+    padding-left: 2rem;
+    font-size: 1.5rem;
+  }
 `
 
-const HeroSubtitle = styled.p`
-  font-family: "EB Garamond", serif;
-  font-style: italic;
-  color: #484848;
-  font-size: 1.5rem;
-  margin-bottom: 2.5rem;
-  padding-left: 0.5rem;
-`
+const Divider = styled.div`
+  border-top: 1px solid #dddddd;
+  padding-top: 4rem;
 
-const SerifText = styled.p`
-  // font-family: "EB Garamond", serif;
-  // color: #333333;
-  // font-size: 1.28rem;
+  @media (max-width: 1240px) {
+    padding-top: 2rem
+  }
 `
 
 const iFrameStyle = {
   transform: "scale(0.6)",
 }
 
+
+
 export default function Showcase(props) {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   const data = useStaticQuery(graphql`
     query {
       HeroImage: file(relativePath: { eq: "Hero.png" }) {
@@ -133,7 +219,7 @@ export default function Showcase(props) {
           }
         }
       }
-      Deck: file(relativePath: { eq: "screen-deck-new.png"}) {
+      Deck: file(relativePath: { eq: "screen-deck-overlap.png"}) {
         childImageSharp {
           fluid(maxWidth: 3200) {
             ...GatsbyImageSharpFluid
@@ -175,9 +261,44 @@ export default function Showcase(props) {
           }
         }
       }
-      RevisedScreens: file(relativePath: {eq: "revised-screen-deck-copy.png"}) {
+      RevisedScreens: file(relativePath: {eq: "revised-screen-deck.png"}) {
         childImageSharp {
           fluid (maxWidth: 3200) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      RevisedScreensWhite: file(relativePath: {eq: "revised-screen-deck-white.png"}) {
+        childImageSharp {
+          fluid (maxWidth: 3200) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      UserFlow: file(relativePath: {eq: "user-flow.png"}) {
+        childImageSharp {
+          fluid(maxWidth: 3200) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      Wireframes: file(relativePath: {eq: "wireframes-nimbus.png"}) {
+        childImageSharp {
+          fluid(maxWidth: 3200) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      TestFrame: file(relativePath: {eq:"test-frame.png"}) {
+        childImageSharp {
+          fluid (maxWidth: 3200) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      Mockup: file(relativePath: {eq: "hero-secondary.png"}) {
+        childImageSharp {
+          fluid (maxWidth:3200) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -191,75 +312,165 @@ export default function Showcase(props) {
         <ImageWrapper>
           <Img fluid={data.HeroImage.childImageSharp.fluid} />
         </ImageWrapper>
-        {/* <HeroTitle>"The mountains are calling and I must go" – John Muir</HeroTitle>
-        <HeroSubtitle>Now we just have to figure out how to get there.</HeroSubtitle> */}
         <FlexWrapper>
-          <InfoPanel>
+          {/* <InfoPanel>
             <Title>Nimbus</Title>
-            <p style={{lineHeight: "1.35", color: "#666666"}}>Mobile App Design <br/>User Experience</p>
-          </InfoPanel>
+            <p style={{lineHeight: "1.35", color: "#666666"}}>
+              Mobile App Design <br/>User Experience
+            </p>
+          </InfoPanel> */}
           <IntroBody>
-            <TextBlock>
-              <HeroTitle>"The mountains are calling and I must go"</HeroTitle>
-              {/* <HeroSubtext>– John Muir</HeroSubtext> */}
-              <HeroSubtitle>&mdash; John Muir</HeroSubtitle>
-            </TextBlock>
-            <TextBlock>
-              <p style={{fontWeight: "700"}}>
-                But first, you've got to actually get there. 
-              </p>
-            </TextBlock>
-            <TextBlock>
-              <p>
-                TLDR: Nimbus is a mobile experience that aims to solve the transportation challenges of remote outdoor exploration by connecting adventurers with one another and having them share transport to outdoor recreation areas. 
-              </p>
-            </TextBlock>
             <TextBlock style={{marginBottom: "5rem"}}>
+              <HeroSub>
+               User Experience • Product Design • Rapid Prototyping
+              </HeroSub>
+            </TextBlock>
+            <TextBlock>
+              <HeroText> 
+                <strong>Nimbus</strong> is a mobile experience that aims to solve the transportation challenges of remote outdoor exploration by connecting adventurers with one another and having them share transport to outdoor recreation areas. 
+              </HeroText>
               <PitchDeckLink href="https://www.figma.com/proto/rqb3pn14vDM8drmDBvJGWY/Nimbus-Pitch-Deck?node-id=92%3A3&scaling=scale-down" target="_blank">View the condensed pitch deck here!</PitchDeckLink>
-            </TextBlock>
-            <div style={{marginBottom: "5rem", borderBottom: "1px solid #c5c5c5"}}></div>
-            <TextBlock>
-              <p>
-                The year is 2018. National Park visits in the United States have topped 200 million and social media usage among young Americans are at an all time high. While our public lands are purportedly free and open to all, the sheer remoteness of many of our favorite outdoor locations  means that access is often limited to the few who have cars or those whose friends or family share a similar passion for the outdoors.
-              </p>
-            </TextBlock>
-            <TextBlock>
-              <p>
-                Recognizing that the lack of transportation options as a major obstacle that hampers access to the outdoors, we set out to design a mobile experience that would solve the transportation conundrum by connecting outdoor enthusiasts with like-minded peers and have them carpool to outdoor destinations. In doing so, we also sought to alleviate the pain points of organizing such activities and foster a community of outdoor enthusiasts by encouraging them to partake in outdoor experiences collectively.
-              </p>
             </TextBlock>
           </IntroBody>
         </FlexWrapper>
         <ImageWrapper>
-          <Img fluid={data.Deck.childImageSharp.fluid}/>
+          <Img fluid={data.RevisedScreens.childImageSharp.fluid}/>
         </ImageWrapper>
         <OffsetBody>
           <TextBlock>
-            <p>
-              Our solution was centered around having users join or create groups headed to outdoor destinations that they had in mind. User safety immediately came up as the number one concern that our professor and mentor, Brian Fling, had for our proposed concept. His concerns were most certainly justified; We were after all, proposing to put strangers together in a car and have them drive out to the middle of nowhere. It was in effect akin to a more extreme version of a blind date. 
-            </p>
+            <SectionTitle>
+              A Brief Background
+            </SectionTitle>
           </TextBlock>
-          <TextBlock>
+          <ColumnBlock style={{marginBottom: "4rem"}}>
             <p>
-            In response, we were proactive in including mitigating features that we hoped would reassure users such as having public user profiles as well as mandatory user verification. 
-            Yet multiple rounds of testing and iteration revealed that much of our target users were essentially less concerned for their own safety than we as designers were. They were basically more or less comfortable with the idea of adventuring with total strangers.  It was almost as if that the age old adage of not getting into cars with strangers was somehow less applicable in the 21st century. This surprising takeaway would be key towards underscoring the feasibility of our proposed concept. 
+              The outdoors is one of the few places on earth that is truly free and open to all. However, getting there is often the biggest obstacle in itself with many areas existing in remote locales accessible only by car. This leads to a condition where purportedly <strong>free and open lands</strong> are in reality <strong>exclusive to people with access to cars.</strong>
             </p>
-          </TextBlock>
-        </OffsetBody>
+            <p>Recognizing the rise of social media & the Instragram generation as key drivers behind the new found popularity of outdoor destinations, we set out to design a mobile experience that would solve the transportation conundrum by connecting outdoor enthusiasts with like-minded peers and have them carpool to outdoor destinations.</p>
+          </ColumnBlock>
+            <TextBlock>
+              <SectionTitle>
+                Initial Blockers
+              </SectionTitle>
+            </TextBlock>
+            <ColumnBlock>
+              <p>
+                Our initial ideas revolved around having users join or create groups to ride-share/carpool to outdoor destinations. <strong>User safety</strong> immediately emerged as the <strong>primary concern</strong> that our professor and mentor, Brian Fling, had for our proposed concept.
+              </p>
+              <p>
+              His concerns were most certainly justified; We were after all, proposing to put strangers together in a car and have them drive out to the middle of nowhere. It was in effect akin to a more extreme version of a blind date with the very real risk of running into a potential serial killer.
+              </p>
+              <p>
+              In response, we were proactive in including mitigating features that we hoped would reassure users such as having <strong>public user profiles</strong> as well as <strong>mandatory user verifications</strong>.  
+              </p>
+            </ColumnBlock>
+          </OffsetBody>
         <ImageWrapper>
           <Img fluid={data.Grid.childImageSharp.fluid}/>
         </ImageWrapper>
+        <OffsetBody>
+          <ColumnBlock>
+            <p> With successful mitigative measures in place, multiple rounds of testing and iteration further revealed that much of our target users were essentially <strong>less concerned for their own safety</strong> than we as designers were. They had in fact expressed <strong>more concern over chemistry & compatibility</strong> with potential travel companions than with their own personal safety.</p>
+            <p>It was almost as if that the age old adage of not getting into cars with strangers was somehow less applicable in the 21st century. This suprising takeaway would be key towards underscoring the feasability of our proposed concept.</p>
+          </ColumnBlock>
+          <TextBlock>
+            <Box>
+              <p style={{maxWidth: "24rem", margin:"1.7rem auto"}}><strong>View my in-depth deep dive into the research and ideation process:</strong></p>
+              <Button onClick={() => props.onChange(1)}>Survey & Ideation</Button>
+            </Box>
+          </TextBlock>
+        </OffsetBody>
+        <OffsetBody>
+          <TextBlock>
+            <Divider />
+          </TextBlock>
+          <TextBlock>
+            <SectionTitle>
+              Process and Flows
+            </SectionTitle>
+            <p>Our solution was fleshed out over a series of design sprints, where use cases as well as features were iterated and tested through <strong>rapid prototyping</strong>. Test, iterate and then test it again was the mantra we lived by. Most of our tests were conducted with <strong>low-fidelity wireframes.</strong></p>
+          </TextBlock>
+        </OffsetBody>
+        <ImageWrapper>
+          <Img fluid={data.UserFlow.childImageSharp.fluid}/>
+        </ImageWrapper>
+        <OffsetBody>
+          <TextBlock>
+            <p>We attempted to take advantage of existing <strong>conceptual models</strong> whenever possible. The idea was to maximize intuitiveness by <strong>leveraging a user’s familiarity with existing processes.</strong> The above diagram depicts a rough flow of our “join a group” process here which was really modelled after AirBnb’s flow for making a reservation with a host</p>
+          </TextBlock>
+          <TextBlock>
+            <Box>
+              <p style={{maxWidth: "24rem", margin:"1.7rem auto"}}><strong>View wireframe flows used to test primary use cases</strong></p>
+              <Button onClick={() => props.onChange(2)}>Flows + Wireframes</Button>
+            </Box>
+          </TextBlock>
+        </OffsetBody>
+        <ImageWrapper>
+          <Img fluid={data.TestFrame.childImageSharp.fluid} />
+        </ImageWrapper>
+        <OffsetBody>
+          {/* <TextBlock>
+            <p>Our <strong>user tests</strong> were largely conducted in the form of <strong>semi-structured interviews.</strong> This not only allowed us to observe in person how our testers responded to the screens and prompts posed to them but more importantly, it afforded us the opportunity for <strong>face to face connections</strong> with potential users and helped us <strong>expand our understanding of the problem space.</strong></p>
+          </TextBlock>
+          <TextBlock>
+            <p>The conversations we had with our testers were instrumental towards helping us refine the vision and scope of our designs across multiple sprint cycles. This <strong>user-centered approach</strong> not only allowed us to better <strong>incorporate testing feedback,</strong> but also yielded surprising takeaways and insights about user behavior that allowed us greater freedom to evolve the design in ways that nobody anticipated from the start.</p>
+          </TextBlock> */}
+          <ColumnBlock>
+            <p>Our <strong>user tests</strong> were largely conducted in the form of <strong>semi-structured interviews.</strong> This not only allowed us to observe in person how our testers responded to the screens and prompts posed to them but more importantly, it afforded us the opportunity for <strong>face to face connections</strong> with potential users and helped us <strong>expand our understanding of the problem space.</strong></p>
+            <p>These conversations and connections were instrumental towards helping us refine the vision and scope of our designs across multiple sprint cycles. Our <strong>user-centered approach</strong> not only allowed us to better <strong>incorporate testing feedback,</strong> but also yielded surprising takeaways and insights about user behavior that allowed us greater freedom to evolve the design in ways that nobody anticipated from the start.</p>
+          </ColumnBlock>
+        </OffsetBody>
+        <OffsetBody>
+          <TextBlock>
+            <Quote>
+            Our solution was fleshed out over a series of design sprints, where use cases as well as features were iterated and tested through rapid prototyping. Test, iterate and then test it again was the mantra we lived by.
+            </Quote>
+          </TextBlock>
+        </OffsetBody>
+        <OffsetBody>
+          {/* <div style={{padding: "1rem 0"}} /> */}
+          <TextBlock>
+            <Divider />
+          </TextBlock>
+          <TextBlock>
+            <SectionTitle>
+              Putting It Together
+            </SectionTitle>
+          </TextBlock>
+          <ColumnBlock>
+            <p>Feedback and observations from our process of <strong>continous iterations</strong> helped us discover a range of <strong>pain points</strong> that our testers experienced when embarking or planning for outdoor travel.</p>
+            <p>In addition to the issue of user safety that came up in out initial sprints, one of the most cited pain points that came up was the difficulty in finding <strong>localized and current information</strong> that’s specific to outdoor areas, such as the weather, trail conditions, localized risk factors etc. </p>
+            <p>This was something we sought to address in our <strong>high-fidelity screens,</strong> with our location screen seeking to provide crucial information that could be relevant to people adventuring in that particular location. </p>
+          </ColumnBlock>
+        </OffsetBody>
+        <ImageWrapper>
+          <Img fluid={data.Deck.childImageSharp.fluid}/>
+        </ImageWrapper>
+        <OffsetBody style={{marginBottom: "0"}}>
+          <TextBlock>
+              <Box>
+                <p style={{maxWidth: "24rem", margin:"1.7rem auto"}}><strong>View deep dive and screen descriptions for high-fidelity screens</strong></p>
+                <Button onClick={() => props.onChange(3)}>High Fidelity Screens</Button>
+              </Box>
+            </TextBlock>
+        </OffsetBody>
+        <OffsetBody style={{marginBottom: "0"}}>
+          <TextBlock style={{marginBottom: "0"}}>
+            <Divider style={{padding: "0"}} />
+          </TextBlock>
+        </OffsetBody>
         <PrototypeSection>
           <PrototypeWrapper>
             <iframe src="https://marvelapp.com/3f9161c?emb=1&iosapp=false&frameless=false" style={iFrameStyle} width="452" height="901" allowTransparency="true" frameborder="0"></iframe>
           </PrototypeWrapper>
           <IntroBody>
-              {/* <h3>Interactive Prototype</h3>  */}
               <PrototypeText>
-                <p>We built various interactive prototypes to test the usability of the flows and designs we had in mind, and this prototype was one with which we conducting our third round of user testings with. While rudimentary, it served as an effective tool for us to conduct user testing and was instrumental towards identifying usability failures and potential pain points.  </p>
+                <SectionTitle>Prototype Commentary</SectionTitle> 
               </PrototypeText>
               <PrototypeText>
-                <p>The use goal that we set out for our testers with this prototype was to create a group travelling to hike a popular local trail known as Mailbox Peak.</p>
+                <p>We utilized a variety of prototypes ranging from <strong>hand sketches</strong> to <strong>interactive mockups</strong> to test the usability of the flows and designs we made. </p>
+                <p>This is a high-fidelity interactive prototype that we utilized to conduct user tests with. While rudimentary, it served as an effective tool in helping us <strong>identify usability issues</strong> and <strong>potential pain points.</strong>  </p>
+                <p>The <strong>use goal</strong> that we set out for our testers with this prototype was to create a group travelling to hike a popular local trail known as Mailbox Peak.</p>
               </PrototypeText>
               <PrototypeText>
                 <PrototypeLink href="https://marvelapp.com/3f9161c" target="_blank">View the prototype here!</PrototypeLink>
@@ -269,24 +480,34 @@ export default function Showcase(props) {
         <SpecialWrapper>
           <Img fluid={data.ProfileMontage.childImageSharp.fluid} />
         </SpecialWrapper>
+        <OffsetBody>
+          <TextBlock>
+            <SectionTitle>Hindsight = 20/20</SectionTitle>
+          </TextBlock>
+          <ColumnBlock>
+            <p>It's always refreshing to be able to come back to a past project with fresh eyes to see what was done and what could have been improved. </p>
+            <p>This project is no exception and while perfect is certainly the enemy of good, the pursuit of excellence is more often than not rooted in incremental progress undertaken over time and that was what I sought to achieve with my <strong>redesign</strong> of Nimbus.</p>
+            <p>The immediate objective with this redesign was to improve the <strong>visual clarity</strong> of the interface through cleaning up the information hierachy, removing unnecessary information as well as reworking some of the symbology.</p>
+          </ColumnBlock>
+        </OffsetBody>
         <ImageWithMargin>
-          <Img fluid={data.RevisedScreens.childImageSharp.fluid} />
+          <Img fluid={data.RevisedScreensWhite.childImageSharp.fluid} />
           <ImageCaption onClick={() => props.onChange(4)} >
               View the redesign here!
           </ImageCaption>
         </ImageWithMargin>
         <OffsetBody>
-          <TextBlock>
+          <ColumnBlock>
             <p>
               There was never really a big aha moment that led to us arriving at our solution in its present form. Instead, it came about as a result of multiple evolutions of prototyping and testing as we strove to incorporate user feedback as much as possible at every stage.
               This user-centered approach not only allowed us to better incorporate testing feedback, but also yielded surprising takeaways and insights about user behavior that allowed us greater freedom to evolve the design in ways that nobody anticipated from the start.
             </p>
-          </TextBlock>
-          <TextBlock>
+          {/* </TextBlock>
+          <TextBlock> */}
             <p>
               This project was conducted over multiple sprints with a round of user testing at the end of each sprint to validate ideas and garner feedback from prospective users. I aimed to document my insights as I experienced them over the course of the project and as such, I've broken up this case study into multiple sections with each section roughly corresponding to a sprint cycle that we worked.   
             </p>
-          </TextBlock>
+          </ColumnBlock>
         </OffsetBody>
         <RightButton onClick={() => props.onChange(props.active + 1)}>
           <ButtonHeader>NEXT SECTION</ButtonHeader>

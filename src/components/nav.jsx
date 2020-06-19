@@ -39,26 +39,43 @@ const StyledLink = styled(Link)`
 
 const StyledText = styled.a`
   line-height: 1.7;
-  color: #111111;
+  color: #333333;
   margin: 0;
   font-weight: 500;
-
-  :hover {
-    // text-decoration: underline;
-    // cursor: pointer;  
-  }   
+  border-bottom: 1px solid #333333; 
 `
 
 const GreyText = styled(StyledText)`
-  color: #767676;
-  font-weight: 400;
+  color: #b8b8b8;
+  font-weight: 300;
   transition: 0.2s;
+  border: none;
 
   :hover {
     color: #ffb7b7;
+    color: #333333;
     cursor: pointer;  
+    border-bottom: 1px solid #333333;
   }  
 `
+
+const GreyLink = styled(Link)`
+  line-height: 1.7;
+  text-decoration: none;
+  color: #b8b8b8;
+  font-weight: 300;
+  transition: 0.2s;
+  border: none;
+
+  :hover {
+    color: #ffb7b7;
+    color: #333333;
+    cursor: pointer;  
+    border-bottom: 1px solid #333333;
+  }  
+`
+
+
 
 const DetailText = styled.p`
   color: #767676;
@@ -127,30 +144,116 @@ export default function Nav(props) {
     }
   }
 
+  function handleMain() {
+    if (sections) {
+      return (
+        <>
+          <ListItem>
+            <GreyLink to="/">Home</GreyLink>
+          </ListItem>
+          <ListItem>
+            <GreyLink to="/about">About</GreyLink>
+          </ListItem>
+          <ListItem>
+            <GreyText
+              style={{textDecoration: "none"}}
+              as="a"
+              target="_blank"
+              href="https://drive.google.com/file/d/1YC67UCd-V7o0Y1ZEp1y9AnxiSgOHiiy7/view?usp=sharing"
+            >
+              Resume
+            </GreyText>
+          </ListItem>
+        </>
+      )
+    } else {
+      return (
+        <>
+          <ListItem>
+            <StyledLink to="/">Home</StyledLink>
+          </ListItem>
+          <ListItem>
+            <StyledLink to="/about">About</StyledLink>
+          </ListItem>
+          <ListItem>
+            <StyledLink 
+              as="a"
+              target="_blank"
+              href="https://drive.google.com/file/d/1YC67UCd-V7o0Y1ZEp1y9AnxiSgOHiiy7/view?usp=sharing"
+            >
+              Resume
+            </StyledLink>
+          </ListItem>
+        </>
+
+      )
+    }
+  }
+
+  function handleLinks() {
+    if (sections) {
+      return (
+        <>
+          <ListItem>
+            <GreyText
+              as="a"
+              href="https://github.com/johnwjlim/"
+              target="_blank"
+              style={{textDecoration: "none"}}
+            > 
+              Github
+            </GreyText>
+          </ListItem>
+          <ListItem>
+            <GreyText
+              as="a"
+              href="mailto:wjlim@uw.edu"
+              target="_blank"
+              style={{textDecoration: "none"}}
+            > 
+              wjlim@uw.edu
+            </GreyText>
+          </ListItem>
+        </>
+      )
+    } else {
+      return (
+        <>  
+          <ListItem>
+            <StyledLink
+              as="a"
+              href="https://github.com/johnwjlim/"
+              target="_blank"
+            > 
+              Github
+            </StyledLink>
+          </ListItem>
+          <ListItem>
+            <StyledLink
+              as="a"
+              href="mailto:wjlim@uw.edu"
+              target="_blank"
+            > 
+              wjlim@uw.edu
+            </StyledLink>
+          </ListItem>
+
+        </>
+
+      )
+    }
+  }
+
   return (
     <Container>
       <FlexHack>
         <Row>
           <List>
-            <ListItem>
-              <StyledLink to="/">Home</StyledLink>
-            </ListItem>
-            <ListItem>
-              <StyledLink to="/about">About</StyledLink>
-            </ListItem>
-            <ListItem>
-              {/* <StyledLink to="/resume">Resume</StyledLink> */}
-              <StyledLink 
-                as="a"
-                target="_blank"
-                href="https://drive.google.com/file/d/1YC67UCd-V7o0Y1ZEp1y9AnxiSgOHiiy7/view?usp=sharing"
-              >
-                Resume
-              </StyledLink>
-            </ListItem>
+            {
+              handleMain()
+            }
           </List>
           <List>
-            {/* <DetailText>Nimbus <br/> Mobile App Design</DetailText> */}
             {
               handleComponents()
             }
@@ -158,28 +261,13 @@ export default function Nav(props) {
         </Row>
         <Row>
           <List>
-            <ListItem>
-              <StyledLink 
-                as="a"
-                href="https://github.com/johnwjlim/"
-                target="_blank"
-              > 
-                Github
-              </StyledLink>
-            </ListItem>
-            <ListItem>
-             <StyledLink 
-                as="a"
-                href="mailto:wjlim@uw.edu"
-                target="_blank"
-              > 
-                wjlim@uw.edu
-              </StyledLink>
-            </ListItem>
+            {
+              handleLinks()
+            }
           </List>
           <Footer>
             <FooterText>
-              Hand-coded with ❤️on
+              Hand-coded with ❤️ on
               <InlineLink href="https://www.gatsbyjs.org" target="_blank"> React</InlineLink>, 
               <InlineLink href="https://redux.js.org" target="_blank"> Redux</InlineLink>, 
               <InlineLink href="https://www.styled-components.com" target="_blank"> styled-components</InlineLink>, 

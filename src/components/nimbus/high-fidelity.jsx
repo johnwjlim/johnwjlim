@@ -1,4 +1,4 @@
-import React from "react"
+import React, {useEffect} from "react"
 import styled from "styled-components"
 
 import { Container, OffsetBody, TextBlock, RightButton, LeftButton, ButtonHeader, ButtonText, ImageWrapper, TextQuote, sections, ImageWithMargin } from "../constants"
@@ -21,6 +21,9 @@ const StyledList = styled.ul`
 
 
 export default function Iteration(props) {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   const data = useStaticQuery(graphql`
     query {
       Home: file(relativePath: { eq: "high-fi-1.png"}) {

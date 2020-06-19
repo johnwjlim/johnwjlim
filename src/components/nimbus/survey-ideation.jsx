@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect } from "react"
 import styled from "styled-components"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
@@ -16,6 +16,10 @@ const SubHeader = styled.h2`
 
 
 export default function SurveyIdeation(props) {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   const data = useStaticQuery(graphql`
     query {
       SketchesAll: file(relativePath: { eq: "sketches-all.png"}) {
