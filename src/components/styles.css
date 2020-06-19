@@ -9,29 +9,34 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-::selection {
+/* ::selection {
   background: #ffb7b7; 
 }
 
 ::-moz-selection {
   background: #ffb7b7; 
-}
+} */
 
 h1, h2, h3, h4, h5, h6, p, a, blockquote, li {
   /* font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
-  font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, sans-serif;
-  /* font-family: sans-serif; */
-  /* font-family: Helvetica Neue; */
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, Helvetica Neue, sans-serif;
   text-rendering: optimizeLegibility;
   line-height: 1.2;
   margin-top: 0;
-  color: #111111;
+  color: #333333;
+  letter-spacing: -0.008em;
 }
 
 p {
   line-height: 1.5;
-  color: #222222;
+  /* font-size: 15px; */
+  /* font-weight: 400; */
+  letter-spacing: -0.01em;
+}
+
+strong {
+  /* font-weight: 600; */
 }
 
 button,

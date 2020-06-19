@@ -47,7 +47,7 @@ export const IntroBody = styled.div`
 // `
 
 export const OffsetBody = styled.div`
-  margin: 7.5rem auto;
+  margin: 7rem auto;
 
   @media (max-width: 1240px) {
     margin: 3.5rem 0;
@@ -55,13 +55,13 @@ export const OffsetBody = styled.div`
 `;
 
 export const TextBlock = styled.div`
-  max-width: 36rem;
+  max-width: 40em;
   margin: 0 auto;
   margin-bottom: 2rem;
 `
 
 export const BodyText = styled.p`
-  max-width: 36rem;
+  max-width: 40rem;
   margin: 0 auto;
   margin-bottom: 2rem;
 `
@@ -124,7 +124,7 @@ export const TextQuote = styled.blockquote`
   max-width: 36rem;
   border-left: solid 3px #333333;
   padding-left: 2rem;
-  margin: 5rem auto;
+  margin: 3.5rem auto;
 
   @media (max-width: 1240px) {
     margin: 3.5rem auto;
@@ -174,7 +174,7 @@ export const InfoPanel = styled.div`
 `
 
 export const ImageWithMargin = styled(ImageWrapper)`
-  margin-top: 3.5rem;
+  // margin-top: 3.5rem;
 `
 
 export const ListItem = styled.li`

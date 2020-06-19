@@ -1,4 +1,4 @@
-import React from "react"
+import React, {useEffect} from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
@@ -6,6 +6,10 @@ import { Container, OffsetBody, TextBlock, RightButton, LeftButton, ButtonHeader
 
 
 export default function Solution(props) {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   const data = useStaticQuery(graphql`
     query {
       Join: file(relativePath: { eq: "join-a-group.png"}) {
