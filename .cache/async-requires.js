@@ -7,7 +7,6 @@ exports.components = {
   "component---src-pages-about-jsx": () => import("./../src/pages/about.jsx" /* webpackChunkName: "component---src-pages-about-jsx" */),
   "component---src-pages-g-challenge-jsx": () => import("./../src/pages/g-challenge.jsx" /* webpackChunkName: "component---src-pages-g-challenge-jsx" */),
   "component---src-pages-index-js": () => import("./../src/pages/index.js" /* webpackChunkName: "component---src-pages-index-js" */),
-  "component---src-pages-new-nimbus-jsx": () => import("./../src/pages/new-nimbus.jsx" /* webpackChunkName: "component---src-pages-new-nimbus-jsx" */),
   "component---src-pages-nimbus-jsx": () => import("./../src/pages/nimbus.jsx" /* webpackChunkName: "component---src-pages-nimbus-jsx" */),
   "component---src-pages-page-2-js": () => import("./../src/pages/page-2.js" /* webpackChunkName: "component---src-pages-page-2-js" */),
   "component---src-pages-pool-jsx": () => import("./../src/pages/pool.jsx" /* webpackChunkName: "component---src-pages-pool-jsx" */),
