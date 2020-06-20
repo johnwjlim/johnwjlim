@@ -502,7 +502,7 @@ export default function Showcase(props) {
         </PrototypeSection>
         <OffsetBody>
           <TextBlock>
-            <Divider /> 
+            <Divider  /> 
           </TextBlock>
         </OffsetBody>
         <OffsetBody>
