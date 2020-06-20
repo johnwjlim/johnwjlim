@@ -1,6 +1,6 @@
 import React, { useEffect } from "react"
 import styled from "styled-components"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, navigate } from "gatsby"
 import Img from "gatsby-image"
 import MediaQuery from 'react-responsive';
 
@@ -16,9 +16,9 @@ const SubHeader = styled.h2`
 
 
 export default function SurveyIdeation(props) {
-  useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
+  // useEffect(() => {
+  //   window.scrollTo(0, 0)
+  // }, [])
 
   const data = useStaticQuery(graphql`
     query {
@@ -155,11 +155,11 @@ export default function SurveyIdeation(props) {
           </p>
         </TextBlock>
       </OffsetBody>
-      <LeftButton onClick={() => props.onChange(props.active -1)}>
+      <LeftButton onClick={() => navigate("/nimbus")}>
         <ButtonHeader>PREVIOUS SECTION</ButtonHeader>
         <ButtonText>{sections[props.active - 1]}</ButtonText>
       </LeftButton>
-      <RightButton onClick={() => props.onChange(props.active + 1)}>
+      <RightButton onClick={() => navigate("/nimbus/flows-wireframes")}>
         <ButtonHeader>NEXT SECTION</ButtonHeader>
         <ButtonText>{sections[props.active + 1]}</ButtonText>
       </RightButton>

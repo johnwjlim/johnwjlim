@@ -1,6 +1,7 @@
 import styled from "styled-components"
 
 export const sections = ["Overview", "Survey and Ideation", "Flows + Wireframes", "High Fidelity Screens", "Redesign", "End Notes"]
+export const nimbusRoutes = ["/nimbus", "/nimbus/survey-ideation", "/nimbus/flows-wireframes", "/nimbus/high-fi", "/nimbus/redesign", "/nimbus/end-notes"]
 
 export const gSections = ["Case Study", "Prologue / Motivations"]
 

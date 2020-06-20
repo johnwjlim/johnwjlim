@@ -5,8 +5,8 @@ import {useTransition, animated} from 'react-spring'
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Nav from "../components/nav"
-import MobileNav from "../components/mobile-nav"
+import Nav from "../components/nav-nimbus"
+import MobileNav from "../components/mobile-nav-nimbus"
 import Header from "../components/header"
 
 import Showcase from "../components/nimbus/showcase"
@@ -17,6 +17,7 @@ import Redesign from "../components/nimbus/redesign"
 import PersonalThoughts from "../components/nimbus/personal-thoughts"
 
 import { sections } from "../components/constants"
+import { nimbusRoutes } from "../components/constants"
 
 const Wrapper = styled.div`
   display: flex;
@@ -117,7 +118,7 @@ export default function Nimbus() {
       <Header pageTitle={"Nimbus"} />
       {
         menuState ?
-          <MobileNav components={sections} active={active} onChange={handleTabSwitch}/>
+          <MobileNav components={sections} active={active} onChange={handleTabSwitch} routes={nimbusRoutes}/>
         :
         <Wrapper>
             {
@@ -167,9 +168,10 @@ export default function Nimbus() {
               //       )
               //   } 
               // }) 
-              renderActiveSection()
+              // renderActiveSection()
             }
-          <Nav components={sections} active={active} onChange={handleTabSwitch}/>
+            <Showcase onChange={handleTabSwitch} active={active}/>,
+          <Nav components={sections} active={active} onChange={handleTabSwitch} routes={nimbusRoutes} />
         </Wrapper>
       }
     </Layout>

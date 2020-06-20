@@ -1,6 +1,6 @@
 import React, { useEffect } from "react"
 import styled from "styled-components"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, navigate } from "gatsby"
 import Img from "gatsby-image"
 
 import { Container, ImageWrapper, FlexWrapper, IntroBody, OffsetBody, RightButton, ButtonHeader, ButtonText, sections, TextQuote, Image, InfoPanel } from "../constants"
@@ -257,13 +257,6 @@ export default function Showcase(props) {
           }
         }
       }
-      PhotoGrid: file(relativePath: {eq: "photo-grid.png"}) {
-        childImageSharp {
-          fluid(maxWidth: 3200) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
       ProfileMontage: file(relativePath: {eq: "profile-montage.png"}) {
         childImageSharp {
           fluid(maxWidth: 3200) {
@@ -382,23 +375,11 @@ export default function Showcase(props) {
               </p>
             </ColumnBlock>
           </OffsetBody>
-        {/* <ImageOffset>
-            <ImageWrapper>
-              <Img fluid={data.GridFull.childImageSharp.fluid} />
-            </ImageWrapper>
-        </ImageOffset> */}
         <ImageOffset>
             <ImageWrapper>
               <Img fluid={data.PaperPrototypes.childImageSharp.fluid} />
             </ImageWrapper>
         </ImageOffset>
-        {/* <OffsetBody>
-          <TextBlock>
-            <ImageWrapper>
-              <Img fluid={data.PaperPrototypes.childImageSharp.fluid} />
-            </ImageWrapper>
-          </TextBlock>
-        </OffsetBody> */}
         <OffsetBody>
           <ColumnBlock>
             <p> With successful mitigative measures in place, multiple rounds of testing and iteration further revealed that much of our target users were essentially <strong>less concerned for their own safety</strong> than we as designers were. They had in fact expressed <strong>more concern over chemistry & compatibility</strong> with potential travel companions than with their own personal safety.</p>
@@ -407,7 +388,7 @@ export default function Showcase(props) {
           <TextBlock>
             <Box>
               <p style={{maxWidth: "24rem", margin:"1.7rem auto"}}><strong>View my in-depth deep dive into the research and ideation process:</strong></p>
-              <Button onClick={() => props.onChange(1)}>Survey & Ideation</Button>
+              <Button onClick={() => navigate("/nimbus/survey-ideation")}>Survey & Ideation</Button>
             </Box>
           </TextBlock>
         </OffsetBody>
@@ -422,9 +403,13 @@ export default function Showcase(props) {
             <p>Our solution was fleshed out over a series of design sprints, where use cases as well as features were iterated and tested through <strong>rapid prototyping</strong>. Test, iterate and then test it again was the mantra we lived by. Most of our tests were conducted with <strong>low-fidelity wireframes.</strong></p>
           </TextBlock>
         </OffsetBody>
-        <ImageWrapper>
-          <Img fluid={data.UserFlow.childImageSharp.fluid}/>
-        </ImageWrapper>
+        <OffsetBody>
+          <TextBlock>
+            <ImageWrapper>
+              <Img fluid={data.UserFlow.childImageSharp.fluid}/>
+            </ImageWrapper>
+          </TextBlock>
+        </OffsetBody>
         <OffsetBody>
           <TextBlock>
             <p>We attempted to take advantage of existing <strong>conceptual models</strong> whenever possible. The idea was to maximize intuitiveness by <strong>leveraging a user’s familiarity with existing processes.</strong> The above diagram depicts a rough flow of our “join a group” process here which was really modelled after AirBnb’s flow for making a reservation with a host</p>
@@ -432,7 +417,7 @@ export default function Showcase(props) {
           <TextBlock>
             <Box>
               <p style={{maxWidth: "24rem", margin:"1.7rem auto"}}><strong>View wireframe flows used to test primary use cases</strong></p>
-              <Button onClick={() => props.onChange(2)}>Flows + Wireframes</Button>
+              <Button onClick={() => navigate("/nimbus/flows-wireframes")}>Flows + Wireframes</Button>
             </Box>
           </TextBlock>
         </OffsetBody>
@@ -488,7 +473,7 @@ export default function Showcase(props) {
           <TextBlock>
               <Box>
                 <p style={{maxWidth: "24rem", margin:"1.7rem auto"}}><strong>View deep dive and screen descriptions for high-fidelity screens</strong></p>
-                <Button onClick={() => props.onChange(3)}>High Fidelity Screens</Button>
+                <Button onClick={() => navigate("/nimbus/high-fi")}>High Fidelity Screens</Button>
               </Box>
             </TextBlock>
         </OffsetBody>
@@ -534,7 +519,7 @@ export default function Showcase(props) {
         </OffsetBody>
         <ImageWithMargin>
           <Img fluid={data.RevisedScreensWhite.childImageSharp.fluid} />
-          <ImageCaption onClick={() => props.onChange(4)} >
+          <ImageCaption onClick={() => navigate("/nimbus/redesign")} >
               View the redesign here!
           </ImageCaption>
         </ImageWithMargin>
@@ -551,7 +536,7 @@ export default function Showcase(props) {
             </p>
           </ColumnBlock>
         </OffsetBody>
-        <RightButton onClick={() => props.onChange(props.active + 1)}>
+        <RightButton onClick={() => navigate("/nimbus/survey-ideation")}>
           <ButtonHeader>NEXT SECTION</ButtonHeader>
           <ButtonText>{sections[props.active + 1]}</ButtonText>
         </RightButton>

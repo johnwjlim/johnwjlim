@@ -2,7 +2,7 @@ import React, {useEffect} from "react"
 import styled from "styled-components"
 
 import { Container, OffsetBody, TextBlock, RightButton, LeftButton, ButtonHeader, ButtonText, ImageWrapper, TextQuote, sections, ImageWithMargin } from "../constants"
-import { useStaticQuery, graphql } from "gatsby";
+import { useStaticQuery, graphql, navigate } from "gatsby";
 import Img from "gatsby-image"
 
 const ListItem = styled.li`
@@ -121,11 +121,11 @@ export default function Iteration(props) {
           </p>
         </TextBlock>
       </OffsetBody>
-      <LeftButton onClick={() => props.onChange(props.active -1)}>
+      <LeftButton onClick={() => navigate("/nimbus/flows-wireframes")}>
         <ButtonHeader>PREVIOUS SECTION</ButtonHeader>
         <ButtonText>{sections[props.active - 1]}</ButtonText>
       </LeftButton>
-      <RightButton onClick={() => props.onChange(props.active + 1)}>
+      <RightButton onClick={() => navigate("/nimbus/redesign")}>
         <ButtonHeader>NEXT SECTION</ButtonHeader>
         <ButtonText>{sections[props.active + 1]}</ButtonText>
       </RightButton>

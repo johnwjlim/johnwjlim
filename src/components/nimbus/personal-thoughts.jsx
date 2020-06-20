@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 
 import { Container, OffsetBody, TextBlock, RightButton, LeftButton, ButtonHeader, ButtonText, ImageWrapper, TextQuote, sections, SmallWidth, LargeWidth } from "../constants"
-import { useStaticQuery, graphql } from "gatsby";
+import { useStaticQuery, graphql, navigate } from "gatsby";
 import Img from "gatsby-image"
 
 export default function PersonalThoughts(props) {
@@ -94,7 +94,7 @@ export default function PersonalThoughts(props) {
       {/* <OffsetBody>
         <p><strong>Next Steps: Research Opportunties</strong></p>
       </OffsetBody> */}
-      <LeftButton onClick={() => props.onChange(props.active -1)}>
+      <LeftButton onClick={() => navigate("/nimbus/redesign")}>
         <ButtonHeader>PREVIOUS SECTION</ButtonHeader>
         <ButtonText>{sections[props.active - 1]}</ButtonText>
       </LeftButton>

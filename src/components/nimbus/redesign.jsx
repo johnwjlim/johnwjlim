@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 
 import { Container, OffsetBody, TextBlock, RightButton, LeftButton, ButtonHeader, ButtonText, ImageWrapper, TextQuote, sections } from "../constants"
-import { useStaticQuery, graphql } from "gatsby";
+import { useStaticQuery, graphql, navigate } from "gatsby";
 import Img from "gatsby-image"
 
 const ImageWithMargin = styled(ImageWrapper)`
@@ -140,11 +140,11 @@ const data = useStaticQuery(graphql`
           </p>
         </TextBlock>
       </OffsetBody>
-      <LeftButton onClick={() => props.onChange(props.active -1)}>
+      <LeftButton onClick={() => navigate("/nimbus/high-fi")}>
         <ButtonHeader>PREVIOUS SECTION</ButtonHeader>
         <ButtonText>{sections[props.active - 1]}</ButtonText>
       </LeftButton>
-      <RightButton onClick={() => props.onChange(props.active + 1)}>
+      <RightButton onClick={() => navigate("/nimbus/end-notes")}>
         <ButtonHeader>NEXT SECTION</ButtonHeader>
         <ButtonText>{sections[props.active + 1]}</ButtonText>
       </RightButton>

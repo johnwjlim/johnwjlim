@@ -1,5 +1,5 @@
 import React, {useEffect} from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, navigate } from "gatsby"
 import Img from "gatsby-image"
 
 import { Container, OffsetBody, TextBlock, RightButton, LeftButton, ButtonHeader, ButtonText, ImageWrapper, TextQuote, sections } from "../constants"
@@ -70,11 +70,11 @@ export default function Solution(props) {
           </p>
         </TextBlock>
       </OffsetBody>
-      <LeftButton onClick={() => props.onChange(props.active -1)}>
+      <LeftButton onClick={() => navigate("/nimbus/survey-ideation")}>
         <ButtonHeader>PREVIOUS SECTION</ButtonHeader>
         <ButtonText>{sections[props.active - 1]}</ButtonText>
       </LeftButton>
-      <RightButton onClick={() => props.onChange(props.active + 1)}>
+      <RightButton onClick={() => navigate("/nimbus/high-fi")}>
         <ButtonHeader>NEXT SECTION</ButtonHeader>
         <ButtonText>{sections[props.active + 1]}</ButtonText>
       </RightButton>
