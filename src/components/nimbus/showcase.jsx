@@ -500,9 +500,9 @@ export default function Showcase(props) {
               </PrototypeText>
           </IntroBody>
         </PrototypeSection>
-        <OffsetBody>
-          <TextBlock>
-            <Divider  /> 
+        <OffsetBody style={{marginBottom: "0"}}>
+          <TextBlock style={{marginBottom: "0"}}>
+            <Divider style={{padding: "0"}} />
           </TextBlock>
         </OffsetBody>
         <OffsetBody>
