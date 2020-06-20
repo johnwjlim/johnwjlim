@@ -500,13 +500,18 @@ export default function Showcase(props) {
               </PrototypeText>
           </IntroBody>
         </PrototypeSection>
-        <ImageOffset>
-          {/* <TextBlock> */}
+        <OffsetBody>
+          <TextBlock>
+            <Divider /> 
+          </TextBlock>
+        </OffsetBody>
+        <OffsetBody>
+          <TextBlock>
             <ImageWrapper>
               <Img fluid={data.ProfileMontage.childImageSharp.fluid} />
             </ImageWrapper>
-          {/* </TextBlock> */}
-        </ImageOffset>
+          </TextBlock>
+        </OffsetBody>
         <OffsetBody>
           <TextBlock>
             <SectionTitle>Hindsight = 20/20</SectionTitle>

@@ -51,8 +51,9 @@ const Title = styled.h3`
   color: #333333;
   letter-spacing: -0.2px;
   // font-size: 1.75rem
+  font-weight: 700;
 
-  font-size: 1.27rem;
+  font-size: 1.3rem;
 
   @media (max-width: 768px) {
     font-size: 1.25rem;
@@ -61,12 +62,12 @@ const Title = styled.h3`
 
 const Subtitle = styled.h3`
   // font-size: 1.1rem;
-  font-weight: 400;
+  font-weight: 300;
   color: #666666;
   letter-spacing: -0.2px;
   // color: #333333;
   margin-bottom: 0.3rem;
-  // font-size: 1.25rem;
+  font-size: 1.3rem;
 
   @media (max-width: 768px) {
     display: none;
