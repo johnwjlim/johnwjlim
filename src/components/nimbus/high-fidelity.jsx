@@ -21,9 +21,7 @@ const StyledList = styled.ul`
 
 
 export default function Iteration(props) {
-  useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
+
   const data = useStaticQuery(graphql`
     query {
       Home: file(relativePath: { eq: "high-fi-1.png"}) {

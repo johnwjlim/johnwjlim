@@ -222,10 +222,7 @@ const iFrameStyle = {
 
 
 export default function Showcase(props) {
-  useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
-
+  
   const data = useStaticQuery(graphql`
     query {
       HeroImage: file(relativePath: { eq: "Hero.png" }) {
