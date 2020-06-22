@@ -191,7 +191,7 @@ const Quote = styled(TextQuote)`
 `
 
 const Divider = styled.div`
-  border-top: 1px solid #dddddd;
+  border-top: 1px solid #d2d2d7;
   padding-top: 4rem;
 
   @media (max-width: 1240px) {
@@ -207,6 +207,12 @@ const ImageOffset = styled(OffsetBody)`
     background-color: #ffffff;
     padding: 0;
   }
+`
+
+const ImageSubCaption = styled.p`
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0;
 `
 
 const iFrameStyle = {
@@ -429,6 +435,7 @@ export default function Showcase(props) {
             <ImageWrapper>
               <Img fluid={data.TestFrameFullWidth.childImageSharp.fluid}  />
             </ImageWrapper>
+            <ImageSubCaption>User tests were conducted in both controlled settings and guerilla style where unwitting passer-bys were recruited to be impromptu testers.</ImageSubCaption>
            </TextBlock>
         </OffsetBody>
         <OffsetBody>
@@ -512,7 +519,7 @@ export default function Showcase(props) {
             </ImageWrapper>
           </TextBlock>
         </OffsetBody>
-        <OffsetBody>
+        <OffsetBody >
           <TextBlock>
             <SectionTitle>Hindsight = 20/20</SectionTitle>
           </TextBlock>
