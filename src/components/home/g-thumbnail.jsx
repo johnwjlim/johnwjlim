@@ -6,14 +6,14 @@ import {useTransition, animated} from 'react-spring'
 
 import { ImageWrapper } from "../constants"
 
-
 const CaseCaption = styled.h4`
   font-weight: 600;
   margin: 0;
   margin-top: 1rem;
   letter-spacing: -0.2px;
   max-width: 55rem;
-  
+
+  transition: 0.2s;
 
 `
 
@@ -26,7 +26,7 @@ const CaseLink = styled(Link)`
 
   :hover {
     cursor: pointer;
-    transform: scale(0.995);
+    transform: scale(0.99);
   }
 
   @media (max-width: 1024px) {
@@ -40,32 +40,54 @@ const CaseLink = styled(Link)`
   //     letter-spacing: -0.5px;
   //   }
   // }
-`;
 
+  &:hover ${CaseCaption} {
+      color: #666666;
+    }
+`;
 const Filler = styled.div`
   position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
+  // top: 0;
+  // width: 100%;
+  // height: 100%;
+  bottom: 0;
+  left: 0;
+  width: 52rem;
+  height: 5rem;
   // background-color: #47C3A0;
-  background-color: #FF6699;
-  // background-color: #ffffff;
-  opacity: 0.8;
+  // background-color: #FF6699;
+  background-color: #ffffff;
+  opacity: 1;
+
+  @media (max-width: 1240px) {
+    display: none;
+  }
 `
 
-const ImageCaption = styled.h1`
+const ImageCaption = styled.h2`
   position: absolute;
-  color: #ffffff;
+  color: #333333;
   // color: #ff6699;
-  bottom: 3vh;
-  left: 6vh;
-  max-width: 36rem;
-  // letter-spacing: -0.5px;
+  // bottom: 3vh;
+  // left: 6vh;
+  bottom: 0;
+  left: 0;
+  max-width: 50rem;
+  letter-spacing: -0.5px;
   // font-weight: 900;
+  font-weight: 600;
+  margin: 0;
 
-  @media (max-width: 1024px) {
-    font-size: 1.5rem;
-    max-width: 20rem;
+
+  // @media (max-width: 1024px) {
+  //   font-size: 1.5rem;
+  //   max-width: 20rem;
+  // }
+  :hover {
+    color: #666666;
+  }
+  @media (max-width: 1240px) {
+    display: none;
   }
 `
 
