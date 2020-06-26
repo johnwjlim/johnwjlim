@@ -31,8 +31,9 @@ const StyledLink = styled(Link)`
   // font-size: 0.95rem;
   letter-spacing: -0.4px;
   color: #333333;
-  font-weight: 400;
-
+  // font-weight: 500;
+  // font-size: 1.17rem;
+  
   :hover {
     // text-decoration: underline;
     color: #ffb7b7;
@@ -70,6 +71,7 @@ const GreyLink = styled(Link)`
   font-weight: 300;
   transition: 0.2s;
   border: none;
+  // font-size: 1.17em;
 
   :hover {
     color: #ffb7b7;
