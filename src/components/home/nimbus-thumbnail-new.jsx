@@ -6,14 +6,21 @@ import {useTransition, animated} from 'react-spring'
 
 import { ImageWrapper } from "../constants"
 
+
 const CaseCaption = styled.h4`
   font-weight: 600;
   margin: 0;
   margin-top: 1rem;
   letter-spacing: -0.2px;
   max-width: 55rem;
-  
+  transition: 0.3s
 
+`
+
+const CaptionWrapper = styled.div`
+  // ${CaseLink}:hover & {
+  //   opacity: 0;
+  // }
 `
 
 const CaseLink = styled(Link)`
@@ -25,7 +32,7 @@ const CaseLink = styled(Link)`
 
   :hover {
     cursor: pointer;
-    transform: scale(0.995);
+    transform: scale(0.99);
   }
 
   @media (max-width: 1024px) {
@@ -33,47 +40,68 @@ const CaseLink = styled(Link)`
     margin-bottom: 0;
   }
 
-  // @media (max-width: 768px) {
-  //   &:hover ${CaseCaption} {
-  //     font-weight: 500;
-  //     letter-spacing: -0.5px;
-  //   }
-  // }
+  &:hover ${CaseCaption} {
+    color: #666666;
+  }
+
+
 `;
 
 const Filler = styled.div`
   position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #47C3A0;
+  // top: 0;
+  bottom: 0;
+  left: 0;
+  width: 52rem;
+  height: 5rem;
+  // background-color: #47C3A0;
   // background-color: #e8e8e8;
-  // background-color: #f5f5f5;
+  background-color: #ffffff;
   // background-color: #F6FFFA;
-  opacity: 0.9;
+  opacity: 1;
+  border: none;
+
+  @media (max-width: 1240px) {
+    display: none;
+  }
 `
 
-const ImageCaption = styled.h1`
+const ImageCaption = styled.h2`
   position: absolute;
-  color: #ffffff;
+  color: #333333;
   // color: #333333;
   // color: #47c3a0;
-  bottom: 3vh;
-  left: 6vh;
-  max-width: 36rem;
-  // letter-spacing: -0.8px;
-  // font-weight: 700;
+  // bottom: 3vh;
+  // left: 6vh;
+  bottom: 0;
+  left: 0;
+  max-width: 50rem;
+  letter-spacing: -0.5px;
+  font-weight: 600;
   // font-size: 1.8rem;
+  margin: 0;
 
-  @media (max-width: 1024px) {
-    font-size: 1.5rem;
-    max-width: 20rem;
+  // @media (max-width: 1024px) {
+  //   font-size: 1.5rem;
+  //   max-width: 20rem;
+  // }
+  
+  :hover {
+    color: #666666;
   }
+  @media (max-width: 1240px) {
+    display: none;
+  }
+
 `
 
 const ImageParent = styled(ImageWrapper)`
   position: relative;
+
+  
 `
+
+
 
 export default function Nimbus() {
   const data = useStaticQuery(graphql`
@@ -108,7 +136,7 @@ export default function Nimbus() {
           transitions.map(({item, key, props}) => 
             item && <animated.div key={key} style={props}>
               <Filler />
-              <ImageCaption>How do you expand access to the outdoors for the increasingly interconnected society of today?</ImageCaption>
+              <ImageCaption>How might we expand access to the outdoors for the increasingly interconnected society of today?</ImageCaption>
               {/* <ImageCaption>Nimbus: A mobile app design that aims to expand access to the outdoors</ImageCaption> */}
               {/* <ImageCaption>
                 HOW DO YOU EXPAND ACCESS TO THE OUTDOORS FOR THE INCREASINGLY INTERCONNECTED SOCIETY OF TODAY
@@ -117,13 +145,14 @@ export default function Nimbus() {
           )
         }
       </ImageParent>
-      <CaseCaption>
-       Expanding access to the outdoors by bringing community to your fingertips.
-        {/* Nimbus: A mobile app design that aims to redefine access to the outdoors. */}
-        {/* How do you expand access to the outdoors for the increasingly interconnected society of today? */}
-      </CaseCaption>
-      <CaseCaption style={{marginTop: "0.2rem", fontWeight: "400"}}>Nimbus</CaseCaption>
-
+      <CaptionWrapper>
+        <CaseCaption>
+        Expanding access to the outdoors by bringing community to your fingertips.
+          {/* Nimbus: A mobile app design that aims to redefine access to the outdoors. */}
+          {/* How do you expand access to the outdoors for the increasingly interconnected society of today? */}
+        </CaseCaption>
+        <CaseCaption style={{marginTop: "0.2rem", fontWeight: "400"}}>Nimbus</CaseCaption>
+      </CaptionWrapper>
     </CaseLink>
   )
 }
