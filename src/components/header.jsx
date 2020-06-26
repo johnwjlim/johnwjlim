@@ -12,13 +12,13 @@ const Container = styled.div`
   // margin: 0 auto;
   // position: absolute;
   position: fixed;
-  padding: 1rem 2.5rem;
+  padding: 1.15rem 2.5rem;
   top: 0;
   left: 0;
   z-index: 5;
   width: 100%;
-  background-color: rgba(255,255,255,0.75);
-  border-bottom: 1px solid #f1f1f1;
+  // background-color: rgba(255,255,255,0.75);
+  // border-bottom: 1px solid #f1f1f1;
   // box-shadow: 1px 1px #c5c5c5;
 
   @media (max-width: 425px) {
@@ -34,10 +34,11 @@ const Wrapper = styled.div`
 const Title = styled.h2`
   margin: 0;
   // margin-right: 3.6rem;
-  letter-spacing: -0.3px;
-  font-weight: 700;
+  letter-spacing: -0.8px;
+  font-weight: 600;
   color: #111111;
-  font-size: 1.4rem;
+  // font-size: 1.4rem;
+
 
   @media (max-width: 425px) {
     font-size: 1.25rem
