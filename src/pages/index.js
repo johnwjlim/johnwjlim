@@ -111,6 +111,7 @@ const NewTitle = styled.h1`
   letter-spacing: -0.8px;
   font-weight: 700;
   // font-size: 2rem;
+  margin-bottom: 2rem;
 
   // @media (max-width: 768px) {
   //   font-size: 1.25rem;
@@ -187,7 +188,7 @@ export default function IndexPage() {
                 <NewTitle>Hello, I'm John.</NewTitle>
                 {/* <NewSubtitle>⛷️  🏃 💻</NewSubtitle> */}
                 <NewSubtitle>I'm a ⛷️ powder hound, 🏃 pavement pounder, & 🧑‍🎓 I push pixels from time to time.</NewSubtitle>
-                <NewSubtitle style={{color: "#979797"}}>Student of human factors. Mostly fueled by coffee ☕  </NewSubtitle>
+                <NewSubtitle style={{color: "#979797"}}>Student of human factors. Sustained mostly by coffee ☕  </NewSubtitle>
                 <NewSubtext>Tiny touch of adrenaline helps too. Anything worth doing is worth overdoing :D Moderation is for cowards. </NewSubtext>
                 {/* <NewSubtitle style={{color: "#979797"}}> Fueled by coffee. Mostl☕ ☕ ☕ Adrenaline helps too. </NewSubtitle> */}
               </TitleBox>
