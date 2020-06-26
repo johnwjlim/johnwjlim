@@ -149,8 +149,9 @@ const Button = styled.button`
 `
 
 const Box = styled.div`
-  border: 1px solid #dddddd;
+  // border: 1px solid #dddddd;
   border-radius: 16px;
+  background-color: #fafafa;
   // width: 100%;
   text-align: center;
   margin-top: 5rem;

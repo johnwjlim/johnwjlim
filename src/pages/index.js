@@ -39,8 +39,10 @@ const Body = styled(Container)`
 
 const TitleBox = styled.div`
   // margin: 5rem 0 10rem;
-  margin: 3.5rem 0 5rem;
-  // margin: 5rem 0;
+  // margin: 3.5rem 0 5rem;
+  margin: 1rem 0;
+  margin-bottom: 12rem;
+  // margin-top: 10rem;
   @media (max-width: 768px) {
     // font-size: 1rem;
     margin: 3.5rem 0 5rem;
@@ -105,6 +107,41 @@ transition: transform 0.2s;
 }
 `
 
+const NewTitle = styled.h1`
+  letter-spacing: -0.8px;
+  font-weight: 700;
+  // font-size: 2rem;
+
+  // @media (max-width: 768px) {
+  //   font-size: 1.25rem;
+  // }
+`
+const NewSubtitle = styled.h3`
+  letter-spacing: -0.6px;
+  font-weight: 500;
+  margin-bottom: 0.2rem;
+// @media (max-width: 768px) {
+//   font-size: 1.25rem;
+// }
+`
+
+const NewSubtext = styled.h6`
+  margin-top: 0.75rem;
+  letter-spacing: -0.2px;
+  
+  color: #dddddd;
+  font-weight: 400;
+`
+
+const HeaderWrapper = styled.div`
+  display: none;
+  
+  @media (max-width: 1024px) {
+    display: block;
+  }
+
+`
+
 
 export default function IndexPage() {
   const data = useStaticQuery(graphql`
@@ -132,7 +169,9 @@ export default function IndexPage() {
   return (
     <Layout>
       <SEO title="Home" />
-      <Header/>
+      <HeaderWrapper>
+        <Header/>
+      </HeaderWrapper>
       {
         menuState ?
         <MobileNav /> :
@@ -140,12 +179,17 @@ export default function IndexPage() {
           <Wrapper>
             <Body>
               <TitleBox>
-                <Subtitle>I'm a designer that codes studying Human Computer Interaction and Political Science at the University of Washington.</Subtitle>
+                {/* <Subtitle>I'm a designer that codes studying Human Computer Interaction and Political Science at the University of Washington.</Subtitle> */}
                 {/* <MobileSubtitle>Student of Human Computer Interaction at the University of Washington.</MobileSubtitle> */}
                 {/* <Subtitle>I'm an avid skier, amateur runner and I make little rectangles on a screen from time to time.</Subtitle> */}
                 {/* <Title>I'm a designer that codes driven by impact and seeking the intersection between technology and humanity.</Title> */}
-                <Title>I strive to craft engaging experiences at the intersection of technology and humanity.</Title>
-
+                {/* <Title>I strive to craft engaging experiences at the intersection of technology and humanity.</Title> */}
+                <NewTitle>Hello, I'm John.</NewTitle>
+                {/* <NewSubtitle>⛷️  🏃 💻</NewSubtitle> */}
+                <NewSubtitle>I'm a ⛷️ powder hound, 🏃 pavement pounder, & 🧑‍🎓 I push pixels from time to time.</NewSubtitle>
+                <NewSubtitle style={{color: "#979797"}}>Student of human factors. Mostly fueled by coffee ☕  </NewSubtitle>
+                <NewSubtext>Tiny touch of adrenaline helps too. Anything worth doing is worth overdoing :D Moderation is for cowards. </NewSubtext>
+                {/* <NewSubtitle style={{color: "#979797"}}> Fueled by coffee. Mostl☕ ☕ ☕ Adrenaline helps too. </NewSubtitle> */}
               </TitleBox>
               {/* <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
                 <Image />

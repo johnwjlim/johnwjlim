@@ -28,6 +28,10 @@ const StyledLink = styled(Link)`
   font-size: 1rem;
   line-height: 1.7;
   transition: 0.2s;
+  // font-size: 0.95rem;
+  letter-spacing: -0.4px;
+  color: #333333;
+  font-weight: 400;
 
   :hover {
     // text-decoration: underline;

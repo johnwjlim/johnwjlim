@@ -27,6 +27,7 @@ const StyledLink = styled(Link)`
   font-size: 1rem;
   line-height: 1.7;
   transition: 0.2s;
+  // font-size: 0.95rem;
 
   :hover {
     // text-decoration: underline;
@@ -42,6 +43,7 @@ const StyledText = styled.a`
   margin: 0;
   font-weight: 500;
   border-bottom: 1px solid #333333; 
+  // font-size: 0.95rem;
 `
 
 const GreyText = styled(StyledText)`
