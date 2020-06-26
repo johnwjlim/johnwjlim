@@ -40,7 +40,7 @@ const Body = styled(Container)`
 const TitleBox = styled.div`
   // margin: 5rem 0 10rem;
   // margin: 3.5rem 0 5rem;
-  margin: 1rem 0;
+  margin: 0.7rem 0;
   margin-bottom: 12rem;
   // margin-top: 10rem;
   @media (max-width: 768px) {
@@ -121,13 +121,14 @@ const NewSubtitle = styled.h3`
   letter-spacing: -0.6px;
   font-weight: 500;
   margin-bottom: 0.2rem;
+  // color: #666666;
 // @media (max-width: 768px) {
 //   font-size: 1.25rem;
 // }
 `
 
 const NewSubtext = styled.h6`
-  margin-top: 0.75rem;
+  margin-top: 1rem;
   letter-spacing: -0.2px;
   
   color: #dddddd;
@@ -187,9 +188,9 @@ export default function IndexPage() {
                 {/* <Title>I strive to craft engaging experiences at the intersection of technology and humanity.</Title> */}
                 <NewTitle>Hello, I'm John.</NewTitle>
                 {/* <NewSubtitle>⛷️  🏃 💻</NewSubtitle> */}
-                <NewSubtitle>I'm a ⛷️ powder hound, 🏃 pavement pounder, & 🧑‍🎓 I push pixels from time to time.</NewSubtitle>
-                <NewSubtitle style={{color: "#979797"}}>Student of human factors. Sustained mostly by coffee ☕  </NewSubtitle>
-                <NewSubtext>Tiny touch of adrenaline helps too. Anything worth doing is worth overdoing :D Moderation is for cowards. </NewSubtext>
+                <NewSubtitle style={{}}>I am a ⛷️ powder hound, 🏃 pavement pounder, and I push pixels 🧑‍🎓 from time to time.</NewSubtitle>
+                <NewSubtitle style={{color: "#a5a5a5"}}>Student of human factors. Sustained largely by coffee. ☕  </NewSubtitle>
+                <NewSubtext>Tiny touch of adrenaline helps too. Anything worth doing in life is worth overdoing. Moderation is for cowards. </NewSubtext>
                 {/* <NewSubtitle style={{color: "#979797"}}> Fueled by coffee. Mostl☕ ☕ ☕ Adrenaline helps too. </NewSubtitle> */}
               </TitleBox>
               {/* <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
