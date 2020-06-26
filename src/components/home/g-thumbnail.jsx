@@ -6,17 +6,15 @@ import {useTransition, animated} from 'react-spring'
 
 import { ImageWrapper } from "../constants"
 
-const CaseCaption = styled.h3`
-  font-weight: 400;
-  color: #333333;
+
+const CaseCaption = styled.h4`
+  font-weight: 600;
+  margin: 0;
   margin-top: 1rem;
   letter-spacing: -0.2px;
+  max-width: 55rem;
+  
 
-  @media (max-width: 1024px) {
-    color: #333333;
-    // font-weight: 500;
-    font-size: 0.9rem;
-  }
 `
 
 const CaseLink = styled(Link)`
@@ -28,13 +26,7 @@ const CaseLink = styled(Link)`
 
   :hover {
     cursor: pointer;
-    transform: scale(0.98);
-  }
-
-  &:hover ${CaseCaption} {
-    font-weight: 500;
-    letter-spacing: -0.41px;
-    color: #333333;
+    transform: scale(0.995);
   }
 
   @media (max-width: 1024px) {
@@ -42,12 +34,12 @@ const CaseLink = styled(Link)`
     margin-bottom: 0;
   }
 
-  @media (max-width: 768px) {
-    &:hover ${CaseCaption} {
-      font-weight: 500;
-      letter-spacing: -0.5px;
-    }
-  }
+  // @media (max-width: 768px) {
+  //   &:hover ${CaseCaption} {
+  //     font-weight: 500;
+  //     letter-spacing: -0.5px;
+  //   }
+  // }
 `;
 
 const Filler = styled.div`
@@ -120,8 +112,9 @@ export default function GThumbnail() {
         }
       </ImageParent>
       <CaseCaption>
-        ClubFinder: Helping new students find a right fit amongst hundreds of campus organizations
+        Helping new students find a right fit amongst hundreds of campus organizations
       </CaseCaption>
+      <CaseCaption style={{marginTop: "0.2rem", fontWeight: "400"}}>ClubFinder</CaseCaption>
     </CaseLink>
   )
 

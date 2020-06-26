@@ -6,38 +6,31 @@ import {useTransition, animated} from 'react-spring'
 
 import { ImageWrapper } from "../constants"
 
-const CaseCaption = styled.h3`
-  // font-size: 1.4rem;
-  font-weight: 400;
-  color: #333333;
+const CaseCaption = styled.h4`
+  font-weight: 600;
+  margin: 0;
   margin-top: 1rem;
   letter-spacing: -0.2px;
+  max-width: 55rem;
+  
 
-  @media (max-width: 1024px) {
-    color: #333333;
-    // font-weight: 500;
-    font-size: 0.9rem;
-  }
 `
 
 const CaseLink = styled(Link)`
   text-decoration: none;
   transition: 0.3s;
   margin: 5rem 0;
+  margin-bottom: 0;
   display: block;
 
   :hover {
     cursor: pointer;
-    transform: scale(0.98);
-  }
-
-  &:hover ${CaseCaption} {
-    font-weight: 500;
-    letter-spacing: -0.41px;
+    transform: scale(0.995);
   }
 
   @media (max-width: 1024px) {
     margin: 3.5rem 0;
+    margin-bottom: 0;
   }
 
   // @media (max-width: 768px) {
@@ -125,9 +118,12 @@ export default function Nimbus() {
         }
       </ImageParent>
       <CaseCaption>
-        Nimbus: A mobile app design that aims to redefine access to the outdoors.
+       Expanding access to the outdoors by bringing community to your fingertips.
+        {/* Nimbus: A mobile app design that aims to redefine access to the outdoors. */}
         {/* How do you expand access to the outdoors for the increasingly interconnected society of today? */}
       </CaseCaption>
+      <CaseCaption style={{marginTop: "0.2rem", fontWeight: "400"}}>Nimbus</CaseCaption>
+
     </CaseLink>
   )
 }

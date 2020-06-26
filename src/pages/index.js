@@ -189,8 +189,8 @@ export default function IndexPage() {
                 <NewTitle>Hello, I'm John.</NewTitle>
                 {/* <NewSubtitle>⛷️  🏃 💻</NewSubtitle> */}
                 <NewSubtitle style={{}}>I am a ⛷️ powder hound, 🏃 pavement pounder, and I push pixels 🧑‍🎓 from time to time.</NewSubtitle>
-                <NewSubtitle style={{color: "#a5a5a5"}}>Student of human factors. Sustained largely by coffee. ☕  </NewSubtitle>
-                <NewSubtext>Tiny touch of adrenaline helps too. Anything worth doing in life is worth overdoing. Moderation is for cowards. </NewSubtext>
+                <NewSubtitle style={{color: "#979797"}}>Student of human factors. ☕ Sustained by lots of coffee.  </NewSubtitle>
+                <NewSubtext>Tiny touch of adrenaline helps too. <br/> Anything worth doing in life is worth overdoing. Moderation is for cowards. </NewSubtext>
                 {/* <NewSubtitle style={{color: "#979797"}}> Fueled by coffee. Mostl☕ ☕ ☕ Adrenaline helps too. </NewSubtitle> */}
               </TitleBox>
               {/* <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
