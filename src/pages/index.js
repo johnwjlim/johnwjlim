@@ -29,7 +29,7 @@ const Wrapper = styled.div`
 
 const Body = styled(Container)`
   // width: 100%;
-  margin: 0 3vw;
+  margin: 0 2rem;
   margin-right: 15em;
 
   @media (max-width: 1240px) {
@@ -40,8 +40,9 @@ const Body = styled(Container)`
 const TitleBox = styled.div`
   // margin: 5rem 0 10rem;
   // margin: 3.5rem 0 5rem;
-  margin: 0.7rem 0;
-  margin-bottom: 12rem;
+  // margin: 0.7rem 0;
+  margin: 4rem 0;
+  margin-bottom: 16rem; 
   // margin-top: 10rem;
   @media (max-width: 768px) {
     // font-size: 1rem;
@@ -108,9 +109,10 @@ transition: transform 0.2s;
 `
 
 const NewTitle = styled.h1`
-  letter-spacing: -0.8px;
-  font-weight: 700;
-  // font-size: 2rem;
+  letter-spacing: -1.9px;
+  font-weight: 600;
+  font-size: 2.3rem;
+  // margin: 4rem 0;  
   margin-bottom: 2rem;
 
   // @media (max-width: 768px) {
@@ -121,10 +123,6 @@ const NewSubtitle = styled.h3`
   letter-spacing: -0.7px;
   font-weight: 500;
   margin-bottom: 0.1rem;
-  // color: #666666;
-// @media (max-width: 768px) {
-//   font-size: 1.25rem;
-// }
 `
 
 const NewSubtext = styled.h6`
@@ -138,11 +136,69 @@ const NewSubtext = styled.h6`
 const HeaderWrapper = styled.div`
   display: none;
   
-  @media (max-width: 1024px) {
+  @media (max-width: 1240px) {
     display: block;
+  }
+`
+
+const Greeting = styled.h2`
+  letter-spacing: -1px;
+  color: #979797;
+  font-weight: 400;
+  margin-bottom: 2rem;
+`
+
+const Sub = styled.h2`
+  letter-spacing: -0.8px;
+  color: #767676;
+  font-weight: 600;
+  margin-bottom: 2rem;
+`
+
+const FauxHeader = styled.div`
+  position: fixed;
+  padding: 2rem 0;
+  margin: 0 4.5rem;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  // max-width: 1300px;
+  width: 90%;
+
+  @media (max-width: 1240px) {
+    display: none;
   }
 
 `
+
+
+const HeaderTitle = styled.h2`
+  margin: 0;
+  // margin-right: 3.6rem;
+  letter-spacing: -0.8px;
+  font-weight: 600;
+  color: #111111;
+  // font-size: 1.4rem;
+
+
+  @media (max-width: 425px) {
+    font-size: 1.25rem
+  }
+
+  &:hover {
+    color: #979797;
+    // font-weight: 800;
+    // letter-spacing: -0.5px;
+  }
+`
+
+const StyledLink = styled(Link)`
+  text-decoration: none;
+  transition: 0.3s;
+
+`;
+
+
 
 
 export default function IndexPage() {
@@ -174,24 +230,34 @@ export default function IndexPage() {
       <HeaderWrapper>
         <Header/>
       </HeaderWrapper>
+      {/* <FauxHeader>
+          <HeaderTitle>John Lim</HeaderTitle>
+      </FauxHeader> */}
       {
         menuState ?
         <MobileNav /> :
         <>
           <Wrapper>
             <Body>
+              <FauxHeader>
+                <StyledLink to="/">
+                  <HeaderTitle>John Lim</HeaderTitle>
+                </StyledLink>
+              </FauxHeader>
               <TitleBox>
                 {/* <Subtitle>I'm a designer that codes studying Human Computer Interaction and Political Science at the University of Washington.</Subtitle> */}
                 {/* <MobileSubtitle>Student of Human Computer Interaction at the University of Washington.</MobileSubtitle> */}
                 {/* <Subtitle>I'm an avid skier, amateur runner and I make little rectangles on a screen from time to time.</Subtitle> */}
                 {/* <Title>I'm a designer that codes driven by impact and seeking the intersection between technology and humanity.</Title> */}
                 {/* <Title>I strive to craft engaging experiences at the intersection of technology and humanity.</Title> */}
-                <NewTitle>Hello, I'm John.</NewTitle>
-                {/* <NewSubtitle>⛷️  🏃 💻</NewSubtitle> */}
-                <NewSubtitle style={{}}>I am a ⛷️ powder hound, 🏃 pavement pounder, and I push pixels 🧑‍🎓 from time to time.</NewSubtitle>
+                {/* <Greeting>Hello there, I'm John:</Greeting> */}
+                <NewTitle>Powder Hound ⛷️<br/>Pavement Pounder 🏃<br/>Pixel Pusher from time to time 👨‍🎓</NewTitle>
+                <Sub>Enthralled by human factors. Sustained by plenty of coffee.</Sub>
+                
+                
+                {/* <NewSubtitle style={{}}>I am a ⛷️ powder hound, 🏃 pavement pounder, and I push pixels 🧑‍🎓 from time to time.</NewSubtitle>
                 <NewSubtitle style={{color: "#a5a5a5"}}>Enthralled by human factors. Sustained by plenty of coffee.  </NewSubtitle>
-                <NewSubtext>Tiny touch of adrenaline helps too. Anything worth doing in life is worth overdoing.</NewSubtext>
-                {/* <NewSubtitle style={{color: "#979797"}}> Fueled by coffee. Mostl☕ ☕ ☕ Adrenaline helps too. </NewSubtitle> */}
+                <NewSubtext>Tiny touch of adrenaline helps too. Anything worth doing in life is worth overdoing.</NewSubtext>  */}
               </TitleBox>
               {/* <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
                 <Image />
