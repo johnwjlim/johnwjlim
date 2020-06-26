@@ -51,7 +51,7 @@ const Filler = styled.div`
   bottom: 0;
   left: 0;
   width: 52rem;
-  height: 5rem;
+  height: 4.5rem;
   // background-color: #47C3A0;
   // background-color: #FF6699;
   // background-color: #ffffff;
