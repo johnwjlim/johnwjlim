@@ -45,7 +45,7 @@ const TitleBox = styled.div`
   // margin: 3.5rem 0 5rem;
   // margin: 0.7rem 0;
   // margin: 4rem 0;
-  margin-bottom: 16rem; 
+  margin-bottom: 12rem; 
   // margin-top: 10rem;
   @media (max-width: 768px) {
     // font-size: 1rem;
@@ -112,9 +112,9 @@ transition: transform 0.2s;
 `
 
 const NewTitle = styled.h1`
-  letter-spacing: -1.75px;
-  font-weight: 600;
-  font-size: 2.3rem;
+  letter-spacing: -1.8px;
+  font-weight: 200;
+  font-size: 2.5rem;
   // margin: 4rem 0; 
   margin-bottom: 4rem;
   // line-height: 1.23;
@@ -126,9 +126,9 @@ const NewTitle = styled.h1`
 const NewSubtitle = styled.h4`
   letter-spacing: -0.4px;
   font-weight: 400;
-  margin-bottom: 4rem;
+  margin-bottom: 6rem;
   margin-top: 3.9rem;
-  color: #333333;
+  color: #666666;
   
   @media (max-width: 1240px) {
     display: none;
@@ -161,7 +161,7 @@ const Greeting = styled.h2`
 const Sub = styled.h2`
   letter-spacing: -0.8px;
   color: #767676;
-  font-weight: 600;
+  font-weight: 300;
   margin-bottom: 2rem;
 `
 
