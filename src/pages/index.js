@@ -22,9 +22,12 @@ import Pool from "../components/home/pool-thumbnail"
 const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
-  margin-top: 76px;
+  // margin-top: 76px;
   // margin-top: 58px;
   // background-color: #;
+  @media (max-width: 1240px) {
+    margin-top: 76px;
+  }
 `;
 
 const Body = styled(Container)`
@@ -41,7 +44,7 @@ const TitleBox = styled.div`
   // margin: 5rem 0 10rem;
   // margin: 3.5rem 0 5rem;
   // margin: 0.7rem 0;
-  margin: 4rem 0;
+  // margin: 4rem 0;
   margin-bottom: 16rem; 
   // margin-top: 10rem;
   @media (max-width: 768px) {
@@ -109,20 +112,27 @@ transition: transform 0.2s;
 `
 
 const NewTitle = styled.h1`
-  letter-spacing: -1.9px;
+  letter-spacing: -1.75px;
   font-weight: 600;
   font-size: 2.3rem;
-  // margin: 4rem 0;  
-  margin-bottom: 2rem;
+  // margin: 4rem 0; 
+  margin-bottom: 4rem;
+  // line-height: 1.23;
 
   // @media (max-width: 768px) {
   //   font-size: 1.25rem;
   // }
 `
-const NewSubtitle = styled.h3`
-  letter-spacing: -0.7px;
-  font-weight: 500;
-  margin-bottom: 0.1rem;
+const NewSubtitle = styled.h4`
+  letter-spacing: -0.4px;
+  font-weight: 400;
+  margin-bottom: 4rem;
+  margin-top: 3.9rem;
+  color: #333333;
+  
+  @media (max-width: 1240px) {
+    display: none;
+  }
 `
 
 const NewSubtext = styled.h6`
@@ -242,6 +252,7 @@ export default function IndexPage() {
               <FauxHeader>
                 <StyledLink to="/">
                   <HeaderTitle>John Lim</HeaderTitle>
+                  {/* <NewSubtitle>Digital Product Designer</NewSubtitle> */}
                 </StyledLink>
               </FauxHeader>
               <TitleBox>
@@ -251,6 +262,7 @@ export default function IndexPage() {
                 {/* <Title>I'm a designer that codes driven by impact and seeking the intersection between technology and humanity.</Title> */}
                 {/* <Title>I strive to craft engaging experiences at the intersection of technology and humanity.</Title> */}
                 {/* <Greeting>Hello there, I'm John:</Greeting> */}
+                <NewSubtitle>Product Designer</NewSubtitle> 
                 <NewTitle>Powder Hound ⛷️<br/>Pavement Pounder 🏃<br/>Pixel Pusher from time to time 👨‍🎓</NewTitle>
                 <Sub>Enthralled by human factors. Sustained by plenty of coffee.</Sub>
                 
@@ -267,7 +279,9 @@ export default function IndexPage() {
               <Pool />
               <GChallenge />
             </Body>
-            <Nav />
+            <div style={{marginTop: "76px"}}>
+              <Nav />
+            </div>
           </Wrapper>
         </>
       }
