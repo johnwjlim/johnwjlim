@@ -112,12 +112,12 @@ transition: transform 0.2s;
 `
 
 const NewTitle = styled.h1`
-  letter-spacing: -3.3px;
+  letter-spacing: -3.2px;
   font-weight: 400;
-  font-size: 4rem;
+  font-size: 4em;
   // margin: 4rem 0; 
-  margin-bottom: 3rem;
-  line-height: 1.1;
+  margin-bottom: 4rem;
+  line-height: 1.02;
 
   @media (max-width: 1024px) {
     font-size: 2.5rem;
