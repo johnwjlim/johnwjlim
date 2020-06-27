@@ -114,7 +114,7 @@ transition: transform 0.2s;
 const NewTitle = styled.h1`
   letter-spacing: -2.8px;
   font-weight: 700;
-  font-size: 4rem;
+  font-size: 3.2rem;
   // margin: 4rem 0; 
   margin-bottom: 4rem;
   line-height: 1.05;
@@ -132,7 +132,7 @@ const NewTitle = styled.h1`
 const NewSubtitle = styled.h4`
   letter-spacing: -0.3px;
   font-weight: 400;
-  margin-bottom: 24rem;
+  margin-bottom: 28rem;
   margin-top: 3.9rem;
   color: #333333;
   
