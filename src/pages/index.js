@@ -112,7 +112,7 @@ transition: transform 0.2s;
 `
 
 const NewTitle = styled.h1`
-  letter-spacing: -1.8px;
+  letter-spacing: -1.2px;
   font-weight: 700;
   font-size: 3rem;
   // margin: 4rem 0; 
@@ -121,7 +121,7 @@ const NewTitle = styled.h1`
 
   @media (max-width: 1024px) {
     font-size: 2.5rem;
-    letter-spacing: -2.5px
+    letter-spacing: -2px
   }
 
   // @media(max-width: 768px) {
@@ -158,7 +158,7 @@ const HeaderWrapper = styled.div`
 `
 
 const Sub = styled.h3`
-  letter-spacing: -0.5px;
+  letter-spacing: -0.3px;
   color: #333333;
   font-weight: 500;
   margin-bottom: 2rem;
