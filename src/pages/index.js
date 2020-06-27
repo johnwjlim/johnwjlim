@@ -116,7 +116,7 @@ const NewTitle = styled.h1`
   font-weight: 400;
   font-size: 4em;
   // margin: 4rem 0; 
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
   line-height: 1.02;
   color: #111111;
 
