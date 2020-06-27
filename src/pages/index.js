@@ -117,7 +117,7 @@ const NewTitle = styled.h1`
   font-size: 3rem;
   // margin: 4rem 0; 
   margin-bottom: 3rem;
-  line-height: 1.1;
+  line-height: 1.08;
 
   @media (max-width: 1024px) {
     font-size: 2.5rem;
