@@ -131,7 +131,7 @@ const NewTitle = styled.h1`
 `
 const NewSubtitle = styled.h4`
   letter-spacing: -0.3px;
-  font-weight: 300;
+  font-weight: 400;
   margin-bottom: 24rem;
   margin-top: 3.9rem;
   color: #333333;
@@ -164,10 +164,10 @@ const Greeting = styled.h2`
   margin-bottom: 2rem;
 `
 
-const Sub = styled.h2`
-  letter-spacing: -0.8px;
-  color: #666666;
-  font-weight: 300;
+const Sub = styled.h3`
+  letter-spacing: -0.5px;
+  color: #333333;
+  font-weight: 400;
   margin-bottom: 2rem;
 `
 
@@ -271,7 +271,7 @@ export default function IndexPage() {
                 <NewSubtitle>Digital Product Designer</NewSubtitle> 
                 <NewTitle>Powder Hound ⛷ <br/>Pavement Pounder 🏃  <br/>Pixel Pusher 👨‍🎓</NewTitle>
                 
-                <Sub>Enthralled by what makes us human. Sustained by plenty of coffee.</Sub>
+                <Sub>Enthralled by the things that makes us human. Sustained by plenty of coffee.</Sub>
                 
                 {/* <NewSubtitle style={{}}>I am a ⛷️ powder hound, 🏃 pavement pounder, and I push pixels 🧑‍🎓 from time to time.</NewSubtitle>
                 <NewSubtitle style={{color: "#a5a5a5"}}>Enthralled by human factors. Sustained by plenty of coffee.  </NewSubtitle>
