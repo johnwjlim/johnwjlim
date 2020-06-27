@@ -132,7 +132,7 @@ const NewTitle = styled.h1`
 const NewSubtitle = styled.h4`
   letter-spacing: -0.3px;
   font-weight: 400;
-  margin-bottom: 28rem;
+  margin-bottom: 8rem;
   margin-top: 3.9rem;
   color: #333333;
   
@@ -263,6 +263,7 @@ export default function IndexPage() {
                 {/* <Title>I strive to craft engaging experiences at the intersection of technology and humanity.</Title> */}
                 <NewSubtitle>Digital Product Designer</NewSubtitle> 
                 <NewTitle>Powder Hound ⛷ <br/>Pavement Pounder 🏃  <br/>Pixel Pusher 👨‍🎓</NewTitle>
+                {/* <NewTitle>Powder Hound <br/>Pavement Pounder  <br/>Pixel Pusher </NewTitle> */}
                 
                 <Sub>Enthralled by the things that make us human. <br/> Sustained by plenty of coffee.</Sub>
                 
