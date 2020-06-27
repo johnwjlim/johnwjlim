@@ -45,7 +45,7 @@ const TitleBox = styled.div`
   // margin: 3.5rem 0 5rem;
   // margin: 0.7rem 0;
   // margin: 4rem 0;
-  margin-bottom: 10rem; 
+  margin-bottom: 12rem; 
   // margin-top: 10rem;
   @media (max-width: 768px) {
     // font-size: 1rem;
@@ -112,7 +112,7 @@ transition: transform 0.2s;
 `
 
 const NewTitle = styled.h1`
-  letter-spacing: -1.8px;
+  letter-spacing: -1.2px;
   font-weight: 700;
   font-size: 3rem;
   // margin: 4rem 0; 
@@ -121,7 +121,7 @@ const NewTitle = styled.h1`
 
   @media (max-width: 1024px) {
     font-size: 2.5rem;
-    letter-spacing: -2.5px
+    letter-spacing: -2px
   }
 
   // @media(max-width: 768px) {
@@ -158,7 +158,7 @@ const HeaderWrapper = styled.div`
 `
 
 const Sub = styled.h3`
-  letter-spacing: -0.5px;
+  letter-spacing: -0.3px;
   color: #333333;
   font-weight: 500;
   margin-bottom: 2rem;
@@ -207,6 +207,13 @@ const StyledLink = styled(Link)`
   transition: 0.3s;
 
 `;
+
+const Emoji = styled.span`
+  font-size: 2rem;
+  vertical-align: middle;
+  line-height: 0;
+  // margin: 0;
+`
 
 
 
@@ -262,7 +269,7 @@ export default function IndexPage() {
                 {/* <Title>I'm a designer that codes driven by impact and seeking the intersection between technology and humanity.</Title> */}
                 {/* <Title>I strive to craft engaging experiences at the intersection of technology and humanity.</Title> */}
                 <NewSubtitle>Digital Product Designer</NewSubtitle> 
-                <NewTitle>Powder Hound. ⛷ <br/>Pavement Pounder. 🏃  <br/>Pixel Pusher. 👨‍🎓</NewTitle>
+                <NewTitle>Powder Hound. <Emoji>⛷</Emoji><br/>Pavement Pounder. <Emoji>🏃</Emoji>  <br/>Pixel Pusher. <Emoji>👨‍🎓</Emoji> </NewTitle>
                 {/* <NewTitle>Powder Hound <br/>Pavement Pounder  <br/>Pixel Pusher </NewTitle> */}
                 
                 <Sub>Enthralled by the things that make us human. <br/> Sustained by plenty of coffee.</Sub>
