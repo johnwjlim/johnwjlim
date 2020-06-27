@@ -45,7 +45,7 @@ const TitleBox = styled.div`
   // margin: 3.5rem 0 5rem;
   // margin: 0.7rem 0;
   // margin: 4rem 0;
-  margin-bottom: 16rem; 
+  margin-bottom: 8rem; 
   // margin-top: 10rem;
   @media (max-width: 768px) {
     // font-size: 1rem;
@@ -112,12 +112,12 @@ transition: transform 0.2s;
 `
 
 const NewTitle = styled.h1`
-  letter-spacing: -3.2px;
-  font-weight: 600;
+  letter-spacing: -2.8px;
+  font-weight: 700;
   font-size: 4rem;
   // margin: 4rem 0; 
   margin-bottom: 4rem;
-  line-height: 1.1;
+  line-height: 1.05;
 
   @media (max-width: 1024px) {
     font-size: 2.5rem;
@@ -132,7 +132,7 @@ const NewTitle = styled.h1`
 const NewSubtitle = styled.h4`
   letter-spacing: -0.3px;
   font-weight: 300;
-  margin-bottom: 8rem;
+  margin-bottom: 24rem;
   margin-top: 3.9rem;
   color: #333333;
   
@@ -165,9 +165,9 @@ const Greeting = styled.h2`
 `
 
 const Sub = styled.h2`
-  letter-spacing: -1px;
+  letter-spacing: -0.8px;
   color: #666666;
-  font-weight: 400;
+  font-weight: 300;
   margin-bottom: 2rem;
 `
 
@@ -268,10 +268,10 @@ export default function IndexPage() {
                 {/* <Title>I'm a designer that codes driven by impact and seeking the intersection between technology and humanity.</Title> */}
                 {/* <Title>I strive to craft engaging experiences at the intersection of technology and humanity.</Title> */}
                 {/* <Greeting>Hello there, I'm John:</Greeting> */}
-                <NewSubtitle>Product Designer</NewSubtitle> 
+                <NewSubtitle>Digital Product Designer</NewSubtitle> 
                 <NewTitle>Powder Hound ⛷ <br/>Pavement Pounder 🏃  <br/>Pixel Pusher 👨‍🎓</NewTitle>
                 
-                <Sub>Enthralled by human factors. Sustained by plenty of coffee.</Sub>
+                <Sub>Enthralled by what makes us human. Sustained by plenty of coffee.</Sub>
                 
                 {/* <NewSubtitle style={{}}>I am a ⛷️ powder hound, 🏃 pavement pounder, and I push pixels 🧑‍🎓 from time to time.</NewSubtitle>
                 <NewSubtitle style={{color: "#a5a5a5"}}>Enthralled by human factors. Sustained by plenty of coffee.  </NewSubtitle>
