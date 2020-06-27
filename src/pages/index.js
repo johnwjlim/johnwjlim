@@ -45,7 +45,7 @@ const TitleBox = styled.div`
   // margin: 3.5rem 0 5rem;
   // margin: 0.7rem 0;
   // margin: 4rem 0;
-  margin-bottom: 12rem; 
+  margin-bottom: 6rem; 
   // margin-top: 10rem;
   @media (max-width: 768px) {
     // font-size: 1rem;
@@ -133,7 +133,7 @@ const NewTitle = styled.h1`
 const NewSubtitle = styled.h4`
   letter-spacing: -0.3px;
   font-weight: 400;
-  margin-bottom: 8rem;
+  margin-bottom: 18rem;
   margin-top: 3.9rem;
   color: #333333;
   
@@ -286,13 +286,19 @@ export default function IndexPage() {
                 <Image />
               </div> */}
               {/* <Nimbus /> */}
+              {/* <div data-sal="fade" data-sal-duration="300" data-sal-easing="ease"> */}
               <New />
-              <Pool />
-              <GChallenge />
+              <div data-sal="fade" data-sal-delay="100" data-sal-duration="1500" data-sal-easing="ease"> 
+                <Pool />
+              </div>
+              <div data-sal="fade" data-sal-delay="100" data-sal-duration="1500" data-sal-easing="ease"> 
+                <GChallenge />
+              </div>
+              {/* </div> */}
             </Body>
-            <div style={{marginTop: "76px"}}>
+            {/* <div style={{marginTop: "64px"}}> */}
               <Nav />
-            </div>
+            {/* </div> */}
           </Wrapper>
         </>
       }
