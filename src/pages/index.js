@@ -208,6 +208,13 @@ const StyledLink = styled(Link)`
 
 `;
 
+const Emoji = styled.span`
+  font-size: 2rem;
+  vertical-align: middle;
+  line-height: 0;
+  // margin: 0;
+`
+
 
 
 
@@ -262,7 +269,7 @@ export default function IndexPage() {
                 {/* <Title>I'm a designer that codes driven by impact and seeking the intersection between technology and humanity.</Title> */}
                 {/* <Title>I strive to craft engaging experiences at the intersection of technology and humanity.</Title> */}
                 <NewSubtitle>Digital Product Designer</NewSubtitle> 
-                <NewTitle>Powder Hound. ⛷ <br/>Pavement Pounder. 🏃  <br/>Pixel Pusher. 👨‍🎓</NewTitle>
+                <NewTitle>Powder Hound. <Emoji>⛷</Emoji><br/>Pavement Pounder. <Emoji>🏃</Emoji>  <br/>Pixel Pusher. <Emoji>👨‍🎓</Emoji> </NewTitle>
                 {/* <NewTitle>Powder Hound <br/>Pavement Pounder  <br/>Pixel Pusher </NewTitle> */}
                 
                 <Sub>Enthralled by the things that make us human. <br/> Sustained by plenty of coffee.</Sub>
