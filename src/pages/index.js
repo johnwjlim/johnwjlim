@@ -117,7 +117,7 @@ const NewTitle = styled.h1`
   font-size: 4rem;
   // margin: 4rem 0; 
   margin-bottom: 3rem;
-  line-height: 1.08;
+  line-height: 1.1;
 
   @media (max-width: 1024px) {
     font-size: 2.5rem;
@@ -209,7 +209,7 @@ const StyledLink = styled(Link)`
 `;
 
 const Emoji = styled.span`
-  font-size: 2rem;
+  font-size: 1.8rem;
   vertical-align: middle;
   line-height: 0;
   // margin: 0;
@@ -271,7 +271,7 @@ export default function IndexPage() {
                 {/* <Title>I'm a designer that codes driven by impact and seeking the intersection between technology and humanity.</Title> */}
                 {/* <Title>I strive to craft engaging experiences at the intersection of technology and humanity.</Title> */}
                 <NewSubtitle>Digital Product Designer</NewSubtitle> 
-                <NewTitle><TitleStyle>Powder Hound. </TitleStyle><Emoji></Emoji><br/><TitleStyle>Pavement Pounder. </TitleStyle><Emoji></Emoji>  <br/>Pixel Pusher. <Emoji>⛷🏃👨‍🎓</Emoji> </NewTitle>
+                <NewTitle><TitleStyle>Powder Hound. </TitleStyle><Emoji></Emoji><br/><TitleStyle>Pavement Pounder. </TitleStyle><Emoji></Emoji>  <br/>Pixel Pusher. <Emoji>⛷ 🏃 👨‍🎓</Emoji> </NewTitle>
                 {/* <NewTitle>Powder Hound <br/>Pavement Pounder  <br/>Pixel Pusher </NewTitle> */}
                 
                 <Sub>Enthralled by the things that make us human. <br/> Sustained by excessive amounts of coffee.</Sub>
