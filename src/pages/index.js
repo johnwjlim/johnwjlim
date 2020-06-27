@@ -112,16 +112,16 @@ transition: transform 0.2s;
 `
 
 const NewTitle = styled.h1`
-  letter-spacing: -4px;
-  font-weight: 500;
+  letter-spacing: -3.2px;
+  font-weight: 600;
   font-size: 4rem;
   // margin: 4rem 0; 
   margin-bottom: 4rem;
-  line-height: 1.12;
+  line-height: 1.1;
 
   @media (max-width: 1024px) {
     font-size: 2.5rem;
-    letter-spacing: -3px
+    letter-spacing: -2.5px
   }
 
   // @media(max-width: 768px) {
@@ -165,9 +165,9 @@ const Greeting = styled.h2`
 `
 
 const Sub = styled.h2`
-  letter-spacing: -0.8px;
-  color: #767676;
-  font-weight: 300;
+  letter-spacing: -1px;
+  color: #666666;
+  font-weight: 400;
   margin-bottom: 2rem;
 `
 
