@@ -22,7 +22,7 @@ import { nimbusRoutes } from "../components/constants"
 const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
-  margin-top: 76px;
+  // margin-top: 76px;
 `
 
 export default function Nimbus() { 
@@ -170,7 +170,10 @@ export default function Nimbus() {
               // }) 
               // renderActiveSection()
             }
-            <Showcase onChange={handleTabSwitch} active={active}/>,
+          <div style={{width: "100%", marginTop: "64px"}}>
+            <Showcase onChange={handleTabSwitch} active={active}/>
+          </div>
+          {/* <Showcase onChange={handleTabSwitch} active={active}/> */}
           <Nav components={sections} active={active} onChange={handleTabSwitch} routes={nimbusRoutes} />
         </Wrapper>
       }

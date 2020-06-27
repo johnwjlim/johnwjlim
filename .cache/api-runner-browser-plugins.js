@@ -5,6 +5,9 @@ module.exports = [{
       plugin: require('../node_modules/gatsby-plugin-web-font-loader/gatsby-browser.js'),
       options: {"plugins":[],"google":{"families":["EB Garamond:300,400,500,600,700","Inter:100,200,300,400,500,600,700,800"]}},
     },{
+      plugin: require('../node_modules/gatsby-plugin-scroll-reveal/gatsby-browser.js'),
+      options: {"plugins":[],"threshold":0.2,"once":true,"disable":false},
+    },{
       plugin: require('../gatsby-browser.js'),
       options: {"plugins":[]},
     }]

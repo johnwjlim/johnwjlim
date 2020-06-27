@@ -6,9 +6,11 @@ const Container = styled.nav`
   width: 16em;
   // z-index: 10;
   position: fixed;   
-  height: 89%;
+  height: 91%;
   right: 0;
   margin: 0 1rem;
+  // margin-left: 0; 
+  margin-top: 64px;
   @media (max-width: 1240px) {
     display: none; 
   }
@@ -25,18 +27,20 @@ const ListItem = styled.li`
 
 const StyledLink = styled(Link)`
   text-decoration: none;
+  font-weight: 400;
   font-size: 1rem;
   line-height: 1.7;
   transition: 0.2s;
-  // font-size: 0.95rem;
   letter-spacing: -0.4px;
   color: #333333;
-  // font-weight: 500;
-  // font-size: 1.17rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 8px;
   
   :hover {
     // text-decoration: underline;
-    color: #ffb7b7;
+    color: #666666;
+    background-color: #f5f5f5;
+
   }
 `
 
@@ -45,22 +49,26 @@ const StyledLink = styled(Link)`
 const StyledText = styled.a`
   line-height: 1.7;
   color: #333333;
-  margin: 0;
   font-weight: 500;
   border-bottom: 1px solid #333333; 
+  margin: 0.25rem 0.5rem;
+  letter-spacing: -0.4px'
 `
 
-const GreyText = styled(StyledText)`
+const GreyText = styled.a`
+  line-height: 1.7;
   color: #b8b8b8;
   font-weight: 300;
   transition: 0.2s;
   border: none;
+  padding: 0.25rem 0.5rem;
+  border-radius: 8px;
+  letter-spacing: -0.4px;
 
   :hover {
-    color: #ffb7b7;
-    color: #333333;
     cursor: pointer;  
-    border-bottom: 1px solid #333333;
+    color: #666666;
+    background-color: #f5f5f5;
   }  
 `
 
@@ -71,13 +79,14 @@ const GreyLink = styled(Link)`
   font-weight: 300;
   transition: 0.2s;
   border: none;
-  // font-size: 1.17em;
+  padding: 0.25rem 0.5rem;
+  border-radius: 8px;
+  
 
   :hover {
-    color: #ffb7b7;
-    color: #333333;
     cursor: pointer;  
-    border-bottom: 1px solid #333333;
+    color: #666666;
+    background-color: #f5f5f5;
   }  
 `
 
@@ -94,20 +103,20 @@ const DetailText = styled.p`
 `
 
 const FooterText = styled.p`
-  color: #767676;
+  color: #666666;
   font-weight: 300;
-  font-size: 14px;
-  line-height: 1.3;  
-  width: 15em;
+  font-size: 0.83rem;
+  line-height: 1.44;  
+  width: 12.5rem;
 `
 
 const InlineLink = styled.a`
   text-decoration: none;
   transition: 0.2s;
-  color: #565656;
+  color: #666666;
   font-weight: 400;
   :hover {
-    color: #ffb7b7;
+    color: #8c8c8c;
     cursor: pointer;  
   }  
 `
@@ -115,8 +124,7 @@ const InlineLink = styled.a`
 
 const Footer = styled.footer`
   margin-top: 5rem;
-  width: 15em;
-  padding-left: 2.5rem;
+  padding: 0 3rem;
 `
 
 const FlexHack = styled.div`

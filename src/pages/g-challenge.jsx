@@ -17,7 +17,7 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
   // max-width: 1680px;
-  margin-top: 76px;
+  // margin-top: 64px;
 `
 
 export default function Google() {
@@ -49,9 +49,12 @@ export default function Google() {
         menuState ? 
           <MobileNav components={gSections} active={active} onChange={handleTabSwitch} /> :
         <Wrapper>
-          {
-            renderActiveSection()
-          }
+          <div style={{width: "100%", marginTop: "64px"}}>
+            {
+                renderActiveSection()
+            } 
+          </div>
+       
           <Nav components={gSections} active={active} onChange={handleTabSwitch}/>
         </Wrapper>
       }

@@ -17,7 +17,7 @@ import { nimbusRoutes } from "../../components/constants"
 const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
-  margin-top: 76px;
+  // margin-top: 76px;
 `
 
 export default function Survey() { 
@@ -39,7 +39,9 @@ export default function Survey() {
           <MobileNav components={sections} active={active} onChange={handleTabSwitch} routes={nimbusRoutes}/>
         :
         <Wrapper>
-          <Redesign onChange={handleTabSwitch} active={active}/>,
+          <div style={{marginTop: "64px", width: "100%"}}>
+            <Redesign onChange={handleTabSwitch} active={active}/>
+          </div>
           <Nav components={sections} active={active} onChange={handleTabSwitch} routes={nimbusRoutes}/>
         </Wrapper>
       }
