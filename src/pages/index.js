@@ -112,9 +112,9 @@ transition: transform 0.2s;
 `
 
 const NewTitle = styled.h1`
-  letter-spacing: -1.2px;
-  font-weight: 700;
-  font-size: 3rem;
+  letter-spacing: -3.3px;
+  font-weight: 400;
+  font-size: 4rem;
   // margin: 4rem 0; 
   margin-bottom: 3rem;
   line-height: 1.08;
@@ -196,7 +196,7 @@ const HeaderTitle = styled.h2`
   }
 
   &:hover {
-    color: #979797;
+    color: #8c8c8c;
     // font-weight: 800;
     // letter-spacing: -0.5px;
   }
@@ -214,7 +214,9 @@ const Emoji = styled.span`
   line-height: 0;
   // margin: 0;
 `
-
+const TitleStyle = styled.span`
+  color: #a5a5a5;
+`
 
 
 
@@ -269,10 +271,10 @@ export default function IndexPage() {
                 {/* <Title>I'm a designer that codes driven by impact and seeking the intersection between technology and humanity.</Title> */}
                 {/* <Title>I strive to craft engaging experiences at the intersection of technology and humanity.</Title> */}
                 <NewSubtitle>Digital Product Designer</NewSubtitle> 
-                <NewTitle>Powder Hound. <Emoji>⛷</Emoji><br/>Pavement Pounder. <Emoji>🏃</Emoji>  <br/>Pixel Pusher. <Emoji>👨‍🎓</Emoji> </NewTitle>
+                <NewTitle><TitleStyle>Powder Hound. </TitleStyle><Emoji></Emoji><br/><TitleStyle>Pavement Pounder. </TitleStyle><Emoji></Emoji>  <br/>Pixel Pusher. <Emoji>⛷🏃👨‍🎓</Emoji> </NewTitle>
                 {/* <NewTitle>Powder Hound <br/>Pavement Pounder  <br/>Pixel Pusher </NewTitle> */}
                 
-                <Sub>Enthralled by the things that make us human. <br/> Sustained by plenty of coffee.</Sub>
+                <Sub>Enthralled by the things that make us human. <br/> Sustained by excessive amounts of coffee.</Sub>
                 
                 {/* <NewSubtitle style={{}}>I am a ⛷️ powder hound, 🏃 pavement pounder, and I push pixels 🧑‍🎓 from time to time.</NewSubtitle>
                 <NewSubtitle style={{color: "#a5a5a5"}}>Enthralled by human factors. Sustained by plenty of coffee.  </NewSubtitle>
