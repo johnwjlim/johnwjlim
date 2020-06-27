@@ -273,7 +273,7 @@ export default function IndexPage() {
                 {/* <Title>I'm a designer that codes driven by impact and seeking the intersection between technology and humanity.</Title> */}
                 {/* <Title>I strive to craft engaging experiences at the intersection of technology and humanity.</Title> */}
                 <NewSubtitle>Digital Product Designer</NewSubtitle> 
-                <NewTitle><TitleStyle>Pavement Pounder. </TitleStyle> <br/>Pixel Pusher. <Emoji> 🏃 👨‍🎓 ⛷</Emoji> <br/> <TitleStyle>Powder Hound. </TitleStyle> </NewTitle>
+                <NewTitle><TitleStyle>A Pavement Pounder. </TitleStyle> <br/>A Pixel Pusher. <Emoji> 🏃 👨‍🎓 ⛷</Emoji> <br/> <TitleStyle>A Powder Hound. </TitleStyle> </NewTitle>
                 {/* <NewTitle>Powder Hound <br/>Pavement Pounder  <br/>Pixel Pusher </NewTitle> */}
                 
                 <Sub>Enthralled by the things that make us human. <br/> Sustained by excessive amounts of coffee.</Sub>
