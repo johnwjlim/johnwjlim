@@ -157,18 +157,12 @@ const HeaderWrapper = styled.div`
   }
 `
 
-const Greeting = styled.h2`
-  letter-spacing: -1px;
-  color: #979797;
-  font-weight: 400;
-  margin-bottom: 2rem;
-`
-
 const Sub = styled.h3`
   letter-spacing: -0.5px;
   color: #333333;
-  font-weight: 400;
+  font-weight: 500;
   margin-bottom: 2rem;
+  line-height: 1.3;
 `
 
 const FauxHeader = styled.div`
@@ -267,11 +261,10 @@ export default function IndexPage() {
                 {/* <Subtitle>I'm an avid skier, amateur runner and I make little rectangles on a screen from time to time.</Subtitle> */}
                 {/* <Title>I'm a designer that codes driven by impact and seeking the intersection between technology and humanity.</Title> */}
                 {/* <Title>I strive to craft engaging experiences at the intersection of technology and humanity.</Title> */}
-                {/* <Greeting>Hello there, I'm John:</Greeting> */}
                 <NewSubtitle>Digital Product Designer</NewSubtitle> 
                 <NewTitle>Powder Hound ⛷ <br/>Pavement Pounder 🏃  <br/>Pixel Pusher 👨‍🎓</NewTitle>
                 
-                <Sub>Enthralled by the things that makes us human. Sustained by plenty of coffee.</Sub>
+                <Sub>Enthralled by the things that make us human. <br/> Sustained by plenty of coffee.</Sub>
                 
                 {/* <NewSubtitle style={{}}>I am a ⛷️ powder hound, 🏃 pavement pounder, and I push pixels 🧑‍🎓 from time to time.</NewSubtitle>
                 <NewSubtitle style={{color: "#a5a5a5"}}>Enthralled by human factors. Sustained by plenty of coffee.  </NewSubtitle>
