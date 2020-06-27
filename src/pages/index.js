@@ -112,21 +112,27 @@ transition: transform 0.2s;
 `
 
 const NewTitle = styled.h1`
-  letter-spacing: -1.75px;
+  letter-spacing: -3.2px;
   font-weight: 600;
-  font-size: 2.3rem;
+  font-size: 4rem;
   // margin: 4rem 0; 
   margin-bottom: 4rem;
-  // line-height: 1.23;
+  line-height: 1.1;
 
-  // @media (max-width: 768px) {
-  //   font-size: 1.25rem;
+  @media (max-width: 1024px) {
+    font-size: 2.5rem;
+    letter-spacing: -2.5px
+  }
+
+  // @media(max-width: 768px) {
+  //   letter-spacing: -2px;
+  //   font-size: 1.5rem;
   // }
 `
 const NewSubtitle = styled.h4`
-  letter-spacing: -0.4px;
-  font-weight: 400;
-  margin-bottom: 4rem;
+  letter-spacing: -0.3px;
+  font-weight: 300;
+  margin-bottom: 8rem;
   margin-top: 3.9rem;
   color: #333333;
   
@@ -159,9 +165,9 @@ const Greeting = styled.h2`
 `
 
 const Sub = styled.h2`
-  letter-spacing: -0.8px;
-  color: #767676;
-  font-weight: 600;
+  letter-spacing: -1px;
+  color: #666666;
+  font-weight: 400;
   margin-bottom: 2rem;
 `
 
@@ -263,9 +269,9 @@ export default function IndexPage() {
                 {/* <Title>I strive to craft engaging experiences at the intersection of technology and humanity.</Title> */}
                 {/* <Greeting>Hello there, I'm John:</Greeting> */}
                 <NewSubtitle>Product Designer</NewSubtitle> 
-                <NewTitle>Powder Hound ⛷️<br/>Pavement Pounder 🏃<br/>Pixel Pusher from time to time 👨‍🎓</NewTitle>
-                <Sub>Enthralled by human factors. Sustained by plenty of coffee.</Sub>
+                <NewTitle>Powder Hound ⛷ <br/>Pavement Pounder 🏃  <br/>Pixel Pusher 👨‍🎓</NewTitle>
                 
+                <Sub>Enthralled by human factors. Sustained by plenty of coffee.</Sub>
                 
                 {/* <NewSubtitle style={{}}>I am a ⛷️ powder hound, 🏃 pavement pounder, and I push pixels 🧑‍🎓 from time to time.</NewSubtitle>
                 <NewSubtitle style={{color: "#a5a5a5"}}>Enthralled by human factors. Sustained by plenty of coffee.  </NewSubtitle>
