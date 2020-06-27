@@ -118,6 +118,7 @@ const NewTitle = styled.h1`
   // margin: 4rem 0; 
   margin-bottom: 4rem;
   line-height: 1.02;
+  color: #111111;
 
   @media (max-width: 1024px) {
     font-size: 2.5rem;
@@ -132,7 +133,7 @@ const NewTitle = styled.h1`
 const NewSubtitle = styled.h4`
   letter-spacing: -0.3px;
   font-weight: 400;
-  margin-bottom: 6rem;
+  margin-bottom: 8rem;
   margin-top: 3.9rem;
   color: #333333;
   
@@ -158,10 +159,10 @@ const HeaderWrapper = styled.div`
 `
 
 const Sub = styled.h3`
-  letter-spacing: -0.3px;
+  letter-spacing: -0.4px;
   color: #333333;
-  font-weight: 500;
-  margin-bottom: 2rem;
+  font-weight: 400;
+  margin-bottom: 4rem;
   line-height: 1.3;
 `
 
@@ -215,7 +216,8 @@ const Emoji = styled.span`
   // margin: 0;
 `
 const TitleStyle = styled.span`
-  color: #a5a5a5;
+  color: #c5c5c5;
+  // font-weight: 300;
 `
 
 
@@ -271,7 +273,7 @@ export default function IndexPage() {
                 {/* <Title>I'm a designer that codes driven by impact and seeking the intersection between technology and humanity.</Title> */}
                 {/* <Title>I strive to craft engaging experiences at the intersection of technology and humanity.</Title> */}
                 <NewSubtitle>Digital Product Designer</NewSubtitle> 
-                <NewTitle><TitleStyle>Powder Hound. </TitleStyle><Emoji></Emoji><br/><TitleStyle>Pavement Pounder. </TitleStyle><Emoji></Emoji>  <br/>Pixel Pusher. <Emoji>⛷ 🏃 👨‍🎓</Emoji> </NewTitle>
+                <NewTitle><TitleStyle>Pavement Pounder. </TitleStyle> <br/>Pixel Pusher. <Emoji> 🏃 👨‍🎓 ⛷</Emoji> <br/> <TitleStyle>Powder Hound. </TitleStyle> </NewTitle>
                 {/* <NewTitle>Powder Hound <br/>Pavement Pounder  <br/>Pixel Pusher </NewTitle> */}
                 
                 <Sub>Enthralled by the things that make us human. <br/> Sustained by excessive amounts of coffee.</Sub>
