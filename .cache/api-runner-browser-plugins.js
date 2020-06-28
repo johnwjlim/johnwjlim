@@ -8,6 +8,9 @@ module.exports = [{
       plugin: require('../node_modules/gatsby-plugin-scroll-reveal/gatsby-browser.js'),
       options: {"plugins":[],"threshold":0.1,"once":true,"disable":false},
     },{
+      plugin: require('../node_modules/gatsby-plugin-smoothscroll/gatsby-browser.js'),
+      options: {"plugins":[]},
+    },{
       plugin: require('../gatsby-browser.js'),
       options: {"plugins":[]},
     }]
