@@ -4,6 +4,7 @@ import styled from "styled-components"
 import { useSelector, useDispatch } from 'react-redux'
 import Img from "gatsby-image"
 import {useTransition, animated} from 'react-spring'
+import scrollTo from 'gatsby-plugin-smoothscroll'
 
 import { Container, OffsetBody,  ImageWrapper, TextQuote, sections, SmallWidth, LargeWidth } from "../components/constants"
 
@@ -45,7 +46,7 @@ const TitleBox = styled.div`
   // margin: 3.5rem 0 5rem;
   // margin: 0.7rem 0;
   // margin: 4rem 0;
-  margin-bottom: 2rem; 
+  margin-bottom: 4rem; 
   // margin-top: 10rem;
   @media (max-width: 768px) {
     // font-size: 1rem;
@@ -119,6 +120,7 @@ const NewTitle = styled.h1`
   margin-bottom: 4rem;
   line-height: 1.02;
   color: #111111;
+  // color: #4353ff;
 
   @media (max-width: 1024px) {
     font-size: 2.5rem;
@@ -159,7 +161,7 @@ const HeaderWrapper = styled.div`
 `
 
 const Sub = styled.h2`
-  letter-spacing: -0.6px;
+  letter-spacing: -0.7px;
   color: #333333;
   font-weight: 400;
   line-height: 1.3;
@@ -220,8 +222,22 @@ const Emoji = styled.span`
   // margin: 0;
 `
 const TitleStyle = styled.span`
-  color: #bababa;
+  color: #b5b5b5;
+  // color: #666666;
   // font-weight: 300;
+`
+
+const Flexbox = styled.div`
+  display: flex;
+  justify-content: space-between;
+
+`
+
+const Arrow = styled.div`
+
+  @media (max-width: 1240px) {
+    display: none;
+  }
 `
 
 
@@ -270,28 +286,30 @@ export default function IndexPage() {
                   {/* <NewSubtitle>Digital Product Designer</NewSubtitle> */}
                 </StyledLink>
               </FauxHeader>
-              <div data-sal="fade" data-sal-delay="100" data-sal-duration="1500" data-sal-easing="ease"> 
-              <TitleBox>
-                {/* <Subtitle>I'm a designer that codes studying Human Computer Interaction and Political Science at the University of Washington.</Subtitle> */}
-                {/* <MobileSubtitle>Student of Human Computer Interaction at the University of Washington.</MobileSubtitle> */}
-                {/* <Subtitle>I'm an avid skier, amateur runner and I make little rectangles on a screen from time to time.</Subtitle> */}
-                {/* <Title>I'm a designer that codes driven by impact and seeking the intersection between technology and humanity.</Title> */}
-                {/* <Title>I strive to craft engaging experiences at the intersection of technology and humanity.</Title> */}
-                <NewSubtitle>Digital Product Designer</NewSubtitle> 
-                <NewTitle><TitleStyle>John is</TitleStyle><br/><TitleStyle>A Pavement Pounder. </TitleStyle> <br/>A Pixel Pusher. <Emoji> 🏃 👨‍🎓 ⛷</Emoji> <br/> <TitleStyle>A Powder Hound. </TitleStyle> </NewTitle>
-                {/* <NewTitle>Powder Hound <br/>Pavement Pounder  <br/>Pixel Pusher </NewTitle> */}
-                
-                  <Sub>Enthralled by the things that make us human. <br/> Sustained by excessive amounts of coffee.</Sub>
 
-                
-                {/* <NewSubtitle style={{}}>I am a ⛷️ powder hound, 🏃 pavement pounder, and I push pixels 🧑‍🎓 from time to time.</NewSubtitle>
-                <NewSubtitle style={{color: "#a5a5a5"}}>Enthralled by human factors. Sustained by plenty of coffee.  </NewSubtitle>
-                <NewSubtext>Tiny touch of adrenaline helps too. Anything worth doing in life is worth overdoing.</NewSubtext>  */}
+              <TitleBox>
+                <NewSubtitle>Digital Product Designer</NewSubtitle> 
+                <NewTitle>
+                <div data-sal="fade" data-sal-delay="100" data-sal-duration="1200" data-sal-easing="ease"> 
+                  <TitleStyle>John is</TitleStyle><br/>
+                  <TitleStyle>A Pavement Pounder. </TitleStyle> <br/>
+                </div>
+                  A Pixel Pusher. <Emoji> 🏃 👨‍🎓 ⛷</Emoji> <br/> 
+                <div data-sal="fade" data-sal-delay="100" data-sal-duration="1200" data-sal-easing="ease"> 
+                  <TitleStyle>A Powder Hound. </TitleStyle> 
+                </div>
+                </NewTitle>
+                <div data-sal="fade" data-sal-delay="100" data-sal-duration="1200" data-sal-easing="ease"> 
+                  <Sub>Enthralled by the things that make us human. <br/> Sustained by excessive amounts of coffee.</Sub>
+                  <Arrow >
+                    <div class="arrow" onClick={() => scrollTo('#nimbus')}/>
+                  </Arrow>
+                </div>
+                {/* <Arrow>
+                  <div class="arrow"/>
+                </Arrow> */}
               </TitleBox>
-              {/* <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-                <Image />
-              </div> */}
-              {/* <Nimbus /> */}
+              <div data-sal="fade" data-sal-delay="100" data-sal-duration="1500" data-sal-easing="ease" id="nimbus"> 
                <New />
               </div>
               <div data-sal="fade" data-sal-delay="100" data-sal-duration="1500" data-sal-easing="ease"> 
