@@ -299,7 +299,7 @@ export default function IndexPage() {
                   <TitleStyle>A Powder Hound. </TitleStyle> 
                 </div>
                 </NewTitle>
-                <div data-sal="fade" data-sal-delay="100" data-sal-duration="1200" data-sal-easing="ease"> 
+                <div data-sal="fade" data-sal-delay="300" data-sal-duration="1200" data-sal-easing="ease"> 
                   <Sub>Enthralled by the things that make us human. <br/> Sustained by excessive amounts of coffee.</Sub>
                   <Arrow >
                     <div class="arrow" onClick={() => scrollTo('#nimbus')}/>
@@ -309,7 +309,7 @@ export default function IndexPage() {
                   <div class="arrow"/>
                 </Arrow> */}
               </TitleBox>
-              <div data-sal="fade" data-sal-delay="100" data-sal-duration="1500" data-sal-easing="ease" id="nimbus"> 
+              <div data-sal="fade" data-sal-delay="100" data-sal-duration="1500" data-sal-easing="ease" id="nimbus" style={{paddingTop: "1rem"}}> 
                <New />
               </div>
               <div data-sal="fade" data-sal-delay="100" data-sal-duration="1500" data-sal-easing="ease"> 
