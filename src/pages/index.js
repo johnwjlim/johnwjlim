@@ -159,11 +159,15 @@ const HeaderWrapper = styled.div`
 `
 
 const Sub = styled.h2`
-  letter-spacing: -0.5px;
+  letter-spacing: -0.6px;
   color: #333333;
   font-weight: 400;
-  // margin-bottom: 4rem;
   line-height: 1.3;
+
+  @media (max-width: 1024px) {
+    font-size: 1rem;
+    letter-spacing: -0.2px;
+  }
 `
 
 const FauxHeader = styled.div`
