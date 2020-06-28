@@ -45,7 +45,7 @@ const TitleBox = styled.div`
   // margin: 3.5rem 0 5rem;
   // margin: 0.7rem 0;
   // margin: 4rem 0;
-  margin-bottom: 6rem; 
+  margin-bottom: 2rem; 
   // margin-top: 10rem;
   @media (max-width: 768px) {
     // font-size: 1rem;
@@ -158,11 +158,11 @@ const HeaderWrapper = styled.div`
   }
 `
 
-const Sub = styled.h3`
-  letter-spacing: -0.4px;
+const Sub = styled.h2`
+  letter-spacing: -0.5px;
   color: #333333;
   font-weight: 400;
-  margin-bottom: 4rem;
+  // margin-bottom: 4rem;
   line-height: 1.3;
 `
 
@@ -216,7 +216,7 @@ const Emoji = styled.span`
   // margin: 0;
 `
 const TitleStyle = styled.span`
-  color: #c5c5c5;
+  color: #bababa;
   // font-weight: 300;
 `
 
@@ -266,6 +266,7 @@ export default function IndexPage() {
                   {/* <NewSubtitle>Digital Product Designer</NewSubtitle> */}
                 </StyledLink>
               </FauxHeader>
+              <div data-sal="fade" data-sal-delay="100" data-sal-duration="1500" data-sal-easing="ease"> 
               <TitleBox>
                 {/* <Subtitle>I'm a designer that codes studying Human Computer Interaction and Political Science at the University of Washington.</Subtitle> */}
                 {/* <MobileSubtitle>Student of Human Computer Interaction at the University of Washington.</MobileSubtitle> */}
@@ -273,10 +274,11 @@ export default function IndexPage() {
                 {/* <Title>I'm a designer that codes driven by impact and seeking the intersection between technology and humanity.</Title> */}
                 {/* <Title>I strive to craft engaging experiences at the intersection of technology and humanity.</Title> */}
                 <NewSubtitle>Digital Product Designer</NewSubtitle> 
-                <NewTitle><TitleStyle>A Pavement Pounder. </TitleStyle> <br/>A Pixel Pusher. <Emoji> 🏃 👨‍🎓 ⛷</Emoji> <br/> <TitleStyle>A Powder Hound. </TitleStyle> </NewTitle>
+                <NewTitle><TitleStyle>John is</TitleStyle><br/><TitleStyle>A Pavement Pounder. </TitleStyle> <br/>A Pixel Pusher. <Emoji> 🏃 👨‍🎓 ⛷</Emoji> <br/> <TitleStyle>A Powder Hound. </TitleStyle> </NewTitle>
                 {/* <NewTitle>Powder Hound <br/>Pavement Pounder  <br/>Pixel Pusher </NewTitle> */}
                 
-                <Sub>Enthralled by the things that make us human. <br/> Sustained by excessive amounts of coffee.</Sub>
+                  <Sub>Enthralled by the things that make us human. <br/> Sustained by excessive amounts of coffee.</Sub>
+
                 
                 {/* <NewSubtitle style={{}}>I am a ⛷️ powder hound, 🏃 pavement pounder, and I push pixels 🧑‍🎓 from time to time.</NewSubtitle>
                 <NewSubtitle style={{color: "#a5a5a5"}}>Enthralled by human factors. Sustained by plenty of coffee.  </NewSubtitle>
@@ -286,8 +288,8 @@ export default function IndexPage() {
                 <Image />
               </div> */}
               {/* <Nimbus /> */}
-              {/* <div data-sal="fade" data-sal-duration="300" data-sal-easing="ease"> */}
-              <New />
+               <New />
+              </div>
               <div data-sal="fade" data-sal-delay="100" data-sal-duration="1500" data-sal-easing="ease"> 
                 <Pool />
               </div>
