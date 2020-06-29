@@ -113,12 +113,12 @@ transition: transform 0.2s;
 `
 
 const NewTitle = styled.h1`
-  letter-spacing: -2.5px;
-  font-weight: 500;
-  font-size: 4em;
+  letter-spacing: -3px;
+  font-weight: 600;
+  font-size: 3.8rem;
   // margin: 4rem 0; 
   margin-bottom: 4rem;
-  line-height: 1.02;
+  line-height: 1.04;
   color: #111111;
   // color: #4353ff;
 
@@ -160,11 +160,11 @@ const HeaderWrapper = styled.div`
   }
 `
 
-const Sub = styled.h2`
-  letter-spacing: -1px;
+const Sub = styled.h3`
+  letter-spacing: -0.6px;
   color: #333333;
   font-weight: 400;
-  line-height: 1.3;
+  line-height: 1.4;
 
   @media (max-width: 1024px) {
     font-size: 1rem;
@@ -224,7 +224,7 @@ const Emoji = styled.span`
 const TitleStyle = styled.span`
   color: #b5b5b5;
   // color: #666666;
-  // font-weight: 300;
+  font-weight: 300;
 `
 
 const Flexbox = styled.div`
