@@ -133,11 +133,11 @@ const NewTitle = styled.h1`
   // }
 `
 const NewSubtitle = styled.h4`
-  letter-spacing: -0.3px;
+  letter-spacing: -0.4px;
   font-weight: 400;
   margin-bottom: 18rem;
-  margin-top: 3.9rem;
-  color: #333333;
+  margin-top: 3.8rem;
+  color: #666666;
   
   @media (max-width: 1240px) {
     display: none;
@@ -224,7 +224,7 @@ const Emoji = styled.span`
 const TitleStyle = styled.span`
   color: #b5b5b5;
   // color: #666666;
-  font-weight: 300;
+  font-weight: 200;
 `
 
 const Flexbox = styled.div`
