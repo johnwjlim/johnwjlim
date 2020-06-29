@@ -224,7 +224,7 @@ const Emoji = styled.span`
 const TitleStyle = styled.span`
   color: #b5b5b5;
   // color: #666666;
-  font-weight: 200;
+  font-weight: 300;
 `
 
 const Flexbox = styled.div`
