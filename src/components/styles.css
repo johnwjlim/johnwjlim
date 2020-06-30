@@ -72,13 +72,13 @@ button:-moz-focusring {
 }
 
 .arrow {
-	width: 2.2vmin;
-	height: 2.2vmin;
+	width: 1.8vmin;
+	height: 1.8vmin;
 	box-sizing: border-box;
 	position: absolute;
-  left: 48rem;
-  left: 76%;
-	top: 44.5rem;
+  left: 35rem;
+  /* left: 76%; */
+	top: 42.2rem;
   /* transform: rotate(135deg); */
   animation: slide1 1s ease-in-out infinite;
   transform: rotate(135deg);
@@ -87,11 +87,11 @@ button:-moz-focusring {
 		content: '';
 		width: 100%;
 		height: 100%;
-		border-width: .4vmin .4vmin 0 0;
+		border-width: .2vmin .2vmin 0 0;
 		border-style: solid;
     /* border-color: #fafafa; */
     border-color: #4353ff;
-    border-color: #979797;
+    border-color: #333333;
 		transition: .2s ease;
 		display: block;
 		transform-origin: 100% 0;
@@ -105,22 +105,22 @@ button:-moz-focusring {
 		top: -100%;
 		width: 100%;
 		height: 100%;
-		border-width: 0 .4vmin 0 0;
+		border-width: 0 .2vmin 0 0;
 		border-style: solid;
     border-color: #4353ff;
-    border-color: #979797;
+    border-color: #333333;
 		transform-origin: 100% 0;
 		transition: .2s ease;
 	}
 	
 	.arrow:hover::after {
 		transform: rotate(45deg);
-		border-color :#4353ff;
+		border-color :#47C3A0;
     height: 120%;
     cursor: pointer;
 	}
 	.arrow:hover::before {
-		border-color: #4353ff;
+		border-color: #47C3A0;
     transform: scale(.8);  
     cursor: pointer;
 		

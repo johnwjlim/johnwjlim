@@ -46,7 +46,10 @@ const TitleBox = styled.div`
   // margin: 3.5rem 0 5rem;
   // margin: 0.7rem 0;
   // margin: 4rem 0;
+  // margin: 0 3rem;
   margin-bottom: 4rem; 
+  // border-bottom: 1px solid #dddddd;
+
   // margin-top: 10rem;
   @media (max-width: 768px) {
     // font-size: 1rem;
@@ -113,12 +116,12 @@ transition: transform 0.2s;
 `
 
 const NewTitle = styled.h1`
-  letter-spacing: -2.8px;
+  letter-spacing: -3.6px;
   font-weight: 700;
-  font-size: 3.6rem;
+  font-size: 4rem;
   // margin: 4rem 0; 
   margin-bottom: 4rem;
-  line-height: 1.04;
+  line-height: 1.0;
   color: #111111;
   // color: #4353ff;
 
@@ -135,7 +138,7 @@ const NewTitle = styled.h1`
 const NewSubtitle = styled.h4`
   letter-spacing: -0.4px;
   font-weight: 400;
-  margin-bottom: 20rem;
+  margin-bottom: 16rem;
   margin-top: 3.8rem;
   color: #666666;
   
@@ -161,10 +164,10 @@ const HeaderWrapper = styled.div`
 `
 
 const Sub = styled.h3`
-  letter-spacing: -0.4px;
+  letter-spacing: -0.3px;
   color: #333333;
   font-weight: 400;
-  line-height: 1.4;
+  line-height: 1.5;
 
   @media (max-width: 1024px) {
     font-size: 1rem;
@@ -241,6 +244,11 @@ const Arrow = styled.div`
   }
 `
 
+const Divider =  styled.div`
+  padding-top: 2rem;
+  border-bottom: 1px solid #dddddd;
+`
+
 
 
 export default function IndexPage() {
@@ -291,14 +299,14 @@ export default function IndexPage() {
               <TitleBox>
                 <NewSubtitle>Digital Product Designer</NewSubtitle> 
                 <NewTitle>
-                <div data-sal="fade" data-sal-delay="100" data-sal-duration="1200" data-sal-easing="ease"> 
-                  <TitleStyle>John is</TitleStyle><br/>
-                  <TitleStyle>A Pavement Pounder. </TitleStyle> <br/>
-                </div>
-                  A Pixel Pusher. <Emoji> 🏃 👨‍🎓 ⛷</Emoji> <br/> 
-                <div data-sal="fade" data-sal-delay="100" data-sal-duration="1200" data-sal-easing="ease"> 
-                  <TitleStyle>A Powder Hound. </TitleStyle> 
-                </div>
+                  <div data-sal="fade" data-sal-delay="100" data-sal-duration="1200" data-sal-easing="ease"> 
+                    <TitleStyle>John is</TitleStyle><br/>
+                    <TitleStyle>A Pavement Pounder. </TitleStyle> <br/>
+                  </div>
+                    A Pixel Pusher. <Emoji> 🏃 👨‍🎓 ⛷</Emoji> <br/> 
+                  <div data-sal="fade" data-sal-delay="100" data-sal-duration="1200" data-sal-easing="ease"> 
+                    <TitleStyle>A Powder Hound. </TitleStyle> 
+                  </div>
                 </NewTitle>
                 <div data-sal="fade" data-sal-delay="300" data-sal-duration="1200" data-sal-easing="ease"> 
                   <Sub>Enthralled by the things that make us human. <br/> Sustained by excessive amounts of coffee.</Sub>
@@ -309,7 +317,9 @@ export default function IndexPage() {
                 {/* <Arrow>
                   <div class="arrow"/>
                 </Arrow> */}
+
               </TitleBox>
+              <Divider />
               <div data-sal="fade" data-sal-delay="100" data-sal-duration="1500" data-sal-easing="ease" id="nimbus" style={{paddingTop: "1rem"}}> 
                <New />
               </div>
