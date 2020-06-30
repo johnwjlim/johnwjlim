@@ -72,13 +72,13 @@ button:-moz-focusring {
 }
 
 .arrow {
-	width: 2.3vmin;
-	height: 2.3vmin;
+	width: 2.2vmin;
+	height: 2.2vmin;
 	box-sizing: border-box;
 	position: absolute;
   left: 48rem;
   left: 76%;
-	top: 43.8rem;
+	top: 44.5rem;
   /* transform: rotate(135deg); */
   animation: slide1 1s ease-in-out infinite;
   transform: rotate(135deg);
