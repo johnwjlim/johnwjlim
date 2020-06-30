@@ -161,7 +161,7 @@ const HeaderWrapper = styled.div`
 `
 
 const Sub = styled.h3`
-  letter-spacing: -0.6px;
+  letter-spacing: -0.4px;
   color: #333333;
   font-weight: 400;
   line-height: 1.4;
@@ -225,6 +225,7 @@ const TitleStyle = styled.span`
   color: #c5c5c5;
   // color: #666666;
   font-weight: 300;
+  // letter-spacing: -3px;
 `
 
 const Flexbox = styled.div`
