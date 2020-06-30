@@ -114,7 +114,7 @@ transition: transform 0.2s;
 
 const NewTitle = styled.h1`
   letter-spacing: -3px;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 3.8rem;
   // margin: 4rem 0; 
   margin-bottom: 4rem;
@@ -216,13 +216,13 @@ const StyledLink = styled(Link)`
 `;
 
 const Emoji = styled.span`
-  font-size: 2rem;
+  font-size: 2.25rem;
   vertical-align: middle;
   line-height: 0;
   // margin: 0;
 `
 const TitleStyle = styled.span`
-  color: #b5b5b5;
+  color: #c5c5c5;
   // color: #666666;
   font-weight: 300;
 `
