@@ -33,7 +33,7 @@ h1, h2, h3, h4, h5, h6, p, a, blockquote, li {
 
 p {
   line-height: 1.5;
-  /* font-size: 15px; */
+  font-size: 16px;
   /* font-weight: 400; */
   letter-spacing: -0.01em;
 }
@@ -72,13 +72,13 @@ button:-moz-focusring {
 }
 
 .arrow {
-	width: 1.8vmin;
-	height: 1.8vmin;
+	width: 1.6vmin;
+	height: 1.6vmin;
 	box-sizing: border-box;
 	position: absolute;
-  left: 35rem;
+  left: 39rem;
   /* left: 76%; */
-	top: 42.2rem;
+	top: 42.5rem;
   /* transform: rotate(135deg); */
   animation: slide1 1s ease-in-out infinite;
   transform: rotate(135deg);

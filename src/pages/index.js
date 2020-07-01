@@ -121,7 +121,7 @@ const NewTitle = styled.h1`
   font-size: 4rem;
   // margin: 4rem 0; 
   margin-bottom: 4rem;
-  line-height: 1.0;
+  line-height: 0.99;
   color: #111111;
   // color: #4353ff;
 
@@ -225,7 +225,7 @@ const Emoji = styled.span`
   // margin: 0;
 `
 const TitleStyle = styled.span`
-  color: #c5c5c5;
+  color: #dddddd;
   // color: #666666;
   font-weight: 300;
   // letter-spacing: -3px;

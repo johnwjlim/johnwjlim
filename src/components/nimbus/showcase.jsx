@@ -122,9 +122,10 @@ const PitchDeckLink = styled(ImageCaption)`
 
 
 const SectionTitle = styled.h2`
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: -0.025em;
-  font-size: 1.7rem;
+  font-size: 1.85rem;
+  // margin-bottom: 0.23rem;
 
   @media (max-width: 1240px) {
     font-size: 1.5rem;
@@ -151,7 +152,8 @@ const Button = styled.button`
 const Box = styled.div`
   // border: 1px solid #dddddd;
   border-radius: 16px;
-  background-color: #fafafa;
+  // background-color: #fafafa;
+  background-color: #F9FAFE;
   // width: 100%;
   text-align: center;
   margin-top: 5rem;
@@ -391,7 +393,7 @@ export default function Showcase(props) {
           </ColumnBlock>
           <TextBlock>
             <Box>
-              <p style={{maxWidth: "24rem", margin:"1.7rem auto"}}><strong>View my in-depth deep dive into the research and ideation process:</strong></p>
+              <p style={{maxWidth: "24rem", margin:"1.7rem auto", fontWeight: "700"}}>View my in-depth deep dive into the research and ideation process:</p>
               <Button onClick={() => navigate("/nimbus/survey-ideation")}>Survey & Ideation</Button>
             </Box>
           </TextBlock>
@@ -420,7 +422,7 @@ export default function Showcase(props) {
           </TextBlock>
           <TextBlock>
             <Box>
-              <p style={{maxWidth: "24rem", margin:"1.7rem auto"}}><strong>View wireframe flows used to test primary use cases</strong></p>
+              <p style={{maxWidth: "24rem", margin:"1.7rem auto", fontWeight: "700"}}>View wireframe flows used to test primary use cases</p>
               <Button onClick={() => navigate("/nimbus/flows-wireframes")}>Flows + Wireframes</Button>
             </Box>
           </TextBlock>
