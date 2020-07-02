@@ -46,7 +46,10 @@ const TitleBox = styled.div`
   // margin: 3.5rem 0 5rem;
   // margin: 0.7rem 0;
   // margin: 4rem 0;
+  // margin: 0 3rem;
   margin-bottom: 4rem; 
+  // border-bottom: 1px solid #dddddd;
+
   // margin-top: 10rem;
   @media (max-width: 768px) {
     // font-size: 1rem;
@@ -113,12 +116,12 @@ transition: transform 0.2s;
 `
 
 const NewTitle = styled.h1`
-  letter-spacing: -3px;
-  font-weight: 400;
-  font-size: 4em;
+  letter-spacing: -4px;
+  font-weight: 700;
+  font-size: 4rem;
   // margin: 4rem 0; 
   margin-bottom: 4rem;
-  line-height: 1.02;
+  line-height: 0.99;
   color: #111111;
   // color: #4353ff;
 
@@ -133,11 +136,11 @@ const NewTitle = styled.h1`
   // }
 `
 const NewSubtitle = styled.h4`
-  letter-spacing: -0.3px;
+  letter-spacing: -0.4px;
   font-weight: 400;
-  margin-bottom: 18rem;
-  margin-top: 3.9rem;
-  color: #333333;
+  margin-bottom: 16rem;
+  margin-top: 3.8rem;
+  color: #666666;
   
   @media (max-width: 1240px) {
     display: none;
@@ -160,11 +163,11 @@ const HeaderWrapper = styled.div`
   }
 `
 
-const Sub = styled.h2`
-  letter-spacing: -0.7px;
+const Sub = styled.h3`
+  letter-spacing: -0.3px;
   color: #333333;
   font-weight: 400;
-  line-height: 1.3;
+  line-height: 1.5;
 
   @media (max-width: 1024px) {
     font-size: 1rem;
@@ -216,15 +219,16 @@ const StyledLink = styled(Link)`
 `;
 
 const Emoji = styled.span`
-  font-size: 1.8rem;
+  font-size: 2.25rem;
   vertical-align: middle;
   line-height: 0;
   // margin: 0;
 `
 const TitleStyle = styled.span`
-  color: #b5b5b5;
+  color: #dddddd;
   // color: #666666;
-  // font-weight: 300;
+  font-weight: 300;
+  // letter-spacing: -3px;
 `
 
 const Flexbox = styled.div`
@@ -238,6 +242,11 @@ const Arrow = styled.div`
   @media (max-width: 1240px) {
     display: none;
   }
+`
+
+const Divider =  styled.div`
+  padding-top: 2rem;
+  border-bottom: 1px solid #dddddd;
 `
 
 
@@ -290,16 +299,16 @@ export default function IndexPage() {
               <TitleBox>
                 <NewSubtitle>Digital Product Designer</NewSubtitle> 
                 <NewTitle>
-                <div data-sal="fade" data-sal-delay="100" data-sal-duration="1200" data-sal-easing="ease"> 
-                  <TitleStyle>John is</TitleStyle><br/>
-                  <TitleStyle>A Pavement Pounder. </TitleStyle> <br/>
-                </div>
-                  A Pixel Pusher. <Emoji> 🏃 👨‍🎓 ⛷</Emoji> <br/> 
-                <div data-sal="fade" data-sal-delay="100" data-sal-duration="1200" data-sal-easing="ease"> 
-                  <TitleStyle>A Powder Hound. </TitleStyle> 
-                </div>
+                  <div data-sal="fade" data-sal-delay="100" data-sal-duration="1200" data-sal-easing="ease"> 
+                    <TitleStyle>John is</TitleStyle><br/>
+                    <TitleStyle>A Pavement Pounder. </TitleStyle> <br/>
+                  </div>
+                    A Pixel Pusher. <Emoji> 🏃 👨‍🎓 ⛷</Emoji> <br/> 
+                  <div data-sal="fade" data-sal-delay="100" data-sal-duration="1200" data-sal-easing="ease"> 
+                    <TitleStyle>A Powder Hound. </TitleStyle> 
+                  </div>
                 </NewTitle>
-                <div data-sal="fade" data-sal-delay="100" data-sal-duration="1200" data-sal-easing="ease"> 
+                <div data-sal="fade" data-sal-delay="300" data-sal-duration="1200" data-sal-easing="ease"> 
                   <Sub>Enthralled by the things that make us human. <br/> Sustained by excessive amounts of coffee.</Sub>
                   <Arrow >
                     <div class="arrow" onClick={() => scrollTo('#nimbus')}/>
@@ -308,8 +317,10 @@ export default function IndexPage() {
                 {/* <Arrow>
                   <div class="arrow"/>
                 </Arrow> */}
+
               </TitleBox>
-              <div data-sal="fade" data-sal-delay="100" data-sal-duration="1500" data-sal-easing="ease" id="nimbus"> 
+              <Divider />
+              <div data-sal="fade" data-sal-delay="100" data-sal-duration="1500" data-sal-easing="ease" id="nimbus" style={{paddingTop: "1rem"}}> 
                <New />
               </div>
               <div data-sal="fade" data-sal-delay="100" data-sal-duration="1500" data-sal-easing="ease"> 

@@ -32,13 +32,13 @@ const StyledLink = styled(Link)`
   line-height: 1.7;
   transition: 0.2s;
   letter-spacing: -0.4px;
-  color: #333333;
+  color: #666666;
   padding: 0.25rem 0.5rem;
   border-radius: 8px;
   
   :hover {
     // text-decoration: underline;
-    color: #666666;
+    color: #333333;
     background-color: #f5f5f5;
 
   }
