@@ -57,19 +57,6 @@ const TitleBox = styled.div`
   }
 `
 
-const Title = styled.h3`
-  color: #333333;
-  letter-spacing: -0.2px;
-  // font-size: 1.75rem
-  font-weight: 700;
-
-  font-size: 1.3rem;
-
-  @media (max-width: 768px) {
-    font-size: 1.25rem;
-  }
-`
-
 const Subtitle = styled.h3`
   // font-size: 1.1rem;
   font-weight: 300;
@@ -138,9 +125,9 @@ const NewTitle = styled.h1`
 const NewSubtitle = styled.h4`
   letter-spacing: -0.4px;
   font-weight: 400;
-  margin-bottom: 16rem;
+  margin-bottom: 24.5rem;
   margin-top: 3.8rem;
-  color: #666666;
+  color: #666;
   
   @media (max-width: 1240px) {
     display: none;
@@ -219,9 +206,9 @@ const StyledLink = styled(Link)`
 `;
 
 const Emoji = styled.span`
-  font-size: 2.25rem;
+  font-size: 2rem;
   vertical-align: middle;
-  line-height: 0;
+  // line-height: 0;
   // margin: 0;
 `
 const TitleStyle = styled.span`
@@ -247,6 +234,46 @@ const Arrow = styled.div`
 const Divider =  styled.div`
   padding-top: 2rem;
   border-bottom: 1px solid #dddddd;
+`
+
+const Title = styled.h1`
+  letter-spacing: -1.5px;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #333;
+  // margin-bottom: 2rem;
+`
+
+const Text = styled.h2`
+  color: #b5b5b5;
+  color: #666;
+  letter-spacing: -0.5px;
+  font-weight: 300;
+  max-width: 40rem;
+  line-height: 1.28;
+  font-size: 1.25rem;
+`
+
+const MicroText = styled.h4`
+  color: #666;
+  font-weight: 500;
+  letter-spacing: -0.3px
+`
+
+const Dash = styled.div`
+  margin: 2rem 0;
+  // border-bottom: 1px solid #666;
+  color: #666;
+  font-weight: 900;
+`
+
+const Highlight = styled.span`
+  color: #333;
+  font-weight: 500;
+`
+const TitleFlip = styled.div`
+  background-color: #333;
+  color: #fff
 `
 
 
@@ -298,7 +325,7 @@ export default function IndexPage() {
 
               <TitleBox>
                 <NewSubtitle>Digital Product Designer</NewSubtitle> 
-                <NewTitle>
+                {/* <NewTitle>
                   <div data-sal="fade" data-sal-delay="100" data-sal-duration="1200" data-sal-easing="ease"> 
                     <TitleStyle>John is</TitleStyle><br/>
                     <TitleStyle>A Pavement Pounder. </TitleStyle> <br/>
@@ -313,11 +340,32 @@ export default function IndexPage() {
                   <Arrow >
                     <div class="arrow" onClick={() => scrollTo('#nimbus')}/>
                   </Arrow>
+                </div> */}
+                <div data-sal="fade" data-sal-delay="150" data-sal-duration="1200" data-sal-easing="ease">
+                  <Title>Hello, I'm John. &nbsp;<Emoji> 🏃 👨‍🎓 ⛷</Emoji></Title> 
                 </div>
-                {/* <Arrow>
-                  <div class="arrow"/>
-                </Arrow> */}
-
+                <div data-sal="fade" data-sal-delay="300" data-sal-duration="1200" data-sal-easing="ease">
+                  <Text>
+                    I study <Highlight>Human Computer Interaction</Highlight> at the <Highlight>University of Washington.</Highlight> I'm enthralled by the things that make us <Highlight>human</Highlight> and am driven by the 
+                    pursuit of that elusive <Highlight>intersection</Highlight> between <Highlight>technology and humanity.</Highlight> 
+                  </Text>
+                  <Text>
+                    If I’m not <Highlight>skiing,</Highlight> I can be found <Highlight>grinding</Highlight> out the miles on the gravel or <Highlight>pushing pixels</Highlight> while hunched over my second coffee of the day in one of the many <Highlight>coffee</Highlight> shops around <Highlight>Seattle.</Highlight>
+                  </Text>
+                </div>
+                <div data-sal="fade" data-sal-delay="400" data-sal-duration="1200" data-sal-easing="ease">
+                  <Dash>
+                    ––
+                  </Dash>
+                </div>
+                <div data-sal="fade" data-sal-delay="400" data-sal-duration="1200" data-sal-easing="ease">
+                  <MicroText>
+                    Scroll down to view select projects 
+                  </MicroText>
+                  <Arrow >
+                      <div class="arrow" onClick={() => scrollTo('#nimbus')}/>
+                  </Arrow>
+                </div>
               </TitleBox>
               <Divider />
               <div data-sal="fade" data-sal-delay="100" data-sal-duration="1500" data-sal-easing="ease" id="nimbus" style={{paddingTop: "1rem"}}> 
