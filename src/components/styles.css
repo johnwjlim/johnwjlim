@@ -72,13 +72,13 @@ button:-moz-focusring {
 }
 
 .arrow {
-	width: 1.6vmin;
-	height: 1.6vmin;
+	width: 1.2vmin;
+	height: 1.2vmin;
 	box-sizing: border-box;
 	position: absolute;
-  left: 39rem;
+  left: 25rem;
   /* left: 76%; */
-	top: 42.5rem;
+	top: 49.7rem;
   /* transform: rotate(135deg); */
   animation: slide1 1s ease-in-out infinite;
   transform: rotate(135deg);
@@ -91,7 +91,7 @@ button:-moz-focusring {
 		border-style: solid;
     /* border-color: #fafafa; */
     border-color: #4353ff;
-    border-color: #333333;
+    border-color: #888888;
 		transition: .2s ease;
 		display: block;
 		transform-origin: 100% 0;
@@ -108,7 +108,7 @@ button:-moz-focusring {
 		border-width: 0 .2vmin 0 0;
 		border-style: solid;
     border-color: #4353ff;
-    border-color: #333333;
+    border-color: #888888;
 		transform-origin: 100% 0;
 		transition: .2s ease;
 	}
