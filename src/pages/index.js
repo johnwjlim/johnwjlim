@@ -123,9 +123,9 @@ const NewTitle = styled.h1`
   // }
 `
 const NewSubtitle = styled.h4`
-  letter-spacing: -0.4px;
+  letter-spacing: -0.3px;
   font-weight: 400;
-  margin-bottom: 24.5rem;
+  margin-bottom: 23.7rem;
   margin-top: 3.8rem;
   color: #666;
   
@@ -237,7 +237,7 @@ const Divider =  styled.div`
 `
 
 const Title = styled.h1`
-  letter-spacing: -1.5px;
+  letter-spacing: -1.4px;
   font-size: 2.5rem;
   font-weight: 800;
   color: #333;
@@ -246,11 +246,11 @@ const Title = styled.h1`
 
 const Text = styled.h2`
   color: #b5b5b5;
-  color: #666;
+  color: #888;
   letter-spacing: -0.5px;
-  font-weight: 300;
+  font-weight: 400;
   max-width: 40rem;
-  line-height: 1.28;
+  line-height: 1.35;
   font-size: 1.25rem;
 `
 
@@ -269,7 +269,7 @@ const Dash = styled.div`
 
 const Highlight = styled.span`
   color: #333;
-  font-weight: 500;
+  font-weight: 600;
 `
 const TitleFlip = styled.div`
   background-color: #333;
@@ -346,11 +346,11 @@ export default function IndexPage() {
                 </div>
                 <div data-sal="fade" data-sal-delay="300" data-sal-duration="1200" data-sal-easing="ease">
                   <Text>
-                    I study <Highlight>Human Computer Interaction</Highlight> at the <Highlight>University of Washington.</Highlight> I'm enthralled by the things that make us <Highlight>human</Highlight> and am driven by the 
-                    pursuit of that elusive <Highlight>intersection</Highlight> between <Highlight>technology and humanity.</Highlight> 
+                    I study <Highlight>Human Computer Interaction</Highlight> at the <Highlight>University of Washington.</Highlight> I'm enthralled by the things that make us <Highlight>human</Highlight> and driven by the 
+                    pursuit of the elusive <Highlight>intersection</Highlight> between <Highlight>technology and humanity.</Highlight> 
                   </Text>
                   <Text>
-                    If I’m not <Highlight>skiing,</Highlight> I can be found <Highlight>grinding</Highlight> out the miles on the gravel or <Highlight>pushing pixels</Highlight> while hunched over my second coffee of the day in one of the many <Highlight>coffee</Highlight> shops around <Highlight>Seattle.</Highlight>
+                    If not <Highlight>skiing,</Highlight> I can be found <Highlight>grinding</Highlight> out the miles on the gravel or <Highlight>pushing pixels</Highlight> while hunched over my second coffee of the day in one of the many <Highlight>coffee</Highlight> shops around <Highlight>Seattle.</Highlight>
                   </Text>
                 </div>
                 <div data-sal="fade" data-sal-delay="400" data-sal-duration="1200" data-sal-easing="ease">
