@@ -47,7 +47,7 @@ const TitleBox = styled.div`
   // margin: 0.7rem 0;
   // margin: 4rem 0;
   // margin: 0 3rem;
-  margin-bottom: 4rem; 
+  margin-bottom: 1rem; 
   // border-bottom: 1px solid #dddddd;
 
   // margin-top: 10rem;
@@ -123,9 +123,9 @@ const NewTitle = styled.h1`
   // }
 `
 const NewSubtitle = styled.h4`
-  letter-spacing: -0.3px;
+  letter-spacing: -0.2px;
   font-weight: 400;
-  margin-bottom: 23.7rem;
+  margin-bottom: 23rem;
   margin-top: 3.8rem;
   color: #666;
   
@@ -237,39 +237,41 @@ const Divider =  styled.div`
 `
 
 const Title = styled.h1`
-  letter-spacing: -1.4px;
-  font-size: 2.5rem;
-  font-weight: 800;
-  color: #333;
-  // margin-bottom: 2rem;
+  letter-spacing: -1.8px;
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: #111;
+  line-height: normal;
+  // margin-bottom: 1rem;
 `
 
 const Text = styled.h2`
-  color: #b5b5b5;
+  // color: #b5b5b5;
   color: #888;
   letter-spacing: -0.5px;
   font-weight: 400;
-  max-width: 40rem;
-  line-height: 1.35;
-  font-size: 1.25rem;
+  max-width: 32rem;
+  line-height: 1.4;
+  // line-height: normal;
+  font-size: 1.2rem;
 `
 
 const MicroText = styled.h4`
   color: #666;
-  font-weight: 500;
-  letter-spacing: -0.3px
+  font-weight: 400;
+  letter-spacing: -0.4px
 `
 
 const Dash = styled.div`
   margin: 2rem 0;
   // border-bottom: 1px solid #666;
   color: #666;
-  font-weight: 900;
+  font-weight: 700;
 `
 
 const Highlight = styled.span`
-  color: #333;
-  font-weight: 600;
+  color: #111;
+  font-weight: 400;
 `
 const TitleFlip = styled.div`
   background-color: #333;
@@ -342,16 +344,22 @@ export default function IndexPage() {
                   </Arrow>
                 </div> */}
                 <div data-sal="fade" data-sal-delay="150" data-sal-duration="1200" data-sal-easing="ease">
-                  <Title>Hello, I'm John. &nbsp;<Emoji> 🏃 👨‍🎓 ⛷</Emoji></Title> 
+                  <Title>
+                    <div>
+                    Hello, I'm John. &nbsp;<Emoji> 👋 </Emoji>
+                    </div>
+                  </Title> 
                 </div>
                 <div data-sal="fade" data-sal-delay="300" data-sal-duration="1200" data-sal-easing="ease">
-                  <Text>
-                    I study <Highlight>Human Computer Interaction</Highlight> at the <Highlight>University of Washington.</Highlight> I'm enthralled by the things that make us <Highlight>human</Highlight> and driven by the 
+                  {/* <Text>
+                    I study <Highlight>Human Computer Interaction</Highlight> at the <Highlight>University of Washington</Highlight> enthralled by the things that make us <Highlight>human</Highlight> and driven by the 
                     pursuit of the elusive <Highlight>intersection</Highlight> between <Highlight>technology and humanity.</Highlight> 
-                  </Text>
-                  <Text>
-                    If not <Highlight>skiing,</Highlight> I can be found <Highlight>grinding</Highlight> out the miles on the gravel or <Highlight>pushing pixels</Highlight> while hunched over my second coffee of the day in one of the many <Highlight>coffee</Highlight> shops around <Highlight>Seattle.</Highlight>
-                  </Text>
+                  </Text> */}
+                  <Text>I'm a student at the <Highlight>University of Washington</Highlight> majoring in <Highlight>Human Computer Interaction</Highlight> and enthralled by the things that make us <Highlight>human.</Highlight></Text>
+                  {/* <Text>
+                    If not <Highlight>skiing,</Highlight> I can be found <Highlight>grinding</Highlight> out the miles on the gravel or <Highlight>pushing pixels</Highlight> while nursing my second coffee of the day in one of the many <Highlight>coffee</Highlight> shops around <Highlight>Seattle.</Highlight>
+                  </Text> */}
+                  <Text>If not <Highlight>pushing pixels</Highlight> in a Seattle coffee shop, catch me <Highlight>chasing powder</Highlight> in the local ski hill or wherever there is good snow to be found.</Text>
                 </div>
                 <div data-sal="fade" data-sal-delay="400" data-sal-duration="1200" data-sal-easing="ease">
                   <Dash>
