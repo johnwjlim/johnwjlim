@@ -76,9 +76,9 @@ button:-moz-focusring {
 	height: 1.2vmin;
 	box-sizing: border-box;
 	position: absolute;
-  left: 25rem;
+  left: 26rem;
   /* left: 76%; */
-	top: 49.7rem;
+	top: 48.4rem;
   /* transform: rotate(135deg); */
   animation: slide1 1s ease-in-out infinite;
   transform: rotate(135deg);
