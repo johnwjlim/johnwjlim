@@ -245,10 +245,10 @@ const Title = styled.h1`
   // margin-bottom: 2rem;
 `
 
-const Text = styled.h2`
+const Text = styled.p`
   // color: #b5b5b5;
   color: #888;
-  letter-spacing: -0.55px;
+  letter-spacing: -0.5px;
   font-weight: 400;
   max-width: 30rem;
   line-height: 1.4;
@@ -259,7 +259,7 @@ const Text = styled.h2`
 const MicroText = styled.h4`
   color: #666;
   font-weight: 400;
-  letter-spacing: -0.4px
+  letter-spacing: -0.3px
 `
 
 const Dash = styled.div`
