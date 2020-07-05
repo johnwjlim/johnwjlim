@@ -56,7 +56,7 @@ export const OffsetBody = styled.div`
 `;
 
 export const TextBlock = styled.div`
-  max-width: 40em;
+  max-width: 40rem;
   margin: 0 auto;
   margin-bottom: 2rem;
 `

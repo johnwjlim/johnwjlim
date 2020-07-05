@@ -15,7 +15,7 @@ const Title = styled.h1`
 const TextBlock = styled.div`
   max-width: 52rem;
   margin: 0 auto;
-  margin-bottom: 1.25rem;
+  // margin-bottom: 1.25rem;
 `
 
 
