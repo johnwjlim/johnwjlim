@@ -123,13 +123,7 @@ const PitchDeckLink = styled(ImageCaption)`
 
 const SectionTitle = styled.h2`
   font-weight: 700;
-  letter-spacing: -0.025em;
-  font-size: 1.85rem;
-  // margin-bottom: 0.23rem;
-
-  @media (max-width: 1240px) {
-    font-size: 1.5rem;
-  }
+  letter-spacing: -0.5px;
 
 `
 
@@ -521,7 +515,7 @@ export default function Showcase(props) {
         </OffsetBody>
         <OffsetBody >
           <TextBlock>
-            <SectionTitle>Hindsight = 20/20</SectionTitle>
+            <SectionTitle>Hindsight is 20/20</SectionTitle>
           </TextBlock>
           <ColumnBlock>
             <p>It's always refreshing to be able to come back to a past project with fresh eyes to see what was done and what could have been improved. </p>
