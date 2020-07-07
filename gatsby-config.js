@@ -32,8 +32,9 @@ module.exports = {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
         google: {
-          families: ['EB Garamond\:300,400,500,600,700', 'Inter\:100,200,300,400,500,600,700,800']
-        }
+          families: ['EB Garamond\:300,400,500,600,700', 'Inter\:100,200,300,400,500,600,650,700,800']
+        },
+        display: 'swap'
       }
     },
     {

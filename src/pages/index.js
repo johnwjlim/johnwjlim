@@ -125,7 +125,7 @@ const NewTitle = styled.h1`
 const NewSubtitle = styled.h4`
   letter-spacing: -0.2px;
   font-weight: 400;
-  margin-bottom: 23rem;
+  margin-bottom: 21rem;
   margin-top: 3.8rem;
   color: #666;
   
@@ -238,9 +238,9 @@ const Divider =  styled.div`
 
 const Title = styled.h1`
   letter-spacing: -1.8px;
-  font-size: 2.4rem;
-  font-weight: 600;
-  color: #111;
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: #333;
   line-height: normal;
   // margin-bottom: 2rem;
 `
@@ -248,12 +248,12 @@ const Title = styled.h1`
 const Text = styled.p`
   // color: #b5b5b5;
   color: #888;
-  letter-spacing: -0.5px;
-  font-weight: 400;
-  max-width: 30rem;
-  line-height: 1.4;
+  letter-spacing: -0.6px;
+  font-weight: 300;
+  max-width: 32rem;
+  line-height: 1.35;
   // line-height: normal;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 `
 
 const MicroText = styled.h4`
