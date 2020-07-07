@@ -122,7 +122,7 @@ const PitchDeckLink = styled(ImageCaption)`
 
 
 const SectionTitle = styled.h2`
-  font-weight: 700;
+  font-weight: 650;
   letter-spacing: -0.5px;
 
 `
