@@ -238,21 +238,26 @@ const Divider =  styled.div`
 `
 
 const Title = styled.h1`
-  letter-spacing: -1.6px;
-  font-size: 2.4rem;
-  font-weight: 700;
-  color: #333;
+  letter-spacing: -2.85px;
+  font-size: 3.6rem;
+  font-weight: 800;
+  color: #333333;
   line-height: normal;
-  // margin-bottom: 1rem;
+  margin-bottom: 2rem;
+
+  @media (max-width: 1024px) {
+    font-size: 2.4rem;
+    letter-spacing: -1.8px
+  }
 `
 
 const Text = styled.p`
   // color: #b5b5b5;
   color: #888;
-  letter-spacing: -0.4px;
+  letter-spacing: -0.3px;
   font-weight: 400;
-  max-width: 36rem;
-  line-height: 1.44;
+  max-width: 33rem;
+  line-height: 1.38;
   // line-height: normal;
   font-size: 1rem;
 `
@@ -360,7 +365,7 @@ export default function IndexPage() {
                   {/* <Text>
                     If not <Highlight>skiing,</Highlight> I can be found <Highlight>grinding</Highlight> out the miles on the gravel or <Highlight>pushing pixels</Highlight> while nursing my second coffee of the day in one of the many <Highlight>coffee</Highlight> shops around <Highlight>Seattle.</Highlight>
                   </Text> */}
-                  <Text>If not <Highlight>pushing pixels</Highlight> in a Seattle coffee shop, catch me <Highlight>chasing powder</Highlight> in the local ski hill or wherever there is good snow to be found.</Text>
+                  <Text>If not <Highlight>pushing pixels</Highlight> in a Seattle coffee shop, catch me <Highlight>chasing powder</Highlight> in my local ski hill or wherever there's good snow to be found.</Text>
                 </div>
                 {/* <div data-sal="fade" data-sal-delay="400" data-sal-duration="1200" data-sal-easing="ease">
                   <Dash>
