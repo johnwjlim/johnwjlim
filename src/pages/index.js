@@ -256,7 +256,7 @@ const Text = styled.p`
   color: #888;
   letter-spacing: -0.3px;
   font-weight: 400;
-  max-width: 33rem;
+  max-width: 37rem;
   line-height: 1.38;
   // line-height: normal;
   font-size: 1rem;
