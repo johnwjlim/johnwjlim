@@ -238,9 +238,9 @@ const Divider =  styled.div`
 `
 
 const Title = styled.h1`
-  letter-spacing: -1.5px;
+  letter-spacing: -1.6px;
   font-size: 2.4rem;
-  font-weight: 800;
+  font-weight: 700;
   color: #333;
   line-height: normal;
   // margin-bottom: 1rem;
