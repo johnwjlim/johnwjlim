@@ -48,9 +48,10 @@ const TitleBox = styled.div`
   // margin: 4rem 0;
   // margin: 0 3rem;
   margin-bottom: 1rem; 
+  margin-bottom: 4rem;
   // border-bottom: 1px solid #dddddd;
 
-  // margin-top: 10rem;
+  margin-top: 8rem;
   @media (max-width: 768px) {
     // font-size: 1rem;
     margin: 3.5rem 0 5rem;
@@ -125,7 +126,7 @@ const NewTitle = styled.h1`
 const NewSubtitle = styled.h4`
   letter-spacing: -0.2px;
   font-weight: 400;
-  margin-bottom: 21rem;
+  margin-bottom: 6rem;
   margin-top: 3.8rem;
   color: #666;
   
@@ -237,23 +238,23 @@ const Divider =  styled.div`
 `
 
 const Title = styled.h1`
-  letter-spacing: -1.8px;
-  font-size: 2.6rem;
-  font-weight: 700;
+  letter-spacing: -1.5px;
+  font-size: 2.4rem;
+  font-weight: 800;
   color: #333;
   line-height: normal;
-  // margin-bottom: 2rem;
+  // margin-bottom: 1rem;
 `
 
 const Text = styled.p`
   // color: #b5b5b5;
   color: #888;
-  letter-spacing: -0.6px;
-  font-weight: 300;
-  max-width: 32rem;
-  line-height: 1.35;
+  letter-spacing: -0.4px;
+  font-weight: 400;
+  max-width: 36rem;
+  line-height: 1.44;
   // line-height: normal;
-  font-size: 1.3rem;
+  font-size: 1rem;
 `
 
 const MicroText = styled.h4`
@@ -270,8 +271,8 @@ const Dash = styled.div`
 `
 
 const Highlight = styled.span`
-  color: #111;
-  font-weight: 400;
+  color: #333;
+  font-weight: 600;
 `
 const TitleFlip = styled.div`
   background-color: #333;
@@ -320,13 +321,13 @@ export default function IndexPage() {
             <Body>
               <FauxHeader>
                 <StyledLink to="/">
-                  <HeaderTitle>John Lim</HeaderTitle>
+                  {/* <HeaderTitle>John Lim</HeaderTitle> */}
                   {/* <NewSubtitle>Digital Product Designer</NewSubtitle> */}
                 </StyledLink>
               </FauxHeader>
 
               <TitleBox>
-                <NewSubtitle>Digital Product Designer</NewSubtitle> 
+                {/* <NewSubtitle>Digital Product Designer</NewSubtitle>  */}
                 {/* <NewTitle>
                   <div data-sal="fade" data-sal-delay="100" data-sal-duration="1200" data-sal-easing="ease"> 
                     <TitleStyle>John is</TitleStyle><br/>
@@ -355,13 +356,13 @@ export default function IndexPage() {
                     I study <Highlight>Human Computer Interaction</Highlight> at the <Highlight>University of Washington</Highlight> enthralled by the things that make us <Highlight>human</Highlight> and driven by the 
                     pursuit of the elusive <Highlight>intersection</Highlight> between <Highlight>technology and humanity.</Highlight> 
                   </Text> */}
-                  <Text>I'm a student at the <Highlight>University of Washington</Highlight> majoring in <Highlight>Human Computer Interaction</Highlight> and enthralled by the things that make us <Highlight>human.</Highlight></Text>
+                  <Text>I'm an undergraduate student at the <Highlight>University of Washington</Highlight> majoring in <Highlight>Human Computer Interaction</Highlight> and enthralled by the things that make us <Highlight>human.</Highlight></Text>
                   {/* <Text>
                     If not <Highlight>skiing,</Highlight> I can be found <Highlight>grinding</Highlight> out the miles on the gravel or <Highlight>pushing pixels</Highlight> while nursing my second coffee of the day in one of the many <Highlight>coffee</Highlight> shops around <Highlight>Seattle.</Highlight>
                   </Text> */}
                   <Text>If not <Highlight>pushing pixels</Highlight> in a Seattle coffee shop, catch me <Highlight>chasing powder</Highlight> in the local ski hill or wherever there is good snow to be found.</Text>
                 </div>
-                <div data-sal="fade" data-sal-delay="400" data-sal-duration="1200" data-sal-easing="ease">
+                {/* <div data-sal="fade" data-sal-delay="400" data-sal-duration="1200" data-sal-easing="ease">
                   <Dash>
                     ––
                   </Dash>
@@ -373,9 +374,9 @@ export default function IndexPage() {
                   <Arrow >
                       <div class="arrow" onClick={() => scrollTo('#nimbus')}/>
                   </Arrow>
-                </div>
+                </div> */}
               </TitleBox>
-              <Divider />
+              {/* <Divider /> */}
               <div data-sal="fade" data-sal-delay="100" data-sal-duration="1500" data-sal-easing="ease" id="nimbus" style={{paddingTop: "1rem"}}> 
                <New />
               </div>
