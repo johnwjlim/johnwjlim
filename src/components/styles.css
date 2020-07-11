@@ -7,6 +7,7 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  letter-spacing: -0.006rem;
 }
 
 /* ::selection { */
@@ -25,18 +26,18 @@ h1, h2, h3, h4, h5, h6, p, a, blockquote, li {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
   font-family: "Inter", -apple-system, BlinkMacSystemFont, Helvetica Neue, sans-serif;
   text-rendering: optimizeLegibility;
-  line-height: 1.2;
+  line-height: 1.1;
   margin-top: 0;
   color: #333333;
-  letter-spacing: -0.008em;
+  /* letter-spacing: -0.008em; */
 }
 
 p {
   /* line-height: 1.5; */
   font-size: 16px;
   /* font-weight: 400; */
-  letter-spacing: -0.01em;
-  line-height: 1.5;
+  /* letter-spacing: -0.1px; */
+  line-height: 1.6;
 }
 
 strong {

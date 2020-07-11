@@ -29,10 +29,11 @@ const StyledLink = styled(Link)`
   text-decoration: none;
   font-weight: 400;
   font-size: 1rem;
-  line-height: 1.7;
+  line-height: 1.68;
   transition: 0.2s;
-  letter-spacing: -0.4px;
+  letter-spacing: -0.3px;
   color: #666666;
+  // color: #888;
   padding: 0.25rem 0.5rem;
   border-radius: 8px;
   
@@ -56,7 +57,7 @@ const StyledText = styled.a`
 `
 
 const GreyText = styled.a`
-  line-height: 1.7;
+  line-height: 1.68;
   color: #b8b8b8;
   font-weight: 300;
   transition: 0.2s;
@@ -73,7 +74,7 @@ const GreyText = styled.a`
 `
 
 const GreyLink = styled(Link)`
-  line-height: 1.7;
+  line-height: 1.68;
   text-decoration: none;
   color: #b8b8b8;
   font-weight: 300;
@@ -125,6 +126,7 @@ const InlineLink = styled.a`
 const Footer = styled.footer`
   margin-top: 5rem;
   padding: 0 3rem;
+  line-height: 1.44;  
 `
 
 const FlexHack = styled.div`

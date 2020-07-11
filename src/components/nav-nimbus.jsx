@@ -27,7 +27,7 @@ const ListItem = styled.li`
 const StyledLink = styled(Link)`
   text-decoration: none;
   font-size: 1rem;
-  line-height: 1.7;
+  line-height: 1.68;
   transition: 0.2s;
   // font-size: 0.95rem;
 
@@ -40,25 +40,25 @@ const StyledLink = styled(Link)`
 
 
 const StyledText = styled.a`
-  line-height: 1.7;
+  line-height: 1.68;
   color: #333333;
   margin: 0;
   font-weight: 500;
   border-bottom: 1px solid #333333; 
   margin: 0.25rem 0.5rem;
-  letter-spacing: -0.4px;
+  letter-spacing: -0.3px;
 
 `
 
 const GreyText = styled.a`
-  line-height: 1.7;
+  line-height: 1.68;
   color: #b8b8b8;
   font-weight: 300;
   transition: 0.2s;
   border: none;
   padding: 0.25rem 0.5rem;
   border-radius: 8px;
-  letter-spacing: -0.4px;
+  letter-spacing: -0.3px;
 
   :hover {
     cursor: pointer;  
@@ -68,7 +68,7 @@ const GreyText = styled.a`
 `
 
 const GreyLink = styled(Link)`
-  line-height: 1.7;
+  line-height: 1.68;
   text-decoration: none;
   color: #b8b8b8;
   font-weight: 300;

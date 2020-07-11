@@ -29,8 +29,9 @@ const HeroText = styled.p`
   font-size: 1.85rem;
   font-weight: 200;
   // color: #666666;
-  letter-spacing: -0.035em;
-  line-height: 1.45;
+  letter-spacing: -0.03em;
+  letter-spacing: -0.8px;
+  line-height: 1.44;
 
   @media (max-width: 1240px) {
     font-size: 1.5rem;
@@ -122,8 +123,9 @@ const PitchDeckLink = styled(ImageCaption)`
 
 
 const SectionTitle = styled.h2`
-  font-weight: 650;
-  letter-spacing: -0.5px;
+  font-weight: 700;
+  letter-spacing: -0.6px;
+  line-height: 1.6;
 
 `
 
@@ -162,6 +164,7 @@ const ColumnBlock = styled(TextBlock)`
   -webkit-column-gap: 2rem;
   -moz-column-gap: 2rem;
   column-gap: 2rem;
+  // max-width: 42rem;
 
   @media (max-width: 1024px) {
     -webkit-column-count: 1;
@@ -171,15 +174,15 @@ const ColumnBlock = styled(TextBlock)`
 `
 
 const Quote = styled(TextQuote)`
-  font-family: "EB Garamond", serif;
-  font-size: 1.7rem;
-  border-left: solid 1px #333333;
-  letter-spacing: -0.02em;
-  font-weight: 400;
+  // font-family: "EB Garamond", serif;
+  font-size: 1.5rem;
+  border-left: solid 3px #333333;
+  letter-spacing: -0.7px; 
+  font-weight: 500;
   padding-left: 3.5rem;
-  max-width: 48rem;
-  line-height: 1.3;
-  color: #111111;
+  max-width: 42rem;
+  line-height: 1.4;
+  color: #333;
 
   @media (max-width: 1240px) {
     padding-left: 2rem;

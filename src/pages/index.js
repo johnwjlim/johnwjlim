@@ -361,7 +361,7 @@ export default function IndexPage() {
                     I study <Highlight>Human Computer Interaction</Highlight> at the <Highlight>University of Washington</Highlight> enthralled by the things that make us <Highlight>human</Highlight> and driven by the 
                     pursuit of the elusive <Highlight>intersection</Highlight> between <Highlight>technology and humanity.</Highlight> 
                   </Text> */}
-                  <Text>I'm an undergraduate student at the <Highlight>University of Washington</Highlight> majoring in <Highlight>Human Computer Interaction</Highlight> and enthralled by the things that make us <Highlight>human.</Highlight></Text>
+                  <Text>I'm an undergraduate student at the <Highlight>University of Washington</Highlight> majoring in <Highlight>Human Computer Interaction</Highlight> and enthralled by the factors that make us <Highlight>human.</Highlight></Text>
                   {/* <Text>
                     If not <Highlight>skiing,</Highlight> I can be found <Highlight>grinding</Highlight> out the miles on the gravel or <Highlight>pushing pixels</Highlight> while nursing my second coffee of the day in one of the many <Highlight>coffee</Highlight> shops around <Highlight>Seattle.</Highlight>
                   </Text> */}
