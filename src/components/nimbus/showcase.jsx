@@ -382,6 +382,7 @@ export default function Showcase(props) {
             <ImageWrapper>
               <Img fluid={data.PaperPrototypes.childImageSharp.fluid} />
             </ImageWrapper>
+            <ImageSubCaption>Paper prototypes were instrumental towards helping us validate our design concept as well as gauging user's reactions to various kinds of user profiles that may be encountered.</ImageSubCaption>
         </ImageOffset>
         <OffsetBody>
           <ColumnBlock>
