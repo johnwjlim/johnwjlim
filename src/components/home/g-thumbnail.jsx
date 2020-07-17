@@ -77,6 +77,7 @@ const ImageCaption = styled.h2`
   // font-weight: 900;
   font-weight: 600;
   margin: 0;
+  line-height: 1.2;
 
 
   // @media (max-width: 1024px) {

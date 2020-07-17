@@ -216,7 +216,7 @@ const ImageSubCaption = styled.p`
 `
 
 const iFrameStyle = {
-  transform: "scale(0.6)",
+  transform: "scale(0.6)"
 }
 
 
@@ -462,7 +462,7 @@ export default function Showcase(props) {
           </TextBlock>
           <TextBlock>
             <SectionTitle>
-              Putting It Together
+              Bringing It To Life
             </SectionTitle>
           </TextBlock>
           <ColumnBlock>
@@ -487,9 +487,9 @@ export default function Showcase(props) {
             <Divider style={{padding: "0"}} />
           </TextBlock>
         </OffsetBody>
-        <PrototypeSection>
+        <PrototypeSection>      
           <PrototypeWrapper>
-            <iframe src="https://marvelapp.com/3f9161c?emb=1&iosapp=false&frameless=false" style={iFrameStyle} width="452" height="901" allowTransparency="true" frameborder="0"></iframe>
+            <iframe src="https://marvelapp.com/prototype/ee03f2a?emb=1&iosapp=false&frameless=false"style={iFrameStyle} width="452" height="801" allowtransparency="true" frameborder="0"></iframe>
           </PrototypeWrapper>
           <IntroBody>
               <PrototypeText>
