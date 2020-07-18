@@ -316,6 +316,13 @@ export default function Showcase(props) {
           }
         }
       }
+      LocationScreen: file(relativePath : {eq: "Location-Screen.png"}) {
+        childImageSharp {
+          fluid(maxWidth:3200) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
     }
   `)
 
@@ -382,11 +389,18 @@ export default function Showcase(props) {
             <ImageWrapper>
               <Img fluid={data.PaperPrototypes.childImageSharp.fluid} />
             </ImageWrapper>
-            <ImageSubCaption>Paper prototypes were instrumental towards helping us validate our design concept as well as gauging user's reactions to various kinds of user profiles that may be encountered.</ImageSubCaption>
+            <ImageSubCaption>First impreessions matter. While we believed that full profiles go a long way towards building trust, we wanted to test that hypotheses nonetheless. We designed user profiles with varying degress of "sketchiness" and had our testers rate their comfort levels with each profile.  </ImageSubCaption>
+            {/* <ImageSubCaption>Paper prototypes were instrumental towards helping us validate our design concept as well as gauging user's reactions to various kinds of user profiles that may be encountered.</ImageSubCaption> */}
         </ImageOffset>
         <OffsetBody>
+          <TextBlock>
+            <SectionTitle>
+              Designing for Trust & Chemistry
+            </SectionTitle>
+          </TextBlock>
           <ColumnBlock>
-            <p> With successful mitigative measures in place, multiple rounds of testing and iteration further revealed that much of our target users were essentially <strong>less concerned for their own safety</strong> than we as designers were. They had in fact expressed <strong>more concern over chemistry & compatibility</strong> with potential travel companions than with their own personal safety.</p>
+            <p>The idea behind <strong>user profiles</strong> is to <strong>build trust;</strong> by encouraging users to share a little piece of themselves, it opens up a small window of <strong>mutual vulnerability</strong> that we hoped would dispel fear or uncertainty with using the platform </p>
+            <p>Further testing and iteration revealed that much of our target users were essentially <strong>less concerned for their own safety</strong> than we as designers were. They had in fact expressed <strong>more concern over chemistry & compatibility</strong> with potential travel companions than with their own personal safety.</p>
             <p>It was almost as if that the age old adage of not getting into cars with strangers was somehow less applicable in the 21st century. This suprising takeaway would be key towards underscoring the feasability of our proposed concept.</p>
           </ColumnBlock>
           <TextBlock>
@@ -462,7 +476,7 @@ export default function Showcase(props) {
           </TextBlock>
           <TextBlock>
             <SectionTitle>
-              Bringing It To Life
+              Bringing It To Life 
             </SectionTitle>
           </TextBlock>
           <ColumnBlock>
@@ -473,6 +487,9 @@ export default function Showcase(props) {
         </OffsetBody>
         <ImageWrapper>
           <Img fluid={data.Deck.childImageSharp.fluid}/>
+        </ImageWrapper>
+        <ImageWrapper>
+          <Img fluid={data.LocationScreen.childImageSharp.fluid} />
         </ImageWrapper>
         <OffsetBody style={{margin: "0"}}>
           <TextBlock>

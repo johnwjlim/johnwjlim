@@ -146,7 +146,7 @@ export default function Nav(props) {
         } else {
           return (
             <ListItem key={index} onClick={() => navigate(props.routes[index])}>
-              <GreyText style={{margin: "0", lineHeight: "1.7"}}>{sections[index]}</GreyText>
+              <GreyText  style={{margin: "0", lineHeight: "1.7"}}>{sections[index]}</GreyText>
             </ListItem>
           )
         }
