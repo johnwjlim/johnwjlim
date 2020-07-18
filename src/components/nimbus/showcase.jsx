@@ -395,7 +395,7 @@ export default function Showcase(props) {
         <OffsetBody>
           <TextBlock>
             <SectionTitle>
-              Designing for Trust & Chemistry
+              Trust & Chemistry
             </SectionTitle>
           </TextBlock>
           <ColumnBlock>
