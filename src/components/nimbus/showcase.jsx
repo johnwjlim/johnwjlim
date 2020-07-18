@@ -389,7 +389,7 @@ export default function Showcase(props) {
             <ImageWrapper>
               <Img fluid={data.PaperPrototypes.childImageSharp.fluid} />
             </ImageWrapper>
-            <ImageSubCaption>First impreessions matter. While we believed that full profiles go a long way towards building trust, we wanted to test that hypotheses nonetheless. We designed user profiles with varying degress of "sketchiness" and had our testers rate their comfort levels with each profile.  </ImageSubCaption>
+            <ImageSubCaption>First impreessions matter. While we believed that full profiles go a long way towards building trust, we wanted to test that hypothesis nonetheless. We designed user profiles with varying degress of "sketchiness" and had our testers rate their comfort levels with each profile.  </ImageSubCaption>
             {/* <ImageSubCaption>Paper prototypes were instrumental towards helping us validate our design concept as well as gauging user's reactions to various kinds of user profiles that may be encountered.</ImageSubCaption> */}
         </ImageOffset>
         <OffsetBody>
