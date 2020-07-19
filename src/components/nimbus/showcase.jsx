@@ -316,7 +316,7 @@ export default function Showcase(props) {
           }
         }
       }
-      LocationScreen: file(relativePath : {eq: "Location-Screen.png"}) {
+      LocationScreen: file(relativePath : {eq: "Location-Screen-New.png"}) {
         childImageSharp {
           fluid(maxWidth:3200) {
             ...GatsbyImageSharpFluid
