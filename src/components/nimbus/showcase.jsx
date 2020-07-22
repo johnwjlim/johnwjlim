@@ -401,7 +401,8 @@ export default function Showcase(props) {
           <ColumnBlock>
             <p>The idea behind <strong>user profiles</strong> is to <strong>build trust;</strong> by encouraging users to share a little piece of themselves, it opens up a small window of <strong>mutual vulnerability</strong> that we hoped would dispel fear or uncertainty with using the platform </p>
             <p>Further testing and iteration revealed that much of our target users were essentially <strong>less concerned for their own safety</strong> than we as designers were. They had in fact expressed <strong>more concern over chemistry & compatibility</strong> with potential travel companions than with their own personal safety.</p>
-            <p>It was almost as if that the age old adage of not getting into cars with strangers was somehow less applicable in the 21st century. This suprising takeaway would be key towards underscoring the feasability of our proposed concept.</p>
+            <p>In addition, compared to a shared commute in the city or suburbs, the <strong>sheer remoteness</strong> of outdoor locales means that there is often <strong>safety</strong> to be found <strong>in numbers.</strong> As a result, we placed an increased focus on <strong>building community</strong> and fostering connections with subsequent iterations.</p>
+            {/* <p>It was almost as if that the age old adage of not getting into cars with strangers was somehow less applicable in the 21st century. This suprising takeaway would be key towards underscoring the feasability of our proposed concept.</p> */}
           </ColumnBlock>
           <TextBlock>
             <Box>
