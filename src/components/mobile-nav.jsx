@@ -101,7 +101,7 @@ export default function Nav(props) {
          <StyledLink 
                 as="a"
                 target="_blank"
-                href="https://drive.google.com/file/d/1YC67UCd-V7o0Y1ZEp1y9AnxiSgOHiiy7/view?usp=sharing"
+                href="https://drive.google.com/file/d/1kvO-BrRQxthxxyGf8pKdkJA42L1sJBEX/view?usp=sharing"
                 onClick={() => dispatch({type: "CLOSE"})} 
               >
                 Resume
