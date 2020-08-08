@@ -160,6 +160,7 @@ const ColumnBlock = styled(TextBlock)`
   -webkit-column-count: 2;
   -moz-column-count: 2;
   column-count: 2;
+  // color: #666;
 
   -webkit-column-gap: 2rem;
   -moz-column-gap: 2rem;

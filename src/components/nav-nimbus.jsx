@@ -169,7 +169,7 @@ export default function Nav(props) {
               style={{textDecoration: "none"}}
               as="a"
               target="_blank"
-              href="https://drive.google.com/file/d/1kvO-BrRQxthxxyGf8pKdkJA42L1sJBEX/view?usp=sharing"
+              href="https://drive.google.com/file/d/1r5To1P3Oc8Dn9Ucbe_WxWWBi5bCVeYri/view?usp=sharing"
             >
               Resume
             </GreyText>
@@ -189,7 +189,7 @@ export default function Nav(props) {
             <StyledLink 
               as="a"
               target="_blank"
-              href="https://drive.google.com/file/d/1kvO-BrRQxthxxyGf8pKdkJA42L1sJBEX/view?usp=sharing"
+              href="https://drive.google.com/file/d/1r5To1P3Oc8Dn9Ucbe_WxWWBi5bCVeYri/view?usp=sharing"
             >
               Resume
             </StyledLink>
