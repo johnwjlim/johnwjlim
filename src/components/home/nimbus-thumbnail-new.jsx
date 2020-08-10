@@ -41,7 +41,7 @@ const CaseLink = styled(Link)`
   }
 
   &:hover ${CaseCaption} {
-    color: #666666;
+    color: #333333;
   }
 
 
@@ -76,8 +76,9 @@ const ImageCaption = styled.h2`
   bottom: 0;
   left: 0;
   max-width: 50rem;
-  letter-spacing: -0.5px;
+  letter-spacing: -0.7px;
   font-weight: 500;
+  // font-weight: 400;
   // font-size: 1.8rem;
   margin: 0;
   line-height: 1.2;

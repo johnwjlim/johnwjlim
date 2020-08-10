@@ -238,12 +238,12 @@ const Divider =  styled.div`
 `
 
 const Title = styled.h1`
-  letter-spacing: -3.8px;
+  letter-spacing: -3.9px;
   font-size: 3.75rem;
   font-weight: 500;
   color: #333333;
   line-height: normal;
-  margin-bottom: 2rem;
+  // margin-bottom: 1.4rem;
 
   @media (max-width: 1024px) {
     font-size: 2.4rem;
@@ -254,7 +254,7 @@ const Title = styled.h1`
 const Text = styled.p`
   // color: #b5b5b5;
   color: #333;
-  color: #666;
+  // color: #666;
   letter-spacing: -1px;
   font-weight: 300;
   max-width: 36rem;
