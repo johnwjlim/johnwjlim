@@ -48,7 +48,7 @@ const TitleBox = styled.div`
   // margin: 4rem 0;
   // margin: 0 3rem;
   margin-bottom: 1rem; 
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
   // border-bottom: 1px solid #dddddd;
 
   margin-top: 8rem;
@@ -238,9 +238,9 @@ const Divider =  styled.div`
 `
 
 const Title = styled.h1`
-  letter-spacing: -2.3px;
-  font-size: 3.2rem;
-  font-weight: 800;
+  letter-spacing: -3.8px;
+  font-size: 3.75rem;
+  font-weight: 500;
   color: #333333;
   line-height: normal;
   margin-bottom: 2rem;
@@ -253,13 +253,15 @@ const Title = styled.h1`
 
 const Text = styled.p`
   // color: #b5b5b5;
-  color: #888;
-  letter-spacing: -0.3px;
-  font-weight: 400;
-  max-width: 37rem;
-  line-height: 1.44;
+  color: #333;
+  color: #666;
+  letter-spacing: -1px;
+  font-weight: 300;
+  max-width: 36rem;
+  max-width: 43rem;
+  line-height: 1.4;
   // line-height: normal;
-  font-size: 1rem;
+  font-size: 1.5rem;
 `
 
 const MicroText = styled.h4`
@@ -278,6 +280,7 @@ const Dash = styled.div`
 const Highlight = styled.span`
   color: #333;
   font-weight: 600;
+  font-weight: 500;
 `
 const TitleFlip = styled.div`
   background-color: #333;
@@ -352,7 +355,7 @@ export default function IndexPage() {
                 <div data-sal="fade" data-sal-delay="150" data-sal-duration="1200" data-sal-easing="ease">
                   <Title>
                     <div>
-                    Hello, I'm John. &nbsp;<Emoji> 👋 </Emoji>
+                    Hello, I'm John &nbsp;<Emoji> 👋 </Emoji>
                     </div>
                   </Title> 
                 </div>

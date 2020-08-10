@@ -8,7 +8,7 @@ import { ImageWrapper } from "../constants"
 
 
 const CaseCaption = styled.h4`
-  font-weight: 600;
+  font-weight: 500;
   margin: 0;
   margin-top: 1rem;
   letter-spacing: -0.2px;
@@ -77,7 +77,7 @@ const ImageCaption = styled.h2`
   left: 0;
   max-width: 50rem;
   letter-spacing: -0.5px;
-  font-weight: 600;
+  font-weight: 500;
   // font-size: 1.8rem;
   margin: 0;
   line-height: 1.2;

@@ -24,7 +24,7 @@ body {
 h1, h2, h3, h4, h5, h6, p, a, blockquote, li {
   /* font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
-  font-family: "Inter", -apple-system, BlinkMacSystemFont, Helvetica Neue, sans-serif;
+  font-family: "Untitled Sans", "Inter", -apple-system, BlinkMacSystemFont, Helvetica Neue, sans-serif;
   text-rendering: optimizeLegibility;
   line-height: 1.1;
   margin-top: 0;
@@ -44,7 +44,7 @@ p {
 }
 
 strong {
-  font-weight: 700;
+  font-weight: 500;
 }
 
 button,
