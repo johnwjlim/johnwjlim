@@ -26,8 +26,8 @@ const HeroText = styled.p`
   font-weight: 300;
   color: #666666;
   color: #333;
-  letter-spacing: -1.38px;
-  line-height: 1.3;
+  letter-spacing: -1.2px;
+  line-height: 1.25;
   max-width: 60rem;
   margin-bottom: 3.5rem;
 
@@ -76,16 +76,16 @@ const BlockIntro = styled.h2`
   max-width: 32rem;
   line-height: 1.2;
   font-weight: 500;
-  letter-spacing: -1.38px;
+  letter-spacing: -1.1px;
   // font-family: "Founders Grotesk"; 
   // font-weight: 600;
   // font-size: 2.5rem;
   // letter-spacing: 0;
   // line-height: 1;
 
-  // font-size: 2.5rem;
-  // font-weight: 400;
-  // letter-spacing: -1.9px; 
+  // font-size: 1.5rem;
+  // font-weight: 500;
+  // letter-spacing: px; 
 
 
   @media (max-width: 1024px) {
@@ -493,7 +493,7 @@ export default function Showcase(props) {
           <OffsetBody style={{marginTop: "0", marginBottom: "3.5rem"}}>
             <TextBlock>
               <HeroText>
-                <strong style={{letterSpacing: "-1.5px"}}>Nimbus</strong>
+                <strong style={{letterSpacing: "-0px", color: "#333333", fontWeight: "600"}}>Nimbus</strong>
               </HeroText>
             </TextBlock>
           </OffsetBody>
@@ -546,9 +546,9 @@ export default function Showcase(props) {
                   Getting into cars with strangers. (Or not)
                 </FlexBlockIntro>
                 <p>
-                  User safety was the primary concern expressed by our professor and mentor, Brian Fling. The initial plan was to have users ride-share to outdoor destinations – sort of like Uber for the outdoors. However, the idea of having users travel with strangers to remote locales left a certain degree of apprehension. Our surveys indicated a similar sentiment amongst our users as well.
+                  User safety was the primary concern expressed by our professor and mentor, Brian Fling. The initial plan was to have users ride-share to outdoor destinations – sort of like Uber for the outdoors. However, the idea of having users travel with strangers to remote locales left a fair degree of apprehension. Our surveys indicated a similar sentiment amongst our users as well.
                 </p>
-                <p>The immediate priority in our following sprint was therefore to alleviate potential safety issues. One of our most successful mitigative measures was the introduction of user profiles.  </p>
+                <p>The immediate priority in our following sprint was therefore to alleviate potential safety issues. One of our key mitigative measures was the introduction of user profiles.  </p>
               </PrototypeText>
           </OffsetBody>
         </FlexBox>
@@ -558,10 +558,10 @@ export default function Showcase(props) {
           <TextBlock>
             <BlockIntro>Designing for Trust and Community.</BlockIntro>
             <p>
-            The idea behind user profiles is to build trust & social proof; by encouraging users to share a little piece of themselves, it opens up a small window of mutual vulnerability that we hoped would dispel fear or uncertainty with using the platform. It also offers users a perception of control by allowing them to research their counterparts rather than stepping off blind into the unknown. 
+            We hyphothesized that user profiles would help build trust & social proof; by encouraging users to share a little piece of themselves, it opens up a small window of mutual vulnerability that we hoped would dispel fear or uncertainty with using the platform. It also offers users a perception of control by allowing them to research their counterparts rather than stepping off blind into the unknown. 
             </p>
             <p>
-              As we tested our paper prototypes further, we discovered that many of our users were in fact expressing more concern over chemistry & compatibility with potential travel companions than with their own personal safety. It was almost as if the safety concerns went out the window the moment our users got to see a user profile for themselves
+              As we tested our user profiles further, we discovered that many of our users were in fact expressing more concern over chemistry & compatibility with potential travel companions than with their own personal safety. It was almost as if the safety concerns went out the window when our users got to see a user profile for themselves
             </p>
           </TextBlock>
         </OffsetBody>
@@ -622,11 +622,11 @@ export default function Showcase(props) {
         <OffsetBody>
           <TextBlock>
             <p>
-              In addition, we realized that the sheer remoteness means that there is safety in numbers. For example, if you were backcountry skiing and you somehow triggered and got buried in an avalanche, having a partner to call rescue or dig you out could mean the difference between life or death.
+              In addition, we realized that the sheer remoteness means that there is safety in numbers. For example, if you were backcountry skiing and somehow got caught in an avalanche, having a partner on hand to call rescue or dig you out could mean the difference between life or death.
             </p>
             <p>
-              With the introduction of user profiles and emphasis on safety in numbers, Nimbus evolved from "National Park Uber" to something more akin to a hybrid of AirBnb and your local outdoor Facebook group.
-              Rather than simply enabling transport for users, our concept was now premised on having users form communities to travel outdoors in groups.
+              With the introduction of profiles and emphasis on safety in numbers, Nimbus evolved from "National Park Uber" to something more akin to a hybrid of AirBnb and a local outdoor Facebook community.
+              Our concept was now premised on having users group up and adventure outdoors together. 
             </p>
           </TextBlock>
         </OffsetBody>
@@ -636,7 +636,7 @@ export default function Showcase(props) {
               Test. Iterate. Then test it again. 
             </BlockIntro>
             <p>
-              If that sounds like Groundhog Day to you, you’re probably not wrong. We adopted a <strong>rapid prototyping</strong> based approach for our design process and let our users steer where we went with our designs through frequent iteration and testing. You’ve already seen the paper prototypes up top. I've also interspesed the rest of this case study with various screens and prototypes of differing fidelities. 
+              If that sounds like Groundhog Day to you, you’re probably not wrong. We adopted a <strong>rapid prototyping</strong> based approach and let our users steer where we went with our designs through frequent iteration and testing. You’ve already seen the paper prototypes up top. I've also interspesed the rest of this case study with various screens and prototypes of differing fidelities. 
             </p>
           </TextBlock>
         </OffsetBody>
@@ -688,7 +688,7 @@ export default function Showcase(props) {
         <OffsetBody>
           <TextBlock>
             <p>
-              We conducted most of our tests with low-fidelity wireframes. This allowed us a certain freedom to experiment and make changes because of the relatively low investment and effort put into the prototypes. If something wasn't quite working out, taking everything apart and changing it up generally wasn't an issue for us.
+              We conducted most of our tests with low-fidelity wireframes. This allowed us a certain freedom to experiment and make changes because of the relatively low investment and effort put into the prototypes.
             </p>
             <p>
               High-fidelity mockups were saved for last and only worked on after we validated our key flows and features with lower-fidelity prototypes. We were also constantly uncovering other pain points associated with outdoor travel during our testing process, and we sought to address some of them with our high-fi prototypes. 
@@ -748,7 +748,7 @@ export default function Showcase(props) {
           <Img fluid={data.Profile.childImageSharp.fluid}  />    
           <ImageSubCaption>High-fi slide deck was made at some point for the benefit of the class.</ImageSubCaption>
         </ImageOffset> */}
-        <FlexBox style={{alignItems: "flex-start", backgroundColor: "#fafafa"}}> 
+        <FlexBox style={{backgroundColor: "#fafafa"}}> 
           <OffsetBody>
             <img src={joinGif} />
             <ImageSubCaption style={{maxWidth: "270px"}}>Users can search for and join groups based on location, difficulty, length, popularity etc.</ImageSubCaption>
@@ -759,10 +759,10 @@ export default function Showcase(props) {
                 Passing the vibe check.
               </FlexBlockIntro>
               <p>
-                Adventures in the outdoors are only as good as the company you’re with. Nobody wants to be stuck in the middle of nowhere with people of vastly different technical abilities than that of themselves, or people that they simply can’t get along with. With chemistry and compatibility cited as a major user concern, we wanted users to have the opportunity to size each other up before committing to a group. 
+                Adventures in the outdoors are only as good as the company you’re with. With chemistry and compatibility cited as a major user concern, we wanted to let users be able to size each other up before committing to a group. 
               </p>
               <p>
-                This was done through allowing users to search for groups through various criterias, encouraging users to communicate with group hosts when requesting to join a group, having descriptive group listings and encouraging full profiles by all users.
+                This was done through allowing users to search for groups through various criterias, encouraging users to talk to group hosts when requesting to join a group, having descriptive group listings and encouraging full profiles by all users.
               </p>
             </PrototypeText>
           </OffsetBody>
@@ -774,11 +774,11 @@ export default function Showcase(props) {
                 Streamlining the preflight.
               </FlexBlockIntro>
               <p>
-               Difficulty in finding information relevant to the area of travel was one of our most oft-cited pain points, with data either hard to find or out of date. I’ve personally been subject to this and have had close calls after being caught out by unexpected conditions or hazards in the outdoors. 
+               Difficulty in finding information relevant to the area of travel was one of our most cited pain points, with data either hard to find or out of date. I’ve personally been subject to this and have had close calls after being caught out by unexpected conditions or hazards in the outdoors. 
              
               </p>
               <p>
-                We sought to address this by aggregating information relevant to the location such as conditions, terrain and hazards into a single page to help streamline the research process and aid in user preparation.
+                We sought to address this by aggregating information relevant to the location such as conditions, terrain and hazards into a single page to help streamline the research and aid in user preparation.
               </p>
               <ImageCaption style={{textAlign: "left", marginTop: "3.5rem"}} onClick={() => navigate("/nimbus/high-fi")} >
                 View the high-fidelity screen descriptions
@@ -818,7 +818,7 @@ export default function Showcase(props) {
         <OffsetBody>
           <TextBlock>
             <p>
-            Brian (our prof) wasn’t too keen on us using traffic light color coding to denote difficulty in our original versions– and he’s got a point. Colors are loaded with meaning – for example: when we coded “difficult” with the color red, the connotation is that there is danger to be expected. Yet that isn’t necessarily the case, because difficult is just that – difficult. There may be technical skillsets required but that doesn’t mean that something is or should be dangerous. 
+            Brian (our prof) wasn’t too keen on us using traffic light color coding to denote difficulty in our original versions– and he’s got a point. Colors are loaded with meaning – for example: when we coded “hard” with the color red, the connotation is that there is danger to be expected. Yet that isn’t necessarily the case, because hard is just that – hard. There may be technical skillsets required but that doesn’t mean that something is or should be dangerous. 
             </p>
           </TextBlock>
         </OffsetBody>
