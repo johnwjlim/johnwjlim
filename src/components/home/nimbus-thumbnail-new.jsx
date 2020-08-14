@@ -8,7 +8,7 @@ import { ImageWrapper } from "../constants"
 
 
 const CaseCaption = styled.h4`
-  font-weight: 600;
+  font-weight: 500;
   margin: 0;
   margin-top: 1rem;
   letter-spacing: -0.2px;
@@ -41,7 +41,7 @@ const CaseLink = styled(Link)`
   }
 
   &:hover ${CaseCaption} {
-    color: #666666;
+    color: #333333;
   }
 
 
@@ -69,6 +69,7 @@ const Filler = styled.div`
 const ImageCaption = styled.h2`
   position: absolute;
   color: #333333;
+  // color: #111;
   // color: #333333;
   // color: #47c3a0;
   // bottom: 3vh;
@@ -76,8 +77,9 @@ const ImageCaption = styled.h2`
   bottom: 0;
   left: 0;
   max-width: 50rem;
-  letter-spacing: -0.5px;
-  font-weight: 600;
+  letter-spacing: -0.7px;
+  font-weight: 500;
+  // font-weight: 400;
   // font-size: 1.8rem;
   margin: 0;
   line-height: 1.2;
@@ -88,7 +90,7 @@ const ImageCaption = styled.h2`
   // }
   
   :hover {
-    color: #666666;
+    // color: #666666;
   }
   @media (max-width: 1240px) {
     display: none;

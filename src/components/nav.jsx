@@ -33,6 +33,7 @@ const StyledLink = styled(Link)`
   transition: 0.2s;
   letter-spacing: -0.3px;
   color: #666666;
+  // color: #333;
   // color: #888;
   padding: 0.25rem 0.5rem;
   border-radius: 8px;

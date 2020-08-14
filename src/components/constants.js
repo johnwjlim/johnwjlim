@@ -121,7 +121,7 @@ export const FlexWrapper = styled.div`
 export const TextQuote = styled.blockquote`
   margin: 0;
   font-size: 1.5rem;
-  font-weight: 600; 
+  font-weight: 400; 
   max-width: 36rem;
   border-left: solid 3px #333333;
   padding-left: 2rem;

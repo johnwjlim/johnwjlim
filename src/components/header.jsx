@@ -35,9 +35,10 @@ const Title = styled.h2`
   margin: 0;
   // margin-right: 3.6rem;
   letter-spacing: -0.8px;
-  font-weight: 600;
-  color: #111111;
-  // font-size: 1.4rem;
+  font-weight: 500;
+  color: #333333;
+  line-height: 1.1;
+  font-size: 1.4rem;
 
 
   @media (max-width: 425px) {
