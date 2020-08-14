@@ -556,7 +556,7 @@ export default function Showcase(props) {
         <div data-sal="fade" data-sal-delay="100" data-sal-duration="1200" data-sal-easing="ease">
         <OffsetBody>
           <TextBlock>
-            <BlockIntro>Designing for Trust.</BlockIntro>
+            <BlockIntro>Designing for Trust and Community.</BlockIntro>
             <p>
             The idea behind user profiles is to build trust & social proof; by encouraging users to share a little piece of themselves, it opens up a small window of mutual vulnerability that we hoped would dispel fear or uncertainty with using the platform. It also offers users a perception of control by allowing them to research their counterparts rather than stepping off blind into the unknown. 
             </p>
@@ -568,6 +568,9 @@ export default function Showcase(props) {
         <ImageOffset >
             <Img fluid={data.PaperPrototypes.childImageSharp.fluid} />
             <ImageSubCaption>First impressions matter. While we believed that full profiles go a long way towards building trust, we wanted to test that hypothesis nonetheless. We designed user profiles with varying degress of "sketchiness" and had our testers rate their comfort levels with each profile.  </ImageSubCaption>
+            <ImageCaption style={{textAlign: "center", marginTop: "1.75rem"}} onClick={() => navigate("/nimbus/survey-ideation")} >
+              View the deep dive into the research & ideation process
+            </ImageCaption>
         </ImageOffset>
         </div>
         {/* <FlexBox style={{alignItems: "flex-start", padding: "3.5rem", backgroundColor: "#F5FFF9"}}>
@@ -593,7 +596,7 @@ export default function Showcase(props) {
             </PrototypeText>
           </OffsetBody>
         </FlexBox> */}
-        <FlexBox style={{alignItems: "flex-start", backgroundColor: "#fafafa"}}>
+        {/* <FlexBox style={{alignItems: "flex-start", backgroundColor: "#fafafa"}}>
           <OffsetBody >
             <PrototypeText>
               <BlockIntro style={{maxWidth: "48rem", marginTop: "0"}}>  
@@ -604,7 +607,7 @@ export default function Showcase(props) {
           <OffsetBody >
             <PrototypeText>
             <p>
-              We also learned that outdoor exploration does not lend itself well to the Uber style ride-share concept that we initially had. The sheer remoteness means that there is safety in numbers. For example, if you were backcountry skiing and you somehow triggered and got buried in an avalanche, having a partner to call rescue or dig you out could mean the difference between life or death. 
+              In addition, we earned that The sheer remoteness means that there is safety in numbers. For example, if you were backcountry skiing and you somehow triggered and got buried in an avalanche, having a partner to call rescue or dig you out could mean the difference between life or death.
             </p>
             <p>
               With the introduction of user profiles and emphasis on safety in numbers, Nimbus evolved from "National Park Uber" to something more akin to a hybrid of AirBnb and your local outdoor Facebook group.
@@ -615,7 +618,18 @@ export default function Showcase(props) {
             </ImageCaption>
             </PrototypeText>
           </OffsetBody>
-        </FlexBox>
+        </FlexBox> */}
+        <OffsetBody>
+          <TextBlock>
+            <p>
+              In addition, we realized that the sheer remoteness means that there is safety in numbers. For example, if you were backcountry skiing and you somehow triggered and got buried in an avalanche, having a partner to call rescue or dig you out could mean the difference between life or death.
+            </p>
+            <p>
+              With the introduction of user profiles and emphasis on safety in numbers, Nimbus evolved from "National Park Uber" to something more akin to a hybrid of AirBnb and your local outdoor Facebook group.
+              Rather than simply enabling transport for users, our concept was now premised on having users form communities to travel outdoors in groups.
+            </p>
+          </TextBlock>
+        </OffsetBody>
         <OffsetBody style={{marginBottom: "3.5rem"}}>
           <TextBlock>
             <BlockIntro>
@@ -634,15 +648,15 @@ export default function Showcase(props) {
             <ImageSubCaption style={{marginTop: "3.5rem"}}>
               We attempted to take advantage of existing conceptual models whenever possible. The idea was to maximize intuitiveness by leveraging a user’s familiarity with existing processes. The above diagram depicts a rough flow of our “join a group” process here which was really modelled after AirBnb’s flow for making a reservation with a host
             </ImageSubCaption>
-            <ImageCaption style={{marginTop: "3.5rem"}}  onClick={() => navigate("/nimbus/flows-wireframes")} >
+            <ImageCaption style={{marginTop: "3rem"}}  onClick={() => navigate("/nimbus/flows-wireframes")} >
               View wireframes used to test primary use cases
             </ImageCaption>
           </TextBlock>
         </OffsetBody>
         <div data-sal="fade" data-sal-delay="150" data-sal-duration="1200" data-sal-easing="ease">
-          <OffsetBody>
+          {/* <OffsetBody>
               <Divider style={{padding: "0"}} />
-          </OffsetBody>
+          </OffsetBody> */}
         {/* <OffsetBody>
           <TextBlock>
             <Box>
@@ -811,7 +825,7 @@ export default function Showcase(props) {
         <ImageOffset>
           <TextBlock>
             <Img fluid={data.ColorCoding.childImageSharp.fluid} />
-            <ImageSubCaption>Difficult != Dangerous. While Mailbox Peak here is known to be a thigh-burner of a hike, it is by no means dangerous with much of the trail being well marked and well maintained.</ImageSubCaption>
+            <ImageSubCaption>Difficult ≠ Dangerous. While Mailbox Peak here is known to be a thigh-burner of a hike, it is by no means dangerous with much of the trail being well marked and well maintained.</ImageSubCaption>
           </TextBlock>
         </ImageOffset>
         <OffsetBody>
@@ -824,7 +838,7 @@ export default function Showcase(props) {
             </p>
           </TextBlock>
         </OffsetBody>
-        <FlexBox style={{alignItems: "flex-start"}}>
+        <FlexBox style={{alignItems: "flex-start", backgroundColor: "#fafafa"}}>
           <FlexImage style={{padding: "0rem"}}>
             <Img fluid={data.NewColorCoding.childImageSharp.fluid} />
           </FlexImage>
@@ -834,7 +848,7 @@ export default function Showcase(props) {
                 The anatomy of symbology.
               </FlexBlockIntro>
               <p>
-                During the same period, the Walt Disney Company was also looking into opening a ski resort. As part of that project, they did studies and tests on which colors worked best. They had even tested skier’s reactions to different geometric figures, concluding for example, that the symbol for easy terrain should be a circle, which was perceived as soft, and that the color of the circle should be green, which was perceived as mellow. 
+                The Walt Disney Company was looking into opening a ski resort in the 1960s. As part of that project, they did studies and tests on which colors worked best. They had even tested skier’s reactions to different geometric figures, concluding for example, that the symbol for easy terrain should be a circle, which was perceived as soft, and that the color of the circle should be green, which was perceived as mellow. 
              </p>
              <p>The Walt Disney system was adopted by the NSAA in 1968 and has served North American skiing well for over 50 years. As such, this is also the system I have chosen to adopt for this purpose today. </p>
             </PrototypeText>
@@ -844,10 +858,10 @@ export default function Showcase(props) {
           <TextBlock>
             <BlockIntro>The last bit.</BlockIntro>
             <p>
-              There were many lessons from this project. Many. I’ll roughly go through them in no particular order: User research is never one and done, keep ideas at its lowest fidelity, test and test some more, never assume anything –– identify and validate, you are not the user, and the list goes on.  It’s probably that has most influenced my design process. 
+              There were many lessons from this project. Many. I’ll roughly go through them in no particular order: User research is never one and done, keep ideas at its lowest fidelity, test and test some more, never assume anything ––identify and validate, you are not the user, and the list goes on.  This is probably the project that has most influenced my design process. 
             </p>
             <p>
-              This case study is long because Brian made us document everything, and because there was so much that I learnt from this project. I thank you for making it this far and do apologize for the weight, and if curious there’s also more content in this case that you can access in the side nav ––I’ve also included potential next steps this product can evolve in the “End Notes” section. Once again, thanks so much for checking this case out. 
+              This case study is long because Brian made us document everything, and because there was so much that I learnt from this project. I thank you for making it this far and do apologize for the weight, and if curious there’s also more content in this case that you can access in the side nav – I’ve also included potential next steps this product can evolve in the “End Notes” section. 
             </p>
           </TextBlock>
         </OffsetBody>
