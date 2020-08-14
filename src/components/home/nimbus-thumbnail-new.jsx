@@ -69,6 +69,7 @@ const Filler = styled.div`
 const ImageCaption = styled.h2`
   position: absolute;
   color: #333333;
+  // color: #111;
   // color: #333333;
   // color: #47c3a0;
   // bottom: 3vh;
@@ -89,7 +90,7 @@ const ImageCaption = styled.h2`
   // }
   
   :hover {
-    color: #666666;
+    // color: #666666;
   }
   @media (max-width: 1240px) {
     display: none;

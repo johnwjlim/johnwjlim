@@ -48,10 +48,10 @@ const TitleBox = styled.div`
   // margin: 4rem 0;
   // margin: 0 3rem;
   margin-bottom: 1rem; 
-  margin-bottom: 4rem;
+  margin-bottom: 8rem;
   // border-bottom: 1px solid #dddddd;
 
-  margin-top: 8rem;
+  margin-top: 14rem;
   @media (max-width: 768px) {
     // font-size: 1rem;
     margin: 3.5rem 0 5rem;
@@ -126,10 +126,11 @@ const NewTitle = styled.h1`
 const NewSubtitle = styled.h4`
   letter-spacing: -0.2px;
   font-weight: 400;
-  margin-bottom: 6rem;
-  margin-top: 3.8rem;
+  margin-bottom: 8rem;
+  // margin-bottom: 4rem;
+  margin-top: 3.9rem;
   color: #666;
-  
+
   @media (max-width: 1240px) {
     display: none;
   }
@@ -184,8 +185,8 @@ const HeaderTitle = styled.h2`
   margin: 0;
   // margin-right: 3.6rem;
   letter-spacing: -0.8px;
-  font-weight: 600;
-  color: #111111;
+  font-weight: 500;
+  color: #333333;
   // font-size: 1.4rem;
 
 
@@ -238,12 +239,16 @@ const Divider =  styled.div`
 `
 
 const Title = styled.h1`
-  letter-spacing: -3.9px;
-  font-size: 3.75rem;
-  font-weight: 500;
-  color: #333333;
+  letter-spacing: -2.8px;
+  letter-spacing: -2.2px;
+  font-size: 3.6rem;
+  font-size: 2.7rem;
+  // font-size: 2.3rem;
+  font-weight: 400;
+  font-weight:500;
+  color: #111111;
   line-height: normal;
-  // margin-bottom: 1.4rem;
+  // margin-bottom: 6rem;
 
   @media (max-width: 1024px) {
     font-size: 2.4rem;
@@ -254,14 +259,22 @@ const Title = styled.h1`
 const Text = styled.p`
   // color: #b5b5b5;
   color: #333;
-  // color: #666;
+  color: #666;
+  // color: #888;
   letter-spacing: -1px;
   font-weight: 300;
   max-width: 36rem;
-  max-width: 43rem;
-  line-height: 1.4;
+  max-width: 48rem;
+  line-height: 1.3;
   // line-height: normal;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
+
+  @media (max-width: 1024px) {
+    font-size: 1.2rem;
+    letter-spacing: -0.3px
+  }
+
+
 `
 
 const MicroText = styled.h4`
@@ -278,9 +291,9 @@ const Dash = styled.div`
 `
 
 const Highlight = styled.span`
-  color: #333;
+  color: #111;
   font-weight: 600;
-  font-weight: 500;
+  font-weight: 400;
 `
 const TitleFlip = styled.div`
   background-color: #333;
@@ -355,7 +368,7 @@ export default function IndexPage() {
                 <div data-sal="fade" data-sal-delay="150" data-sal-duration="1200" data-sal-easing="ease">
                   <Title>
                     <div>
-                    Hello, I'm John &nbsp;<Emoji> 👋 </Emoji>
+                    Hello there, I'm John &nbsp;<Emoji> 👋 </Emoji>
                     </div>
                   </Title> 
                 </div>
