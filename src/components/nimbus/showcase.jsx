@@ -76,7 +76,7 @@ const BlockIntro = styled.h2`
   max-width: 32rem;
   line-height: 1.2;
   font-weight: 500;
-  letter-spacing: -1.1px;
+  letter-spacing: -1px;
   // font-family: "Founders Grotesk"; 
   // font-weight: 600;
   // font-size: 2.5rem;
@@ -553,7 +553,7 @@ export default function Showcase(props) {
           </OffsetBody>
         </FlexBox>
         </div>
-        <div data-sal="fade" data-sal-delay="100" data-sal-duration="1200" data-sal-easing="ease">
+        <div data-sal="fade" data-sal-delay="100" data-sal-duration="1200" data-sal-easing="ease" style={{backgroundColor: "#fafafa", padding: "1.75rem 0"}}>
         <OffsetBody>
           <TextBlock>
             <BlockIntro>Designing for Trust and Community.</BlockIntro>
@@ -568,11 +568,7 @@ export default function Showcase(props) {
         <ImageOffset >
             <Img fluid={data.PaperPrototypes.childImageSharp.fluid} />
             <ImageSubCaption>First impressions matter. While we believed that full profiles go a long way towards building trust, we wanted to test that hypothesis nonetheless. We designed user profiles with varying degress of "sketchiness" and had our testers rate their comfort levels with each profile.  </ImageSubCaption>
-            <ImageCaption style={{textAlign: "center", marginTop: "1.75rem"}} onClick={() => navigate("/nimbus/survey-ideation")} >
-              View the deep dive into the research & ideation process
-            </ImageCaption>
         </ImageOffset>
-        </div>
         {/* <FlexBox style={{alignItems: "flex-start", padding: "3.5rem", backgroundColor: "#F5FFF9"}}>
           <OffsetBody >
             <PrototypeText>
@@ -629,7 +625,11 @@ export default function Showcase(props) {
               Our concept was now premised on having users group up and adventure outdoors together. 
             </p>
           </TextBlock>
+          <ImageCaption style={{textAlign: "center", marginTop: "3.5rem"}} onClick={() => navigate("/nimbus/survey-ideation")} >
+              View the deep dive into the research & ideation process
+            </ImageCaption>
         </OffsetBody>
+        </div>
         <OffsetBody style={{marginBottom: "3.5rem"}}>
           <TextBlock>
             <BlockIntro>
@@ -648,7 +648,7 @@ export default function Showcase(props) {
             <ImageSubCaption style={{marginTop: "3.5rem"}}>
               We attempted to take advantage of existing conceptual models whenever possible. The idea was to maximize intuitiveness by leveraging a user’s familiarity with existing processes. The above diagram depicts a rough flow of our “join a group” process here which was really modelled after AirBnb’s flow for making a reservation with a host
             </ImageSubCaption>
-            <ImageCaption style={{marginTop: "3rem"}}  onClick={() => navigate("/nimbus/flows-wireframes")} >
+            <ImageCaption style={{marginTop: "3.5rem"}}  onClick={() => navigate("/nimbus/flows-wireframes")} >
               View wireframes used to test primary use cases
             </ImageCaption>
           </TextBlock>
