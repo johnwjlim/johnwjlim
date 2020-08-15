@@ -26,8 +26,8 @@ const HeroText = styled.p`
   font-weight: 300;
   color: #666666;
   color: #333;
-  letter-spacing: -1.2px;
-  line-height: 1.25;
+  letter-spacing: -1.1px;
+  line-height: 1.3;
   max-width: 60rem;
   margin-bottom: 3.5rem;
 
@@ -76,7 +76,7 @@ const BlockIntro = styled.h2`
   max-width: 32rem;
   line-height: 1.2;
   font-weight: 500;
-  letter-spacing: -1px;
+  letter-spacing: -0.8px;
   // font-family: "Founders Grotesk"; 
   // font-weight: 600;
   // font-size: 2.5rem;
@@ -493,7 +493,7 @@ export default function Showcase(props) {
           <OffsetBody style={{marginTop: "0", marginBottom: "3.5rem"}}>
             <TextBlock>
               <HeroText>
-                <strong style={{letterSpacing: "-0px", color: "#333333", fontWeight: "600"}}>Nimbus</strong>
+                <strong style={{letterSpacing: "-1px", color: "#333333", fontWeight: "500"}}>Nimbus</strong>
               </HeroText>
             </TextBlock>
           </OffsetBody>
@@ -553,7 +553,7 @@ export default function Showcase(props) {
           </OffsetBody>
         </FlexBox>
         </div>
-        <div data-sal="fade" data-sal-delay="100" data-sal-duration="1200" data-sal-easing="ease" style={{backgroundColor: "#fafafa", padding: "1.75rem 0"}}>
+        <div data-sal="fade" data-sal-delay="100" data-sal-duration="1200" data-sal-easing="ease" style={{backgroundColor: "#f5f5f5", padding: "1.75rem"}}>
         <OffsetBody>
           <TextBlock>
             <BlockIntro>Designing for Trust and Community.</BlockIntro>
@@ -748,7 +748,7 @@ export default function Showcase(props) {
           <Img fluid={data.Profile.childImageSharp.fluid}  />    
           <ImageSubCaption>High-fi slide deck was made at some point for the benefit of the class.</ImageSubCaption>
         </ImageOffset> */}
-        <FlexBox style={{backgroundColor: "#fafafa"}}> 
+        <FlexBox style={{backgroundColor: "#f5f5f5"}}> 
           <OffsetBody>
             <img src={joinGif} />
             <ImageSubCaption style={{maxWidth: "270px"}}>Users can search for and join groups based on location, difficulty, length, popularity etc.</ImageSubCaption>
@@ -838,7 +838,7 @@ export default function Showcase(props) {
             </p>
           </TextBlock>
         </OffsetBody>
-        <FlexBox style={{alignItems: "flex-start", backgroundColor: "#fafafa"}}>
+        <FlexBox style={{alignItems: "flex-start", backgroundColor: "#f5f5f5"}}>
           <FlexImage style={{padding: "0rem"}}>
             <Img fluid={data.NewColorCoding.childImageSharp.fluid} />
           </FlexImage>

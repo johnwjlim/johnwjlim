@@ -38,10 +38,11 @@ p {
   font-size: 16px;
   font-weight: 400;
   /* letter-spacing: -0.2px; */
-  line-height: 1.5;
+  line-height: 1.6;
 
   /* color: rgba(0,0,0,0.6); */
   color: #333333;
+  /* color: #666; */
 }
 
 strong {

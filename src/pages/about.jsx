@@ -22,9 +22,10 @@ const Wrapper = styled.div`
 const Hero = styled.div`
   // max-width: 36rem;
   max-width: 28rem;
-  margin: 0 auto;
+  margin: 0 4rem;
   margin-bottom: 0.5rem;
-  margin-top: 3rem;
+  margin-top: 2rem;
+
 `
 
 const Constraint = styled.div`
@@ -48,6 +49,44 @@ const Container = styled.div`
   margin: 0 auto;
 `
 
+const FlexContainer = styled(Styled.Container)`
+  display: flex;
+  margin: 8rem 0;
+
+  @media (max-width: 1024px) {
+    margin: 4rem 0;
+    display: block;
+  }
+`
+const Text = styled.p`
+  max-width: 35rem;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  letter-spacing: -0.3px;
+  line-height: 1.4;
+  color: #666;
+  margin-bottom: 1.25rem;
+`
+
+const Highlight = styled.span`
+  font-weight: 500;
+  color: #333333;
+` 
+const ImageSubCaption = styled.p`
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+  font-weight: 500;
+  line-height: 1.4;
+`
+
+const  OffsetBody = styled.div`
+  margin: 2rem 8rem;
+
+  @media (max-width: 1240px) {
+    margin: 4rem 0;
+  }
+`;
 
 export default function About() {
   const data = useStaticQuery(graphql`
@@ -79,38 +118,35 @@ export default function About() {
         menuState ?
         <MobileNav /> :
         <Wrapper>
-          <Styled.Container style={{margin: "0 auto"}}>
+          <FlexContainer >
             {/* <Image>
               <Img fluid={data.HeroWide.childImageSharp.fluid} />
             </Image> */}
             {/* <ImageOffset> */}
+            <div data-sal="fade" data-sal-delay="100" data-sal-duration="1200" data-sal-easing="ease">
               <Hero>
                 <Constraint>
-                <Img fluid={data.Hero.childImageSharp.fluid} />
-                <p style={{fontSize: "0.9rem"}}><strong>Me, Jamie and Alice at the University District Farmer's Market in Seattle</strong></p>
+                  <Img fluid={data.Hero.childImageSharp.fluid} />
+                  <ImageSubCaption >Jamie, Alice and I at the University District Farmers Market in Seattle</ImageSubCaption>
                 </Constraint>
               </Hero>
-              {/* <p style={{fontSize: "0.9rem"}}><strong>Me, Jamie and Alice at the University District Farmer's Market in Seattle</strong></p> */}
-            {/* </ImageOffset> */}
-            <Styled.OffsetBody style={{marginTop: "3.5rem"}}>
-            {/* <p style={{fontSize: "0.9rem"}}><strong>Me, Jamie and Alice at the University District Farmer's Market in Seattle</strong></p> */}
-              
-
-              <Styled.BodyText>
-                <strong>I’m John, and I’m a student of Human Computer Interaction at the University of Washington. </strong> If I’m not skiing, I can be found hunched over my laptop nursing my second latte of the day in a coffee shop up in North Seattle. Running is my release, cooking is my therapy, and a weird wildest dream of mine would be to cruise down the Champs-Élysées in Paris as a finisher in the Tour de France. 
-              </Styled.BodyText>
-              <Styled.BodyText>
-              {/* <p style={{fontSize: "0.9rem"}}><strong>Me, Jamie and Alice at the University District Farmer's Market in Seattle</strong></p> */}
-                If you’ve tried hovering your mouse over the site title on the top left hand corner of the page, you may have noticed that it transitions from my name to “Make It Better”. This phrase was actually a working header that I used back when I was building this site; I was going through a bit of a rut at the time and “make it better” sort of became a motivational quote for me; a reminder to myself to take whatever I had on hand and make it a little better, a sort of a mantra to push myself to keep going every single day. <strong> Because while each small step and improvement may seem insignificant by itself, done repeatedly and consistently over time they eventually accumulate. </strong> And once aggregated, they come together to collectively form a significant improvement over what I started out with. 
-              </Styled.BodyText>
-              <Styled.BodyText>
-                In a way, “make it better” also kind of underpins much of what we do as designers. We’re problem solvers. The things we do have the potential to better the lives of others. It doesn’t matter the field of design that we work in, or the scale of the problem that we’re trying to solve; at the end of the day, we’re really just trying to take an existing state of being and make it a little better. And if we’re not trying to make it better, why do we bother upending the status quo to begin with? :D
-              </Styled.BodyText>
-              {/* <Styled.BodyText>
-                <strong>I’m John, and I’m a student of Human Computer Interaction at the University of Washington. </strong> If I’m not skiing, I can be found hunched over my laptop nursing my second latte of the day in a coffee shop up in North Seattle. Running is my release, cooking is my therapy, and a weird wildest dream of mine would be to cruise down the Champs-Élysées in Paris as a finisher in the Tour de France. 
-              </Styled.BodyText> */}
-            </Styled.OffsetBody>
-          </Styled.Container>
+            </div>
+            <div data-sal="fade" data-sal-delay="300" data-sal-duration="1200" data-sal-easing="ease">
+              <OffsetBody>
+                <Text>
+                  <Highlight>I'm John, and I'm a student of Human Computer Interaction at the University of Washington. </Highlight>
+                </Text>
+                <Text>
+                  If not skiing, I can probably be found hunched over my laptop nursing my second latte of the day in a North Seattle coffee shop. Running is my release, cooking is my therapy, and a weird wildest dream of mine would be to cruise down the Champs-Élysées in Paris as a finisher in the Tour de France.
+                </Text>
+                <Text>
+                  If you’ve tried hovering your mouse over the site title on the top left hand corner of the page, you may have noticed that it transitions from my name to “Make It Better”. It's a sort of personal mantra of mine; Because while each small step and improvement may seem insignificant by itself, done repeatedly and consistently over time they eventually come together to collectively form a significant improvement over what I started out with.
+                </Text>     
+                <Text>
+                In a way, “make it better” also kind of underpins much of what we do as designers. We’re problem solvers – our job serves to better the lives of others. It doesn’t matter the field we work in, or the scale of the problem that we’re trying to solve; at the end of the day, we’re really just trying to take an existing state of being and make it a little better. And if we’re not trying to make it better, why do we bother to begin with? :D</Text> 
+              </OffsetBody>
+            </div>
+          </FlexContainer>
           <Nav />
         </Wrapper>
       
