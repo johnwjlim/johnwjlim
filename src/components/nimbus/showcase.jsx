@@ -789,6 +789,7 @@ export default function Showcase(props) {
             <Img fluid={data.Location.childImageSharp.fluid} />
           </FlexImage>
         </FlexBox>
+        <div data-sal="fade" data-sal-delay="100" data-sal-duration="1200" data-sal-easing="ease">
         <OffsetBody>
           <Divider style={{padding: "0"}} />
         </OffsetBody>
@@ -815,6 +816,7 @@ export default function Showcase(props) {
               View the redesign here
           </ImageCaption>
         </ImageWrapper>
+        </div>
         <OffsetBody>
           <TextBlock>
             <p>
