@@ -187,9 +187,14 @@ export default function Intro() {
             <br/><br/> 
             <Video>
               <Frame 
-              src="https://drive.google.com/file/d/1Js8x1CCdaumPa7OqxwPJW9liH0iByjR7/preview"
+              src="https://www.youtube.com/embed/HbaYwjYpr-Q"
               />
             </Video>
+            {/* <Video>
+            <Frame src="https://player.vimeo.com/video/448334727" />
+            </Video> */}
+
+            {/* <Frame src="https://player.vimeo.com/video/448334727" frameborder="0" allow="autoplay; fullscreen" allowfullscreen/> */}
           </BlockText>
         </FlexBox>  
         <FlexBox>
