@@ -193,7 +193,7 @@ export default function Intro() {
         <FlexBox>
           <BlockTitle>Pool</BlockTitle>
           <BlockText>
-            For our team deliverable, we were to design a solution to the problem with <strong>the technologies of tommorow.</strong> Our proposed solution is a mixed reality experience that aims to visualize household energy and water usage in order to encourage responsible consumption. We called it POOL – kind of as a playful way to reflect the way our design aimed to visualize resource footprints as "pools of impact" on the ground.
+            For our team deliverable, we were to design a solution to the problem with <strong>the technologies of tommorow.</strong> Our proposed solution was a mixed reality experience that aims to visualize household energy and water usage in order to encourage responsible consumption. We called it POOL – kind of as a playful way to reflect the way our design aimed to visualize resource footprints as "pools of impact" on the ground.
             <br/><br/> 
             A core tenet of our design solution was about closing the feedback loop between resource usage and awareness of the actual impact of use. Current billing cycles give a macro-level overview of consumption but provides little to no micro-level fidelity that users can actually use to make meaningful changes in behavior. POOL aims to address this by leveraging mixed reality technologies to project real-time resource impact at the point of use to give users a better understanding of their consumption habits and behavior.
             <br/><br/> 
