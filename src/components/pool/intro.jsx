@@ -5,6 +5,8 @@ import Img from "gatsby-image"
 
 import * as Styled from "../constants"
 
+import Gif from "../../images/pool.gif"
+
 const TitleBox = styled.div`
   text-align: center;
   margin-bottom: 2.5rem;
@@ -90,7 +92,7 @@ const Video = styled.div`
   overflow: hidden;
   width: 100%;
   padding-top: 56.25%;
-  margin-top: 2rem;
+  margin-top: 3.5rem;
 
 `
 const Frame = styled.iframe`
@@ -183,6 +185,11 @@ export default function Intro() {
             <br/><br/>
             Our research indicated that most people simply had little idea of how much resources they were consuming until the bill comes in at the end of the month, which by itself is obtuse and provides little information of how water and energy has been consumed. By providing real-time feedback, the intent is to help users improve their awareness of consumption.
             <br/><br/>
+            <div style={{margin: "3.5rem 0"}}>
+              <img src={Gif}  />
+              <ImageSubCaption>Water level visualization in shower display falls as time left on the timer decreases. </ImageSubCaption>
+            </div>
+            <br/>
             The shower works by having a screen display in the shower where users can visualize real time usage, view timers etc. while control is performed through a voice interface. (because wet fingers on a touch screen is generally a bad idea) I've made a video presentation that goes into detail on specific visualizations as well as how the system works.
             <br/><br/> 
             <Video>
