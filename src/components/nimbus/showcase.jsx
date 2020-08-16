@@ -62,7 +62,6 @@ const PrototypeSection = styled.div`
 const FlexBox = styled.div`
   display: flex;
   align-items: center;
-  // justify-content: center;
   margin: 7rem 0;
   padding: 3.5rem;
 
@@ -267,10 +266,7 @@ const Divider = styled.div`
 `
 
 const ImageOffset = styled(OffsetBody)`
-  // background-color: #f5f5f5;
-  // padding: 8rem 4rem;
   padding: 0 3.5rem;
-  // padding-top: 3.5rem;
 
   @media (max-width: 1240px) {
     background-color: #ffffff;

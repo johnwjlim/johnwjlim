@@ -81,7 +81,7 @@ const ImageSubCaption = styled.p`
   line-height: 1.4;
 `
 
-const  OffsetBody = styled.div`
+const   OffsetBody = styled.div`
   margin: 2rem 7rem;
 
   @media (max-width: 1240px) {
@@ -128,7 +128,7 @@ export default function About() {
               <Hero>
                 <Constraint>
                   <Img fluid={data.Hero.childImageSharp.fluid} />
-                  <ImageSubCaption >Jamie, Alice and I at the University District Farmers Market in Seattle</ImageSubCaption>
+                  <ImageSubCaption >Jamie, Alice and myself at the University District Farmers Market in Seattle</ImageSubCaption>
                 </Constraint>
               </Hero>
             </div>
