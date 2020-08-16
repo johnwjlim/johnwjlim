@@ -25,7 +25,6 @@ const HeroText = styled.p`
   font-size: 2rem;
   font-weight: 300;
   color: #666666;
-  color: #333;
   letter-spacing: -1.1px;
   line-height: 1.3;
   max-width: 60rem;
@@ -34,7 +33,11 @@ const HeroText = styled.p`
   @media (max-width: 1240px) {
     font-size: 1.5rem;
   }
+`
 
+const Highlight = styled.span`
+  font-weight: 500;
+  color: #333333;
 `
 
 const HeroSub = styled.h4`
@@ -467,6 +470,13 @@ export default function Showcase(props) {
           }
         }
       }
+      FinalScreen: file(relativePath: {eq: "final-screens.png"}) {
+        childImageSharp {
+          fluid(maxWidth: 3200) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
     }
   `)
 
@@ -476,20 +486,15 @@ export default function Showcase(props) {
         <ImageWrapper>
           <Img fluid={data.HeroImage.childImageSharp.fluid} />
         </ImageWrapper>
-        {/* <FlexWrapper>
-          <IntroBody>
+        <OffsetBody>
             <TextBlock>
-              <HeroText>
-                <strong>Nimbus</strong>
-              </HeroText>
               <HeroText> 
-                A mobile experience that aims to solve the transportation challenges of remote outdoor exploration by connecting adventurers with one another and having them share transport to outdoor recreation areas. 
+                <Highlight>Nimbus</Highlight> is a mobile experience that aims to solve the transportation challenges of remote outdoor exploration by connecting adventurers with one another and having them share transport to outdoor recreation areas. 
               </HeroText>
               <PitchDeckLink href="https://www.figma.com/proto/rqb3pn14vDM8drmDBvJGWY/Nimbus-Pitch-Deck?node-id=92%3A3&scaling=scale-down" target="_blank">View the condensed pitch deck here!</PitchDeckLink>
             </TextBlock>
-          </IntroBody>
-        </FlexWrapper> */}
-        <FlexBox style={{alignItems: "flex-start"}}>
+        </OffsetBody>
+        {/* <FlexBox style={{alignItems: "flex-start"}}>
           <OffsetBody style={{marginTop: "0", marginBottom: "3.5rem"}}>
             <TextBlock>
               <HeroText>
@@ -505,10 +510,10 @@ export default function Showcase(props) {
               <PitchDeckLink href="https://www.figma.com/proto/rqb3pn14vDM8drmDBvJGWY/Nimbus-Pitch-Deck?node-id=92%3A3&scaling=scale-down" target="_blank">View the condensed pitch deck here!</PitchDeckLink>
             </TextBlock>
           </OffsetBody>
-        </FlexBox>
-        <ImageWrapper>
+        </FlexBox> */}
+        {/* <ImageWrapper>
           <Img fluid={data.RevisedScreensWhite.childImageSharp.fluid}/>
-        </ImageWrapper>
+        </ImageWrapper> */}
         <OffsetBody style={{}}>
           <TextBlock >
             {/* <SectionTitle>
@@ -789,10 +794,15 @@ export default function Showcase(props) {
             <Img fluid={data.Location.childImageSharp.fluid} />
           </FlexImage>
         </FlexBox>
+        <div data-sal="fade" data-sal-delay="150" data-sal-duration="1200" data-sal-easing="ease">
+        <ImageOffset style={{padding: "3.5rem"}}>
+          <Img fluid={data.FinalScreen.childImageSharp.fluid}/>
+        </ImageOffset>
+        </div>
         <div data-sal="fade" data-sal-delay="100" data-sal-duration="1200" data-sal-easing="ease">
-        <OffsetBody>
+        {/* <OffsetBody>
           <Divider style={{padding: "0"}} />
-        </OffsetBody>
+        </OffsetBody> */}
 
 
         {/* <OffsetBody style={{marginBottom: "0"}}>
