@@ -23,7 +23,7 @@ const InlineLink = styled.a`
   color: blue;
   // font-weight: 600;
   transition: 0.2s;
-  font-style: italic;
+  // font-style: italic;
   text-decoration: none;
 
   :hover {
@@ -149,9 +149,11 @@ export default function Intro() {
   return (
     <>
       <Styled.Container style={{marginTop: "64px"}}>
+        <div data-sal="fade" data-sal-delay="200" data-sal-duration="1200" data-sal-easing="ease">
         <Styled.ImageWrapper>
           <Img fluid={data.Patrick.childImageSharp.fluid} />
         </Styled.ImageWrapper>
+        </div>
         <FlexBox>
           <BlockTitle>
             Information
@@ -174,7 +176,7 @@ export default function Intro() {
         </ImageOffset>
         <FlexBox>
           <BlockTitle>
-            Individual Deliverable
+            Individual Component
           </BlockTitle>
           <BlockText>    
             As my individual deliverable for this project, I designed a solution for our problem based on <strong>existing technologies that are available today.</strong> Having identified lengthy showers as one of the most frivolous uses of water, my solution was a voice activated, digitally controlled shower to help users better visualize and track their showers and prevent shower room karaokes – which have a tendency of causing users to lose track of time in the shower.
