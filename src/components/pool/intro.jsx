@@ -179,7 +179,7 @@ export default function Intro() {
           <BlockText>    
             As my individual deliverable for this project, I designed a solution for our problem based on <strong>existing technologies that are available today.</strong> Having identified lengthy showers as one of the most frivolous uses of water, my solution was a voice activated, digitally controlled shower to help users better visualize and track their showers and prevent shower room karaokes – which have a tendency of causing users to lose track of time in the shower.
             <br/><br/>
-            Our research also indicated that most people simply had little idea of how much resources they were consuming until the bill comes in at the end of the month, which by itself is obtuse and provide little information of how water and energy has been consumed. By providing real-time feedback, the intent is to help users improve their awareness of consumption.
+            Our research indicated that most people simply had little idea of how much resources they were consuming until the bill comes in at the end of the month, which by itself is obtuse and provide little information of how water and energy has been consumed. By providing real-time feedback, the intent is to help users improve their awareness of consumption.
             <br/><br/>
             The shower works by having a screen display in the shower where users can visualize real time usage, view timers etc. while control is performed through a voice interface. (because wet fingers on touch screens is generally a bad idea) I've made a video presentation that goes into detail on specific visualizations as well as how the system works.
             <br/><br/> 
