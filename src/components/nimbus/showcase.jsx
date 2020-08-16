@@ -79,16 +79,18 @@ const BlockIntro = styled.h2`
   max-width: 32rem;
   line-height: 1.2;
   font-weight: 500;
-  letter-spacing: -0.8px;
+  letter-spacing: -1px;
+  // letter-spacing: -0.5px;
   // font-family: "Founders Grotesk"; 
   // font-weight: 600;
   // font-size: 2.5rem;
   // letter-spacing: 0;
   // line-height: 1;
 
-  // font-size: 1.5rem;
+  // font-size: 1.75rem;
   // font-weight: 500;
-  // letter-spacing: px; 
+  // letter-spacing: -0.8px; 
+  // margin: 1.75rem 0;
 
 
   @media (max-width: 1024px) {
@@ -873,7 +875,7 @@ export default function Showcase(props) {
               There were many lessons from this project. Many. I’ll roughly go through them in no particular order: User research is never one and done, keep ideas at its lowest fidelity, test and test some more, never assume anything ––identify and validate, you are not the user, and the list goes on.  This is probably the project that has most influenced my design process. 
             </p>
             <p>
-              This case study is long because Brian made us document everything, and because there was so much that I learnt from this project. I thank you for making it this far and do apologize for the weight, and if curious there’s also more content in this case that you can access in the side nav – I’ve also included potential next steps this product can evolve in the “End Notes” section. 
+              This case study is long because Brian made us document everything, and because there was so much that I learnt from this project. I thank you for making it this far and do apologize for the length, and if curious there’s also more content in this case that you can access in the side nav – I’ve also included potential next steps this product can evolve in the “End Notes” section. 
             </p>
           </TextBlock>
         </OffsetBody>

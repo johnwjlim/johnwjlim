@@ -22,7 +22,7 @@ const Wrapper = styled.div`
 const Hero = styled.div`
   // max-width: 36rem;
   max-width: 28rem;
-  margin: 0 4rem;
+  margin: 0 3.5rem;
   margin-bottom: 0.5rem;
   margin-top: 2rem;
 
@@ -51,7 +51,8 @@ const Container = styled.div`
 
 const FlexContainer = styled(Styled.Container)`
   display: flex;
-  margin: 8rem 0;
+  margin: 8rem 2rem;
+  justify-content: center;
 
   @media (max-width: 1024px) {
     margin: 4rem 0;
@@ -59,7 +60,7 @@ const FlexContainer = styled(Styled.Container)`
   }
 `
 const Text = styled.p`
-  max-width: 35rem;
+  max-width: 33rem;
   margin: 0 auto;
   font-size: 1.1rem;
   letter-spacing: -0.3px;
@@ -81,7 +82,7 @@ const ImageSubCaption = styled.p`
 `
 
 const  OffsetBody = styled.div`
-  margin: 2rem 8rem;
+  margin: 2rem 7rem;
 
   @media (max-width: 1240px) {
     margin: 4rem 0;
