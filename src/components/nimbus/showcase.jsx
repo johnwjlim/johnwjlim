@@ -269,7 +269,6 @@ const ImageOffset = styled(OffsetBody)`
   padding: 0 3.5rem;
 
   @media (max-width: 1240px) {
-    background-color: #ffffff;
     padding: 0;
   }
 `

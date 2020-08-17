@@ -13,7 +13,7 @@ const TitleBox = styled.div`
 `
 
 const ImageBackground = styled.div`
-  background-color: #f5f5f5;
+  background-color: #111111;
   padding: 3.5rem 0;
 
   @media (max-width: 1120px) {
@@ -22,11 +22,12 @@ const ImageBackground = styled.div`
 `
 
 const InlineLink = styled.a`
-  color: blue;
-  // font-weight: 600;
+  color: #ffffff;
+  font-weight: 500;
   transition: 0.2s;
   // font-style: italic;
-  text-decoration: none;
+  text-decoration: underline;
+  // border-bottom: 1px solid #ffffff;
 
   :hover {
     cursor: pointer;
@@ -55,6 +56,7 @@ const BlockTitle = styled.h2`
   font-size: 1.25rem;
   width: 18rem;
   letter-spacing: -0.2px;
+  color: #ffffff;
 
   @media (max-width: 1024px) {
     margin: 2.5rem 0;
@@ -63,20 +65,25 @@ const BlockTitle = styled.h2`
 
 const BlockText = styled.p`
   max-width: 42rem;
-  margin: 0 7rem;
+  margin: 0 8rem;
   font-size: 1.1rem;
-  line-height: 1.5;
+  line-height: 1.45;
   letter-spacing: -0.3px;
+  color: #dddddd;
   @media (max-width: 1024px) {
     margin: 0;
   }
+`
+
+const Highlight = styled.strong`
+  color: #ffffff;
+  // font-weight: 600;
 `
 
 const ImageOffset = styled(Styled.OffsetBody)`
   padding: 0 3.5rem;
 
   @media (max-width: 1240px) {
-    background-color: #ffffff;
     padding: 0;
   }
 `
@@ -85,6 +92,7 @@ const ImageSubCaption = styled.p`
   font-size: 0.8rem;
   margin-top: 0.5rem;
   margin-bottom: 0;
+  color: #c5c5c5;
 `
 
 const Video = styled.div`
@@ -158,10 +166,10 @@ export default function Intro() {
         </div>
         <FlexBox>
           <BlockTitle>
-            Information
+            Background
           </BlockTitle>
           <BlockText>    
-             <strong>Pool</strong> was the cumulative deliverable for an experience design project that I worked on as part of an Interaction Design class. I had the pleasure of collaborating with three other immensely talented individuals for this project. I'd love for you to check out their portfolios if you can: 
+             <Highlight>POOL</Highlight> was the cumulative deliverable for an experience design project that I worked on as part of an Interaction Design class. I had the pleasure of collaborating with three other immensely talented individuals for this project. I'd love for you to check out their portfolios if you can: 
             <InlineLink target="_blank" href="https://abooneportfolio.com/" > Ashley Boone, </InlineLink>
             <InlineLink target="_blank" href="https://www.isabellearmstrong.me/">Isabelle Armstrong, </InlineLink>
             <InlineLink target="_blank" href="http://stephensherwood.me/">Stephen Sherwood. </InlineLink>
@@ -176,18 +184,19 @@ export default function Intro() {
             Ideation was a team effort – we brainstormed as a group and emerged with dozens of ideas on how to approach this problem. We sorted through the ideas we had and managed to synthesize them down to a couple of themes.
           </ImageSubCaption>
         </ImageOffset>
+        <div data-sal="fade" data-sal-delay="100" data-sal-duration="1200" data-sal-easing="ease">
         <FlexBox>
           <BlockTitle>
             Individual Component
           </BlockTitle>
           <BlockText>    
-            As my individual deliverable for this project, I designed a solution for our problem based on <strong>existing technologies that are available today.</strong> Having identified lengthy showers as one of the most frivolous uses of water, my solution was a voice activated, digitally controlled shower to help users better visualize and track their showers and prevent shower room karaokes – which have a tendency of causing users to lose track of time in the shower.
+            As my individual deliverable for this project, I designed a solution for our problem based on <Highlight>existing technologies that are available today.</Highlight> Having identified lengthy showers as one of the most frivolous uses of water, my solution was a voice activated, digitally controlled shower to help users better visualize and track their showers and prevent shower room karaokes – which have a tendency of causing users to lose track of time in the shower.
             <br/><br/>
             Our research indicated that most people simply had little idea of how much resources they were consuming until the bill comes in at the end of the month, which by itself is obtuse and provides little information of how water and energy has been consumed. By providing real-time feedback, the intent is to help users improve their awareness of consumption.
             <br/><br/>
             <div style={{margin: "3.5rem 0"}}>
               <img src={Gif}  />
-              <ImageSubCaption>Water level visualization in shower display falls as time left on the timer decreases. </ImageSubCaption>
+              <ImageSubCaption>Water level visualization in shower display falls as time remaining on the timer decreases. </ImageSubCaption>
             </div>
             <br/>
             The shower works by having a screen display in the shower where users can visualize real time usage, view timers etc. while control is performed through a voice interface. (because wet fingers on a touch screen is generally a bad idea) I've made a video presentation that goes into detail on specific visualizations as well as how the system works.
@@ -204,16 +213,19 @@ export default function Intro() {
             {/* <Frame src="https://player.vimeo.com/video/448334727" frameborder="0" allow="autoplay; fullscreen" allowfullscreen/> */}
           </BlockText>
         </FlexBox>  
+        </div>
+        <div data-sal="fade" data-sal-delay="100" data-sal-duration="1200" data-sal-easing="ease">
         <FlexBox>
           <BlockTitle>Pool</BlockTitle>
           <BlockText>
-            For our team deliverable, we were to design a solution to the problem with <strong>the technologies of tommorow.</strong> Our proposed solution was a mixed reality experience that aims to visualize household energy and water usage in order to encourage responsible consumption. We called it POOL – kind of as a playful way to reflect the way our design aimed to visualize resource footprints as "pools of impact" on the ground.
+            For our team deliverable, we were to design a solution to the problem with <Highlight>the technologies of tommorow.</Highlight> Our proposed solution was a mixed reality experience that aims to visualize household energy and water usage in order to encourage responsible consumption. We called it POOL – kind of as a playful way to reflect the way our design aimed to visualize resource footprints as "pools of impact" on the ground.
             <br/><br/> 
             A core tenet of our design solution was about closing the feedback loop between resource usage and awareness of the actual impact of use. Current billing cycles give a macro-level overview of consumption but provides little to no micro-level fidelity that users can actually use to make meaningful changes in behavior. POOL aims to address this by leveraging mixed reality technologies to project real-time resource impact at the point of use to give users a better understanding of their consumption habits and behavior.
             <br/><br/> 
               I created a one page poster to showcase through storyboard what our design was about and how it worked.
           </BlockText>
         </FlexBox>
+        </div>
         {/* <Styled.OffsetBody>
           <Styled.BodyText>
             Our proposed solution is a mixed reality experience that aims to visualize household energy and water usage in order to encourage responsible consumption. We're calling it POOL –– kind of as a playful way to reflect the way our design aims to visualize resource footprints as "pools of impact" on the ground.
@@ -225,11 +237,13 @@ export default function Intro() {
             As part of the final deliverables for our project, I created a one page poster that aims to showcase what our design was about and how it worked. 
           </Styled.BodyText>
         </Styled.OffsetBody> */}
+        <div data-sal="fade" data-sal-delay="100" data-sal-duration="1200" data-sal-easing="ease">
         <ImageBackground>
           <Styled.ImageWrapper style={{maxWidth: "800px"}}>
             <Img fluid={data.PoolPoster.childImageSharp.fluid} />
           </Styled.ImageWrapper>
         </ImageBackground>
+        </div>
       </Styled.Container>
     </>
   )
