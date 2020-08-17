@@ -220,8 +220,8 @@ export default function Intro() {
           <BlockText>    
             As my individual deliverable for this project, I designed a solution for our problem based on <Highlight>existing technologies that are available today.</Highlight> Having identified lengthy showers as one of the most frivolous uses of water, my solution was a voice activated, digitally controlled shower to help users better visualize and track their showers.
             <br/><br/>
-            Our research also indicated that most people simply had little idea of how much they were using until the bill comes in at the end of the month, which by itself is obtuse and
-            gives only give a macro-level overview of consumption with little to no micro-level fidelity on behavior and trends that users can actually use to make meaningful changes in behavior.
+            Our research also indicated that most people simply had little idea of how much they were using until the bill came in at the end of the month, which by itself was obtuse and
+            gave only give a macro-level overview of consumption with little to no micro-level fidelity on behavior and trends that users could actually use to make meaningful changes in behavior.
             <br/><br/>
             My design solution is a voice-activated, digitally controlled shower that aims to provide real-time feedback to help users improve their awareness of consumption and hopefully make changes to behavior.
             <br/><br/>
