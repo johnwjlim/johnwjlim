@@ -25,7 +25,7 @@ const Container = styled.div`
   }
 `;
 
-const Layout = ({ children }) => {
+const Layout = ({ props, children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -38,18 +38,11 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
-      {/* <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 1600,
-          padding: `0px 2.5rem 1.45rem`,
-          // paddingTop: '2.5rem',
-        }}
-      > */}
       <Container>
         <main>{children}</main>
       </Container>
+
+
     </>
   )
 }

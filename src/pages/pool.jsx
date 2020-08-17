@@ -3,11 +3,11 @@ import styled from "styled-components"
 import { useSelector, useDispatch } from 'react-redux'
 import {useTransition, animated} from 'react-spring'
 
-import Layout from "../components/layout"
+import Layout from "../components/layout-dark"
 import SEO from "../components/seo"
-import Nav from "../components/nav"
+import Nav from "../components/nav-dark"
 import MobileNav from "../components/mobile-nav"
-import Header from "../components/header"
+import Header from "../components/header-dark"
 
 import Intro from "../components/pool/intro"
 
@@ -43,10 +43,10 @@ export default function Pool() {
   }
 
   return (
-    <Layout>
+    <Layout color={"#111111"}>
       <SEO title="POOL" />
       <Header pageTitle={"POOL"} />
-      {
+      {/* {
         menuState ?
           <MobileNav active={active} onChange={handleTabSwitch}/> :
           <Wrapper>
@@ -55,7 +55,13 @@ export default function Pool() {
             }
             <Nav active={active} onChange={handleTabSwitch}/>
           </Wrapper>
-      }
+      } */}
+      <Wrapper>
+        {
+          renderActiveSection()
+        }
+        <Nav active={active} onChange={handleTabSwitch}/>
+      </Wrapper>
     </Layout>
   )
 }
