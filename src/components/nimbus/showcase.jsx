@@ -68,7 +68,7 @@ const FlexBox = styled.div`
   @media (max-width: 1240px) {
     display: block;
     margin: 3.5rem 0;
-    padding: 0;
+    padding: 1.5rem;
   }
 `
 

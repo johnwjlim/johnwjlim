@@ -73,7 +73,7 @@ const ImageCaption = styled.h2`
   bottom: 0;
   left: 0;
   max-width: 50rem;
-  letter-spacing: -0.3px;
+  letter-spacing: -0.7px;
   // font-weight: 900;
   font-weight: 500;
   margin: 0;
