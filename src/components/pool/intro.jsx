@@ -215,11 +215,13 @@ export default function Intro() {
             <br/>
             The shower works by having a screen display in the shower where users can visualize real time usage, view timers etc. while control is performed through a voice interface. (because wet fingers on a touch screen is generally a bad idea) I've made a video presentation that goes into detail on specific visualizations as well as how the system works.
             <br/><br/> 
+            <div data-sal="fade" data-sal-delay="100" data-sal-duration="1200" data-sal-easing="ease">
             <Video>
               <Frame 
               src="https://www.youtube.com/embed/HbaYwjYpr-Q"
               />
             </Video>
+            </div>
             {/* <Video>
             <Frame src="https://player.vimeo.com/video/448334727" />
             </Video> */}
@@ -234,7 +236,7 @@ export default function Intro() {
           <BlockText>
             For our team deliverable, we were to design a solution to the problem with <Highlight>the technologies of tommorow.</Highlight> Our proposed solution was a mixed reality experience that aims to visualize household energy and water usage in order to encourage responsible consumption. We called it POOL – kind of as a playful way to reflect the way our design aimed to visualize resource footprints as "pools of impact" on the ground.
             <br/><br/> 
-            Building off the idea of real-time feedback, the core tenet of our design solution was about closing the feedback loop between resource usage and awareness of the actual impact of use. POOL aims to address this by leveraging mixed reality technologies to project real-time resource impact at the point of use to give users a better understanding of their consumption habits and behavior.
+            Building off the idea of real-time feedback, the core tenet of our design solution was about closing the feedback loop between resource usage and awareness of the actual impact of use. POOL aims to address this by leveraging emerging mixed reality technologies to project real-time resource impact at the point of use to give users a better understanding of their consumption habits and behavior.
             <br/><br/> 
               I created a one page poster to showcase through storyboard what our design was about and how it worked.
           </BlockText>
