@@ -153,6 +153,13 @@ export default function Intro() {
           }
         }
       }
+      Shower: file(relativePath: {eq: "shower.jpg"}) {
+        childImageSharp {
+          fluid (maxWidth: 3200) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
     }
   `)
 
@@ -192,8 +199,15 @@ export default function Intro() {
           <BlockText>    
             As my individual deliverable for this project, I designed a solution for our problem based on <Highlight>existing technologies that are available today.</Highlight> Having identified lengthy showers as one of the most frivolous uses of water, my solution was a voice activated, digitally controlled shower to help users better visualize and track their showers and prevent shower room karaokes – which have a tendency of causing users to lose track of time in the shower.
             <br/><br/>
-            Our research indicated that most people simply had little idea of how much resources they were consuming until the bill comes in at the end of the month, which by itself is obtuse and provides little information of how water and energy has been consumed. By providing real-time feedback, the intent is to help users improve their awareness of consumption.
+            Our research indicated that most people simply had little idea of how much resources they were consuming until the bill comes in at the end of the month, which by itself is obtuse and provides little information of how water and energy has been consumed. 
+            It provides only give a macro-level overview of consumption but little to no micro-level fidelity that users can actually use to make meaningful changes in behavior.
             <br/><br/>
+            My design solution is a voice-activated, digitally controlled shower that aims to provide real-time feedback to help users improve their awareness of consumption and hopefully make changes to behavior.
+            <br/><br/>
+            <div style={{margin: "3.5rem 0"}}>
+              <Img fluid={data.Shower.childImageSharp.fluid} />
+              <ImageSubCaption>Display in the shower provides real-time feedback of user consumption while control is performed through a voice interface.</ImageSubCaption>
+            </div>
             <div style={{margin: "3.5rem 0"}}>
               <img src={Gif}  />
               <ImageSubCaption>Water level visualization in shower display falls as time remaining on the timer decreases. </ImageSubCaption>
@@ -220,7 +234,7 @@ export default function Intro() {
           <BlockText>
             For our team deliverable, we were to design a solution to the problem with <Highlight>the technologies of tommorow.</Highlight> Our proposed solution was a mixed reality experience that aims to visualize household energy and water usage in order to encourage responsible consumption. We called it POOL – kind of as a playful way to reflect the way our design aimed to visualize resource footprints as "pools of impact" on the ground.
             <br/><br/> 
-            A core tenet of our design solution was about closing the feedback loop between resource usage and awareness of the actual impact of use. Current billing cycles give a macro-level overview of consumption but provides little to no micro-level fidelity that users can actually use to make meaningful changes in behavior. POOL aims to address this by leveraging mixed reality technologies to project real-time resource impact at the point of use to give users a better understanding of their consumption habits and behavior.
+            Building off the idea of real-time feedback, the core tenet of our design solution was about closing the feedback loop between resource usage and awareness of the actual impact of use. POOL aims to address this by leveraging mixed reality technologies to project real-time resource impact at the point of use to give users a better understanding of their consumption habits and behavior.
             <br/><br/> 
               I created a one page poster to showcase through storyboard what our design was about and how it worked.
           </BlockText>
