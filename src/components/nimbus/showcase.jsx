@@ -714,64 +714,12 @@ export default function Showcase(props) {
           </TextBlock>
         </OffsetBody>
 
-        {/* </div> */}
-        {/* <OffsetBody>
-          <TextBlock>
-            <BlockIntro>
-              We talked to people but more importantly, we listened.
-            </BlockIntro>
-            <p>
-              We prized user feedback above all else. While we sought to test specific features and flows in our user tests, we also took the opportunity to conduct semi-structured interviews with our testers. As product designer, this was especially critical to me; Because as much as I thought I understood the problem space, I was not the user. Conversations with testers and potential users helped us check assumptions that we may have carried and also yielded insight that helped us evolve the product.
-            </p>
-          </TextBlock>
-        </OffsetBody>
-        <ImageOffset style={{marginBottom: "3.5rem"}}>
-          <Img fluid={data.Process.childImageSharp.fluid}  />
-          <ImageSubCaption>Our solution was fleshed out over a series of design sprints, where use cases as well as features were iterated and tested through rapid prototyping. Test, iterate and then test it again was the mantra we lived by.</ImageSubCaption>
-        </ImageOffset>
-        <ImageOffset style={{marginTop: "3.5rem"}}>
-          <Img fluid={data.TestFrameFullWidth.childImageSharp.fluid}  />
-          <ImageSubCaption>User tests were conducted in both controlled settings and guerilla style where unwitting passer-bys were recruited to be impromptu testers. Conversations with testers were critical towards helping us expand our understand of the problem space and evolve our vision for the product.</ImageSubCaption>
-        </ImageOffset> */}
-        {/* <FlexBox style={{backgroundColor: "#ffffff", padding: "3.5rem"}}>
-          <PrototypeWrapper>
-            <iframe src="https://marvelapp.com/prototype/ee03f2a?emb=1&iosapp=false&frameless=false"style={iFrameStyle} width="452" height="700" allowtransparency="true" frameborder="0"></iframe>
-          </PrototypeWrapper>
-          <OffsetBody>
-            <PrototypeText>
-              <FlexBlockIntro>
-                Enable cookies to view prototype. (Like actually)
-              </FlexBlockIntro>
-              <p>
-                Marvel has been having issues with browsers that block cookies, resulting in broken embedded prototypes, and I do apologize if this prototype fails to load for you. We originally made this prototype to test our user flow for creating a group. You're more than welcome to give it a spin – the goal here is to join a group travelling to a popular hiking trail called "Mailbox Peak". 
-              </p>
-            </PrototypeText>
-          </OffsetBody>
-        </FlexBox> */}
-        {/* <OffsetBody>
-          <TextBlock>
-            <BlockIntro>
-              Putting It Together.
-            </BlockIntro>
-            <p>We saved the high-fidelity mockups for last and really only embarked on it after we validated our key flows and features with lower-fidelity wireframes. One of the major findings that came up during the iteration process was that many of our users found it difficult to find relevant and accurate information on outdoor areas. This was a pain point which we sought to address especially with our location screens.</p>
-          </TextBlock>
-        </OffsetBody> */}
-        {/* <ImageOffset style={{margin: "1.25rem 0", padding: "0"}} >
-          <Img fluid={data.Location.childImageSharp.fluid}  />    
-        </ImageOffset>
-        <ImageOffset style={{margin: "1.25rem 0", padding: "0"}} >
-          <Img fluid={data.Trip.childImageSharp.fluid}  />    
-        </ImageOffset>
-        <ImageOffset style={{marginTop: "1.25rem", padding: "0"}} >
-          <Img fluid={data.Profile.childImageSharp.fluid}  />    
-          <ImageSubCaption>High-fi slide deck was made at some point for the benefit of the class.</ImageSubCaption>
-        </ImageOffset> */}
-        <div data-sal="fade" data-sal-delay="100" data-sal-duration="1200" data-sal-easing="ease">
+        {/* <div data-sal="fade" data-sal-delay="100" data-sal-duration="1200" data-sal-easing="ease">
         <ImageBackground>
           <Img fluid={data.PNW.childImageSharp.fluid} />
           <ImageSubCaption>Nimbus aims to build a community of outdoor enthusiasts to expand access to the outdoors.</ImageSubCaption>
         </ImageBackground>
-        </div>
+        </div> */}
         <FlexBox style={{backgroundColor: "#f5f5f5"}}> 
           <OffsetBody>
             <img src={joinGif} />
