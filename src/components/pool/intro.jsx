@@ -6,11 +6,8 @@ import Img from "gatsby-image"
 import * as Styled from "../constants"
 
 import Gif from "../../images/pool.gif"
+import Animated from "../../images/pool.mp4"
 
-const TitleBox = styled.div`
-  text-align: center;
-  margin-bottom: 2.5rem;
-`
 
 const ImageBackground = styled.div`
   background-color: #111111;
@@ -59,7 +56,7 @@ const BlockTitle = styled.h2`
   letter-spacing: -0.5px;
   color: #ffffff;
 
-  @media (max-width: 1024px) {
+  @media (max-width: 124px) {
     margin: 2.5rem 0;
   }
 `
@@ -72,7 +69,7 @@ const BlockText = styled.p`
   line-height: 1.45;
   letter-spacing: -0.3px;
   color: #dddddd;
-  @media (max-width: 1024px) {
+  @media (max-width: 1240px) {
     margin: 0;
   }
 `
@@ -116,15 +113,29 @@ const Frame = styled.iframe`
     height: 100%;
     
 `
+const VFrame = styled.video`
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    
+`
 
 const ImageWrapper = styled.div`
-    margin: 3.5rem 0;
-
+    margin: 3.5rem auto;
+    width: 100%;
     @media (max-width: 1024px) {
-      margin: 3.5rem 0
+      margin: 3.5rem auto;
     }
 `
 
+const GIF = styled.img`
+    height: auto;
+    width: auto;
+`
 
 
 export default function Intro() {
@@ -184,7 +195,7 @@ export default function Intro() {
 
   return (
     <>
-      <Styled.Container style={{marginTop: "64px"}}>
+      <Styled.Container>
         <div data-sal="fade" data-sal-delay="200" data-sal-duration="1200" data-sal-easing="ease">
         <Styled.ImageWrapper>
           <Img fluid={data.Patrick.childImageSharp.fluid} />
@@ -238,7 +249,12 @@ export default function Intro() {
                 <ImageSubCaption>Track usage statistics and trends, as well as establish predefined settings with the mobile based interface.</ImageSubCaption>
               </div>
               <div style={{margin: "1.75rem 0"}}>
-                <img src={Gif}  />
+              <Video>
+                <VFrame autoplay controls
+                src={Animated} type="video/mp4" allow="accelerometer; autoplay;"
+                frameBorder="0"
+                />
+              </Video>
                 <ImageSubCaption>Water level visualization in shower display falls as time remaining on the timer decreases. </ImageSubCaption>
               </div>
             </ImageWrapper>
@@ -252,11 +268,6 @@ export default function Intro() {
               />
             </Video>
             </div>
-            {/* <Video>
-            <Frame src="https://player.vimeo.com/video/448334727" />
-            </Video> */}
-
-            {/* <Frame src="https://player.vimeo.com/video/448334727" frameborder="0" allow="autoplay; fullscreen" allowfullscreen/> */}
           </BlockText>
         </FlexBox>  
         </div>

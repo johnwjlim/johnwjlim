@@ -14,7 +14,7 @@ export const Container = styled.div`
   // overflow: auto;
   // height: 89vh;
   // height: 90vh;
-  padding-right: 15%;
+  padding-right: 15rem;
 
   @media (max-width: 1240px) {
     width: 100%;

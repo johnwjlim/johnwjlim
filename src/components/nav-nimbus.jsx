@@ -4,12 +4,12 @@ import styled from "styled-components"
 
 const Container = styled.nav`
   width: 16em;
+  // z-index: 10;
   position: fixed;   
   height: 91%;
   right: 0;
-  // padding: 0 1rem;
-  margin-right: 1rem;
-  margin-left: 0;
+  margin: 0 1rem;
+  margin-left: 0; 
   margin-top: 64px;
   @media (max-width: 1240px) {
     display: none; 
