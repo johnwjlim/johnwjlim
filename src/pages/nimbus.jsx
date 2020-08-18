@@ -21,8 +21,7 @@ import { nimbusRoutes } from "../components/constants"
 
 const Wrapper = styled.div`
   display: flex;
-  justify-content: space-between;
-  // margin-top: 76px;
+  // justify-content: space-between;
 `
 
 export default function Nimbus() { 

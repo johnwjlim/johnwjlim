@@ -19,6 +19,7 @@ const Container = styled.div`
   padding: 0px 2.5rem 1.45rem;
   position: relative;
   // background-color: #f9f9f9;
+  box-sizing: border-box;
 
   @media (max-width: 425px) {
     padding: 0 1.25rem 1.45rem;

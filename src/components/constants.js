@@ -10,12 +10,13 @@ export const poolSections = ["Intro + Ideation", "Individual Deliverable", "Team
 
 export const Container = styled.div`
   max-width: 1360px;
-  width: 85%;
+  // width: 85%;
   // overflow: auto;
   // height: 89vh;
   // height: 90vh;
+  padding-right: 15%;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1240px) {
     width: 100%;
     overflow: visible;
 

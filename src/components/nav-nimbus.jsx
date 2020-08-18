@@ -7,7 +7,8 @@ const Container = styled.nav`
   position: fixed;   
   height: 91%;
   right: 0;
-  margin: 0 1rem;
+  // padding: 0 1rem;
+  margin-right: 1rem;
   margin-left: 0;
   margin-top: 64px;
   @media (max-width: 1240px) {

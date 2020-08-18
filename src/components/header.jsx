@@ -7,19 +7,21 @@ import {useTransition, animated} from 'react-spring'
 const Container = styled.div`
   display: flex;
   justify-content: space-between;
-  // padding: 1.5rem 0;
+  margin: 0 auto;
   max-width: 1680px;
-  // margin: 0 auto;
-  // position: absolute;
+  position: absolute;
   position: fixed;
   padding: 1.15rem 2.5rem;
+  // margin: 1.15rem 2.5rem
   top: 0;
   left: 0;
   z-index: 5;
-  width: 100%;
-  // background-color: rgba(255,255,255,0.75);
-  // border-bottom: 1px solid #f1f1f1;
-  // box-shadow: 1px 1px #c5c5c5;
+  width: 95%;
+  box-sizing: border-box;
+  
+  @media (max-width: 1240px) {
+    width: 100%;
+  }
 
   @media (max-width: 425px) {
     padding: 1.5rem;
@@ -100,7 +102,7 @@ const Menu = styled.a`
   font-size: 1.2rem;
   line-height: 1.5;
   cursor: pointer;
-  margin-right: 5rem;
+  margin-right: 2.5rem;
 
   @media (max-width: 425px) {
     font-size: 1rem;
@@ -143,7 +145,7 @@ export default function Header(props) {
   }
 
   return (
-    <Container>
+     <Container>
       <Wrapper>
         <StyledLink 
           to="/"
@@ -174,6 +176,7 @@ export default function Header(props) {
         }
       </Wrapper>
       <Menu onClick={() => triggerMenu()}>Menu</Menu>
-    </Container>
+    </Container> 
+    
   )
 }

@@ -64,6 +64,10 @@ const FlexBox = styled.div`
   align-items: center;
   margin: 7rem 0;
   padding: 3.5rem;
+ 
+  @media (max-width: 1440px) {
+    padding: 1.75rem;
+  }
 
   @media (max-width: 1240px) {
     display: block;
@@ -399,13 +403,6 @@ export default function Showcase(props) {
           }
         }
       }
-      TestFrame: file(relativePath: {eq:"test-frame.png"}) {
-        childImageSharp {
-          fluid (maxWidth: 3200) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
       TestFrameFullWidth: file(relativePath: {eq:"test-frame-full-width.png"}) {
         childImageSharp {
           fluid(maxWidth: 3200) {
@@ -493,26 +490,6 @@ export default function Showcase(props) {
               <PitchDeckLink href="https://www.figma.com/proto/rqb3pn14vDM8drmDBvJGWY/Nimbus-Pitch-Deck?node-id=92%3A3&scaling=scale-down" target="_blank">View the condensed pitch deck here!</PitchDeckLink>
             </TextBlock>
         </OffsetBody>
-        {/* <FlexBox style={{alignItems: "flex-start"}}>
-          <OffsetBody style={{marginTop: "0", marginBottom: "3.5rem"}}>
-            <TextBlock>
-              <HeroText>
-                <strong style={{letterSpacing: "-1px", color: "#333333", fontWeight: "500"}}>Nimbus</strong>
-              </HeroText>
-            </TextBlock>
-          </OffsetBody>
-          <OffsetBody style={{marginTop: "0", marginBottom: "3.5rem"}}>
-            <TextBlock>
-              <HeroText style={{maxWidth: "42rem"}}> 
-                A mobile experience that aims to tackle the transportation challenges of remote outdoor exploration by connecting adventurers with one another and having them share transport to outdoor recreation areas. 
-              </HeroText>
-              <PitchDeckLink href="https://www.figma.com/proto/rqb3pn14vDM8drmDBvJGWY/Nimbus-Pitch-Deck?node-id=92%3A3&scaling=scale-down" target="_blank">View the condensed pitch deck here!</PitchDeckLink>
-            </TextBlock>
-          </OffsetBody>
-        </FlexBox> */}
-        {/* <ImageWrapper>
-          <Img fluid={data.RevisedScreensWhite.childImageSharp.fluid}/>
-        </ImageWrapper> */}
         <OffsetBody style={{}}>
           <TextBlock >
             {/* <SectionTitle>

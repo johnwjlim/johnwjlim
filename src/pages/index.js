@@ -23,9 +23,6 @@ import Pool from "../components/home/pool-thumbnail"
 const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
-  // margin-top: 76px;
-  // margin-top: 58px;
-  // background-color: #;
   @media (max-width: 1240px) {
     margin-top: 76px;
   }
@@ -34,7 +31,7 @@ const Wrapper = styled.div`
 const Body = styled(Container)`
   // width: 100%;
   margin: 0 2rem;
-  margin-right: 15em;
+  // margin-right: 15em;
 
   @media (max-width: 1240px) {
     margin: 0;
@@ -339,6 +336,7 @@ export default function IndexPage() {
         <MobileNav /> :
         <>
           <Wrapper>
+            <div style={{width: "100%"}}>
             <Body>
               <FauxHeader>
                 <StyledLink to="/">
@@ -409,6 +407,7 @@ export default function IndexPage() {
               </div>
               {/* </div> */}
             </Body>
+            </div>
             {/* <div style={{marginTop: "64px"}}> */}
               <Nav />
             {/* </div> */}
