@@ -28,7 +28,7 @@ const InlineLink = styled.a`
   // font-style: italic;
   text-decoration: underline;
   // border-bottom: 1px solid #ffffff;
-  letter-spacing: 0;
+  letter-spacing: -0.2px;
 
   :hover {
     cursor: pointer;
@@ -276,6 +276,14 @@ export default function Intro() {
           </Styled.ImageWrapper>
         </ImageBackground>
         </div>
+        <FlexBox>
+          <BlockTitle>End Notes</BlockTitle>
+          <BlockText>
+           For our team deliverable, we were given two rules: 1. Assume that any technology that we needed exists – so holograms, virtual reality contact lenses and anything we could think of were basically in play, and 2. No screens. 
+          <br/><br/>
+           If rule 1 encouraged me to think out of the box, rule 2 forced me to open my mind. Was I out of my comfort zone? Most definitely. Yet it was refreshing and exhilarating to be able to design unshackled by the constraints of feasibility. Putting POOL together was one of the most rewarding projects I got to be a part of – the ideas we got to throw around were almost out of this world –  and I am glad to have had the experience.
+          </BlockText>         
+        </FlexBox>
       </Styled.Container>
     </>
   )
