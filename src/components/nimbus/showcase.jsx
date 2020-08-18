@@ -322,10 +322,19 @@ const JohnMuirCaption = styled.p`
   font-weight: 500;
 `
 
+const ImageBackground = styled.div`
+  background-color: #f5f5f5;
+  padding: 7rem;
+
+  @media (max-width: 1120px) {
+    padding: 0;
+  }
+`
 
 const iFrameStyle = {
   transform: "scale(0.75)"
 }
+
 
 
 
@@ -468,6 +477,13 @@ export default function Showcase(props) {
         }
       }
       FinalScreen: file(relativePath: {eq: "final-screens.png"}) {
+        childImageSharp {
+          fluid(maxWidth: 3200) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      PNW: file(relativePath: {eq: "mockup.png"}) {
         childImageSharp {
           fluid(maxWidth: 3200) {
             ...GatsbyImageSharpFluid
@@ -750,6 +766,12 @@ export default function Showcase(props) {
           <Img fluid={data.Profile.childImageSharp.fluid}  />    
           <ImageSubCaption>High-fi slide deck was made at some point for the benefit of the class.</ImageSubCaption>
         </ImageOffset> */}
+        <div data-sal="fade" data-sal-delay="100" data-sal-duration="1200" data-sal-easing="ease">
+        <ImageBackground>
+          <Img fluid={data.PNW.childImageSharp.fluid} />
+          <ImageSubCaption>Nimbus aims to build a community of outdoor enthusiasts to expand access to the outdoors.</ImageSubCaption>
+        </ImageBackground>
+        </div>
         <FlexBox style={{backgroundColor: "#f5f5f5"}}> 
           <OffsetBody>
             <img src={joinGif} />

@@ -56,7 +56,7 @@ const BlockTitle = styled.h2`
   font-weight: 500;
   font-size: 1.25rem;
   width: 18rem;
-  letter-spacing: -0.3px;
+  letter-spacing: -0.5px;
   color: #ffffff;
 
   @media (max-width: 1024px) {
@@ -114,6 +114,7 @@ const Frame = styled.iframe`
     right: 0;
     width: 100%;
     height: 100%;
+    
 `
 
 const ImageWrapper = styled.div`
@@ -206,12 +207,14 @@ export default function Intro() {
 
           </BlockText>
         </FlexBox>  
+        <div data-sal="fade" data-sal-delay="100" data-sal-duration="1200" data-sal-easing="ease">
         <ImageOffset>
           <Img fluid={data.PoolIdeation.childImageSharp.fluid} />
           <ImageSubCaption>
-            Ideation was a team effort – we brainstormed as a group and emerged with dozens of ideas on how to approach this problem. We sorted through the ideas we had and managed to synthesize them down to a couple of themes.
+            Ideation was a team effort – we undertook a series of ideation exercises as a group and emerged with dozens of ideas on how to approach this problem. We sorted through the ideas we had and managed to synthesize them down to a couple of themes, which we then carried forward for both our individual and team deliverables.
           </ImageSubCaption>
         </ImageOffset>
+        </div>
         <div data-sal="fade" data-sal-delay="100" data-sal-duration="1200" data-sal-easing="ease">
         <FlexBox>
           <BlockTitle>
@@ -259,7 +262,7 @@ export default function Intro() {
         </div>
         <div data-sal="fade" data-sal-delay="100" data-sal-duration="1200" data-sal-easing="ease">
         <FlexBox>
-          <BlockTitle>Pool</BlockTitle>
+          <BlockTitle>The Headliner</BlockTitle>
           <BlockText>
             For our team deliverable, we were to design a solution to the problem with <Highlight>the technologies of tommorow.</Highlight> Our proposed solution was a mixed reality experience that aims to visualize household energy and water usage in order to encourage responsible consumption. We called it <Highlight>POOL</Highlight> – kind of as a playful way to reflect the way our design aimed to visualize resource footprints as "pools of impact" on the ground.
             <br/><br/> 
