@@ -364,20 +364,6 @@ export default function Showcase(props) {
           }
         }
       }
-      Grid: file(relativePath: {eq: "image-grid.png"}) {
-        childImageSharp {
-          fluid(maxWidth: 3200) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      GridFull: file(relativePath: {eq: "image-grid-full-width.png"}) {
-        childImageSharp {
-          fluid(maxWidth: 3200) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
       ProfileMontage: file(relativePath: {eq: "profile-montage.png"}) {
         childImageSharp {
           fluid(maxWidth: 3200) {
