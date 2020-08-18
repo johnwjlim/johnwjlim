@@ -16,9 +16,7 @@ const SubHeader = styled.h2`
 
 
 export default function SurveyIdeation(props) {
-  // useEffect(() => {
-  //   window.scrollTo(0, 0)
-  // }, [])
+
 
   const data = useStaticQuery(graphql`
     query {

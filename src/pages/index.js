@@ -22,16 +22,22 @@ import Pool from "../components/home/pool-thumbnail"
 
 const Wrapper = styled.div`
   display: flex;
-  justify-content: space-between;
   @media (max-width: 1240px) {
     margin-top: 76px;
   }
 `;
 
+const HeaderWrapper = styled.div`
+  display: none;
+  
+  @media (max-width: 1240px) {
+    display: block;
+  }
+`
+
+
 const Body = styled(Container)`
-  // width: 100%;
   margin: 0 2rem;
-  // margin-right: 15em;
 
   @media (max-width: 1240px) {
     margin: 0;
@@ -39,11 +45,7 @@ const Body = styled(Container)`
 `;
 
 const TitleBox = styled.div`
-  // margin: 5rem 0 10rem;
-  // margin: 3.5rem 0 5rem;
-  // margin: 0.7rem 0;
-  // margin: 4rem 0;
-  // margin: 0 3rem;
+
   margin-bottom: 1rem; 
   margin-bottom: 8rem;
   // border-bottom: 1px solid #dddddd;
@@ -55,111 +57,9 @@ const TitleBox = styled.div`
   }
 `
 
-const Subtitle = styled.h3`
-  // font-size: 1.1rem;
-  font-weight: 300;
-  color: #666666;
-  letter-spacing: -0.2px;
-  // color: #333333;
-  margin-bottom: 0.3rem;
-  font-size: 1.3rem;
 
-  @media (max-width: 768px) {
-    display: none;
-  }
-`
 
-const MobileSubtitle = styled(Subtitle)`
-  @media (max-width: 768px) {
-    display: block;
-  }
-`
 
-const CaseLink = styled(Link)`
-  text-decoration: none;
-  transition: 0.2s;
-
-  :hover {
-    cursor: pointer;
-    transform: scale(0.8);
-  }
-`;
-
-const CaseCaption = styled.h3`
-  // font-weight: 400;
-  color: #333333;
-  margin-top: 1rem;
-  // letter-spacing: -0.3px;
-`
-
-const ScaledImage = styled(ImageWrapper)`
-transition: transform 0.2s;
-
-:hover {
-  transform: scale(1.03)
-}
-`
-
-const NewTitle = styled.h1`
-  letter-spacing: -4px;
-  font-weight: 700;
-  font-size: 4rem;
-  // margin: 4rem 0; 
-  margin-bottom: 4rem;
-  line-height: 0.99;
-  color: #111111;
-  // color: #4353ff;
-
-  @media (max-width: 1024px) {
-    font-size: 2.5rem;
-    letter-spacing: -2px
-  }
-
-  // @media(max-width: 768px) {
-  //   letter-spacing: -2px;
-  //   font-size: 1.5rem;
-  // }
-`
-const NewSubtitle = styled.h4`
-  letter-spacing: -0.2px;
-  font-weight: 400;
-  margin-bottom: 8rem;
-  // margin-bottom: 4rem;
-  margin-top: 3.9rem;
-  color: #666;
-
-  @media (max-width: 1240px) {
-    display: none;
-  }
-`
-
-const NewSubtext = styled.h6`
-  margin-top: 1rem;
-  letter-spacing: -0.2px;
-  
-  color: #dddddd;
-  font-weight: 400;
-`
-
-const HeaderWrapper = styled.div`
-  display: none;
-  
-  @media (max-width: 1240px) {
-    display: block;
-  }
-`
-
-const Sub = styled.h3`
-  letter-spacing: -0.3px;
-  color: #333333;
-  font-weight: 400;
-  line-height: 1.5;
-
-  @media (max-width: 1024px) {
-    font-size: 1rem;
-    letter-spacing: -0.2px;
-  }
-`
 
 const FauxHeader = styled.div`
   position: fixed;
@@ -340,29 +240,9 @@ export default function IndexPage() {
             <Body>
               <FauxHeader>
                 <StyledLink to="/">
-                  {/* <HeaderTitle>John Lim</HeaderTitle> */}
-                  {/* <NewSubtitle>Digital Product Designer</NewSubtitle> */}
                 </StyledLink>
               </FauxHeader>
-
               <TitleBox>
-                {/* <NewSubtitle>Digital Product Designer</NewSubtitle>  */}
-                {/* <NewTitle>
-                  <div data-sal="fade" data-sal-delay="100" data-sal-duration="1200" data-sal-easing="ease"> 
-                    <TitleStyle>John is</TitleStyle><br/>
-                    <TitleStyle>A Pavement Pounder. </TitleStyle> <br/>
-                  </div>
-                    A Pixel Pusher. <Emoji> 🏃 👨‍🎓 ⛷</Emoji> <br/> 
-                  <div data-sal="fade" data-sal-delay="100" data-sal-duration="1200" data-sal-easing="ease"> 
-                    <TitleStyle>A Powder Hound. </TitleStyle> 
-                  </div>
-                </NewTitle>
-                <div data-sal="fade" data-sal-delay="300" data-sal-duration="1200" data-sal-easing="ease"> 
-                  <Sub>Enthralled by the things that make us human. <br/> Sustained by excessive amounts of coffee.</Sub>
-                  <Arrow >
-                    <div class="arrow" onClick={() => scrollTo('#nimbus')}/>
-                  </Arrow>
-                </div> */}
                 <div data-sal="fade" data-sal-delay="150" data-sal-duration="1200" data-sal-easing="ease">
                   <Title>
                     <div>
@@ -371,31 +251,13 @@ export default function IndexPage() {
                   </Title> 
                 </div>
                 <div data-sal="fade" data-sal-delay="300" data-sal-duration="1200" data-sal-easing="ease">
-                  {/* <Text>
-                    I study <Highlight>Human Computer Interaction</Highlight> at the <Highlight>University of Washington</Highlight> enthralled by the things that make us <Highlight>human</Highlight> and driven by the 
-                    pursuit of the elusive <Highlight>intersection</Highlight> between <Highlight>technology and humanity.</Highlight> 
-                  </Text> */}
+
                   <Text>I'm an undergraduate student at the <Highlight>University of Washington</Highlight> majoring in <Highlight>Human Computer Interaction</Highlight> and enthralled by the factors that make us <Highlight>human.</Highlight></Text>
-                  {/* <Text>
-                    If not <Highlight>skiing,</Highlight> I can be found <Highlight>grinding</Highlight> out the miles on the gravel or <Highlight>pushing pixels</Highlight> while nursing my second coffee of the day in one of the many <Highlight>coffee</Highlight> shops around <Highlight>Seattle.</Highlight>
-                  </Text> */}
+
                   <Text>If not <Highlight>pushing pixels</Highlight> in a Seattle coffee shop, catch me <Highlight>chasing powder</Highlight> in my local ski hill or wherever there's good snow to be found.</Text>
                 </div>
-                {/* <div data-sal="fade" data-sal-delay="400" data-sal-duration="1200" data-sal-easing="ease">
-                  <Dash>
-                    ––
-                  </Dash>
-                </div>
-                <div data-sal="fade" data-sal-delay="400" data-sal-duration="1200" data-sal-easing="ease">
-                  <MicroText>
-                    Scroll down to view select projects 
-                  </MicroText>
-                  <Arrow >
-                      <div class="arrow" onClick={() => scrollTo('#nimbus')}/>
-                  </Arrow>
-                </div> */}
+
               </TitleBox>
-              {/* <Divider /> */}
               <div data-sal="fade" data-sal-delay="100" data-sal-duration="1500" data-sal-easing="ease" id="nimbus" style={{paddingTop: "1rem"}}> 
                <New />
               </div>
@@ -405,12 +267,9 @@ export default function IndexPage() {
               <div data-sal="fade" data-sal-delay="100" data-sal-duration="1500" data-sal-easing="ease"> 
                 <GChallenge />
               </div>
-              {/* </div> */}
             </Body>
             </div>
-            {/* <div style={{marginTop: "64px"}}> */}
               <Nav />
-            {/* </div> */}
           </Wrapper>
         </>
       }
