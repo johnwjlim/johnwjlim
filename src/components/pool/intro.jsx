@@ -66,7 +66,7 @@ const BlockTitle = styled.h2`
 `
 
 const BlockText = styled.p`
-  max-width: 45rem;
+  max-width: 42rem;
   // max-width: 42rem;
   margin: 0 8rem;
   font-size: 1.1rem;
@@ -204,7 +204,7 @@ export default function Intro() {
             Background
           </BlockTitle>
           <BlockText>    
-             <Highlight>POOL</Highlight> was the cumulative deliverable for an experience design project that I worked on as part of an Interaction Design class. I had the pleasure of collaborating with three other immensely talented individuals for this project. I'd love for you to check out their portfolios if you can: &nbsp; 
+             <Highlight>POOL</Highlight> was the cumulative deliverable for an experience design project that I worked on as part of an Interaction Design class. I had the pleasure of collaborating with three other immensely talented individuals for this project. I'd love for you to check out their portfolios: &nbsp; 
             <InlineLink target="_blank" href="https://abooneportfolio.com/">Ashley Boone</InlineLink>, &nbsp; 
             <InlineLink target="_blank" href="https://www.isabellearmstrong.me/">Isabelle Armstrong</InlineLink>, &nbsp;
             <InlineLink target="_blank" href="http://stephensherwood.me/">Stephen Sherwood</InlineLink>.
@@ -219,7 +219,7 @@ export default function Intro() {
         <ImageOffset>
           <Img fluid={data.PoolIdeation.childImageSharp.fluid} />
           <ImageSubCaption>
-            Ideation was a team effort – we undertook a series of ideation exercises as a group and emerged with dozens of ideas on how to approach this problem. We sorted through the ideas we had and managed to synthesize them down to a couple of themes, which we then carried forward for both our individual and team deliverables.
+            Ideation was a team effort – we undertook a series of ideation exercises (brainstorming, crazy 8s) as a group and emerged with dozens of ideas on how to approach this problem. We sorted through the ideas we had and managed to synthesize them down to a couple of themes, which we then carried forward for both our individual and team deliverables.
           </ImageSubCaption>
         </ImageOffset>
         </div>
@@ -290,7 +290,7 @@ export default function Intro() {
         <FlexBox>
           <BlockTitle>End Notes</BlockTitle>
           <BlockText>
-           For our team deliverable, we were given two rules: 1. Assume that any technology that we needed exists – so holograms, virtual reality contact lenses and anything we could think of were basically in play, and 2. No screens. 
+           When designing POOL, we were given two rules: 1. Assume that any technology that we needed exists – so holograms, virtual reality contact lenses and anything we could think of were basically in play, and 2. No screens. 
           <br/><br/>
            If rule 1 encouraged me to think out of the box, rule 2 forced me to open my mind. Was I out of my comfort zone? Most definitely. Yet it was refreshing and exhilarating to be able to design unshackled by the constraints of feasibility. Putting POOL together was one of the most rewarding projects I got to be a part of – the ideas we got to throw around were almost out of this world –  and I am glad to have had the experience.
           </BlockText>         
