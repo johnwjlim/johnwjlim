@@ -155,13 +155,6 @@ export default function Intro() {
           }
         }
       }
-      PoolPosterNew: file(relativePath: {eq: "pool-poster-2.png"}) {
-        childImageSharp  {
-          fluid (maxWidth: 3200) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
       PoolIdeation: file(relativePath: {eq: "pool-ideation.png"}) {
         childImageSharp {
           fluid (maxWidth: 3200) {
