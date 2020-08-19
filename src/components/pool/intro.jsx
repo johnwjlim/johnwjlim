@@ -78,6 +78,20 @@ const BlockText = styled.p`
   }
 `
 
+const HeroText = styled.h4`
+  font-size: 2.5rem;
+  line-height: 1.1;
+  color: #ffffff;
+  margin: 0;
+  font-weight: 400;
+  letter-spacing: -1.2px;
+
+  @media (max-width: 1240px) {
+    font-size: 2rem;
+    letter-spacing: -0.8px;
+  }
+`
+
 const Highlight = styled.strong`
   color: #ffffff;
   // font-weight: 600;
@@ -204,7 +218,11 @@ export default function Intro() {
             Background
           </BlockTitle>
           <BlockText>    
-             <Highlight>POOL</Highlight> was the cumulative deliverable for an experience design project that I worked on as part of an Interaction Design class. I had the pleasure of collaborating with three other immensely talented individuals for this project. I'd love for you to check out their portfolios: &nbsp; 
+            <HeroText>
+              How might we reimagine household utilities tracking with the technologies of tommorow?
+            </HeroText>
+            <br/><br/>
+            <Highlight>POOL</Highlight> was the cumulative deliverable for an experience design project that I worked on as part of an Interaction Design class. I had the pleasure of collaborating with three other immensely talented individuals for this project. I'd love for you to check out their portfolios: &nbsp; 
             <InlineLink target="_blank" href="https://abooneportfolio.com/">Ashley Boone</InlineLink>, &nbsp; 
             <InlineLink target="_blank" href="https://www.isabellearmstrong.me/">Isabelle Armstrong</InlineLink>, &nbsp;
             <InlineLink target="_blank" href="http://stephensherwood.me/">Stephen Sherwood</InlineLink>.
