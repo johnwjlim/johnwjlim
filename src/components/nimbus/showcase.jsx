@@ -57,9 +57,10 @@ const FlexBox = styled.div`
   align-items: center;
   margin: 7rem 0;
   padding: 3.5rem;
+  justify-content: space-between;
  
   @media (max-width: 1440px) {
-    padding: 1.75rem;
+    padding: 1.75rem 0;
   }
 
   @media (max-width: 1240px) {
@@ -114,6 +115,8 @@ const PrototypeWrapper = styled.div`
 const PrototypeText = styled(TextBlock)`
   max-width: 28rem;
 
+
+
   @media (max-width: 1240px) {
     max-width: 46rem;
   }
@@ -141,6 +144,11 @@ const FlexImage = styled.div`
   width: 30rem;
   padding: 0 3.5rem;
   // max-width: 20%;
+
+  @media (max-width: 1320px) {
+    width: 20rem;
+  }
+
 
   @media (max-width: 1240px) {
     max-width: 25rem;
@@ -308,13 +316,6 @@ export default function Showcase(props) {
         }
       }
       PaperPrototypes: file(relativePath: {eq: "paper-prototypes.png"}) {
-        childImageSharp {
-          fluid(maxWidth: 3200) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      ProfileMontage: file(relativePath: {eq: "profile-montage.png"}) {
         childImageSharp {
           fluid(maxWidth: 3200) {
             ...GatsbyImageSharpFluid
