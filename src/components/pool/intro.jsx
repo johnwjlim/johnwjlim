@@ -10,6 +10,7 @@ import Animated from "../../images/pool.mp4"
 
 const LocalContainer = styled(Styled.Container)`
   margin-top: 64px;
+  p
 `
 
 
@@ -56,7 +57,8 @@ const FlexBox = styled.div`
 const BlockTitle = styled.h2`
   font-weight: 500;
   font-size: 1.25rem;
-  width: 18rem;
+  min-width: 16vw;
+  margin-right: 8rem;
   letter-spacing: -0.5px;
   color: #ffffff;
 
@@ -68,11 +70,11 @@ const BlockTitle = styled.h2`
 const BlockText = styled.p`
   max-width: 42rem;
   // max-width: 42rem;
-  margin: 0 8rem;
+  // margin: 0 8rem;
   font-size: 1.1rem;
   line-height: 1.5;
   letter-spacing: -0.45px;
-  color: #dddddd;
+  color: #eeeeee;
   @media (max-width: 1240px) {
     margin: 0;
   }
@@ -80,11 +82,11 @@ const BlockText = styled.p`
 
 const HeroText = styled.h4`
   font-size: 2.5rem;
-  line-height: 1.1;
+  line-height: 1;
   color: #ffffff;
   margin: 0;
   font-weight: 400;
-  letter-spacing: -1.2px;
+  letter-spacing: -1.5px;
 
   @media (max-width: 1240px) {
     font-size: 2rem;
@@ -213,26 +215,35 @@ export default function Intro() {
           <ImageSubCaption>Mobile app mockup as part of individual deliverable for project</ImageSubCaption>
         </Styled.ImageWrapper>
         </div>
-        <FlexBox>
+        <FlexBox style={{marginBottom: "1.75rem"}}>
           <BlockTitle>
             Background
           </BlockTitle>
           <BlockText>    
-            <HeroText>
+            {/* <HeroText>
               How might we reimagine household utilities tracking with the technologies of tommorow?
             </HeroText>
-            <br/><br/>
+            <br/><br/> */}
             <Highlight>POOL</Highlight> was the cumulative deliverable for an experience design project that I worked on as part of an Interaction Design class. I had the pleasure of collaborating with three other immensely talented individuals for this project. I'd love for you to check out their portfolios: &nbsp; 
             <InlineLink target="_blank" href="https://abooneportfolio.com/">Ashley Boone</InlineLink>, &nbsp; 
             <InlineLink target="_blank" href="https://www.isabellearmstrong.me/">Isabelle Armstrong</InlineLink>, &nbsp;
             <InlineLink target="_blank" href="http://stephensherwood.me/">Stephen Sherwood</InlineLink>.
             <br/><br/>
             The brief for this project was to design an energy and water use tracking information system for home use that helps users to optimize their use of water and energy. 
-            <br/><br/>
+          </BlockText>
+        </FlexBox>
+        <div data-sal="fade" data-sal-delay="200" data-sal-duration="1200" data-sal-easing="ease">
+        <FlexBox style={{marginTop: "1.75rem"}}>
+          <BlockTitle>
+            Ideation
+          </BlockTitle>
+          <BlockText>
             A key theme we came upon during the course of our ideation was a general disconnect between present means of measuring resource consumption and our awareness of what we’re actually using; water meters are notoriously obtuse and utility bills often come in measurements that beyond dollars and cents, are unrelatable to most (it's hard to relate kilowatt hours and cubic feet to more tangible everyday ideas).
-
+            <br/><br/>
+            Our research also indicated that most people simply had little idea of how much they were using until the bill came in at the end of the month, which by itself was obtuse and gave only give a macro-level overview of consumption with little to no micro-level fidelity on behavior and trends that users could actually use to make meaningful changes in behavior.
           </BlockText>
         </FlexBox>  
+        </div>
         <div data-sal="fade" data-sal-delay="100" data-sal-duration="1200" data-sal-easing="ease">
         <ImageOffset>
           <Img fluid={data.PoolIdeation.childImageSharp.fluid} />
@@ -248,9 +259,6 @@ export default function Intro() {
           </BlockTitle>
           <BlockText>    
             As my individual deliverable for this project, I designed a solution for our problem based on <Highlight>existing technologies that are available today.</Highlight> Having identified lengthy showers as one of the most frivolous uses of water, my solution was a voice activated, digitally controlled shower to help users better visualize and track their showers.
-            <br/><br/>
-            Our research also indicated that most people simply had little idea of how much they were using until the bill came in at the end of the month, which by itself was obtuse and
-            gave only give a macro-level overview of consumption with little to no micro-level fidelity on behavior and trends that users could actually use to make meaningful changes in behavior.
             <br/><br/>
             My design solution is a voice-activated, digitally controlled shower that aims to provide real-time feedback to help users improve their awareness of consumption and hopefully make changes to behavior.
             <br/><br/>

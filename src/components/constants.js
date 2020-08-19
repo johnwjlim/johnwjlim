@@ -19,6 +19,7 @@ export const Container = styled.div`
   @media (max-width: 1240px) {
     width: 100%;
     overflow: visible;
+    padding: 0;
 
   }
 `
