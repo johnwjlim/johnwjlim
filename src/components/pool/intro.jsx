@@ -8,6 +8,10 @@ import * as Styled from "../constants"
 import Gif from "../../images/pool.gif"
 import Animated from "../../images/pool.mp4"
 
+const LocalContainer = styled(Styled.Container)`
+  margin-top: 64px;
+`
+
 
 const ImageBackground = styled.div`
   background-color: #111111;
@@ -188,7 +192,7 @@ export default function Intro() {
 
   return (
     <>
-      <Styled.Container>
+      <LocalContainer>
         <div data-sal="fade" data-sal-delay="200" data-sal-duration="1200" data-sal-easing="ease">
         <Styled.ImageWrapper>
           <Img fluid={data.Patrick.childImageSharp.fluid} />
@@ -291,7 +295,7 @@ export default function Intro() {
            If rule 1 encouraged me to think out of the box, rule 2 forced me to open my mind. Was I out of my comfort zone? Most definitely. Yet it was refreshing and exhilarating to be able to design unshackled by the constraints of feasibility. Putting POOL together was one of the most rewarding projects I got to be a part of – the ideas we got to throw around were almost out of this world –  and I am glad to have had the experience.
           </BlockText>         
         </FlexBox>
-      </Styled.Container>
+      </LocalContainer>
     </>
   )
 }
