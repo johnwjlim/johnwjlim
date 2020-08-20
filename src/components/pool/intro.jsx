@@ -82,7 +82,7 @@ const BlockText = styled.p`
 
 const HeroText = styled.h4`
   font-size: 2rem;
-  line-height: 1.18;
+  line-height: 1.2;
   color: #ffffff;
   margin: 0;
   font-weight: 400;
@@ -231,9 +231,9 @@ export default function Intro() {
             Ideation
           </BlockTitle>
           <BlockText>
-            A key theme we came upon during the course of our ideation was a general disconnect between present means of measuring resource consumption and our awareness of what we’re actually using; water meters are notoriously obtuse and utility bills often come in measurements that beyond dollars and cents, are unrelatable to most (it's hard to relate kilowatt hours and cubic feet to more tangible everyday ideas).
+            Ideation revealed a general disconnect between present means of measuring resource consumption and awareness of what we’re actually using; water meters are notoriously obtuse and utility bills often come in measurements (say, kilowatt hour) that beyond dollars and cents, are unrelatable to most.
             <br/><br/>
-            Our research also indicated that most people simply had little idea of how much they were using until the bill came in at the end of the month, which by itself was obtuse and gave only give a macro-level overview of consumption with little to no micro-level fidelity on behavior and trends that users could actually use to make meaningful changes in behavior.
+            Our research also indicated that most people had little idea of how much they were using until the bill came in at the end of the month, which by itself was obtuse and gave only give a macro-level overview of consumption with little to no micro-level fidelity on behavior and trends that users could actually use to make meaningful changes in behavior.
           </BlockText>
         </FlexBox>  
         </div>
@@ -251,9 +251,9 @@ export default function Intro() {
             Individual Deliverable
           </BlockTitle>
           <BlockText>    
-            As my individual deliverable for this project, I designed a solution for our problem based on <Highlight>existing technologies that are available today.</Highlight> Having identified lengthy showers as one of the most frivolous uses of water, my solution was a voice activated, digitally controlled shower to help users better visualize and track their showers.
+            As my individual deliverable for this project, I designed a solution for our problem based on <Highlight>existing technologies that are available today.</Highlight> 
             <br/><br/>
-            My design solution is a voice-activated, digitally controlled shower that aims to provide real-time feedback to help users improve their awareness of consumption and hopefully make changes to behavior.
+            Having identified lengthy showers as one of the most frivolous uses of water, my design solution was a voice-activated, digitally controlled shower that aims to provide real-time feedback to help users improve their awareness of consumption and hopefully make changes to behavior.
             <br/><br/>
             <ImageWrapper>
               <div style={{margin: "1.75rem 0"}}>
@@ -291,9 +291,11 @@ export default function Intro() {
         <FlexBox>
           <BlockTitle>The Headliner</BlockTitle>
           <BlockText>
-            For our team deliverable, we were to design a solution to the problem with <Highlight>the technologies of tommorow.</Highlight> Our proposed solution was a mixed reality experience that aims to visualize household energy and water usage in order to encourage responsible consumption. We called it <Highlight>POOL</Highlight> – kind of as a playful way to reflect the way our design aimed to visualize resource footprints as "pools of impact" on the ground.
+            As our team deliverable, we were to design a solution to the problem with <Highlight>the technologies of tommorow.</Highlight> 
+            <br/><br/>
+            We came up with a mixed reality experience that aims to visualize household energy and water usage in order to encourage responsible consumption. We called it <Highlight>POOL</Highlight> – kind of as a playful way to reflect the way our design aimed to visualize resource footprints as "pools of impact" on the ground.
             <br/><br/> 
-            Building off the idea of real-time feedback, the core tenet of our design was about closing the feedback loop between usage and awareness of the impact of use. <Highlight>POOL</Highlight> leverages emerging mixed reality technologies to project real-time resource impact at the point of use to give users a better understanding of their consumption habits and behavior.
+            Building off the idea of real-time feedback, <Highlight>POOL</Highlight> uses emerging mixed reality technology to project real-time resource impact at the point of use to close the feedback loop between usage and awareness in order to provide users a better awareness of their consumption.
             <br/><br/> 
               I also created a one page poster to showcase through storyboard what our design was about and how it worked.
           </BlockText>
