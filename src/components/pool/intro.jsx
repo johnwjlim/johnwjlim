@@ -10,7 +10,6 @@ import Animated from "../../images/pool.mp4"
 
 const LocalContainer = styled(Styled.Container)`
   margin-top: 64px;
-  p
 `
 
 
@@ -28,8 +27,9 @@ const InlineLink = styled.a`
   font-weight: 500;
   transition: 0.2s;
   // font-style: italic;
-  text-decoration: underline;
-  // border-bottom: 1px solid #ffffff;
+  text-decoration: none;
+  // text-decoration: underline;
+  border-bottom: 1px solid #ffffff;
   letter-spacing: -0.2px;
 
   :hover {
@@ -71,9 +71,9 @@ const BlockText = styled.p`
   max-width: 42rem;
   // max-width: 42rem;
   // margin: 0 8rem;
-  font-size: 1.1rem;
+  font-size: 1rem;
   line-height: 1.5;
-  letter-spacing: -0.45px;
+  letter-spacing: -0.2px;
   color: #eeeeee;
   @media (max-width: 1240px) {
     margin: 0;
@@ -81,16 +81,15 @@ const BlockText = styled.p`
 `
 
 const HeroText = styled.h4`
-  font-size: 2.5rem;
-  line-height: 1;
+  font-size: 2rem;
+  line-height: 1.15;
   color: #ffffff;
   margin: 0;
   font-weight: 400;
   letter-spacing: -1.5px;
 
   @media (max-width: 1240px) {
-    font-size: 2rem;
-    letter-spacing: -0.8px;
+    // letter-spacing: -0.8px;
   }
 `
 
@@ -161,13 +160,6 @@ const GIF = styled.img`
 export default function Intro() {
   const data = useStaticQuery(graphql`
     query {
-      HeroImage: file(relativePath: { eq: "pool-hero.png"}) {
-        childImageSharp {
-          fluid ( maxWidth: 3200, maxHeight: 1600) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
       PoolPoster: file(relativePath: { eq: "pool-poster.png"}) {
         childImageSharp {
           fluid (maxWidth: 3200) {
@@ -220,10 +212,10 @@ export default function Intro() {
             Background
           </BlockTitle>
           <BlockText>    
-            {/* <HeroText>
+            <HeroText>
               How might we reimagine household utilities tracking with the technologies of tommorow?
             </HeroText>
-            <br/><br/> */}
+            <br/>
             <Highlight>POOL</Highlight> was the cumulative deliverable for an experience design project that I worked on as part of an Interaction Design class. I had the pleasure of collaborating with three other immensely talented individuals for this project. I'd love for you to check out their portfolios: &nbsp; 
             <InlineLink target="_blank" href="https://abooneportfolio.com/">Ashley Boone</InlineLink>, &nbsp; 
             <InlineLink target="_blank" href="https://www.isabellearmstrong.me/">Isabelle Armstrong</InlineLink>, &nbsp;
@@ -248,7 +240,7 @@ export default function Intro() {
         <ImageOffset>
           <Img fluid={data.PoolIdeation.childImageSharp.fluid} />
           <ImageSubCaption>
-            Ideation was a team effort – we undertook a series of ideation exercises (brainstorming, crazy 8s) as a group and emerged with dozens of ideas on how to approach this problem. We sorted through the ideas we had and managed to synthesize them down to a couple of themes, which we then carried forward for both our individual and team deliverables.
+            Ideation was a team effort – we undertook a series of ideation exercises (brainstorming, sketching, crazy 8s) as a group and emerged with dozens of ideas on how to approach this problem. We sorted through the ideas we had and managed to synthesize them down to a couple of themes, which we then carried forward for both our individual and team deliverables.
           </ImageSubCaption>
         </ImageOffset>
         </div>
@@ -302,7 +294,7 @@ export default function Intro() {
             <br/><br/> 
             Building off the idea of real-time feedback, the core tenet of our design was about closing the feedback loop between usage and awareness of the impact of use. <Highlight>POOL</Highlight> leverages emerging mixed reality technologies to project real-time resource impact at the point of use to give users a better understanding of their consumption habits and behavior.
             <br/><br/> 
-              I created a one page poster to showcase through storyboard what our design was about and how it worked.
+              I also created a one page poster to showcase through storyboard what our design was about and how it worked.
           </BlockText>
         </FlexBox>
         </div>

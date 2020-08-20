@@ -14,6 +14,7 @@ exports.components = {
   "component---src-pages-nimbus-redesign-jsx": () => import("./../src/pages/nimbus/redesign.jsx" /* webpackChunkName: "component---src-pages-nimbus-redesign-jsx" */),
   "component---src-pages-nimbus-survey-ideation-jsx": () => import("./../src/pages/nimbus/survey-ideation.jsx" /* webpackChunkName: "component---src-pages-nimbus-survey-ideation-jsx" */),
   "component---src-pages-page-2-js": () => import("./../src/pages/page-2.js" /* webpackChunkName: "component---src-pages-page-2-js" */),
+  "component---src-pages-pear-jsx": () => import("./../src/pages/pear.jsx" /* webpackChunkName: "component---src-pages-pear-jsx" */),
   "component---src-pages-pool-jsx": () => import("./../src/pages/pool.jsx" /* webpackChunkName: "component---src-pages-pool-jsx" */),
   "component---src-pages-resume-jsx": () => import("./../src/pages/resume.jsx" /* webpackChunkName: "component---src-pages-resume-jsx" */)
 }

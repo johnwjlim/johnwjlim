@@ -229,6 +229,7 @@ const ImageSubCaption = styled.p`
   font-size: 0.8rem;
   margin-top: 0.5rem;
   margin-bottom: 0;
+  // color: #666666;
 `
 
 const JohnMuir = styled.div`

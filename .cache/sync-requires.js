@@ -17,6 +17,7 @@ exports.components = {
   "component---src-pages-nimbus-redesign-jsx": hot(preferDefault(require("/Users/wjlim/code/johnwjlim/src/pages/nimbus/redesign.jsx"))),
   "component---src-pages-nimbus-survey-ideation-jsx": hot(preferDefault(require("/Users/wjlim/code/johnwjlim/src/pages/nimbus/survey-ideation.jsx"))),
   "component---src-pages-page-2-js": hot(preferDefault(require("/Users/wjlim/code/johnwjlim/src/pages/page-2.js"))),
+  "component---src-pages-pear-jsx": hot(preferDefault(require("/Users/wjlim/code/johnwjlim/src/pages/pear.jsx"))),
   "component---src-pages-pool-jsx": hot(preferDefault(require("/Users/wjlim/code/johnwjlim/src/pages/pool.jsx"))),
   "component---src-pages-resume-jsx": hot(preferDefault(require("/Users/wjlim/code/johnwjlim/src/pages/resume.jsx")))
 }
