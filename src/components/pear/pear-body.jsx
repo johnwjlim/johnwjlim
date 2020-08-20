@@ -302,7 +302,7 @@ export default function Intro() {
           <BlockText>
             This was my first time building a design system and it was definitely a valuable learning experience. One of the design principles that we adopted with Pear was to be distinctive. This actually came about after our first iteration got mixed reviews and was cited as "being too similar to what's out there".
             <br/><br/>
-            Following that review, I took the initiative to redraw the whole thing. Using the colors "Liquid Metal" and "Aquamarine" (identified in style guide above) as starting points, I laid the foundations of Pear in its current form and built it around the idea of cool minimalism. 
+            Following that review, I took the initiative to redraw the whole thing. Using the colors "Liquid Metal" and "Cerulean" (identified in style guide above) as starting points, I laid the foundations of Pear in its current form and built it around the idea of cool minimalism. 
             <br/><br/>
             Being my first design system, there are many things that I would have done differently. I didn't understand how to establish a consistent vertical tempo, there were inconsistencies that do not quite fit the visual style etc.
             But most crucially I don't think Pear was as versatile as it needed to be, especially as it had to service 15 core applications with vastly differing goals and objectives. I had inadvertently put a voice in Pear that may have hamstrung some of the other teams. 
