@@ -23,7 +23,7 @@ const ImageBackground = styled.div`
 `
 
 const InlineLink = styled.a`
-  color: #ffffff;
+  color: #eeeeee;
   font-weight: 500;
   transition: 0.2s;
   // font-style: italic;
@@ -82,11 +82,12 @@ const BlockText = styled.p`
 
 const HeroText = styled.h4`
   font-size: 2rem;
-  line-height: 1.15;
+  line-height: 1.18;
   color: #ffffff;
   margin: 0;
   font-weight: 400;
   letter-spacing: -1.5px;
+  margin-bottom: 1.75rem;
 
   @media (max-width: 1240px) {
     // letter-spacing: -0.8px;
@@ -215,7 +216,7 @@ export default function Intro() {
             <HeroText>
               How might we reimagine household utilities tracking with the technologies of tommorow?
             </HeroText>
-            <br/>
+   
             <Highlight>POOL</Highlight> was the cumulative deliverable for an experience design project that I worked on as part of an Interaction Design class. I had the pleasure of collaborating with three other immensely talented individuals for this project. I'd love for you to check out their portfolios: &nbsp; 
             <InlineLink target="_blank" href="https://abooneportfolio.com/">Ashley Boone</InlineLink>, &nbsp; 
             <InlineLink target="_blank" href="https://www.isabellearmstrong.me/">Isabelle Armstrong</InlineLink>, &nbsp;
@@ -279,7 +280,7 @@ export default function Intro() {
             <div data-sal="fade" data-sal-delay="100" data-sal-duration="1200" data-sal-easing="ease">
             <Video>
               <Frame 
-              src="https://www.youtube.com/embed/HbaYwjYpr-Q"
+              src="https://www.youtube.com/embed/HbaYwjYpr-Q"   
               />
             </Video>
             </div>
@@ -308,7 +309,7 @@ export default function Intro() {
         <FlexBox>
           <BlockTitle>End Notes</BlockTitle>
           <BlockText>
-           When designing POOL, we were given two rules: 1. Assume that any technology that we needed exists – so holograms, virtual reality contact lenses and anything we could think of were basically in play, and 2. No screens. 
+           When designing POOL, we were given two rules: 1. Assume that any technology that we needed exists – so holograms, virtual reality contact lenses, wearables and anything we could think of were basically in play, and 2. No screens. 
           <br/><br/>
            If rule 1 encouraged me to think out of the box, rule 2 forced me to open my mind. Was I out of my comfort zone? Most definitely. Yet it was refreshing and exhilarating to be able to design unshackled by the constraints of feasibility. Putting POOL together was one of the most rewarding projects I got to be a part of – the ideas we got to throw around were almost out of this world –  and I am glad to have had the experience.
           </BlockText>         
