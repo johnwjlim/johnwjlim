@@ -14,7 +14,7 @@ const LocalContainer = styled(Styled.Container)`
 
 
 const ImageBackground = styled.div`
-  background-color: #000000;
+  background-color: #111111;
   padding: 3.5rem 0;
 
   @media (max-width: 1120px) {
@@ -216,13 +216,14 @@ export default function Intro() {
             <HeroText>
               How might we reimagine household utilities tracking with the technologies of tommorow?
             </HeroText>
-   
+            <div data-sal="fade" data-sal-delay="100" data-sal-duration="1200" data-sal-easing="ease">
             <Highlight>POOL</Highlight> was the cumulative deliverable for an experience design project that I worked on as part of an Interaction Design class. I had the pleasure of collaborating with three other immensely talented individuals for this project. I'd love for you to check out their portfolios: &nbsp; 
             <InlineLink target="_blank" href="https://abooneportfolio.com/">Ashley Boone</InlineLink>, &nbsp; 
             <InlineLink target="_blank" href="https://www.isabellearmstrong.me/">Isabelle Armstrong</InlineLink>, &nbsp;
             <InlineLink target="_blank" href="http://stephensherwood.me/">Stephen Sherwood</InlineLink>.
             <br/><br/>
             The brief for this project was to design an energy and water use tracking information system for home use that helps users to optimize their use of water and energy. 
+            </div>
           </BlockText>
         </FlexBox>
         <div data-sal="fade" data-sal-delay="200" data-sal-duration="1200" data-sal-easing="ease">
