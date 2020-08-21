@@ -229,6 +229,7 @@ const ImageSubCaption = styled.p`
   font-size: 0.8rem;
   margin-top: 0.5rem;
   margin-bottom: 0;
+  // color: #666666;
 `
 
 const JohnMuir = styled.div`
@@ -488,7 +489,7 @@ export default function Showcase(props) {
         </OffsetBody>
         <ImageOffset >
             <Img fluid={data.PaperPrototypes.childImageSharp.fluid} />
-            <ImageSubCaption>First impressions matter. While we believed that full profiles go a long way towards building trust, we wanted to test that hypothesis nonetheless. We designed user profiles with varying degress of "sketchiness" and had our testers rate their comfort levels with each profile.  </ImageSubCaption>
+            <ImageSubCaption>First impressions matter. While we believed that full profiles go a long way towards building trust, we wanted to test that hypothesis nonetheless. We designed user profiles with varying degrees of sketchy personas and had testers rate their comfort levels with each profile.  </ImageSubCaption>
         </ImageOffset>
         <OffsetBody>
           <TextBlock>

@@ -15,10 +15,12 @@ export const Container = styled.div`
   // height: 89vh;
   // height: 90vh;
   padding-right: 15rem;
+  // widthL: 100%;
 
   @media (max-width: 1240px) {
     width: 100%;
     overflow: visible;
+    padding: 0;
 
   }
 `

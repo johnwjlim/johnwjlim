@@ -6,9 +6,7 @@ import { Container, OffsetBody, TextBlock, RightButton, LeftButton, ButtonHeader
 
 
 export default function Solution(props) {
-  // useEffect(() => {
-  //   window.scrollTo(0, 0)
-  // }, [])
+
 
   const data = useStaticQuery(graphql`
     query {

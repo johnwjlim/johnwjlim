@@ -19,6 +19,7 @@ import Nimbus from "../components/home/nimbus-thumbnail"
 import New from "../components/home/nimbus-thumbnail-new"
 import GChallenge from "../components/home/g-thumbnail"
 import Pool from "../components/home/pool-thumbnail"
+import Pear from "../components/home/pear-thumbnail"
 
 const Wrapper = styled.div`
   display: flex;
@@ -137,7 +138,7 @@ const Divider =  styled.div`
 
 const Title = styled.h1`
   letter-spacing: -2.8px;
-  letter-spacing: -2.2px;
+  letter-spacing: -2px;
   font-size: 3.6rem;
   font-size: 2.7rem;
   // font-size: 2.3rem;
@@ -158,7 +159,7 @@ const Text = styled.p`
   color: #333;
   color: #666;
   // color: #888;
-  letter-spacing: -1px;
+  letter-spacing: -0.8px;
   font-weight: 300;
   max-width: 36rem;
   max-width: 48rem;
@@ -263,6 +264,9 @@ export default function IndexPage() {
               </div>
               <div data-sal="fade" data-sal-delay="100" data-sal-duration="1500" data-sal-easing="ease"> 
                 <Pool />
+              </div>
+              <div data-sal="fade" data-sal-delay="100" data-sal-duration="1500" data-sal-easing="ease"> 
+                <Pear />
               </div>
               <div data-sal="fade" data-sal-delay="100" data-sal-duration="1500" data-sal-easing="ease"> 
                 <GChallenge />

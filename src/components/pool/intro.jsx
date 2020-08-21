@@ -8,6 +8,10 @@ import * as Styled from "../constants"
 import Gif from "../../images/pool.gif"
 import Animated from "../../images/pool.mp4"
 
+const LocalContainer = styled(Styled.Container)`
+  margin-top: 64px;
+`
+
 
 const ImageBackground = styled.div`
   background-color: #111111;
@@ -19,12 +23,13 @@ const ImageBackground = styled.div`
 `
 
 const InlineLink = styled.a`
-  color: #ffffff;
+  color: #eeeeee;
   font-weight: 500;
   transition: 0.2s;
   // font-style: italic;
-  text-decoration: underline;
-  // border-bottom: 1px solid #ffffff;
+  text-decoration: none;
+  // text-decoration: underline;
+  border-bottom: 1px solid #ffffff;
   letter-spacing: -0.2px;
 
   :hover {
@@ -52,7 +57,8 @@ const FlexBox = styled.div`
 const BlockTitle = styled.h2`
   font-weight: 500;
   font-size: 1.25rem;
-  width: 18rem;
+  min-width: 16vw;
+  margin-right: 8rem;
   letter-spacing: -0.5px;
   color: #ffffff;
 
@@ -62,15 +68,29 @@ const BlockTitle = styled.h2`
 `
 
 const BlockText = styled.p`
-  max-width: 45rem;
+  max-width: 42rem;
   // max-width: 42rem;
-  margin: 0 8rem;
-  font-size: 1.1rem;
-  line-height: 1.45;
-  letter-spacing: -0.3px;
-  color: #dddddd;
+  // margin: 0 8rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  letter-spacing: -0.2px;
+  color: #eeeeee;
   @media (max-width: 1240px) {
     margin: 0;
+  }
+`
+
+const HeroText = styled.h4`
+  font-size: 2rem;
+  line-height: 1.2;
+  color: #ffffff;
+  margin: 0;
+  font-weight: 400;
+  letter-spacing: -1.5px;
+  margin-bottom: 1.75rem;
+
+  @media (max-width: 1240px) {
+    // letter-spacing: -0.8px;
   }
 `
 
@@ -141,13 +161,6 @@ const GIF = styled.img`
 export default function Intro() {
   const data = useStaticQuery(graphql`
     query {
-      HeroImage: file(relativePath: { eq: "pool-hero.png"}) {
-        childImageSharp {
-          fluid ( maxWidth: 3200, maxHeight: 1600) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
       PoolPoster: file(relativePath: { eq: "pool-poster.png"}) {
         childImageSharp {
           fluid (maxWidth: 3200) {
@@ -188,34 +201,47 @@ export default function Intro() {
 
   return (
     <>
-      <Styled.Container>
+      <LocalContainer>
         <div data-sal="fade" data-sal-delay="200" data-sal-duration="1200" data-sal-easing="ease">
         <Styled.ImageWrapper>
           <Img fluid={data.Patrick.childImageSharp.fluid} />
           <ImageSubCaption>Mobile app mockup as part of individual deliverable for project</ImageSubCaption>
         </Styled.ImageWrapper>
         </div>
-        <FlexBox>
+        <FlexBox style={{marginBottom: "1.75rem"}}>
           <BlockTitle>
             Background
           </BlockTitle>
           <BlockText>    
-             <Highlight>POOL</Highlight> was the cumulative deliverable for an experience design project that I worked on as part of an Interaction Design class. I had the pleasure of collaborating with three other immensely talented individuals for this project. I'd love for you to check out their portfolios if you can: &nbsp; 
+            <HeroText>
+              How might we reimagine household utilities tracking with the technologies of tommorow?
+            </HeroText>
+   
+            <Highlight>POOL</Highlight> was the cumulative deliverable for an experience design project that I worked on as part of an Interaction Design class. I had the pleasure of collaborating with three other immensely talented individuals for this project. I'd love for you to check out their portfolios: &nbsp; 
             <InlineLink target="_blank" href="https://abooneportfolio.com/">Ashley Boone</InlineLink>, &nbsp; 
             <InlineLink target="_blank" href="https://www.isabellearmstrong.me/">Isabelle Armstrong</InlineLink>, &nbsp;
             <InlineLink target="_blank" href="http://stephensherwood.me/">Stephen Sherwood</InlineLink>.
             <br/><br/>
             The brief for this project was to design an energy and water use tracking information system for home use that helps users to optimize their use of water and energy. 
+          </BlockText>
+        </FlexBox>
+        <div data-sal="fade" data-sal-delay="200" data-sal-duration="1200" data-sal-easing="ease">
+        <FlexBox style={{marginTop: "1.75rem"}}>
+          <BlockTitle>
+            Ideation
+          </BlockTitle>
+          <BlockText>
+            Ideation revealed a general disconnect between present means of measuring resource consumption and awareness of what we’re actually using; water meters are notoriously obtuse and utility bills often come in measurements (say, kilowatt hour) that beyond dollars and cents, are unrelatable to most.
             <br/><br/>
-            A key theme we came upon during the course of our ideation was a general disconnect between present means of measuring resource consumption and our awareness of what we’re actually using; water meters are notoriously obtuse and utility bills often come in measurements that beyond dollars and cents, are unrelatable to most (it's hard to relate kilowatt hours and cubic feet to more tangible everyday ideas).
-
+            Our research also indicated that most people had little idea of how much they were using until the bill came in at the end of the month, which by itself was obtuse and gave only give a macro-level overview of consumption with little to no micro-level fidelity on behavior and trends that users could actually use to make meaningful changes in behavior.
           </BlockText>
         </FlexBox>  
+        </div>
         <div data-sal="fade" data-sal-delay="100" data-sal-duration="1200" data-sal-easing="ease">
         <ImageOffset>
           <Img fluid={data.PoolIdeation.childImageSharp.fluid} />
           <ImageSubCaption>
-            Ideation was a team effort – we undertook a series of ideation exercises as a group and emerged with dozens of ideas on how to approach this problem. We sorted through the ideas we had and managed to synthesize them down to a couple of themes, which we then carried forward for both our individual and team deliverables.
+            Ideation was a team effort – we undertook a series of ideation exercises (brainstorming, sketching, crazy 8s) as a group and emerged with dozens of ideas on how to approach this problem. We sorted through the ideas we had and managed to synthesize them down to a couple of themes, which we then carried forward for both our individual and team deliverables.
           </ImageSubCaption>
         </ImageOffset>
         </div>
@@ -225,12 +251,9 @@ export default function Intro() {
             Individual Deliverable
           </BlockTitle>
           <BlockText>    
-            As my individual deliverable for this project, I designed a solution for our problem based on <Highlight>existing technologies that are available today.</Highlight> Having identified lengthy showers as one of the most frivolous uses of water, my solution was a voice activated, digitally controlled shower to help users better visualize and track their showers.
+            As my individual deliverable for this project, I designed a solution for our problem based on <Highlight>existing technologies that are available today.</Highlight> 
             <br/><br/>
-            Our research also indicated that most people simply had little idea of how much they were using until the bill came in at the end of the month, which by itself was obtuse and
-            gave only give a macro-level overview of consumption with little to no micro-level fidelity on behavior and trends that users could actually use to make meaningful changes in behavior.
-            <br/><br/>
-            My design solution is a voice-activated, digitally controlled shower that aims to provide real-time feedback to help users improve their awareness of consumption and hopefully make changes to behavior.
+            Having identified lengthy showers as one of the most frivolous uses of water, my design solution was a voice-activated, digitally controlled shower that aims to provide real-time feedback to help users improve their awareness of consumption and hopefully make changes to behavior.
             <br/><br/>
             <ImageWrapper>
               <div style={{margin: "1.75rem 0"}}>
@@ -257,7 +280,7 @@ export default function Intro() {
             <div data-sal="fade" data-sal-delay="100" data-sal-duration="1200" data-sal-easing="ease">
             <Video>
               <Frame 
-              src="https://www.youtube.com/embed/HbaYwjYpr-Q"
+              src="https://www.youtube.com/embed/HbaYwjYpr-Q"   
               />
             </Video>
             </div>
@@ -268,11 +291,13 @@ export default function Intro() {
         <FlexBox>
           <BlockTitle>The Headliner</BlockTitle>
           <BlockText>
-            For our team deliverable, we were to design a solution to the problem with <Highlight>the technologies of tommorow.</Highlight> Our proposed solution was a mixed reality experience that aims to visualize household energy and water usage in order to encourage responsible consumption. We called it <Highlight>POOL</Highlight> – kind of as a playful way to reflect the way our design aimed to visualize resource footprints as "pools of impact" on the ground.
+            As our team deliverable, we were to design a solution to the problem with <Highlight>the technologies of tommorow.</Highlight> 
+            <br/><br/>
+            We came up with a mixed reality experience that aims to visualize household energy and water usage in order to encourage responsible consumption. We called it <Highlight>POOL</Highlight> – kind of as a playful way to reflect the way our design aimed to visualize resource footprints as "pools of impact" on the ground.
             <br/><br/> 
-            Building off the idea of real-time feedback, the core tenet of our design was about closing the feedback loop between usage and awareness of the impact of use. <Highlight>POOL</Highlight> leverages emerging mixed reality technologies to project real-time resource impact at the point of use to give users a better understanding of their consumption habits and behavior.
+            Building off the idea of real-time feedback, <Highlight>POOL</Highlight> projects real-time resource impact at the point of use to close the feedback loop between usage and awareness in order to provide users a better awareness of their consumption.
             <br/><br/> 
-              I created a one page poster to showcase through storyboard what our design was about and how it worked.
+              I also created a one page poster to showcase through storyboard what our design was about and how it worked.
           </BlockText>
         </FlexBox>
         </div>
@@ -286,12 +311,12 @@ export default function Intro() {
         <FlexBox>
           <BlockTitle>End Notes</BlockTitle>
           <BlockText>
-           For our team deliverable, we were given two rules: 1. Assume that any technology that we needed exists – so holograms, virtual reality contact lenses and anything we could think of were basically in play, and 2. No screens. 
+           When designing POOL, we were given two rules: 1. Assume that any technology that we needed exists – so holograms, virtual reality contact lenses, wearables and anything we could think of were basically in play, and 2. No screens. 
           <br/><br/>
            If rule 1 encouraged me to think out of the box, rule 2 forced me to open my mind. Was I out of my comfort zone? Most definitely. Yet it was refreshing and exhilarating to be able to design unshackled by the constraints of feasibility. Putting POOL together was one of the most rewarding projects I got to be a part of – the ideas we got to throw around were almost out of this world –  and I am glad to have had the experience.
           </BlockText>         
         </FlexBox>
-      </Styled.Container>
+      </LocalContainer>
     </>
   )
 }

@@ -15,7 +15,7 @@ import "./styles.css"
 
 const Container = styled.div`
   margin: 0 auto;
-  max-width: 1680px;
+  // max-width: 1680px;
   // width: auto;
   padding: 0px 2.5rem 1.45rem;
   position: relative;
