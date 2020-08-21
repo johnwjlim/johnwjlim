@@ -295,7 +295,7 @@ export default function Intro() {
             <br/><br/>
             We came up with a mixed reality experience that aims to visualize household energy and water usage in order to encourage responsible consumption. We called it <Highlight>POOL</Highlight> – kind of as a playful way to reflect the way our design aimed to visualize resource footprints as "pools of impact" on the ground.
             <br/><br/> 
-            Building off the idea of real-time feedback, <Highlight>POOL</Highlight> uses emerging mixed reality technology to project real-time resource impact at the point of use to close the feedback loop between usage and awareness in order to provide users a better awareness of their consumption.
+            Building off the idea of real-time feedback, <Highlight>POOL</Highlight> projects real-time resource impact at the point of use to close the feedback loop between usage and awareness in order to provide users a better awareness of their consumption.
             <br/><br/> 
               I also created a one page poster to showcase through storyboard what our design was about and how it worked.
           </BlockText>
