@@ -87,7 +87,7 @@ const HeroText = styled.h4`
   margin: 0;
   font-weight: 400;
   letter-spacing: -1.5px;
-  margin-bottom: 1.75rem;
+  margin-bottom: 2rem;
 
   @media (max-width: 1240px) {
     // letter-spacing: -0.8px;
