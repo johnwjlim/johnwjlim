@@ -14,7 +14,7 @@ const LocalContainer = styled(Styled.Container)`
 
 
 const ImageBackground = styled.div`
-  background-color: #111111;
+  background-color: #000000;
   padding: 3.5rem 0;
 
   @media (max-width: 1120px) {
