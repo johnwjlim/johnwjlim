@@ -40,7 +40,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Container style={{backgroundColor: "#111111" }}>
+      <Container style={{backgroundColor: "#000000" }}>
         <main>{children}</main>
       </Container>
     </>
