@@ -2,7 +2,8 @@ import React, { useState } from "react"
 import { Link, navigate } from "gatsby"
 import styled from "styled-components"
 import Scrollspy from 'react-scrollspy'
-import Scroll from 'react-scroll-to-element'
+import Scroll from './Scroll'
+import scrollTo from 'gatsby-plugin-smoothscroll'
 
 const Container = styled.nav`
   width: 16em;
