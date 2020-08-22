@@ -284,12 +284,6 @@ export default function Nav(props) {
               handleMain()
             }
           </List>
-          {/* <List>
-            {
-              handleComponents()
-            }
-
-          </List> */}
           <Scrollspy
             style={{marginBottom: "3.5rem", listStyle: "none"}}
             items={ ['section-1', 'section-2', 'section-3', 'section-4', 'section-5', 'section-6'] }
