@@ -293,12 +293,10 @@ export default function Intro() {
           <BlockTitle>The Headliner</BlockTitle>
           <BlockText>
             As our team deliverable, we were to design a solution to the problem with <Highlight>the technologies of tommorow.</Highlight> 
-            <br/><br/>
-            We came up with a mixed reality experience that aims to visualize household energy and water usage in order to encourage responsible consumption. We called it <Highlight>POOL</Highlight> – kind of as a playful way to reflect the way our design aimed to visualize resource footprints as "pools of impact" on the ground.
             <br/><br/> 
-            Building off the idea of real-time feedback, <Highlight>POOL</Highlight> projects real-time resource impact at the point of use to close the feedback loop between usage and awareness in order to provide users a better awareness of their consumption.
+            Building off the idea of real-time feedback, <Highlight>POOL</Highlight> is a mixed reality experience that projects real-time resource impact at the point of use to close the feedback loop between usage and awareness in order to provide users a better awareness of their consumption and encourage responsibility.
             <br/><br/> 
-              I also created a one page poster to showcase through storyboard what our design was about and how it worked.
+            We called it <Highlight>POOL</Highlight> as kind of as a playful way to reflect the way our design aimed to visualize resource footprints as "pools of impact" on the ground. I created a one page poster to showcase through storyboard what our design was about and how it worked.
           </BlockText>
         </FlexBox>
         </div>
