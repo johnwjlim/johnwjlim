@@ -43,9 +43,10 @@ export default function Nimbus() {
         :
         <Wrapper>
           <div style={{width: "100%", marginTop: "64px"}}>
-            <Showcase onChange={handleTabSwitch} active={active}/>
+            {/* <Showcase onChange={handleTabSwitch} active={active}/> */}
+            <Showcase/>
           </div>
-          {/* <Showcase onChange={handleTabSwitch} active={active}/> */}
+
           <Nav components={sections} active={active} onChange={handleTabSwitch} routes={nimbusRoutes} />
         </Wrapper>
       }
