@@ -5,8 +5,11 @@ import Img from "gatsby-image"
 
 import { Container, ImageWrapper, ImageWithMargin, FlexWrapper, IntroBody, OffsetBody, TextBlock, InfoPanel, TextQuote, Header } from "../constants"
 
-const Title = styled.h1`
+const Title = styled.h4`
   margin-bottom: 0.5rem;
+  font-weight: 500;
+  font-size: 1.25rem;
+
 `
 
 const InlineLink = styled.a`
@@ -110,7 +113,7 @@ export default function Overview(props) {
       <FlexWrapper>
         <InfoPanel>
           <Title>ClubFinder</Title>
-          <p style={{lineHeight: "1.4"}}>Some Design Challenge <br/>User Experience</p>
+          {/* <p style={{lineHeight: "1.4"}}>Some Design Challenge <br/>User Experience</p> */}
         </InfoPanel>
         <IntroBody>
           <TextBlock>
