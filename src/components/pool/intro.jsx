@@ -115,7 +115,7 @@ const ImageSubCaption = styled.p`
   letter-spacing: 0;
 `
 
-const Video = styled.div`
+const VideoWrapper = styled.div`
   position: relative;
   overflow: hidden;
   width: 100%;
@@ -133,7 +133,7 @@ const Frame = styled.iframe`
     height: 100%;
     
 `
-const VFrame = styled.video`
+const Video = styled.video`
     position: absolute;
     top: 0;
     left: 0;
@@ -267,12 +267,16 @@ export default function Intro() {
               </div>
               <div data-sal="fade" data-sal-delay="100" data-sal-duration="1200" data-sal-easing="ease">
               <div style={{margin: "1.75rem 0"}}>
-              <Video>
-                <VFrame autoplay controls
+              <VideoWrapper>
+                {/* <VFrame autoplay controls
                 src={Animated} type="video/mp4" allow="accelerometer; autoplay;"
                 frameBorder="0"
-                />
-              </Video>
+                /> */}
+                <Video muted autoPlay controls loop>
+                  <source src={Animated} type="video/mp4" />
+                  Sorry, your browser doesn't support embedded videos.
+                </Video>
+              </VideoWrapper>
                 <ImageSubCaption>Water level visualization in shower display falls as time remaining on the timer decreases. </ImageSubCaption>
               </div>
               </div>
@@ -281,11 +285,11 @@ export default function Intro() {
             The shower works by having a screen display in the shower where users can visualize real time usage, view timers etc. while control is performed through a voice interface (because wet fingers on a touch screen is generally a bad idea). I made a video presentation that runs through how the system works.
             <br/><br/> 
             <div data-sal="fade" data-sal-delay="100" data-sal-duration="1200" data-sal-easing="ease">
-            <Video>
+            <VideoWrapper>
               <Frame 
               src="https://www.youtube.com/embed/HbaYwjYpr-Q"   
               />
-            </Video>
+            </VideoWrapper>
             </div>
           </BlockText>
         </FlexBox>  
