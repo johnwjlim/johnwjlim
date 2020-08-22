@@ -420,6 +420,7 @@ export default function Showcase(props) {
   return (
     <>
       <Container>
+        <section id="section-1">
         <ImageWrapper>
           <Img fluid={data.HeroImage.childImageSharp.fluid} />
         </ImageWrapper>
@@ -428,7 +429,7 @@ export default function Showcase(props) {
               <HeroText> 
                 <Highlight>Nimbus</Highlight> is a mobile experience that aims to solve the transportation challenges of remote outdoor exploration by connecting adventurers with one another and having them share transport to outdoor recreation areas. 
               </HeroText>
-              <PitchDeckLink href="https://www.figma.com/proto/rqb3pn14vDM8drmDBvJGWY/Nimbus-Pitch-Deck?node-id=92%3A3&scaling=scale-down" target="_blank">View the condensed pitch deck here!</PitchDeckLink>
+              {/* <PitchDeckLink href="https://www.figma.com/proto/rqb3pn14vDM8drmDBvJGWY/Nimbus-Pitch-Deck?node-id=92%3A3&scaling=scale-down" target="_blank">View the condensed pitch deck here!</PitchDeckLink> */}
             </TextBlock>
         </OffsetBody>
         <OffsetBody style={{}}>
@@ -456,6 +457,8 @@ export default function Showcase(props) {
             – John Muir, <span style={{fontWeight: "400"}}>Our National Parks</span>
           </JohnMuirCaption>
         </JohnMuir>
+        </section>
+        <section id="section-2">
         <div data-sal="fade" data-sal-delay="100" data-sal-duration="1200" data-sal-easing="ease">
         <FlexBox>
           <FlexImage>
@@ -501,11 +504,13 @@ export default function Showcase(props) {
               Our concept was now premised on having users group up and adventure outdoors together. 
             </p>
           </TextBlock>
-          <ImageCaption style={{textAlign: "center", marginTop: "3.5rem"}} onClick={() => navigate("/nimbus/survey-ideation")} >
+          {/* <ImageCaption style={{textAlign: "center", marginTop: "3.5rem"}} onClick={() => navigate("/nimbus/survey-ideation")} >
               View the deep dive into the research & ideation process
-            </ImageCaption>
+          </ImageCaption> */}
         </OffsetBody>
         </div>
+        </section>
+        <section id="section-3">
         <OffsetBody style={{marginBottom: "3.5rem"}}>
           <TextBlock>
             <BlockIntro>
@@ -524,9 +529,9 @@ export default function Showcase(props) {
             <ImageSubCaption style={{marginTop: "3.5rem"}}>
               We attempted to take advantage of existing conceptual models whenever possible. The idea was to maximize intuitiveness by leveraging a user’s familiarity with existing processes. The above diagram depicts a rough flow of our “join a group” process here which was really modelled after AirBnb’s flow for making a reservation with a host
             </ImageSubCaption>
-            <ImageCaption style={{marginTop: "3.5rem"}}  onClick={() => navigate("/nimbus/flows-wireframes")} >
+            {/* <ImageCaption style={{marginTop: "3.5rem"}}  onClick={() => navigate("/nimbus/flows-wireframes")} >
               View wireframes used to test primary use cases
-            </ImageCaption>
+            </ImageCaption> */}
           </TextBlock>
         </OffsetBody>
         <div data-sal="fade" data-sal-delay="150" data-sal-duration="1200" data-sal-easing="ease">
@@ -559,6 +564,8 @@ export default function Showcase(props) {
             </p>
           </TextBlock>
         </OffsetBody>
+        </section>
+        <section id="section-4">
         <FlexBox style={{backgroundColor: "#f5f5f5"}}> 
           <OffsetBody>
             <img src={joinGif} />
@@ -591,9 +598,9 @@ export default function Showcase(props) {
               <p>
                 We sought to address this by aggregating information relevant to the location such as conditions, terrain and hazards into a single page to help streamline the research and aid in user preparation.
               </p>
-              <ImageCaption style={{textAlign: "left", marginTop: "3.5rem"}} onClick={() => navigate("/nimbus/high-fi")} >
+              {/* <ImageCaption style={{textAlign: "left", marginTop: "3.5rem"}} onClick={() => navigate("/nimbus/high-fi")} >
                 View the high-fidelity screen descriptions
-              </ImageCaption>
+              </ImageCaption> */}
             </PrototypeText>
           </OffsetBody>
           <FlexImage style={{padding: "0rem"}}>
@@ -605,6 +612,8 @@ export default function Showcase(props) {
           <Img fluid={data.FinalScreen.childImageSharp.fluid}/>
         </ImageOffset>
         </div>
+        </section>
+        <section id="section-5">
         <div data-sal="fade" data-sal-delay="100" data-sal-duration="1200" data-sal-easing="ease">
         <OffsetBody>
           <TextBlock>
@@ -618,9 +627,9 @@ export default function Showcase(props) {
         </OffsetBody>
         <ImageWrapper>
           <Img fluid={data.RevisedScreensWhite.childImageSharp.fluid} />
-          <ImageCaption onClick={() => navigate("/nimbus/redesign")} >
+          {/* <ImageCaption onClick={() => navigate("/nimbus/redesign")} >
               View the redesign here
-          </ImageCaption>
+          </ImageCaption> */}
         </ImageWrapper>
         </div>
         <OffsetBody>
@@ -662,17 +671,29 @@ export default function Showcase(props) {
             </PrototypeText>
           </OffsetBody>
         </FlexBox>
+        </section>
+        <section id="section-6">
         <OffsetBody>
           <TextBlock>
-            <BlockIntro>The last bit.</BlockIntro>
+            <BlockIntro>Next Steps.</BlockIntro>
+            <p>In terms of next steps, Nimbus has mostly covered the "before trip" aspect of outdoor travel, but there's also tremendous room to explore if were thinking holistically about the outdoor experience. There are things we can implement “during the trip”, such as having trial maps, directories for nearest resources such as ranger stations, shelters and latrines, perhaps an ability to find out if there are other groups nearby (which dovetails into community). </p>
             <p>
-              There were many lessons from this project. Many. I’ll roughly go through them in no particular order: User research is never one and done, keep ideas at its lowest fidelity, test and test some more, never assume anything – always acknowledge your assumptions and validate them, you are not the user, and the list goes on.  This is probably the project that has most influenced how I approach my role as a product designer. 
-            </p>
-            <p>
-              Huge props to Brian Fling for the mentorship. This case study is long because Brian made us document everything, and rightfully so because there was so much that I learnt from this project. I thank you for making it this far and do apologize for the length, and if curious there’s also more content in this case that you can access in the side nav – I’ve also included potential next steps this product can evolve in the “End Notes” section. 
+              The experience doesn’t end “after the trip” as well, ideally we would want users to continue engaging with one another, expand communities, plan new trips etc. There’s room to grow for Nimbus if given the time and opportunity to do so.
             </p>
           </TextBlock>
         </OffsetBody>
+        <OffsetBody>
+          <TextBlock>
+            <BlockIntro>The Last Bit.</BlockIntro>
+            <p>
+              There were many lessons from this project. Many. I’ll roughly go through them in no particular order: User research is never one and done, keep ideas at its lowest fidelity, test and test some more, never assume anything – always acknowledge your assumptions and validate them, you are not the user, and the list goes on.
+            </p>
+            <p>
+            This is probably the project that has most influenced how I approach my role as a product designer. Huge props to Brian Fling for the mentorship. This case study is long because Brian made us document everything, and rightfully so because there was so much that I learnt from this project.
+            </p>
+          </TextBlock>
+        </OffsetBody>
+        </section>
         <RightButton onClick={() => navigate("/nimbus/survey-ideation")}>
           <ButtonHeader>NEXT SECTION</ButtonHeader>
           <ButtonText>{sections[props.active + 1]}</ButtonText>

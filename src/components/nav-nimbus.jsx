@@ -1,6 +1,8 @@
 import React, { useState } from "react"
 import { Link, navigate } from "gatsby"
 import styled from "styled-components"
+import Scrollspy from 'react-scrollspy'
+import Scroll from 'react-scroll-to-element'
 
 const Container = styled.nav`
   width: 16em;
@@ -19,8 +21,9 @@ const Container = styled.nav`
 const List = styled.ul`
   list-style: none;
   margin-bottom: 3.5rem;
-
 `
+
+
 const ListItem = styled.li`
 `;
 
@@ -60,6 +63,23 @@ const GreyText = styled.a`
   padding: 0.25rem 0.5rem;
   border-radius: 8px;
   letter-spacing: -0.3px;
+  text-decoration: none;
+
+  :hover {
+    cursor: pointer;  
+    color: #666666;
+    background-color: #f5f5f5;
+  }   
+`
+
+const NavText = styled.a`
+  line-height: 1.68;
+  transition: 0.2s;
+  border: none;
+  padding: 0.25rem 0.5rem;
+  border-radius: 8px;
+  letter-spacing: -0.3px;
+  text-decoration: none;
 
   :hover {
     cursor: pointer;  
@@ -255,7 +275,7 @@ export default function Nav(props) {
     }
   }
 
-  return (
+  return (  
     <Container>
       <FlexHack>
         <Row>
@@ -264,11 +284,48 @@ export default function Nav(props) {
               handleMain()
             }
           </List>
-          <List>
+          {/* <List>
             {
               handleComponents()
             }
-          </List>
+
+          </List> */}
+          <Scrollspy
+            style={{marginBottom: "3.5rem", listStyle: "none"}}
+            items={ ['section-1', 'section-2', 'section-3', 'section-4', 'section-5', 'section-6'] }
+            currentClassName="is-current"
+          >
+            <li className="grey">
+              <Scroll type="id" element="section-1" offset={-100}>
+                <a href="#" className="scroll-link">Overview</a>
+              </Scroll>
+            </li>
+            <li className="grey">
+              <Scroll type="id" element="section-2">
+                <a href="#" className="scroll-link">Survey and Ideation</a>
+              </Scroll>
+            </li>
+            <li className="grey">
+              <Scroll type="id" element="section-3" offset={-80}>
+                <a href="#" className="scroll-link">Flows + Wireframes</a>
+              </Scroll>    
+            </li>
+            <li className="grey">
+              <Scroll type="id" element="section-4">
+                <a href="#" className="scroll-link">High Fidelity Screens</a>
+              </Scroll> 
+            </li>
+            <li className="grey">
+              <Scroll type="id" element="section-5" offset={-80}>
+                <a href="#" className="scroll-link">Redesign</a>
+              </Scroll>
+            </li>
+            <li className="grey"> 
+              <Scroll type="id" element="section-6" offset={-80}>
+                <a href="#" className="scroll-link">End Notes</a>
+              </Scroll>  
+            </li> 
+          </Scrollspy>
         </Row>
         <Row>
           <List>

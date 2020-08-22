@@ -177,7 +177,7 @@ export default function Intro() {
       }
       Patrick: file(relativePath: {eq: "patrick-bezel.png"}) {
         childImageSharp {
-          fluid (maxWidth: 3200, maxHeight: 1800) {
+          fluid (maxWidth: 3200, maxHeight: 1700) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -265,6 +265,7 @@ export default function Intro() {
                 <Img fluid={data.Patrick.childImageSharp.fluid} />
                 <ImageSubCaption>Track usage statistics and trends, as well as establish predefined settings with the mobile based interface.</ImageSubCaption>
               </div>
+              <div data-sal="fade" data-sal-delay="100" data-sal-duration="1200" data-sal-easing="ease">
               <div style={{margin: "1.75rem 0"}}>
               <Video>
                 <VFrame autoplay controls
@@ -273,6 +274,7 @@ export default function Intro() {
                 />
               </Video>
                 <ImageSubCaption>Water level visualization in shower display falls as time remaining on the timer decreases. </ImageSubCaption>
+              </div>
               </div>
             </ImageWrapper>
             <br/>
