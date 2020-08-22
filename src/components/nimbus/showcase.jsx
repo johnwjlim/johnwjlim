@@ -676,7 +676,7 @@ export default function Showcase(props) {
         <OffsetBody>
           <TextBlock>
             <BlockIntro>Next Steps.</BlockIntro>
-            <p>In terms of next steps, Nimbus has mostly covered the "before trip" aspect of outdoor travel, but there's also tremendous room to explore if were thinking holistically about the outdoor experience. There are things we can implement “during the trip”, such as having trial maps, directories for nearest resources such as ranger stations, shelters and latrines, perhaps an ability to find out if there are other groups nearby (which dovetails into community). </p>
+            <p>In terms of next steps, Nimbus has mostly covered the "before trip" aspect of outdoor travel, but there's also tremendous room to explore if were thinking holistically about the outdoor experience. There are things we can implement “during the trip”, such as having trail maps, directories for nearest resources such as ranger stations, shelters and latrines, perhaps an ability to find out if there are other groups nearby (which dovetails into community). </p>
             <p>
               The experience doesn’t end “after the trip” as well, ideally we would want users to continue engaging with one another, expand communities, plan new trips etc. There’s room to grow for Nimbus if given the time and opportunity to do so.
             </p>
