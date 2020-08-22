@@ -10,11 +10,11 @@ import MobileNav from "../components/mobile-nav-nimbus"
 import Header from "../components/header"
 
 import Showcase from "../components/nimbus/showcase"
-import SurveyIdeation from "../components/nimbus/survey-ideation"
-import Solution from "../components/nimbus/flows-wireframes"
-import HighFidelity from "../components/nimbus/high-fidelity"
-import Redesign from "../components/nimbus/redesign"
-import PersonalThoughts from "../components/nimbus/personal-thoughts"
+// import SurveyIdeation from "../components/nimbus/survey-ideation"
+// import Solution from "../components/nimbus/flows-wireframes"
+// import HighFidelity from "../components/nimbus/high-fidelity"
+// import Redesign from "../components/nimbus/redesign"
+// import PersonalThoughts from "../components/nimbus/personal-thoughts"
 
 import { sections } from "../components/constants"
 import { nimbusRoutes } from "../components/constants"
@@ -43,10 +43,9 @@ export default function Nimbus() {
         :
         <Wrapper>
           <div style={{width: "100%", marginTop: "64px"}}>
-            {/* <Showcase onChange={handleTabSwitch} active={active}/> */}
-            <Showcase/>
+            <Showcase onChange={handleTabSwitch} active={active}/>
           </div>
-
+          {/* <Showcase onChange={handleTabSwitch} active={active}/> */}
           <Nav components={sections} active={active} onChange={handleTabSwitch} routes={nimbusRoutes} />
         </Wrapper>
       }

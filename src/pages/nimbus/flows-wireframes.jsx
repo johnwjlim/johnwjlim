@@ -8,7 +8,7 @@ import Nav from "../../components/nav-nimbus"
 import MobileNav from "../../components/mobile-nav-nimbus"
 import Header from "../../components/header"
 
-import FlowsWireframes from "../../components/nimbus/flows-wireframes"
+// import FlowsWireframes from "../../components/nimbus/flow"
 
 
 import { sections } from "../../components/constants"
@@ -40,7 +40,7 @@ export default function Survey() {
         :
         <Wrapper>
           <div style={{marginTop: "64px", width: "100%"}}>
-            <FlowsWireframes onChange={handleTabSwitch} active={active}/>
+            {/* <FlowsWireframes onChange={handleTabSwitch} active={active}/> */}
           </div>
           
           <Nav components={sections} active={active} onChange={handleTabSwitch} routes={nimbusRoutes}/>
