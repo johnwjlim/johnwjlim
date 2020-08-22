@@ -694,10 +694,10 @@ export default function Showcase(props) {
           </TextBlock>
         </OffsetBody>
         </section>
-        <RightButton onClick={() => navigate("/nimbus/survey-ideation")}>
+        {/* <RightButton onClick={() => navigate("/nimbus/survey-ideation")}>
           <ButtonHeader>NEXT SECTION</ButtonHeader>
           <ButtonText>{sections[props.active + 1]}</ButtonText>
-        </RightButton>
+        </RightButton> */}
       </Container>
     </>
   )
