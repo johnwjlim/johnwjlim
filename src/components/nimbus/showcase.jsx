@@ -666,10 +666,10 @@ export default function Showcase(props) {
           <TextBlock>
             <BlockIntro>The last bit.</BlockIntro>
             <p>
-              There were many lessons from this project. Many. I’ll roughly go through them in no particular order: User research is never one and done, keep ideas at its lowest fidelity, test and test some more, never assume anything ––identify and validate, you are not the user, and the list goes on.  This is probably the project that has most influenced my design process. 
+              There were many lessons from this project. Many. I’ll roughly go through them in no particular order: User research is never one and done, keep ideas at its lowest fidelity, test and test some more, never assume anything – always acknowledge your assumptions and validate them, you are not the user, and the list goes on.  This is probably the project that has most influenced how I approach my role as a product designer. 
             </p>
             <p>
-              This case study is long because Brian made us document everything, and because there was so much that I learnt from this project. I thank you for making it this far and do apologize for the length, and if curious there’s also more content in this case that you can access in the side nav – I’ve also included potential next steps this product can evolve in the “End Notes” section. 
+              Huge props to Brian Fling for the mentorship. This case study is long because Brian made us document everything, and rightfully so because there was so much that I learnt from this project. I thank you for making it this far and do apologize for the length, and if curious there’s also more content in this case that you can access in the side nav – I’ve also included potential next steps this product can evolve in the “End Notes” section. 
             </p>
           </TextBlock>
         </OffsetBody>
