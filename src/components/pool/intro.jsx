@@ -54,6 +54,12 @@ const FlexBox = styled.div`
   }
 `
 
+const SpecialBox = styled(FlexBox)`
+  padding: 0 3.5rem;
+  // margin: 0
+
+`
+
 const BlockTitle = styled.h2`
   font-weight: 500;
   font-size: 1.25rem;
@@ -86,7 +92,7 @@ const HeroText = styled.h4`
   color: #ffffff;
   margin: 0;
   font-weight: 400;
-  letter-spacing: -1.5px;
+  letter-spacing: -1.2px;
   margin-bottom: 2rem;
 
   @media (max-width: 1240px) {
@@ -208,7 +214,7 @@ export default function Intro() {
           <ImageSubCaption>Mobile app mockup as part of individual deliverable for project</ImageSubCaption>
         </Styled.ImageWrapper>
         </div>
-        <FlexBox style={{marginBottom: "1.75rem"}}>
+        <SpecialBox style={{paddingTop: "3.5rem"}}> 
           <BlockTitle>
             Background
           </BlockTitle>
@@ -225,9 +231,9 @@ export default function Intro() {
             The brief for this project was to design an energy and water use tracking information system for home use that helps users to optimize their use of water and energy. 
             </div>
           </BlockText>
-        </FlexBox>
+        </SpecialBox>
         <div data-sal="fade" data-sal-delay="200" data-sal-duration="1200" data-sal-easing="ease">
-        <FlexBox style={{marginTop: "1.75rem"}}>
+        <SpecialBox style={{paddingBottom: "3.5rem"}}>
           <BlockTitle>
             Ideation
           </BlockTitle>
@@ -236,7 +242,7 @@ export default function Intro() {
             <br/><br/>
             Our research also indicated that most people had little idea of how much they were using until the bill came in at the end of the month, which by itself was obtuse and gave only give a macro-level overview of consumption with little to no micro-level fidelity on behavior and trends that users could actually use to make meaningful changes in behavior.
           </BlockText>
-        </FlexBox>  
+        </SpecialBox>  
         </div>
         <div data-sal="fade" data-sal-delay="100" data-sal-duration="1200" data-sal-easing="ease">
         <ImageOffset>
