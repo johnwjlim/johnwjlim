@@ -219,9 +219,9 @@ export default function Intro() {
             Background
           </BlockTitle>
           <BlockText>    
-            <HeroText>
+            {/* <HeroText>
               How might we reimagine household utilities tracking with the technologies of tommorow?
-            </HeroText>
+            </HeroText> */}
             <div data-sal="fade" data-sal-delay="100" data-sal-duration="1200" data-sal-easing="ease">
             <Highlight>POOL</Highlight> was the cumulative deliverable for an experience design project that I worked on as part of an Interaction Design class. I had the pleasure of collaborating with three other immensely talented individuals for this project. I'd love for you to check out their portfolios: &nbsp; 
             <InlineLink target="_blank" href="https://abooneportfolio.com/">Ashley Boone</InlineLink>, &nbsp; 
