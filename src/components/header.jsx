@@ -54,6 +54,10 @@ const Title = styled.h2`
   // }
 `
 
+const TitleLight = styled(Title)`
+  color: #c5c5c5;
+`
+
 const SecondaryTitle = styled(Title)`
   color: #979797;
   color: #ffb7b7;
@@ -160,7 +164,8 @@ export default function Header(props) {
           {
             transitions.map(({item, key, props}) => item ?
             <animated.div style={props}>
-              <SecondaryTitle>Make It Better.</SecondaryTitle>
+              {/* <SecondaryTitle>Make It Better.</SecondaryTitle> */}
+              <TitleLight>John Lim</TitleLight>
             </animated.div> :
             <animated.div style={props}>
               <Title>John Lim</Title>
@@ -171,7 +176,8 @@ export default function Header(props) {
         {
           props.pageTitle ?
           <>
-            <Subtitle>{props.pageTitle}</Subtitle> 
+            {/* <Subtitle>{props.pageTitle}</Subtitle>  */}
+            <Filler />
           </>: <Filler />
         }
       </Wrapper>
