@@ -150,7 +150,7 @@ export default function About() {
                   <Highlight>I'm John, and I study Human Computer Interaction and Political Economy at the University of Washington.</Highlight>
                 </Text>
                 <Text>
-                With interests and a background in business, commerce and public policy, I’m a generalist at heart. Product design was the only place where I could see myself melding all of my disparate interests into a cohesive role.
+                With a background in business, commerce and public policy, I’m a generalist at heart. Product design was the only place where I could see myself melding all of my disparate interests into a cohesive role.
                 </Text>
                 <Text>
                 I thrive on engaging in bigger picture strategic and product thinking. Yet as a designer, I’m also fascinated by the complexities of what makes us human – why are some things intuitive to us and others not? I believe in designing intentionally; Because the decisions we make have consequences, and because less is more and every element we put on should have a reason for being. 
