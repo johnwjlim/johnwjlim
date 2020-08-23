@@ -138,9 +138,9 @@ const Divider =  styled.div`
 
 const Title = styled.h1`
   letter-spacing: -2.8px;
-  letter-spacing: -2px;
+  letter-spacing: -2.8px;
   font-size: 3.6rem;
-  font-size: 2.7rem;
+  font-size: 2.8rem;
   // font-size: 2.3rem;
   font-weight: 400;
   font-weight:500;
@@ -162,10 +162,10 @@ const Text = styled.p`
   letter-spacing: -0.9px;
   font-weight: 300;
   max-width: 36rem;
-  max-width: 48rem;
+  max-width: 45rem;
   line-height: 1.38;
   // line-height: normal;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 
   @media (max-width: 1024px) {
     font-size: 1.2rem;
@@ -198,6 +198,10 @@ const TitleFlip = styled.div`
   color: #fff
 `
 
+const Paper = styled.div`
+ background-color: #f0f0ec;
+`
+
 
 
 export default function IndexPage() {
@@ -224,7 +228,7 @@ export default function IndexPage() {
   // }
 
   return (
-    <Layout>
+    <Layout style={{backgroundColor: "#f0f0ec"}}>
       <SEO title="Home" />
       <HeaderWrapper>
         <Header/>
