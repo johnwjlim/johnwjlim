@@ -141,7 +141,7 @@ export default function About() {
             <div data-sal="fade" data-sal-delay="100" data-sal-duration="1200" data-sal-easing="ease">
               <Hero>
                 <Img fluid={data.Hero.childImageSharp.fluid} />
-                <ImageSubCaption >Smiling because I knew my legs were about to freeze after the snow melts and soaks through my cotton joggers.</ImageSubCaption>
+                <ImageSubCaption >"Grit your teeth and smile" – smiling because I knew my legs were about to get really cold after the snow melts and soaks through my cotton joggers.</ImageSubCaption>
               </Hero>
             </div>
             <div data-sal="fade" data-sal-delay="300" data-sal-duration="1200" data-sal-easing="ease">
