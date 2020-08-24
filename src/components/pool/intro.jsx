@@ -267,9 +267,11 @@ export default function Intro() {
                 <Img fluid={data.Shower.childImageSharp.fluid} />
                 <ImageSubCaption>Display in the shower provides real-time feedback of user consumption while control is performed through a voice interface. The idea is to keep users on track and prevent them from unintentionally engaging in a shower room karaoke session and losing all awareness of time.</ImageSubCaption>
               </div>
-              <div style={{margin: "1.75rem 0"}}>
-                <Img fluid={data.Patrick.childImageSharp.fluid} />
-                <ImageSubCaption>Track usage statistics and trends, as well as establish predefined settings with the mobile based interface.</ImageSubCaption>
+              <div data-sal="fade" data-sal-delay="100" data-sal-duration="1200" data-sal-easing="ease">
+                <div style={{margin: "1.75rem 0"}}>
+                  <Img fluid={data.Patrick.childImageSharp.fluid} />
+                  <ImageSubCaption>Track usage statistics and trends, as well as establish predefined settings with the mobile based interface.</ImageSubCaption>
+                </div>
               </div>
               <div data-sal="fade" data-sal-delay="100" data-sal-duration="1200" data-sal-easing="ease">
               <div style={{margin: "1.75rem 0"}}>
