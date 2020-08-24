@@ -138,13 +138,13 @@ const Divider =  styled.div`
 
 const Title = styled.h1`
   letter-spacing: -2.8px;
-  letter-spacing: -2.8px;
+  letter-spacing: -2.6px;
   font-size: 3.6rem;
   font-size: 2.8rem;
   // font-size: 2.3rem;
   font-weight: 400;
-  font-weight:500;
-  color: #111111;
+  font-weight: 500;
+  color: #333333;
   line-height: normal;
   // margin-bottom: 6rem;
 
@@ -158,8 +158,8 @@ const Text = styled.p`
   // color: #b5b5b5;
   color: #333;
   color: #666;
-  // color: #888;
-  letter-spacing: -0.9px;
+  color: #888;
+  letter-spacing: -0.8px;
   font-weight: 300;
   max-width: 36rem;
   max-width: 45rem;
@@ -189,8 +189,7 @@ const Dash = styled.div`
 `
 
 const Highlight = styled.span`
-  color: #111;
-  font-weight: 600;
+  color: #333333;
   font-weight: 400;
 `
 const TitleFlip = styled.div`
@@ -251,7 +250,7 @@ export default function IndexPage() {
                 <div data-sal="fade" data-sal-delay="150" data-sal-duration="1200" data-sal-easing="ease">
                   <Title>
                     <div>
-                    Hello there, I'm John &nbsp;<Emoji> 👋 </Emoji>
+                    Hello there, I'm John. &nbsp;<Emoji> 👋 </Emoji>
                     </div>
                   </Title> 
                 </div>
