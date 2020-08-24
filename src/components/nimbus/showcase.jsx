@@ -577,7 +577,7 @@ export default function Showcase(props) {
                 Passing the vibe check.
               </FlexBlockIntro>
               <p>
-                Adventures in the outdoors are only as good as the company you’re with. With chemistry and compatibility cited as a major user concern, we wanted to let users be able to size each other up before committing to a group. 
+                Adventures in the outdoors are only as good as the company you’re with. With chemistry and compatibility cited as a major user concern, I wanted to let users be able to size each other up before committing to a group. 
               </p>
               <p>
                 This was done through allowing users to search for groups through various criterias, encouraging users to talk to group hosts when requesting to join a group, having descriptive group listings and encouraging full profiles by all users.
@@ -596,7 +596,7 @@ export default function Showcase(props) {
              
               </p>
               <p>
-                We sought to address this by aggregating information relevant to the location such as conditions, terrain and hazards into a single page to help streamline the research and aid in user preparation.
+                I sought to address this by aggregating information relevant to the location such as conditions, terrain and hazards into a single page to help streamline the research and aid in user preparation.
               </p>
               {/* <ImageCaption style={{textAlign: "left", marginTop: "3.5rem"}} onClick={() => navigate("/nimbus/high-fi")} >
                 View the high-fidelity screen descriptions
