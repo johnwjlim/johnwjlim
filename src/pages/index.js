@@ -137,13 +137,13 @@ const Divider =  styled.div`
 `
 
 const Title = styled.h1`
-  letter-spacing: -2.5px;  
+  letter-spacing: -2px;  
   // letter-spacing: -2.5px;
   // font-size: 3.6rem;
   font-size: 3rem;
   // font-size: 3rem;
   // font-size: 2.3rem;
-  font-weight: 500;
+  font-weight: 600;
   color: #333333;
   // line-height: 1.1;
   // margin-bottom: 2.5rem;
@@ -156,11 +156,11 @@ const Title = styled.h1`
 
 const Text = styled.p`
   // color: #b5b5b5;
-  color: #666666;
+  color: #666;
   // color: #c5c5c5;
-  letter-spacing: -0.6px;
+  letter-spacing: -0.5px;
   font-weight: 400;
-  max-width: 40rem;
+  max-width: 42rem;
   // max-width: 42rem;
   line-height: 1.45;
   // line-height: normal;
@@ -258,7 +258,7 @@ export default function IndexPage() {
 
                   <Text>I'm an undergraduate student at the <Highlight>University of Washington</Highlight> majoring in <Highlight>Human Computer Interaction</Highlight> and enthralled by the factors that make us <Highlight>human.</Highlight></Text>
 
-                  <Text>If not <Highlight>pushing pixels</Highlight> in a Seattle coffee shop, catch me <Highlight>chasing powder</Highlight> in my local ski hill or wherever the snow is good.</Text>
+                  <Text>If not <Highlight>pushing pixels</Highlight> in a Seattle coffee shop, catch me <Highlight>chasing powder</Highlight> in my local ski hill or wherever there is good snow to be found.</Text>
                 </div>
 
               </TitleBox>
