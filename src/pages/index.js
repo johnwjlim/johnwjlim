@@ -48,10 +48,10 @@ const Body = styled(Container)`
 const TitleBox = styled.div`
 
   margin-bottom: 1rem; 
-  margin-bottom: 8rem;
+  margin-bottom: 12rem;
   // border-bottom: 1px solid #dddddd;
 
-  margin-top: 14rem;
+  margin-top: 16rem;
   @media (max-width: 768px) {
     // font-size: 1rem;
     margin: 3.5rem 0 5rem;
@@ -137,16 +137,16 @@ const Divider =  styled.div`
 `
 
 const Title = styled.h1`
-  letter-spacing: -2.8px;
-  letter-spacing: -2.6px;
-  font-size: 3.6rem;
-  font-size: 2.8rem;
+  letter-spacing: -2.5px;  
+  // letter-spacing: -2.5px;
+  // font-size: 3.6rem;
+  font-size: 3rem;
+  // font-size: 3rem;
   // font-size: 2.3rem;
-  font-weight: 400;
   font-weight: 500;
   color: #333333;
-  line-height: normal;
-  // margin-bottom: 6rem;
+  // line-height: 1.1;
+  // margin-bottom: 2.5rem;
 
   @media (max-width: 1024px) {
     font-size: 2.4rem;
@@ -156,16 +156,16 @@ const Title = styled.h1`
 
 const Text = styled.p`
   // color: #b5b5b5;
-  color: #333;
-  color: #666;
-  color: #888;
-  letter-spacing: -0.8px;
-  font-weight: 300;
-  max-width: 36rem;
-  max-width: 45rem;
-  line-height: 1.38;
+  color: #666666;
+  // color: #c5c5c5;
+  letter-spacing: -0.6px;
+  font-weight: 400;
+  max-width: 42rem;
+  max-width: 40rem;
+  line-height: 1.4;
   // line-height: normal;
-  font-size: 1.6rem;
+  font-size: 1.3rem;
+  // background-color: #f5f5f5;
 
   @media (max-width: 1024px) {
     font-size: 1.2rem;
@@ -189,8 +189,8 @@ const Dash = styled.div`
 `
 
 const Highlight = styled.span`
-  color: #333333;
-  font-weight: 400;
+  // color: #333333; 
+  // font-weight: 500;
 `
 const TitleFlip = styled.div`
   background-color: #333;
@@ -258,7 +258,7 @@ export default function IndexPage() {
 
                   <Text>I'm an undergraduate student at the <Highlight>University of Washington</Highlight> majoring in <Highlight>Human Computer Interaction</Highlight> and enthralled by the factors that make us <Highlight>human.</Highlight></Text>
 
-                  <Text>If not <Highlight>pushing pixels</Highlight> in a Seattle coffee shop, catch me <Highlight>chasing powder</Highlight> in my local ski hill or wherever there's good snow to be found.</Text>
+                  <Text>If not <Highlight>pushing pixels</Highlight> in a Seattle coffee shop, catch me <Highlight>chasing powder</Highlight> in my local ski hill or wherever the snow is good.</Text>
                 </div>
 
               </TitleBox>
