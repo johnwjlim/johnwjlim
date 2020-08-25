@@ -3,7 +3,7 @@ import styled from "styled-components"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
-import { Container, ImageWrapper, ImageWithMargin, FlexWrapper, IntroBody, OffsetBody, TextBlock, InfoPanel, TextQuote, Header } from "../constants"
+import { Container, ImageWrapper, ImageWithMargin, FlexWrapper, IntroBody, OffsetBody, InfoPanel, TextQuote, Header } from "../constants"
 
 const Title = styled.h4`
   margin-bottom: 0.5rem;
@@ -22,6 +22,12 @@ const InlineLink = styled.a`
     color: #ffb7b7;
   }
 `;
+
+const TextBlock = styled.div`
+  max-width: 42rem;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+`
 
 export default function Overview(props) {
   const data = useStaticQuery(graphql`
