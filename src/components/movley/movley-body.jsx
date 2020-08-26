@@ -365,7 +365,7 @@ export default function Intro() {
             <br/><br/>
             This ties into initiative as well because as a solo designer, it's easy to be surface level and take whatever is coming down from product without actually developing an understanding of the problem. I had to take the initiative to conduct additional exploratory research such as user interviews and competitor analysis to develop my own feel for the problem space.  
             <br/><br/>
-            Overall, this was an extremely valable learning opportunity and I am grateful for the experience.
+            Overall, this was an extremely valuable learning opportunity and I am grateful for the experience.
           </BlockText>
         </FlexBox>
       </LocalContainer>
