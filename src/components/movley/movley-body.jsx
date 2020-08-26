@@ -272,7 +272,7 @@ export default function Intro() {
             <BlockText>   
               Affiliate referrals are key sources of new clients for Movley. However, Movley did not have an existing portal available for affiliates to manage their work; Current affiliates were receiving a direct payout based on their commission total for the month. Other than the dollar amount in the bank, there was no way for them to track or manage their performance in any form. 
               <br/><br/>
-              The goal was therefore to create a portal where affiliates could view their historical performance, analyze trends, view and manage their payouts, and even allow them to create custom campaigns for better micro-level management.
+              {/* The goal was therefore to create a portal where affiliates could view their historical performance, analyze trends, view and manage their payouts, and even allow them to create custom campaigns for better micro-level management. */}
             </BlockText>
           </SpecialBox>
         </div>
@@ -290,7 +290,7 @@ export default function Intro() {
             Dashboard
           </BlockTitle>
           <BlockText>
-            I laid out the dashboard with a key question in mind: "Why do affiliates work with Movley?". Discounting sheer alturism, the answer more often than not seemed to be along the lines of "to make some money". Therefore, in addition to providing a broad overview of performance across measured categories, I wanted to hero the key performance metric which was the actual referrals and commissions as much as possible.
+            I laid out the dashboard with a key question in mind: "Why do affiliates work with Movley?". Discounting sheer altruism, the answer more often than not seemed to be along the lines of "to make some money". Therefore, in addition to providing a broad overview of performance across measured categories, I wanted to hero the key performance metric which was the actual referrals and commissions as much as possible.
           </BlockText>
         </FlexBox>
         </div>
@@ -361,9 +361,9 @@ export default function Intro() {
           <BlockText>
             This project has been handed off to developers and is currently in production. This was one of a number of projects that I worked on during my internship.
             <br/><br/>
-            While there were numerous lessons learnt from this experience. Communication and initiative were probably my biggest takeaways. As a solo designer, I had to stand up and be the advocate for design. I had to be able to articulate design decisions and justify them across various stakeholders. I had to work closely with product to balance business & product objectives into cohesive design goals.
+            While there were numerous lessons learnt from this experience, communication and initiative were probably my biggest takeaways. As a solo designer, I had to stand up and be the advocate for design. I had to be able to articulate design decisions and justify them across various stakeholders. I had to work closely with product to synthesize business & product objectives into cohesive design goals.
             <br/><br/>
-            This ties into initiative as well because as a solo designer, it's easy to be surface level and take whatever is coming down from product without actually developing an understanding of the problem. I had to take the initiative to conduct additional exploratory research such as user interviews to develop my own feel for the problem space.  
+            This ties into initiative as well because as a solo designer, it's easy to be surface level and take whatever is coming down from product without actually developing an understanding of the problem. I had to take the initiative to conduct additional exploratory research such as user interviews and competitor analysis to develop my own feel for the problem space.  
             <br/><br/>
             Overall, this was an extremely valable learning opportunity and I am grateful for the experience.
           </BlockText>
