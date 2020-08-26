@@ -463,7 +463,7 @@ export default function Showcase(props) {
         <FlexBox>
           <FlexImage>
             <Img fluid={data.Bundy.childImageSharp.fluid} />
-            <ImageSubCaption>"What if I end up with a serial killer?" – Ted Bundy was one of America's most notorious serial killers. With 30 confessed murders and numerous others attributed to him, Bundy primarily targeted young hitchhikers in the Western United States.</ImageSubCaption>
+            <ImageSubCaption>"What if I end up with a serial killer?" was the soundbite that stood out during our surveys. The specter of Ted Bundy, one of America's most notorious serial killers, loomed large.</ImageSubCaption>
           </FlexImage>
           <OffsetBody>
               <PrototypeText>
