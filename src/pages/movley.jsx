@@ -9,7 +9,7 @@ import Nav from "../components/nav"
 import MobileNav from "../components/mobile-nav"
 import Header from "../components/header"
 
-import Body from "../components/pear/pear-body"
+import Body from "../components/movley/movley-body"
 
 import * as Styled from "../components/constants"
 
@@ -21,7 +21,7 @@ const Wrapper = styled.div`
   // margin-top: 64px;
 `
 
-export default function Pear() {
+export default function Movley() {
   const [active, setActive] = useState(0)
   const menuState = useSelector(state => state.menuState)
 
@@ -32,7 +32,7 @@ export default function Pear() {
 
   return (
     <Layout>
-      <SEO title="Pear" />
+      <SEO title="Movley" />
       <Header pageTitle={""} />
       <Wrapper>
         <Body />

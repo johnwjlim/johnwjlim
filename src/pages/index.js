@@ -20,6 +20,7 @@ import New from "../components/home/nimbus-thumbnail-new"
 import GChallenge from "../components/home/g-thumbnail"
 import Pool from "../components/home/pool-thumbnail"
 import Pear from "../components/home/pear-thumbnail"
+import Movley from "../components/home/movley-thumbnail"
 
 const Wrapper = styled.div`
   display: flex;
@@ -266,8 +267,12 @@ export default function IndexPage() {
                <New />
               </div>
               <div data-sal="fade" data-sal-delay="100" data-sal-duration="1500" data-sal-easing="ease"> 
+                <Movley />
+              </div>
+              <div data-sal="fade" data-sal-delay="100" data-sal-duration="1500" data-sal-easing="ease"> 
                 <Pool />
               </div>
+           
               <div data-sal="fade" data-sal-delay="100" data-sal-duration="1500" data-sal-easing="ease"> 
                 <Pear />
               </div>
