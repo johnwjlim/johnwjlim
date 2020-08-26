@@ -361,7 +361,7 @@ export default function Intro() {
           <BlockText>
             This project has been handed off to developers and is currently in production. This was one of a number of projects that I worked on during my internship.
             <br/><br/>
-            While there were numerous lessons learnt from this experience, communication and initiative were probably my biggest takeaways. As a solo designer, I had to stand up and be the advocate for design. I had to be able to articulate design decisions and justify them across various stakeholders. I had to work closely with product to synthesize business & product objectives into cohesive design goals.
+            While there were numerous lessons learnt from this experience, communication and initiative were probably my biggest takeaways. As a solo designer, I had to actively take a stand and be the advocate for design. I had to be able to articulate design decisions and justify them across various stakeholders. I had to work closely with product to synthesize business & product objectives into cohesive design goals.
             <br/><br/>
             This ties into initiative as well because as a solo designer, it's easy to be surface level and take whatever is coming down from product without actually developing an understanding of the problem. I had to take the initiative to conduct additional exploratory research such as user interviews and competitor analysis to develop my own feel for the problem space.  
             <br/><br/>
