@@ -174,7 +174,7 @@ export default function Intro() {
           }
         }
       }
-      PoolIdeation: file(relativePath: {eq: "pool-ideation.png"}) {
+      PoolIdeation: file(relativePath: {eq: "pool-ideation.jpg"}) {
         childImageSharp {
           fluid (maxWidth: 3200) {
             ...GatsbyImageSharpFluid
