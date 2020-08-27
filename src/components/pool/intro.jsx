@@ -174,14 +174,14 @@ export default function Intro() {
           }
         }
       }
-      PoolIdeation: file(relativePath: {eq: "pool-ideation.jpg"}) {
+      Ideation: file(relativePath: {eq: "pool-ideation.jpg"}) {
         childImageSharp {
           fluid (maxWidth: 3200) {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      Patrick: file(relativePath: {eq: "patrick-bezel.png"}) {
+      Patrick: file(relativePath: {eq: "patrick-bezel.jpg"}) {
         childImageSharp {
           fluid (maxWidth: 3200, maxHeight: 1700) {
             ...GatsbyImageSharpFluid
@@ -246,7 +246,7 @@ export default function Intro() {
         </div>
         <div data-sal="fade" data-sal-delay="100" data-sal-duration="1200" data-sal-easing="ease">
         <ImageOffset>
-          <Img fluid={data.PoolIdeation.childImageSharp.fluid} />
+          <Img fluid={data.Ideation.childImageSharp.fluid} />
           <ImageSubCaption>
             Ideation was a team effort – we undertook a series of ideation exercises (brainstorming, sketching, crazy 8s) as a group and emerged with dozens of ideas on how to approach this problem. We sorted through the ideas we had and managed to synthesize them down to a couple of themes, which we then carried forward for both our individual and team deliverables.
           </ImageSubCaption>
