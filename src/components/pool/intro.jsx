@@ -81,6 +81,7 @@ const BlockText = styled.p`
   line-height: 1.5;
   letter-spacing: -0.2px;
   color: #eeeeee;
+  // color: #ffffff;
   @media (max-width: 1240px) {
     margin: 0;
   }
@@ -232,7 +233,7 @@ export default function Intro() {
             </div>
           </BlockText>
         </SpecialBox>
-        <div data-sal="fade" data-sal-delay="200" data-sal-duration="1200" data-sal-easing="ease">
+        <div data-sal="fade" data-sal-delay="200" data-sal-duration="1500" data-sal-easing="ease">
         <SpecialBox style={{paddingBottom: "3.5rem"}}>
           <BlockTitle>
             Ideation
@@ -252,7 +253,7 @@ export default function Intro() {
           </ImageSubCaption>
         </ImageOffset>
         </div>
-        <div data-sal="fade" data-sal-delay="100" data-sal-duration="1200" data-sal-easing="ease">
+        <div data-sal="fade" data-sal-delay="100" data-sal-duration="1500" data-sal-easing="ease">
         <FlexBox>
           <BlockTitle>
             Individual Deliverable

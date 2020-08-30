@@ -138,16 +138,16 @@ const Divider =  styled.div`
 `
 
 const Title = styled.h1`
-  letter-spacing: -2px;  
+  letter-spacing: -2.6px;  
   // letter-spacing: -2.5px;
   // font-size: 3.6rem;
-  font-size: 3rem;
+  font-size: 3.3rem;
   // font-size: 3rem;
   // font-size: 2.3rem;
-  font-weight: 600;
+  font-weight: 500;
   color: #333333;
   // line-height: 1.1;
-  // margin-bottom: 2.5rem;
+  // margin-bottom: 2.6rem;
 
   @media (max-width: 1024px) {
     font-size: 2.4rem;
@@ -159,11 +159,11 @@ const Text = styled.p`
   // color: #b5b5b5;
   color: #666;
   // color: #c5c5c5;
-  letter-spacing: -0.5px;
+  letter-spacing: -0.3px;
   font-weight: 400;
   max-width: 42rem;
   // max-width: 42rem;
-  line-height: 1.45;
+  line-height: 1.4;
   // line-height: normal;
   font-size: 1.3rem;
   // background-color: #f5f5f5;
