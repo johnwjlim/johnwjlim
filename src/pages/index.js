@@ -163,7 +163,7 @@ const Text = styled.p`
   font-weight: 400;
   max-width: 42rem;
   // max-width: 42rem;
-  line-height: 1.4;
+  line-height: 1.36;
   // line-height: normal;
   font-size: 1.3rem;
   // background-color: #f5f5f5;
