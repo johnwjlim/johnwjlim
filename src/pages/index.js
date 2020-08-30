@@ -146,8 +146,13 @@ const Title = styled.h1`
   // font-size: 2.3rem;
   font-weight: 500;
   color: #333333;
-  // line-height: 1.1;
+  line-height: 1.36;
   // margin-bottom: 2rem;
+  // font-family: "Founders Grotesk";
+  // font-size: 4rem;
+  // line-height: 1;
+  // letter-spacing: -1px; 
+  // font-weight: 500;
 
   @media (max-width: 1024px) {
     font-size: 2.4rem;
