@@ -187,4 +187,17 @@ button:-moz-focusring {
       transform: rotate(135deg) translate(0, 4px);
     }
   }
+
+
+.blinking{
+  animation:blinkingText 1.2s infinite;
+}
+
+@keyframes blinkingText{
+    0%{     color: #333333;    }
+    49%{    color: #333333; }
+    60%{    color: transparent; }
+    99%{    color:transparent;  }
+    100%{   color: #333333;    }
+}
 	

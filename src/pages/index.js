@@ -248,7 +248,7 @@ export default function IndexPage() {
                 <div data-sal="fade" data-sal-delay="150" data-sal-duration="1200" data-sal-easing="ease">
                   <Title>
                     <div>
-                    Hello there, I'm John. &nbsp;
+                    Hello there, I'm John<span className="blinking">.</span> &nbsp;
                     <Emoji> 👋 </Emoji>
                     </div>
                   </Title> 
