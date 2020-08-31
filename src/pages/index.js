@@ -139,20 +139,12 @@ const Divider =  styled.div`
 
 const Title = styled.h1`
   letter-spacing: -3px;  
-  letter-spacing: -2.6px;
-  // font-size: 3.6rem;
-  font-size: 3.3rem;
-  // font-size: 3rem;
-  // font-size: 2.3rem;
+  letter-spacing: -2.3px;
+  // letter-spacing: -2px;
+  font-size: 3.5rem;
   font-weight: 500;
-  color: #333333;
+  color: #444444;
   line-height: 1.36;
-  // margin-bottom: 2rem;
-  // font-family: "Founders Grotesk";
-  // font-size: 4rem;
-  // line-height: 1;
-  // letter-spacing: -1px; 
-  // font-weight: 500;
 
   @media (max-width: 1024px) {
     font-size: 2.4rem;
@@ -256,7 +248,8 @@ export default function IndexPage() {
                 <div data-sal="fade" data-sal-delay="150" data-sal-duration="1200" data-sal-easing="ease">
                   <Title>
                     <div>
-                    Hello there, I'm John. &nbsp;<Emoji> 👋 </Emoji>
+                    Hello there, I'm John. &nbsp;
+                    <Emoji> 👋 </Emoji>
                     </div>
                   </Title> 
                 </div>
