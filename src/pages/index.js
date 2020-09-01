@@ -204,13 +204,13 @@ const Paper = styled.div`
 
 const Name = styled(Link)`
   color: #767676;
-  color: #666;
+  color: #333;
   transition: 0.2s;
   text-decoration: none;
   // border-bottom: 4px solid #666;
 
   :hover {
-    color: #a3a3a3;
+    color: #666;
   }
 
 `
