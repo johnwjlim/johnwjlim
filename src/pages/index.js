@@ -250,7 +250,7 @@ export default function IndexPage() {
                   <Title>
                     <div>
                     Hello there, I'm John<span className="blinking">.</span> &nbsp;
-                    <Emoji> 👋 </Emoji>
+                    <Emoji> ✌ </Emoji>
                     </div>
                   </Title> 
                 </div>
