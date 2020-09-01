@@ -17,11 +17,12 @@ const TextBlock = styled.div`
 const HeroText = styled.p`
   font-size: 2rem;
   font-weight: 300;
-  color: #666666;
+  color: #333;
   letter-spacing: -1.1px;
-  line-height: 1.3;
+  // letter-spacing: -0.8px;
+  line-height: 1.4;
   max-width: 60rem;
-  margin-bottom: 3.5rem;
+  margin-bottom: 3.5rem;  
 
   @media (max-width: 1240px) {
     font-size: 1.5rem;
@@ -238,7 +239,7 @@ const JohnMuir = styled.div`
   // background-color: #225c4e;
   // background-color: #2e6b34;
   width: 96vw; 
-  padding: 12rem 9rem;
+  padding: 10rem 9rem;
   
 
   // @media (max-width: 1440px) {
@@ -258,13 +259,17 @@ const JohnMuir = styled.div`
 
 const JohnMuirQuote = styled.p`
   font-family: "Founders Grotesk";
-  font-size: 3.5rem;
+  font-size: 3.8rem;
   font-weight: 500;
   color: #fff;
   color: #f9f8f6;
-  line-height: 1.1;
-  max-width: 54rem;
-  // letter-spacing: -0.1px;
+  line-height: 1.05;
+  max-width: 60rem;
+  // letter-spacing: 0.1px;
+
+  @media (max-width: 1400px) {
+    max-width: 52rem;
+  }
 
   @media (max-width: 1240px) {
     font-size: 3rem;
@@ -427,7 +432,7 @@ export default function Showcase(props) {
         <OffsetBody>
             <TextBlock>
               <HeroText> 
-                <Highlight>Nimbus</Highlight> is a mobile experience that aims to solve the transportation challenges of remote outdoor exploration by connecting adventurers with one another and having them share transport to outdoor recreation areas. 
+                <Highlight>Nimbus</Highlight> is a mobile experience that aims to solve the transport challenges of remote outdoor exploration by connecting adventurers with one another and having them share transport to outdoor recreation areas. 
               </HeroText>
               {/* <PitchDeckLink href="https://www.figma.com/proto/rqb3pn14vDM8drmDBvJGWY/Nimbus-Pitch-Deck?node-id=92%3A3&scaling=scale-down" target="_blank">View the condensed pitch deck here!</PitchDeckLink> */}
             </TextBlock>

@@ -80,7 +80,7 @@ const BlockText = styled.p`
   font-size: 1rem;
   line-height: 1.5;
   letter-spacing: -0.2px;
-  color: #eeeeee;
+  color: #efefef;
   // color: #ffffff;
   @media (max-width: 1240px) {
     margin: 0;
