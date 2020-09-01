@@ -107,7 +107,7 @@ const StyledLink = styled(Link)`
 `;
 
 const Emoji = styled.span`
-  font-size: 2rem;
+  font-size: 1.75rem;
   vertical-align: middle;
   // line-height: 0;
   // margin: 0;
