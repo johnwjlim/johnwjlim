@@ -25,7 +25,7 @@ const Hero = styled.div`
   // width: 38rem; 
   width: 28rem;
   max-width: 26rem;
-  margin: 0 3.5rem;
+  margin: 0 3rem;
   margin-bottom: 0.5rem;
   margin-top: 2rem;
   padding-right: 8rem;
