@@ -239,7 +239,7 @@ const JohnMuir = styled.div`
   // background-color: #225c4e;
   // background-color: #2e6b34;
   width: 96vw; 
-  padding: 10rem 9rem;
+  padding: 11rem 9rem;
   
 
   // @media (max-width: 1440px) {
