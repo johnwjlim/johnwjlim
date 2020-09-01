@@ -18,7 +18,7 @@ const HeroText = styled.p`
   font-size: 2rem;
   font-weight: 300;
   color: #666666;
-  letter-spacing: -1.1px;
+  letter-spacing: -1px;
   // letter-spacing: -0.8px;
   line-height: 1.4;
   max-width: 60rem;
