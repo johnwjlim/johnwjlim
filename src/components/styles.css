@@ -193,19 +193,19 @@ button:-moz-focusring {
   animation:blinkingText 1.2s infinite;
 }
 
-  /* @keyframes blinkingText{
+  @keyframes blinkingText{
       0%{     color: #333333;    }
       49%{    color: #333333; }
       60%{    color: transparent; }
       99%{    color:transparent;  }
       100%{   color: #333333;    }
-  } */
+  }
   
 @keyframes blinkingText{
-  0%{     color: #484848;    }
-  49%{    color: #484848; }
+  0%{     color: #666;    }
+  49%{    color: #666; }
   60%{    color: transparent; }
   99%{    color:transparent;  }
-  100%{   color: #484848;    }
+  100%{   color: #666;    }
 }
 

@@ -202,6 +202,19 @@ const Paper = styled.div`
  background-color: #f0f0ec;
 `
 
+const Name = styled(Link)`
+  color: #767676;
+  color: #666;
+  transition: 0.2s;
+  text-decoration: none;
+  // border-bottom: 4px solid #666;
+
+  :hover {
+    color: #a3a3a3;
+  }
+
+`
+
 
 
 export default function IndexPage() {
@@ -251,7 +264,7 @@ export default function IndexPage() {
                 <div data-sal="fade" data-sal-delay="150" data-sal-duration="1200" data-sal-easing="ease">
                   <Title>
                     <div>
-                    Hello there, I'm John<span className="blinking">.</span> &nbsp;
+                    Hello there, I'm <Name to="/about">John</Name><span className="blinking">.</span> &nbsp;
                     <Emoji> ✌️ </Emoji>
                     </div>
                   </Title> 
