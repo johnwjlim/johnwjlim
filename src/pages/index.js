@@ -107,7 +107,7 @@ const StyledLink = styled(Link)`
 `;
 
 const Emoji = styled.span`
-  font-size: 2rem;
+  font-size: 1.75rem;
   vertical-align: middle;
   // line-height: 0;
   // margin: 0;
@@ -145,7 +145,7 @@ const Title = styled.h1`
   font-weight: 500;
   color: #484848;
   color: #333;
-  line-height: 1.36;
+  line-height: 1.4;
 
   @media (max-width: 1024px) {
     font-size: 2.4rem;
@@ -205,12 +205,16 @@ const Paper = styled.div`
 const Name = styled(Link)`
   color: #767676;
   color: #333;
+  // color: #888;
   transition: 0.2s;
   text-decoration: none;
-  // border-bottom: 4px solid #666;
+  // border-bottom: 5px solid #333;
 
   :hover {
-    color: #666;
+    color: #888;
+    // text-decoration: underline;
+    // color: #000; 
+    border-bottom: 5px solid #c5c5c5;
   }
 
 `

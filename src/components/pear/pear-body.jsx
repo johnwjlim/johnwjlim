@@ -59,7 +59,7 @@ const BlockTitle = styled.h2`
   font-size: 1.25rem;
   min-width: 16vw;
   margin-right: 8rem;
-  letter-spacing: -0.5px;
+  letter-spacing: -0.4px;
   color: #333333;
 
   @media (max-width: 124px) {
@@ -73,7 +73,7 @@ const BlockText = styled.p`
   // margin: 0 8rem;
   font-size: 1rem;
   line-height: 1.5;
-  letter-spacing: -0.2px; 
+  letter-spacing: -0.1px; 
   // color: #666666;
   @media (max-width: 1240px) {
     margin: 0;
