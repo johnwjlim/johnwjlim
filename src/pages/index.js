@@ -139,7 +139,7 @@ const Divider =  styled.div`
 
 const Title = styled.h1`
   letter-spacing: -3px;  
-  letter-spacing: -2.3px;
+  letter-spacing: -2.4px;
   // letter-spacing: -2px;
   font-size: 3.5rem;
   font-weight: 500;
