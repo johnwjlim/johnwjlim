@@ -264,9 +264,11 @@ export default function Intro() {
             Having identified lengthy showers as one of the most frivolous uses of water, my design solution was a voice-activated, digitally controlled shower that aims to provide real-time feedback to help users improve their awareness of consumption and hopefully make changes to behavior.
             <br/><br/>
             <ImageWrapper>
-              <div style={{margin: "1.75rem 0"}}>
-                <Img fluid={data.Shower.childImageSharp.fluid} />
-                <ImageSubCaption>Display in the shower provides real-time feedback of user consumption while control is performed through a voice interface. The idea is to keep users on track and prevent them from unintentionally engaging in a shower room karaoke session and losing all awareness of time.</ImageSubCaption>
+              <div data-sal="fade" data-sal-delay="200" data-sal-duration="1200" data-sal-easing="ease">
+                <div style={{margin: "1.75rem 0"}}>
+                  <Img fluid={data.Shower.childImageSharp.fluid} />
+                  <ImageSubCaption>Display in the shower provides real-time feedback of user consumption while control is performed through a voice interface. The idea is to keep users on track and prevent them from unintentionally engaging in a shower room karaoke session and losing all awareness of time.</ImageSubCaption>
+                </div>
               </div>
               <div data-sal="fade" data-sal-delay="100" data-sal-duration="1200" data-sal-easing="ease">
                 <div style={{margin: "1.75rem 0"}}>
