@@ -56,10 +56,10 @@ const FlexBox = styled.div`
 
 const BlockTitle = styled.h2`
   font-weight: 500;
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   min-width: 16vw;
   margin-right: 8rem;
-  letter-spacing: -0.4px;
+  letter-spacing: -0.3px;
   color: #333333;
 
   @media (max-width: 124px) {

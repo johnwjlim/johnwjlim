@@ -62,7 +62,7 @@ const SpecialBox = styled(FlexBox)`
 
 const BlockTitle = styled.h2`
   font-weight: 500;
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   min-width: 16vw;
   margin-right: 8rem;
   letter-spacing: -0.3px;
@@ -80,8 +80,12 @@ const BlockText = styled.p`
   font-size: 1rem;
   line-height: 1.5;
   letter-spacing: -0.1px;
-  color: #efefef;
-  // color: #ffffff;
+  color: #eeeeee;
+
+  // stupid shit incoming
+  // font-weight: 500;
+  // color: #ddd;
+
   @media (max-width: 1240px) {
     margin: 0;
   }
