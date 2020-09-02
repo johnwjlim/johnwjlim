@@ -209,3 +209,9 @@ button:-moz-focusring {
   100%{   color: #888;    }
 }
  */
+
+
+ .activeLink {
+  pointer-events: none;
+  
+ }

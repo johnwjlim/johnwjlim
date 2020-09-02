@@ -1,4 +1,4 @@
-import React, {useEffect} from "react"
+import React, {useEffect, useState} from "react"
 import { Link, useStaticQuery, graphql } from "gatsby"
 import styled from "styled-components"
 import { useSelector, useDispatch } from 'react-redux'
@@ -155,17 +155,12 @@ const Title = styled.h1`
 
 const Text = styled.p`
   // color: #b5b5b5;
-  color: #888888;
-  color: #767676; 
-  color: #666;
+  color: #666666;
   // color: #888;
-  // color: #c5c5c5;
   letter-spacing: -0.4px;
   font-weight: 400;
   max-width: 42rem;
-  // max-width: 42rem;
   line-height: 1.4;
-  // line-height: normal;
   font-size: 1.3rem;
   // background-color: #f5f5f5;
 
@@ -234,12 +229,22 @@ export default function IndexPage() {
       }
     }
   `)
-  // const dispatch = useDispatch()
+  const dispatch = useDispatch()
   const menuState = useSelector(state => state.menuState)
 
-  // useEffect(() => {
-  //   dispatch({type: "CLOSE"})
-  // },[])
+  const [menu, setMenu] = useState(false)
+
+  useEffect(() => {
+    console.log(menuState)
+    // setMenu(menuState)
+    // console.log(menu)
+  },[menuState])
+
+
+
+  useEffect(() => {
+    dispatch({type: "CLOSE"})
+  },[])
 
   // function handleTabSwitch(value) {
   //   setActive(value);

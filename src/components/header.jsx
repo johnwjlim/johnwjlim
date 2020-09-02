@@ -18,9 +18,11 @@ const Container = styled.div`
   z-index: 5;
   width: 95%;
   box-sizing: border-box;
+
   
   @media (max-width: 1240px) {
     width: 100%;
+    background-color: white;
   }
 
   @media (max-width: 425px) {
@@ -102,11 +104,12 @@ const Menu = styled.a`
   margin: 0;
   letter-spacing: -0.3px;
   font-weight: 400;
-  color: #111111;
+  color: #333333;
   font-size: 1.2rem;
   line-height: 1.5;
   cursor: pointer;
   margin-right: 2.5rem;
+  margin-right: 0;
 
   @media (max-width: 425px) {
     font-size: 1rem;
@@ -115,6 +118,35 @@ const Menu = styled.a`
 
   @media (max-width: 1240px) {
     display: block;
+  }
+`
+
+const MobileMenu = styled.div`
+  display: none;
+  margin: 0;
+
+
+  @media (max-width: 1240px) {
+    display: flex;
+  }
+
+  @media (max-width: 425px) {
+    font-size: 1rem;
+    margin-right: 2.5rem;
+  }
+
+`
+
+const MobileLink = styled(Link)`
+  text-decoration: none;
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-left: 2rem;
+  color: #666;
+
+
+  :hover {
+    text-decoration: underline;
   }
 `
 
@@ -181,7 +213,17 @@ export default function Header(props) {
           </>: <Filler />
         }
       </Wrapper>
-      <Menu onClick={() => triggerMenu()}>Menu</Menu>
+      {/* <Menu onClick={() => triggerMenu()}>Menu</Menu> */}
+      <MobileMenu>
+        <MobileLink to="/about">About</MobileLink>
+        <MobileLink 
+          as="a"
+          target="_blank"   
+          href="https://drive.google.com/file/d/1r5To1P3Oc8Dn9Ucbe_WxWWBi5bCVeYri/view?usp=sharing"
+        >
+          Resume
+        </MobileLink>
+      </MobileMenu>
     </Container> 
     
   )
