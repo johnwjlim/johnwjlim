@@ -158,8 +158,9 @@ const Text = styled.p`
   color: #888888;
   color: #767676; 
   color: #666;
+  // color: #888;
   // color: #c5c5c5;
-  letter-spacing: -0.5px;
+  letter-spacing: -0.3px;
   font-weight: 400;
   max-width: 42rem;
   // max-width: 42rem;
@@ -211,10 +212,10 @@ const Name = styled(Link)`
   // border-bottom: 5px solid #333;
 
   :hover {
-    color: #888;
+    color: #666;
     // text-decoration: underline;
     // color: #000; 
-    border-bottom: 5px solid #c5c5c5;
+    border-bottom: 5px solid #a5a5a5;
   }
 
 `

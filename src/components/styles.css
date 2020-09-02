@@ -201,11 +201,11 @@ button:-moz-focusring {
       100%{   color: #333333;    }
   }
   
-@keyframes blinkingText{
+/* @keyframes blinkingText{
   0%{     color: #888;    }
   49%{    color: #888; }
   60%{    color: transparent; }
   99%{    color:transparent;  }
   100%{   color: #888;    }
 }
-
+ */
