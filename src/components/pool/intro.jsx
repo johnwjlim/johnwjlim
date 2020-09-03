@@ -29,8 +29,9 @@ const InlineLink = styled.a`
   // font-style: italic;
   text-decoration: none;
   // text-decoration: underline;
-  border-bottom: 1px solid #ffffff;
-  letter-spacing: -0.2px;
+  border-bottom: 1px solid #eeeeee;
+  letter-spacing: -0.15px;
+  // padding-bottom: 3px;
 
   :hover {
     cursor: pointer;
@@ -55,7 +56,7 @@ const FlexBox = styled.div`
 `
 
 const SpecialBox = styled(FlexBox)`
-  padding: 0 3.5rem;
+  padding: 1.75rem 3.5rem;
   // margin: 0
 
 `
@@ -80,6 +81,8 @@ const BlockText = styled.p`
   font-size: 1rem;
   line-height: 1.5;
   letter-spacing: -0.15px;
+  // letter-spacing: -0.3px;
+
   color: #eeeeee;
 
   // stupid shit incoming
