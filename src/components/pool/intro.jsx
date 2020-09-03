@@ -31,7 +31,7 @@ const InlineLink = styled.a`
   // text-decoration: underline;
   border-bottom: 1px solid #eeeeee;
   letter-spacing: -0.15px;
-  // padding-bottom: 3px;
+  padding-bottom: 1px;
 
   :hover {
     cursor: pointer;
@@ -81,9 +81,9 @@ const BlockText = styled.p`
   font-size: 1rem;
   line-height: 1.5;
   letter-spacing: -0.15px;
-  // letter-spacing: -0.3px;
+  // letter-spacing: -0.2px;
 
-  color: #eeeeee;
+  color: #eee;
 
   // stupid shit incoming
   // font-weight: 500;
