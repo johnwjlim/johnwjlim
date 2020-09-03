@@ -162,7 +162,7 @@ const Italic = styled.span`
     color: #666666;
 `
 const SpecialBox = styled(FlexBox)`
-  padding: 0 3.5rem;
+  padding: 1.75rem 3.5rem;
   // margin: 0
 
 `

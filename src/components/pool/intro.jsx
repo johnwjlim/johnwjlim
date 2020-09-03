@@ -248,7 +248,7 @@ export default function Intro() {
           <BlockText>
             Ideation revealed a general disconnect between present means of measuring consumption and awareness of what we’re actually using; water meters are notoriously obtuse and utility bills often come in measurements (say, kilowatt hour) that beyond dollars and cents, are unrelatable to most.
             <br/><br/>
-            Our research also indicated that most people had little idea of how much they were using until the bill came in at the end of the month, which by itself was obtuse and gave only give a macro-level overview of consumption with little to no micro-level fidelity on behavior and trends that users could actually use to make meaningful changes in behavior.
+            Our research also indicated that most people had little idea of how much they were using until the bill came in at the end of the month. And with utility bills only giving a macro-level overview of consumption with little to no micro-level fidelity on behavior, it's difficult for users to identify areas to make meaningful changes to improve consumption.
           </BlockText>
         </SpecialBox>  
         </div>
