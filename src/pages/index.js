@@ -49,12 +49,13 @@ const Body = styled(Container)`
 const TitleBox = styled.div`
 
   margin-bottom: 1rem; 
-  margin-bottom: 12rem;
+  margin-bottom: 2rem;
   // border-bottom: 1px solid #dddddd;
 
-  margin-top: 15rem;
+  // margin-top: 80px;  
+  margin-top: 5rem;
 
-  margin: 12rem 0;
+  // margin: 4rem 0;
   @media (max-width: 768px) {
     // font-size: 1rem;
     margin: 3.5rem 0 5rem;
@@ -109,7 +110,7 @@ const StyledLink = styled(Link)`
 `;
 
 const Emoji = styled.span`
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   vertical-align: middle;
   // line-height: 0;
   // margin: 0;
@@ -139,15 +140,12 @@ const Divider =  styled.div`
   border-bottom: 1px solid #dddddd;
 `
 
-const Title = styled.h1`
-  letter-spacing: -3px;  
-  letter-spacing: -2.4px;
-  // letter-spacing: -2px;
-  font-size: 3.5rem;
+const Title = styled.h3`
+  letter-spacing: -1.8px;
+  font-size: 2.5rem;
   font-weight: 500;
-  color: #484848;
   color: #333;
-  line-height: 1.4;
+  line-height: 1.3;
 
   @media (max-width: 1024px) {
     font-size: 2.4rem;
@@ -156,14 +154,13 @@ const Title = styled.h1`
 `
 
 const Text = styled.p`
-  // color: #b5b5b5;
-  color: #666666;
-  // color: #888;
-  letter-spacing: -0.5px;
+  color: #333;
+  color: #666;
+  letter-spacing: -0.6px;
   font-weight: 400;
-  max-width: 41rem;
+  max-width: 46rem;
   line-height: 1.4;
-  font-size: 1.3rem;
+  font-size: 1.25rem;
   // background-color: #f5f5f5;
 
   @media (max-width: 1024px) {
@@ -281,9 +278,8 @@ export default function IndexPage() {
                   </Title> 
                 </div>
                 <div data-sal="fade" data-sal-delay="300" data-sal-duration="1200" data-sal-easing="ease">
-
-                  <Text>I'm an undergraduate student at the <Highlight>University of Washington</Highlight> majoring in <Highlight>Human Computer Interaction</Highlight> and enthralled by the factors that make us <Highlight>human.</Highlight></Text>
-
+   
+                  <Text>I'm an undergraduate student at the <Highlight>University of Washington</Highlight> majoring in <Highlight>Human Computer Interaction</Highlight> and enthralled by the factors that make us <Highlight>human.</Highlight></Text> 
                   <Text>If not <Highlight>pushing pixels</Highlight> in a Seattle coffee shop, catch me <Highlight>chasing powder</Highlight> in my local ski hill or wherever there is good snow to be found.</Text>
                 </div>
 
