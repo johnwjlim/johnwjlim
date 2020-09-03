@@ -13,7 +13,8 @@ const CaseCaption = styled.h4`
   margin-top: 1rem;
   letter-spacing: -0.2px;
   max-width: 55rem;
-  transition: 0.3s
+  transition: 0.3s;
+  color: #fff;
 
 `
 
@@ -41,7 +42,7 @@ const CaseLink = styled(Link)`
   }
 
   &:hover ${CaseCaption} {
-    color: #333333;
+    // color: #fff;
   }
 
 
@@ -57,6 +58,7 @@ const Filler = styled.div`
   // background-color: #47C3A0;
   // background-color: #e8e8e8;
   background-color: #ffffff;
+  background-color: #111;
   // background-color: #F6FFFA;
   opacity: 1;
   border: none;
@@ -69,6 +71,7 @@ const Filler = styled.div`
 const ImageCaption = styled.h2`
   position: absolute;
   color: #333333;
+  color: #fff;
   // color: #111;
   // color: #333333;
   // color: #47c3a0;

@@ -8,12 +8,12 @@ import scrollTo from 'gatsby-plugin-smoothscroll'
 
 import { Container, OffsetBody,  ImageWrapper, TextQuote, sections, SmallWidth, LargeWidth } from "../components/constants"
 
-import Layout from "../components/layout"
+import Layout from "../components/layout-dark"
 import Image from "../components/image"
 import SEO from "../components/seo"
 import Header from "../components/header"
 import MobileNav from "../components/mobile-nav"
-import Nav from "../components/nav"
+import Nav from "../components/nav-dark"
 
 import Nimbus from "../components/home/nimbus-thumbnail"
 import New from "../components/home/nimbus-thumbnail-new"
@@ -145,6 +145,7 @@ const Title = styled.h1`
   font-weight: 500;
   color: #484848;
   color: #333;
+  color: #fff;
   line-height: 1.4;
 
   @media (max-width: 1024px) {
@@ -157,6 +158,7 @@ const Text = styled.p`
   // color: #b5b5b5;
   color: #666666;
   // color: #888;
+  color: #ddd;
   letter-spacing: -0.5px;
   font-weight: 400;
   max-width: 42rem;
@@ -201,15 +203,16 @@ const Paper = styled.div`
 const Name = styled(Link)`
   color: #767676;
   color: #333;
+  color: #fff;
   transition: 0.2s;
   text-decoration: none;
   // border-bottom: 5px solid #333;
 
   :hover {
-    color: #888;
+    color: #ddd;
     // text-decoration: underline;
     // color: #000; 
-    border-bottom: 5px solid #b5b5b5;
+    border-bottom: 5px solid #fff;
   }
 
 `
