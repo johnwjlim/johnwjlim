@@ -30,11 +30,11 @@ const Wrapper = styled.div`
 `;
 
 const HeaderWrapper = styled.div`
-  display: none;
+  // display: none;
   
-  @media (max-width: 1240px) {
-    display: block;
-  }
+  // @media (max-width: 1240px) {
+  //   display: block;
+  // }
 `
 
 
@@ -145,7 +145,6 @@ const Title = styled.h1`
   // letter-spacing: -2px;
   font-size: 3.5rem;
   font-weight: 500;
-  color: #484848;
   color: #333;
   line-height: 1.4;
 
@@ -158,7 +157,6 @@ const Title = styled.h1`
 const Text = styled.p`
   // color: #b5b5b5;
   color: #666666;
-  // color: #888;
   letter-spacing: -0.5px;
   font-weight: 400;
   max-width: 41rem;
@@ -254,9 +252,9 @@ export default function IndexPage() {
   return (
     <Layout style={{backgroundColor: "#f0f0ec"}}>
       <SEO title="Home" />
-      <HeaderWrapper>
+      {/* <HeaderWrapper> */}
         <Header/>
-      </HeaderWrapper>
+      {/* </HeaderWrapper> */}
       {/* <FauxHeader>
           <HeaderTitle>John Lim</HeaderTitle>
       </FauxHeader> */}
@@ -267,10 +265,10 @@ export default function IndexPage() {
           <Wrapper>
             <div style={{width: "100%"}}>
             <Body>
-              <FauxHeader>
+              {/* <FauxHeader>
                 <StyledLink to="/">
                 </StyledLink>
-              </FauxHeader>
+              </FauxHeader> */}
               <TitleBox>
                 <div data-sal="fade" data-sal-delay="150" data-sal-duration="1200" data-sal-easing="ease">
                   <Title>
