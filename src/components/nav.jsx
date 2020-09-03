@@ -9,7 +9,7 @@ const Container = styled.nav`
   height: 91%;
   right: 0;
   margin: 0 1rem;
-  // margin-left: 0; 
+  margin-left: 0; 
   margin-top: 64px;
   @media (max-width: 1240px) {
     display: none; 
@@ -29,10 +29,12 @@ const StyledLink = styled(Link)`
   text-decoration: none;
   font-weight: 400;
   font-size: 1rem;
-  line-height: 1.7;
+  line-height: 1.68;
   transition: 0.2s;
-  letter-spacing: -0.4px;
-  color: #666666;
+  letter-spacing: -0.3px;
+  color: #666666; 
+  // color: #333;
+  // color: #888;
   padding: 0.25rem 0.5rem;
   border-radius: 8px;
   
@@ -56,7 +58,7 @@ const StyledText = styled.a`
 `
 
 const GreyText = styled.a`
-  line-height: 1.7;
+  line-height: 1.68;
   color: #b8b8b8;
   font-weight: 300;
   transition: 0.2s;
@@ -73,7 +75,7 @@ const GreyText = styled.a`
 `
 
 const GreyLink = styled(Link)`
-  line-height: 1.7;
+  line-height: 1.68;
   text-decoration: none;
   color: #b8b8b8;
   font-weight: 300;
@@ -107,7 +109,7 @@ const FooterText = styled.p`
   font-weight: 300;
   font-size: 0.83rem;
   line-height: 1.44;  
-  width: 12.5rem;
+  width: 12rem;
 `
 
 const InlineLink = styled.a`
@@ -125,6 +127,7 @@ const InlineLink = styled.a`
 const Footer = styled.footer`
   margin-top: 5rem;
   padding: 0 3rem;
+  line-height: 1.44;  
 `
 
 const FlexHack = styled.div`
@@ -173,7 +176,7 @@ export default function Nav(props) {
               style={{textDecoration: "none"}}
               as="a"
               target="_blank"
-              href="https://drive.google.com/file/d/1YC67UCd-V7o0Y1ZEp1y9AnxiSgOHiiy7/view?usp=sharing"
+              href="https://drive.google.com/file/d/1r5To1P3Oc8Dn9Ucbe_WxWWBi5bCVeYri/view?usp=sharing"
             >
               Resume
             </GreyText>
@@ -193,7 +196,7 @@ export default function Nav(props) {
             <StyledLink 
               as="a"
               target="_blank"
-              href="https://drive.google.com/file/d/1YC67UCd-V7o0Y1ZEp1y9AnxiSgOHiiy7/view?usp=sharing"
+              href="https://drive.google.com/file/d/1r5To1P3Oc8Dn9Ucbe_WxWWBi5bCVeYri/view?usp=sharing"
             >
               Resume
             </StyledLink>
@@ -283,10 +286,10 @@ export default function Nav(props) {
             <FooterText>
               Hand-coded with ❤️ on
               <InlineLink href="https://www.gatsbyjs.org" target="_blank"> React</InlineLink>, 
-              <InlineLink href="https://redux.js.org" target="_blank"> Redux</InlineLink>, 
-              <InlineLink href="https://www.styled-components.com" target="_blank"> styled-components</InlineLink>, 
-              and a little magic from 
-              <InlineLink href="https://www.react-spring.io" target="_blank"> react-spring</InlineLink>.
+              <InlineLink href="https://redux.js.org" target="_blank"> Redux</InlineLink> and 
+              <InlineLink href="https://www.styled-components.com" target="_blank"> styled-components</InlineLink> 
+              {/* and a little magic from 
+              <InlineLink href="https://www.react-spring.io" target="_blank"> react-spring</InlineLink>. */}
             </FooterText> 
             <FooterText>
               View <InlineLink href="https://github.com/johnwjlim/johnwjlim" target="_blank"> the source</InlineLink>.

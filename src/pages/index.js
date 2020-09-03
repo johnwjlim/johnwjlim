@@ -1,4 +1,4 @@
-import React, {useEffect} from "react"
+import React, {useEffect, useState} from "react"
 import { Link, useStaticQuery, graphql } from "gatsby"
 import styled from "styled-components"
 import { useSelector, useDispatch } from 'react-redux'
@@ -19,129 +19,15 @@ import Nimbus from "../components/home/nimbus-thumbnail"
 import New from "../components/home/nimbus-thumbnail-new"
 import GChallenge from "../components/home/g-thumbnail"
 import Pool from "../components/home/pool-thumbnail"
+import Pear from "../components/home/pear-thumbnail"
+import Movley from "../components/home/movley-thumbnail"
 
 const Wrapper = styled.div`
   display: flex;
-  justify-content: space-between;
-  // margin-top: 76px;
-  // margin-top: 58px;
-  // background-color: #;
   @media (max-width: 1240px) {
     margin-top: 76px;
   }
 `;
-
-const Body = styled(Container)`
-  // width: 100%;
-  margin: 0 2rem;
-  margin-right: 15em;
-
-  @media (max-width: 1240px) {
-    margin: 0;
-  }
-`;
-
-const TitleBox = styled.div`
-  // margin: 5rem 0 10rem;
-  // margin: 3.5rem 0 5rem;
-  // margin: 0.7rem 0;
-  // margin: 4rem 0;
-  // margin: 0 3rem;
-  margin-bottom: 1rem; 
-  margin-bottom: 4rem;
-  // border-bottom: 1px solid #dddddd;
-
-  margin-top: 8rem;
-  @media (max-width: 768px) {
-    // font-size: 1rem;
-    margin: 3.5rem 0 5rem;
-  }
-`
-
-const Subtitle = styled.h3`
-  // font-size: 1.1rem;
-  font-weight: 300;
-  color: #666666;
-  letter-spacing: -0.2px;
-  // color: #333333;
-  margin-bottom: 0.3rem;
-  font-size: 1.3rem;
-
-  @media (max-width: 768px) {
-    display: none;
-  }
-`
-
-const MobileSubtitle = styled(Subtitle)`
-  @media (max-width: 768px) {
-    display: block;
-  }
-`
-
-const CaseLink = styled(Link)`
-  text-decoration: none;
-  transition: 0.2s;
-
-  :hover {
-    cursor: pointer;
-    transform: scale(0.8);
-  }
-`;
-
-const CaseCaption = styled.h3`
-  // font-weight: 400;
-  color: #333333;
-  margin-top: 1rem;
-  // letter-spacing: -0.3px;
-`
-
-const ScaledImage = styled(ImageWrapper)`
-transition: transform 0.2s;
-
-:hover {
-  transform: scale(1.03)
-}
-`
-
-const NewTitle = styled.h1`
-  letter-spacing: -4px;
-  font-weight: 700;
-  font-size: 4rem;
-  // margin: 4rem 0; 
-  margin-bottom: 4rem;
-  line-height: 0.99;
-  color: #111111;
-  // color: #4353ff;
-
-  @media (max-width: 1024px) {
-    font-size: 2.5rem;
-    letter-spacing: -2px
-  }
-
-  // @media(max-width: 768px) {
-  //   letter-spacing: -2px;
-  //   font-size: 1.5rem;
-  // }
-`
-const NewSubtitle = styled.h4`
-  letter-spacing: -0.2px;
-  font-weight: 400;
-  margin-bottom: 6rem;
-  margin-top: 3.8rem;
-  color: #666;
-  
-  @media (max-width: 1240px) {
-    display: none;
-  }
-`
-
-const NewSubtext = styled.h6`
-  margin-top: 1rem;
-  letter-spacing: -0.2px;
-  
-  color: #dddddd;
-  font-weight: 400;
-`
 
 const HeaderWrapper = styled.div`
   display: none;
@@ -151,17 +37,33 @@ const HeaderWrapper = styled.div`
   }
 `
 
-const Sub = styled.h3`
-  letter-spacing: -0.3px;
-  color: #333333;
-  font-weight: 400;
-  line-height: 1.5;
 
-  @media (max-width: 1024px) {
-    font-size: 1rem;
-    letter-spacing: -0.2px;
+const Body = styled(Container)`
+  margin: 0 2rem;
+
+  @media (max-width: 1240px) {
+    margin: 0;
+  }
+`;
+
+const TitleBox = styled.div`
+
+  margin-bottom: 1rem; 
+  margin-bottom: 12rem;
+  // border-bottom: 1px solid #dddddd;
+
+  margin-top: 15rem;
+
+  margin: 12rem 0;
+  @media (max-width: 768px) {
+    // font-size: 1rem;
+    margin: 3.5rem 0 5rem;
   }
 `
+
+
+
+
 
 const FauxHeader = styled.div`
   position: fixed;
@@ -184,8 +86,8 @@ const HeaderTitle = styled.h2`
   margin: 0;
   // margin-right: 3.6rem;
   letter-spacing: -0.8px;
-  font-weight: 600;
-  color: #111111;
+  font-weight: 500;
+  color: #333333;
   // font-size: 1.4rem;
 
 
@@ -207,7 +109,7 @@ const StyledLink = styled(Link)`
 `;
 
 const Emoji = styled.span`
-  font-size: 2rem;
+  font-size: 1.75rem;
   vertical-align: middle;
   // line-height: 0;
   // margin: 0;
@@ -238,23 +140,38 @@ const Divider =  styled.div`
 `
 
 const Title = styled.h1`
-  letter-spacing: -1.6px;
-  font-size: 2.4rem;
-  font-weight: 700;
+  letter-spacing: -3px;  
+  letter-spacing: -2.4px;
+  // letter-spacing: -2px;
+  font-size: 3.5rem;
+  font-weight: 500;
+  color: #484848;
   color: #333;
-  line-height: normal;
-  // margin-bottom: 1rem;
+  line-height: 1.4;
+
+  @media (max-width: 1024px) {
+    font-size: 2.4rem;
+    letter-spacing: -1.8px
+  }
 `
 
 const Text = styled.p`
   // color: #b5b5b5;
-  color: #888;
-  letter-spacing: -0.4px;
+  color: #666666;
+  // color: #888;
+  letter-spacing: -0.5px;
   font-weight: 400;
-  max-width: 36rem;
-  line-height: 1.44;
-  // line-height: normal;
-  font-size: 1rem;
+  max-width: 41rem;
+  line-height: 1.4;
+  font-size: 1.3rem;
+  // background-color: #f5f5f5;
+
+  @media (max-width: 1024px) {
+    font-size: 1.2rem;
+    letter-spacing: -0.3px
+  }
+
+
 `
 
 const MicroText = styled.h4`
@@ -271,12 +188,32 @@ const Dash = styled.div`
 `
 
 const Highlight = styled.span`
-  color: #333;
-  font-weight: 600;
+  // color: #333333; 
+  // font-weight: 500;
 `
 const TitleFlip = styled.div`
   background-color: #333;
   color: #fff
+`
+
+const Paper = styled.div`
+ background-color: #f0f0ec;
+`
+
+const Name = styled(Link)`
+  color: #767676;
+  color: #333;
+  transition: 0.2s;
+  text-decoration: none;
+  // border-bottom: 5px solid #333;
+
+  :hover {
+    color: #888;
+    // text-decoration: underline;
+    // color: #000; 
+    border-bottom: 5px solid #b5b5b5;
+  }
+
 `
 
 
@@ -293,19 +230,29 @@ export default function IndexPage() {
       }
     }
   `)
-  // const dispatch = useDispatch()
+  const dispatch = useDispatch()
   const menuState = useSelector(state => state.menuState)
 
-  // useEffect(() => {
-  //   dispatch({type: "CLOSE"})
-  // },[])
+  const [menu, setMenu] = useState(false)
+
+  useEffect(() => {
+    console.log(menuState)
+    // setMenu(menuState)
+    // console.log(menu)
+  },[menuState])
+
+
+
+  useEffect(() => {
+    dispatch({type: "CLOSE"})
+  },[])
 
   // function handleTabSwitch(value) {
   //   setActive(value);
   // }
 
   return (
-    <Layout>
+    <Layout style={{backgroundColor: "#f0f0ec"}}>
       <SEO title="Home" />
       <HeaderWrapper>
         <Header/>
@@ -318,79 +265,48 @@ export default function IndexPage() {
         <MobileNav /> :
         <>
           <Wrapper>
+            <div style={{width: "100%"}}>
             <Body>
               <FauxHeader>
                 <StyledLink to="/">
-                  {/* <HeaderTitle>John Lim</HeaderTitle> */}
-                  {/* <NewSubtitle>Digital Product Designer</NewSubtitle> */}
                 </StyledLink>
               </FauxHeader>
-
               <TitleBox>
-                {/* <NewSubtitle>Digital Product Designer</NewSubtitle>  */}
-                {/* <NewTitle>
-                  <div data-sal="fade" data-sal-delay="100" data-sal-duration="1200" data-sal-easing="ease"> 
-                    <TitleStyle>John is</TitleStyle><br/>
-                    <TitleStyle>A Pavement Pounder. </TitleStyle> <br/>
-                  </div>
-                    A Pixel Pusher. <Emoji> 🏃 👨‍🎓 ⛷</Emoji> <br/> 
-                  <div data-sal="fade" data-sal-delay="100" data-sal-duration="1200" data-sal-easing="ease"> 
-                    <TitleStyle>A Powder Hound. </TitleStyle> 
-                  </div>
-                </NewTitle>
-                <div data-sal="fade" data-sal-delay="300" data-sal-duration="1200" data-sal-easing="ease"> 
-                  <Sub>Enthralled by the things that make us human. <br/> Sustained by excessive amounts of coffee.</Sub>
-                  <Arrow >
-                    <div class="arrow" onClick={() => scrollTo('#nimbus')}/>
-                  </Arrow>
-                </div> */}
                 <div data-sal="fade" data-sal-delay="150" data-sal-duration="1200" data-sal-easing="ease">
                   <Title>
                     <div>
-                    Hello, I'm John. &nbsp;<Emoji> 👋 </Emoji>
+                    Hello there, I'm <Name to="/about">John</Name><span className="blinking">.</span> &nbsp;
+                    <Emoji> ✌️ </Emoji>
                     </div>
                   </Title> 
                 </div>
                 <div data-sal="fade" data-sal-delay="300" data-sal-duration="1200" data-sal-easing="ease">
-                  {/* <Text>
-                    I study <Highlight>Human Computer Interaction</Highlight> at the <Highlight>University of Washington</Highlight> enthralled by the things that make us <Highlight>human</Highlight> and driven by the 
-                    pursuit of the elusive <Highlight>intersection</Highlight> between <Highlight>technology and humanity.</Highlight> 
-                  </Text> */}
-                  <Text>I'm an undergraduate student at the <Highlight>University of Washington</Highlight> majoring in <Highlight>Human Computer Interaction</Highlight> and enthralled by the things that make us <Highlight>human.</Highlight></Text>
-                  {/* <Text>
-                    If not <Highlight>skiing,</Highlight> I can be found <Highlight>grinding</Highlight> out the miles on the gravel or <Highlight>pushing pixels</Highlight> while nursing my second coffee of the day in one of the many <Highlight>coffee</Highlight> shops around <Highlight>Seattle.</Highlight>
-                  </Text> */}
-                  <Text>If not <Highlight>pushing pixels</Highlight> in a Seattle coffee shop, catch me <Highlight>chasing powder</Highlight> in the local ski hill or wherever there is good snow to be found.</Text>
+
+                  <Text>I'm an undergraduate student at the <Highlight>University of Washington</Highlight> majoring in <Highlight>Human Computer Interaction</Highlight> and enthralled by the factors that make us <Highlight>human.</Highlight></Text>
+
+                  <Text>If not <Highlight>pushing pixels</Highlight> in a Seattle coffee shop, catch me <Highlight>chasing powder</Highlight> in my local ski hill or wherever there is good snow to be found.</Text>
                 </div>
-                {/* <div data-sal="fade" data-sal-delay="400" data-sal-duration="1200" data-sal-easing="ease">
-                  <Dash>
-                    ––
-                  </Dash>
-                </div>
-                <div data-sal="fade" data-sal-delay="400" data-sal-duration="1200" data-sal-easing="ease">
-                  <MicroText>
-                    Scroll down to view select projects 
-                  </MicroText>
-                  <Arrow >
-                      <div class="arrow" onClick={() => scrollTo('#nimbus')}/>
-                  </Arrow>
-                </div> */}
+
               </TitleBox>
-              {/* <Divider /> */}
               <div data-sal="fade" data-sal-delay="100" data-sal-duration="1500" data-sal-easing="ease" id="nimbus" style={{paddingTop: "1rem"}}> 
                <New />
               </div>
+        
               <div data-sal="fade" data-sal-delay="100" data-sal-duration="1500" data-sal-easing="ease"> 
                 <Pool />
               </div>
               <div data-sal="fade" data-sal-delay="100" data-sal-duration="1500" data-sal-easing="ease"> 
+                <Movley />
+              </div>
+              <div data-sal="fade" data-sal-delay="100" data-sal-duration="1500" data-sal-easing="ease"> 
+                <Pear />
+              </div>
+              <div data-sal="fade" data-sal-delay="100" data-sal-duration="1500" data-sal-easing="ease"> 
                 <GChallenge />
               </div>
-              {/* </div> */}
             </Body>
-            {/* <div style={{marginTop: "64px"}}> */}
+            </div>
               <Nav />
-            {/* </div> */}
           </Wrapper>
         </>
       }

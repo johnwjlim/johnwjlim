@@ -7,6 +7,9 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  letter-spacing: -0.006rem;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 /* ::selection { */
@@ -23,25 +26,70 @@ body {
 h1, h2, h3, h4, h5, h6, p, a, blockquote, li {
   /* font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
-  font-family: "Inter", -apple-system, BlinkMacSystemFont, Helvetica Neue, sans-serif;
+  font-family: "Untitled Sans", "Inter", -apple-system, BlinkMacSystemFont, Helvetica Neue, sans-serif;
   text-rendering: optimizeLegibility;
-  line-height: 1.2;
+  /* line-height: 1.1; */
   margin-top: 0;
-  color: #333333;
-  letter-spacing: -0.008em;
+  /* color: #333333; */
+  color: #111;
+  /* letter-spacing: -0.008em; */
 }
 
 p {
   /* line-height: 1.5; */
   font-size: 16px;
-  /* font-weight: 400; */
-  letter-spacing: -0.01em;
-  line-height: 1.5;
+  font-weight: 400;
+  /* letter-spacing: -0.2px; */
+  line-height: 1.6;
+
+  /* color: rgba(0,0,0,0.6); */
+  color: #333333;
+  /* color: #666; */
 }
 
 strong {
-  /* font-weight: 600; */
+  font-weight: 500;
+  color: #111111; 
 }
+
+.grey {
+  /* color: #b8b8b8;  */
+  /* font-weight: 300;
+  transition: 0.2s;
+  border: none;
+  border-radius: 8px;
+  letter-spacing: -0.3px; */
+  text-decoration: none; 
+}
+
+.scroll-link {
+  line-height: 1.68;
+  font-weight: 300;
+  transition: 0.2s;
+  border: none;
+  padding: 0rem 0.5rem;
+  border-radius: 8px;
+  letter-spacing: -0.3px;
+  text-decoration: none;  
+  width: auto;
+  color: #b8b8b8;
+}
+
+
+.scroll-link:hover {
+  cursor: pointer;  
+  /* color: #666666; */
+  /* background-color: #f5f5f5; */
+  /* border-bottom: solid 1px #666666; */
+  text-decoration: underline;
+}
+
+
+.is-current .scroll-link{
+  color: #333333;
+  font-weight: 500;
+}
+
 
 button,
 input,
@@ -139,4 +187,31 @@ button:-moz-focusring {
       transform: rotate(135deg) translate(0, 4px);
     }
   }
-	
+
+
+.blinking{
+  animation:blinkingText 1.2s infinite;
+}
+
+  @keyframes blinkingText{
+      0%{     color: #333333;    }
+      49%{    color: #333333; }
+      60%{    color: transparent; }
+      99%{    color:transparent;  }
+      100%{   color: #333333;    }
+  }
+  
+/* @keyframes blinkingText{
+  0%{     color: #888;    }
+  49%{    color: #888; }
+  60%{    color: transparent; }
+  99%{    color:transparent;  }
+  100%{   color: #888;    }
+}
+ */
+
+
+ .activeLink {
+  pointer-events: none;
+  
+ }

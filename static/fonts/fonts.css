@@ -1,0 +1,100 @@
+@font-face {
+  font-family: "Untitled Sans";
+  src: url("UntitledSansWeb-Regular.woff2") format('woff2'),
+  url("UntitledSansWeb-Regular.woff") format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Untitled Sans";
+  src: url("UntitledSansWeb-RegularItalic.woff2") format('woff2'),
+  url("UntitledSansWeb-RegularItalic.woff") format('woff');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Untitled Sans";
+  src: url("UntitledSansWeb-Light.woff2") format('woff2'),
+  url("UntitledSansWeb-Light.woff") format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Untitled Sans";
+  src: url("UntitledSansWeb-LightItalic.woff2") format('woff2'),
+  url("UntitledSansWeb-LightItalic.woff") format('woff');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Untitled Sans";
+  src: url("UntitledSansWeb-Medium.woff2") format('woff2'),
+  url("UntitledSansWeb-Medium.woff") format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Untitled Sans";
+  src: url("UntitledSansWeb-MediumItalic.woff2") format('woff2'),
+  url("UntitledSansWeb-MediumItalic.woff") format('woff');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Untitled Sans";
+  src: url("UntitledSansWeb-Bold.woff2") format('woff2'),
+  url("UntitledSansWeb-Bold.woff") format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Untitled Sans";
+  src: url("UntitledSansWeb-BoldItalic.woff2") format('woff2'),
+  url("UntitledSansWeb-BoldItalic.woff") format('woff');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Untitled Sans";
+  src: url("UntitledSansWeb-Black.woff2") format('woff2'),
+  url("UntitledSansWeb-Black.woff") format('woff');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Untitled Sans";
+  src: url("UntitledSansWeb-BlackItalic.woff2") format('woff2'),
+  url("UntitledSansWeb-BlackItalic.woff") format('woff');
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Founders Grotesk";
+  src: url("FoundersGrotesk-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Founders Grotesk";
+  src: url("FoundersGrotesk-Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Founders Grotesk";
+  src: url("FoundersGrotesk-Semibold.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+}

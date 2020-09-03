@@ -34,7 +34,10 @@ module.exports = {
         google: {
           families: ['EB Garamond\:300,400,500,600,700', 'Inter\:100,200,300,400,500,600,650,700,800']
         },
-        display: 'swap'
+        custom: {
+          families: ['Untitled Sans\:300,400,500,700,900', 'Founders Grotesk\:400,500,600'],
+          urls: ["/fonts/fonts.css"]
+        }
       }
     },
     {
@@ -46,6 +49,7 @@ module.exports = {
       }
     },
     `gatsby-plugin-smoothscroll`,
+    `gatsby-plugin-netlify-cache`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

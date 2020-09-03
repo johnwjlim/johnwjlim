@@ -66,7 +66,6 @@ export default function Nav(props) {
     dispatch({type: "CLOSE"})
   }
 
-
   function handleComponents() {
     if (sections) {
       return sections.map((section, index) => {
@@ -102,7 +101,7 @@ export default function Nav(props) {
          <StyledLink 
                 as="a"
                 target="_blank"
-                href="https://drive.google.com/file/d/1YC67UCd-V7o0Y1ZEp1y9AnxiSgOHiiy7/view?usp=sharing"
+                href="https://drive.google.com/file/d/1r5To1P3Oc8Dn9Ucbe_WxWWBi5bCVeYri/view?usp=sharing"
                 onClick={() => dispatch({type: "CLOSE"})} 
               >
                 Resume
@@ -110,11 +109,11 @@ export default function Nav(props) {
         </ListItem>
       </List>
  
-      <List>
+      {/* <List>
         {
           handleComponents()
-        }
-      </List>
+        } 
+      </List> */}
     </Container>
   )
 }

@@ -7,7 +7,7 @@ import {useTransition, animated} from 'react-spring'
 import { ImageWrapper } from "../constants"
 
 const CaseCaption = styled.h4`
-  font-weight: 600;
+  font-weight: 500;
   margin: 0;
   margin-top: 1rem;
   letter-spacing: -0.2px;
@@ -42,7 +42,7 @@ const CaseLink = styled(Link)`
   // }
 
   &:hover ${CaseCaption} {
-      color: #666666;
+      // color: #666666;
     }
 `;
 
@@ -70,7 +70,7 @@ const Filler = styled.div`
 
 const ImageCaption = styled.h2`
   position: absolute;
-  color: #333333;
+  color: #111111;
   // color: #ff6699;
   // bottom: 3vh;
   // left: 6vh;
@@ -78,9 +78,10 @@ const ImageCaption = styled.h2`
   left: 0;
   // padding-top: 1rem;
   max-width: 50rem;
-  letter-spacing: -0.5px;
-  font-weight: 600;
+  letter-spacing: -0.7px;
+  font-weight: 500;
   margin: 0;
+  line-height: 1.2;
 
 
   // @media (max-width: 1024px) {
@@ -88,7 +89,7 @@ const ImageCaption = styled.h2`
   //   max-width: 20rem;
   // }
   :hover {
-    color: #666666;
+    // color: #666666;
   }
   @media (max-width: 1240px) {
     display: none;

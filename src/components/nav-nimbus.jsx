@@ -1,14 +1,18 @@
 import React, { useState } from "react"
 import { Link, navigate } from "gatsby"
 import styled from "styled-components"
+import Scrollspy from 'react-scrollspy'
+import Scroll from './Scroll'
+import scrollTo from 'gatsby-plugin-smoothscroll'
 
 const Container = styled.nav`
   width: 16em;
+  // z-index: 10;
   position: fixed;   
   height: 91%;
   right: 0;
   margin: 0 1rem;
-  margin-left: 0;
+  margin-left: 0; 
   margin-top: 64px;
   @media (max-width: 1240px) {
     display: none; 
@@ -18,8 +22,9 @@ const Container = styled.nav`
 const List = styled.ul`
   list-style: none;
   margin-bottom: 3.5rem;
-
 `
+
+
 const ListItem = styled.li`
 `;
 
@@ -27,7 +32,7 @@ const ListItem = styled.li`
 const StyledLink = styled(Link)`
   text-decoration: none;
   font-size: 1rem;
-  line-height: 1.7;
+  line-height: 1.68;
   transition: 0.2s;
   // font-size: 0.95rem;
 
@@ -40,25 +45,42 @@ const StyledLink = styled(Link)`
 
 
 const StyledText = styled.a`
-  line-height: 1.7;
+  line-height: 1.68;
   color: #333333;
   margin: 0;
   font-weight: 500;
   border-bottom: 1px solid #333333; 
   margin: 0.25rem 0.5rem;
-  letter-spacing: -0.4px;
+  letter-spacing: -0.3px;
 
 `
 
 const GreyText = styled.a`
-  line-height: 1.7;
+  line-height: 1.68;
   color: #b8b8b8;
   font-weight: 300;
   transition: 0.2s;
   border: none;
   padding: 0.25rem 0.5rem;
   border-radius: 8px;
-  letter-spacing: -0.4px;
+  letter-spacing: -0.3px;
+  text-decoration: none;
+
+  :hover {
+    cursor: pointer;  
+    color: #666666;
+    background-color: #f5f5f5;
+  }   
+`
+
+const NavText = styled.a`
+  line-height: 1.68;
+  transition: 0.2s;
+  border: none;
+  padding: 0.25rem 0.5rem;
+  border-radius: 8px;
+  letter-spacing: -0.3px;
+  text-decoration: none;
 
   :hover {
     cursor: pointer;  
@@ -68,7 +90,7 @@ const GreyText = styled.a`
 `
 
 const GreyLink = styled(Link)`
-  line-height: 1.7;
+  line-height: 1.68;
   text-decoration: none;
   color: #b8b8b8;
   font-weight: 300;
@@ -146,7 +168,7 @@ export default function Nav(props) {
         } else {
           return (
             <ListItem key={index} onClick={() => navigate(props.routes[index])}>
-              <GreyText style={{margin: "0", lineHeight: "1.7"}}>{sections[index]}</GreyText>
+              <GreyText  style={{margin: "0", lineHeight: "1.7"}}>{sections[index]}</GreyText>
             </ListItem>
           )
         }
@@ -169,7 +191,7 @@ export default function Nav(props) {
               style={{textDecoration: "none"}}
               as="a"
               target="_blank"
-              href="https://drive.google.com/file/d/1YC67UCd-V7o0Y1ZEp1y9AnxiSgOHiiy7/view?usp=sharing"
+              href="https://drive.google.com/file/d/1r5To1P3Oc8Dn9Ucbe_WxWWBi5bCVeYri/view?usp=sharing"
             >
               Resume
             </GreyText>
@@ -189,7 +211,7 @@ export default function Nav(props) {
             <StyledLink 
               as="a"
               target="_blank"
-              href="https://drive.google.com/file/d/1YC67UCd-V7o0Y1ZEp1y9AnxiSgOHiiy7/view?usp=sharing"
+              href="https://drive.google.com/file/d/1r5To1P3Oc8Dn9Ucbe_WxWWBi5bCVeYri/view?usp=sharing"
             >
               Resume
             </StyledLink>
@@ -254,7 +276,7 @@ export default function Nav(props) {
     }
   }
 
-  return (
+  return (  
     <Container>
       <FlexHack>
         <Row>
@@ -263,11 +285,42 @@ export default function Nav(props) {
               handleMain()
             }
           </List>
-          <List>
-            {
-              handleComponents()
-            }
-          </List>
+          <Scrollspy
+            style={{marginBottom: "3.5rem", listStyle: "none"}}
+            items={ ['section-1', 'section-2', 'section-3', 'section-4', 'section-5', 'section-6'] }
+            currentClassName="is-current"
+          >
+            <li className="grey">
+              <Scroll type="id" element="section-1" offset={-100}>
+                <a href="#" className="scroll-link">Overview</a>
+              </Scroll>
+            </li>
+            <li className="grey">
+              <Scroll type="id" element="section-2">
+                <a href="#" className="scroll-link">Survey and Ideation</a>
+              </Scroll>
+            </li>
+            <li className="grey">
+              <Scroll type="id" element="section-3" offset={-80}>
+                <a href="#" className="scroll-link">Flows + Wireframes</a>
+              </Scroll>    
+            </li>
+            <li className="grey">
+              <Scroll type="id" element="section-4">
+                <a href="#" className="scroll-link">High Fidelity Screens</a>
+              </Scroll> 
+            </li>
+            <li className="grey">
+              <Scroll type="id" element="section-5" offset={-80}>
+                <a href="#" className="scroll-link">Redesign</a>
+              </Scroll>
+            </li>
+            <li className="grey"> 
+              <Scroll type="id" element="section-6" offset={-80}>
+                <a href="#" className="scroll-link">End Notes</a>
+              </Scroll>  
+            </li> 
+          </Scrollspy>
         </Row>
         <Row>
           <List>
@@ -279,10 +332,8 @@ export default function Nav(props) {
             <FooterText>
               Hand-coded with ❤️ on
               <InlineLink href="https://www.gatsbyjs.org" target="_blank"> React</InlineLink>, 
-              <InlineLink href="https://redux.js.org" target="_blank"> Redux</InlineLink>, 
-              <InlineLink href="https://www.styled-components.com" target="_blank"> styled-components</InlineLink>, 
-              and a little magic from 
-              <InlineLink href="https://www.react-spring.io" target="_blank"> react-spring</InlineLink>.
+              <InlineLink href="https://redux.js.org" target="_blank"> Redux</InlineLink> and
+              <InlineLink href="https://www.styled-components.com" target="_blank"> styled-components</InlineLink>.
             </FooterText> 
             <FooterText>
               View <InlineLink href="https://github.com/johnwjlim/johnwjlim" target="_blank"> the source</InlineLink>.
