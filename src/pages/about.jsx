@@ -72,7 +72,7 @@ const Text = styled.p`
   max-width: 28rem;
   margin: 0 auto;
   font-size: 1rem;
-  letter-spacing: -0.1px;
+  letter-spacing: -0.15px;
   line-height: 1.5;
   color: #666;
   color: #dddddd; 

@@ -157,7 +157,7 @@ const Text = styled.p`
   // color: #b5b5b5;
   color: #666666;
   // color: #888;
-  letter-spacing: -0.4px;
+  letter-spacing: -0.5px;
   font-weight: 400;
   max-width: 42rem;
   line-height: 1.4;

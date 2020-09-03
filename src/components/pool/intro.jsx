@@ -79,7 +79,7 @@ const BlockText = styled.p`
   // margin: 0 8rem;
   font-size: 1rem;
   line-height: 1.5;
-  letter-spacing: -0.1px;
+  letter-spacing: -0.15px;
   color: #eeeeee;
 
   // stupid shit incoming

@@ -9,6 +9,7 @@ import { Container, ImageWrapper, FlexWrapper, IntroBody, OffsetBody, RightButto
 const TextBlock = styled.div`
   max-width: 46rem;
   margin: 0 auto;
+  // letter-spacing: -0.15px;
   // margin-bottom: 1.25rem;
 `
 
