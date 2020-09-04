@@ -22,6 +22,19 @@ import Pool from "../components/home/pool-thumbnail"
 import Pear from "../components/home/pear-thumbnail"
 import Movley from "../components/home/movley-thumbnail"
 
+const LayoutHack = styled.div`
+  margin: 0 auto;
+  // max-width: 1680px;
+  padding: 0px 2.5rem 1.45rem;
+  position: relative;
+  // background-color: #f9f9f9;
+  box-sizing: border-box;
+
+  @media (max-width: 425px) {
+    padding: 0 1.25rem 1.45rem;
+  }
+`;
+
 const Wrapper = styled.div`
   display: flex;
   @media (max-width: 1240px) {
@@ -50,9 +63,9 @@ const TitleBox = styled.div`
 
   margin-bottom: 1rem; 
   margin-bottom: 10rem;
-  // border-bottom: 1px solid #dddddd;
 
   margin-top: 14rem;
+  margin-bottom: 16rem;
 
   // margin: 12rem 0;
   @media (max-width: 768px) {
@@ -109,7 +122,7 @@ const StyledLink = styled(Link)`
 `;
 
 const Emoji = styled.span`
-  font-size: 1.75rem;
+  font-size: 2rem;
   vertical-align: middle;
   // line-height: 0;
   // margin: 0;
@@ -250,7 +263,7 @@ export default function IndexPage() {
   // }
 
   return (
-    <Layout style={{backgroundColor: "#f0f0ec"}}>
+    <LayoutHack >
       <SEO title="Home" />
       {/* <HeaderWrapper> */}
         <Header/>
@@ -286,7 +299,7 @@ export default function IndexPage() {
                 </div>
 
               </TitleBox>
-              <div data-sal="fade" data-sal-delay="100" data-sal-duration="1500" data-sal-easing="ease" id="nimbus" style={{paddingTop: "1rem"}}> 
+              <div data-sal="fade" data-sal-delay="100" data-sal-duration="1500" data-sal-easing="ease" id="nimbus"> 
                <New />
               </div>
         
@@ -308,6 +321,6 @@ export default function IndexPage() {
           </Wrapper>
         </>
       }
-  </Layout>
+  </LayoutHack>
   )
 }

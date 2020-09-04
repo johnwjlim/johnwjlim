@@ -213,5 +213,8 @@ button:-moz-focusring {
 
  .activeLink {
   pointer-events: none;
-  
+ }
+
+ .dark {
+   background-color: #111111;
  }
