@@ -49,12 +49,12 @@ const Body = styled(Container)`
 const TitleBox = styled.div`
 
   margin-bottom: 1rem; 
-  margin-bottom: 12rem;
+  margin-bottom: 10rem;
   // border-bottom: 1px solid #dddddd;
 
-  margin-top: 15rem;
+  margin-top: 14rem;
 
-  margin: 12rem 0;
+  // margin: 12rem 0;
   @media (max-width: 768px) {
     // font-size: 1rem;
     margin: 3.5rem 0 5rem;
