@@ -141,7 +141,7 @@ const Divider =  styled.div`
 
 const Title = styled.h1`
   letter-spacing: -3px;  
-  letter-spacing: -2.6px;
+  letter-spacing: -2.5px;
   // letter-spacing: -2px;
   font-size: 3.5rem;
   font-weight: 500;
@@ -161,7 +161,7 @@ const Text = styled.p`
   font-weight: 400;
   max-width: 41rem;
   line-height: 1.4;
-  font-size: 1.3rem;
+  font-size: 1.25rem;
   // background-color: #f5f5f5;
 
   @media (max-width: 1024px) {
