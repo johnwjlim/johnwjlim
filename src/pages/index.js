@@ -27,7 +27,8 @@ const LayoutHack = styled.div`
   // max-width: 1680px;
   padding: 0px 2.5rem 1.45rem;
   position: relative;
-  // background-color: #f9f9f9;
+  // background-color: #fafafa;
+  // background-color: #eeeeee;
   box-sizing: border-box;
 
   @media (max-width: 425px) {
@@ -64,8 +65,12 @@ const TitleBox = styled.div`
   margin-bottom: 1rem; 
   margin-bottom: 10rem;
 
-  margin-top: 14rem;
-  margin-bottom: 16rem;
+  margin-top: 12rem;
+  // margin-top: 80px;
+  margin-bottom: 14rem;
+
+  // margin-top: 10rem;
+  // margin-bottom: 12rem;
 
   // margin: 12rem 0;
   @media (max-width: 768px) {
