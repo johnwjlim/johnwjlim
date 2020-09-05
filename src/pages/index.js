@@ -69,6 +69,9 @@ const TitleBox = styled.div`
   // margin-top: 80px;
   margin-bottom: 14rem;
 
+  // margin-top: 10rem;
+  // margin-bottom: 12rem;
+
   // margin: 12rem 0;
   @media (max-width: 768px) {
     // font-size: 1rem;
