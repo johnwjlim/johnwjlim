@@ -72,8 +72,8 @@ const Text = styled.p`
   max-width: 28rem;
   margin: 0 auto;
   font-size: 1rem;
-  letter-spacing: -0.15px;
-  line-height: 1.5;
+  letter-spacing: -0.2px;
+  line-height: 1.4;
   color: #666;
   color: #dddddd; 
   margin-bottom: 1.25rem;
