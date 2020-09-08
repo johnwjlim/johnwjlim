@@ -175,10 +175,11 @@ const Title = styled.h1`
 const Text = styled.p`
   // color: #b5b5b5;
   color: #666666;
-  letter-spacing: -0.5px;
+  letter-spacing: -0.6px;
   font-weight: 400;
   max-width: 41rem;
-  line-height: 1.4;
+  max-width: 38.5rem;
+  line-height: 1.45;
   font-size: 1.25rem;
   // background-color: #f5f5f5;
 
