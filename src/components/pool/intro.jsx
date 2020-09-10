@@ -83,7 +83,7 @@ const BlockText = styled.p`
   letter-spacing: -0.15px;
   // letter-spacing: -0.2px;
 
-  color: #eee;
+  color: #efefef; 
 
   // stupid shit incoming
   // font-weight: 500;
