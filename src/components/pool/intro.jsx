@@ -267,8 +267,8 @@ export default function Intro() {
           </BlockTitle>
           <BlockText>    
             As my individual deliverable for this project, I designed a solution for our problem based on <Highlight>existing technologies that are available today.</Highlight> 
-            <br/><br/>
-            Having identified lengthy showers as one of the most frivolous uses of water, my design solution was a voice-activated, digitally controlled shower that aims to provide real-time feedback to help users improve their awareness of consumption and hopefully make changes to behavior.
+            {/* <br/><br/> */}
+            &nbsp; Having identified lengthy showers as one of the most frivolous uses of water, my design solution was a voice-activated, digitally controlled shower that aims to provide real-time feedback to help users improve their awareness of consumption and hopefully make changes to behavior.
             <br/><br/>
             <ImageWrapper>
               <div data-sal="fade" data-sal-delay="300" data-sal-duration="1500" data-sal-easing="ease">
@@ -317,8 +317,8 @@ export default function Intro() {
           <BlockTitle>The Headliner</BlockTitle>
           <BlockText>
             As our team deliverable, we were to design a solution to the problem with <Highlight>the technologies of tommorow.</Highlight> 
-            <br/><br/> 
-            Building off the idea of real-time feedback, <Highlight>POOL</Highlight> is a mixed reality experience that projects real-time resource impact at the point of use to close the feedback loop between usage and awareness in order to provide users a better awareness of their consumption and encourage responsibility.
+            {/* <br/><br/>  */}
+            &nbsp; Building off the idea of real-time feedback, <Highlight>POOL</Highlight> is a mixed reality experience that projects real-time resource impact at the point of use to close the feedback loop between usage and awareness in order to provide users a better awareness of their consumption and encourage responsibility.
             <br/><br/> 
             We called it <Highlight>POOL</Highlight> as kind of as a playful way to reflect the way our design aimed to visualize resource footprints as "pools of impact" on the ground. I created a one page poster to showcase through storyboard what our design was about and how it worked.
           </BlockText>
