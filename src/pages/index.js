@@ -30,6 +30,7 @@ const LayoutHack = styled.div`
   // background-color: #fafafa;
   // background-color: #eeeeee;
   box-sizing: border-box;
+  background-color: #ffffff;
 
   @media (max-width: 425px) {
     padding: 0 1.25rem 1.45rem;
@@ -65,7 +66,7 @@ const TitleBox = styled.div`
   margin-bottom: 1rem; 
   margin-bottom: 10rem;
 
-  margin-top: 11rem;
+  margin-top: 10rem;
   // margin-top: 10rem;
   // margin-top: 80px;
   margin-bottom: 14rem;
@@ -272,12 +273,12 @@ export default function IndexPage() {
   return (
     <LayoutHack >
       <SEO title="Home" />
-      {/* <HeaderWrapper> */}
-        <Header/>
-      {/* </HeaderWrapper> */}
+      <HeaderWrapper>
+        <Header/> 
+      </HeaderWrapper>
       {/* <FauxHeader>
           <HeaderTitle>John Lim</HeaderTitle>
-      </FauxHeader> */}
+      </FauxHeader>  */}
       {
         menuState ?
         <MobileNav /> :
@@ -287,8 +288,10 @@ export default function IndexPage() {
             <Body>
               {/* <FauxHeader>
                 <StyledLink to="/">
+                  <h4>John Lim</h4>
                 </StyledLink>
               </FauxHeader> */}
+              {/* <p>Product Designer</p> */}
               <TitleBox>
                 <div data-sal="fade" data-sal-delay="150" data-sal-duration="1200" data-sal-easing="ease">
                   <Title>
@@ -304,7 +307,7 @@ export default function IndexPage() {
 
                   <Text>If not <Highlight>pushing pixels</Highlight> in a Seattle coffee shop, catch me <Highlight>chasing powder</Highlight> in my local ski hill or wherever there is good snow to be found.</Text>
                 </div>
-
+                
               </TitleBox>
               <div data-sal="fade" data-sal-delay="100" data-sal-duration="1500" data-sal-easing="ease" id="nimbus"> 
                <New />

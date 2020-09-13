@@ -57,15 +57,13 @@ const FlexBox = styled.div`
 
 const SpecialBox = styled(FlexBox)`
   padding: 1.75rem 3.5rem;
-  // margin: 0
-
 `
 
 const BlockTitle = styled.h2`
   font-weight: 500;
   font-size: 1.125rem;
   min-width: 16vw;
-  margin-right: 8rem;
+  margin-right: 7rem;
   letter-spacing: -0.3px;
   color: #ffffff;
 

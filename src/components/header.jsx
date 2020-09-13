@@ -71,25 +71,33 @@ const SecondaryTitle = styled(Title)`
   // left: 10vw;
 `
 
+// const Subtitle = styled.p`
+//   font-weight: 300;
+//   font-size: 1.2rem;  
+//   margin: 0;
+//   margin-left: 1.5rem;
+//   padding-left: 1.5rem;
+//   text-align: bottom;   
+//   border-left: 1px solid #767676;
+//   color: #333333;
+//   // position: absolute;
+//   // left: 10vw;
+
+//   @media (max-width: 425px) {
+//     margin-left: 0.9rem;
+//     padding-left: 0.9rem;
+//     font-size: 1rem;
+//   }
+
+// `
+
 const Subtitle = styled.p`
-  font-weight: 300;
-  font-size: 1.2rem;  
-  margin: 0;
-  margin-left: 1.5rem;
-  padding-left: 1.5rem;
-  text-align: bottom;   
-  border-left: 1px solid #767676;
-  color: #333333;
-  // position: absolute;
-  // left: 10vw;
-
-  @media (max-width: 425px) {
-    margin-left: 0.9rem;
-    padding-left: 0.9rem;
-    font-size: 1rem;
-  }
-
+  font-size: 1rem;
+  font-weight: 400;
+  margin-left: 10.5rem;
+  letter-spacing: -0.2px;
 `
+
 const Filler = styled.div`
   // height: 100%;
   padding-top: 26px;
@@ -205,6 +213,7 @@ export default function Header(props) {
             )
           }
         </StyledLink>
+        {/* <Subtitle>Product Designer</Subtitle> */}
         {
           props.pageTitle ?
           <>
