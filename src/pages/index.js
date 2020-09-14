@@ -165,7 +165,7 @@ const Title = styled.h1`
   font-size: 3.5rem;
   font-weight: 500;
   color: #333;
-  line-height: 1.4;
+  line-height: 1.45;
 
   @media (max-width: 1024px) {
     font-size: 2.4rem;
@@ -224,7 +224,8 @@ const Name = styled(Link)`
   color: #333;
   transition: 0.2s;
   text-decoration: none;
-  // border-bottom: 5px solid #333;
+  // border-bottom: 5px solid #b5b5b5;
+  // height: 0;
 
   :hover {
     color: #888;
