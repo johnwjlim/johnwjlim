@@ -17,6 +17,7 @@ const ImageBackground = styled.div`
   background-color: #111111;
   padding: 3.5rem 0;
 
+
   @media (max-width: 1120px) {
     padding: 0;
   }
@@ -46,6 +47,10 @@ const FlexBox = styled.div`
   margin: 7rem 0;
   padding: 3.5rem;
   // border-top: 1px solid #666666;
+
+  @media (max-width: 1340px) {
+    padding: 1.75rem;
+  }
 
 
   @media (max-width: 1240px) {
@@ -113,6 +118,10 @@ const Highlight = styled.strong`
 
 const ImageOffset = styled(Styled.OffsetBody)`
   padding: 0 3.5rem;
+
+  @media (max-width: 1340px) {
+    padding: 1.75rem;
+  }
 
   @media (max-width: 1240px) {
     padding: 0;
