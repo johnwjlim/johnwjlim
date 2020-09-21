@@ -74,7 +74,7 @@ const TitleBox = styled.div`
   // margin-top: 10rem;
   // margin-bottom: 12rem;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1240px) {
     // font-size: 1rem;
     margin: 3.5rem 0 5rem;
   }
@@ -167,8 +167,13 @@ const Title = styled.h1`
   line-height: 1.45;
   margin-bottom: 2rem;
 
+  @media (max-width: 1340px) {
+    font-size: 3rem;
+    letter-spacing: -2px;
+  }
+
   @media (max-width: 1024px) {
-    font-size: 2.4rem;
+    font-size: 2.5rem;
     letter-spacing: -1.8px
   }
 `

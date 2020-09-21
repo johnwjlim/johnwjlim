@@ -247,6 +247,10 @@ const JohnMuir = styled.div`
   //   width: 
   // }
 
+  @media (max-width: 1320px) {
+    padding: 10rem 7.5rem;
+  }
+
 
   @media (max-width: 1240px) {
     width: auto;
