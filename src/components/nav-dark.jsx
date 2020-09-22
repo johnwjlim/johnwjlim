@@ -11,6 +11,11 @@ const Container = styled.nav`
   margin: 0 1rem;
   margin-left: 0; 
   margin-top: 64px;
+
+  @media (max-width: 1340px) {
+    margin-right: 0;
+  }
+  
   @media (max-width: 1240px) {
     display: none; 
   }

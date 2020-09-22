@@ -72,6 +72,19 @@ const FlexBox = styled.div`
   }
 `
 
+const FlexBody = styled.div`
+margin: 7rem auto;
+
+@media (max-width: 1440px) {
+  margin: 7rem 3.5rem;
+}
+
+@media (max-width: 1240px) {
+  margin: 3.5rem 0; 
+}
+
+`
+
 const BlockIntro = styled.h2`
   font-size: 2rem;
   margin: 2rem 0;
@@ -148,7 +161,7 @@ const FlexImage = styled.div`
   // max-width: 20%;
 
   @media (max-width: 1320px) {
-    width: 20rem;
+    width: 25rem;
   }
 
 
@@ -475,7 +488,7 @@ export default function Showcase(props) {
             <Img fluid={data.Bundy.childImageSharp.fluid} />
             <ImageSubCaption>"What if I end up with a serial killer?" was the soundbite that stood out during our surveys. The specter of Ted Bundy, one of America's most notorious serial killers, loomed large.</ImageSubCaption>
           </FlexImage>
-          <OffsetBody>
+          <FlexBody>
               <PrototypeText>
                 <FlexBlockIntro>
                   Getting into cars with strangers. (Or not)
@@ -485,7 +498,7 @@ export default function Showcase(props) {
                 </p>
                 <p>The immediate priority in our following sprint was therefore to alleviate potential safety issues. One of our key mitigative measures was the introduction of user profiles.  </p>
               </PrototypeText>
-          </OffsetBody>
+          </FlexBody>
         </FlexBox>
         </div>
         <div data-sal="fade" data-sal-delay="100" data-sal-duration="1200" data-sal-easing="ease" style={{backgroundColor: "#f5f5f5", padding: "1.75rem"}}>
@@ -577,10 +590,10 @@ export default function Showcase(props) {
         </section>
         <section id="section-4">
         <FlexBox style={{backgroundColor: "#f5f5f5"}}> 
-          <OffsetBody>
+          <FlexBody>
             <img src={joinGif} />
             <ImageSubCaption style={{maxWidth: "270px"}}>Users can search for and join groups based on location, difficulty, length, popularity etc.</ImageSubCaption>
-          </OffsetBody>
+          </FlexBody>
           <OffsetBody>
             <PrototypeText>
               <FlexBlockIntro >
@@ -596,7 +609,7 @@ export default function Showcase(props) {
           </OffsetBody>
         </FlexBox>
         <FlexBox style={{alignItems: "flex-start"}}>
-          <OffsetBody>
+          <FlexBody>
             <PrototypeText>
               <FlexBlockIntro>
                 Streamlining the preflight.
@@ -612,7 +625,7 @@ export default function Showcase(props) {
                 View the high-fidelity screen descriptions
               </ImageCaption> */}
             </PrototypeText>
-          </OffsetBody>
+          </FlexBody>
           <FlexImage style={{padding: "0rem"}}>
             <Img fluid={data.Location.childImageSharp.fluid} />
           </FlexImage>
@@ -669,7 +682,7 @@ export default function Showcase(props) {
           <FlexImage style={{padding: "0rem"}}>
             <Img fluid={data.NewColorCoding.childImageSharp.fluid} />
           </FlexImage>
-          <OffsetBody>
+          <FlexBody>
             <PrototypeText>
               <FlexBlockIntro>  
                 The anatomy of symbology.
@@ -679,7 +692,7 @@ export default function Showcase(props) {
              </p>
              <p>The Walt Disney system was adopted by the NSAA in 1968 and has served North American skiing well for over 50 years. As such, this is also the system I have chosen to adopt for this purpose today. </p>
             </PrototypeText>
-          </OffsetBody>
+          </FlexBody>
         </FlexBox>
         </section>
         <section id="section-6">
