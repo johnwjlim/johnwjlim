@@ -44,16 +44,18 @@ const Title = styled.h2`
   line-height: 1.1;
   font-size: 1.4rem;
 
+  transition: 0.3s;
+
 
   @media (max-width: 425px) {
     font-size: 1.25rem
   }
 
-  // &:hover {
-  //   color: #a5a5a5;
-  //   font-weight: 800;
-  //   letter-spacing: -0.5px;
-  // }
+  &:hover {
+    color: #a5a5a5;
+    // font-weight: 800;
+    // letter-spacing: -0.5px;
+  }
 `
 
 const TitleLight = styled(Title)`
@@ -201,17 +203,17 @@ export default function Header(props) {
             <SecondaryTitle>Make It Better.</SecondaryTitle> :
             <Title>John Lim</Title>
           } */}
-          {
+          {/* {
             transitions.map(({item, key, props}) => item ?
             <animated.div style={props}>
-              {/* <SecondaryTitle>Make It Better.</SecondaryTitle> */}
               <TitleLight>John Lim</TitleLight>
             </animated.div> :
             <animated.div style={props}>
               <Title>John Lim</Title>
             </animated.div>
             )
-          }
+          } */}
+          <Title>John Lim</Title>
         </StyledLink>
         {/* <Subtitle>Product Designer</Subtitle> */}
         {
