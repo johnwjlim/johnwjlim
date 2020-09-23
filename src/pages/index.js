@@ -70,6 +70,8 @@ const TitleBox = styled.div`
   // margin-top: 10rem;
   // margin-top: 80px;
   margin-bottom: 14rem;
+  margin-bottom: 9rem;
+  margin-top: 9rem;
 
   // margin-top: 10rem;
   // margin-bottom: 12rem;
@@ -132,6 +134,7 @@ const Emoji = styled.span`
   vertical-align: middle;
   // line-height: 0;
   // margin: 0;
+
 `
 const TitleStyle = styled.span`
   color: #dddddd;
@@ -323,9 +326,9 @@ export default function IndexPage() {
               <div data-sal="fade" data-sal-delay="100" data-sal-duration="1500" data-sal-easing="ease"> 
                 <Pool />
               </div>
-              {/* <div data-sal="fade" data-sal-delay="100" data-sal-duration="1500" data-sal-easing="ease"> 
+              <div data-sal="fade" data-sal-delay="100" data-sal-duration="1500" data-sal-easing="ease"> 
                 <Movley />
-              </div> */}
+              </div>
               <div data-sal="fade" data-sal-delay="100" data-sal-duration="1500" data-sal-easing="ease"> 
                 <Pear />
               </div>
