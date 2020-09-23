@@ -46,6 +46,7 @@ const FlexBox = styled.div`
   align-items: flex-start;
   margin: 7rem 0;
   padding: 3.5rem;
+  padding: 3.5rem 1.75rem;
   // border-top: 1px solid #666666;
 
   @media (max-width: 1340px) {
@@ -67,13 +68,15 @@ const FlexBox = styled.div`
 
 const SpecialBox = styled(FlexBox)`
   padding: 1.75rem 3.5rem;
+  padding: 1.75rem;
 `
 
 const BlockTitle = styled.h2`
-  font-weight: 600;
+  font-weight: 500;
   font-size: 1.125rem;
   min-width: 16vw;
   margin-right: 7rem;
+  margin-right: 7.5rem;
   letter-spacing: -0.3px;
   color: #ffffff;
   // font-size: 1.5rem;
@@ -94,6 +97,7 @@ const BlockText = styled.p`
   // letter-spacing: -0.2px;
 
   color: #efefef; 
+  color: #ffffff;
 
   // stupid shit incoming
   // font-weight: 500;
@@ -124,7 +128,7 @@ const Highlight = styled.strong`
 `
 
 const ImageOffset = styled(Styled.OffsetBody)`
-  padding: 0 3.5rem;
+  padding: 0 1.75rem;
 
   @media (max-width: 1340px) {
     padding: 1.75rem;
