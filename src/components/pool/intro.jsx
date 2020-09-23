@@ -70,12 +70,14 @@ const SpecialBox = styled(FlexBox)`
 `
 
 const BlockTitle = styled.h2`
-  font-weight: 500;
+  font-weight: 600;
   font-size: 1.125rem;
   min-width: 16vw;
   margin-right: 7rem;
   letter-spacing: -0.3px;
   color: #ffffff;
+  // font-size: 1.5rem;
+  // letter-spacing: -1px;
 
   @media (max-width: 124px) {
     margin: 2.5rem 0;
@@ -118,7 +120,7 @@ const HeroText = styled.h4`
 
 const Highlight = styled.strong`
   color: #ffffff;
-  // font-weight: 600;
+  font-weight: 600;
 `
 
 const ImageOffset = styled(Styled.OffsetBody)`
