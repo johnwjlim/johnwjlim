@@ -74,6 +74,7 @@ const SpecialBox = styled(FlexBox)`
 const BlockTitle = styled.h2`
   font-weight: 500;
   font-size: 1.125rem;
+  line-height: 1.5;
   min-width: 16vw;
   margin-right: 7rem;
   margin-right: 7.5rem;

@@ -62,6 +62,7 @@ const FlexBox = styled.div`
 const BlockTitle = styled.h2`
   font-weight: 500;
   font-size: 1.125rem;
+  line-height: 1.5;
   min-width: 16vw;
   margin-right: 7.5rem;
   letter-spacing: -0.3px;
