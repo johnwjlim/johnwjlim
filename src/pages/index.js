@@ -194,6 +194,11 @@ const Text = styled.p`
   font-size: 1.25rem;
   // background-color: #f5f5f5;
 
+  font-size: 1.2rem;
+  max-width: 37.5rem;
+  letter-spacing: -0.4px;
+  line-height: 1.5;
+
   @media (max-width: 1024px) {
     font-size: 1.2rem;
     letter-spacing: -0.3px
