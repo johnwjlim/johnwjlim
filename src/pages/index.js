@@ -177,7 +177,7 @@ const Title = styled.h1`
 
   @media (max-width: 1024px) {
     font-size: 2.5rem;
-    letter-spacing: -1.8px
+    letter-spacing: -1.8px;
   }
 `
 
@@ -200,8 +200,8 @@ const Text = styled.p`
   line-height: 1.5;
 
   @media (max-width: 1024px) {
-    font-size: 1.2rem;
-    letter-spacing: -0.3px
+    // font-size: 1.2rem;
+    // letter-spacing: -0.4px;
   }
 
 
