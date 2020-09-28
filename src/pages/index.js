@@ -173,8 +173,12 @@ const Title = styled.h1`
   line-height: 1.5;
   margin-bottom: 0.5em;
 
+  // font-weight: 600;
+  // letter-spacing: -1px;
+  // color: #888;
+
   @media (max-width: 1340px) {
-    font-size: 3rem;
+    font-size: 3rem;  
     letter-spacing: -1.6px;
   }
 
@@ -245,9 +249,7 @@ const Name = styled(Link)`
   // height: 0;
 
   :hover {
-    color: #888;
-    // text-decoration: underline;
-    // color: #000; 
+    color: #888; 
     border-bottom: 5px solid #b5b5b5;
   }
 
@@ -311,7 +313,7 @@ export default function IndexPage() {
               </FauxHeader> */}
               {/* <p>Product Designer</p> */}
               <TitleBox>
-                <div data-sal="fade" data-sal-delay="150" data-sal-duration="1200" data-sal-easing="ease">
+                <div data-sal="fade" data-sal-delay="100" data-sal-duration="1200" data-sal-easing="ease">
                   <Title>
                     <div>
                     Hello there, I'm <Name to="/about">John</Name><span className="blinking">.</span> &nbsp;
