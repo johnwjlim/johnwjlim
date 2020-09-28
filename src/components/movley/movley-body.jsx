@@ -9,7 +9,7 @@ import Gif from "../../images/pool.gif"
 import Animated from "../../images/pool.mp4"
 
 const LocalContainer = styled(Styled.Container)`
-  margin-top: 88px;
+  margin-top: 64px;
   width: 100%;
 `
 

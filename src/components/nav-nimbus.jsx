@@ -14,6 +14,9 @@ const Container = styled.nav`
   margin: 0 1rem;
   margin-left: 0; 
   margin-top: 64px;
+  margin-top: 42px;
+  height: 92%;
+  
 
   @media (max-width: 1340px) {
     margin-right: 0;

@@ -73,6 +73,9 @@ const TitleBox = styled.div`
   margin-bottom: 9rem;
   margin-top: 9rem;
 
+  // margin-bottom: 3.5rem;
+  // margin-top: 12rem;
+
   // margin-top: 10rem;
   // margin-bottom: 12rem;
 
@@ -163,21 +166,21 @@ const Divider =  styled.div`
 
 const Title = styled.h1`
   // letter-spacing: -5px;  
-  letter-spacing: -2px;
+  letter-spacing: -1.8px;
   font-size: 3.5rem;
   font-weight: 500;
   color: #333;
-  line-height: 1.45;
-  margin-bottom: 2rem;
+  line-height: 1.5;
+  margin-bottom: 0.5em;
 
   @media (max-width: 1340px) {
     font-size: 3rem;
-    letter-spacing: -2px;
+    letter-spacing: -1.6px;
   }
 
   @media (max-width: 1024px) {
     font-size: 2.5rem;
-    letter-spacing: -1.8px;
+    letter-spacing: -1.5px;
   }
 `
 
