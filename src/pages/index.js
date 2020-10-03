@@ -202,8 +202,8 @@ const Text = styled.p`
   // background-color: #f5f5f5;
 
   font-size: 1.2rem;
-  max-width: 37.5rem;
-  letter-spacing: -0.4px;
+  max-width: 38rem;
+  letter-spacing: -0.35px;
   line-height: 1.5;
 
   @media (max-width: 1024px) {
@@ -274,21 +274,15 @@ export default function IndexPage() {
 
   const [menu, setMenu] = useState(false)
 
-  useEffect(() => {
-    console.log(menuState)
-    // setMenu(menuState)
-    // console.log(menu)
-  },[menuState])
+  // useEffect(() => {
+  //   console.log(menuState)
+  // },[menuState])
 
 
 
   useEffect(() => {
     dispatch({type: "CLOSE"})
   },[])
-
-  // function handleTabSwitch(value) {
-  //   setActive(value);
-  // }
 
   return (
     <LayoutHack >
