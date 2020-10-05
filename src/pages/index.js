@@ -71,7 +71,7 @@ const TitleBox = styled.div`
   // margin-top: 80px;
   margin-bottom: 14rem;
   margin-bottom: 9rem;
-  margin-top: 9rem;
+  margin-top: 8rem;
   // margin-top: 5rem;
 
   // margin-bottom: 3.5rem;
