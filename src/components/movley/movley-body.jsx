@@ -64,7 +64,7 @@ const BlockTitle = styled.h2`
   font-size: 1.125rem;
   line-height: 1.5;
   min-width: 16vw;
-  margin-right: 7.5rem;
+  margin-right: 7rem;
   letter-spacing: -0.3px;
   color: #333333;
 
@@ -173,7 +173,7 @@ const Italic = styled.span`
     color: #666666;
 `
 const SpecialBox = styled(FlexBox)`
-  padding: 1.75rem 3.5rem;
+  // padding: 1.75rem 3.5rem;
   padding: 1.75rem;
   // margin: 0
 
@@ -224,7 +224,7 @@ export default function Intro() {
           }
         }
       }
-      CampaignsMain: file(relativePath: {eq: "movley-campaigns-main.jpg"}) {
+      CampaignsMain: file(relativePath: {eq: "movley-campaigns.jpg"}) {
         childImageSharp {
           fluid (maxWidth: 3200) {
             ...GatsbyImageSharpFluid
@@ -265,7 +265,7 @@ export default function Intro() {
         </Styled.ImageWrapper>
         </div>
         <div data-sal="fade" data-sal-delay="100" data-sal-duration="1200" data-sal-easing="ease">
-        <SpecialBox>
+        <FlexBox>
           <BlockTitle>
             Overview
           </BlockTitle>
@@ -274,7 +274,15 @@ export default function Intro() {
             <br/><br/>
              As sole designer, I got to engage in the full spectrum of product design from conceptualization, to creating prototypes of various fidelities and testing them to further refine the product.  
          </BlockText>
-        </SpecialBox>
+        </FlexBox>
+        </div>
+        <div data-sal="fade" data-sal-delay="100" data-sal-duration="1200" data-sal-easing="ease">
+        <ImageOffset>
+          <Img fluid={data.Overview.childImageSharp.fluid} />
+          <ImageSubCaption style={{textAlign: "center"}}>
+            I documentated my WIP of various elements and components to keep the developers up to speed. Includes screen descriptions and interaction flows of various application states.
+         </ImageSubCaption>
+        </ImageOffset>
         </div>
         <div data-sal="fade" data-sal-delay="300" data-sal-duration="1200" data-sal-easing="ease">
           <SpecialBox>
@@ -288,23 +296,15 @@ export default function Intro() {
             </BlockText>
           </SpecialBox>
         </div>
-        <div data-sal="fade" data-sal-delay="100" data-sal-duration="1200" data-sal-easing="ease">
-        <ImageOffset>
-          <Img fluid={data.Overview.childImageSharp.fluid} />
-          <ImageSubCaption style={{textAlign: "center"}}>
-            I documentated my WIP of various elements and components to keep the developers up to speed. Includes screen descriptions and interaction flows of various application states.
-         </ImageSubCaption>
-        </ImageOffset>
-        </div>
         <div data-sal="fade" data-sal-delay="200" data-sal-duration="1200" data-sal-easing="ease">
-        <FlexBox>
+        <SpecialBox>
           <BlockTitle>
             Dashboard
           </BlockTitle>
           <BlockText>
             I laid out the dashboard with a key question in mind: "Why do affiliates work with Movley?". Discounting sheer altruism, the answer more often than not seemed to be along the lines of "to make some money". Therefore, in addition to providing a broad overview of performance across measured categories, I wanted to hero the key performance metric which was the actual referrals and commissions as much as possible.
           </BlockText>
-        </FlexBox>
+        </SpecialBox>
         </div>
         <div data-sal="fade" data-sal-delay="100" data-sal-duration="1200" data-sal-easing="ease">
         <ImageOffset style={{marginTop: "1.75rem"}}>

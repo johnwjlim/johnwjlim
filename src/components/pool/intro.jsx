@@ -77,7 +77,7 @@ const BlockTitle = styled.h2`
   line-height: 1.5;
   min-width: 16vw;
   margin-right: 7rem;
-  margin-right: 7.5rem;
+  // margin-right: 7.5rem;
   letter-spacing: -0.3px;
   color: #ffffff;
   // font-size: 1.5rem;
@@ -279,7 +279,6 @@ export default function Intro() {
           </ImageSubCaption>
         </ImageOffset>
         </div>
-        <div data-sal="fade" data-sal-delay="100" data-sal-duration="1200" data-sal-easing="ease">
         <FlexBox>
           <BlockTitle>
             Individual Deliverable
@@ -330,10 +329,9 @@ export default function Intro() {
             </div>
           </BlockText>
         </FlexBox>  
-        </div>
-        <div data-sal="fade" data-sal-delay="100" data-sal-duration="1200" data-sal-easing="ease">
         <FlexBox>
           <BlockTitle>The Headliner</BlockTitle>
+          <div data-sal="fade" data-sal-delay="100" data-sal-duration="1200" data-sal-easing="ease">
           <BlockText>
             As our team deliverable, we were to design a solution to the problem with <Highlight>the technologies of tommorow.</Highlight> 
             {/* <br/><br/>  */}
@@ -341,8 +339,8 @@ export default function Intro() {
             <br/><br/> 
             We called it <Highlight>POOL</Highlight> as kind of as a playful way to reflect the way our design aimed to visualize resource footprints as "pools of impact" on the ground. I created a one page poster to showcase through storyboard what our design was about and how it worked.
           </BlockText>
+          </div>
         </FlexBox>
-        </div>
         <div data-sal="fade" data-sal-delay="100" data-sal-duration="1200" data-sal-easing="ease">
         <ImageBackground>
           <Styled.ImageWrapper style={{maxWidth: "800px"}}>
