@@ -11,9 +11,9 @@ import { Container, OffsetBody,  ImageWrapper, TextQuote, sections, SmallWidth, 
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
-import Header from "../components/header"
+import Header from "../components/header-dark"
 import MobileNav from "../components/mobile-nav"
-import Nav from "../components/nav"
+import Nav from "../components/nav-dark"
 
 import Nimbus from "../components/home/nimbus-thumbnail"
 import New from "../components/home/nimbus-thumbnail-new"
@@ -30,6 +30,8 @@ const LayoutHack = styled.div`
   // background-color: #fafafa;
   // background-color: #eeeeee;
   box-sizing: border-box;
+  background-color: #ffffff;
+  background-color: #111;
 
   @media (max-width: 425px) {
     padding: 0 1.25rem 1.45rem;
@@ -44,7 +46,7 @@ const Wrapper = styled.div`
 `;
 
 const HeaderWrapper = styled.div`
-  // display: none;
+  // display: none; 
   
   // @media (max-width: 1240px) {
   //   display: block;
@@ -61,19 +63,26 @@ const Body = styled(Container)`
 `;
 
 const TitleBox = styled.div`
+  // margin: 0 2rem;
 
   margin-bottom: 1rem; 
   margin-bottom: 10rem;
 
-  margin-top: 12rem;
+  margin-top: 10rem;
+  // margin-top: 10rem;
   // margin-top: 80px;
   margin-bottom: 14rem;
+  margin-bottom: 9rem;
+  margin-top: 8rem;
+  // margin-top: 5rem;
+
+  // margin-bottom: 3.5rem;
+  // margin-top: 12rem;
 
   // margin-top: 10rem;
   // margin-bottom: 12rem;
 
-  // margin: 12rem 0;
-  @media (max-width: 768px) {
+  @media (max-width: 1240px) {
     // font-size: 1rem;
     margin: 3.5rem 0 5rem;
   }
@@ -131,6 +140,7 @@ const Emoji = styled.span`
   vertical-align: middle;
   // line-height: 0;
   // margin: 0;
+
 `
 const TitleStyle = styled.span`
   color: #dddddd;
@@ -158,17 +168,29 @@ const Divider =  styled.div`
 `
 
 const Title = styled.h1`
-  letter-spacing: -3px;  
-  letter-spacing: -2.5px;
-  // letter-spacing: -2px;
+  // letter-spacing: -5px;  
+  letter-spacing: -2px;
   font-size: 3.5rem;
   font-weight: 500;
   color: #333;
-  line-height: 1.4;
+  line-height: 1.5;
+  margin-bottom: 0.5em;
+
+  // font-weight: 500;
+  // letter-spacing: -0px;
+  // font-size: 3rem;
+
+  // dark mode
+  color: #ffffff;
+
+  @media (max-width: 1340px) {
+    font-size: 3rem;  
+    letter-spacing: -1.6px;
+  }
 
   @media (max-width: 1024px) {
-    font-size: 2.4rem;
-    letter-spacing: -1.8px
+    font-size: 2.5rem;
+    letter-spacing: -1.5px;
   }
 `
 
@@ -178,13 +200,24 @@ const Text = styled.p`
   letter-spacing: -0.5px;
   font-weight: 400;
   max-width: 41rem;
-  line-height: 1.4;
+  max-width: 38.5rem;
+  max-width: 39rem;
+  // max-width: 56rem;
+  line-height: 1.45;
   font-size: 1.25rem;
   // background-color: #f5f5f5;
 
+  font-size: 1.2rem;
+  max-width: 38rem;
+  letter-spacing: -0.35px;
+  line-height: 1.5;
+
+  // dark mode
+  color: #eeeeee;
+
   @media (max-width: 1024px) {
-    font-size: 1.2rem;
-    letter-spacing: -0.3px
+    // font-size: 1.2rem;
+    // letter-spacing: -0.4px;
   }
 
 
@@ -221,17 +254,21 @@ const Name = styled(Link)`
   color: #333;
   transition: 0.2s;
   text-decoration: none;
-  // border-bottom: 5px solid #333;
+  // border-bottom: 5px solid #b5b5b5;
+  // height: 0;
+
+  // dark mode
+  color: #ffffff;
 
   :hover {
-    color: #888;
-    // text-decoration: underline;
-    // color: #000; 
+    color: #b5b5b5; 
     border-bottom: 5px solid #b5b5b5;
   }
 
 `
-
+const Subtitle = styled.p`
+  margin-top: 2.5rem;
+`
 
 
 export default function IndexPage() {
@@ -251,11 +288,9 @@ export default function IndexPage() {
 
   const [menu, setMenu] = useState(false)
 
-  useEffect(() => {
-    console.log(menuState)
-    // setMenu(menuState)
-    // console.log(menu)
-  },[menuState])
+  // useEffect(() => {
+  //   console.log(menuState)
+  // },[menuState])
 
 
 
@@ -263,35 +298,37 @@ export default function IndexPage() {
     dispatch({type: "CLOSE"})
   },[])
 
-  // function handleTabSwitch(value) {
-  //   setActive(value);
-  // }
-
   return (
     <LayoutHack >
       <SEO title="Home" />
-      {/* <HeaderWrapper> */}
-        <Header/>
-      {/* </HeaderWrapper> */}
+      <HeaderWrapper>
+        <Header/>  
+      </HeaderWrapper>
       {/* <FauxHeader>
           <HeaderTitle>John Lim</HeaderTitle>
-      </FauxHeader> */}
+      </FauxHeader>  */}
       {
         menuState ?
         <MobileNav /> :
         <>
+
           <Wrapper>
             <div style={{width: "100%"}}>
+            {/* <Subtitle>Digital Product Designer</Subtitle> */}
             <Body>
+              
               {/* <FauxHeader>
                 <StyledLink to="/">
+                  <h4>John Lim</h4>
                 </StyledLink>
               </FauxHeader> */}
+              {/* <p>Product Designer</p> */}
               <TitleBox>
-                <div data-sal="fade" data-sal-delay="150" data-sal-duration="1200" data-sal-easing="ease">
+                <div data-sal="fade" data-sal-delay="100" data-sal-duration="1200" data-sal-easing="ease">
                   <Title>
                     <div>
                     Hello there, I'm <Name to="/about">John</Name><span className="blinking">.</span> &nbsp;
+                    {/* HELLO THERE, I'M <Name to="/about">JOHN</Name><span className="blinking">.</span> &nbsp; */}
                     <Emoji> ✌️ </Emoji>
                     </div>
                   </Title> 
@@ -300,9 +337,9 @@ export default function IndexPage() {
 
                   <Text>I'm an undergraduate student at the <Highlight>University of Washington</Highlight> majoring in <Highlight>Human Computer Interaction</Highlight> and enthralled by the factors that make us <Highlight>human.</Highlight></Text>
 
-                  <Text>If not <Highlight>pushing pixels</Highlight> in a Seattle coffee shop, catch me <Highlight>chasing powder</Highlight> in my local ski hill or wherever there is good snow to be found.</Text>
+                  <Text>If not <Highlight>pushing pixels</Highlight> in a Seattle coffee shop, catch me <Highlight>chasing powder</Highlight> on my local ski hill or wherever there is good snow to be found.</Text>
                 </div>
-
+                
               </TitleBox>
               <div data-sal="fade" data-sal-delay="100" data-sal-duration="1500" data-sal-easing="ease" id="nimbus"> 
                <New />

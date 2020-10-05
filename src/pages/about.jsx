@@ -56,7 +56,8 @@ const Container = styled.div`
 const FlexContainer = styled(Styled.Container)`
   display: flex;
   margin: 3.5rem;
-  margin-top: 10rem;
+  margin-top: 9rem;
+  // margin-top: 1rem; 
   justify-content: center;
 
   @media (max-width: 1380px) {
@@ -103,6 +104,11 @@ const OffsetBody = styled.div`
   }
 `;
 
+const Title = styled.h1`
+  color: #ffffff;
+  // margin: 3.5rem auto;
+`
+
 export default function About() {
   const data = useStaticQuery(graphql`
     query {
@@ -127,11 +133,14 @@ export default function About() {
 
   return (
     <Layout>
-      <SEO title="About" />
+      <SEO title="About" /> 
       <Header />
       {
         menuState ?
         <MobileNav /> :
+        <>
+
+        {/* <Title>Designer. Developer. Photographer.</Title> */}
         <Wrapper>
           <FlexContainer >
             {/* <Image>
@@ -169,6 +178,7 @@ export default function About() {
           </FlexContainer>
           <Nav />
         </Wrapper>
+        </>
       
       }
     </Layout>

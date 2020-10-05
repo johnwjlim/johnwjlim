@@ -44,16 +44,18 @@ const Title = styled.h2`
   line-height: 1.1;
   font-size: 1.4rem;
 
+  transition: 0.3s;
+
 
   @media (max-width: 425px) {
     font-size: 1.25rem
   }
 
-  // &:hover {
-  //   color: #a5a5a5;
-  //   font-weight: 800;
-  //   letter-spacing: -0.5px;
-  // }
+  &:hover {
+    color: #a5a5a5;
+    // font-weight: 800;
+    // letter-spacing: -0.5px;
+  }
 `
 
 const TitleLight = styled(Title)`
@@ -71,25 +73,34 @@ const SecondaryTitle = styled(Title)`
   // left: 10vw;
 `
 
-const Subtitle = styled.p`
-  font-weight: 300;
-  font-size: 1.2rem;  
-  margin: 0;
-  margin-left: 1.5rem;
-  padding-left: 1.5rem;
-  text-align: bottom;   
-  border-left: 1px solid #767676;
-  color: #333333;
-  // position: absolute;
-  // left: 10vw;
+// const Subtitle = styled.p`
+//   font-weight: 300;
+//   font-size: 1.2rem;  
+//   margin: 0;
+//   margin-left: 1.5rem;
+//   padding-left: 1.5rem;
+//   text-align: bottom;   
+//   border-left: 1px solid #767676;
+//   color: #333333;
+//   // position: absolute;
+//   // left: 10vw;
 
-  @media (max-width: 425px) {
-    margin-left: 0.9rem;
-    padding-left: 0.9rem;
-    font-size: 1rem;
-  }
+//   @media (max-width: 425px) {
+//     margin-left: 0.9rem;
+//     padding-left: 0.9rem;
+//     font-size: 1rem;
+//   }
+
+// `
+
+const Subtitle = styled.p`
+  font-size: 1.05rem;
+  font-weight: 400;
+  // margin-left: 6rem;
+  letter-spacing: -0.2px;
 
 `
+
 const Filler = styled.div`
   // height: 100%;
   padding-top: 26px;
@@ -133,6 +144,7 @@ const MobileMenu = styled.div`
   @media (max-width: 425px) {
     font-size: 1rem;
     margin-right: 2.5rem;
+    margin-right: 1rem;
   }
 
 `
@@ -193,18 +205,20 @@ export default function Header(props) {
             <SecondaryTitle>Make It Better.</SecondaryTitle> :
             <Title>John Lim</Title>
           } */}
-          {
+          {/* {
             transitions.map(({item, key, props}) => item ?
             <animated.div style={props}>
-              {/* <SecondaryTitle>Make It Better.</SecondaryTitle> */}
               <TitleLight>John Lim</TitleLight>
             </animated.div> :
             <animated.div style={props}>
               <Title>John Lim</Title>
             </animated.div>
             )
-          }
+          } */}
+          <Title>John Lim</Title>
+          {/* <Subtitle>Digital Product Designer</Subtitle> */}
         </StyledLink>
+        {/* <Subtitle>Product Designer</Subtitle> */}
         {
           props.pageTitle ?
           <>

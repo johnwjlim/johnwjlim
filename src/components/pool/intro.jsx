@@ -17,6 +17,7 @@ const ImageBackground = styled.div`
   background-color: #111111;
   padding: 3.5rem 0;
 
+
   @media (max-width: 1120px) {
     padding: 0;
   }
@@ -45,7 +46,17 @@ const FlexBox = styled.div`
   align-items: flex-start;
   margin: 7rem 0;
   padding: 3.5rem;
+  padding: 3.5rem 1.75rem;
   // border-top: 1px solid #666666;
+
+  @media (max-width: 1340px) {
+    padding: 1.75rem;
+  }
+
+
+  // @media (max-width: 128px) {
+  //   padding: 0rem;
+  // }
 
 
   @media (max-width: 1240px) {
@@ -57,17 +68,20 @@ const FlexBox = styled.div`
 
 const SpecialBox = styled(FlexBox)`
   padding: 1.75rem 3.5rem;
-  // margin: 0
-
+  padding: 1.75rem;
 `
 
 const BlockTitle = styled.h2`
   font-weight: 500;
   font-size: 1.125rem;
+  line-height: 1.5;
   min-width: 16vw;
-  margin-right: 8rem;
+  margin-right: 7rem;
+  margin-right: 7.5rem;
   letter-spacing: -0.3px;
   color: #ffffff;
+  // font-size: 1.5rem;
+  // letter-spacing: -1px;
 
   @media (max-width: 124px) {
     margin: 2.5rem 0;
@@ -83,7 +97,8 @@ const BlockText = styled.p`
   letter-spacing: -0.15px;
   // letter-spacing: -0.2px;
 
-  color: #eee;
+  color: #efefef; 
+  color: #ffffff;
 
   // stupid shit incoming
   // font-weight: 500;
@@ -110,11 +125,15 @@ const HeroText = styled.h4`
 
 const Highlight = styled.strong`
   color: #ffffff;
-  // font-weight: 600;
+  font-weight: 600;
 `
 
 const ImageOffset = styled(Styled.OffsetBody)`
-  padding: 0 3.5rem;
+  padding: 0 1.75rem;
+
+  @media (max-width: 1340px) {
+    padding: 1.75rem;
+  }
 
   @media (max-width: 1240px) {
     padding: 0;
@@ -267,8 +286,8 @@ export default function Intro() {
           </BlockTitle>
           <BlockText>    
             As my individual deliverable for this project, I designed a solution for our problem based on <Highlight>existing technologies that are available today.</Highlight> 
-            <br/><br/>
-            Having identified lengthy showers as one of the most frivolous uses of water, my design solution was a voice-activated, digitally controlled shower that aims to provide real-time feedback to help users improve their awareness of consumption and hopefully make changes to behavior.
+            {/* <br/><br/> */}
+            &nbsp; Having identified lengthy showers as one of the most frivolous uses of water, my design solution was a voice-activated, digitally controlled shower that aims to provide real-time feedback to help users improve their awareness of consumption and hopefully make changes to behavior.
             <br/><br/>
             <ImageWrapper>
               <div data-sal="fade" data-sal-delay="300" data-sal-duration="1500" data-sal-easing="ease">
@@ -317,8 +336,8 @@ export default function Intro() {
           <BlockTitle>The Headliner</BlockTitle>
           <BlockText>
             As our team deliverable, we were to design a solution to the problem with <Highlight>the technologies of tommorow.</Highlight> 
-            <br/><br/> 
-            Building off the idea of real-time feedback, <Highlight>POOL</Highlight> is a mixed reality experience that projects real-time resource impact at the point of use to close the feedback loop between usage and awareness in order to provide users a better awareness of their consumption and encourage responsibility.
+            {/* <br/><br/>  */}
+            &nbsp; Building off the idea of real-time feedback, <Highlight>POOL</Highlight> is a mixed reality experience that projects real-time resource impact at the point of use to close the feedback loop between usage and awareness in order to provide users a better awareness of their consumption and encourage responsibility.
             <br/><br/> 
             We called it <Highlight>POOL</Highlight> as kind of as a playful way to reflect the way our design aimed to visualize resource footprints as "pools of impact" on the ground. I created a one page poster to showcase through storyboard what our design was about and how it worked.
           </BlockText>

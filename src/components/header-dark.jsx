@@ -26,7 +26,7 @@ const Container = styled.div`
   }
 
   @media (max-width: 425px) {
-    padding: 1.5rem;
+    padding: 1rem;
   }
 
 `
@@ -133,6 +133,7 @@ const MobileMenu = styled.div`
   @media (max-width: 425px) {
     font-size: 1rem;
     margin-right: 2.5rem;
+    margin-right: 1rem;
   }
 
 `
