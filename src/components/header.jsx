@@ -94,10 +94,11 @@ const SecondaryTitle = styled(Title)`
 // `
 
 const Subtitle = styled.p`
-  font-size: 1rem;
+  font-size: 1.05rem;
   font-weight: 400;
-  margin-left: 10.5rem;
+  // margin-left: 6rem;
   letter-spacing: -0.2px;
+
 `
 
 const Filler = styled.div`
@@ -215,6 +216,7 @@ export default function Header(props) {
             )
           } */}
           <Title>John Lim</Title>
+          {/* <Subtitle>Digital Product Designer</Subtitle> */}
         </StyledLink>
         {/* <Subtitle>Product Designer</Subtitle> */}
         {

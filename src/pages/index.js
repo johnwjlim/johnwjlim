@@ -72,6 +72,7 @@ const TitleBox = styled.div`
   margin-bottom: 14rem;
   margin-bottom: 9rem;
   margin-top: 9rem;
+  // margin-top: 5rem;
 
   // margin-bottom: 3.5rem;
   // margin-top: 12rem;
@@ -166,16 +167,16 @@ const Divider =  styled.div`
 
 const Title = styled.h1`
   // letter-spacing: -5px;  
-  letter-spacing: -1.8px;
+  letter-spacing: -2px;
   font-size: 3.5rem;
   font-weight: 500;
   color: #333;
   line-height: 1.5;
   margin-bottom: 0.5em;
 
-  // font-weight: 600;
-  // letter-spacing: -1px;
-  // color: #888;
+  // font-weight: 500;
+  // letter-spacing: -0px;
+  // font-size: 3rem;
 
   @media (max-width: 1340px) {
     font-size: 3rem;  
@@ -254,7 +255,9 @@ const Name = styled(Link)`
   }
 
 `
-
+const Subtitle = styled.p`
+  margin-top: 2.5rem;
+`
 
 
 export default function IndexPage() {
@@ -297,9 +300,12 @@ export default function IndexPage() {
         menuState ?
         <MobileNav /> :
         <>
+
           <Wrapper>
             <div style={{width: "100%"}}>
+            {/* <Subtitle>Digital Product Designer</Subtitle> */}
             <Body>
+              
               {/* <FauxHeader>
                 <StyledLink to="/">
                   <h4>John Lim</h4>
@@ -311,6 +317,7 @@ export default function IndexPage() {
                   <Title>
                     <div>
                     Hello there, I'm <Name to="/about">John</Name><span className="blinking">.</span> &nbsp;
+                    {/* HELLO THERE, I'M <Name to="/about">JOHN</Name><span className="blinking">.</span> &nbsp; */}
                     <Emoji> ✌️ </Emoji>
                     </div>
                   </Title> 
