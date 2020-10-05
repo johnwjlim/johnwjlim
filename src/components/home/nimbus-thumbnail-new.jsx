@@ -13,7 +13,8 @@ const CaseCaption = styled.h4`
   margin-top: 1rem;
   letter-spacing: -0.2px;
   max-width: 55rem;
-  transition: 0.3s
+  transition: 0.3s;
+  // color: #888;  
 
 `
 
@@ -41,7 +42,7 @@ const CaseLink = styled(Link)`
   }
 
   &:hover ${CaseCaption} {
-    color: #333333;
+    // color: #333333;
   }
 
 
