@@ -45,7 +45,7 @@ const Wrapper = styled.div`
 `;
 
 const HeaderWrapper = styled.div`
-  // display: none;
+  // display: none; 
   
   // @media (max-width: 1240px) {
   //   display: block;
@@ -55,6 +55,7 @@ const HeaderWrapper = styled.div`
 
 const Body = styled(Container)`
   margin: 0 2rem;
+  // margin: 0;
 
   @media (max-width: 1240px) {
     margin: 0;
@@ -62,6 +63,7 @@ const Body = styled(Container)`
 `;
 
 const TitleBox = styled.div`
+  // margin: 0 2rem;
 
   margin-bottom: 1rem; 
   margin-bottom: 10rem;
@@ -291,7 +293,7 @@ export default function IndexPage() {
     <LayoutHack >
       <SEO title="Home" />
       <HeaderWrapper>
-        <Header/> 
+        <Header/>  
       </HeaderWrapper>
       {/* <FauxHeader>
           <HeaderTitle>John Lim</HeaderTitle>
