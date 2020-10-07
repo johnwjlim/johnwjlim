@@ -86,7 +86,7 @@ const ImageParent = styled(ImageWrapper)`
 export default function Movley() {
   const data = useStaticQuery(graphql`
     query {
-      HeroImage: file(relativePath: {eq: "movley-thumbnail-copy.png"}) {
+      HeroImage: file(relativePath: {eq: "movley-thumbnail-copy.jpg"}) {
         childImageSharp {
           fluid (maxWidth: 3200, maxHeight: 1600) {
             ...GatsbyImageSharpFluid

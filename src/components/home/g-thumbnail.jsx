@@ -99,7 +99,7 @@ const ImageParent = styled(ImageWrapper)`
 export default function GThumbnail() {
   const data = useStaticQuery(graphql`
     query {
-      HeroImage: file(relativePath: {eq: "g-hero-image.png"}) {
+      HeroImage: file(relativePath: {eq: "g-hero-image.jpg"}) {
         childImageSharp {
           fluid (maxWidth: 3200, maxHeight: 1600) {
             ...GatsbyImageSharpFluid

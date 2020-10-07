@@ -249,8 +249,7 @@ const Name = styled(Link)`
   color: #333;
   transition: 0.2s;
   text-decoration: none;
-  // border-bottom: 5px solid #b5b5b5;
-  // height: 0;
+
 
   :hover {
     color: #888; 
@@ -293,9 +292,9 @@ export default function IndexPage() {
   return (
     <LayoutHack >
       <SEO title="Home" />
-      <HeaderWrapper>
+      {/* <HeaderWrapper> */}
         <Header/>  
-      </HeaderWrapper>
+      {/* </HeaderWrapper> */}
       {/* <FauxHeader>
           <HeaderTitle>John Lim</HeaderTitle>
       </FauxHeader>  */}
@@ -307,8 +306,7 @@ export default function IndexPage() {
           <Wrapper>
             <div style={{width: "100%"}}>
             {/* <Subtitle>Digital Product Designer</Subtitle> */}
-            <Body>
-              
+            <Body>           
               {/* <FauxHeader>
                 <StyledLink to="/">
                   <h4>John Lim</h4>
@@ -326,9 +324,7 @@ export default function IndexPage() {
                   </Title> 
                 </div>
                 <div data-sal="fade" data-sal-delay="300" data-sal-duration="1200" data-sal-easing="ease">
-
                   <Text>I'm an undergraduate student at the <Highlight>University of Washington</Highlight> majoring in <Highlight>Human Computer Interaction</Highlight> and enthralled by the factors that make us <Highlight>human.</Highlight></Text>
-
                   <Text>If not <Highlight>pushing pixels</Highlight> in a Seattle coffee shop, catch me <Highlight>chasing powder</Highlight> on my local ski hill or wherever there is good snow to be found.</Text>
                 </div>
                 
