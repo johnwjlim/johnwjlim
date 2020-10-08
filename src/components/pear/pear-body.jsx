@@ -65,11 +65,17 @@ const BlockTitle = styled.h2`
   font-size: 1.125rem;
   line-height: 1.5;
   min-width: 16vw;
-  margin-right: 7rem;
+  margin-right: 7.5rem;
   letter-spacing: -0.3px;
   color: #333333;
 
-  @media (max-width: 124px) {
+  @media (max-width: 1440px) {
+    margin-right: 5rem;
+  }
+
+
+
+  @media (max-width: 1240px) {
     margin: 2.5rem 0;
   }
 `
