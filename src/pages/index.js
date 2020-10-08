@@ -173,7 +173,7 @@ const Title = styled.h1`
   font-size: 3.5rem;
   font-weight: 500;
   color: #333;
-  line-height: 1.5;
+  line-height: 1.45;
   margin-bottom: 0.5em;
 
   // font-weight: 500;
