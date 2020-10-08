@@ -69,7 +69,7 @@ const BlockTitle = styled.h2`
   color: #333333;
 
   @media (max-width: 1440px) {
-    margin: 5rem;
+    margin-right: 5rem;
   }
 
   @media (max-width: 124px) {
