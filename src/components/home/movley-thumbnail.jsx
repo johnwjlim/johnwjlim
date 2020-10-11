@@ -46,6 +46,7 @@ const Filler = styled.div`
   width: 52rem;
   height: 4.5rem;
   background-color: #ffffff;
+  background-color: #fefefe;
   opacity: 1;
 
   @media (max-width: 1240px) {

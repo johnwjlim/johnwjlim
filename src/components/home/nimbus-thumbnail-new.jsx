@@ -58,7 +58,7 @@ const Filler = styled.div`
   // background-color: #47C3A0;
   // background-color: #e8e8e8;
   background-color: #ffffff;
-  // background-color: #fafafa;
+  background-color: #fefefe;
   // background-color: #F6FFFA;
   opacity: 1;
   border: none;

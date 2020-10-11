@@ -30,7 +30,7 @@ const LayoutHack = styled.div`
   // background-color: #fafafa;
   // background-color: #eeeeee;
   box-sizing: border-box;
-  background-color: #ffffff;
+  background-color: #fefefe;
 
   @media (max-width: 425px) {
     padding: 0 1.25rem 1.45rem;
@@ -47,9 +47,9 @@ const Wrapper = styled.div`
 const HeaderWrapper = styled.div`
   // display: none; 
   
-  // @media (max-width: 1240px) {
-  //   display: block;
-  // }
+  @media (max-width: 1240px) {
+    display: block;
+  }
 `
 
 
@@ -74,6 +74,7 @@ const TitleBox = styled.div`
   margin-bottom: 14rem;
   margin-bottom: 9rem;
   margin-top: 8rem;
+  // margin-top: 7rem;
   // margin-top: 5rem;
 
   // margin-bottom: 3.5rem;
@@ -133,15 +134,14 @@ const StyledLink = styled(Link)`
   text-decoration: none;
   transition: 0.3s;
 
-`;
+`
 
 const Emoji = styled.span`
   font-size: 2rem;
   vertical-align: middle;
-  // line-height: 0;
-  // margin: 0;
-
+  
 `
+
 const TitleStyle = styled.span`
   color: #dddddd;
   // color: #666666;
@@ -172,7 +172,7 @@ const Title = styled.h1`
   letter-spacing: -2px;
   font-size: 3.5rem;
   font-weight: 500;
-  color: #333;
+  color: #333333;
   line-height: 1.45;
   margin-bottom: 0.5em;
 
@@ -209,6 +209,7 @@ const Text = styled.p`
   letter-spacing: -0.35px;
   line-height: 1.45;
   color: #767676;
+  // color: #888888;
 
   @media (max-width: 1024px) {
     // font-size: 1.2rem;
@@ -292,9 +293,9 @@ export default function IndexPage() {
   return (
     <LayoutHack >
       <SEO title="Home" />
-      {/* <HeaderWrapper> */}
+      <HeaderWrapper>
         <Header/>  
-      {/* </HeaderWrapper> */}
+      </HeaderWrapper>
       {/* <FauxHeader>
           <HeaderTitle>John Lim</HeaderTitle>
       </FauxHeader>  */}
