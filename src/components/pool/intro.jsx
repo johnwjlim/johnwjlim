@@ -14,7 +14,7 @@ const LocalContainer = styled(Styled.Container)`
 
 
 const ImageBackground = styled.div`
-  background-color: #111111;
+  // background-color: #111111;
   padding: 3.5rem 0;
 
 
@@ -76,7 +76,7 @@ const BlockTitle = styled.h2`
   font-size: 1.125rem;
   line-height: 1.5;
   min-width: 18vw;
-  margin-right: 7.25rem;
+  margin-right: 7.2rem;
   letter-spacing: -0.3px;
   color: #ffffff;
   // font-size: 1.5rem;
@@ -311,7 +311,7 @@ export default function Intro() {
                 src={Animated} type="video/mp4" allow="accelerometer; autoplay;"
                 frameBorder="0"
                 /> */}
-                <Video muted autoPlay controls loop>
+                <Video muted autoPlay loop>
                   <source src={Animated} type="video/mp4" />
                   Sorry, your browser doesn't support embedded videos.
                 </Video>
