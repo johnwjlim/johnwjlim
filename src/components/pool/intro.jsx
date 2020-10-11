@@ -76,7 +76,7 @@ const BlockTitle = styled.h2`
   font-size: 1.125rem;
   line-height: 1.5;
   min-width: 18vw;
-  margin-right: 7.2rem;
+  margin-right: 7rem;
   letter-spacing: -0.3px;
   color: #ffffff;
   // font-size: 1.5rem;
