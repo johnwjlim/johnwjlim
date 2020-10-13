@@ -37,6 +37,7 @@ const InlineLink = styled.a`
   :hover {
     cursor: pointer;
     color: #ffb7b7;
+    color: #a5a5a5;
   }
 `;
 

@@ -86,7 +86,7 @@ const Highlight = styled.span`
   color: #ffffff;
   font-size: 1.125rem;
   line-height: 1.45;
-  letter-spacing: -0px;
+  letter-spacing: -0.2px;
 ` 
 const ImageSubCaption = styled.p`
   font-size: 0.8rem;
