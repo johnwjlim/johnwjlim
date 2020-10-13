@@ -245,7 +245,7 @@ export default function Intro() {
         </div>
         <SpecialBox style={{paddingTop: "3.5rem"}}> 
           <BlockTitle>
-            Background
+            What is POOL
           </BlockTitle>
           <BlockText>    
             {/* <HeroText>

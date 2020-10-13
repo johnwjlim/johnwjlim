@@ -73,8 +73,8 @@ const Text = styled.p`
   max-width: 28rem;
   margin: 0 auto;
   font-size: 1rem;
-  letter-spacing: -0.15px;
-  line-height: 1.5;
+  letter-spacing: -0.1px;
+  line-height: 1.45;
   color: #666;
   color: #dddddd; 
   margin-bottom: 1.25rem;
@@ -84,6 +84,9 @@ const Highlight = styled.span`
   font-weight: 500;
   color: #333333;
   color: #ffffff;
+  font-size: 1.125rem;
+  line-height: 1.45;
+  letter-spacing: -0px;
 ` 
 const ImageSubCaption = styled.p`
   font-size: 0.8rem;
@@ -156,7 +159,7 @@ export default function About() {
             <div data-sal="fade" data-sal-delay="300" data-sal-duration="1200" data-sal-easing="ease">
               <OffsetBody>
                 <Text>
-                  <Highlight>I'm John, and I study Human Computer Interaction and Political Economy at the University of Washington.</Highlight>
+                  <Highlight>I'm John. I study Human Computer Interaction and Political Economy at the University of Washington.</Highlight>
                 </Text>
                 <Text>
                 With a background in business, product and policy, I’m a generalist at heart. Product design was the only place where I could see myself melding all of my disparate interests into a cohesive role.
