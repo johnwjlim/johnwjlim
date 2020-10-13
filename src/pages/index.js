@@ -169,10 +169,10 @@ const Divider =  styled.div`
 
 const Title = styled.h1`
   // letter-spacing: -5px;  
-  letter-spacing: -2.5px;
+  letter-spacing: -2.3px;
   font-size: 3.5rem;
   font-weight: 500;
-  color: #333333;
+  color: #333;
   line-height: 1.45;
   margin-bottom: 0.5em;
 
