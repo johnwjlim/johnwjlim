@@ -7,19 +7,27 @@ import {useTransition, animated} from 'react-spring'
 const Container = styled.div`
   display: flex;
   justify-content: space-between;
+  margin: 0 auto;
   max-width: 1680px;
+  position: absolute;
   position: fixed;
   padding: 1.15rem 2.5rem;
+  // margin: 1.15rem 2.5rem
   top: 0;
   left: 0;
   z-index: 5;
-  width: 100%;
-  // background-color: rgba(255,255,255,0.75);
-  // border-bottom: 1px solid #f1f1f1;
-  // box-shadow: 1px 1px #c5c5c5;
+  width: 95%;
+  box-sizing: border-box;
+
+  
+  @media (max-width: 1240px) {
+    width: 100%;
+    background-color: #111111;
+    background-color: #0a0a0a;
+  }
 
   @media (max-width: 425px) {
-    padding: 1.5rem;
+    padding: 1rem;
   }
 
 `
@@ -49,6 +57,10 @@ const Title = styled.h2`
   // }
 `
 
+const TitleLight = styled(Title)`
+  color: #c5c5c5;
+`
+
 const SecondaryTitle = styled(Title)`
   color: #979797;
   color: #ffb7b7;
@@ -68,7 +80,7 @@ const Subtitle = styled.p`
   padding-left: 1.5rem;
   text-align: bottom;   
   border-left: 1px solid #767676;
-  color: #ffffff;
+  color: #333333;
   // position: absolute;
   // left: 10vw;
 
@@ -93,12 +105,12 @@ const Menu = styled.a`
   margin: 0;
   letter-spacing: -0.3px;
   font-weight: 400;
-  color: #111111;
-  // color: #ffffff;
+  color: #333333;
   font-size: 1.2rem;
   line-height: 1.5;
   cursor: pointer;
-  margin-right: 5rem;
+  margin-right: 2.5rem;
+  margin-right: 0;
 
   @media (max-width: 425px) {
     font-size: 1rem;
@@ -107,6 +119,36 @@ const Menu = styled.a`
 
   @media (max-width: 1240px) {
     display: block;
+  }
+`
+
+const MobileMenu = styled.div`
+  display: none;
+  margin: 0;
+
+
+  @media (max-width: 1240px) {
+    display: flex;
+  }
+
+  @media (max-width: 425px) {
+    font-size: 1rem;
+    margin-right: 2.5rem;
+    margin-right: 1rem;
+  }
+
+`
+
+const MobileLink = styled(Link)`
+  text-decoration: none;
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-left: 2rem;
+  color: #dddddd;
+
+
+  :hover {
+    text-decoration: underline;
   }
 `
 
@@ -141,7 +183,7 @@ export default function Header(props) {
   }
 
   return (
-    <Container>
+     <Container>
       <Wrapper>
         <StyledLink 
           to="/"
@@ -156,7 +198,8 @@ export default function Header(props) {
           {
             transitions.map(({item, key, props}) => item ?
             <animated.div style={props}>
-              <SecondaryTitle>Make It Better.</SecondaryTitle>
+              {/* <SecondaryTitle>Make It Better.</SecondaryTitle> */}
+              <TitleLight>John Lim</TitleLight>
             </animated.div> :
             <animated.div style={props}>
               <Title>John Lim</Title>
@@ -167,11 +210,23 @@ export default function Header(props) {
         {
           props.pageTitle ?
           <>
-           <Filler />
+            {/* <Subtitle>{props.pageTitle}</Subtitle>  */}
+            <Filler />
           </>: <Filler />
         }
       </Wrapper>
-      <Menu onClick={() => triggerMenu()}>Menu</Menu>
-    </Container>
+      {/* <Menu onClick={() => triggerMenu()}>Menu</Menu> */}
+      <MobileMenu>
+        <MobileLink to="/about">About</MobileLink>
+        <MobileLink 
+          as="a"
+          target="_blank"   
+          href="https://drive.google.com/file/d/1r5To1P3Oc8Dn9Ucbe_WxWWBi5bCVeYri/view?usp=sharing"
+        >
+          Resume
+        </MobileLink>
+      </MobileMenu>
+    </Container> 
+    
   )
 }

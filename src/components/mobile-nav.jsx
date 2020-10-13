@@ -65,6 +65,10 @@ export default function Nav(props) {
     dispatch({type: "CLOSE"})
   }
 
+  const isActive = ({ isCurrent }) => {
+    return isCurrent ? { className: "active" } : {}
+  }
+
 
   function handleComponents() {
     if (sections) {

@@ -9,15 +9,18 @@ export const poolSections = ["Intro + Ideation", "Individual Deliverable", "Team
 
 
 export const Container = styled.div`
-  max-width: 1350px;
-  width: 87%;
+  max-width: 1360px;
+  // width: 85%;
   // overflow: auto;
   // height: 89vh;
   // height: 90vh;
+  padding-right: 15rem;
+  // width: 100%;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1240px) {
     width: 100%;
     overflow: visible;
+    padding: 0;
 
   }
 `
@@ -50,8 +53,9 @@ export const IntroBody = styled.div`
 export const OffsetBody = styled.div`
   margin: 7rem auto;
 
+
   @media (max-width: 1240px) {
-    margin: 3.5rem 0;
+    margin: 3.5rem 0; 
   }
 `;
 

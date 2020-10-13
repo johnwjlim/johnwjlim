@@ -7,19 +7,23 @@ import {useTransition, animated} from 'react-spring'
 const Container = styled.div`
   display: flex;
   justify-content: space-between;
-  // padding: 1.5rem 0;
+  margin: 0 auto;
   max-width: 1680px;
-  // margin: 0 auto;
-  // position: absolute;
+  position: absolute;
   position: fixed;
   padding: 1.15rem 2.5rem;
+  // margin: 1.15rem 2.5rem
   top: 0;
   left: 0;
   z-index: 5;
-  width: 100%;
-  // background-color: rgba(255,255,255,0.75);
-  // border-bottom: 1px solid #f1f1f1;
-  // box-shadow: 1px 1px #c5c5c5;
+  width: 95%;
+  box-sizing: border-box;
+
+  
+  @media (max-width: 1240px) {
+    width: 100%;
+    background-color: white;
+  }
 
   @media (max-width: 425px) {
     padding: 1.5rem;
@@ -40,16 +44,22 @@ const Title = styled.h2`
   line-height: 1.1;
   font-size: 1.4rem;
 
+  transition: 0.3s;
+
 
   @media (max-width: 425px) {
     font-size: 1.25rem
   }
 
-  // &:hover {
-  //   color: #a5a5a5;
-  //   font-weight: 800;
-  //   letter-spacing: -0.5px;
-  // }
+  &:hover {
+    color: #a5a5a5;
+    // font-weight: 800;
+    // letter-spacing: -0.5px;
+  }
+`
+
+const TitleLight = styled(Title)`
+  color: #c5c5c5;
 `
 
 const SecondaryTitle = styled(Title)`
@@ -63,25 +73,34 @@ const SecondaryTitle = styled(Title)`
   // left: 10vw;
 `
 
-const Subtitle = styled.p`
-  font-weight: 300;
-  font-size: 1.2rem;  
-  margin: 0;
-  margin-left: 1.5rem;
-  padding-left: 1.5rem;
-  text-align: bottom;   
-  border-left: 1px solid #767676;
-  color: #333333;
-  // position: absolute;
-  // left: 10vw;
+// const Subtitle = styled.p`
+//   font-weight: 300;
+//   font-size: 1.2rem;  
+//   margin: 0;
+//   margin-left: 1.5rem;
+//   padding-left: 1.5rem;
+//   text-align: bottom;   
+//   border-left: 1px solid #767676;
+//   color: #333333;
+//   // position: absolute;
+//   // left: 10vw;
 
-  @media (max-width: 425px) {
-    margin-left: 0.9rem;
-    padding-left: 0.9rem;
-    font-size: 1rem;
-  }
+//   @media (max-width: 425px) {
+//     margin-left: 0.9rem;
+//     padding-left: 0.9rem;
+//     font-size: 1rem;
+//   }
+
+// `
+
+const Subtitle = styled.p`
+  font-size: 1.05rem;
+  font-weight: 400;
+  // margin-left: 6rem;
+  letter-spacing: -0.2px;
 
 `
+
 const Filler = styled.div`
   // height: 100%;
   padding-top: 26px;
@@ -96,11 +115,12 @@ const Menu = styled.a`
   margin: 0;
   letter-spacing: -0.3px;
   font-weight: 400;
-  color: #111111;
+  color: #333333;
   font-size: 1.2rem;
   line-height: 1.5;
   cursor: pointer;
-  margin-right: 5rem;
+  margin-right: 2.5rem;
+  margin-right: 0;
 
   @media (max-width: 425px) {
     font-size: 1rem;
@@ -109,6 +129,36 @@ const Menu = styled.a`
 
   @media (max-width: 1240px) {
     display: block;
+  }
+`
+
+const MobileMenu = styled.div`
+  display: none;
+  margin: 0;
+
+
+  @media (max-width: 1240px) {
+    display: flex;
+  }
+
+  @media (max-width: 425px) {
+    font-size: 1rem;
+    margin-right: 2.5rem;
+    margin-right: 1rem;
+  }
+
+`
+
+const MobileLink = styled(Link)`
+  text-decoration: none;
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-left: 2rem;
+  color: #666;
+
+
+  :hover {
+    text-decoration: underline;
   }
 `
 
@@ -143,7 +193,7 @@ export default function Header(props) {
   }
 
   return (
-    <Container>
+     <Container>
       <Wrapper>
         <StyledLink 
           to="/"
@@ -155,25 +205,40 @@ export default function Header(props) {
             <SecondaryTitle>Make It Better.</SecondaryTitle> :
             <Title>John Lim</Title>
           } */}
-          {
+          {/* {
             transitions.map(({item, key, props}) => item ?
             <animated.div style={props}>
-              <SecondaryTitle>Make It Better.</SecondaryTitle>
+              <TitleLight>John Lim</TitleLight>
             </animated.div> :
             <animated.div style={props}>
               <Title>John Lim</Title>
             </animated.div>
             )
-          }
+          } */}
+          <Title>John Lim</Title>
+          {/* <Subtitle>Digital Product Designer</Subtitle> */}
         </StyledLink>
+        {/* <Subtitle>Product Designer</Subtitle> */}
         {
           props.pageTitle ?
           <>
-            <Subtitle>{props.pageTitle}</Subtitle> 
+            {/* <Subtitle>{props.pageTitle}</Subtitle>  */}
+            <Filler />
           </>: <Filler />
         }
       </Wrapper>
-      <Menu onClick={() => triggerMenu()}>Menu</Menu>
-    </Container>
+      {/* <Menu onClick={() => triggerMenu()}>Menu</Menu> */}
+      <MobileMenu>
+        <MobileLink to="/about">About</MobileLink>
+        <MobileLink 
+          as="a"
+          target="_blank"   
+          href="https://drive.google.com/file/d/1r5To1P3Oc8Dn9Ucbe_WxWWBi5bCVeYri/view?usp=sharing"
+        >
+          Resume
+        </MobileLink>
+      </MobileMenu>
+    </Container> 
+    
   )
 }

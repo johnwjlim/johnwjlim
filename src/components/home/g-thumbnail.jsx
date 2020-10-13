@@ -56,8 +56,8 @@ const Filler = styled.div`
   height: 4.5rem;
   // background-color: #47C3A0;
   // background-color: #FF6699;
-  background-color: #ffffff;
-  opacity: 1;
+  background-color: #fefefe;
+  // opacity: 1;
 
   @media (max-width: 1240px) {
     display: none;
@@ -99,7 +99,7 @@ const ImageParent = styled(ImageWrapper)`
 export default function GThumbnail() {
   const data = useStaticQuery(graphql`
     query {
-      HeroImage: file(relativePath: {eq: "g-hero-image.png"}) {
+      HeroImage: file(relativePath: {eq: "g-hero-image.jpg"}) {
         childImageSharp {
           fluid (maxWidth: 3200, maxHeight: 1600) {
             ...GatsbyImageSharpFluid

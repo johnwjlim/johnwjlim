@@ -9,8 +9,15 @@ const Container = styled.nav`
   height: 91%;
   right: 0;
   margin: 0 1rem;
-  // margin-left: 0; 
+  margin-left: 0; 
   margin-top: 64px;
+  margin-top: 42px;
+  height: 93%;
+
+  @media (max-width: 1340px) {
+    margin-right: 0;
+  }
+  
   @media (max-width: 1240px) {
     display: none; 
   }
@@ -32,7 +39,8 @@ const StyledLink = styled(Link)`
   line-height: 1.68;
   transition: 0.2s;
   letter-spacing: -0.3px;
-  color: #666666;
+  color: #666666; 
+  color: #767676;
   // color: #333;
   // color: #888;
   padding: 0.25rem 0.5rem;
@@ -109,7 +117,7 @@ const FooterText = styled.p`
   font-weight: 300;
   font-size: 0.83rem;
   line-height: 1.44;  
-  width: 12.5rem;
+  width: 12rem;
 `
 
 const InlineLink = styled.a`
@@ -286,10 +294,10 @@ export default function Nav(props) {
             <FooterText>
               Hand-coded with ❤️ on
               <InlineLink href="https://www.gatsbyjs.org" target="_blank"> React</InlineLink>, 
-              <InlineLink href="https://redux.js.org" target="_blank"> Redux</InlineLink>, 
-              <InlineLink href="https://www.styled-components.com" target="_blank"> styled-components</InlineLink>, 
-              and a little magic from 
-              <InlineLink href="https://www.react-spring.io" target="_blank"> react-spring</InlineLink>.
+              <InlineLink href="https://redux.js.org" target="_blank"> Redux</InlineLink> and 
+              <InlineLink href="https://www.styled-components.com" target="_blank"> styled-components</InlineLink> 
+              {/* and a little magic from 
+              <InlineLink href="https://www.react-spring.io" target="_blank"> react-spring</InlineLink>. */}
             </FooterText> 
             <FooterText>
               View <InlineLink href="https://github.com/johnwjlim/johnwjlim" target="_blank"> the source</InlineLink>.

@@ -66,7 +66,6 @@ export default function Nav(props) {
     dispatch({type: "CLOSE"})
   }
 
-
   function handleComponents() {
     if (sections) {
       return sections.map((section, index) => {
@@ -110,11 +109,11 @@ export default function Nav(props) {
         </ListItem>
       </List>
  
-      <List>
+      {/* <List>
         {
           handleComponents()
-        }
-      </List>
+        } 
+      </List> */}
     </Container>
   )
 }

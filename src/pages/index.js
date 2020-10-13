@@ -1,4 +1,4 @@
-import React, {useEffect} from "react"
+import React, {useEffect, useState} from "react"
 import { Link, useStaticQuery, graphql } from "gatsby"
 import styled from "styled-components"
 import { useSelector, useDispatch } from 'react-redux'
@@ -19,22 +19,43 @@ import Nimbus from "../components/home/nimbus-thumbnail"
 import New from "../components/home/nimbus-thumbnail-new"
 import GChallenge from "../components/home/g-thumbnail"
 import Pool from "../components/home/pool-thumbnail"
+import Pear from "../components/home/pear-thumbnail"
+import Movley from "../components/home/movley-thumbnail"
+
+const LayoutHack = styled.div`
+  margin: 0 auto;
+  // max-width: 1680px;
+  padding: 0px 2.5rem 1.45rem;
+  position: relative;
+  // background-color: #fafafa;
+  // background-color: #eeeeee;
+  box-sizing: border-box;
+  background-color: #fefefe;
+
+  @media (max-width: 425px) {
+    padding: 0 1.25rem 1.45rem;
+  }
+`;
 
 const Wrapper = styled.div`
   display: flex;
-  justify-content: space-between;
-  // margin-top: 76px;
-  // margin-top: 58px;
-  // background-color: #;
   @media (max-width: 1240px) {
     margin-top: 76px;
   }
 `;
 
+const HeaderWrapper = styled.div`
+  // display: none; 
+  
+  @media (max-width: 1240px) {
+    display: block;
+  }
+`
+
+
 const Body = styled(Container)`
-  // width: 100%;
   margin: 0 2rem;
-  margin-right: 15em;
+  // margin: 0;
 
   @media (max-width: 1240px) {
     margin: 0;
@@ -42,127 +63,35 @@ const Body = styled(Container)`
 `;
 
 const TitleBox = styled.div`
-  // margin: 5rem 0 10rem;
-  // margin: 3.5rem 0 5rem;
-  // margin: 0.7rem 0;
-  // margin: 4rem 0;
-  // margin: 0 3rem;
-  margin-bottom: 1rem; 
-  margin-bottom: 8rem;
-  // border-bottom: 1px solid #dddddd;
+  // margin: 0 2rem;
 
-  margin-top: 14rem;
-  @media (max-width: 768px) {
+  margin-bottom: 1rem; 
+  margin-bottom: 10rem;
+
+  margin-top: 10rem;
+  // margin-top: 10rem;
+  // margin-top: 80px;
+  margin-bottom: 14rem;
+  margin-bottom: 9rem;
+  margin-top: 8rem;
+  // margin-top: 7rem;
+  // margin-top: 5rem;
+
+  // margin-bottom: 3.5rem;
+  // margin-top: 12rem;
+
+  // margin-top: 10rem;
+  // margin-bottom: 12rem;
+
+  @media (max-width: 1240px) {
     // font-size: 1rem;
     margin: 3.5rem 0 5rem;
   }
 `
 
-const Subtitle = styled.h3`
-  // font-size: 1.1rem;
-  font-weight: 300;
-  color: #666666;
-  letter-spacing: -0.2px;
-  // color: #333333;
-  margin-bottom: 0.3rem;
-  font-size: 1.3rem;
 
-  @media (max-width: 768px) {
-    display: none;
-  }
-`
 
-const MobileSubtitle = styled(Subtitle)`
-  @media (max-width: 768px) {
-    display: block;
-  }
-`
 
-const CaseLink = styled(Link)`
-  text-decoration: none;
-  transition: 0.2s;
-
-  :hover {
-    cursor: pointer;
-    transform: scale(0.8);
-  }
-`;
-
-const CaseCaption = styled.h3`
-  // font-weight: 400;
-  color: #333333;
-  margin-top: 1rem;
-  // letter-spacing: -0.3px;
-`
-
-const ScaledImage = styled(ImageWrapper)`
-transition: transform 0.2s;
-
-:hover {
-  transform: scale(1.03)
-}
-`
-
-const NewTitle = styled.h1`
-  letter-spacing: -4px;
-  font-weight: 700;
-  font-size: 4rem;
-  // margin: 4rem 0; 
-  margin-bottom: 4rem;
-  line-height: 0.99;
-  color: #111111;
-  // color: #4353ff;
-
-  @media (max-width: 1024px) {
-    font-size: 2.5rem;
-    letter-spacing: -2px
-  }
-
-  // @media(max-width: 768px) {
-  //   letter-spacing: -2px;
-  //   font-size: 1.5rem;
-  // }
-`
-const NewSubtitle = styled.h4`
-  letter-spacing: -0.2px;
-  font-weight: 400;
-  margin-bottom: 8rem;
-  // margin-bottom: 4rem;
-  margin-top: 3.9rem;
-  color: #666;
-
-  @media (max-width: 1240px) {
-    display: none;
-  }
-`
-
-const NewSubtext = styled.h6`
-  margin-top: 1rem;
-  letter-spacing: -0.2px;
-  
-  color: #dddddd;
-  font-weight: 400;
-`
-
-const HeaderWrapper = styled.div`
-  display: none;
-  
-  @media (max-width: 1240px) {
-    display: block;
-  }
-`
-
-const Sub = styled.h3`
-  letter-spacing: -0.3px;
-  color: #333333;
-  font-weight: 400;
-  line-height: 1.5;
-
-  @media (max-width: 1024px) {
-    font-size: 1rem;
-    letter-spacing: -0.2px;
-  }
-`
 
 const FauxHeader = styled.div`
   position: fixed;
@@ -205,14 +134,14 @@ const StyledLink = styled(Link)`
   text-decoration: none;
   transition: 0.3s;
 
-`;
+`
 
 const Emoji = styled.span`
   font-size: 2rem;
   vertical-align: middle;
-  // line-height: 0;
-  // margin: 0;
+  
 `
+
 const TitleStyle = styled.span`
   color: #dddddd;
   // color: #666666;
@@ -239,39 +168,50 @@ const Divider =  styled.div`
 `
 
 const Title = styled.h1`
-  letter-spacing: -2.8px;
-  letter-spacing: -2.2px;
-  font-size: 3.6rem;
-  font-size: 2.7rem;
-  // font-size: 2.3rem;
-  font-weight: 400;
-  font-weight:500;
-  color: #111111;
-  line-height: normal;
-  // margin-bottom: 6rem;
+  // letter-spacing: -5px;  
+  letter-spacing: -2.3px;
+  font-size: 3.5rem;
+  font-weight: 500;
+  color: #333;
+  line-height: 1.45;
+  margin-bottom: 0.5em;
+
+  // font-weight: 500;
+  // letter-spacing: -0px;
+  // font-size: 3rem;
+
+  @media (max-width: 1340px) {
+    font-size: 3rem;  
+    letter-spacing: -1.6px;
+  }
 
   @media (max-width: 1024px) {
-    font-size: 2.4rem;
-    letter-spacing: -1.8px
+    font-size: 2.5rem;
+    letter-spacing: -1.5px;
   }
 `
 
 const Text = styled.p`
   // color: #b5b5b5;
-  color: #333;
-  color: #666;
-  // color: #888;
-  letter-spacing: -1px;
-  font-weight: 300;
-  max-width: 36rem;
-  max-width: 48rem;
-  line-height: 1.3;
-  // line-height: normal;
-  font-size: 1.8rem;
+  color: #666666;
+  letter-spacing: -0.5px;
+  font-weight: 400;
+  max-width: 41rem;
+  max-width: 38.5rem;
+  max-width: 39rem;
+  // max-width: 56rem;
+  font-size: 1.25rem;
+
+  font-size: 1.2rem;
+  max-width: 38rem;
+  letter-spacing: -0.35px;
+  line-height: 1.45;
+  color: #767676;
+  // color: #888888;
 
   @media (max-width: 1024px) {
-    font-size: 1.2rem;
-    letter-spacing: -0.3px
+    // font-size: 1.2rem;
+    // letter-spacing: -0.4px;
   }
 
 
@@ -291,15 +231,34 @@ const Dash = styled.div`
 `
 
 const Highlight = styled.span`
-  color: #111;
-  font-weight: 600;
-  font-weight: 400;
+  // color: #333333; 
+  // font-weight: 500;
 `
 const TitleFlip = styled.div`
   background-color: #333;
   color: #fff
 `
 
+const Paper = styled.div`
+ background-color: #f0f0ec;
+`
+
+const Name = styled(Link)`
+  color: #767676;
+  color: #333;
+  transition: 0.2s;
+  text-decoration: none;
+
+
+  :hover {
+    color: #888; 
+    border-bottom: 5px solid #b5b5b5;
+  }
+
+`
+const Subtitle = styled.p`
+  margin-top: 2.5rem;
+`
 
 
 export default function IndexPage() {
@@ -314,107 +273,83 @@ export default function IndexPage() {
       }
     }
   `)
-  // const dispatch = useDispatch()
+  const dispatch = useDispatch()
   const menuState = useSelector(state => state.menuState)
 
-  // useEffect(() => {
-  //   dispatch({type: "CLOSE"})
-  // },[])
+  const [menu, setMenu] = useState(false)
 
-  // function handleTabSwitch(value) {
-  //   setActive(value);
-  // }
+  // useEffect(() => {
+  //   console.log(menuState)
+  // },[menuState])
+
+
+
+  useEffect(() => {
+    dispatch({type: "CLOSE"})
+  },[])
 
   return (
-    <Layout>
+    <LayoutHack >
       <SEO title="Home" />
       <HeaderWrapper>
-        <Header/>
+        <Header/>  
       </HeaderWrapper>
       {/* <FauxHeader>
           <HeaderTitle>John Lim</HeaderTitle>
-      </FauxHeader> */}
+      </FauxHeader>  */}
       {
         menuState ?
         <MobileNav /> :
         <>
-          <Wrapper>
-            <Body>
-              <FauxHeader>
-                <StyledLink to="/">
-                  {/* <HeaderTitle>John Lim</HeaderTitle> */}
-                  {/* <NewSubtitle>Digital Product Designer</NewSubtitle> */}
-                </StyledLink>
-              </FauxHeader>
 
+          <Wrapper>
+            <div style={{width: "100%"}}>
+            {/* <Subtitle>Digital Product Designer</Subtitle> */}
+            <Body>           
+              {/* <FauxHeader>
+                <StyledLink to="/">
+                  <h4>John Lim</h4>
+                </StyledLink>
+              </FauxHeader> */}
+              {/* <p>Product Designer</p> */}
               <TitleBox>
-                {/* <NewSubtitle>Digital Product Designer</NewSubtitle>  */}
-                {/* <NewTitle>
-                  <div data-sal="fade" data-sal-delay="100" data-sal-duration="1200" data-sal-easing="ease"> 
-                    <TitleStyle>John is</TitleStyle><br/>
-                    <TitleStyle>A Pavement Pounder. </TitleStyle> <br/>
-                  </div>
-                    A Pixel Pusher. <Emoji> 🏃 👨‍🎓 ⛷</Emoji> <br/> 
-                  <div data-sal="fade" data-sal-delay="100" data-sal-duration="1200" data-sal-easing="ease"> 
-                    <TitleStyle>A Powder Hound. </TitleStyle> 
-                  </div>
-                </NewTitle>
-                <div data-sal="fade" data-sal-delay="300" data-sal-duration="1200" data-sal-easing="ease"> 
-                  <Sub>Enthralled by the things that make us human. <br/> Sustained by excessive amounts of coffee.</Sub>
-                  <Arrow >
-                    <div class="arrow" onClick={() => scrollTo('#nimbus')}/>
-                  </Arrow>
-                </div> */}
-                <div data-sal="fade" data-sal-delay="150" data-sal-duration="1200" data-sal-easing="ease">
+                <div data-sal="fade" data-sal-delay="100" data-sal-duration="1200" data-sal-easing="ease">
                   <Title>
                     <div>
-                    Hello there, I'm John &nbsp;<Emoji> 👋 </Emoji>
+                    Hello there, I'm <Name to="/about">John</Name><span className="blinking">.</span> &nbsp;
+                    {/* HELLO THERE, I'M <Name to="/about">JOHN</Name><span className="blinking">.</span> &nbsp; */}
+                    <Emoji> ✌️ </Emoji>
                     </div>
                   </Title> 
                 </div>
                 <div data-sal="fade" data-sal-delay="300" data-sal-duration="1200" data-sal-easing="ease">
-                  {/* <Text>
-                    I study <Highlight>Human Computer Interaction</Highlight> at the <Highlight>University of Washington</Highlight> enthralled by the things that make us <Highlight>human</Highlight> and driven by the 
-                    pursuit of the elusive <Highlight>intersection</Highlight> between <Highlight>technology and humanity.</Highlight> 
-                  </Text> */}
                   <Text>I'm an undergraduate student at the <Highlight>University of Washington</Highlight> majoring in <Highlight>Human Computer Interaction</Highlight> and enthralled by the factors that make us <Highlight>human.</Highlight></Text>
-                  {/* <Text>
-                    If not <Highlight>skiing,</Highlight> I can be found <Highlight>grinding</Highlight> out the miles on the gravel or <Highlight>pushing pixels</Highlight> while nursing my second coffee of the day in one of the many <Highlight>coffee</Highlight> shops around <Highlight>Seattle.</Highlight>
-                  </Text> */}
-                  <Text>If not <Highlight>pushing pixels</Highlight> in a Seattle coffee shop, catch me <Highlight>chasing powder</Highlight> in my local ski hill or wherever there's good snow to be found.</Text>
+                  <Text>If not <Highlight>pushing pixels</Highlight> in a Seattle coffee shop, catch me <Highlight>chasing powder</Highlight> on my local ski hill or wherever there is good snow to be found.</Text>
                 </div>
-                {/* <div data-sal="fade" data-sal-delay="400" data-sal-duration="1200" data-sal-easing="ease">
-                  <Dash>
-                    ––
-                  </Dash>
-                </div>
-                <div data-sal="fade" data-sal-delay="400" data-sal-duration="1200" data-sal-easing="ease">
-                  <MicroText>
-                    Scroll down to view select projects 
-                  </MicroText>
-                  <Arrow >
-                      <div class="arrow" onClick={() => scrollTo('#nimbus')}/>
-                  </Arrow>
-                </div> */}
+                
               </TitleBox>
-              {/* <Divider /> */}
-              <div data-sal="fade" data-sal-delay="100" data-sal-duration="1500" data-sal-easing="ease" id="nimbus" style={{paddingTop: "1rem"}}> 
+              <div data-sal="fade" data-sal-delay="100" data-sal-duration="1500" data-sal-easing="ease" id="nimbus"> 
                <New />
               </div>
+        
               <div data-sal="fade" data-sal-delay="100" data-sal-duration="1500" data-sal-easing="ease"> 
                 <Pool />
               </div>
               <div data-sal="fade" data-sal-delay="100" data-sal-duration="1500" data-sal-easing="ease"> 
+                <Movley />
+              </div>
+              <div data-sal="fade" data-sal-delay="100" data-sal-duration="1500" data-sal-easing="ease"> 
+                <Pear />
+              </div>
+              <div data-sal="fade" data-sal-delay="100" data-sal-duration="1500" data-sal-easing="ease"> 
                 <GChallenge />
               </div>
-              {/* </div> */}
             </Body>
-            {/* <div style={{marginTop: "64px"}}> */}
+            </div>
               <Nav />
-            {/* </div> */}
           </Wrapper>
         </>
       }
-  </Layout>
+  </LayoutHack>
   )
 }

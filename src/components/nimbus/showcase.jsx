@@ -6,16 +6,10 @@ import joinGif from "../../images/giphy.gif"
 
 import { Container, ImageWrapper, FlexWrapper, IntroBody, OffsetBody, RightButton, ButtonHeader, ButtonText, sections, TextQuote, Image, InfoPanel } from "../constants"
 
-const Title = styled.h1`
-  // font-weight: 600;
-  font-weight: 700;
-  margin-bottom: 0.5rem;
-`
-
-
 const TextBlock = styled.div`
   max-width: 46rem;
   margin: 0 auto;
+  // letter-spacing: -0.15px;
   // margin-bottom: 1.25rem;
 `
 
@@ -25,10 +19,11 @@ const HeroText = styled.p`
   font-size: 2rem;
   font-weight: 300;
   color: #666666;
-  letter-spacing: -1.1px;
-  line-height: 1.3;
+  letter-spacing: -1px;
+  // letter-spacing: -0.8px;
+  line-height: 1.4;
   max-width: 60rem;
-  margin-bottom: 3.5rem;
+  margin-bottom: 3.5rem;  
 
   @media (max-width: 1240px) {
     font-size: 1.5rem;
@@ -64,12 +59,30 @@ const FlexBox = styled.div`
   align-items: center;
   margin: 7rem 0;
   padding: 3.5rem;
+  justify-content: space-between;
+ 
+  @media (max-width: 1440px) {
+    padding: 1.75rem 0;
+  }
 
   @media (max-width: 1240px) {
     display: block;
     margin: 3.5rem 0;
     padding: 1.5rem;
   }
+`
+
+const FlexBody = styled.div`
+margin: 7rem auto;
+
+@media (max-width: 1440px) {
+  margin: 7rem 3.5rem;
+}
+
+@media (max-width: 1240px) {
+  margin: 3.5rem 0; 
+}
+
 `
 
 const BlockIntro = styled.h2`
@@ -111,18 +124,13 @@ const PrototypeWrapper = styled.div`
   }
 `
 
-const PrototypeWrapperSmall = styled(PrototypeWrapper)`
-  display: none;  
-
-  @media (max-width: 768px) {
-    display: block;
-  }
-`
 
 
 
 const PrototypeText = styled(TextBlock)`
   max-width: 28rem;
+
+
 
   @media (max-width: 1240px) {
     max-width: 46rem;
@@ -152,23 +160,18 @@ const FlexImage = styled.div`
   padding: 0 3.5rem;
   // max-width: 20%;
 
+  @media (max-width: 1320px) {
+    width: 25rem;
+  }
+
+
   @media (max-width: 1240px) {
     max-width: 25rem;
     // width: auto;
     padding: 0;
     margin: 0 auto;
-  }
-
+  } 
   
-  
-`
-
-const PrototypeLink = styled(ImageCaption)`
-  display: none;
-
-  @media (max-width: 768px) {
-    display: block;
-  }
 `
 
 const PitchDeckLink = styled(ImageCaption)`
@@ -182,33 +185,6 @@ const PitchDeckLink = styled(ImageCaption)`
 `
 
 
-const SectionTitle = styled.h2`
-  font-weight: 500;
-  // letter-spacing: -0.6px;
-  line-height: 1.5;
-  // color: #333;
-  color: #111;
-  font-size: 1.33rem;
-
-`
-
-const Button = styled.button`
-  font-family: "Untitled Sans";
-  background-color: #ffffff;
-  border: 1px solid #4353ff;
-  border-radius: 8px;
-  color: #4353ff;
-  padding: 1rem 1.5rem;
-  font-weight: 500;
-  transition: 0.2s;
-  letter-spacing: -0.3px;
-
-  :hover {
-    cursor: pointer; 
-    background-color: #4353ff;
-    color: #ffffff
-  }
-`
 
 const Box = styled.div`
   // border: 1px solid #dddddd;
@@ -256,15 +232,6 @@ const Quote = styled(TextQuote)`
   }
 `
 
-const Divider = styled.div`
-  border-top: 1px solid #d2d2d7;
-  padding-top: 4rem;
-
-  @media (max-width: 1240px) {
-    padding-top: 2rem
-  }
-`
-
 const ImageOffset = styled(OffsetBody)`
   padding: 0 3.5rem;
 
@@ -277,15 +244,26 @@ const ImageSubCaption = styled.p`
   font-size: 0.8rem;
   margin-top: 0.5rem;
   margin-bottom: 0;
+  // color: #666666;
 `
 
 const JohnMuir = styled.div`
-  // height: 50vh;
-  width: 79vw;
+  box-sizing: border-box;
   background-color: #113731;
   // background-color: #225c4e;
   // background-color: #2e6b34;
-  padding: 12rem 9rem;
+  width: 96vw; 
+  padding: 11rem 9rem;
+  
+
+  // @media (max-width: 1440px) {
+  //   width: 
+  // }
+
+  @media (max-width: 1320px) {
+    padding: 10rem 7.5rem;
+  }
+
 
   @media (max-width: 1240px) {
     width: auto;
@@ -299,13 +277,17 @@ const JohnMuir = styled.div`
 
 const JohnMuirQuote = styled.p`
   font-family: "Founders Grotesk";
-  font-size: 3.5rem;
+  font-size: 3.8rem;
   font-weight: 500;
   color: #fff;
   color: #f9f8f6;
-  line-height: 1.1;
-  max-width: 54rem;
-  // letter-spacing: -0.1px;
+  line-height: 1.05;
+  max-width: 60rem;
+  // letter-spacing: 0.1px;
+
+  @media (max-width: 1400px) {
+    max-width: 52rem;
+  }
 
   @media (max-width: 1240px) {
     font-size: 3rem;
@@ -322,10 +304,19 @@ const JohnMuirCaption = styled.p`
   font-weight: 500;
 `
 
+const ImageBackground = styled.div`
+  background-color: #f5f5f5;
+  padding: 7rem;
+
+  @media (max-width: 1120px) {
+    padding: 0;
+  }
+`
 
 const iFrameStyle = {
   transform: "scale(0.75)"
 }
+
 
 
 
@@ -355,27 +346,6 @@ export default function Showcase(props) {
           }
         }
       }
-      Grid: file(relativePath: {eq: "image-grid.png"}) {
-        childImageSharp {
-          fluid(maxWidth: 3200) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      GridFull: file(relativePath: {eq: "image-grid-full-width.png"}) {
-        childImageSharp {
-          fluid(maxWidth: 3200) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      ProfileMontage: file(relativePath: {eq: "profile-montage.png"}) {
-        childImageSharp {
-          fluid(maxWidth: 3200) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
       RevisedScreens: file(relativePath: {eq: "revised-screen-deck.png"}) {
         childImageSharp {
           fluid (maxWidth: 3200) {
@@ -393,20 +363,6 @@ export default function Showcase(props) {
       UserFlow: file(relativePath: {eq: "user-flow.png"}) {
         childImageSharp {
           fluid(maxWidth: 3200) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      Wireframes: file(relativePath: {eq: "wireframes-nimbus.png"}) {
-        childImageSharp {
-          fluid(maxWidth: 3200) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      TestFrame: file(relativePath: {eq:"test-frame.png"}) {
-        childImageSharp {
-          fluid (maxWidth: 3200) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -474,43 +430,31 @@ export default function Showcase(props) {
           }
         }
       }
+      PNW: file(relativePath: {eq: "mockup.png"}) {
+        childImageSharp {
+          fluid(maxWidth: 3200) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
     }
   `)
 
   return (
     <>
       <Container>
+        <section id="section-1">
         <ImageWrapper>
           <Img fluid={data.HeroImage.childImageSharp.fluid} />
         </ImageWrapper>
         <OffsetBody>
             <TextBlock>
               <HeroText> 
-                <Highlight>Nimbus</Highlight> is a mobile experience that aims to solve the transportation challenges of remote outdoor exploration by connecting adventurers with one another and having them share transport to outdoor recreation areas. 
+                <Highlight>Nimbus</Highlight> is a mobile experience that aims to solve the transport challenges of remote outdoor exploration by connecting adventurers with one another and having them share transport to outdoor recreation areas. 
               </HeroText>
-              <PitchDeckLink href="https://www.figma.com/proto/rqb3pn14vDM8drmDBvJGWY/Nimbus-Pitch-Deck?node-id=92%3A3&scaling=scale-down" target="_blank">View the condensed pitch deck here!</PitchDeckLink>
+              {/* <PitchDeckLink href="https://www.figma.com/proto/rqb3pn14vDM8drmDBvJGWY/Nimbus-Pitch-Deck?node-id=92%3A3&scaling=scale-down" target="_blank">View the condensed pitch deck here!</PitchDeckLink> */}
             </TextBlock>
         </OffsetBody>
-        {/* <FlexBox style={{alignItems: "flex-start"}}>
-          <OffsetBody style={{marginTop: "0", marginBottom: "3.5rem"}}>
-            <TextBlock>
-              <HeroText>
-                <strong style={{letterSpacing: "-1px", color: "#333333", fontWeight: "500"}}>Nimbus</strong>
-              </HeroText>
-            </TextBlock>
-          </OffsetBody>
-          <OffsetBody style={{marginTop: "0", marginBottom: "3.5rem"}}>
-            <TextBlock>
-              <HeroText style={{maxWidth: "42rem"}}> 
-                A mobile experience that aims to tackle the transportation challenges of remote outdoor exploration by connecting adventurers with one another and having them share transport to outdoor recreation areas. 
-              </HeroText>
-              <PitchDeckLink href="https://www.figma.com/proto/rqb3pn14vDM8drmDBvJGWY/Nimbus-Pitch-Deck?node-id=92%3A3&scaling=scale-down" target="_blank">View the condensed pitch deck here!</PitchDeckLink>
-            </TextBlock>
-          </OffsetBody>
-        </FlexBox> */}
-        {/* <ImageWrapper>
-          <Img fluid={data.RevisedScreensWhite.childImageSharp.fluid}/>
-        </ImageWrapper> */}
         <OffsetBody style={{}}>
           <TextBlock >
             {/* <SectionTitle>
@@ -536,13 +480,15 @@ export default function Showcase(props) {
             – John Muir, <span style={{fontWeight: "400"}}>Our National Parks</span>
           </JohnMuirCaption>
         </JohnMuir>
+        </section>
+        <section id="section-2">
         <div data-sal="fade" data-sal-delay="100" data-sal-duration="1200" data-sal-easing="ease">
         <FlexBox>
           <FlexImage>
             <Img fluid={data.Bundy.childImageSharp.fluid} />
-            <ImageSubCaption>"What if I end up with a serial killer?" – Ted Bundy was one of America's most notorious serial killers. With 30 confessed murders and numerous others attributed to him, Bundy primarily targeted young hitchhikers in the Western United States.</ImageSubCaption>
+            <ImageSubCaption>"What if I end up with a serial killer?" was the soundbite that stood out during our surveys. The specter of Ted Bundy, one of America's most notorious serial killers, loomed large.</ImageSubCaption>
           </FlexImage>
-          <OffsetBody>
+          <FlexBody>
               <PrototypeText>
                 <FlexBlockIntro>
                   Getting into cars with strangers. (Or not)
@@ -552,7 +498,7 @@ export default function Showcase(props) {
                 </p>
                 <p>The immediate priority in our following sprint was therefore to alleviate potential safety issues. One of our key mitigative measures was the introduction of user profiles.  </p>
               </PrototypeText>
-          </OffsetBody>
+          </FlexBody>
         </FlexBox>
         </div>
         <div data-sal="fade" data-sal-delay="100" data-sal-duration="1200" data-sal-easing="ease" style={{backgroundColor: "#f5f5f5", padding: "1.75rem"}}>
@@ -569,54 +515,8 @@ export default function Showcase(props) {
         </OffsetBody>
         <ImageOffset >
             <Img fluid={data.PaperPrototypes.childImageSharp.fluid} />
-            <ImageSubCaption>First impressions matter. While we believed that full profiles go a long way towards building trust, we wanted to test that hypothesis nonetheless. We designed user profiles with varying degress of "sketchiness" and had our testers rate their comfort levels with each profile.  </ImageSubCaption>
+            <ImageSubCaption>First impressions matter. While we believed that full profiles go a long way towards building trust, we wanted to test that hypothesis nonetheless. We designed user profiles with varying degrees of sketchy personas and had testers rate their comfort levels with each profile.  </ImageSubCaption>
         </ImageOffset>
-        {/* <FlexBox style={{alignItems: "flex-start", padding: "3.5rem", backgroundColor: "#F5FFF9"}}>
-          <OffsetBody >
-            <PrototypeText>
-              <BlockIntro style={{maxWidth: "48rem", fontWeight: "500", marginTop: "0", color: "#113731"}}>  
-                Not just expanding accessing to the outdoors, but also fostering connection and building community.
-              </BlockIntro>
-            </PrototypeText>
-          </OffsetBody>
-          <OffsetBody >
-            <PrototypeText>
-            <p style={{color: "rgba(12, 11, 8, 1)"}}>
-              We also learned that outdoor exploration does not lend itself well to the Uber style ride-share concept that we initially had. The sheer remoteness means that there is safety in numbers. For example, if you were backcountry skiing and you somehow triggered and got buried in an avalanche, it would be very nice if you had a partner to call rescue or dig you out. 
-            </p>
-            <p style={{color: "rgba(12, 11, 8, 1)"}}>
-              With the introduction of user profiles and emphasis on safety in numbers, Nimbus evolved from "National Park Uber" to something more akin to a hybrid of AirBnb and your local outdoor Facebook group.
-              Rather than simply enabling transport for users, our concept was now premised on having users form communities to travel outdoors in groups.
-            </p>
-            <ImageCaption style={{textAlign: "left", marginTop: "3.5rem"}} onClick={() => navigate("/nimbus/survey-ideation")} >
-              View the deep dive into the research & ideation process!
-            </ImageCaption>
-            </PrototypeText>
-          </OffsetBody>
-        </FlexBox> */}
-        {/* <FlexBox style={{alignItems: "flex-start", backgroundColor: "#fafafa"}}>
-          <OffsetBody >
-            <PrototypeText>
-              <BlockIntro style={{maxWidth: "48rem", marginTop: "0"}}>  
-                Not just expanding access to the outdoors, but also fostering connection and building community.
-              </BlockIntro>
-            </PrototypeText>
-          </OffsetBody>
-          <OffsetBody >
-            <PrototypeText>
-            <p>
-              In addition, we earned that The sheer remoteness means that there is safety in numbers. For example, if you were backcountry skiing and you somehow triggered and got buried in an avalanche, having a partner to call rescue or dig you out could mean the difference between life or death.
-            </p>
-            <p>
-              With the introduction of user profiles and emphasis on safety in numbers, Nimbus evolved from "National Park Uber" to something more akin to a hybrid of AirBnb and your local outdoor Facebook group.
-              Rather than simply enabling transport for users, our concept was now premised on having users form communities to travel outdoors in groups.
-            </p>
-            <ImageCaption style={{textAlign: "left", marginTop: "3.5rem"}} onClick={() => navigate("/nimbus/survey-ideation")} >
-              View the deep dive into the research & ideation process
-            </ImageCaption>
-            </PrototypeText>
-          </OffsetBody>
-        </FlexBox> */}
         <OffsetBody>
           <TextBlock>
             <p>
@@ -627,11 +527,13 @@ export default function Showcase(props) {
               Our concept was now premised on having users group up and adventure outdoors together. 
             </p>
           </TextBlock>
-          <ImageCaption style={{textAlign: "center", marginTop: "3.5rem"}} onClick={() => navigate("/nimbus/survey-ideation")} >
+          {/* <ImageCaption style={{textAlign: "center", marginTop: "3.5rem"}} onClick={() => navigate("/nimbus/survey-ideation")} >
               View the deep dive into the research & ideation process
-            </ImageCaption>
+          </ImageCaption> */}
         </OffsetBody>
         </div>
+        </section>
+        <section id="section-3">
         <OffsetBody style={{marginBottom: "3.5rem"}}>
           <TextBlock>
             <BlockIntro>
@@ -650,24 +552,12 @@ export default function Showcase(props) {
             <ImageSubCaption style={{marginTop: "3.5rem"}}>
               We attempted to take advantage of existing conceptual models whenever possible. The idea was to maximize intuitiveness by leveraging a user’s familiarity with existing processes. The above diagram depicts a rough flow of our “join a group” process here which was really modelled after AirBnb’s flow for making a reservation with a host
             </ImageSubCaption>
-            <ImageCaption style={{marginTop: "3.5rem"}}  onClick={() => navigate("/nimbus/flows-wireframes")} >
+            {/* <ImageCaption style={{marginTop: "3.5rem"}}  onClick={() => navigate("/nimbus/flows-wireframes")} >
               View wireframes used to test primary use cases
-            </ImageCaption>
+            </ImageCaption> */}
           </TextBlock>
         </OffsetBody>
         <div data-sal="fade" data-sal-delay="150" data-sal-duration="1200" data-sal-easing="ease">
-          {/* <OffsetBody>
-              <Divider style={{padding: "0"}} />
-          </OffsetBody> */}
-        {/* <OffsetBody>
-          <TextBlock>
-            <Box>
-              <p style={{maxWi  dth: "23rem", margin:"1.7rem auto", fontWeight: "500", color: "#333333", letterSpacing: "-0.2px"}}>View wireframe flows used to test primary use cases</p>
-              <Button onClick={() => navigate("/nimbus/flows-wireframes")}>Flows + Wireframes</Button>
-            </Box>
-          </TextBlock>
-        </OffsetBody> */}
-        {/* <div style={{backgroundColor: "#fafafa", padding: "3.5rem"}}> */}
           <OffsetBody>
             <TextBlock>
               <BlockIntro>
@@ -697,71 +587,20 @@ export default function Showcase(props) {
             </p>
           </TextBlock>
         </OffsetBody>
-
-        {/* </div> */}
-        {/* <OffsetBody>
-          <TextBlock>
-            <BlockIntro>
-              We talked to people but more importantly, we listened.
-            </BlockIntro>
-            <p>
-              We prized user feedback above all else. While we sought to test specific features and flows in our user tests, we also took the opportunity to conduct semi-structured interviews with our testers. As product designer, this was especially critical to me; Because as much as I thought I understood the problem space, I was not the user. Conversations with testers and potential users helped us check assumptions that we may have carried and also yielded insight that helped us evolve the product.
-            </p>
-          </TextBlock>
-        </OffsetBody>
-        <ImageOffset style={{marginBottom: "3.5rem"}}>
-          <Img fluid={data.Process.childImageSharp.fluid}  />
-          <ImageSubCaption>Our solution was fleshed out over a series of design sprints, where use cases as well as features were iterated and tested through rapid prototyping. Test, iterate and then test it again was the mantra we lived by.</ImageSubCaption>
-        </ImageOffset>
-        <ImageOffset style={{marginTop: "3.5rem"}}>
-          <Img fluid={data.TestFrameFullWidth.childImageSharp.fluid}  />
-          <ImageSubCaption>User tests were conducted in both controlled settings and guerilla style where unwitting passer-bys were recruited to be impromptu testers. Conversations with testers were critical towards helping us expand our understand of the problem space and evolve our vision for the product.</ImageSubCaption>
-        </ImageOffset> */}
-        {/* <FlexBox style={{backgroundColor: "#ffffff", padding: "3.5rem"}}>
-          <PrototypeWrapper>
-            <iframe src="https://marvelapp.com/prototype/ee03f2a?emb=1&iosapp=false&frameless=false"style={iFrameStyle} width="452" height="700" allowtransparency="true" frameborder="0"></iframe>
-          </PrototypeWrapper>
-          <OffsetBody>
-            <PrototypeText>
-              <FlexBlockIntro>
-                Enable cookies to view prototype. (Like actually)
-              </FlexBlockIntro>
-              <p>
-                Marvel has been having issues with browsers that block cookies, resulting in broken embedded prototypes, and I do apologize if this prototype fails to load for you. We originally made this prototype to test our user flow for creating a group. You're more than welcome to give it a spin – the goal here is to join a group travelling to a popular hiking trail called "Mailbox Peak". 
-              </p>
-            </PrototypeText>
-          </OffsetBody>
-        </FlexBox> */}
-        {/* <OffsetBody>
-          <TextBlock>
-            <BlockIntro>
-              Putting It Together.
-            </BlockIntro>
-            <p>We saved the high-fidelity mockups for last and really only embarked on it after we validated our key flows and features with lower-fidelity wireframes. One of the major findings that came up during the iteration process was that many of our users found it difficult to find relevant and accurate information on outdoor areas. This was a pain point which we sought to address especially with our location screens.</p>
-          </TextBlock>
-        </OffsetBody> */}
-        {/* <ImageOffset style={{margin: "1.25rem 0", padding: "0"}} >
-          <Img fluid={data.Location.childImageSharp.fluid}  />    
-        </ImageOffset>
-        <ImageOffset style={{margin: "1.25rem 0", padding: "0"}} >
-          <Img fluid={data.Trip.childImageSharp.fluid}  />    
-        </ImageOffset>
-        <ImageOffset style={{marginTop: "1.25rem", padding: "0"}} >
-          <Img fluid={data.Profile.childImageSharp.fluid}  />    
-          <ImageSubCaption>High-fi slide deck was made at some point for the benefit of the class.</ImageSubCaption>
-        </ImageOffset> */}
+        </section>
+        <section id="section-4">
         <FlexBox style={{backgroundColor: "#f5f5f5"}}> 
-          <OffsetBody>
+          <FlexBody>
             <img src={joinGif} />
             <ImageSubCaption style={{maxWidth: "270px"}}>Users can search for and join groups based on location, difficulty, length, popularity etc.</ImageSubCaption>
-          </OffsetBody>
+          </FlexBody>
           <OffsetBody>
             <PrototypeText>
               <FlexBlockIntro >
                 Passing the vibe check.
               </FlexBlockIntro>
               <p>
-                Adventures in the outdoors are only as good as the company you’re with. With chemistry and compatibility cited as a major user concern, we wanted to let users be able to size each other up before committing to a group. 
+                Adventures in the outdoors are only as good as the company you’re with. With chemistry and compatibility cited as a major user concern, I wanted to let users be able to size each other up before committing to a group. 
               </p>
               <p>
                 This was done through allowing users to search for groups through various criterias, encouraging users to talk to group hosts when requesting to join a group, having descriptive group listings and encouraging full profiles by all users.
@@ -770,7 +609,7 @@ export default function Showcase(props) {
           </OffsetBody>
         </FlexBox>
         <FlexBox style={{alignItems: "flex-start"}}>
-          <OffsetBody>
+          <FlexBody>
             <PrototypeText>
               <FlexBlockIntro>
                 Streamlining the preflight.
@@ -780,13 +619,13 @@ export default function Showcase(props) {
              
               </p>
               <p>
-                We sought to address this by aggregating information relevant to the location such as conditions, terrain and hazards into a single page to help streamline the research and aid in user preparation.
+                I sought to address this by aggregating information relevant to the location such as conditions, terrain and hazards into a single page to help streamline the research and aid in user preparation.
               </p>
-              <ImageCaption style={{textAlign: "left", marginTop: "3.5rem"}} onClick={() => navigate("/nimbus/high-fi")} >
+              {/* <ImageCaption style={{textAlign: "left", marginTop: "3.5rem"}} onClick={() => navigate("/nimbus/high-fi")} >
                 View the high-fidelity screen descriptions
-              </ImageCaption>
+              </ImageCaption> */}
             </PrototypeText>
-          </OffsetBody>
+          </FlexBody>
           <FlexImage style={{padding: "0rem"}}>
             <Img fluid={data.Location.childImageSharp.fluid} />
           </FlexImage>
@@ -796,17 +635,9 @@ export default function Showcase(props) {
           <Img fluid={data.FinalScreen.childImageSharp.fluid}/>
         </ImageOffset>
         </div>
+        </section>
+        <section id="section-5">
         <div data-sal="fade" data-sal-delay="100" data-sal-duration="1200" data-sal-easing="ease">
-        {/* <OffsetBody>
-          <Divider style={{padding: "0"}} />
-        </OffsetBody> */}
-
-
-        {/* <OffsetBody style={{marginBottom: "0"}}>
-          <TextBlock style={{marginBottom: "0"}}>
-            <Divider style={{padding: "0"}} />
-          </TextBlock>
-        </OffsetBody> */}
         <OffsetBody>
           <TextBlock>
             <BlockIntro>
@@ -819,9 +650,9 @@ export default function Showcase(props) {
         </OffsetBody>
         <ImageWrapper>
           <Img fluid={data.RevisedScreensWhite.childImageSharp.fluid} />
-          <ImageCaption onClick={() => navigate("/nimbus/redesign")} >
+          {/* <ImageCaption onClick={() => navigate("/nimbus/redesign")} >
               View the redesign here
-          </ImageCaption>
+          </ImageCaption> */}
         </ImageWrapper>
         </div>
         <OffsetBody>
@@ -851,7 +682,7 @@ export default function Showcase(props) {
           <FlexImage style={{padding: "0rem"}}>
             <Img fluid={data.NewColorCoding.childImageSharp.fluid} />
           </FlexImage>
-          <OffsetBody>
+          <FlexBody>
             <PrototypeText>
               <FlexBlockIntro>  
                 The anatomy of symbology.
@@ -861,51 +692,35 @@ export default function Showcase(props) {
              </p>
              <p>The Walt Disney system was adopted by the NSAA in 1968 and has served North American skiing well for over 50 years. As such, this is also the system I have chosen to adopt for this purpose today. </p>
             </PrototypeText>
-          </OffsetBody>
+          </FlexBody>
         </FlexBox>
+        </section>
+        <section id="section-6">
         <OffsetBody>
           <TextBlock>
-            <BlockIntro>The last bit.</BlockIntro>
+            <BlockIntro>Next Steps.</BlockIntro>
+            <p>In terms of next steps, Nimbus has mostly covered the "before trip" aspect of outdoor travel, but there's also tremendous room to explore if we were thinking holistically about the outdoor experience. There are things we can implement “during the trip”, such as having trail maps, directories for nearest resources such as ranger stations, shelters and latrines, perhaps an ability to find out if there are other groups nearby (which dovetails into community). </p>
             <p>
-              There were many lessons from this project. Many. I’ll roughly go through them in no particular order: User research is never one and done, keep ideas at its lowest fidelity, test and test some more, never assume anything ––identify and validate, you are not the user, and the list goes on.  This is probably the project that has most influenced my design process. 
-            </p>
-            <p>
-              This case study is long because Brian made us document everything, and because there was so much that I learnt from this project. I thank you for making it this far and do apologize for the length, and if curious there’s also more content in this case that you can access in the side nav – I’ve also included potential next steps this product can evolve in the “End Notes” section. 
+              The experience doesn’t end “after the trip” as well, ideally we would want users to continue engaging with one another, expand communities, plan new trips etc. There’s room to grow for Nimbus if given the time and opportunity to do so.
             </p>
           </TextBlock>
         </OffsetBody>
-        {/* <OffsetBody>
+        <OffsetBody>
           <TextBlock>
-            <ImageWrapper>
-              <Img fluid={data.ProfileMontage.childImageSharp.fluid} />
-            </ImageWrapper>
-          </TextBlock>
-        </OffsetBody> */}
-        {/* <OffsetBody >
-          <TextBlock>
-            <SectionTitle>Hindsight is 20/20</SectionTitle>
-          </TextBlock>
-          <ColumnBlock>
-            <p>It's always refreshing to be able to come back to a past project with fresh eyes to see what was done and what could have been improved. </p>
-            <p>This project is no exception and while perfect is certainly the enemy of good, the pursuit of excellence is more often than not rooted in incremental progress undertaken over time and that was what I sought to achieve with my <strong>redesign</strong> of Nimbus.</p>
-            <p>The immediate objective with this redesign was to improve the <strong>visual clarity</strong> of the interface through cleaning up the information hierachy, removing unnecessary information as well as reworking some of the symbology.</p>
-          </ColumnBlock>
-        </OffsetBody> */}
-        {/* <OffsetBody>
-          <ColumnBlock>
+            <BlockIntro>The Last Bit.</BlockIntro>
             <p>
-              There was never really a big aha moment that led to us arriving at our solution in its present form. Instead, it came about as a result of multiple evolutions of prototyping and testing as we strove to incorporate user feedback as much as possible at every stage.
-              This user-centered approach not only allowed us to better incorporate testing feedback, but also yielded surprising takeaways and insights about user behavior that allowed us greater freedom to evolve the design in ways that nobody anticipated from the start.
+              There were many lessons from this project. Many. I’ll roughly go through them in no particular order: User research is never one and done, keep ideas at its lowest fidelity, test and test some more, never assume anything – always acknowledge your assumptions and validate them, you are not the user, and the list goes on.
             </p>
             <p>
-              This project was conducted over multiple sprints with a round of user testing at the end of each sprint to validate ideas and garner feedback from prospective users. I aimed to document my insights as I experienced them over the course of the project and as such, I've broken up this case study into multiple sections with each section roughly corresponding to a sprint cycle that we worked.   
+            This is probably the project that has most influenced how I approach my role as a product designer. Huge props to Brian Fling for the mentorship. This case study is long because Brian made us document everything, and rightfully so because there was so much that I learnt from this project.
             </p>
-          </ColumnBlock>
-        </OffsetBody> */}
-        <RightButton onClick={() => navigate("/nimbus/survey-ideation")}>
+          </TextBlock>
+        </OffsetBody>
+        </section>
+        {/* <RightButton onClick={() => navigate("/nimbus/survey-ideation")}>
           <ButtonHeader>NEXT SECTION</ButtonHeader>
           <ButtonText>{sections[props.active + 1]}</ButtonText>
-        </RightButton>
+        </RightButton> */}
       </Container>
     </>
   )

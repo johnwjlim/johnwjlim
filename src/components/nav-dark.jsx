@@ -9,8 +9,15 @@ const Container = styled.nav`
   height: 91%;
   right: 0;
   margin: 0 1rem;
-  // margin-left: 0; 
+  margin-left: 0; 
   margin-top: 64px;
+  margin-top: 42px;
+  height: 93%;
+
+  @media (max-width: 1340px) {
+    margin-right: 0;
+  }
+  
   @media (max-width: 1240px) {
     display: none; 
   }
@@ -289,10 +296,8 @@ export default function Nav(props) {
             <FooterText>
               Hand-coded with ❤️ on
               <InlineLink href="https://www.gatsbyjs.org" target="_blank"> React</InlineLink>, 
-              <InlineLink href="https://redux.js.org" target="_blank"> Redux</InlineLink>, 
-              <InlineLink href="https://www.styled-components.com" target="_blank"> styled-components</InlineLink>, 
-              and a little magic from 
-              <InlineLink href="https://www.react-spring.io" target="_blank"> react-spring</InlineLink>.
+              <InlineLink href="https://redux.js.org" target="_blank"> Redux</InlineLink> and
+              <InlineLink href="https://www.styled-components.com" target="_blank"> styled-components</InlineLink>.
             </FooterText> 
             <FooterText>
               View <InlineLink href="https://github.com/johnwjlim/johnwjlim" target="_blank"> the source</InlineLink>.

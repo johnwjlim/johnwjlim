@@ -1,15 +1,27 @@
 import React, { useState } from "react"
 import { Link, navigate } from "gatsby"
 import styled from "styled-components"
+import Scrollspy from 'react-scrollspy'
+import Scroll from './Scroll'
+import scrollTo from 'gatsby-plugin-smoothscroll'
 
 const Container = styled.nav`
   width: 16em;
+  // z-index: 10;
   position: fixed;   
   height: 91%;
   right: 0;
   margin: 0 1rem;
-  margin-left: 0;
+  margin-left: 0; 
   margin-top: 64px;
+  margin-top: 42px;
+  height: 93%;
+  
+
+  @media (max-width: 1340px) {
+    margin-right: 0;
+  }
+
   @media (max-width: 1240px) {
     display: none; 
   }
@@ -18,8 +30,9 @@ const Container = styled.nav`
 const List = styled.ul`
   list-style: none;
   margin-bottom: 3.5rem;
-
 `
+
+
 const ListItem = styled.li`
 `;
 
@@ -59,6 +72,23 @@ const GreyText = styled.a`
   padding: 0.25rem 0.5rem;
   border-radius: 8px;
   letter-spacing: -0.3px;
+  text-decoration: none;
+
+  :hover {
+    cursor: pointer;  
+    color: #666666;
+    background-color: #f5f5f5;
+  }   
+`
+
+const NavText = styled.a`
+  line-height: 1.68;
+  transition: 0.2s;
+  border: none;
+  padding: 0.25rem 0.5rem;
+  border-radius: 8px;
+  letter-spacing: -0.3px;
+  text-decoration: none;
 
   :hover {
     cursor: pointer;  
@@ -254,7 +284,7 @@ export default function Nav(props) {
     }
   }
 
-  return (
+  return (  
     <Container>
       <FlexHack>
         <Row>
@@ -263,11 +293,42 @@ export default function Nav(props) {
               handleMain()
             }
           </List>
-          <List>
-            {
-              handleComponents()
-            }
-          </List>
+          <Scrollspy
+            style={{marginBottom: "3.5rem", listStyle: "none"}}
+            items={ ['section-1', 'section-2', 'section-3', 'section-4', 'section-5', 'section-6'] }
+            currentClassName="is-current"
+          >
+            <li className="grey">
+              <Scroll type="id" element="section-1" offset={-100}>
+                <a href="#" className="scroll-link">Overview</a>
+              </Scroll>
+            </li>
+            <li className="grey">
+              <Scroll type="id" element="section-2">
+                <a href="#" className="scroll-link">Survey and Ideation</a>
+              </Scroll>
+            </li>
+            <li className="grey">
+              <Scroll type="id" element="section-3" offset={-80}>
+                <a href="#" className="scroll-link">Flows + Wireframes</a>
+              </Scroll>    
+            </li>
+            <li className="grey">
+              <Scroll type="id" element="section-4">
+                <a href="#" className="scroll-link">High Fidelity Screens</a>
+              </Scroll> 
+            </li>
+            <li className="grey">
+              <Scroll type="id" element="section-5" offset={-80}>
+                <a href="#" className="scroll-link">Redesign</a>
+              </Scroll>
+            </li>
+            <li className="grey"> 
+              <Scroll type="id" element="section-6" offset={-80}>
+                <a href="#" className="scroll-link">End Notes</a>
+              </Scroll>  
+            </li> 
+          </Scrollspy>
         </Row>
         <Row>
           <List>
@@ -279,10 +340,8 @@ export default function Nav(props) {
             <FooterText>
               Hand-coded with ❤️ on
               <InlineLink href="https://www.gatsbyjs.org" target="_blank"> React</InlineLink>, 
-              <InlineLink href="https://redux.js.org" target="_blank"> Redux</InlineLink>, 
-              <InlineLink href="https://www.styled-components.com" target="_blank"> styled-components</InlineLink>, 
-              and a little magic from 
-              <InlineLink href="https://www.react-spring.io" target="_blank"> react-spring</InlineLink>.
+              <InlineLink href="https://redux.js.org" target="_blank"> Redux</InlineLink> and
+              <InlineLink href="https://www.styled-components.com" target="_blank"> styled-components</InlineLink>.
             </FooterText> 
             <FooterText>
               View <InlineLink href="https://github.com/johnwjlim/johnwjlim" target="_blank"> the source</InlineLink>.
