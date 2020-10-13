@@ -100,7 +100,7 @@ const BlockText = styled.p`
   letter-spacing: -0.1px;
 
   color: #efefef; 
-  color: #ffffff;
+  color: #ddd;
 
   // stupid shit incoming
   // font-weight: 500;
@@ -127,7 +127,7 @@ const HeroText = styled.h4`
 
 const Highlight = styled.strong`
   color: #ffffff;
-  font-weight: 600;
+  font-weight: 500;
 `
 
 const ImageOffset = styled(Styled.OffsetBody)`
