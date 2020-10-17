@@ -157,7 +157,6 @@ const VideoWrapper = styled.div`
   width: 100%;
   padding-top: 56.25%;
   margin-top: 3.5rem;
-
 `
 const Frame = styled.iframe`
     position: absolute;

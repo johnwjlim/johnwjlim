@@ -119,7 +119,7 @@ export default function GThumbnail() {
 
   return (
     <CaseLink
-      to="/pool/"
+      to="/pool-2/"
     >
       <ImageParent
         onMouseEnter={() => set(true)}

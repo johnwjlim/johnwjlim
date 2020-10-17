@@ -98,3 +98,42 @@
   font-weight: 600;
   font-style: normal;
 }
+
+@font-face {
+  font-family: "Sohne";
+  src: url("Sohne-Buch.woff2") format("woff2");
+  src: url("Sohne-Buch.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Sohne";
+  src: url("Sohne-Leicht.woff2") format("woff2");
+  src: url("Sohne-Leicht.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Sohne";
+  src: url("Sohne-Kraftig.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Sohne";
+  src: url("Sohne-Halbfett.woff2") format("woff2");
+  src: url("Sohne-Halbfett.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Sohne";
+  src: url("Sohne-Fett.woff2") format("woff2");
+  src: url("Sohne-Fett.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}

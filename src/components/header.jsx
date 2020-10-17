@@ -146,7 +146,6 @@ const MobileMenu = styled.div`
     margin-right: 2.5rem;
     margin-right: 1rem;
   }
-
 `
 
 const MobileLink = styled(Link)`
