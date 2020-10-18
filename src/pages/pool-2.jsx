@@ -245,7 +245,7 @@ const ImageWrapper = styled.div`
 `
 
 const Poster = styled.div`
-  max-width: 1000px;
+  max-width: 900px;
   margin: 4rem auto;
 `
 
@@ -366,10 +366,12 @@ export default function Pool() {
             </MobileLink>
         </MobileMenu>
       </HeaderWrapper>
+      <div data-sal="fade" data-sal-delay="150" data-sal-duration="1200" data-sal-easing="ease">
       <TitleContainer>
         <Title>Encouraging better and more responsible consumption of household utilities.</Title>
         <Subtitle>POOL</Subtitle>
       </TitleContainer>
+      </div>
     </Wrapper>
     <HeroImage>
       <Img fluid={data.Patrick.childImageSharp.fluid} />
@@ -378,12 +380,15 @@ export default function Pool() {
       <Container>
         <Row style={{margin: "auto"}}>
           <Col style={{flex: "1 1 30rem"}}>
+            <div data-sal="fade" data-sal-delay="000" data-sal-duration="1500" data-sal-easing="ease">
             <ProjectBlurb>
             It's easy to overlook our day to day consumption of water and energy, especially in the comfort of our homes. Yet as climate change continues to intensify, it is now more imperative than ever for us to take better control of our resource use.
             <br/><br/>POOL was the cumulative deliverable of a group project that aimed to find solutions to encourage more responsible consumption of household utilities.
             </ProjectBlurb>
+            </div>
           </Col>
           <Col style={{flex: "1 1 32rem", paddingRight: "0" }}>
+          <div data-sal="fade" data-sal-delay="100" data-sal-duration="1500" data-sal-easing="ease">
             <MicroHeader>
               Timeline
             </MicroHeader>
@@ -399,10 +404,12 @@ export default function Pool() {
               <PortfolioLink href="https://www.isabellearmstrong.me/" target="_blank">Stephen Sherwood</PortfolioLink>, &nbsp;
               Myself
             </MicroText>
+            </div>
           </Col>
         </Row>
       </Container>
     </Wrapper>
+    <div data-sal="fade" data-sal-delay="200" data-sal-duration="1200" data-sal-easing="ease">
     <Wrapper style={{backgroundColor: "#fefefe"}}>
       <Container>
         <Row>
@@ -427,6 +434,8 @@ export default function Pool() {
         </Row>
       </Container>
     </Wrapper>
+    </div>
+    <div data-sal="fade" data-sal-delay="200" data-sal-duration="1200" data-sal-easing="ease">
     <Wrapper style={{backgroundColor: "#f5f5f5"}}>
       <Container>
         <Col>
@@ -474,6 +483,7 @@ export default function Pool() {
         </Row>
       </Container>
     </Wrapper>
+    </div>
     <Wrapper>
       <Container>
         <Row>
@@ -481,16 +491,20 @@ export default function Pool() {
             <SectionTitle>The Approach</SectionTitle>
           </Col>
           <Col>
+          <div data-sal="fade" data-sal-delay="00" data-sal-duration="1200" data-sal-easing="ease">
             <SectionText>
               I've established that economic theory holds that we are over-consuming household utilities due to us not fully accounting for all of the costs related to our consumption (externalities such as impact to environment). Furthermore, our research shows that this is due to <strong>imperfect information</strong> stemming from inadequacies in present means of measuring and understanding consumption.
-              </SectionText>
+            </SectionText>
+          </div>
           </Col>
         </Row>
         <Col>
+        <div data-sal="fade" data-sal-delay="00" data-sal-duration="1500" data-sal-easing="ease">
           <ImageWrapper>
             <Img fluid={data.Ideation.childImageSharp.fluid} />
             <ImageCaption style={{marginTop: "1rem"}}> We undertook a series of ideation exercises (brainstorming, sketching, crazy 8s) as a group and emerged with dozens of ideas on how to approach this problem. We sorted through the ideas we had and managed to synthesize them down to a couple of themes, which we then carried forward for both our individual and team deliverables.</ImageCaption>
           </ImageWrapper>
+        </div>
         </Col>
           <Col>
             <SectionText style={{margin: "0 auto", marginBottom: "2rem"}} >
@@ -503,6 +517,7 @@ export default function Pool() {
         </Col>
       </Container>
     </Wrapper>
+    <div data-sal="fade" data-sal-delay="00" data-sal-duration="1500" data-sal-easing="ease">
     <Wrapper style={{backgroundColor: "#101010"}}>
       <Container>
         <Row style={{marginBottom: "8rem"}}>
@@ -577,6 +592,7 @@ export default function Pool() {
         {/* </Col> */}
       </Container>
     </Wrapper>
+    </div>
     {/* <Wrapper style={{backgroundColor: "#3D89F8"}}> */}
     <Wrapper style={{backgroundColor: "#000"}}>
       <Container>
