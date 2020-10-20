@@ -557,9 +557,9 @@ export default function Pool() {
             </Col>
             <Col >
               <FeatureTitle  style={{color: "#fff"}}>
-              Real time consumption information displayed at point of use.
+              Real time consumption information relayed at point of use.
               </FeatureTitle>
-              <SectionText style={{color: "#fff"}}>Display in the shower provides real-time feedback of user consumption while control and input can be performed through a voice interface, thereby avoiding the use of wet fingers on display. The idea is to keep users on track and prevent them from unintentionally engaging in a shower room karaoke session and losing all awareness of time.</SectionText>
+              <SectionText style={{color: "#fff"}}>Display in the shower provides real-time feedback of user consumption while control and input can be performed through a voice interface, thereby avoiding the use of wet fingers on a display. The idea is to keep users on track and prevent them from unintentionally engaging in a shower room karaoke session, thereby losing track of time and awareness of consumption.</SectionText>
             </Col>
           </Row>
           </div>
@@ -579,7 +579,7 @@ export default function Pool() {
               </FeatureTitle>
               <SectionText style={{color: "#fff"}}>
                 Set a timer for the shower and watch the water level on the display fall as time runs down. 
-                Water level on display also provides an easier visual reference for skimability. Also helps for users who struggle to read text or numbers without the aid of corrective lenses.
+                Water level on display also affords an easier visual reference for skimability. Also helpful for users who may struggle to read text or numbers without the aid of corrective lenses in a bathroom environment.
             </SectionText>
             </Col>
           </Row>
@@ -594,7 +594,7 @@ export default function Pool() {
                 Mobile interface to view trends and adjust settings.
               </FeatureTitle>
               <SectionText style={{color: "#fff"}}>
-                Track usage statistics and trends, as well as establish predefined settings for the shower with mobile based interface. No need to meddle with the finer details whilst in the shower.
+                Track usage statistics and trends, as well as establish predefined settings for the shower with mobile based interface. No need to meddle with the finer details whilst in the shower when the option exists to set in on a mobile devic beforehand.
             </SectionText>
             </Col>
           </Row>
