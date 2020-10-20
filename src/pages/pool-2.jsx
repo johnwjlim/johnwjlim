@@ -559,7 +559,7 @@ export default function Pool() {
               <FeatureTitle  style={{color: "#fff"}}>
               Real time consumption information displayed at point of use.
               </FeatureTitle>
-              <SectionText style={{color: "#fff"}}>Display in the shower provides real-time feedback of user consumption while control and input can be performed through a voice interface, thereby preventing wet fingers on display. The idea is to keep users on track and prevent them from unintentionally engaging in a shower room karaoke session and losing all awareness of time.</SectionText>
+              <SectionText style={{color: "#fff"}}>Display in the shower provides real-time feedback of user consumption while control and input can be performed through a voice interface, thereby avoiding the use of wet fingers on display. The idea is to keep users on track and prevent them from unintentionally engaging in a shower room karaoke session and losing all awareness of time.</SectionText>
             </Col>
           </Row>
           </div>
@@ -579,7 +579,7 @@ export default function Pool() {
               </FeatureTitle>
               <SectionText style={{color: "#fff"}}>
                 Set a timer for the shower and watch the water level on the display fall as time runs down. 
-                Water level on display also provides an easier visual reference for users who struggle to read numbers without the aid of corrective lenses.
+                Water level on display also provides an easier visual reference for skimability. Also helps for users who struggle to read text or numbers without the aid of corrective lenses.
             </SectionText>
             </Col>
           </Row>
