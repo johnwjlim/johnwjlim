@@ -8,6 +8,8 @@ import Img from "gatsby-image"
 import SEO from "../components/seo"
 import Animated from "../images/pool.mp4"
 
+import Individual from "../components/pool-2/pool-individual"
+
 
 const HeaderWrapper = styled.div`
   display: flex;
@@ -420,7 +422,7 @@ export default function Pool() {
         </Row>
       </Container>
     </Wrapper>
-    <Wrapper style={{backgroundColor: "#fefefe"}}>
+    <Wrapper style={{backgroundColor: "#fff"}}>
       <Container>
         <Row>
           <Col style={{paddingRight: "0", flex: "1 1 32rem"}}>
@@ -530,27 +532,21 @@ export default function Pool() {
         </Col>
       </Container>
     </Wrapper>
-    {/* <Waypoint
-      onEnter={ handleWaypointEnter}
-      onLeave={handleWaypointLeave}
-    > */}
-      <Wrapper style={{backgroundColor: "#101010"}}>
-        <Container>
+    {/* <Wrapper style={{backgroundColor: "#101010"}}>
+      <Container>
         <div data-sal="fade" data-sal-delay="00" data-sal-duration="1500" data-sal-easing="ease">
           <Row style={{marginBottom: "8rem"}}>
             <Col style={{flex: "1 1 32rem"}}>
               <SectionTitle style={{color: "#ffffff"}}>Individual Deliverable</SectionTitle>
             </Col>
             <Col>
-            <SectionText style={{color: "#fff"}}>
-            As my individual deliverable for this project, I designed a solution for our problem based on <strong style={{fontWeight: "600", color: "#fff"}}>existing technologies that are available today.</strong> I identified excessively lengthy showers as one of the most frivolous uses of water and crafted a design solution for a voice-activated, digitally controlled shower that aims to provide real-time feedback to help users improve their awareness of consumption and make positive changes to habits.
-            </SectionText>
+              <SectionText style={{color: "#fff"}}>
+              As my individual deliverable for this project, I designed a solution for our problem based on <strong style={{fontWeight: "600", color: "#fff"}}>existing technologies that are available today.</strong> I identified excessively lengthy showers as one of the most frivolous uses of water and crafted a design solution for a voice-activated, digitally controlled shower that aims to provide real-time feedback to help users improve their awareness of consumption and make positive changes to habits.
+              </SectionText>
             </Col>
           </Row>
         </div>
-        {/* </Container>
-        <Container> */}
-          <div data-sal="fade" data-sal-delay="00" data-sal-duration="1500" data-sal-easing="ease"> 
+        <div data-sal="fade" data-sal-delay="00" data-sal-duration="1500" data-sal-easing="ease"> 
           <Row style={{marginBottom: "2rem"}}>
             <Col style={{flex: "1 1 32rem"}}>
               <Img fluid={data.Shower.childImageSharp.fluid} />
@@ -562,83 +558,82 @@ export default function Pool() {
               <SectionText style={{color: "#fff"}}>Display in the shower provides real-time feedback of user consumption while control and input can be performed through a voice interface, thereby avoiding the use of wet fingers on a display. The idea is to keep users on track and prevent them from unintentionally engaging in a shower room karaoke session, thereby losing track of time and awareness of consumption.</SectionText>
             </Col>
           </Row>
-          </div>
-          <div data-sal="fade" data-sal-delay="100" data-sal-duration="1500" data-sal-easing="ease">
-          <Row style={{marginBottom: "2rem"}}>
-            <Col style={{flex: "1 1 32rem"}}>
-              <VideoWrapper>
-                <Video muted autoPlay loop>
-                  <source src={Animated} type="video/mp4" />
-                  Sorry, your browser doesn't support embedded videos.
-                </Video>
-              </VideoWrapper>
-            </Col>
-            <Col>
-              <FeatureTitle  style={{color: "#fff"}}>
-              Key information and statistics provided at a glance.
-              </FeatureTitle>
-              <SectionText style={{color: "#fff"}}>
-                Set a timer for the shower and watch the water level on the display fall as time runs down. 
-                Water level on display also affords an easier visual reference for skimability. Also helpful for users who may struggle to read text or numbers without the aid of corrective lenses in a bathroom environment.
-            </SectionText>
-            </Col>
-          </Row>
-          </div>
-          <div data-sal="fade" data-sal-delay="200" data-sal-duration="1500" data-sal-easing="ease">
-          <Row style={{marginBotton: "2rem"}}>
-            <Col style={{flex: "1 1 32rem"}}>
-              <Img fluid={data.PatrickFull.childImageSharp.fluid} />
-            </Col>
-            <Col>
-              <FeatureTitle  style={{color: "#fff"}}>
-                Mobile interface to view trends and adjust settings.
-              </FeatureTitle>
-              <SectionText style={{color: "#fff"}}>
-                Track usage statistics and trends, as well as establish predefined settings for the shower with mobile based interface. No need to meddle with the finer details whilst in the shower when the option exists to set in on a mobile devic beforehand.
-            </SectionText>
-            </Col>
-          </Row>
-          </div>
-          <div data-sal="fade" data-sal-delay="300" data-sal-duration="1500" data-sal-easing="ease">
-            <Col>
-              <SectionText style={{margin: "2rem auto", color: "#fff"}} >
-                As part of my deliverables for this segment of the project, I made a video that goes through the details of my design solution.
-              </SectionText>
-            </Col>
-            <div style={{maxWidth: "640px", margin: "0 auto"}}>
-              <VideoWrapper>
-                <Frame 
-                src="https://www.youtube.com/embed/HbaYwjYpr-Q"   
-                />
-              </VideoWrapper>
-            </div>
-          </div>
-          {/* </Col> */}
-        </Container>
-      </Wrapper>
-      <Wrapper style={{backgroundColor: "#000"}}>
-        <Container>
-          <Row>
-            <Col style={{flex: "1 1 32rem"}}>
-              <SectionTitle style={{color: "#ffffff"}}>The Headliner</SectionTitle>
-            </Col>
-            <Col>
-            <SectionText style={{color: "#fff"}}>
-              As our team deliverable, we were to design a solution to the problem with <strong style={{fontWeight: "600", color: "#fff"}}> the technologies of tommorow.</strong>  Building off the idea of tackling imperfect information through providing real-time feedback, <strong style={{fontWeight: "600", color: "#fff"}}>POOL</strong> is a mixed reality experience that projects real-time resource impact at the point of use in order to provide users a better awareness of their consumption and encourage responsibility.
-            </SectionText>
-            <SectionText style={{color: "#fff"}}>
-              We called it <strong style={{fontWeight: "600", color: "#fff"}}>POOL</strong> as kind of as a playful way to reflect the way our design aimed to visualize resource footprints as "pools of impact" on the ground. I created a one page poster to showcase through storyboard what our design was about and how it worked.
-            </SectionText>
-            </Col>
-          </Row>
-          <Col>
-            <Poster>
-              <Img fluid={data.PoolPoster.childImageSharp.fluid} />
-            </Poster>
+        </div>
+        <div data-sal="fade" data-sal-delay="100" data-sal-duration="1500" data-sal-easing="ease">
+        <Row style={{marginBottom: "2rem"}}>
+          <Col style={{flex: "1 1 32rem"}}>
+            <VideoWrapper>
+              <Video muted autoPlay loop>
+                <source src={Animated} type="video/mp4" />
+                Sorry, your browser doesn't support embedded videos.
+              </Video>
+            </VideoWrapper>
           </Col>
-        </Container>
-      </Wrapper>
-    {/* </Waypoint> */}
+          <Col>
+            <FeatureTitle  style={{color: "#fff"}}>
+            Key information and statistics provided at a glance.
+            </FeatureTitle>
+            <SectionText style={{color: "#fff"}}>
+              Set a timer for the shower and watch the water level on the display fall as time runs down. 
+              Water level on display also affords an easier visual reference for skimability. Also helpful for users who may struggle to read text or numbers without the aid of corrective lenses in a bathroom environment.
+          </SectionText>
+          </Col>
+        </Row>
+        </div>
+        <div data-sal="fade" data-sal-delay="200" data-sal-duration="1500" data-sal-easing="ease">
+        <Row style={{marginBotton: "2rem"}}>
+          <Col style={{flex: "1 1 32rem"}}>
+            <Img fluid={data.PatrickFull.childImageSharp.fluid} />
+          </Col>
+          <Col>
+            <FeatureTitle  style={{color: "#fff"}}>
+              Mobile interface to view trends and adjust settings.
+            </FeatureTitle>
+            <SectionText style={{color: "#fff"}}>
+              Track usage statistics and trends, as well as establish predefined settings for the shower with mobile based interface. No need to meddle with the finer details whilst in the shower when the option exists to set in on a mobile devic beforehand.
+          </SectionText>
+          </Col>
+        </Row>
+        </div>
+        <div data-sal="fade" data-sal-delay="300" data-sal-duration="1500" data-sal-easing="ease">
+          <Col>
+            <SectionText style={{margin: "2rem auto", color: "#fff"}} >
+              As part of my deliverables for this segment of the project, I made a video that goes through the details of my design solution.
+            </SectionText>
+          </Col>
+          <div style={{maxWidth: "640px", margin: "0 auto"}}>
+            <VideoWrapper>
+              <Frame 
+              src="https://www.youtube.com/embed/HbaYwjYpr-Q"   
+              />
+            </VideoWrapper>
+          </div>
+        </div>
+      </Container>
+    </Wrapper> */}
+    <Individual />
+    <Wrapper style={{backgroundColor: "#000"}}>
+      <Container>
+        <Row>
+          <Col style={{flex: "1 1 32rem"}}>
+            <SectionTitle style={{color: "#ffffff"}}>The Headliner</SectionTitle>
+          </Col>
+          <Col>
+          <SectionText style={{color: "#fff"}}>
+            As our team deliverable, we were to design a solution to the problem with <strong style={{fontWeight: "600", color: "#fff"}}> the technologies of tommorow.</strong>  Building off the idea of tackling imperfect information through providing real-time feedback, <strong style={{fontWeight: "600", color: "#fff"}}>POOL</strong> is a mixed reality experience that projects real-time resource impact at the point of use in order to provide users a better awareness of their consumption and encourage responsibility.
+          </SectionText>
+          <SectionText style={{color: "#fff"}}>
+            We called it <strong style={{fontWeight: "600", color: "#fff"}}>POOL</strong> as kind of as a playful way to reflect the way our design aimed to visualize resource footprints as "pools of impact" on the ground. I created a one page poster to showcase through storyboard what our design was about and how it worked.
+          </SectionText>
+          </Col>
+        </Row>
+        <Col>
+          <Poster>
+            <Img fluid={data.PoolPoster.childImageSharp.fluid} />
+          </Poster>
+        </Col>
+      </Container>
+    </Wrapper>
     <Wrapper style={{backgroundColor: "#f5f5f5"}}>
       <Container>
         <Row>
@@ -655,7 +650,6 @@ export default function Pool() {
           </Col>
         </Row>
       </Container>
-
     </Wrapper>
   </>
   )

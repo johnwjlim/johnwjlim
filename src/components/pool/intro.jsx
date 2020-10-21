@@ -304,19 +304,19 @@ export default function Intro() {
                 </div>
               </div>
               <div data-sal="fade" data-sal-delay="100" data-sal-duration="1200" data-sal-easing="ease">
-              <div style={{margin: "1.75rem 0"}}>
-              <VideoWrapper>
-                {/* <VFrame autoplay controls
-                src={Animated} type="video/mp4" allow="accelerometer; autoplay;"
-                frameBorder="0"
-                /> */}
-                <Video muted autoPlay loop>
-                  <source src={Animated} type="video/mp4" />
-                  Sorry, your browser doesn't support embedded videos.
-                </Video>
-              </VideoWrapper>
-                <ImageSubCaption>Water level visualization in shower display falls as time remaining on the timer decreases. </ImageSubCaption>
-              </div>
+                <div style={{margin: "1.75rem 0"}}>
+                <VideoWrapper>
+                  {/* <VFrame autoplay controls
+                  src={Animated} type="video/mp4" allow="accelerometer; autoplay;"
+                  frameBorder="0"
+                  /> */}
+                  <Video muted autoPlay loop>
+                    <source src={Animated} type="video/mp4" />
+                    Sorry, your browser doesn't support embedded videos.
+                  </Video>
+                </VideoWrapper>
+                  <ImageSubCaption>Water level visualization in shower display falls as time remaining on the timer decreases. </ImageSubCaption>
+                </div>
               </div>
             </ImageWrapper>
             <br/>
