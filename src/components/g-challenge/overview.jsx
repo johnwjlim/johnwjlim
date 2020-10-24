@@ -74,7 +74,7 @@ export default function Overview(props) {
           }
         }
       }
-      Hero: file(relativePath: {eq: "g-hero-image.png"}) {
+      Hero: file(relativePath: {eq: "g-hero-image.jpg"}) {
         childImageSharp {
           fluid (maxWidth: 3200) {
             ...GatsbyImageSharpFluid

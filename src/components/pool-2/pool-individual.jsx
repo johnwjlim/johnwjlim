@@ -90,8 +90,6 @@ const VideoWrapper = styled.div`
   width: 100%;
   padding-top: 56.25%;
   padding-top: 76%;
-  // padding-top: 0;
-  // margin-top: 3.5rem;
 `
 
 const Video = styled.video`
