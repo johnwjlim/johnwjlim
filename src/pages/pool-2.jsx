@@ -9,6 +9,7 @@ import SEO from "../components/seo"
 import Animated from "../images/pool.mp4"
 
 import Individual from "../components/pool-2/pool-individual"
+import Footer from "../components/pool-2/footer"
 
 
 const HeaderWrapper = styled.div`
@@ -573,6 +574,7 @@ export default function Pool() {
         </Row>
       </Container>
     </Wrapper>
+    <Footer />
   </>
   )
 }
