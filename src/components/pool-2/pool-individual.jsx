@@ -186,7 +186,7 @@ export default function Individual() {
               Mobile interface to view trends and adjust settings.
             </FeatureTitle>
             <SectionText style={{color: "#fff"}}>
-              Track usage statistics and trends, as well as establish predefined settings for the shower with mobile based interface. No need to meddle with the finer details whilst in the shower when the option exists to set in on a mobile devic beforehand.
+              Track usage statistics and trends, as well as establish predefined settings for the shower with mobile based interface. No need to meddle with the finer details whilst in the shower when the option exists to set in on a mobile device beforehand.
           </SectionText>
           </Col>
         </Row>
