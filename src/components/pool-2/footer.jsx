@@ -1,9 +1,6 @@
 import React, { useEffect } from "react"
 import styled from "styled-components"
 import { useStaticQuery, graphql, navigate, Link } from "gatsby"
-import Img from "gatsby-image"
-
-import Animated from "../../images/pool.mp4"
 
 const Wrapper = styled.div`
   padding: 0px 2.5rem 1.45rem;
@@ -14,10 +11,10 @@ const Wrapper = styled.div`
   }
 `
 const Container = styled.div`
-  padding: 5rem 4rem;
+  padding: 2rem 4rem;
   margin: 0 auto;
   max-width: 1680px;
-  padding-bottom: 1rem;
+  padding-bottom: 0rem;
 
   @media (max-width: 1440px) {
     padding: 2rem 0;
@@ -34,6 +31,8 @@ const Container = styled.div`
 const Row = styled.div`
   display: flex;
   justify-content: space-between;
+  // padding: 2rem 0;
+  // padding: 0;
 
   @media (max-width: 1024px) {
     display: block;
@@ -42,14 +41,14 @@ const Row = styled.div`
 
 const Col = styled.div`
   // flex: 1 1 40rem;
-  padding: 0 4rem;
+  padding: 2rem 4rem;
 
   @media (max-width: 1440px) {
-    padding: 0 2rem;
+    padding: 1.5rem 2rem;
   }
 
   @media (max-width: 1024px) {
-    padding: 0;
+    padding: 1rem 0;
   }
 `
 
@@ -71,12 +70,6 @@ const SectionTitle = styled.h2`
     font-size: 2rem;
   }
 `
-// const Link = styled.a`
-//   font-family: Sohne, sans-serif;
-//   font-size: 1.25rem;
-//   color: #888;
-
-// `
 
 const LocalLink = styled(Link)`
   text-decoration: none;
@@ -132,7 +125,7 @@ export default function Individual() {
       <Wrapper>
         <Container>
           <Row>
-            <Col>
+            <Col >
               <LocalLink to="/" >
                 Home
               </LocalLink>
@@ -143,8 +136,8 @@ export default function Individual() {
             </Col>
 
           </Row>
-          <Row style={{paddingTop: "2rem"}}>
-            <Col>
+          <Row>
+            <Col style={{paddingBottom: "0"}}>
               <Text>© 2020 John Lim <br/>johnwjlim.com </Text>
               {/* <LocalLink as="a" href="mailto:wjlim@uw.edu" target="_blank">wjlim@uw.edu</LocalLink> <br/> */}
          
