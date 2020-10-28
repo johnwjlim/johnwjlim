@@ -435,10 +435,10 @@ export default function Pool() {
           <Col>
           <div data-sal="fade" data-sal-delay="100" data-sal-duration="1500" data-sal-easing="ease">
           <SectionText>
-            The provision of public utilities sounded very much like a government thing, and so I took the chance to put on my policy hat and approach this from an economic lens As with any finite resource that requires responsible allocation, the economist would more than likely suggest letting the "invisible hand" of the free market guide the equilibrium level of demand and supply. Most utilities already do this by setting a price on water and electricity. 
+            The provision of public utilities sounded very much like a government thing, and so I took the chance to put on my policy hat and approach this from an economic lens. As with any finite resource that requires responsible allocation, the economist would more than likely suggest letting the "invisible hand" of the free market guide the equilibrium level of demand and supply. Most utilities already do this by setting a price on water and electricity. 
           </SectionText>
           <SectionText>
-            Yet even with consumption regulated by market forces, it is largely agreed by most people that our consumption of resources is still too high. This overconsumption is a result of market failure due to negative externality, where the costs borne by a third party as a result of our consumption of utilities, such as climate change and the depletion of resources, are not fully accounted for by the free market equilibrium price.
+            Yet even with consumption regulated by market forces, it is largely agreed by most people that our consumption of resources is still too high. This overconsumption can be attributed to market failure due to negative externality, where the costs borne by a third party as a result of our consumption of utilities, such as climate change and the depletion of resources, are not fully accounted for by the free market equilibrium price.
           </SectionText>
           <ImageWrapper>
             <Img fluid={data.Graph.childImageSharp.fluid} />
