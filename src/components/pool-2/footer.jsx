@@ -11,10 +11,10 @@ const Wrapper = styled.div`
   }
 `
 const Container = styled.div`
-  padding: 2rem 4rem;
+  padding: 1rem 4rem;
   margin: 0 auto;
   max-width: 1680px;
-  padding-bottom: 0rem;
+  padding-bottom: 0rem; 
 
   @media (max-width: 1440px) {
     padding: 2rem 0;

@@ -463,7 +463,7 @@ export default function Pool() {
         <Row>
           <Col >
             <SectionText>
-              We conducted preliminary research by engaging with friends and family on their views of our topic. Most agreed with our premise that overconsumption of household utilities was a problem. The key theme that stood out to me was that of <strong>imperfect information</strong>; Almost of all the people I spoke to had little understanding of their real time resource consumption as well as the environmental impact of their consumption.   
+              We conducted preliminary research by engaging with friends and family on their views of our topic. Most agreed with our premise that overconsumption of household utilities was a problem. The key theme that stood out to me was that of <strong>imperfect information</strong>; Almost all of the people I spoke to had little understanding of their real time resource use as well as the environmental impact of their consumption.   
             </SectionText>
             <SectionText>
             Further research into existing systems for measuring household utilities consumption revealed additional findings: 
@@ -471,7 +471,7 @@ export default function Pool() {
             <SectionText>
               <ul style={{marginTop: "0"}}>
                 <li>
-                    <ListText>Few people were able to interpret a water or electric meter; they're clearly not designed to be used by an everyday consumer.</ListText>
+                    <ListText>Few people knew how to interpret a water or electric meter; they're clearly not designed to be used by an everyday consumer.</ListText>
                 </li>
                 <li>
                     <ListText>Utility bills are great at helping you understand your total consumption, but not helpful if you're trying to understand how you're consuming it.</ListText>
@@ -565,7 +565,7 @@ export default function Pool() {
           </Col>
           <Col>
             <SectionText>
-            When designing POOL, we were given two rules: 1. Assume that any technology that we needed exists – so holograms, virtual reality contact lenses, wearables and anything we could think of were basically in play, and 2. No screens.
+            As a blue-sky speculative project, we were given just two rules when designing POOL: 1. Assume that any technology that we needed exists – so holograms, virtual reality contact lenses, wearables and anything we could think of were basically in play, and 2. No screens.
            </SectionText>
            <SectionText>
            If rule 1 encouraged me to think out of the box, rule 2 forced me to open my mind. Was I out of my comfort zone? Most definitely. Yet it was refreshing and exhilarating to be able to design unshackled by the constraints of feasibility. Putting POOL together was one of the most rewarding projects I got to be a part of – the ideas we got to throw around were almost out of this world – and I am glad to have had the experience.
