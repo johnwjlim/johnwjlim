@@ -424,7 +424,7 @@ export default function Pool() {
         </Row>
       </Container>
     </Wrapper>
-    <Wrapper style={{backgroundColor: "#fff"}}>
+    {/* <Wrapper style={{backgroundColor: "#fff"}}>
       <Container>
         <Row>
           <Col style={{paddingRight: "0", flex: "1 1 32rem"}}>
@@ -451,7 +451,7 @@ export default function Pool() {
           </Col>
         </Row>
       </Container>
-    </Wrapper>
+    </Wrapper> */}
     <div data-sal="fade" data-sal-delay="200" data-sal-duration="1200" data-sal-easing="ease">
     <Wrapper style={{backgroundColor: "#f5f5f5"}}>
       <Container>
@@ -509,9 +509,10 @@ export default function Pool() {
           </Col>
           <Col>
           <div data-sal="fade" data-sal-delay="00" data-sal-duration="1200" data-sal-easing="ease">
-            <SectionText>
+            {/* <SectionText>
               I've established that economic theory holds that we are over-consuming household utilities due to us not fully accounting for all of the costs related to our consumption (externalities such as impact to environment). Furthermore, our research shows that this is due to <strong>imperfect information</strong> stemming from inadequacies in present means of measuring and understanding consumption.
-            </SectionText>
+            </SectionText> */}
+            <SectionText>With imperfect information about consumption being a key reason behind our over-consumption of resources, we set our to find ways to better address how consumption data is presented to the useer. </SectionText>
           </div>
           </Col>
         </Row>
