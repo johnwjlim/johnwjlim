@@ -72,7 +72,7 @@ const TitleBox = styled.div`
   // margin-top: 10rem;
   // margin-top: 80px;
   margin-bottom: 14rem;
-  margin-bottom: 9rem;
+  margin-bottom: 10rem;
   margin-top: 8rem;
   // margin-top: 7rem;
   // margin-top: 5rem;
@@ -174,7 +174,9 @@ const Title = styled.h1`
   font-weight: 500;
   color: #333;
   line-height: 1.45;
-  margin-bottom: 0.5em;
+  margin-bottom: 1.75rem;
+
+  line-height: 1.4;
 
   // font-weight: 500;
   // letter-spacing: -0px;
@@ -204,14 +206,20 @@ const Text = styled.p`
 
   font-size: 1.2rem;
   max-width: 38rem;
+
   letter-spacing: -0.35px;
   line-height: 1.45;
-  color: #767676;
+  color: #666;
   // color: #888888;
 
-  @media (max-width: 1024px) {
-    // font-size: 1.2rem;
-    // letter-spacing: -0.4px;
+  font-size: 1.25rem;
+  max-width: 39.5rem;
+  letter-spacing: -0.35px;
+  line-height: 1.4;
+
+  // @media (max-width: 1024px) {
+  //   // font-size: 1.2rem;
+  //   // letter-spacing: -0.4px;
   }
 
 
