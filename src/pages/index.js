@@ -228,7 +228,7 @@ const Text = styled.p`
   letter-spacing: -0.35px;
   line-height: 1.4;
 
-  max-width: 45rem;
+  // max-width: 45rem;  
 
   // text-align: center;
   // margin: 0 auto;
