@@ -65,13 +65,13 @@ const Body = styled(Container)`
 const TitleBox = styled.div`
   // margin: 0 2rem;
 
-  margin-bottom: 1rem; 
-  margin-bottom: 10rem;
+  // margin-bottom: 1rem; 
+  // margin-bottom: 10rem;
 
-  margin-top: 10rem;
+  // margin-top: 10rem;
   // margin-top: 10rem;
   // margin-top: 80px;
-  margin-bottom: 14rem;
+  // margin-bottom: 14rem;
   margin-bottom: 10rem;
   margin-top: 8.5rem;
   // margin-top: 7rem;
@@ -82,6 +82,15 @@ const TitleBox = styled.div`
 
   // margin-top: 10rem;
   // margin-bottom: 12rem;
+
+  // margin: 0 auto;
+
+  margin-bottom: 10rem;
+  margin-top: 8rem;
+  // margin-left: 1rem;
+
+  // margin-top: 6rem;
+
 
   @media (max-width: 1240px) {
     // font-size: 1rem;
@@ -169,18 +178,20 @@ const Divider =  styled.div`
 
 const Title = styled.h1`
   // letter-spacing: -5px;  
-  letter-spacing: -2.2px;
+  letter-spacing: -2.75px;
   font-size: 3.5rem;
   font-weight: 500;
   color: #333;
   line-height: 1.45;
-  margin-bottom: 1.75rem;
+  margin-bottom: 1.5rem;
 
   line-height: 1.4;
 
   // font-weight: 500;
   // letter-spacing: -0px;
   // font-size: 3rem;
+
+  // text-align: center;
 
   @media (max-width: 1340px) {
     font-size: 3rem;  
@@ -217,9 +228,16 @@ const Text = styled.p`
   letter-spacing: -0.35px;
   line-height: 1.4;
 
-  // @media (max-width: 1024px) {
-  //   // font-size: 1.2rem;
-  //   // letter-spacing: -0.4px;
+  max-width: 45rem;
+
+  // text-align: center;
+  // margin: 0 auto;
+  // margin-bottom: 1rem;
+  // max-width: 45rem;
+
+  @media (max-width: 1024px) {
+      font-size: 1.2rem;
+      letter-spacing: -0.4px;
   }
 
 
