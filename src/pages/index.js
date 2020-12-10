@@ -86,7 +86,7 @@ const TitleBox = styled.div`
   // margin: 0 auto;
 
   margin-bottom: 10rem;
-  margin-top: 8rem;
+  margin-top: 7.5rem;
   // margin-left: 1rem;
 
   // margin-top: 6rem;
@@ -178,20 +178,24 @@ const Divider =  styled.div`
 
 const Title = styled.h1`
   // letter-spacing: -5px;  
-  letter-spacing: -2.75px;
+  letter-spacing: -2.3px;
   font-size: 3.5rem;
   font-weight: 500;
   color: #333;
   line-height: 1.45;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.6rem;
 
-  line-height: 1.4;
+  line-height: 1.35;
 
   // font-weight: 500;
   // letter-spacing: -0px;
   // font-size: 3rem;
 
   // text-align: center;
+
+    font-size: 3.2rem;
+    letter-spacing: -2.3px;
+  // font-weight: 400;
 
   @media (max-width: 1340px) {
     font-size: 3rem;  
@@ -220,13 +224,13 @@ const Text = styled.p`
 
   letter-spacing: -0.35px;
   line-height: 1.45;
-  color: #666;
   // color: #888888;
 
-  font-size: 1.25rem;
-  max-width: 39.5rem;
-  letter-spacing: -0.35px;
-  line-height: 1.4;
+  font-size: 1.3rem;
+  max-width: 41.5rem;
+  letter-spacing: -0.3px;
+  line-height: 1.35;
+  // color: #565656;
 
   // max-width: 45rem;  
 
