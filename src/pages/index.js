@@ -86,7 +86,7 @@ const TitleBox = styled.div`
   // margin: 0 auto;
 
   margin-bottom: 10rem;
-  margin-top: 7.5rem;
+  margin-top: 8rem;
   // margin-left: 1rem;
 
   // margin-top: 6rem;
@@ -146,7 +146,7 @@ const StyledLink = styled(Link)`
 `
 
 const Emoji = styled.span`
-  font-size: 2rem;
+  font-size: 1.75rem;
   vertical-align: middle;
   
 `
@@ -194,8 +194,10 @@ const Title = styled.h1`
   // text-align: center;
 
     font-size: 3.2rem;
-    letter-spacing: -2.3px;
+    letter-spacing: -2.5px;
   // font-weight: 400;
+  // color: #979797;
+
 
   @media (max-width: 1340px) {
     font-size: 3rem;  
@@ -226,11 +228,13 @@ const Text = styled.p`
   line-height: 1.45;
   // color: #888888;
 
-  font-size: 1.23rem;
-  max-width: 39.5rem;
-  letter-spacing: -0.25px;
+  font-size: 1.2rem;
+  max-width: 38.rem;
+  letter-spacing: -0.35px;
   line-height: 1.4;
   color: #666;
+
+  // font-size: 1rem;
 
   // max-width: 45rem;  
 
@@ -274,15 +278,17 @@ const Paper = styled.div`
 `
 
 const Name = styled(Link)`
-  color: #767676;
-  color: #333;
+  color: #979797;
+  // color: #333;
+  // color: #1D4094;
   transition: 0.2s;
   text-decoration: none;
+  // border-bottom: 2.5px solid #b5b5b5;
 
 
   :hover {
-    color: #888; 
-    border-bottom: 5px solid #b5b5b5;
+    color: #484848; 
+    border-bottom: 4px solid #484848;
   }
 
 `
