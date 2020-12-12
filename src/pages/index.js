@@ -85,6 +85,7 @@ const TitleBox = styled.div`
 
   margin-bottom: 9rem;
   margin-top: 8rem;
+  margin-left: 3.5rem;
 
   display: flex;
   // justify-content: center;
@@ -195,9 +196,9 @@ const Title = styled.h1`
     font-size: 3.6rem;
     letter-spacing: -3px;
   // font-weight: 400;
-  color: #c5c5c5;
+  color: #b5b5b5;
   // flex: 1 1 40rem;
-  margin-right: 15vw;
+  margin-right: 14vw;
 
   @media (max-width: 1440px) {
     margin-right: 10vw;
@@ -239,8 +240,8 @@ const Text = styled.p`
   max-width: 38rem;
   letter-spacing: -0.3px;
   line-height: 1.4;
-  color: #666;
-  flex: 1 1 40rem;
+  color: #484848;
+  // flex: 1 1 40rem;
 
   // margin-left: 12rem;
   font-size: 1.05rem;
