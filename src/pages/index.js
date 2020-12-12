@@ -72,8 +72,6 @@ const TitleBox = styled.div`
   // margin-top: 10rem;
   // margin-top: 80px;
   // margin-bottom: 14rem;
-  margin-bottom: 10rem;
-  margin-top: 8.5rem;
   // margin-top: 7rem;
   // margin-top: 5rem;
 
@@ -87,14 +85,15 @@ const TitleBox = styled.div`
 
   margin-bottom: 9rem;
   margin-top: 8rem;
-  // margin-left: 1rem;
 
-  // margin-top: 6rem;
+  display: flex;
+  // justify-content: center;
 
 
   @media (max-width: 1240px) {
     // font-size: 1rem;
     margin: 3.5rem 0 5rem;
+    display: block;
   }
 `
 
@@ -185,7 +184,7 @@ const Title = styled.h1`
   line-height: 1.45;
   margin-bottom: 1.5rem;
 
-  line-height: 1.4;
+  line-height: 1.2;
 
   // font-weight: 500;
   // letter-spacing: -0px;
@@ -193,15 +192,23 @@ const Title = styled.h1`
 
   // text-align: center;
 
-    font-size: 3.2rem;
-    letter-spacing: -2.5px;
+    font-size: 3.6rem;
+    letter-spacing: -3px;
   // font-weight: 400;
-  // color: #979797;
+  color: #c5c5c5;
+  // flex: 1 1 40rem;
+  margin-right: 15vw;
+
+  @media (max-width: 1440px) {
+    margin-right: 10vw;
+    font-size: 3.2rem;
+  }
 
 
   @media (max-width: 1340px) {
-    font-size: 3rem;  
-    letter-spacing: -1.6px;
+    font-size: 2.8rem;  
+    letter-spacing: -2px;
+    margin-right: 8vw;
   }
 
   @media (max-width: 1024px) {
@@ -229,10 +236,16 @@ const Text = styled.p`
   // color: #888888;
 
   font-size: 1.2rem;
-  max-width: 38.rem;
-  letter-spacing: -0.35px;
+  max-width: 38rem;
+  letter-spacing: -0.3px;
   line-height: 1.4;
   color: #666;
+  flex: 1 1 40rem;
+
+  // margin-left: 12rem;
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+  max-width: 35rem;
 
   // font-size: 1rem;
 
@@ -246,6 +259,7 @@ const Text = styled.p`
   @media (max-width: 1024px) {
       font-size: 1.2rem;
       letter-spacing: -0.4px;
+      // margin-left: 8rem;
   }
 
 
@@ -279,7 +293,7 @@ const Paper = styled.div`
 
 const Name = styled(Link)`
   color: #979797;
-  // color: #333;
+  color: #333;
   // color: #1D4094;
   transition: 0.2s;
   text-decoration: none;
@@ -352,7 +366,7 @@ export default function IndexPage() {
                 <div data-sal="fade" data-sal-delay="100" data-sal-duration="1200" data-sal-easing="ease">
                   <Title>
                     <div>
-                    Hello there, I'm <Name to="/about">John</Name><span className="blinking">.</span> &nbsp;
+                    Hello there, <br/><span style={{color: "#333"}}>I'm</span> <Name to="/about">John</Name><span className="blinking">.</span> &nbsp;
                     {/* HELLO THERE, I'M <Name to="/about">JOHN</Name><span className="blinking">.</span> &nbsp; */}
                     <Emoji> ✌️ </Emoji>
                     </div>

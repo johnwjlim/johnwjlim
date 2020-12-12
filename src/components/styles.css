@@ -209,13 +209,13 @@ button:-moz-focusring {
   100%{   color: #888;    }
 } */
   
-@keyframes blinkingText{
-  0%{     color: #979797;    }
-  49%{    color: #979797; }
-  60%{    color: transparent; }
-  99%{    color:transparent;  }
-  100%{   color: #979797;    }
-}
+  /* @keyframes blinkingText{
+    0%{     color: #979797;    }
+    49%{    color: #979797; }
+    60%{    color: transparent; }
+    99%{    color:transparent;  }
+    100%{   color: #979797;    }
+  } */
 
 
 
