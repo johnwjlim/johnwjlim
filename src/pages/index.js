@@ -85,7 +85,7 @@ const TitleBox = styled.div`
 
   margin-bottom: 9rem;
   margin-top: 8rem;
-  margin-left: 3.5rem;
+  margin-left: 2.5rem;
 
   display: flex;
   // justify-content: center;
@@ -185,7 +185,7 @@ const Title = styled.h1`
   line-height: 1.45;
   margin-bottom: 1.5rem;
 
-  line-height: 1.2;
+  line-height: 1.25;
 
   // font-weight: 500;
   // letter-spacing: -0px;
