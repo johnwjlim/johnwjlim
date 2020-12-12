@@ -243,9 +243,9 @@ const Text = styled.p`
   flex: 1 1 40rem;
 
   // margin-left: 12rem;
-  font-size: 1.1rem;
-  margin-top: 0.5rem;
-  max-width: 35rem;
+  font-size: 1.05rem;
+  margin-top: 0.6rem;
+  max-width: 32rem;
 
   // font-size: 1rem;
 
@@ -374,7 +374,7 @@ export default function IndexPage() {
                 </div>
                 <div data-sal="fade" data-sal-delay="300" data-sal-duration="1200" data-sal-easing="ease">
                   <Text>I'm an undergraduate student at the <Highlight>University of Washington</Highlight> majoring in <Highlight>Human Computer Interaction</Highlight> and enthralled by the factors that make us <Highlight>human.</Highlight></Text>
-                  <Text>If not <Highlight>pushing pixels</Highlight> in a Seattle coffee shop, catch me <Highlight>chasing powder</Highlight> on my local ski hill or wherever there is good snow to be found.</Text>
+                  <Text>If not <Highlight>pushing pixels</Highlight> in a Seattle coffee shop, catch me <Highlight>chasing powder</Highlight> on my local ski hill or wherever good snow's to be found.</Text>
                 </div>
                 
               </TitleBox>
