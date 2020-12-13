@@ -63,30 +63,11 @@ const Body = styled(Container)`
 `;
 
 const TitleBox = styled.div`
-  // margin: 0 2rem;
 
-  // margin-bottom: 1rem; 
-  // margin-bottom: 10rem;
+  margin: 0 auto;
 
-  // margin-top: 10rem;
-  // margin-top: 10rem;
-  // margin-top: 80px;
-  // margin-bottom: 14rem;
-  // margin-top: 7rem;
-  // margin-top: 5rem;
 
-  // margin-bottom: 3.5rem;
-  // margin-top: 12rem;
-
-  // margin-top: 10rem;
-  // margin-bottom: 12rem;
-
-  // margin: 0 auto;
-
-  margin-bottom: 9rem;
-  margin-top: 8rem;
-  margin-left: 0rem;
-
+  margin-left: 2rem;
   margin-bottom: 8rem;
   margin-top: 8rem;
 
@@ -180,26 +161,16 @@ const Divider =  styled.div`
 `
 
 const Title = styled.h1`
-  // letter-spacing: -5px;  
-  letter-spacing: -2.3px;
-  font-size: 3.5rem;
+
   font-weight: 500;
-  color: #333;
-  line-height: 1.45;
-  margin-bottom: 1.5rem;
 
-  line-height: 1.2;
+  line-height: 1.15;
 
-  // font-weight: 500;
-  // letter-spacing: -0px;
-  // font-size: 3rem;
-
-  // text-align: center;
-
-    font-size: 3.6rem;
-    letter-spacing: -2.8px;
-  color: #c5c5c5;
-  margin-right: 12vw;
+  font-size: 4rem;
+  letter-spacing: -3.6px;
+  color: #a5a5a5;
+  margin-bottom: 3.5rem;
+  margin-right: 14vw;
 
   @media (max-width: 1440px) {
     margin-right: 10vw;
@@ -220,45 +191,16 @@ const Title = styled.h1`
 `
 
 const Text = styled.p`
-  // color: #b5b5b5;
-  color: #666666;
-  letter-spacing: -0.5px;
-  font-weight: 400;
-  max-width: 41rem;
-  max-width: 38.5rem;
-  max-width: 39rem;
-  // max-width: 56rem;
+
+  line-height: 1.25;
+  color: #888;
   font-size: 1.25rem;
-
-  font-size: 1.2rem;
-  max-width: 38rem;
-
-  letter-spacing: -0.35px;
-  line-height: 1.45;
-  // color: #888888;
-
-  font-size: 1.2rem;
-  max-width: 38rem;
-  letter-spacing: -0.3px;
-  line-height: 1.4;
+  margin-top: 0.9rem;
+  max-width: 33rem;
+  letter-spacing: -0.5px;
   color: #666;
-  // flex: 1 1 40rem;
+  font-weight: 500;
 
-  // margin-left: 12rem;
-  font-size: 1.05rem;
-  margin-top: 0.7rem;
-  max-width: 34rem;
-  letter-spacing: -0.3px;
-  color: #666;
-
-  // font-size: 1rem;
-
-  // max-width: 45rem;  
-
-  // text-align: center;
-  // margin: 0 auto;
-  // margin-bottom: 1rem;
-  // max-width: 45rem;
 
   @media (max-width: 1024px) {
       font-size: 1.05rem;
@@ -370,7 +312,7 @@ export default function IndexPage() {
                 <div data-sal="fade" data-sal-delay="100" data-sal-duration="1200" data-sal-easing="ease">
                   <Title>
                     <div>
-                    Hello there, <br/><span style={{color: "#333"}}>I'm</span> <Name to="/about">John</Name><span className="blinking">.</span> &nbsp;
+                    Hello there, <br/> <span style={{color: "#333"}}>I'm</span> <Name to="/about">John</Name><span className="blinking">.</span> &nbsp;
                     {/* HELLO THERE, I'M <Name to="/about">JOHN</Name><span className="blinking">.</span> &nbsp; */}
                     <Emoji> ✌️ </Emoji>
                     </div>
@@ -378,7 +320,7 @@ export default function IndexPage() {
                 </div>
                 <div data-sal="fade" data-sal-delay="300" data-sal-duration="1200" data-sal-easing="ease">
                   <Text>I'm an undergraduate student at the <Highlight>University of Washington</Highlight> majoring in <Highlight>Human Computer Interaction</Highlight> and enthralled by the factors that make us <Highlight>human.</Highlight></Text>
-                  <Text>If not <Highlight>pushing pixels</Highlight> in a Seattle coffee shop, catch me <Highlight>chasing powder</Highlight> on my local ski hill or wherever there's good snow to be found.</Text>
+                  <Text>If not <Highlight>pushing pixels</Highlight> in a Seattle coffee shop, catch me <Highlight>chasing powder</Highlight> on my local ski hill or where there's good snow to be found.</Text>
                   {/* <Text>–––</Text> */}
                 </div>
                 
