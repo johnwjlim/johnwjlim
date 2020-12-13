@@ -87,8 +87,8 @@ const TitleBox = styled.div`
   margin-top: 8rem;
   margin-left: 0.2rem;
 
-  margin-bottom: 7rem;
-  margin-top: 9rem;
+  margin-bottom: 8rem;
+  margin-top: 8rem;
 
   display: flex;
   // justify-content: center;
