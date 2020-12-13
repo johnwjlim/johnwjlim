@@ -199,7 +199,7 @@ const Title = styled.h1`
     font-size: 3.6rem;
     letter-spacing: -2.8px;
   color: #c5c5c5;
-  margin-right: 16vw;
+  margin-right: 14vw;
 
   @media (max-width: 1440px) {
     margin-right: 10vw;
