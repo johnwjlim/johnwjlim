@@ -67,8 +67,8 @@ const TitleBox = styled.div`
   margin: 0 auto;
 
 
-  margin-left: 2rem;
-  margin-bottom: 8rem;
+  margin-left: 1.5rem;
+  margin-bottom: 7rem;
   margin-top: 8rem;
 
   display: flex;
@@ -134,42 +134,15 @@ const Emoji = styled.span`
   vertical-align: middle;
   
 `
-
-const TitleStyle = styled.span`
-  color: #dddddd;
-  // color: #666666;
-  font-weight: 300;
-  // letter-spacing: -3px;
-`
-
-const Flexbox = styled.div`
-  display: flex;
-  justify-content: space-between;
-
-`
-
-const Arrow = styled.div`
-
-  @media (max-width: 1240px) {
-    display: none;
-  }
-`
-
-const Divider =  styled.div`
-  padding-top: 2rem;
-  border-bottom: 1px solid #dddddd;
-`
-
 const Title = styled.h1`
 
   font-weight: 500;
-
-  line-height: 1.15;
+  line-height: 1.1;
 
   font-size: 4rem;
-  letter-spacing: -3.6px;
-  color: #a5a5a5;
-  margin-bottom: 3.5rem;
+  letter-spacing: -3.2px;
+  color: #bbb;
+  // margin-bottom: 3.5rem;
   margin-right: 14vw;
 
   @media (max-width: 1440px) {
@@ -197,7 +170,7 @@ const Text = styled.p`
   font-size: 1.25rem;
   margin-top: 0.9rem;
   max-width: 33rem;
-  letter-spacing: -0.5px;
+  letter-spacing: -0.4px;
   color: #666;
   font-weight: 500;
 
