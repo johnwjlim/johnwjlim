@@ -85,7 +85,10 @@ const TitleBox = styled.div`
 
   margin-bottom: 9rem;
   margin-top: 8rem;
-  margin-left: 2.5rem;
+  margin-left: 0.2rem;
+
+  margin-bottom: 7rem;
+  margin-top: 9rem;
 
   display: flex;
   // justify-content: center;
@@ -185,7 +188,7 @@ const Title = styled.h1`
   line-height: 1.45;
   margin-bottom: 1.5rem;
 
-  line-height: 1.25;
+  line-height: 1.15;
 
   // font-weight: 500;
   // letter-spacing: -0px;
@@ -194,11 +197,9 @@ const Title = styled.h1`
   // text-align: center;
 
     font-size: 3.6rem;
-    letter-spacing: -3px;
-  // font-weight: 400;
-  color: #b5b5b5;
-  // flex: 1 1 40rem;
-  margin-right: 14vw;
+    letter-spacing: -2.8px;
+  color: #c5c5c5;
+  margin-right: 16vw;
 
   @media (max-width: 1440px) {
     margin-right: 10vw;
@@ -240,13 +241,15 @@ const Text = styled.p`
   max-width: 38rem;
   letter-spacing: -0.3px;
   line-height: 1.4;
-  color: #484848;
+  color: #666;
   // flex: 1 1 40rem;
 
   // margin-left: 12rem;
   font-size: 1.05rem;
-  margin-top: 0.6rem;
-  max-width: 32rem;
+  margin-top: 0.7rem;
+  max-width: 34rem;
+  letter-spacing: -0.3px;
+  color: #666;
 
   // font-size: 1rem;
 
@@ -258,8 +261,8 @@ const Text = styled.p`
   // max-width: 45rem;
 
   @media (max-width: 1024px) {
-      font-size: 1.2rem;
-      letter-spacing: -0.4px;
+      font-size: 1.05rem;
+      letter-spacing: -0.2px;
       // margin-left: 8rem;
   }
 
@@ -375,7 +378,8 @@ export default function IndexPage() {
                 </div>
                 <div data-sal="fade" data-sal-delay="300" data-sal-duration="1200" data-sal-easing="ease">
                   <Text>I'm an undergraduate student at the <Highlight>University of Washington</Highlight> majoring in <Highlight>Human Computer Interaction</Highlight> and enthralled by the factors that make us <Highlight>human.</Highlight></Text>
-                  <Text>If not <Highlight>pushing pixels</Highlight> in a Seattle coffee shop, catch me <Highlight>chasing powder</Highlight> on my local ski hill or wherever good snow's to be found.</Text>
+                  <Text>If not <Highlight>pushing pixels</Highlight> in a Seattle coffee shop, catch me <Highlight>chasing powder</Highlight> on my local ski hill or wherever there's good snow to be found.</Text>
+                  {/* <Text>–––</Text> */}
                 </div>
                 
               </TitleBox>
