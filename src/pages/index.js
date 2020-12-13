@@ -67,7 +67,7 @@ const TitleBox = styled.div`
   margin: 0 auto;
 
 
-  margin-left: 1.5rem;
+  margin-left: 1rem;
   margin-bottom: 7rem;
   margin-top: 8rem;
 
@@ -130,20 +130,20 @@ const StyledLink = styled(Link)`
 `
 
 const Emoji = styled.span`
-  font-size: 1.75rem;
+  font-size: 2rem;
   vertical-align: middle;
   
 `
 const Title = styled.h1`
 
   font-weight: 500;
-  line-height: 1.1;
+  line-height: 1.05;
 
-  font-size: 4rem;
+  font-size: 3.6rem;
   letter-spacing: -3.2px;
   color: #bbb;
   // margin-bottom: 3.5rem;
-  margin-right: 14vw;
+  margin-right: 17vw;
 
   @media (max-width: 1440px) {
     margin-right: 10vw;
@@ -165,14 +165,15 @@ const Title = styled.h1`
 
 const Text = styled.p`
 
-  line-height: 1.25;
+  line-height: 1.35;
   color: #888;
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   margin-top: 0.9rem;
-  max-width: 33rem;
+  max-width: 28rem;
+  max-width: 34rem;
   letter-spacing: -0.4px;
   color: #666;
-  font-weight: 500;
+  font-weight: 400;
 
 
   @media (max-width: 1024px) {
