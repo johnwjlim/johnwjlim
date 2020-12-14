@@ -67,9 +67,9 @@ const TitleBox = styled.div`
   margin: 0 auto;
 
 
-  margin-left: 1.75rem;
-  margin-bottom: 8rem;
-  margin-top: 8rem;
+  margin-left: 3rem;
+  margin-bottom: 6rem;
+  margin-top: 9rem;
 
   display: flex;
   // justify-content: center;
@@ -130,20 +130,28 @@ const StyledLink = styled(Link)`
 `
 
 const Emoji = styled.span`
-  font-size: 1.75rem;
-  vertical-align: middle;
+  font-size: 2rem;
+  // line-height: 1.5;
+  padding-bottom: 5rem;
+  // vertical-align: top;
   
 `
 const Title = styled.h1`
 
   font-weight: 500;
-  line-height: 1.1;
+  line-height: 1.5;
 
   font-size: 3.4rem;
-  letter-spacing: -3px;
-  color: #b5b5b5;
-  // margin-bottom: 3.5rem;
-  margin-right: 16.5vw;
+  letter-spacing: -2.6px;
+  color: #c5c5c5;
+  margin-right: 16vw;
+
+  font-family: "Founders Grotesk";
+  line-height: 1.0;
+  letter-spacing: -1px;
+  font-size: 4rem;
+  // font-weight: 600;
+
 
   @media (max-width: 1440px) {
     margin-right: 10vw;
@@ -152,14 +160,14 @@ const Title = styled.h1`
 
 
   @media (max-width: 1340px) {
-    font-size: 2.8rem;  
-    letter-spacing: -2px;
+    font-size: 3rem;  
+    letter-spacing: -1px;
     margin-right: 8vw;
   }
 
   @media (max-width: 1024px) {
-    font-size: 2.5rem;
-    letter-spacing: -1.5px;
+    font-size: 2.8rem;
+    letter-spacing: -1px;
   }
 `
 
@@ -167,11 +175,11 @@ const Text = styled.p`
 
   line-height: 1.35;
   color: #888;
-  font-size: 1.125rem;
-  margin-top: 0.9rem;
+  font-size: 1.1rem;
+  // margin-top: 0.9rem;
   max-width: 28rem;
-  max-width: 34rem;
-  letter-spacing: -0.4px;
+  max-width: 35rem;
+  letter-spacing: -0.2px;
   color: #666;
   font-weight: 400;
 
@@ -212,17 +220,20 @@ const Paper = styled.div`
 `
 
 const Name = styled(Link)`
+  font-family: "Founders Grotesk";
   color: #979797;
   color: #333;
   // color: #1D4094;
   transition: 0.2s;
   text-decoration: none;
   // border-bottom: 2.5px solid #b5b5b5;
+  // border-bottom: 3px solid #333;
 
 
   :hover {
-    color: #484848; 
-    border-bottom: 4px solid #484848;
+    // color: #484848; 
+    border-bottom: 5px solid #888;
+    color: #888;
   }
 
 `
@@ -294,7 +305,7 @@ export default function IndexPage() {
                 </div>
                 <div data-sal="fade" data-sal-delay="300" data-sal-duration="1200" data-sal-easing="ease">
                   <Text>I'm an undergraduate student at the <Highlight>University of Washington</Highlight> majoring in <Highlight>Human Computer Interaction</Highlight> and enthralled by the factors that make us <Highlight>human.</Highlight></Text>
-                  <Text>If not <Highlight>pushing pixels</Highlight> in a Seattle coffee shop, catch me <Highlight>chasing powder</Highlight> on my local ski hill or where there's good snow to be found.</Text>
+                  <Text>If not <Highlight>pushing pixels</Highlight> in a Seattle coffee shop, catch me <Highlight>chasing powder</Highlight> on my local ski hill or wherever good snow's to be found.</Text>
                   {/* <Text>–––</Text> */}
                 </div>
                 
