@@ -135,26 +135,33 @@ const StyledLink = styled(Link)`
 `
 
 const Emoji = styled.span`
-  font-size: 2rem;
+  font-size: 2.2rem;
   // line-height: 1.5;
-  padding-bottom: 5rem;
+  // padding-bottom: 5rem;
   // vertical-align: top;
+  vertical-align: middle;
+
+  @media (max-width: 1440px) {
+    // margin-right: 10vw;
+    font-size: 1.5rem;
+  }
+
   
 `
 const Title = styled.h1`
 
-  font-weight: 500;
-  line-height: 1.5;
+  font-weight: 600;
+  line-height: 1.1;
 
-  font-size: 3.4rem;
-  letter-spacing: -2.6px;
-  color: #c5c5c5;
+  font-size: 4rem;
+  letter-spacing: -2.8px;
+  color: #ccc;
   // margin-right: 14rem;
 
-  font-family: "Founders Grotesk", sans-serif;
-  line-height: 0.94;
-  letter-spacing: -1.4px;
-  font-size: 4rem;
+  // font-family: "Founders Grotesk", sans-serif;
+  // line-height: 1;
+  // letter-spacing: -1.5px;
+  // font-size: 4rem;
   // font-weight: 600;
 
 
@@ -166,13 +173,13 @@ const Title = styled.h1`
 
   @media (max-width: 1340px) {
     font-size: 3rem;  
-    letter-spacing: -1px;
+    letter-spacing: -2.5px;
     margin-right: 8vw;
   }
 
   @media (max-width: 1024px) {
     font-size: 2.8rem;
-    letter-spacing: -1px;
+    letter-spacing: -1.8px;
   }
 `
 
@@ -184,7 +191,7 @@ const Text = styled.p`
   // margin-top: 0.9rem;
   max-width: 28rem;
   max-width: 36rem;
-  letter-spacing: -0.25px;
+  letter-spacing: -0.1px;
   color: #666;
   font-weight: 400;
 
@@ -225,7 +232,7 @@ const Paper = styled.div`
 `
 
 const Name = styled(Link)`
-  font-family: "Founders Grotesk";
+  // font-family: "Founders Grotesk";
   color: #979797;
   color: #333;
   // color: #1D4094;
