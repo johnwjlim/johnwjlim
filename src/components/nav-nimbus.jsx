@@ -59,19 +59,19 @@ const StyledText = styled.a`
   font-weight: 500;
   border-bottom: 1px solid #333333; 
   margin: 0.25rem 0.5rem;
-  letter-spacing: -0.3px;
+  letter-spacing: -0px;
 
 `
 
 const GreyText = styled.a`
   line-height: 1.68;
-  color: #b8b8b8;
-  font-weight: 300;
+  color: #c5c5c5;
+  font-weight: 400;
   transition: 0.2s;
   border: none;
   padding: 0.25rem 0.5rem;
   border-radius: 8px;
-  letter-spacing: -0.3px;
+  letter-spacing: -0px;
   text-decoration: none;
 
   :hover {
@@ -100,12 +100,13 @@ const NavText = styled.a`
 const GreyLink = styled(Link)`
   line-height: 1.68;
   text-decoration: none;
-  color: #b8b8b8;
-  font-weight: 300;
+  color: #c5c5c5;
+  font-weight: 400;
   transition: 0.2s;
   border: none;
   padding: 0.25rem 0.5rem;
   border-radius: 8px;
+  letter-spacing: 0;
 
 
   :hover {

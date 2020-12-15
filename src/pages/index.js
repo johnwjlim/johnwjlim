@@ -67,17 +67,22 @@ const TitleBox = styled.div`
   margin: 0 auto;
 
 
-  margin-left: 3rem;
-  margin-bottom: 6rem;
+  padding-left: 1.5rem;
+  padding-bottom: 9rem;
   margin-top: 9rem;
+  padding-right: 1.5rem;
 
   display: flex;
-  // justify-content: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ddd;
 
 
   @media (max-width: 1240px) {
     // font-size: 1rem;
     margin: 3.5rem 0 5rem;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 4rem;
     display: block;
   }
 `
@@ -144,17 +149,17 @@ const Title = styled.h1`
   font-size: 3.4rem;
   letter-spacing: -2.6px;
   color: #c5c5c5;
-  margin-right: 16vw;
+  // margin-right: 14rem;
 
-  font-family: "Founders Grotesk";
-  line-height: 1.0;
-  letter-spacing: -1px;
+  font-family: "Founders Grotesk", sans-serif;
+  line-height: 0.94;
+  letter-spacing: -1.4px;
   font-size: 4rem;
   // font-weight: 600;
 
 
   @media (max-width: 1440px) {
-    margin-right: 10vw;
+    // margin-right: 10vw;
     font-size: 3.2rem;
   }
 
@@ -175,11 +180,11 @@ const Text = styled.p`
 
   line-height: 1.35;
   color: #888;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   // margin-top: 0.9rem;
   max-width: 28rem;
-  max-width: 35rem;
-  letter-spacing: -0.2px;
+  max-width: 36rem;
+  letter-spacing: -0.25px;
   color: #666;
   font-weight: 400;
 

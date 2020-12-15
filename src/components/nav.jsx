@@ -38,7 +38,7 @@ const StyledLink = styled(Link)`
   font-size: 1rem;
   line-height: 1.68;
   transition: 0.2s;
-  letter-spacing: -0.3px;
+  letter-spacing: -0px;
   color: #666666; 
   // color: #767676;
   // color: #333;

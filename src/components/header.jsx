@@ -38,7 +38,7 @@ const Wrapper = styled.div`
 const Title = styled.h2`
   margin: 0;
   // margin-right: 3.6rem;
-  letter-spacing: -0.8px;
+  letter-spacing: -0.6px;
   font-weight: 500;
   color: #333333;
   line-height: 1.1;
