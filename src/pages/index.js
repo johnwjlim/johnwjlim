@@ -67,14 +67,14 @@ const TitleBox = styled.div`
   margin: 0 auto;
 
 
-  padding-left: 1.5rem;
+  padding-left: 1rem;
   padding-bottom: 9rem;
-  margin-top: 8.5rem;
-  padding-right: 1.5rem;
+  margin-top: 8rem;
+  padding-right: 1rem;
 
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #c5c5c5;
 
 
   @media (max-width: 1240px) {
@@ -154,8 +154,10 @@ const Title = styled.h1`
   line-height: 1.05;
 
   font-size: 3.8rem;
-  letter-spacing: -3px;
+  letter-spacing: -2.7px;
   color: #ccc;
+  color: #484848;
+  color: #888;
   // margin-right: 14rem;
 
   // font-family: "Founders Grotesk", sans-serif;
@@ -185,19 +187,20 @@ const Title = styled.h1`
 
 const Text = styled.p`
 
-  line-height: 1.4;
+  line-height: 1.45;
   color: #888;
-  font-size: 1.2rem;
+  font-size: 1.15rem;
   margin-top: 0.5rem;
   max-width: 28rem;
   max-width: 36rem;
   letter-spacing: -0.3px;
-  color: #666;
+  color: #484848;
   font-weight: 400;
 
 
   @media (max-width: 1024px) {
       font-size: 1.05rem;
+      line-height: 1.4  ;
       letter-spacing: -0.2px;
       // margin-left: 8rem;
   }
@@ -235,6 +238,7 @@ const Name = styled(Link)`
   // font-family: "Founders Grotesk";
   color: #979797;
   color: #333;
+  // color: #484848;
   // color: #1D4094;
   transition: 0.2s;
   text-decoration: none;
