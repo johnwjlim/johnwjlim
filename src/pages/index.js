@@ -153,8 +153,8 @@ const Title = styled.h1`
   font-weight: 600;
   line-height: 1.05;
 
-  font-size: 4rem;
-  letter-spacing: -2.8px;
+  font-size: 3.8rem;
+  letter-spacing: -3px;
   color: #ccc;
   // margin-right: 14rem;
 
