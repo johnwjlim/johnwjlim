@@ -72,7 +72,7 @@ const TitleBox = styled.div`
   margin-top: 7.4rem;
   padding-right: 1rem;
 
-  padding-bottom: 3rem;
+  padding-bottom: 2.8rem;
   margin-top: 7.3rem;
 
   // display: flex;
@@ -138,7 +138,7 @@ const StyledLink = styled(Link)`
 `
 
 const Emoji = styled.span`
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   // line-height: 1.5;
   // padding-bottom: 5rem;
   // vertical-align: top;
@@ -304,7 +304,8 @@ export default function IndexPage() {
                     <div>
                     Hello there, I'm <Name to="/about">John</Name><span className="blinking">.</span> &nbsp;
                     {/* HELLO THERE, I'M <Name to="/about">JOHN</Name><span className="blinking">.</span> &nbsp; */}
-                    <Emoji> ✌️ </Emoji>
+                    {/* <Emoji> ✌️ </Emoji> */}
+                    <Emoji> 👋 </Emoji>
                     </div>
                   </Title> 
                 </div>
