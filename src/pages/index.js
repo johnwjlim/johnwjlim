@@ -67,13 +67,13 @@ const TitleBox = styled.div`
   margin: 0 auto;
 
 
-  padding-left: 1rem;
+  padding-left: 0.6rem;
   padding-bottom: 2.8rem;
   margin-top: 7.4rem;
   padding-right: 1rem;
 
-  padding-bottom: 2.8rem;
-  margin-top: 7.3rem;
+  padding-bottom: 2rem;  
+  margin-top: 7.75rem;
 
   // display: flex;
   // justify-content: space-between;
@@ -153,7 +153,7 @@ const Emoji = styled.span`
 `
 const Title = styled.h1`
 
-  font-size: 44px;
+  font-size: 45px;
   letter-spacing: -1.6px;
   color: #333;
   color: #3b3e43;
@@ -172,24 +172,26 @@ const Title = styled.h1`
   @media (max-width: 1024px) {
     font-size: 2.3rem;
     letter-spacing: -1.4px;
+    // margin-bottom: 3rem;
   }
 `
 
 const Text = styled.p`
   font-size: 20px;
   max-width: 40rem;
-  line-height: 1.4;
-  letter-spacing: -0.18px;
+  line-height: 1.35;
+  letter-spacing: -0.23px;
   color: #585858;
 
-  // font-size: 19px;
-  // letter-spacing: -0.1px;
-  // max-width: 38.5rem;
+  font-size: 19.5px;
+  letter-spacing: -0.21px;
+  max-width: 38.5rem;
+  line-height: 1.4;
 
 
   @media (max-width: 1024px) {
     font-size: 18px;
-    line-height: 1.45;
+    line-height: 1.4;
     letter-spacing: -0.08px;
     // margin-left: 8rem;
   }
@@ -310,7 +312,7 @@ export default function IndexPage() {
                   </Title> 
                 </div>
                 <div data-sal="fade" data-sal-delay="300" data-sal-duration="1200" data-sal-easing="ease">
-                  <Text>I'm an undergraduate student at the <Highlight>University of Washington</Highlight> majoring in <Highlight>Human Computer Interaction</Highlight> and enthralled by the factors that make us <Highlight>human.</Highlight></Text>
+                  <Text>I'm an undergraduate student at the <Highlight>University of Washington</Highlight> majoring in <Highlight>Human Computer Interaction</Highlight> and enthralled by the things that make us <Highlight>human.</Highlight></Text>
                   <Text>If not <Highlight>pushing pixels</Highlight> in a Seattle coffee shop, catch me <Highlight>chasing powder</Highlight> on my local ski hill or wherever good snow's to be found.</Text>
                   {/* <Text>–––</Text> */}
                 </div>

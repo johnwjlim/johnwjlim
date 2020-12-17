@@ -40,6 +40,7 @@ const StyledLink = styled(Link)`
   transition: 0.2s;
   letter-spacing: -0px;
   color: #666666; 
+  color: #585858;
   // color: #767676;
   // color: #333;
   // color: #888;
@@ -123,7 +124,8 @@ const FooterText = styled.p`
 const InlineLink = styled.a`
   text-decoration: none;
   transition: 0.2s;
-  color: #666666;
+  // color: #666666;
+  color: #585858;
   font-weight: 400;
   :hover {
     color: #8c8c8c;
