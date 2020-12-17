@@ -68,13 +68,16 @@ const TitleBox = styled.div`
 
 
   padding-left: 1rem;
-  padding-bottom: 9rem;
-  margin-top: 8rem;
+  padding-bottom: 2.8rem;
+  margin-top: 7.4rem;
   padding-right: 1rem;
 
-  display: flex;
-  justify-content: space-between;
-  border-bottom: 1px solid #c5c5c5;
+  padding-bottom: 3rem;
+  margin-top: 7.3rem;
+
+  // display: flex;
+  // justify-content: space-between;
+  // border-bottom: 1px solid #c5c5c5;
 
 
   @media (max-width: 1240px) {
@@ -135,7 +138,7 @@ const StyledLink = styled(Link)`
 `
 
 const Emoji = styled.span`
-  font-size: 2.2rem;
+  font-size: 1.8rem;
   // line-height: 1.5;
   // padding-bottom: 5rem;
   // vertical-align: top;
@@ -150,59 +153,45 @@ const Emoji = styled.span`
 `
 const Title = styled.h1`
 
-  font-weight: 600;
-  line-height: 1.05;
-
-  font-size: 3.8rem;
-  letter-spacing: -2.7px;
-  color: #ccc;
-  color: #484848;
-  color: #888;
-  // margin-right: 14rem;
-
-  // font-family: "Founders Grotesk", sans-serif;
-  // line-height: 1;
-  // letter-spacing: -1.5px;
-  // font-size: 4rem;
-  // font-weight: 600;
-
-
-  @media (max-width: 1440px) {
-    // margin-right: 10vw;
-    font-size: 3.2rem;
-  }
+  font-size: 44px;
+  letter-spacing: -1.7px;
+  color: #333;
+  color: #3b3e43;
+  font-weight: 500;
+  line-height: 1.2;
+  // margin-bottom: 2rem;
+  
 
 
   @media (max-width: 1340px) {
-    font-size: 3rem;  
-    letter-spacing: -2.5px;
+    font-size: 2.5rem;  
+    letter-spacing: -1.5px;
     margin-right: 8vw;
   }
 
   @media (max-width: 1024px) {
-    font-size: 2.8rem;
-    letter-spacing: -1.8px;
+    font-size: 2.3rem;
+    letter-spacing: -1.4px;
   }
 `
 
 const Text = styled.p`
+  font-size: 20px;
+  max-width: 40rem;
+  line-height: 1.4;
+  letter-spacing: -0.18px;
+  color: #585858;
 
-  line-height: 1.45;
-  color: #888;
-  font-size: 1.15rem;
-  margin-top: 0.5rem;
-  max-width: 28rem;
-  max-width: 36rem;
-  letter-spacing: -0.3px;
-  color: #484848;
-  font-weight: 400;
+  // font-size: 19px;
+  // letter-spacing: -0.1px;
+  // max-width: 38.5rem;
 
 
   @media (max-width: 1024px) {
-      font-size: 1.05rem;
-      line-height: 1.4  ;
-      letter-spacing: -0.2px;
-      // margin-left: 8rem;
+    font-size: 18px;
+    line-height: 1.45;
+    letter-spacing: -0.08px;
+    // margin-left: 8rem;
   }
 
 
@@ -236,9 +225,9 @@ const Paper = styled.div`
 
 const Name = styled(Link)`
   // font-family: "Founders Grotesk";
-  color: #979797;
   color: #333;
-  // color: #484848;
+  color: #3b3e43;
+  // color: #666;
   // color: #1D4094;
   transition: 0.2s;
   text-decoration: none;
@@ -313,7 +302,7 @@ export default function IndexPage() {
                 <div data-sal="fade" data-sal-delay="100" data-sal-duration="1200" data-sal-easing="ease">
                   <Title>
                     <div>
-                    Hello there, <br/> <span style={{color: "#333"}}>I'm</span> <Name to="/about">John</Name><span className="blinking">.</span> &nbsp;
+                    Hello there, I'm <Name to="/about">John</Name><span className="blinking">.</span> &nbsp;
                     {/* HELLO THERE, I'M <Name to="/about">JOHN</Name><span className="blinking">.</span> &nbsp; */}
                     <Emoji> ✌️ </Emoji>
                     </div>

@@ -12,6 +12,7 @@ const Container = styled.div`
   position: absolute;
   position: fixed;
   padding: 1.15rem 2.5rem;
+  padding: 1.3rem 2.5rem;
   // margin: 1.15rem 2.5rem
   top: 0;
   left: 0;
@@ -38,7 +39,7 @@ const Wrapper = styled.div`
 const Title = styled.h2`
   margin: 0;
   // margin-right: 3.6rem;
-  letter-spacing: -0.6px;
+  letter-spacing: -0.4px;
   font-weight: 500;
   color: #333333;
   line-height: 1.1;
