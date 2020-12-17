@@ -154,7 +154,7 @@ const Emoji = styled.span`
 const Title = styled.h1`
 
   font-size: 44px;
-  letter-spacing: -1.7px;
+  letter-spacing: -1.6px;
   color: #333;
   color: #3b3e43;
   font-weight: 500;
