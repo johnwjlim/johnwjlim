@@ -158,7 +158,7 @@ const Title = styled.h1`
   color: #333;
   color: #3b3e43;
   font-weight: 500;
-  line-height: 1.1;
+  line-height: 1.2;
   // margin-bottom: 2rem;
   
 
@@ -181,11 +181,11 @@ const Text = styled.p`
   max-width: 40rem;
   line-height: 1.35;
   letter-spacing: -0.23px;
-  color: #585858;
+  color: #565656;
 
   font-size: 18.5px;
-  letter-spacing: -0.1px;
-  max-width: 37.5rem;
+  letter-spacing: -0.17px;
+  max-width: 37rem;
   line-height: 1.4;
 
 

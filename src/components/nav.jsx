@@ -41,6 +41,7 @@ const StyledLink = styled(Link)`
   letter-spacing: -0px;
   color: #666666; 
   color: #585858;
+  color: #565656;
   // color: #767676;
   // color: #333;
   // color: #888;

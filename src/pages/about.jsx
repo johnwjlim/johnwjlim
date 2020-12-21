@@ -56,7 +56,7 @@ const Container = styled.div`
 const FlexContainer = styled(Styled.Container)`
   display: flex;
   margin: 3.5rem;
-  margin-top: 9rem;
+  margin-top: 8rem;
   // margin-top: 1rem; 
   justify-content: center;
 
@@ -70,10 +70,10 @@ const FlexContainer = styled(Styled.Container)`
   }
 `
 const Text = styled.p`
-  max-width: 28rem;
+  max-width: 29rem;
   margin: 0 auto;
   font-size: 1rem;
-  letter-spacing: -0px;
+  // letter-spacing: -0px;
   line-height: 1.45;
   color: #666;
   color: #dddddd; 
@@ -159,7 +159,7 @@ export default function About() {
             <div data-sal="fade" data-sal-delay="300" data-sal-duration="1200" data-sal-easing="ease">
               <OffsetBody>
                 <Text>
-                  <Highlight>I'm John. I study Human Computer Interaction and Political Economy at the University of Washington.</Highlight>
+                  <Highlight>I'm John. I study Human Computer Interaction & Political Economy at the University of Washington.</Highlight>
                 </Text>
                 <Text>
                 With a background in business, product and policy, I’m a generalist at heart. Product design was the only place where I could see myself melding all of my disparate interests into a cohesive role.
