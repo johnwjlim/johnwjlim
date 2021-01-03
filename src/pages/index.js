@@ -21,6 +21,8 @@ import GChallenge from "../components/home/g-thumbnail"
 import Pool from "../components/home/pool-thumbnail"
 import Pear from "../components/home/pear-thumbnail"
 import Movley from "../components/home/movley-thumbnail"
+import Shopee from "../components/home/shopee"
+
 
 const LayoutHack = styled.div`
   margin: 0 auto;
@@ -321,7 +323,6 @@ export default function IndexPage() {
               <div data-sal="fade" data-sal-delay="100" data-sal-duration="1500" data-sal-easing="ease" id="nimbus"> 
                <New />
               </div>
-        
               <div data-sal="fade" data-sal-delay="100" data-sal-duration="1500" data-sal-easing="ease"> 
                 <Pool />
               </div>
@@ -329,11 +330,14 @@ export default function IndexPage() {
                 <Pear />
               </div>
               <div data-sal="fade" data-sal-delay="100" data-sal-duration="1500" data-sal-easing="ease"> 
-                <Movley />
+                <Shopee />
               </div>
               <div data-sal="fade" data-sal-delay="100" data-sal-duration="1500" data-sal-easing="ease"> 
-                <GChallenge />
+                <Movley />
               </div>
+              {/* <div data-sal="fade" data-sal-delay="100" data-sal-duration="1500" data-sal-easing="ease"> 
+                <GChallenge />
+              </div> */}
             </Body>
             </div>
               <Nav />
