@@ -327,10 +327,10 @@ export default function IndexPage() {
                 <Pool />
               </div>
               <div data-sal="fade" data-sal-delay="100" data-sal-duration="1500" data-sal-easing="ease"> 
-                <Pear />
+                <Shopee />
               </div>
               <div data-sal="fade" data-sal-delay="100" data-sal-duration="1500" data-sal-easing="ease"> 
-                <Shopee />
+                <Pear />
               </div>
               <div data-sal="fade" data-sal-delay="100" data-sal-duration="1500" data-sal-easing="ease"> 
                 <Movley />
