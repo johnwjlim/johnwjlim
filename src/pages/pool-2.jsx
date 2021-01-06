@@ -25,7 +25,7 @@ const HeaderWrapper = styled.div`
 const HeaderLink = styled(Link)`
   text-decoration: none;
   transition: 0.3s;
-  padding: 1.15rem 0;
+  padding: 1.3rem 0;
 `;
 
 const Wrapper = styled.div`
@@ -38,7 +38,7 @@ const Wrapper = styled.div`
 
 const MobileMenu = styled.div`
   display: flex;
-  padding: 1.15rem 2.5rem;
+  padding: 1.3rem 2.5rem;
 
 
   @media (max-width: 1240px) {
@@ -70,7 +70,7 @@ const MobileLink = styled(Link)`
 
 const HeaderTitle = styled.h2`
   margin: 0;
-  letter-spacing: -0.8px;
+  letter-spacing: -0.4px;
   font-weight: 500;
   line-height: 1;
   font-size: 1.4rem;
@@ -214,7 +214,7 @@ const SectionTitle = styled.h2`
   max-width: 28rem;
   line-height: 1.2;
   margin-bottom: 0.5rem;
-  letter-spacing: 0;
+  letter-spacing: 0px;
 
   @media (max-width: 1024px) {
     font-size: 2rem;
@@ -225,9 +225,11 @@ const SectionText = styled.p`
   font-family: Sohne, sans-serif;
   font-weight: 400;
   color: #333;
-  letter-spacing: 0;
+  letter-spacing: 0.01rem;
+  letter-spacing: 0.15px;
   max-width: 40rem;
   margin-bottom: 2rem;
+  // font-size: 1.05rem;
 `
 
 const FeatureTitle = styled(SectionTitle)`
@@ -258,7 +260,7 @@ const ImageCaption = styled.p`
   font-family: Sohne, sans-serif;
   font-weight: 400;
   color: #888;
-  letter-spacing: 0;
+  letter-spacing: 0.2px;
   font-size: 0.8rem;
 `
 
@@ -462,12 +464,16 @@ export default function Pool() {
         </Col>
         <Row>
           <Col >
-            <SectionText>
+            {/* <SectionText>
               We conducted preliminary research by engaging with friends and family on their views of our topic. Most agreed with our premise that overconsumption of household utilities was a problem. The key theme that stood out to me was that of <strong>imperfect information</strong>; Almost all of the people I spoke to had little understanding of their real time resource use as well as the environmental impact of their consumption.   
-            </SectionText>
+            </SectionText> */}
             <SectionText>
-            Further research into existing systems for measuring household utilities consumption revealed additional findings: 
+              Have you ever looked at your water meter at home and wonder, "What in the world is going on here?" — I certainly have; And so have countless others I spoke to who couldn't figure how to intepret a water meter even if they tried. With little means to track consumption until the bill shows up at the end of the month, it's no wonder we don't know how much water & energy we're using as well as the impact of our consumption.
             </SectionText>
+            {/* <SectionText>
+            Further research into existing systems for measuring household utilities consumption revealed additional findings: 
+            </SectionText> */}
+            <SectionText>The theme of <strong>imperfect information</strong> also stood out through my research process in other ways: </SectionText>
             <SectionText>
               <ul style={{marginTop: "0"}}>
                 <li>
@@ -478,7 +484,7 @@ export default function Pool() {
                 </li>
                 <li>
                   <ListText>
-                    Utility bills often come in units that are unrelatable to most – kilowatt hour and centum cubic feet are not units of measurement that are seen everyday.
+                    Utility bills often come in units that are alien to most – kilowatt hour and centum cubic feet are not units of measurement that are seen everyday.
                   </ListText>
                 </li>
                 <li>

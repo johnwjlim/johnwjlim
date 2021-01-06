@@ -69,7 +69,7 @@ const SectionText = styled.p`
   font-family: Sohne, sans-serif;
   font-weight: 400;
   color: #333;
-  letter-spacing: 0;
+  letter-spacing: 0.15px;
   max-width: 40rem;
   margin-bottom: 2rem;
 `
