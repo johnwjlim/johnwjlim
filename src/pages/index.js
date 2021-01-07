@@ -155,13 +155,15 @@ const Emoji = styled.span`
 `
 const Title = styled.h1`
 
-  font-size: 45px;
-  letter-spacing: -1.5px;
+  font-size: 44px;
+  letter-spacing: -1.75px;
   color: #333;
   color: #3b3e43;
   font-weight: 500;
   line-height: 1.2;
   // margin-bottom: 2rem;
+
+  // font-size: 2.5rem;
   
 
 
@@ -307,8 +309,6 @@ export default function IndexPage() {
                   <Title>
                     <div>
                     Hello there, I'm <Name to="/about">John</Name><span className="blinking">.</span> &nbsp;
-                    {/* HELLO THERE, I'M <Name to="/about">JOHN</Name><span className="blinking">.</span> &nbsp; */}
-                    {/* <Emoji> ✌️ </Emoji> */}
                     <Emoji> 👋 </Emoji>
                     </div>
                   </Title> 
@@ -324,10 +324,10 @@ export default function IndexPage() {
                <New />
               </div>
               <div data-sal="fade" data-sal-delay="100" data-sal-duration="1500" data-sal-easing="ease"> 
-                <Pool />
+                <Shopee />
               </div>
               <div data-sal="fade" data-sal-delay="100" data-sal-duration="1500" data-sal-easing="ease"> 
-                <Shopee />
+                <Pool />
               </div>
               <div data-sal="fade" data-sal-delay="100" data-sal-duration="1500" data-sal-easing="ease"> 
                 <Pear />
