@@ -377,7 +377,7 @@ export default function Pool() {
             <MobileLink 
               as="a"
               target="_blank"   
-              href="https://drive.google.com/file/d/1r5To1P3Oc8Dn9Ucbe_WxWWBi5bCVeYri/view?usp=sharing"
+              href="https://drive.google.com/file/d/1zf2wjFeNlD-gDA0sN-ENI_ViZbj4yLGc/view?usp=sharing"
             >
               Resume
             </MobileLink>
