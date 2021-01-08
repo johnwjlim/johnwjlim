@@ -1,7 +1,7 @@
 const { hot } = require("react-hot-loader/root")
 
 // prefer default export if available
-const preferDefault = m => m && m.default || m
+const preferDefault = m => (m && m.default) || m
 
 
 exports.components = {
@@ -14,6 +14,7 @@ exports.components = {
   "component---src-pages-nimbus-jsx": hot(preferDefault(require("/Users/wjlim/code/johnwjlim/src/pages/nimbus.jsx"))),
   "component---src-pages-page-2-js": hot(preferDefault(require("/Users/wjlim/code/johnwjlim/src/pages/page-2.js"))),
   "component---src-pages-pear-jsx": hot(preferDefault(require("/Users/wjlim/code/johnwjlim/src/pages/pear.jsx"))),
+  "component---src-pages-pool-2-jsx": hot(preferDefault(require("/Users/wjlim/code/johnwjlim/src/pages/pool-2.jsx"))),
   "component---src-pages-pool-jsx": hot(preferDefault(require("/Users/wjlim/code/johnwjlim/src/pages/pool.jsx"))),
   "component---src-pages-resume-jsx": hot(preferDefault(require("/Users/wjlim/code/johnwjlim/src/pages/resume.jsx")))
 }

@@ -25,6 +25,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
+        icon: `src/images/icon.svg`,
         // icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
@@ -35,7 +36,7 @@ module.exports = {
           families: ['EB Garamond\:300,400,500,600,700', 'Inter\:100,200,300,400,500,600,650,700,800']
         },
         custom: {
-          families: ['Untitled Sans\:300,400,500,700,900', 'Founders Grotesk\:400,500,600'],
+          families: ['Untitled Sans\:300,400,500,700,900', 'Founders Grotesk\:400,500,600', 'Sohne\: 300,400,500,600,700'],
           urls: ["/fonts/fonts.css"]
         }
       }

@@ -3,10 +3,10 @@ var plugins = [{
       options: {"plugins":[]},
     },{
       plugin: require('/Users/wjlim/code/johnwjlim/node_modules/gatsby-plugin-styled-components/gatsby-ssr'),
-      options: {"plugins":[]},
+      options: {"plugins":[],"displayName":true,"fileName":true,"minify":true,"transpileTemplateLiterals":true,"pure":false},
     },{
       plugin: require('/Users/wjlim/code/johnwjlim/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
-      options: {"plugins":[],"name":"gatsby-starter-default","short_name":"starter","start_url":"/","background_color":"#663399","theme_color":"#663399","display":"minimal-ui","cache_busting_mode":"query","include_favicon":true,"legacy":true,"theme_color_in_head":true,"cacheDigest":null},
+      options: {"plugins":[],"name":"gatsby-starter-default","short_name":"starter","start_url":"/","background_color":"#663399","theme_color":"#663399","display":"minimal-ui","icon":"src/images/icon.svg","legacy":true,"theme_color_in_head":true,"cache_busting_mode":"query","crossOrigin":"anonymous","include_favicon":true,"cacheDigest":"1dfa09f6ba6ca849635ad82ee1fcc4f6"},
     },{
       plugin: require('/Users/wjlim/code/johnwjlim/gatsby-ssr'),
       options: {"plugins":[]},

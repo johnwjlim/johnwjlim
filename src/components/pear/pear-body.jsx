@@ -10,6 +10,7 @@ import Animated from "../../images/pool.mp4"
 
 const LocalContainer = styled(Styled.Container)`
   margin-top: 88px;
+  margin-top: 64px;
   width: 100%;
 `
 
@@ -44,7 +45,12 @@ const FlexBox = styled.div`
   align-items: flex-start;
   margin: 7rem 0;
   padding: 3.5rem;
+  padding: 3.5rem 1.75rem;
   // border-top: 1px solid #666666;
+
+  @media (max-width: 1340px) {
+    padding: 1.75rem;
+  }
 
 
   @media (max-width: 1240px) {
@@ -57,12 +63,19 @@ const FlexBox = styled.div`
 const BlockTitle = styled.h2`
   font-weight: 500;
   font-size: 1.125rem;
+  line-height: 1.5;
   min-width: 16vw;
-  margin-right: 8rem;
+  margin-right: 7.5rem;
   letter-spacing: -0.3px;
   color: #333333;
 
-  @media (max-width: 124px) {
+  @media (max-width: 1440px) {
+    margin-right: 5rem;
+  }
+
+
+
+  @media (max-width: 1240px) {
     margin: 2.5rem 0;
   }
 `
@@ -101,6 +114,11 @@ const Highlight = styled.strong`
 
 const ImageOffset = styled(Styled.OffsetBody)`
   padding: 0 3.5rem;
+  padding: 0 1.75rem;
+
+  @media (max-width: 1340px) {
+    padding: 1.75rem;
+  }
 
   @media (max-width: 1240px) {
     padding: 0;

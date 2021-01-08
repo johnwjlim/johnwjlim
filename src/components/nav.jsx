@@ -11,6 +11,13 @@ const Container = styled.nav`
   margin: 0 1rem;
   margin-left: 0; 
   margin-top: 64px;
+  margin-top: 42px;
+  height: 93%;
+
+  @media (max-width: 1340px) {
+    margin-right: 0;
+  }
+  
   @media (max-width: 1240px) {
     display: none; 
   }
@@ -31,8 +38,11 @@ const StyledLink = styled(Link)`
   font-size: 1rem;
   line-height: 1.68;
   transition: 0.2s;
-  letter-spacing: -0.3px;
+  letter-spacing: -0px;
   color: #666666; 
+  color: #585858;
+  color: #565656;
+  // color: #767676;
   // color: #333;
   // color: #888;
   padding: 0.25rem 0.5rem;
@@ -115,7 +125,8 @@ const FooterText = styled.p`
 const InlineLink = styled.a`
   text-decoration: none;
   transition: 0.2s;
-  color: #666666;
+  // color: #666666;
+  color: #585858;
   font-weight: 400;
   :hover {
     color: #8c8c8c;
@@ -176,7 +187,7 @@ export default function Nav(props) {
               style={{textDecoration: "none"}}
               as="a"
               target="_blank"
-              href="https://drive.google.com/file/d/1r5To1P3Oc8Dn9Ucbe_WxWWBi5bCVeYri/view?usp=sharing"
+              href="https://drive.google.com/file/d/1zf2wjFeNlD-gDA0sN-ENI_ViZbj4yLGc/view?usp=sharing"
             >
               Resume
             </GreyText>
@@ -196,7 +207,7 @@ export default function Nav(props) {
             <StyledLink 
               as="a"
               target="_blank"
-              href="https://drive.google.com/file/d/1r5To1P3Oc8Dn9Ucbe_WxWWBi5bCVeYri/view?usp=sharing"
+              href="https://drive.google.com/file/d/1zf2wjFeNlD-gDA0sN-ENI_ViZbj4yLGc/view?usp=sharing"
             >
               Resume
             </StyledLink>

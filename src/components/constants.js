@@ -53,8 +53,9 @@ export const IntroBody = styled.div`
 export const OffsetBody = styled.div`
   margin: 7rem auto;
 
+
   @media (max-width: 1240px) {
-    margin: 3.5rem 0;
+    margin: 3.5rem 0; 
   }
 `;
 

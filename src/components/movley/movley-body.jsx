@@ -9,7 +9,7 @@ import Gif from "../../images/pool.gif"
 import Animated from "../../images/pool.mp4"
 
 const LocalContainer = styled(Styled.Container)`
-  margin-top: 88px;
+  margin-top: 64px;
   width: 100%;
 `
 
@@ -44,7 +44,12 @@ const FlexBox = styled.div`
   align-items: flex-start;
   margin: 7rem 0;
   padding: 3.5rem;
+  padding: 3.5rem 1.75rem;
   // border-top: 1px solid #666666;
+
+  @media (max-width: 1340px) {
+    padding: 1.75rem;
+  }
 
 
   @media (max-width: 1240px) {
@@ -57,10 +62,15 @@ const FlexBox = styled.div`
 const BlockTitle = styled.h2`
   font-weight: 500;
   font-size: 1.125rem;
+  line-height: 1.5;
   min-width: 16vw;
-  margin-right: 8rem;
+  margin-right: 7.5rem;
   letter-spacing: -0.3px;
   color: #333333;
+
+  @media (max-width: 1440px) {
+    margin-right: 5rem;
+  }
 
   @media (max-width: 124px) {
     margin: 2.5rem 0;
@@ -101,6 +111,11 @@ const Highlight = styled.strong`
 
 const ImageOffset = styled(Styled.OffsetBody)`
   padding: 0 3.5rem;
+  // padding: 0 1.75rem;
+
+  @media (max-width: 1340px) {
+    padding: 1.75rem;
+  }
 
   @media (max-width: 1240px) {
     padding: 0;
@@ -162,7 +177,8 @@ const Italic = styled.span`
     color: #666666;
 `
 const SpecialBox = styled(FlexBox)`
-  padding: 1.75rem 3.5rem;
+  // padding: 1.75rem 3.5rem;
+  padding: 1.75rem;
   // margin: 0
 
 `
@@ -212,7 +228,7 @@ export default function Intro() {
           }
         }
       }
-      CampaignsMain: file(relativePath: {eq: "movley-campaigns-main.jpg"}) {
+      CampaignsMain: file(relativePath: {eq: "movley-campaigns.jpg"}) {
         childImageSharp {
           fluid (maxWidth: 3200) {
             ...GatsbyImageSharpFluid
@@ -253,7 +269,7 @@ export default function Intro() {
         </Styled.ImageWrapper>
         </div>
         <div data-sal="fade" data-sal-delay="100" data-sal-duration="1200" data-sal-easing="ease">
-        <SpecialBox>
+        <FlexBox>
           <BlockTitle>
             Overview
           </BlockTitle>
@@ -262,7 +278,15 @@ export default function Intro() {
             <br/><br/>
              As sole designer, I got to engage in the full spectrum of product design from conceptualization, to creating prototypes of various fidelities and testing them to further refine the product.  
          </BlockText>
-        </SpecialBox>
+        </FlexBox>
+        </div>
+        <div data-sal="fade" data-sal-delay="100" data-sal-duration="1200" data-sal-easing="ease">
+        <ImageOffset>
+          <Img fluid={data.Overview.childImageSharp.fluid} />
+          <ImageSubCaption style={{textAlign: "center"}}>
+            I documentated my WIP of various elements and components to keep the developers up to speed. Includes screen descriptions and interaction flows of various application states.
+         </ImageSubCaption>
+        </ImageOffset>
         </div>
         <div data-sal="fade" data-sal-delay="300" data-sal-duration="1200" data-sal-easing="ease">
           <SpecialBox>
@@ -276,23 +300,15 @@ export default function Intro() {
             </BlockText>
           </SpecialBox>
         </div>
-        <div data-sal="fade" data-sal-delay="100" data-sal-duration="1200" data-sal-easing="ease">
-        <ImageOffset>
-          <Img fluid={data.Overview.childImageSharp.fluid} />
-          <ImageSubCaption style={{textAlign: "center"}}>
-            I documentated my WIP of various elements and components to keep the developers up to speed. Includes screen descriptions and interaction flows of various application states.
-         </ImageSubCaption>
-        </ImageOffset>
-        </div>
         <div data-sal="fade" data-sal-delay="200" data-sal-duration="1200" data-sal-easing="ease">
-        <FlexBox>
+        <SpecialBox>
           <BlockTitle>
             Dashboard
           </BlockTitle>
           <BlockText>
             I laid out the dashboard with a key question in mind: "Why do affiliates work with Movley?". Discounting sheer altruism, the answer more often than not seemed to be along the lines of "to make some money". Therefore, in addition to providing a broad overview of performance across measured categories, I wanted to hero the key performance metric which was the actual referrals and commissions as much as possible.
           </BlockText>
-        </FlexBox>
+        </SpecialBox>
         </div>
         <div data-sal="fade" data-sal-delay="100" data-sal-duration="1200" data-sal-easing="ease">
         <ImageOffset style={{marginTop: "1.75rem"}}>

@@ -12,6 +12,7 @@ const Container = styled.div`
   position: absolute;
   position: fixed;
   padding: 1.15rem 2.5rem;
+  padding: 1.25rem 2.5rem;
   // margin: 1.15rem 2.5rem
   top: 0;
   left: 0;
@@ -23,10 +24,11 @@ const Container = styled.div`
   @media (max-width: 1240px) {
     width: 100%;
     background-color: #111111;
+    background-color: #0a0a0a;
   }
 
   @media (max-width: 425px) {
-    padding: 1.5rem;
+    padding: 1rem;
   }
 
 `
@@ -38,7 +40,7 @@ const Wrapper = styled.div`
 const Title = styled.h2`
   margin: 0;
   // margin-right: 3.6rem;
-  letter-spacing: -0.8px;
+  letter-spacing: -0.4px;
   font-weight: 500;
   color: #ffffff;
   line-height: 1.1;
@@ -133,6 +135,7 @@ const MobileMenu = styled.div`
   @media (max-width: 425px) {
     font-size: 1rem;
     margin-right: 2.5rem;
+    margin-right: 1rem;
   }
 
 `

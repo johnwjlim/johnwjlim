@@ -46,6 +46,7 @@ const Filler = styled.div`
   width: 52rem;
   height: 4.5rem;
   background-color: #ffffff;
+  background-color: #fefefe;
   opacity: 1;
 
   @media (max-width: 1240px) {
@@ -86,7 +87,7 @@ const ImageParent = styled(ImageWrapper)`
 export default function Movley() {
   const data = useStaticQuery(graphql`
     query {
-      HeroImage: file(relativePath: {eq: "movley-thumbnail.png"}) {
+      HeroImage: file(relativePath: {eq: "movley-thumbnail-copy.jpg"}) {
         childImageSharp {
           fluid (maxWidth: 3200, maxHeight: 1600) {
             ...GatsbyImageSharpFluid

@@ -21,6 +21,8 @@ import GChallenge from "../components/home/g-thumbnail"
 import Pool from "../components/home/pool-thumbnail"
 import Pear from "../components/home/pear-thumbnail"
 import Movley from "../components/home/movley-thumbnail"
+import Shopee from "../components/home/shopee"
+
 
 const LayoutHack = styled.div`
   margin: 0 auto;
@@ -30,7 +32,7 @@ const LayoutHack = styled.div`
   // background-color: #fafafa;
   // background-color: #eeeeee;
   box-sizing: border-box;
-  background-color: #ffffff;
+  background-color: #fefefe;
 
   @media (max-width: 425px) {
     padding: 0 1.25rem 1.45rem;
@@ -45,16 +47,17 @@ const Wrapper = styled.div`
 `;
 
 const HeaderWrapper = styled.div`
-  // display: none;
+  // display: none; 
   
-  // @media (max-width: 1240px) {
-  //   display: block;
-  // }
+  @media (max-width: 1240px) {
+    display: block;
+  }
 `
 
 
 const Body = styled(Container)`
   margin: 0 2rem;
+  // margin: 0;
 
   @media (max-width: 1240px) {
     margin: 0;
@@ -63,20 +66,29 @@ const Body = styled(Container)`
 
 const TitleBox = styled.div`
 
-  margin-bottom: 1rem; 
-  margin-bottom: 10rem;
+  margin: 0 auto;
 
-  margin-top: 10rem;
-  // margin-top: 10rem;
-  // margin-top: 80px;
-  margin-bottom: 14rem;
 
-  // margin-top: 10rem;
-  // margin-bottom: 12rem;
+  padding-left: 0.6rem;
+  padding-bottom: 2.8rem;
+  margin-top: 7.4rem;
+  padding-right: 1rem;
 
-  @media (max-width: 768px) {
+  padding-bottom: 2rem;  
+  margin-top: 7.75rem;
+
+  // display: flex;
+  // justify-content: space-between;
+  // border-bottom: 1px solid #c5c5c5;
+
+
+  @media (max-width: 1240px) {
     // font-size: 1rem;
     margin: 3.5rem 0 5rem;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 4rem;
+    display: block;
   }
 `
 
@@ -125,69 +137,67 @@ const StyledLink = styled(Link)`
   text-decoration: none;
   transition: 0.3s;
 
-`;
+`
 
 const Emoji = styled.span`
-  font-size: 2rem;
+  font-size: 1.5rem;
+  // line-height: 1.5;
+  // padding-bottom: 5rem;
+  // vertical-align: top;
   vertical-align: middle;
-  // line-height: 0;
-  // margin: 0;
-`
-const TitleStyle = styled.span`
-  color: #dddddd;
-  // color: #666666;
-  font-weight: 300;
-  // letter-spacing: -3px;
-`
 
-const Flexbox = styled.div`
-  display: flex;
-  justify-content: space-between;
-
-`
-
-const Arrow = styled.div`
-
-  @media (max-width: 1240px) {
-    display: none;
+  @media (max-width: 1440px) {
+    // margin-right: 10vw;
+    font-size: 1.5rem;
   }
-`
 
-const Divider =  styled.div`
-  padding-top: 2rem;
-  border-bottom: 1px solid #dddddd;
+  
 `
-
 const Title = styled.h1`
-  letter-spacing: -3px;  
-  letter-spacing: -2.25px;
-  // letter-spacing: -2px;
-  font-size: 3.5rem;
-  font-weight: 500;
+
+  font-size: 44px;
+  letter-spacing: -1.75px;
   color: #333;
-  line-height: 1.45;
+  color: #3b3e43;
+  font-weight: 500;
+  line-height: 1.2;
+  // margin-bottom: 2rem;
+
+  // font-size: 2.5rem;
+  
+
+
+  @media (max-width: 1340px) {
+    font-size: 2.5rem;  
+    letter-spacing: -1.5px;
+    margin-right: 8vw;
+  }
 
   @media (max-width: 1024px) {
-    font-size: 2.4rem;
-    letter-spacing: -1.8px
+    font-size: 2.3rem;
+    letter-spacing: -1.4px;
+    // margin-bottom: 3rem;
   }
 `
 
 const Text = styled.p`
-  // color: #b5b5b5;
-  color: #666666;
-  letter-spacing: -0.5px;
-  font-weight: 400;
-  max-width: 41rem;
-  max-width: 38.5rem;
-  max-width: 39rem;
-  line-height: 1.45;
-  font-size: 1.25rem;
-  // background-color: #f5f5f5;
+  font-size: 20px;
+  max-width: 40rem;
+  line-height: 1.35;
+  letter-spacing: -0.23px;
+  color: #565656;
+
+  font-size: 18.5px;
+  letter-spacing: -0.17px;
+  max-width: 37rem;
+  line-height: 1.4;
+
 
   @media (max-width: 1024px) {
-    font-size: 1.2rem;
-    letter-spacing: -0.3px
+    font-size: 18px;
+    line-height: 1.4;
+    letter-spacing: -0.08px;
+    // margin-left: 8rem;
   }
 
 
@@ -220,22 +230,27 @@ const Paper = styled.div`
 `
 
 const Name = styled(Link)`
-  color: #767676;
+  // font-family: "Founders Grotesk";
   color: #333;
+  color: #3b3e43;
+  // color: #666;
+  // color: #1D4094;
   transition: 0.2s;
   text-decoration: none;
-  // border-bottom: 5px solid #b5b5b5;
-  // height: 0;
+  // border-bottom: 2.5px solid #b5b5b5;
+  // border-bottom: 3px solid #333;
+
 
   :hover {
+    // color: #484848; 
+    border-bottom: 5px solid #888;
     color: #888;
-    // text-decoration: underline;
-    // color: #000; 
-    border-bottom: 5px solid #b5b5b5;
   }
 
 `
-
+const Subtitle = styled.p`
+  margin-top: 2.5rem;
+`
 
 
 export default function IndexPage() {
@@ -255,11 +270,9 @@ export default function IndexPage() {
 
   const [menu, setMenu] = useState(false)
 
-  useEffect(() => {
-    console.log(menuState)
-    // setMenu(menuState)
-    // console.log(menu)
-  },[menuState])
+  // useEffect(() => {
+  //   console.log(menuState)
+  // },[menuState])
 
 
 
@@ -267,15 +280,11 @@ export default function IndexPage() {
     dispatch({type: "CLOSE"})
   },[])
 
-  // function handleTabSwitch(value) {
-  //   setActive(value);
-  // }
-
   return (
     <LayoutHack >
       <SEO title="Home" />
       <HeaderWrapper>
-        <Header/> 
+        <Header/>  
       </HeaderWrapper>
       {/* <FauxHeader>
           <HeaderTitle>John Lim</HeaderTitle>
@@ -284,9 +293,11 @@ export default function IndexPage() {
         menuState ?
         <MobileNav /> :
         <>
+
           <Wrapper>
             <div style={{width: "100%"}}>
-            <Body>
+            {/* <Subtitle>Digital Product Designer</Subtitle> */}
+            <Body>           
               {/* <FauxHeader>
                 <StyledLink to="/">
                   <h4>John Lim</h4>
@@ -294,38 +305,39 @@ export default function IndexPage() {
               </FauxHeader> */}
               {/* <p>Product Designer</p> */}
               <TitleBox>
-                <div data-sal="fade" data-sal-delay="150" data-sal-duration="1200" data-sal-easing="ease">
+                <div data-sal="fade" data-sal-delay="100" data-sal-duration="1200" data-sal-easing="ease">
                   <Title>
                     <div>
                     Hello there, I'm <Name to="/about">John</Name><span className="blinking">.</span> &nbsp;
-                    <Emoji> ✌️ </Emoji>
+                    <Emoji> 👋 </Emoji>
                     </div>
                   </Title> 
                 </div>
                 <div data-sal="fade" data-sal-delay="300" data-sal-duration="1200" data-sal-easing="ease">
-
-                  <Text>I'm an undergraduate student at the <Highlight>University of Washington</Highlight> majoring in <Highlight>Human Computer Interaction</Highlight> and enthralled by the factors that make us <Highlight>human.</Highlight></Text>
-
-                  <Text>If not <Highlight>pushing pixels</Highlight> in a Seattle coffee shop, catch me <Highlight>chasing powder</Highlight> in my local ski hill or wherever there is good snow to be found.</Text>
+                  <Text>I'm an undergraduate student at the <Highlight>University of Washington</Highlight> majoring in <Highlight>Human Computer Interaction</Highlight> and enthralled by the things that make us <Highlight>human.</Highlight></Text>
+                  <Text>If not <Highlight>pushing pixels</Highlight> in a Seattle coffee shop, catch me <Highlight>chasing powder</Highlight> on my local ski hill or wherever good snow's to be found.</Text>
+                  {/* <Text>–––</Text> */}
                 </div>
                 
               </TitleBox>
               <div data-sal="fade" data-sal-delay="100" data-sal-duration="1500" data-sal-easing="ease" id="nimbus"> 
                <New />
               </div>
-        
               <div data-sal="fade" data-sal-delay="100" data-sal-duration="1500" data-sal-easing="ease"> 
-                <Pool />
+                <Shopee />
               </div>
               <div data-sal="fade" data-sal-delay="100" data-sal-duration="1500" data-sal-easing="ease"> 
-                <Movley />
+                <Pool />
               </div>
               <div data-sal="fade" data-sal-delay="100" data-sal-duration="1500" data-sal-easing="ease"> 
                 <Pear />
               </div>
               <div data-sal="fade" data-sal-delay="100" data-sal-duration="1500" data-sal-easing="ease"> 
-                <GChallenge />
+                <Movley />
               </div>
+              {/* <div data-sal="fade" data-sal-delay="100" data-sal-duration="1500" data-sal-easing="ease"> 
+                <GChallenge />
+              </div> */}
             </Body>
             </div>
               <Nav />

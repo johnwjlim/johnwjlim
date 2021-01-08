@@ -64,7 +64,7 @@ strong {
 
 .scroll-link {
   line-height: 1.68;
-  font-weight: 300;
+  font-weight: 400;
   transition: 0.2s;
   border: none;
   padding: 0rem 0.5rem;
@@ -72,7 +72,7 @@ strong {
   letter-spacing: -0.3px;
   text-decoration: none;  
   width: auto;
-  color: #b8b8b8;
+  color: #c5c5c5;
 }
 
 
@@ -207,8 +207,18 @@ button:-moz-focusring {
   60%{    color: transparent; }
   99%{    color:transparent;  }
   100%{   color: #888;    }
-}
- */
+} */
+  
+  /* @keyframes blinkingText{
+    0%{     color: #979797;    }
+    49%{    color: #979797; }
+    60%{    color: transparent; }
+    99%{    color:transparent;  }
+    100%{   color: #979797;    }
+  } */
+
+
+
 
 
  .activeLink {

@@ -14,8 +14,9 @@ const LocalContainer = styled(Styled.Container)`
 
 
 const ImageBackground = styled.div`
-  background-color: #111111;
+  // background-color: #111111;
   padding: 3.5rem 0;
+
 
   @media (max-width: 1120px) {
     padding: 0;
@@ -36,6 +37,7 @@ const InlineLink = styled.a`
   :hover {
     cursor: pointer;
     color: #ffb7b7;
+    color: #a5a5a5;
   }
 `;
 
@@ -45,7 +47,17 @@ const FlexBox = styled.div`
   align-items: flex-start;
   margin: 7rem 0;
   padding: 3.5rem;
+  padding: 3.5rem 1.75rem;
   // border-top: 1px solid #666666;
+
+  @media (max-width: 1340px) {
+    padding: 1.75rem;
+  }
+
+
+  // @media (max-width: 128px) {
+  //   padding: 0rem;
+  // }
 
 
   @media (max-width: 1240px) {
@@ -57,17 +69,25 @@ const FlexBox = styled.div`
 
 const SpecialBox = styled(FlexBox)`
   padding: 1.75rem 3.5rem;
+  padding: 1.75rem;
 `
 
 const BlockTitle = styled.h2`
   font-weight: 500;
   font-size: 1.125rem;
+  line-height: 1.5;
   min-width: 16vw;
-  margin-right: 7rem;
-  letter-spacing: -0.3px;
+  margin-right: 7.5rem;
+  letter-spacing: -0.1px;
   color: #ffffff;
+  // font-size: 1.5rem;
+  // letter-spacing: -1px;
 
-  @media (max-width: 124px) {
+  @media (max-width: 1440px) {
+    margin-right: 5rem;
+  }
+
+  @media (max-width: 1240px) {
     margin: 2.5rem 0;
   }
 `
@@ -78,10 +98,10 @@ const BlockText = styled.p`
   // margin: 0 8rem;
   font-size: 1rem;
   line-height: 1.5;
-  letter-spacing: -0.15px;
-  // letter-spacing: -0.2px;
+  letter-spacing: -0px;
 
   color: #efefef; 
+  color: #ddd;
 
   // stupid shit incoming
   // font-weight: 500;
@@ -108,11 +128,15 @@ const HeroText = styled.h4`
 
 const Highlight = styled.strong`
   color: #ffffff;
-  // font-weight: 600;
+  font-weight: 500;
 `
 
 const ImageOffset = styled(Styled.OffsetBody)`
-  padding: 0 3.5rem;
+  padding: 0 1.75rem;
+
+  @media (max-width: 1340px) {
+    padding: 1.75rem;
+  }
 
   @media (max-width: 1240px) {
     padding: 0;
@@ -133,7 +157,6 @@ const VideoWrapper = styled.div`
   width: 100%;
   padding-top: 56.25%;
   margin-top: 3.5rem;
-
 `
 const Frame = styled.iframe`
     position: absolute;
@@ -222,7 +245,7 @@ export default function Intro() {
         </div>
         <SpecialBox style={{paddingTop: "3.5rem"}}> 
           <BlockTitle>
-            Background
+            What is POOL
           </BlockTitle>
           <BlockText>    
             {/* <HeroText>
@@ -258,7 +281,6 @@ export default function Intro() {
           </ImageSubCaption>
         </ImageOffset>
         </div>
-        <div data-sal="fade" data-sal-delay="100" data-sal-duration="1200" data-sal-easing="ease">
         <FlexBox>
           <BlockTitle>
             Individual Deliverable
@@ -282,19 +304,19 @@ export default function Intro() {
                 </div>
               </div>
               <div data-sal="fade" data-sal-delay="100" data-sal-duration="1200" data-sal-easing="ease">
-              <div style={{margin: "1.75rem 0"}}>
-              <VideoWrapper>
-                {/* <VFrame autoplay controls
-                src={Animated} type="video/mp4" allow="accelerometer; autoplay;"
-                frameBorder="0"
-                /> */}
-                <Video muted autoPlay controls loop>
-                  <source src={Animated} type="video/mp4" />
-                  Sorry, your browser doesn't support embedded videos.
-                </Video>
-              </VideoWrapper>
-                <ImageSubCaption>Water level visualization in shower display falls as time remaining on the timer decreases. </ImageSubCaption>
-              </div>
+                <div style={{margin: "1.75rem 0"}}>
+                <VideoWrapper>
+                  {/* <VFrame autoplay controls
+                  src={Animated} type="video/mp4" allow="accelerometer; autoplay;"
+                  frameBorder="0"
+                  /> */}
+                  <Video muted autoPlay loop>
+                    <source src={Animated} type="video/mp4" />
+                    Sorry, your browser doesn't support embedded videos.
+                  </Video>
+                </VideoWrapper>
+                  <ImageSubCaption>Water level visualization in shower display falls as time remaining on the timer decreases. </ImageSubCaption>
+                </div>
               </div>
             </ImageWrapper>
             <br/>
@@ -309,10 +331,9 @@ export default function Intro() {
             </div>
           </BlockText>
         </FlexBox>  
-        </div>
-        <div data-sal="fade" data-sal-delay="100" data-sal-duration="1200" data-sal-easing="ease">
         <FlexBox>
           <BlockTitle>The Headliner</BlockTitle>
+          <div data-sal="fade" data-sal-delay="100" data-sal-duration="1200" data-sal-easing="ease">
           <BlockText>
             As our team deliverable, we were to design a solution to the problem with <Highlight>the technologies of tommorow.</Highlight> 
             {/* <br/><br/>  */}
@@ -320,8 +341,8 @@ export default function Intro() {
             <br/><br/> 
             We called it <Highlight>POOL</Highlight> as kind of as a playful way to reflect the way our design aimed to visualize resource footprints as "pools of impact" on the ground. I created a one page poster to showcase through storyboard what our design was about and how it worked.
           </BlockText>
+          </div>
         </FlexBox>
-        </div>
         <div data-sal="fade" data-sal-delay="100" data-sal-duration="1200" data-sal-easing="ease">
         <ImageBackground>
           <Styled.ImageWrapper style={{maxWidth: "800px"}}>

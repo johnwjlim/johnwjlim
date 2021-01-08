@@ -56,7 +56,8 @@ const Container = styled.div`
 const FlexContainer = styled(Styled.Container)`
   display: flex;
   margin: 3.5rem;
-  margin-top: 10rem;
+  margin-top: 8rem;
+  // margin-top: 1rem; 
   justify-content: center;
 
   @media (max-width: 1380px) {
@@ -69,11 +70,11 @@ const FlexContainer = styled(Styled.Container)`
   }
 `
 const Text = styled.p`
-  max-width: 28rem;
+  max-width: 29rem;
   margin: 0 auto;
   font-size: 1rem;
-  letter-spacing: -0.15px;
-  line-height: 1.5;
+  // letter-spacing: -0px;
+  line-height: 1.45;
   color: #666;
   color: #dddddd; 
   margin-bottom: 1.25rem;
@@ -83,6 +84,9 @@ const Highlight = styled.span`
   font-weight: 500;
   color: #333333;
   color: #ffffff;
+  font-size: 1rem;
+  line-height: 1.45;
+  letter-spacing: -0px;
 ` 
 const ImageSubCaption = styled.p`
   font-size: 0.8rem;
@@ -102,6 +106,11 @@ const OffsetBody = styled.div`
     margin: 4rem 0;
   }
 `;
+
+const Title = styled.h1`
+  color: #ffffff;
+  // margin: 3.5rem auto;
+`
 
 export default function About() {
   const data = useStaticQuery(graphql`
@@ -127,11 +136,14 @@ export default function About() {
 
   return (
     <Layout>
-      <SEO title="About" />
+      <SEO title="About" /> 
       <Header />
       {
         menuState ?
         <MobileNav /> :
+        <>
+
+        {/* <Title>Designer. Developer. Photographer.</Title> */}
         <Wrapper>
           <FlexContainer >
             {/* <Image>
@@ -147,7 +159,7 @@ export default function About() {
             <div data-sal="fade" data-sal-delay="300" data-sal-duration="1200" data-sal-easing="ease">
               <OffsetBody>
                 <Text>
-                  <Highlight>I'm John, and I study Human Computer Interaction and Political Economy at the University of Washington.</Highlight>
+                  <Highlight>I'm John. I study Human Computer Interaction & Political Economy at the University of Washington.</Highlight>
                 </Text>
                 <Text>
                 With a background in business, product and policy, I’m a generalist at heart. Product design was the only place where I could see myself melding all of my disparate interests into a cohesive role.
@@ -169,6 +181,7 @@ export default function About() {
           </FlexContainer>
           <Nav />
         </Wrapper>
+        </>
       
       }
     </Layout>

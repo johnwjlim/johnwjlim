@@ -58,6 +58,7 @@ const Filler = styled.div`
   // background-color: #F0AC83;
   // background-color: #FFB169;
   background-color: #ffffff;
+  background-color: #fefefe;
   opacity: 1;
   // border-right: 3px #ffb169 solid;
   // border: none;
