@@ -155,8 +155,8 @@ const Emoji = styled.span`
 `
 const Title = styled.h1`
 
-  font-size: 44px;
-  letter-spacing: -1.75px;
+  font-size: 42px;
+  letter-spacing: -1.8px;
   color: #333;
   color: #3b3e43;
   font-weight: 500;
@@ -168,7 +168,7 @@ const Title = styled.h1`
 
 
   @media (max-width: 1340px) {
-    font-size: 2.5rem;  
+    // font-size: 2.5rem;  
     letter-spacing: -1.5px;
     margin-right: 8vw;
   }
@@ -198,8 +198,18 @@ const Text = styled.p`
     line-height: 1.4;
     letter-spacing: -0.08px;
     // margin-left: 8rem;
+    
   }
+`
 
+const SubTitle = styled.p`
+
+  font-size: 20px;
+  max-width: 38rem;
+  font-weight: 400;
+  line-height: 1.45;
+  letter-spacing: -0.3px;
+  color: #666;
 
 `
 
@@ -312,11 +322,14 @@ export default function IndexPage() {
                     <Emoji> 👋 </Emoji>
                     </div>
                   </Title> 
+              
                 </div>
                 <div data-sal="fade" data-sal-delay="300" data-sal-duration="1200" data-sal-easing="ease">
-                  <Text>I'm an undergraduate student at the <Highlight>University of Washington</Highlight> majoring in <Highlight>Human Computer Interaction</Highlight> and enthralled by the things that make us <Highlight>human.</Highlight></Text>
-                  <Text>If not <Highlight>pushing pixels</Highlight> in a Seattle coffee shop, catch me <Highlight>chasing powder</Highlight> on my local ski hill or wherever good snow's to be found.</Text>
-                  {/* <Text>–––</Text> */}
+                  {/* <Text>I'm an undergraduate student at the <Highlight>University of Washington</Highlight> majoring in <Highlight>Human Computer Interaction</Highlight> and enthralled by the things that make us <Highlight>human.</Highlight></Text>
+                  <Text>If not <Highlight>pushing pixels</Highlight> in a Seattle coffee shop, catch me <Highlight>chasing powder</Highlight> on my local ski hill or wherever good snow's to be found.</Text> */}
+                  <SubTitle>I'm a recent graduate from the University of Washington seeking opportunities in UX & Product Design.
+                  </SubTitle>
+                  <SubTitle> If not pushing pixels in a Seattle coffee shop, catch me chasing powder on my local ski hill or wherever good snow's to be found.</SubTitle>
                 </div>
                 
               </TitleBox>
