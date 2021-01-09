@@ -187,9 +187,9 @@ const Text = styled.p`
   letter-spacing: -0.23px;
   color: #565656;
 
-  font-size: 18.5px;
-  letter-spacing: -0.17px;
-  max-width: 37rem;
+  font-size: 19px;
+  letter-spacing: -0.1px;
+  max-width: 38rem;
   line-height: 1.4;
 
 
@@ -317,7 +317,7 @@ export default function IndexPage() {
                   <Text>I'm an undergraduate student at the <Highlight>University of Washington</Highlight> majoring in <Highlight>Human Computer Interaction</Highlight> and enthralled by the things that make us <Highlight>human.</Highlight></Text>
                   <Text>If not <Highlight>pushing pixels</Highlight> in a Seattle coffee shop, catch me <Highlight>chasing powder</Highlight> on my local ski hill or wherever good snow's to be found.</Text>
                   {/* <Text>–––</Text> */}
-                </div>
+                  </div>
                 
               </TitleBox>
               <div data-sal="fade" data-sal-delay="100" data-sal-duration="1500" data-sal-easing="ease" id="nimbus"> 
