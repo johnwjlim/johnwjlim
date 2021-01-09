@@ -266,7 +266,7 @@ export default function Intro() {
             Design Systems
           </BlockTitle>
           <BlockText>
-          With multiple teams working across 15 seperate core apps to build Pear OS, it was critical that we had a single, living, breathing, source of truth that we could all fall back on to ensure consistency across our designs. I led the design systems team where I built components and established the look and feel of our design language.
+          With multiple teams working across 15 seperate core apps to build Pear OS, it was critical that we had a single, living, breathing, source of truth that we could all fall back on to ensure consistency across our designs. I led the design systems team where we built components and established the look and feel of our design language.
           </BlockText>
         </FlexBox>
         </div>
