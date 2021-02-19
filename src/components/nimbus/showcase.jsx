@@ -506,7 +506,7 @@ export default function Showcase(props) {
           <TextBlock>
             <BlockIntro>Designing for Trust and Community.</BlockIntro>
             <p>
-            We hyphothesized that user profiles would help build trust & social proof; by encouraging users to share a little piece of themselves, it opens up a small window of mutual vulnerability that we hoped would dispel fear or uncertainty with using the platform. It also offers users a perception of control by allowing them to research their counterparts rather than stepping off blind into the unknown. 
+            We hypothesized that user profiles would help build trust & social proof; by encouraging users to share a little piece of themselves, it opens up a small window of mutual vulnerability that we hoped would dispel fear or uncertainty with using the platform. It also offers users a perception of control by allowing them to research their counterparts rather than stepping off blind into the unknown. 
             </p>
             <p>
               As we tested our user profiles further, we discovered that many of our users were in fact expressing more concern over chemistry & compatibility with potential travel companions than with their own personal safety. It was almost as if the safety concerns went out the window when our users got to see a user profile for themselves
