@@ -119,7 +119,7 @@ const HeaderTitle = styled.h2`
   letter-spacing: -0.8px;
   font-weight: 500;
   color: #333333;
-  // font-size: 1.4rem;
+
 
 
   @media (max-width: 425px) {
