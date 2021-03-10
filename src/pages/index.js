@@ -309,7 +309,7 @@ export default function IndexPage() {
                   <Title>
                     <div>
                     Hello there, I'm <Name to="/about">John</Name><span className="blinking">.</span> &nbsp;
-                    <Emoji> 👋 </Emoji>
+                    <Emoji role="img"> 👋 </Emoji>
                     </div>
                   </Title> 
                 </div>
