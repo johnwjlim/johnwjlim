@@ -172,7 +172,7 @@ const Title = styled.h1`
 
   font-size: 42px;
   letter-spacing: -1px;
-  line-height: 1.35;
+  line-height: 1.25;
   
 
 
