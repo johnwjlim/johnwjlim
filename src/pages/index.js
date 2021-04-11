@@ -170,20 +170,22 @@ const Title = styled.h1`
 
   // font-size: 2.5rem;
 
-  // font-size: 45px;
-  letter-spacing: -1.5px;
+  font-size: 42px;
+  letter-spacing: -1px;
+  line-height: 1.35;
   
 
 
   @media (max-width: 1340px) {
     font-size: 2.5rem;  
-    letter-spacing: -1.5px;
+    letter-spacing: -1.2px;
     margin-right: 8vw;
+    line-height: 1.4;
   }
 
   @media (max-width: 1024px) {
     font-size: 2.3rem;
-    letter-spacing: -1.4px;
+    letter-spacing: -1.2px;
     // margin-bottom: 3rem;
   }
 `
@@ -201,14 +203,14 @@ const Text = styled.p`
   line-height: 1.45;
 
   font-size: 18px;
-  max-width: 36rem;
-  letter-spacing: -0.1px;
+  max-width: 36.5rem;
+  letter-spacing: -0.05px;
 
 
   @media (max-width: 1024px) {
     font-size: 18px;
     line-height: 1.4;
-    letter-spacing: -0.08px;
+    letter-spacing: -0.05px;
     // margin-left: 8rem;
   }
 
