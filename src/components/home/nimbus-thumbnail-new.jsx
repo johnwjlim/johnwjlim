@@ -1,8 +1,8 @@
-import React, {useState} from "react"
+import React, { useState } from "react"
 import { Link, useStaticQuery, graphql } from "gatsby"
 import styled from "styled-components"
-import Img from "gatsby-image"
-import {useTransition, animated} from 'react-spring'
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import { useTransition, animated } from 'react-spring'
 
 import { ImageWrapper } from "../constants"
 
@@ -74,8 +74,6 @@ const ImageCaption = styled.h2`
   // color: #111;
   // color: #333333;
   // color: #47c3a0;
-  // bottom: 3vh;
-  // left: 6vh;
   bottom: 0;
   left: 0;
   max-width: 50rem;
@@ -113,33 +111,33 @@ export default function Nimbus() {
     query {
       HeroImage: file(relativePath: { eq: "Hero.png" }) {
         childImageSharp {
-          fluid(maxWidth: 3200, maxHeight: 1600) {
-            ...GatsbyImageSharpFluid
-          }
+          gatsbyImageData(layout: CONSTRAINED, width: 3200)
         }
       }
     }
   `)
 
   const [show, set] = useState(false)
-  const transitions = useTransition(show, null, {
-    from: { opacity: 0, height: 0 },
-    enter: { opacity: 1, height: 'auto'},
-    leave: { opacity: 0, height: 0 },
+  const transitions = useTransition(show, {
+    from: { opacity: 0 },
+    enter: { opacity: 1 },
+    leave: { opacity: 0 },
+    config: { tension: 200, friction: 30 },
   })
+
+  const image = getImage(data.HeroImage)
 
   return (
     <CaseLink
-      to="/nimbus/"
-    >
+      to="/nimbus/">
       <ImageParent
         onMouseEnter={() => set(true)}
         onMouseLeave={() => set(false)}
       >
-        <Img fluid={data.HeroImage.childImageSharp.fluid} />
+        <GatsbyImage image={image} alt="Nimbus Hero" />
         {
-          transitions.map(({item, key, props}) => 
-            item && <animated.div key={key} style={props}>
+          transitions((style, item) =>
+            item && <animated.div style={{ ...style, pointerEvents: 'none' }}>
               <Filler />
               <ImageCaption>How might we expand access to the outdoors for the increasingly interconnected society of today?</ImageCaption>
               {/* <ImageCaption>Nimbus: A mobile app design that aims to expand access to the outdoors</ImageCaption> */}
@@ -150,13 +148,16 @@ export default function Nimbus() {
           )
         }
       </ImageParent>
-      <CaptionWrapper>
+      <CaptionWrapper
+        onMouseEnter={() => set(true)}
+        onMouseLeave={() => set(false)}
+      >
         <CaseCaption>
-        Expanding access to the outdoors by bringing community to your fingertips.
+          Expanding access to the outdoors by bringing community to your fingertips.
           {/* Nimbus: A mobile app design that aims to redefine access to the outdoors. */}
           {/* How do you expand access to the outdoors for the increasingly interconnected society of today? */}
         </CaseCaption>
-        <CaseCaption style={{marginTop: "0.2rem", fontWeight: "400"}}>Nimbus</CaseCaption>
+        <CaseCaption style={{ marginTop: "0.2rem", fontWeight: "400" }}>Nimbus</CaseCaption>
       </CaptionWrapper>
     </CaseLink>
   )
